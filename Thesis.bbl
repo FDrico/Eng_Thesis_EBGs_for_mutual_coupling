@@ -1,0 +1,245 @@
+\begin{thebibliography}{10}
+  \providebibliographyfont{name}{}%
+  \providebibliographyfont{lastname}{}%
+  \providebibliographyfont{title}{\emph}%
+  \providebibliographyfont{jtitle}{\btxtitlefont}%
+  \providebibliographyfont{etal}{\emph}%
+  \providebibliographyfont{journal}{}%
+  \providebibliographyfont{volume}{}%
+  \providebibliographyfont{ISBN}{\MakeUppercase}%
+  \providebibliographyfont{ISSN}{\MakeUppercase}%
+  \providebibliographyfont{url}{\url}%
+  \providebibliographyfont{numeral}{}%
+  \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+
+\expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem {Baars}
+\btxnamefont {\btxlastnamefont {Baars}, Jacob\btxfnamespacelong
+  W.\btxfnamespacelong M.}\btxauthorcolon\ \btxtitlefont {The Paraboloidal
+  Reflector Antenna in Radio Astronomy and Communication}.
+\newblock \btxpublisherfont {Springer}, New York, USA, 2007.
+
+\bibitem {Fano2}
+\btxnamefont {\btxlastnamefont {Valentino~Trainotti}, Walter\btxfnamespacelong
+  Gustavo\btxfnamespacelong Fano} \btxandlong {}\ \btxnamefont
+  {Luis\btxfnamespacelong Antonio \btxlastnamefont {Dorado}}\btxauthorcolon\
+  \btxtitlefont {Ingeniería electromagnética, Tomo II}.
+\newblock \btxpublisherfont {Nueva Librería}, Buenos Aires, Argentina, 2005.
+
+\bibitem {Balanisantenas}
+\btxnamefont {\btxlastnamefont {Balanis}, Constantine\btxfnamespacelong
+  A.}\btxauthorcolon\ \btxtitlefont {Antenna Theory Analysis and Design}.
+\newblock \btxpublisherfont {Wiley-Interscience}, New Jersey, USA,
+  \btxeditionnumlong {3}{}, 2005.
+
+\bibitem {Orfanidis}
+\btxnamefont {\btxlastnamefont {Orfanidis}, Sophocles\btxfnamespacelong
+  J.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Electromagnetic waves
+  and antennas}{Electromagnetic Waves and Antennas}}, 2008.
+\newblock {\latintext \btxurlfont{http://www.ece.rutgers.edu/~orfanidi/ewa/}}.
+
+\bibitem {Silver}
+\btxnamefont {\btxlastnamefont {Silver}, Samuel}\btxauthorcolon\ \btxtitlefont
+  {Microwave Antenna Theory and Design}.
+\newblock \btxpublisherfont {Mc Graw Gill}, New York, USA, 1949.
+
+\bibitem {Cheng}
+\btxnamefont {\btxlastnamefont {Cheng}, David\btxfnamespacelong
+  K.}\btxauthorcolon\ \btxtitlefont {Fundamentals of Engineering
+  Electromagnetics}.
+\newblock \btxpublisherfont {Addison-Wesley}, Boston, USA, \btxeditionnumlong
+  {2}{}, 1993.
+
+\bibitem {Stutzman}
+\btxnamefont {\btxlastnamefont {Stutzman}, Warren\btxfnamespacelong L.}
+  \btxandlong {}\ \btxnamefont {Gary\btxfnamespacelong A. \btxlastnamefont
+  {Thiele}}\btxauthorcolon\ \btxtitlefont {Antenna Theory and Design}.
+\newblock \btxpublisherfont {Wiley}, New Jersey, USA, \btxeditionnumlong {3}{},
+  2013.
+
+\bibitem {Collin}
+\btxnamefont {\btxlastnamefont {Collin}, Robert\btxfnamespacelong
+  E.}\btxauthorcolon\ \btxtitlefont {Antennas and Radiowave Propagation}.
+\newblock \btxpublisherfont {Mc Graw Gill}, New York, USA, 1985.
+
+\bibitem {Balaniselectro}
+\btxnamefont {\btxlastnamefont {Balanis}, Constantine\btxfnamespacelong
+  A.}\btxauthorcolon\ \btxtitlefont {Advanced Engineering electromagnetics}.
+\newblock \btxpublisherfont {Wiley}, New Jersey, USA, 1989.
+
+\bibitem {James}
+\btxnamefont {\btxlastnamefont {James}, G.\btxfnamespacelong
+  L.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Radiation properties of
+  90$^{\,\circ}$ conical horns}{Radiation Properties of 90$^{\,\circ}$ conical
+  horns}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Electronics Letters}, \btxvolumelong
+  {}~\btxvolumefont {13}, \btxpageslong {}\ 293--294,
+  \btxprintmonthyear{.}{Mayo}{1977}{long}.
+
+\bibitem {Elliott}
+\btxnamefont {\btxlastnamefont {Elliott}, R.\btxfnamespacelong
+  S.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {On the theory of
+  corrugated plane surfaces}{On the Theory of Corrugated Plane Surfaces}}.
+\newblock \Btxinlong {}\ \btxtitlefont {IRE Trans. Antennas Propagat.},
+  \btxvolumelong {}~\btxvolumefont {2}, \btxpageslong {}\ 71--81,
+  \btxprintmonthyear{.}{Abril}{1954}{long}.
+
+\bibitem {ARRL}
+\btxnamefont {\btxlastnamefont {ARRL}}\btxauthorcolon\ \btxtitlefont {The ARRL
+  Antenna Book}.
+\newblock \btxpublisherfont {The ARRL Inc}, Connecticut, USA,
+  \btxeditionnumlong {21}{}, 2007.
+
+\bibitem {Carr}
+\btxnamefont {\btxlastnamefont {Carr}, Joseph\btxfnamespacelong
+  J.}\btxauthorcolon\ \btxtitlefont {Practical Antenna Handbook}.
+\newblock \btxpublisherfont {Mc Graw Hill}, New York, USA, \btxeditionnumlong
+  {4}{}, 2001.
+
+\bibitem {laton}
+\btxnamefont {\btxlastnamefont {Ltd.}, EIP\btxfnamespacelong
+  Metals}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Cuzn30 rolled brass
+  alloy}{CuZn30 Rolled Brass Alloy}}.
+\newblock {\latintext
+  \btxurlfont{http://www.aurubis.co.uk/images/uploads/cuzn30.pdf}}.
+
+\bibitem {Fernandez}
+\btxnamefont {\btxlastnamefont {Fernandez}, Juan\btxfnamespacelong
+  Carlos}\btxauthorcolon\ \btxpublisherfont {\btxtitlefont {Apuntes de
+  Electromagnetismo}}.
+\newblock Buenos Aires, Argentina, 2004.
+
+\bibitem {walfram_car_coord}
+\btxnamefont {\btxlastnamefont {Weisstein}, Eric\btxfnamespacelong
+  W.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {{"{}Cartesian
+  Coordinates".} from {MathWorld -- A Wolfram Web Resource}}{{"{}Cartesian
+  Coordinates".} From {MathWorld -- A Wolfram Web Resource}}}.
+\newblock {\latintext
+  \btxurlfont{http://www.mathworld.wolfram.com/CartesianCoordinates.html}}.
+
+\bibitem {walfram_sphe_coord}
+\btxnamefont {\btxlastnamefont {Weisstein}, Eric\btxfnamespacelong
+  W.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {{"{}Spherical
+  Coordinates".} from {MathWorld -- A Wolfram Web Resource}}{{"{}Spherical
+  Coordinates".} From {MathWorld -- A Wolfram Web Resource}}}.
+\newblock {\latintext
+  \btxurlfont{http://www.mathworld.wolfram.com/SphericalCoordinates.html}}.
+
+\bibitem {walfram_bessel}
+\btxnamefont {\btxlastnamefont {Weisstein}, Eric\btxfnamespacelong
+  W.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {{"{}Bessel Function".}
+  from {MathWorld -- A Wolfram Web Resource}}{{"{}Bessel Function".} From
+  {MathWorld -- A Wolfram Web Resource}}}.
+\newblock {\latintext
+  \btxurlfont{http://www.mathworld.wolfram.com/BesselFunction.html}}.
+
+\bibitem {walfram_bessel_first}
+\btxnamefont {\btxlastnamefont {Weisstein}, Eric\btxfnamespacelong
+  W.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {{"{}Bessel Function of
+  the First Kind".} from {MathWorld -- A Wolfram Web Resource}}{{"{}Bessel
+  Function of the First Kind".} From {MathWorld -- A Wolfram Web Resource}}}.
+\newblock {\latintext
+  \btxurlfont{http://www.mathworld.wolfram.com/BesselFunctionoftheFirstKind.html}}.
+
+\bibitem {Agilent_vna_cal}
+Agilent Technologies\btxauthorcolon\ \btxtitlefont {Electronic vs. Mechanical
+  Calibration Kits: Calibration Methods and Accuracy}, 2003.
+
+\bibitem {Agilent_vna_err}
+Agilent Technologies\btxauthorcolon\ \btxtitlefont {Agilent Vector Network
+  Analyzer Receiver, Dynamic Accuracy, Specifications ans Uncertainties}, 2011.
+
+\bibitem {Agilent_vna_man}
+Agilent Technologies\btxauthorcolon\ \btxtitlefont {Agilent FieldFox RF Vector
+  Network Analyzer N9923A User's Guide}, 2010.
+
+\bibitem {walfram_error_prop}
+\btxnamefont {\btxlastnamefont {Weisstein}, Eric\btxfnamespacelong
+  W.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {{"{}Error Propagation".}
+  from {MathWorld -- A Wolfram Web Resource}}{{"{}Error Propagation".} From
+  {MathWorld -- A Wolfram Web Resource}}}.
+\newblock {\latintext
+  \btxurlfont{http://www.mathworld.wolfram.com/ErrorPropagation.html}}.
+
+\bibitem {Agilent_an_esp_err}
+Agilent Technologies\btxauthorcolon\ \btxtitlefont {Agilent AN 1316: Optimizing
+  Spectrum Analyzer Amplitude Accuracy}, 2000.
+
+\bibitem {LPT_ana_esp_man}
+LP Technologies\btxauthorcolon\ \btxtitlefont {LPT-6000 Digitally Synthesized
+  RF Spectrum Analyzer User's Guide}.
+
+\bibitem {Krauss}
+\btxnamefont {\btxlastnamefont {Kraus}, J.\btxfnamespacelong D.} \btxandlong
+  {}\ \btxnamefont {R. \btxlastnamefont {Marhefka}}\btxauthorcolon\
+  \btxtitlefont {Antennas for all applications}.
+\newblock \btxpublisherfont {Mc Graw Gill}, New York, USA, \btxeditionnumlong
+  {3}{}, 2002.
+
+\bibitem {Johnson}
+\btxnamefont {\btxlastnamefont {Johnson}, Richard}\btxauthorcolon\
+  \btxtitlefont {Antenna Engineering Handbook}.
+\newblock \btxpublisherfont {Mc Graw Hill}, New York, USA, \btxeditionnumlong
+  {3}{}, 1993.
+
+\bibitem {Milligan}
+\btxnamefont {\btxlastnamefont {Milligan}, Thomas\btxfnamespacelong
+  A.}\btxauthorcolon\ \btxtitlefont {Modern Antenna Design}.
+\newblock \btxpublisherfont {Wiley-Interscience}, New Jersey, USA,
+  \btxeditionnumlong {2}{}, 2005.
+
+\bibitem {Jordan}
+\btxnamefont {\btxlastnamefont {Jordan}, Edward\btxfnamespacelong C.}
+  \btxandlong {}\ \btxnamefont {Keith\btxfnamespacelong G. \btxlastnamefont
+  {Balmain}}\btxauthorcolon\ \btxtitlefont {Electromagnetic Waves and Radiating
+  Systems}.
+\newblock \btxpublisherfont {Prentice Hall}, New Jersey, USA,
+  \btxeditionnumlong {2}{}, 1968.
+
+\bibitem {Fano3}
+\btxnamefont {\btxlastnamefont {Trainotti}, Valentino} \btxandlong {}\
+  \btxnamefont {Walter\btxfnamespacelong Gustavo \btxlastnamefont
+  {Fano}}\btxauthorcolon\ \btxtitlefont {Ingeniería electromagnética, Tomo
+  III}.
+\newblock \btxpublisherfont {Nueva Librería}, Buenos Aires, Argentina, 2009.
+
+\bibitem {Dunsmore}
+\btxnamefont {\btxlastnamefont {Dunsmore}, Joel\btxfnamespacelong
+  P.}\btxauthorcolon\ \btxtitlefont {Handbook of Microwave Component
+  Measurements with Advanced VNA Techniques}.
+\newblock \btxpublisherfont {Wiley-Interscience}, New Jersey, USA, 2012.
+
+\bibitem {Wade}
+\btxnamefont {\btxlastnamefont {Wade}, Paul}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {The w1ghz microwave antenna book online}{The W1GHZ
+  Microwave Antenna Book ONLINE}}, 2003.
+\newblock {\latintext \btxurlfont{http://www.qsl.net/n1bwt/contents.htm}}.
+
+\bibitem {Wikipedia}
+\btxnamefont {\btxlastnamefont {Wikipedia}}.
+\newblock {\latintext \btxurlfont{http://www.wikipedia.com}}.
+
+\bibitem {ieee_std_149}
+\btxtitlefont {ANSI/IEEE Standard Test Procedures for Antennas}.
+\newblock \btxpublisherfont {IEEE Std 149-1979 (R2008)}, 2008.
+
+\bibitem {ieee_std_145}
+\btxtitlefont {IEEE Standard Definitions of Terms for Antennas}.
+\newblock \btxpublisherfont {IEEE Std 145-1993},
+  \btxprintmonthyear{.}{Junio}{1993}{long}.
+
+\bibitem {FEKO}
+\btxnamefont {\btxlastnamefont {Software}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Feko 6.3}{FEKO 6.3}}.
+\newblock \url{https://www.feko.info/}, 2013.
+
+\bibitem {Inkscape}
+\btxnamefont {\btxlastnamefont {Software}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Inkscape 0.48.5}{Inkscape 0.48.5}}.
+\newblock \url{https://inkscape.org/es/}, 2014.
+
+\bibitem {Agilent_gen_rf_man}
+Agilent Technologies\btxauthorcolon\ \btxtitlefont {Agilent N9310A RF Signal
+  Generator User's Guide}, 2007.
+
+\end{thebibliography}

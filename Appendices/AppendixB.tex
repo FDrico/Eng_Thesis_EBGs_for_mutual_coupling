@@ -1,0 +1,954 @@
+\newlength{\longitudNtheta}
+\settowidth{\longitudNtheta}{$N_{\theta}$}
+%\the\longitudNtheta\\
+\newlength{\longitudNphi}
+\settowidth{\longitudNphi}{$N_{\phi}$}
+%\the\longitudNphi\\
+\newlength{\longitudLtheta}
+\settowidth{\longitudLtheta}{$L_{\theta}$}
+%\the\longitudLtheta\\
+\newlength{\longitudLphi}
+\settowidth{\longitudLphi}{$L_{\phi}$}
+%\the\longitudLphi\\
+\newlength{\longitudEtheta}
+\settowidth{\longitudEtheta}{$E_{\theta}$}
+%\the\longitudEtheta\\
+\newlength{\longitudEphi}
+\settowidth{\longitudEphi}{$E_{\phi}$}
+%\the\longitudEphi\\
+\newlength{\longitudEthetanor}
+\settowidth{\longitudEthetanor}{$\lvert E_{\theta}^{\circ}\left(\theta,\phi\right)\rvert^2$}
+%\the\longitudEthetanor\\
+\newlength{\longitudEphinor}
+\settowidth{\longitudEphinor}{$\lvert E_{\phi}^{\circ}\left(\theta,\phi\right)\rvert^2$}
+%\the\longitudEphinor\\
+
+%%%%
+\section{Abertura rectangular con plano conductor infinito y excitación con campo uniforme}
+\label{sec_apendice_b_abert_rect_inf_uni}
+%%%%
+
+%%%%
+Los campos sobre la abertura están dados por:
+%%%%
+\begin{align}
+\mathbf{E}_a &= 
+\begin{cases}
+\makebox[0pt][l]{$E_0\,\versor{y}$}\hphantom{-E_0\,\versor{x}} &\text{si}
+\begin{cases} 
+-a/2 \leq x' \leq a/2\\
+-b/2 \leq y' \leq b/2
+\end{cases}\\
+0  &\text{caso contrario}
+\end{cases}
+\label{ec_apB:1}\\
+\mathbf{H}_a &= 
+\begin{cases} 
+-E_0\,\versor{x} &\text{si}
+\begin{cases} 
+-a/2 \leq x' \leq a/2\\
+-b/2 \leq y' \leq b/2
+\end{cases}\\
+0  & \text{caso contrario}
+\end{cases}
+\label{ec_apB:2}
+\end{align}
+%%%%
+Empleando el modelo equivalente de la Figura \ref{fig_fundamentos:8}, las densidades de corriente quedan expresadas como:
+%%%%
+\begin{align}
+\mathbf{M}_s &=
+\begin{cases}
+2E_0\,\versor{x} & \text{si}
+\begin{cases} 
+-a/2 \leq x' \leq a/2\\
+-b/2 \leq y' \leq b/2
+\end{cases}\\
+0 & \text{caso contrario}
+\end{cases}
+\label{ec_apB:3}\\
+\mathbf{J}_s &= \makebox[0pt][l]{$0$} 
+\hphantom{\begin{cases} 2E_0\,\versor{x}\\0\end{cases}}\kern-\nulldelimiterspace
+\forall\,x',y'
+\label{ec_apB:4}
+\end{align}
+%%%%
+y las expresiones \eqref{grup_ec_fundamentos:4} como:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:1}
+\begin{align}
+N_{\theta} &= 0
+\label{ec_apB:5}\\
+N_{\phi} &= 0
+\label{ec_apB:6}\\
+L_{\theta} &= 2E_0\cos\theta\cos\phi\!\int_{-a/2}^{\,a/2}\!e^{jkx'\sen\theta\cos\phi}\,dx'\!\int_{-b/2}^{\,b/2}\!e^{jky'\sen\theta\sen\phi}\,dy'
+\label{ec_apB:7}\\
+L_{\phi} &= -2E_0\sen\phi\!\int_{-a/2}^{\,a/2}\!e^{jkx'\sen\theta\cos\phi}\,dx'\!\int_{-b/2}^{\,b/2}\!e^{jky'\sen\theta\sen\phi}\,dy'
+\label{ec_apB:8}
+\end{align}
+\end{subequations}
+%%%%
+A partir de la integral definida:
+%%%%
+\begin{align}
+\int_{-c/2}^{\,c/2}\!e^{j\alpha z}\,dz &= c\!\left[\rule{0pt}{25pt}\dfrac{\sen\left(\dfrac{\alpha}{2}\, c\right)}{\dfrac{\alpha}{2}\, c}\right]
+\label{ec_apB:9}
+\end{align}
+%%%%
+las expresiones \eqref{ec_apB:7} y \eqref{ec_apB:8} se reducen a:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:2}
+\begin{align}
+L_{\theta} &= 2abE_0\!\left[\cos\theta\cos\phi\left(\frac{\sen X}{X}\right)\!\left(\frac{\sen Y}{Y}\right)\right]
+\label{ec_apB:10}\\
+L_{\phi} &= - 2abE_0\!\left[\sen\phi\left(\frac{\sen X}{X}\right)\!\left(\frac{\sen Y}{Y}\right)\right]
+\label{ec_apB:11}
+\end{align}
+\end{subequations}
+%%%%
+donde:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:3}
+\begin{align}
+X &= \frac{ka}{2}\sen\theta\cos\phi
+\label{ec_apB:12}\\
+Y &= \frac{kb}{2}\sen\theta\sen\phi
+\label{ec_apB:13}
+\end{align}
+\end{subequations}
+%%%%
+Introduciendo las expresiones \eqref{grup_ec_apB:2}, los campos radiados por la abertura \eqref{grup_ec_fundamentos:3} pueden expresarse como:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:4}
+\begin{align}
+E_r &\simeq 0
+\label{ec_apB:14}\\
+E_\theta &\simeq j\frac{abkE_0e^{-jkr}}{2\pi r}\left[\sen\phi\left(\frac{\sen X}{X}\right)\!\left(\frac{\sen Y}{Y}\right)\right]
+\label{ec_apB:15}\\
+E_\phi &\simeq j\frac{abkE_0e^{-jkr}}{2\pi r}\left[\cos\theta\cos\phi\left(\frac{\sen X}{X}\right)\!\left(\frac{\sen Y}{Y}\right)\right]
+\label{ec_apB:16}\\
+H_r &\simeq 0
+\label{ec_apB:17}\\
+H_\theta &\simeq -\frac{E_\phi}{\eta}
+\label{ec_apB:18}\\
+H_\phi &\simeq +\frac{E_\theta}{\eta}
+\label{ec_apB:19}
+\end{align}
+\end{subequations}
+%%%%
+Para hallar la intensidad de radiación a partir de la expresión \eqref{ec_intro:15}, primero se determina $\lvert E_{\theta}^{\circ}\left(\theta,\phi\right)\rvert^2$ y $\lvert E_{\phi}^{\circ}\left(\theta,\phi\right)\rvert^2$, cuyas expresiones son:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:5}
+\begin{align}
+\lvert E_{\theta}^{\circ}\left(\theta,\phi\right)\rvert^2 &= \frac{a^2b^2k^2\left|E_0\right|^2}{4\pi^2 r^2}\sen^2\phi\left(\frac{\sen X}{X}\right)^2\!\left(\frac{\sen Y}{Y}\right)^2
+\label{ec_apB:20}\\
+\lvert E_{\phi}^{\circ}\left(\theta,\phi\right)\rvert^2 &= \frac{a^2b^2k^2\left|E_0\right|^2}{4\pi^2 r^2}\cos^2\theta\cos^2\phi\left(\frac{\sen X}{X}\right)^2\!\left(\frac{\sen Y}{Y}\right)^2
+\label{ec_apB:21}
+\end{align}
+\end{subequations}
+%%%%
+La expresión de la intensidad de radiación resulta:
+%%%%
+\begin{align}
+U = \frac{a^2b^2k^2\left|E_0\right|^2}{8\pi^2\eta}\left(\sen^2\phi + \cos^2\theta\cos^2\phi \right)\!\left(\frac{\sen X}{X}\right)^2\!\left(\frac{\sen Y}{Y}\right)^2
+\label{ec_apB:22}
+\end{align}
+%%%%
+De la expresión \eqref{ec_apB:22} se ontiene el factor de diagrama de potencia $F\left(\theta,\phi\right)$ y la constante $B_0$, por lo que:
+%%%%
+\begin{gather}
+F\left(\theta,\phi\right) = \left(\sen^2\phi + \cos^2\theta\cos^2\phi \right)\!\left(\frac{\sen X}{X}\right)^2\!\left(\frac{\sen Y}{Y}\right)^2
+\label{ec_apB:23}\\
+B_0 = \frac{a^2b^2k^2\left|E_0\right|^2}{8\pi^2 \eta}
+\label{ec_apB:24}
+\end{gather}
+%%%%
+La directividad se calcula a partir de la expresión \eqref{ec_intro:18}, empleando el factor de diagrama de potencia determinado en la expresión \eqref{ec_apB:23}.
+%%%%
+
+%%%%
+\section{Abertura rectangular con plano conductor infinito y excitación con campo sinusoidal en modo dominante}
+\label{sec_apendice_b_abert_rect_inf_dom}
+%%%%
+
+%%%%
+A partir de las componentes transversales de los campos en una guía de onda rectangular para modo dominante, cuyas expresiones son \eqref{grup_ec_apA:17}, se deduce que los campos sobre la abertura están dados por:
+%%%%
+\begin{align}
+\mathbf{E}_a &= 
+\begin{cases}
+\makebox[0pt][l]{$E_0\cos\left(\dfrac{\pi}{a}x'\right)\versor{y}$}\hphantom{-\dfrac{E_0}{\eta}\cos\left(\dfrac{\pi}{a}x'\right)\versor{x}} &\text{si}
+\begin{cases} 
+-a/2 \leq x' \leq a/2\\
+-b/2 \leq y' \leq b/2
+\end{cases}\\
+0  &\text{caso contrario}
+\end{cases}
+\label{ec_apB:25}\\
+\mathbf{H}_a &= 
+\begin{cases} 
+-\dfrac{E_0}{\eta}\cos\left(\dfrac{\pi}{a}x'\right)\versor{x} &\text{si}
+\begin{cases} 
+-a/2 \leq x' \leq a/2\\
+-b/2 \leq y' \leq b/2
+\end{cases}\\
+0  & \text{caso contrario}
+\end{cases}
+\label{ec_apB:26}
+\end{align}
+%%%%
+Empleando el modelo equivalente de la Figura \ref{fig_fundamentos:9}, las densidades de corriente quedan expresadas como:
+%%%%
+\begin{align}
+\mathbf{M}_s &=
+\begin{cases}
+2E_0\cos\left(\dfrac{\pi}{a}x'\right)\versor{x} & \text{si}
+\begin{cases} 
+-a/2 \leq x' \leq a/2\\
+-b/2 \leq y' \leq b/2
+\end{cases}\\
+0 & \text{caso contrario}
+\end{cases}
+\label{ec_apB:27}\\
+\mathbf{J}_s &= \makebox[0pt][l]{$0$} 
+\hphantom{\begin{cases} 2E_0\cos\left(\dfrac{\pi}{a}x'\right)\versor{x}\\0\end{cases}}\kern-\nulldelimiterspace
+\forall\,x',y'
+\label{ec_apB:28}
+\end{align}
+%%%%
+y las expresiones \eqref{grup_ec_fundamentos:4} como:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:6}
+\begin{align}
+N_{\theta} &= 0
+\label{ec_apB:29}\\
+N_{\phi} &= 0
+\label{ec_apB:30}\\
+L_{\theta}  &= 2E_0\cos\theta\cos\phi\!\int_{-a/2}^{\,a/2}\!\cos\left(\dfrac{\pi}{a}x'\right)e^{jkx'\sen\theta\cos\phi}\,dx'\!\int_{-b/2}^{\,b/2}\!e^{jky'\sen\theta\sen\phi}\,dy'
+\label{ec_apB:31}\\
+L_{\phi} &= -2E_0\sen\phi\!\int_{-a/2}^{\,a/2}\!\cos\left(\dfrac{\pi}{a}x'\right)e^{jkx'\sen\theta\cos\phi}\,dx'\!\int_{-b/2}^{\,b/2}\!e^{jky'\sen\theta\sen\phi}\,dy'
+\label{ec_apB:32}
+\end{align}
+\end{subequations}
+%%%%
+A partir de las integrales definidas:
+%%%%
+\begin{gather}
+\int_{-c/2}^{\,c/2}\!\cos\left(\beta z\right)e^{j\alpha z}\,dz = \frac{c}{2}\!\left[\rule{0pt}{32pt}\dfrac{\sen\left(\dfrac{\alpha + \beta}{2}\, c\right)}{\dfrac{\alpha + \beta}{2}\, c} + \dfrac{\sen\left(\dfrac{\alpha - \beta}{2}\, c\right)}{\dfrac{\alpha - \beta}{2}\, c}\right]
+\label{ec_apB:33}\\
+\int_{-c/2}^{\,c/2}\!e^{j\alpha z}\,dz = c\!\left[\rule{0pt}{25pt}\dfrac{\sen\left(\dfrac{\alpha}{2}\, c\right)}{\dfrac{\alpha}{2}\, c}\right]
+\label{ec_apB:34}
+\end{gather}
+%%%%
+las expresiones \eqref{ec_apB:31} y \eqref{ec_apB:32} se reducen a:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:7}
+\begin{align}
+&\hspace{\longitudLphi}\hspace{-\longitudLtheta}\raisebox{2.31mm}{$L_{\theta} = -\pi abE_0$}\!\left[\raisebox{2.31mm}{$\cos\theta\cos\phi$}\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)\!\raisebox{2.31mm}{$\left(\dfrac{\sen Y}{Y}\right)$}\!\right]
+\label{ec_apB:35}\\
+&\raisebox{2.31mm}{$L_{\phi} = \pi abE_0$}\!\left[\raisebox{2.31mm}{$\sen\phi$}\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)\!\raisebox{2.31mm}{$\left(\dfrac{\sen Y}{Y}\right)$}\!\right]
+\label{ec_apB:36}
+\end{align}
+\end{subequations}
+%%%%
+donde:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:8}
+\begin{align}
+X &= \frac{ka}{2}\sen\theta\cos\phi
+\label{ec_apB:37}\\
+Y &= \frac{kb}{2}\sen\theta\sen\phi
+\label{ec_apB:38}
+\end{align}
+\end{subequations}
+%%%%
+Introduciendo las expresiones \eqref{grup_ec_apB:7}, los campos radiados por la abertura \eqref{grup_ec_fundamentos:3} pueden expresarse como:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:9}
+\begin{align}
+E_r &\simeq 0
+\label{ec_apB:39}\\
+&\hspace{-\longitudEtheta}\raisebox{2.31mm}{$E_{\theta} \simeq - j\dfrac{abkE_0e^{-jkr}}{4r}$}\!\left[\raisebox{2.31mm}{$\sen\phi$}\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)\!\raisebox{2.31mm}{$\left(\dfrac{\sen Y}{Y}\right)$}\!\right]
+\label{ec_apB:40}\\
+&\hspace{-\longitudEphi}\raisebox{2.31mm}{$E_{\phi} \simeq - j\dfrac{abkE_0e^{-jkr}}{4r}$}\!\left[\raisebox{2.31mm}{$\cos\theta\cos\phi$}\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)\!\raisebox{2.31mm}{$\left(\dfrac{\sen Y}{Y}\right)$}\!\right]
+\label{ec_apB:41}\\
+H_r &\simeq 0
+\label{ec_apB:42}\\
+H_\theta &\simeq -\frac{E_\phi}{\eta}
+\label{ec_apB:43}\\
+H_\phi &\simeq +\frac{E_\theta}{\eta}
+\label{ec_apB:44}
+\end{align}
+\end{subequations}
+%%%%
+Para hallar la intensidad de radiación a partir de la expresión \eqref{ec_intro:15}, primero se determina $\lvert E_{\theta}^{\circ}\left(\theta,\phi\right)\rvert^2$ y $\lvert E_{\phi}^{\circ}\left(\theta,\phi\right)\vert^2$, cuyas expresiones son:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:10}
+\begin{align}
+&\hspace{\longitudEphinor}\hspace{-\longitudEthetanor}\raisebox{2.31mm}{$\lvert E_{\theta}^{\circ}\left(\theta,\phi\right)\rvert^2 = \dfrac{a^2b^2k^2\left|E_0\right|^2}{16r^2}\sen^2\phi$}\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)^{\!2}\!\raisebox{2.31mm}{$\left(\dfrac{\sen Y}{Y}\right)^2$}
+\label{ec_apB:45}\\
+&\raisebox{2.31mm}{$\lvert E_{\phi}^{\circ}\left(\theta,\phi\right)\rvert^2 = \dfrac{a^2b^2k^2\left|E_0\right|^2}{16r^2}\cos^2\theta\cos^2\phi$}\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)^{\!2}\!\raisebox{2.31mm}{$\left(\dfrac{\sen Y}{Y}\right)^2$}
+\label{ec_apB:46}
+\end{align}
+\end{subequations}
+%%%%
+La expresión de la intensidad de radiación resulta:
+%%%%
+\begin{align}
+\raisebox{2.31mm}{$U = \dfrac{a^2b^2k^2\left|E_0\right|^2}{32\eta}\left(\sen^2\phi + \cos^2\theta\cos^2\phi\right)$}\!\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)^{\!2}\!\raisebox{2.31mm}{$\left(\dfrac{\sen Y}{Y}\right)^2$}
+\label{ec_apB:47}
+\end{align}
+%%%%
+De la expresión \eqref{ec_apB:47} se obtiene el factor de diagrama de potencia $F\left(\theta,\phi\right)$ y la constante $B_0$, por lo que:
+%%%%
+\begin{gather}
+\raisebox{2.31mm}{$F\left(\theta,\phi\right) = \left(\sen^2\phi + \cos^2\theta\cos^2\phi\right)$}\!\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)^{\!2}\!\raisebox{2.31mm}{$\left(\dfrac{\sen Y}{Y}\right)^2$}
+\label{ec_apB:48}\\
+B_0 = \frac{a^2b^2k^2\left|E_0\right|^2}{32\eta}
+\label{ec_apB:49}
+\end{gather}
+%%%%
+La directividad se calcula a partir de la expresión \eqref{ec_intro:18}, empleando el factor de diagrama de potencia determinado en la expresión \eqref{ec_apB:48}.
+%%%%
+
+%%%%
+\section{Guía de onda rectangular con extremo abierto}
+\label{sec_apendice_b_guia_rect}
+%%%%
+
+%%%%
+A partir de las componentes transversales de los campos en una guía de onda rectangular para modo dominante, cuyas expresiones son \eqref{grup_ec_apA:17}, se deduce que los campos sobre la abertura están dados por:
+%%%%
+\begin{align}
+\mathbf{E}_a &= 
+\begin{cases}
+\makebox[0pt][l]{$E_0\cos\left(\dfrac{\pi}{a}x'\right)\versor{y}$}\hphantom{-\dfrac{E_0}{\eta}\cos\left(\dfrac{\pi}{a}x'\right)\versor{x}} &\text{si}
+\begin{cases} 
+-a/2 \leq x' \leq a/2\\
+-b/2 \leq y' \leq b/2
+\end{cases}\\
+0  &\text{caso contrario}
+\end{cases}
+\label{ec_apB:50}\\
+\mathbf{H}_a &= 
+\begin{cases} 
+-\dfrac{E_0}{\eta}\cos\left(\dfrac{\pi}{a}x'\right)\versor{x} &\text{si}
+\begin{cases} 
+-a/2 \leq x' \leq a/2\\
+-b/2 \leq y' \leq b/2
+\end{cases}\\
+0  & \text{caso contrario}
+\end{cases}
+\label{ec_apB:51}
+\end{align}
+%%%%
+Empleando el modelo equivalente de la Figura \ref{fig_fundamentos:10}, las densidades de corriente quedan expresadas como:
+%%%%
+\begin{align}
+\mathbf{M}_s &=
+\begin{cases}
+\makebox[0pt][l]{$E_0\cos\left(\dfrac{\pi}{a}x'\right)\versor{x}$}\hphantom{-\dfrac{E_0}{\eta}\cos\left(\dfrac{\pi}{a}x'\right)\versor{y}} &\text{si}
+\begin{cases} 
+-a/2 \leq x' \leq a/2\\
+-b/2 \leq y' \leq b/2
+\end{cases}\\
+0 & \text{caso contrario}
+\end{cases}
+\label{ec_apB:52}\\
+\mathbf{J}_s &= 
+\begin{cases} 
+-\dfrac{E_0}{\eta}\cos\left(\dfrac{\pi}{a}x'\right)\versor{y} &\text{si}
+\begin{cases} 
+-a/2 \leq x' \leq a/2\\
+-b/2 \leq y' \leq b/2
+\end{cases}\\
+0  &\text{caso contrario}
+\end{cases}
+\label{ec_apB:53}
+\end{align}
+%%%%
+y las expresiones \eqref{grup_ec_fundamentos:4} como:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:11}
+\begin{align}
+N_{\theta} &= -\frac{E_0}{\eta}\cos\theta\sen\phi\!\int_{-a/2}^{\,a/2}\!\cos\left(\dfrac{\pi}{a}x'\right)e^{jkx'\sen\theta\cos\phi}\,dx'\!\int_{-b/2}^{\,b/2}\!e^{jky'\sen\theta\sen\phi}\,dy'
+\label{ec_apB:54}\\
+N_{\phi} &= -\frac{E_0}{\eta}\cos\phi\!\int_{-a/2}^{\,a/2}\!\cos\left(\dfrac{\pi}{a}x'\right)e^{jkx'\sen\theta\cos\phi}\,dx'\!\int_{-b/2}^{\,b/2}\!e^{jky'\sen\theta\sen\phi}\,dy'
+\label{ec_apB:55}\\
+L_{\theta}  &= E_0\cos\theta\cos\phi\!\int_{-a/2}^{\,a/2}\!\cos\left(\dfrac{\pi}{a}x'\right)e^{jkx'\sen\theta\cos\phi}\,dx'\!\int_{-b/2}^{\,b/2}\!e^{jky'\sen\theta\sen\phi}\,dy'
+\label{ec_apB:56}\\
+L_{\phi} &= -E_0\sen\phi\!\int_{-a/2}^{\,a/2}\!\cos\left(\dfrac{\pi}{a}x'\right)e^{jkx'\sen\theta\cos\phi}\,dx'\!\int_{-b/2}^{\,b/2}\!e^{jky'\sen\theta\sen\phi}\,dy'
+\label{ec_apB:57}
+\end{align}
+\end{subequations}
+%%%%
+A partir de las integrales definidas:
+%%%%
+\begin{gather}
+\int_{-c/2}^{\,c/2}\!\cos\left(\beta z\right)e^{j\alpha z}\,dz = \frac{c}{2}\!\left[\rule{0pt}{32pt}\dfrac{\sen\left(\dfrac{\alpha + \beta}{2}\, c\right)}{\dfrac{\alpha + \beta}{2}\, c} + \dfrac{\sen\left(\dfrac{\alpha - \beta}{2}\, c\right)}{\dfrac{\alpha - \beta}{2}\, c}\right]
+\label{ec_apB:58}\\
+\int_{-c/2}^{\,c/2}\!e^{j\alpha z}\,dz = c\!\left[\rule{0pt}{25pt}\dfrac{\sen\left(\dfrac{\alpha}{2}\, c\right)}{\dfrac{\alpha}{2}\, c}\right]
+\label{ec_apB:59}
+\end{gather}
+%%%%
+las expresiones \eqref{grup_ec_apB:11} se reducen a:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:12}
+\begin{align}
+&\hspace{\longitudNphi}\hspace{-\longitudNtheta}\raisebox{2.31mm}{$N_{\theta} = \pi ab\dfrac{E_0}{2\eta}$}\!\left[\raisebox{2.31mm}{$\cos\theta\sen\phi$}\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)\!\raisebox{2.31mm}{$\left(\dfrac{\sen Y}{Y}\right)$}\!\right]
+\label{ec_apB:60}\\
+&\raisebox{2.31mm}{$N_{\phi} = \pi ab\dfrac{E_0}{2\eta}$}\!\left[\raisebox{2.31mm}{$\cos\phi$}\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)\!\raisebox{2.31mm}{$\left(\dfrac{\sen Y}{Y}\right)$}\!\right]
+\label{ec_apB:61}\\
+&\hspace{\longitudNphi}\hspace{-\longitudLtheta}\raisebox{2.31mm}{$L_{\theta} = -\pi ab\dfrac{E_0}{2}$}\!\left[\raisebox{2.31mm}{$\cos\theta\cos\phi$}\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)\!\raisebox{2.31mm}{$\left(\dfrac{\sen Y}{Y}\right)$}\!\right]
+\label{ec_apB:62}\\
+&\hspace{\longitudNphi}\hspace{-\longitudLphi}\raisebox{2.31mm}{$L_{\phi} = \pi ab\dfrac{E_0}{2}$}\!\left[\raisebox{2.31mm}{$\sen\phi$}\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)\!\raisebox{2.31mm}{$\left(\dfrac{\sen Y}{Y}\right)$}\!\right]
+\label{ec_apB:63}
+\end{align}
+\end{subequations}
+%%%%
+donde:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:13}
+\begin{align}
+X &= \dfrac{ka}{2}\sen\theta\cos\phi
+\label{ec_apB:64}\\
+Y &= \dfrac{kb}{2}\sen\theta\sen\phi
+\label{ec_apB:65}
+\end{align}
+\end{subequations}
+%%%%
+Introduciendo las expresiones \eqref{grup_ec_apB:12}, los campos radiados por la abertura \eqref{grup_ec_fundamentos:3} pueden expresarse como:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:14}
+\begin{align}
+E_r &\simeq 0
+\label{ec_apB:66}\\
+&\hspace{-\longitudEtheta}\raisebox{2.31mm}{$E_{\theta} \simeq - j\dfrac{abkE_0e^{-jkr}}{4r}$}\!\left[\raisebox{2.31mm}{$\!\left(\dfrac{1 + \cos\theta}{2}\right)\sen\phi$}\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)\!\raisebox{2.31mm}{$\left(\dfrac{\sen Y}{Y}\right)$}\!\right]
+\label{ec_apB:67}\\
+&\hspace{-\longitudEphi}\raisebox{2.31mm}{$E_{\phi} \simeq - j\dfrac{abkE_0e^{-jkr}}{4r}$}\!\left[\raisebox{2.31mm}{$\!\left(\dfrac{1 + \cos\theta}{2}\right)\cos\phi$}\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)\!\raisebox{2.31mm}{$\left(\dfrac{\sen Y}{Y}\right)$}\!\right]
+\label{ec_apB:68}\\
+H_r &\simeq 0
+\label{ec_apB:69}\\
+H_\theta &\simeq -\frac{E_\phi}{\eta}
+\label{ec_apB:70}\\
+H_\phi &\simeq +\frac{E_\theta}{\eta}
+\label{ec_apB:71}
+\end{align}
+\end{subequations}
+%%%%
+Para hallar la intensidad de radiación a partir de la expresión \eqref{ec_intro:15}, primero se determina $\lvert E_{\theta}^{\circ}\left(\theta,\phi\right)\rvert^2$ y $\lvert E_{\phi}^{\circ}\left(\theta,\phi\right)\vert^2$, cuyas expresiones son:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:15}
+\begin{align}
+&\hspace{\longitudEphinor}\hspace{-\longitudEthetanor}\raisebox{2.31mm}{$\lvert E_{\theta}^{\circ}\left(\theta,\phi\right)\rvert^2 = \dfrac{a^2b^2k^2\left|E_0\right|^2}{16r^2}\left(\dfrac{1 + \cos\theta}{2}\right)^2\!\sen^2\phi$}\!\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)^{\!2}\!\raisebox{2.31mm}{$\left(\dfrac{\sen Y}{Y}\right)^2$}
+\label{ec_apB:72}\\
+&\raisebox{2.31mm}{$\lvert E_{\phi}^{\circ}\left(\theta,\phi\right)\rvert^2 = \dfrac{a^2b^2k^2\left|E_0\right|^2}{16r^2}\left(\dfrac{1 + \cos\theta}{2}\right)^2\!\cos^2\phi$}\!\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)^{\!2}\!\raisebox{2.31mm}{$\left(\dfrac{\sen Y}{Y}\right)^2$}
+\label{ec_apB:73}
+\end{align}
+\end{subequations}
+%%%%
+La expresión de la intensidad de radiación resulta:
+%%%%
+\begin{align}
+\raisebox{2.31mm}{$U = \dfrac{a^2b^2k^2\left|E_0\right|^2}{32\eta}\left(\dfrac{1 + \cos\theta}{2}\right)^2$}\!\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)^{\!2}\!\raisebox{2.31mm}{$\left(\dfrac{\sen Y}{Y}\right)^2$}
+\label{ec_apB:74}
+\end{align}
+%%%%
+De la expresión \eqref{ec_apB:74} se obtiene el factor de diagrama de potencia $F\left(\theta,\phi\right)$ y la constante $B_0$, por lo que:
+%%%%
+\begin{gather}
+\raisebox{2.31mm}{$F\left(\theta,\phi\right) = \left(\dfrac{1 + \cos\theta}{2}\right)^2$}\!\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)^{\!2}\!\raisebox{2.31mm}{$\left(\dfrac{\sen Y}{Y}\right)^2$}
+\label{ec_apB:75}\\
+B_0 = \frac{a^2b^2k^2\left|E_0\right|^2}{32\eta}
+\label{ec_apB:76}
+\end{gather}
+%%%%
+La directividad se calcula a partir de la expresión \eqref{ec_intro:18}, empleando el factor de diagrama de potencia determinado en la expresión \eqref{ec_apB:75}.
+%%%%
+
+%%%%
+\section{Bocina sectorial E}
+\label{sec_apendice_b_boci_sece}
+%%%%
+
+%%%%
+A partir de las componentes transversales de los campos en una guía de onda rectangular para modo dominante, cuyas expresiones son \eqref{grup_ec_apA:17}, y considerando que la fase no es uniforme sobre la abertura, se deduce que los campos sobre la abertura están dados por:
+%%%%
+\begin{align}
+\mathbf{E}_a &= 
+\begin{cases}
+\makebox[0pt][l]{$E_0\cos\left(\dfrac{\pi}{a}x'\right)\!e^{-jk\delta\left(y'\right)}\,\versor{y}$}\hphantom{-\dfrac{E_0}{\eta}\cos\left(\dfrac{\pi}{a}x'\right)\!e^{-jk\delta\left(y'\right)}\,\versor{x}} &\text{si}
+\begin{cases} 
+-a/2 \leq x' \leq a/2\\
+-B/2 \leq y' \leq B/2
+\end{cases}\\
+0  &\text{caso contrario}
+\end{cases}
+\label{ec_apB:77}\\
+\mathbf{H}_a &= 
+\begin{cases} 
+-\dfrac{E_0}{\eta}\cos\left(\dfrac{\pi}{a}x'\right)\!e^{-jk\delta\left(y'\right)}\,\versor{x} &\text{si}
+\begin{cases} 
+-a/2 \leq x' \leq a/2\\
+-B/2 \leq y' \leq B/2
+\end{cases}\\
+0  & \text{caso contrario}
+\end{cases}
+\label{ec_apB:78}
+\end{align}
+%%%%
+donde el término $e^{-jk\delta\left(y'\right)}$ representa la variación de fase de los campos sobre la abertura en la dirección \emph{y}.
+
+Empleando el modelo equivalente de la Figura \ref{fig_fundamentos:10}, las densidades de corriente quedan expresadas como:
+%%%%
+\begin{align}
+\mathbf{M}_s &=
+\begin{cases}
+\makebox[0pt][l]{$E_0\cos\left(\dfrac{\pi}{a}x'\right)\!e^{-jk\delta\left(y'\right)}\,\versor{x}$}\hphantom{-\dfrac{E_0}{\eta}\cos\left(\dfrac{\pi}{a}x'\right)\!e^{-jk\delta\left(y'\right)}\,\versor{y}} &\text{si}
+\begin{cases} 
+-a/2 \leq x' \leq a/2\\
+-B/2 \leq y' \leq B/2
+\end{cases}\\
+0 & \text{caso contrario}
+\end{cases}
+\label{ec_apB:79}\\
+\mathbf{J}_s &= 
+\begin{cases} 
+-\dfrac{E_0}{\eta}\cos\left(\dfrac{\pi}{a}x'\right)\!e^{-jk\delta\left(y'\right)}\,\versor{y} &\text{si}
+\begin{cases} 
+-a/2 \leq x' \leq a/2\\
+-B/2 \leq y' \leq B/2
+\end{cases}\\
+0  &\text{caso contrario}
+\end{cases}
+\label{ec_apB:80}
+\end{align}
+%%%%
+y las expresiones \eqref{grup_ec_fundamentos:4} como:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:16}
+\begin{align}
+N_{\theta} &= -\frac{E_0}{\eta}\cos\theta\sen\phi\!\int_{-a/2}^{\,a/2}\!\cos\left(\dfrac{\pi}{a}x'\right)e^{jkx'\sen\theta\cos\phi}\,dx'\!\int_{-B/2}^{\,B/2}\!e^{jky'\sen\theta\sen\phi}e^{-jk\delta\left(y'\right)}\,dy'
+\label{ec_apB:81}\\
+N_{\phi} &= -\frac{E_0}{\eta}\cos\phi\!\int_{-a/2}^{\,a/2}\!\cos\left(\dfrac{\pi}{a}x'\right)e^{jkx'\sen\theta\cos\phi}\,dx'\!\int_{-B/2}^{\,B/2}e^{jky'\sen\theta\sen\phi}\!e^{-jk\delta\left(y'\right)}\,dy'
+\label{ec_apB:82}\\
+L_{\theta}  &= E_0\cos\theta\cos\phi\!\int_{-a/2}^{\,a/2}\!\cos\left(\dfrac{\pi}{a}x'\right)e^{jkx'\sen\theta\cos\phi}\,dx'\!\int_{-B/2}^{\,B/2}e^{jky'\sen\theta\sen\phi}\!e^{-jk\delta\left(y'\right)}\,dy'
+\label{ec_apB:83}\\
+L_{\phi} &= -E_0\sen\phi\!\int_{-a/2}^{\,a/2}\!\cos\left(\dfrac{\pi}{a}x'\right)e^{jkx'\sen\theta\cos\phi}\,dx'\!\int_{-B/2}^{\,B/2}e^{jky'\sen\theta\sen\phi}\!e^{-jk\delta\left(y'\right)}\,dy'
+\label{ec_apB:84}
+\end{align}
+\end{subequations}
+%%%%
+A partir de la integral definida:
+%%%%
+\begin{align}
+\int_{-c/2}^{\,c/2}\!\cos\left(\beta z\right)e^{j\alpha z}\,dz = \frac{c}{2}\!\left[\rule{0pt}{32pt}\dfrac{\sen\left(\dfrac{\alpha + \beta}{2}\, c\right)}{\dfrac{\alpha + \beta}{2}\, c} + \dfrac{\sen\left(\dfrac{\alpha - \beta}{2}\, c\right)}{\dfrac{\alpha - \beta}{2}\, c}\right]
+\label{ec_apB:85}
+\end{align}
+%%%%
+las expresiones \eqref{grup_ec_apB:16} se reducen a:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:17}
+\begin{align}
+&\hspace{\longitudNphi}\hspace{-\longitudNtheta}\raisebox{2.31mm}{$N_{\theta} = \pi a\dfrac{E_0}{2\eta}$}\!\left[\raisebox{2.31mm}{$\cos\theta\sen\phi$}\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)\!\raisebox{2.31mm}{$\mathbf{I}_1$}\,\right]
+\label{ec_apB:86}\\
+&\raisebox{2.31mm}{$N_{\phi} = \pi a\dfrac{E_0}{2\eta}$}\!\left[\raisebox{2.31mm}{$\cos\phi$}\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)\!\raisebox{2.31mm}{$\mathbf{I}_1$}\,\right]
+\label{ec_apB:87}\\
+&\hspace{\longitudNphi}\hspace{-\longitudLtheta}\raisebox{2.31mm}{$L_{\theta} = -\pi a\dfrac{E_0}{2}$}\!\left[\raisebox{2.31mm}{$\cos\theta\cos\phi$}\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)\!\raisebox{2.31mm}{$\mathbf{I}_1$}\,\right]
+\label{ec_apB:88}\\
+&\hspace{\longitudNphi}\hspace{-\longitudLphi}\raisebox{2.31mm}{$L_{\phi} = \pi a\dfrac{E_0}{2}$}\!\left[\raisebox{2.31mm}{$\sen\phi$}\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)\!\raisebox{2.31mm}{$\mathbf{I}_1$}\,\right]
+\label{ec_apB:89}
+\end{align}
+\end{subequations}
+%%%
+donde:
+%%%%
+\begin{gather}
+\mathbf{I}_1 = \int_{-B/2}^{\,B/2}\!e^{jky'\sen\theta\sen\phi}e^{-jk\delta\left(y'\right)}\,dy'
+\label{ec_apB:90}\\
+X = \frac{ka}{2}\sen\theta\cos\phi
+\label{ec_apB:91}
+\end{gather}
+%%%%
+La integral $\mathbf{I}_1$ se resuelve numéricamente, expresando la diferencia de caminos en la dirección \emph{y} $\delta\left(y'\right)$ como:
+%%%%
+\begin{align}
+\delta\left(y'\right) = R - R_1 = \sqrt{{R_1}^2 + {y'}^2} - R_1
+\label{ec_apB:92}
+\end{align}
+%%%%
+Introduciendo las expresiones \eqref{grup_ec_apB:17}, los campos radiados por la abertura \eqref{grup_ec_fundamentos:3} pueden expresarse como:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:18}
+\begin{align}
+E_r &\simeq 0
+\label{ec_apB:93}\\
+&\hspace{-\longitudEtheta}\raisebox{2.31mm}{$E_{\theta} \simeq - j\dfrac{akE_0e^{-jkr}}{4r}$}\!\left[\raisebox{2.31mm}{$\!\left(\dfrac{1 + \cos\theta}{2}\right)\sen\phi$}\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)\!\raisebox{2.31mm}{$\mathbf{I}_1$}\right]
+\label{ec_apB:94}\\
+&\hspace{-\longitudEphi}\raisebox{2.31mm}{$E_{\phi} \simeq - j\dfrac{akE_0e^{-jkr}}{4r}$}\!\left[\raisebox{2.31mm}{$\!\left(\dfrac{1 + \cos\theta}{2}\right)\cos\phi$}\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)\!\raisebox{2.31mm}{$\mathbf{I}_1$}\right]
+\label{ec_apB:95}\\
+H_r &\simeq 0
+\label{ec_apB:96}\\
+H_\theta &\simeq -\frac{E_\phi}{\eta}
+\label{ec_apB:97}\\
+H_\phi &\simeq +\frac{E_\theta}{\eta}
+\label{ec_apB:98}
+\end{align}
+\end{subequations}
+%%%%
+Para hallar la intensidad de radiación a partir de la expresión \eqref{ec_intro:15}, primero se determina $\lvert E_{\theta}^{\circ}\left(\theta,\phi\right)\rvert^2$ y $\lvert E_{\phi}^{\circ}\left(\theta,\phi\right)\vert^2$, cuyas expresiones son:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:19}
+\begin{align}
+&\hspace{\longitudEphinor}\hspace{-\longitudEthetanor}\raisebox{2.31mm}{$\lvert E_{\theta}^{\circ}\left(\theta,\phi\right)\rvert^2 = \dfrac{a^2k^2\left|E_0\right|^2}{16r^2}\left(\dfrac{1 + \cos\theta}{2}\right)^2\!\sen^2\phi$}\!\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)^{\!2}\!\raisebox{2.31mm}{$\lvert{\mathbf{I}_1}\rvert^2$}
+\label{ec_apB:99}\\
+&\raisebox{2.31mm}{$\lvert E_{\phi}^{\circ}\left(\theta,\phi\right)\rvert^2 = \dfrac{a^2k^2\left|E_0\right|^2}{16r^2}\left(\dfrac{1 + \cos\theta}{2}\right)^2\!\cos^2\phi$}\!\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)^{\!2}\!\raisebox{2.31mm}{$\lvert{\mathbf{I}_1}\rvert^2$}
+\label{ec_apB:100}
+\end{align}
+\end{subequations}
+%%%%
+La expresión de la intensidad de radiación resulta:
+%%%%
+\begin{align}
+\raisebox{2.31mm}{$U = \dfrac{a^2k^2\left|E_0\right|^2}{32\eta}\left(\dfrac{1 + \cos\theta}{2}\right)^2$}\!\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)^{\!2}\!\raisebox{2.31mm}{$\lvert{\mathbf{I}_1}\rvert^2$}
+\label{ec_apB:101}
+\end{align}
+%%%%
+De la expresión \eqref{ec_apB:101} se obtiene el factor de diagrama de potencia $F\left(\theta,\phi\right)$ y la constante $B_0$, por lo que:
+%%%%
+\begin{gather}
+\raisebox{2.31mm}{$F\left(\theta,\phi\right) = \left(\dfrac{1 + \cos\theta}{2}\right)^2$}\!\left(\raisebox{2.31mm}{$\dfrac{\cos X}{X^2 - \left(\dfrac{\pi}{2}\right)^2}$}\right)^{\!2}\!\raisebox{2.31mm}{$\lvert{\mathbf{I}_1}\rvert^2$}
+\label{ec_apB:102}\\
+B_0 = \frac{a^2k^2\left|E_0\right|^2}{32\eta}
+\label{ec_apB:103}
+\end{gather}
+%%%%
+La directividad se calcula a partir de la expresión \eqref{ec_intro:18}, empleando el factor de diagrama de potencia determinado en la expresión \eqref{ec_apB:102}.
+%%%%
+
+%%%%
+\section{Bocina sectorial H}
+\label{sec_apendice_b_boci_sech}
+%%%%
+
+%%%%
+A partir de las componentes transversales de los campos en una guía de onda rectangular para modo dominante, cuyas expresiones son \eqref{grup_ec_apA:17}, y considerando que la fase no es uniforme sobre la abertura, se deduce que los campos sobre la abertura están dados por:
+%%%%
+\begin{align}
+\mathbf{E}_a &= 
+\begin{cases}
+\makebox[0pt][l]{$E_0\cos\left(\dfrac{\pi}{A}x'\right)\!e^{-jk\delta\left(x'\right)}\,\versor{y}$}\hphantom{-\dfrac{E_0}{\eta}\cos\left(\dfrac{\pi}{A}x'\right)\!e^{-jk\delta\left(x'\right)}\,\versor{x}} &\text{si}
+\begin{cases} 
+-A/2 \leq x' \leq A/2\\
+-b/2 \leq y' \leq b/2
+\end{cases}\\
+0  &\text{caso contrario}
+\end{cases}
+\label{ec_apB:104}\\
+\mathbf{H}_a &= 
+\begin{cases} 
+-\dfrac{E_0}{\eta}\cos\left(\dfrac{\pi}{A}x'\right)\!e^{-jk\delta\left(x'\right)}\,\versor{x} &\text{si}
+\begin{cases} 
+-A/2 \leq x' \leq A/2\\
+-b/2 \leq y' \leq b/2
+\end{cases}\\
+0  & \text{caso contrario}
+\end{cases}
+\label{ec_apB:105}
+\end{align}
+%%%%
+donde el término $e^{-jk\delta\left(x'\right)}$ representa la variación de fase de los campos sobre la abertura en la dirección \emph{x}.
+
+Empleando el modelo equivalente de la Figura \ref{fig_fundamentos:10}, las densidades de corriente quedan expresadas como:
+%%%%
+\begin{align}
+\mathbf{M}_s &=
+\begin{cases}
+\makebox[0pt][l]{$E_0\cos\left(\dfrac{\pi}{A}x'\right)\!e^{-jk\delta\left(x'\right)}\,\versor{x}$}\hphantom{-\dfrac{E_0}{\eta}\cos\left(\dfrac{\pi}{A}x'\right)\!e^{-jk\delta\left(x'\right)}\,\versor{y}} &\text{si}
+\begin{cases} 
+-A/2 \leq x' \leq A/2\\
+-b/2 \leq y' \leq b/2
+\end{cases}\\
+0 & \text{caso contrario}
+\end{cases}
+\label{ec_apB:106}\\
+\mathbf{J}_s &= 
+\begin{cases} 
+-\dfrac{E_0}{\eta}\cos\left(\dfrac{\pi}{A}x'\right)\!e^{-jk\delta\left(x'\right)}\,\versor{y} &\text{si}
+\begin{cases} 
+-A/2 \leq x' \leq A/2\\
+-b/2 \leq y' \leq b/2
+\end{cases}\\
+0  &\text{caso contrario}
+\end{cases}
+\label{ec_apB:107}
+\end{align}
+%%%%
+y las expresiones \eqref{grup_ec_fundamentos:4} como:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:20}
+\begin{align}
+N_{\theta} &= -\frac{E_0}{\eta}\cos\theta\sen\phi\!\int_{-A/2}^{\,A/2}\!\cos\left(\dfrac{\pi}{A}x'\right)e^{jkx'\sen\theta\cos\phi}e^{-jk\delta\left(x'\right)}\,dx'\!\int_{-b/2}^{\,b/2}\!e^{jky'\sen\theta\sen\phi}\,dy'
+\label{ec_apB:108}\\
+N_{\phi} &= -\frac{E_0}{\eta}\cos\phi\!\int_{-A/2}^{\,A/2}\!\cos\left(\dfrac{\pi}{A}x'\right)e^{jkx'\sen\theta\cos\phi}e^{-jk\delta\left(x'\right)}\,dx'\!\int_{-b/2}^{\,b/2}\!e^{jky'\sen\theta\sen\phi}\,dy'
+\label{ec_apB:109}\\
+L_{\theta}  &= E_0\cos\theta\cos\phi\!\int_{-A/2}^{\,A/2}\!\cos\left(\dfrac{\pi}{A}x'\right)e^{jkx'\sen\theta\cos\phi}e^{-jk\delta\left(x'\right)}\,dx'\!\int_{-b/2}^{\,b/2}\!e^{jky'\sen\theta\sen\phi}\,dy'
+\label{ec_apB:110}\\
+L_{\phi} &= -E_0\sen\phi\!\int_{-A/2}^{\,A/2}\!\cos\left(\dfrac{\pi}{A}x'\right)e^{jkx'\sen\theta\cos\phi}e^{-jk\delta\left(x'\right)}\,dx'\!\int_{-b/2}^{\,b/2}\!e^{jky'\sen\theta\sen\phi}\,dy'
+\label{ec_apB:111}
+\end{align}
+\end{subequations}
+%%%%
+A partir de la integral definida:
+%%%%
+\begin{align}
+\int_{-c/2}^{\,c/2}\!e^{j\alpha z}\,dz = c\!\left[\rule{0pt}{25pt}\dfrac{\sen\left(\dfrac{\alpha}{2}\, c\right)}{\dfrac{\alpha}{2}\, c}\right]
+\label{ec_apB:112}
+\end{align}
+%%%%
+las expresiones \eqref{grup_ec_apB:20} se reducen a:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:21}
+\begin{align}
+N_{\theta} &= - b\dfrac{E_0}{\eta}\left[\cos\theta\sen\phi\left(\dfrac{\sen Y}{Y}\right)\mathbf{I}_2\,\right]
+\label{ec_apB:113}\\
+N_{\phi} &= - b\dfrac{E_0}{\eta}\left[\cos\phi\left(\dfrac{\sen Y}{Y}\right)\mathbf{I}_2\,\right]
+\label{ec_apB:114}\\
+L_{\theta} &= bE_0\left[\cos\theta\cos\phi\left(\dfrac{\sen Y}{Y}\right)\mathbf{I}_2\,\right]
+\label{ec_apB:115}\\
+L_{\phi} &= - bE_0\left[\sen\phi\left(\dfrac{\sen Y}{Y}\right)\mathbf{I}_2\,\right]
+\label{ec_apB:116}
+\end{align}
+\end{subequations}
+%%%%
+donde:
+%%%%
+\begin{gather}
+\mathbf{I}_2 = \int_{-A/2}^{\,A/2}\!\cos\left(\dfrac{\pi}{A}x'\right)e^{jkx'\sen\theta\cos\phi}e^{-jk\delta\left(x'\right)}\,dx'
+\label{ec_apB:117}\\
+Y = \frac{kb}{2}\sen\theta\sen\phi
+\label{ec_apB:118}
+\end{gather}
+%%%%
+La integral $\mathbf{I}_2$ se resuelve numéricamente, expresando la diferencia de caminos en la dirección \emph{x} $\delta\left(x'\right)$ como:
+%%%%
+\begin{align}
+\delta\left(x'\right) = R - R_2 = \sqrt{{R_2}^2 + {x'}^2} - R_2
+\label{ec_apB:119}
+\end{align}
+%%%%
+Introduciendo las expresiones \eqref{grup_ec_apB:21}, los campos radiados por la abertura \eqref{grup_ec_fundamentos:3} pueden expresarse como:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:22}
+\begin{align}
+E_r &\simeq 0
+\label{ec_apB:120}\\
+E_{\theta} &\simeq j\dfrac{bkE_0e^{-jkr}}{2\pi r}\left[\!\left(\dfrac{1 + \cos\theta}{2}\right)\sen\phi\left(\dfrac{\sen Y}{Y}\right)\mathbf{I}_2\right]
+\label{ec_apB:121}\\
+E_{\phi} &\simeq j\dfrac{bkE_0e^{-jkr}}{2\pi r}\left[\!\left(\dfrac{1 + \cos\theta}{2}\right)\cos\phi\left(\dfrac{\sen Y}{Y}\right)\mathbf{I}_2\right]
+\label{ec_apB:122}\\
+H_r &\simeq 0
+\label{ec_apB:123}\\
+H_\theta &\simeq -\frac{E_\phi}{\eta}
+\label{ec_apB:124}\\
+H_\phi &\simeq +\frac{E_\theta}{\eta}
+\label{ec_apB:125}
+\end{align}
+\end{subequations}
+%%%%
+Para hallar la intensidad de radiación a partir de la expresión \eqref{ec_intro:15}, primero se determina $\lvert E_{\theta}^{\circ}\left(\theta,\phi\right)\rvert^2$ y $\lvert E_{\phi}^{\circ}\left(\theta,\phi\right)\vert^2$, cuyas expresiones son:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:23}
+\begin{align}
+\lvert E_{\theta}^{\circ}\left(\theta,\phi\right)\rvert^2 &= \frac{b^2k^2\left|E_0\right|^2}{4\pi^2 r^2}\left(\dfrac{1 + \cos\theta}{2}\right)^2\!\sen^2\phi\left(\frac{\sen Y}{Y}\right)^2\!{\lvert\mathbf{I}_2\rvert}^2
+\label{ec_apB:126}\\
+\lvert E_{\phi}^{\circ}\left(\theta,\phi\right)\rvert^2 &= \frac{b^2k^2\left|E_0\right|^2}{4\pi^2 r^2}\left(\dfrac{1 + \cos\theta}{2}\right)^2\!\cos^2\phi\left(\frac{\sen Y}{Y}\right)^2\!{\lvert\mathbf{I}_2\rvert}^2
+\label{ec_apB:127}
+\end{align}
+\end{subequations}
+%%%%
+La expresión de la intensidad de radiación resulta:
+%%%%
+\begin{align}
+U = \frac{b^2k^2\left|E_0\right|^2}{8\pi^2\eta}\left(\dfrac{1 + \cos\theta}{2}\right)^2\!\left(\frac{\sen Y}{Y}\right)^2\!{\lvert\mathbf{I}_2\rvert}^2
+\label{ec_apB:128}
+\end{align}
+%%%%
+De la expresión \eqref{ec_apB:128} se obtiene el factor de diagrama de potencia $F\left(\theta,\phi\right)$ y la constante $B_0$, por lo que:
+%%%%
+\begin{gather}
+F\left(\theta,\phi\right) = \left(\dfrac{1 + \cos\theta}{2}\right)^2\!\left(\frac{\sen Y}{Y}\right)^2\!{\lvert\mathbf{I}_2\rvert}^2
+\label{ec_apB:129}\\
+B_0 = \frac{b^2k^2\left|E_0\right|^2}{8\pi^2\eta}
+\label{ec_apB:130}
+\end{gather}
+%%%%
+La directividad se calcula a partir de la expresión \eqref{ec_intro:18}, empleando el factor de diagrama de potencia determinado en la expresión \eqref{ec_apB:129}.
+%%%%
+
+%%%%
+\section{Bocina piramidal}
+\label{sec_apendice_b_boci_pira}
+%%%%
+
+%%%%
+A partir de las componentes transversales de los campos en una guía de onda rectangular para modo dominante, cuyas expresiones son \eqref{grup_ec_apA:17}, y considerando que la fase no es uniforme sobre la abertura, se deduce que los campos sobre la abertura están dados por:
+%%%%
+\begin{align}
+\mathbf{E}_a &= 
+\begin{cases}
+\makebox[0pt][l]{$E_0\cos\left(\dfrac{\pi}{A}x'\right)\!e^{-jk\left[\delta\left(x'\right) + \delta\left(y'\right)\right]}\,\versor{y}$}\hphantom{-\dfrac{E_0}{\eta}\cos\left(\dfrac{\pi}{A}x'\right)\!e^{-jk\left[\delta\left(x'\right) + \delta\left(y'\right)\right]}\,\versor{x}} &\text{si}
+\begin{cases} 
+-A/2 \leq x' \leq A/2\\
+-B/2 \leq y' \leq B/2
+\end{cases}\\
+0  &\text{caso contrario}
+\end{cases}
+\label{ec_apB:131}\\
+\mathbf{H}_a &= 
+\begin{cases} 
+-\dfrac{E_0}{\eta}\cos\left(\dfrac{\pi}{A}x'\right)\!e^{-jk\left[\delta\left(x'\right) + \delta\left(y'\right)\right]}\,\versor{x} &\text{si}
+\begin{cases} 
+-A/2 \leq x' \leq A/2\\
+-B/2 \leq y' \leq B/2
+\end{cases}\\
+0  & \text{caso contrario}
+\end{cases}
+\label{ec_apB:132}
+\end{align}
+%%%%
+donde el término $e^{-jk\left[\delta\left(x'\right) + \delta\left(y'\right)\right]}$ representa las variaciones de fase de los campos sobre la abertura en las direcciones \emph{x} e \emph{y}.
+
+Empleando el modelo equivalente de la Figura \ref{fig_fundamentos:10}, las densidades de corriente quedan expresadas como:
+%%%%
+\begin{align}
+\mathbf{M}_s &=
+\begin{cases}
+\makebox[0pt][l]{$E_0\cos\left(\dfrac{\pi}{A}x'\right)\!e^{-jk\left[\delta\left(x'\right) + \delta\left(y'\right)\right]}\,\versor{x}$}\hphantom{-\dfrac{E_0}{\eta}\cos\left(\dfrac{\pi}{A}x'\right)\!e^{-jk\left[\delta\left(x'\right) + \delta\left(y'\right)\right]}\,\versor{y}} &\text{si}
+\begin{cases} 
+-A/2 \leq x' \leq A/2\\
+-B/2 \leq y' \leq B/2
+\end{cases}\\
+0 & \text{caso contrario}
+\end{cases}
+\label{ec_apB:133}\\
+\mathbf{J}_s &= 
+\begin{cases} 
+-\dfrac{E_0}{\eta}\cos\left(\dfrac{\pi}{A}x'\right)\!e^{-jk\left[\delta\left(x'\right) + \delta\left(y'\right)\right]}\,\versor{y} &\text{si}
+\begin{cases} 
+-A/2 \leq x' \leq A/2\\
+-B/2 \leq y' \leq B/2
+\end{cases}\\
+0  &\text{caso contrario}
+\end{cases}
+\label{ec_apB:134}
+\end{align}
+%%%%
+y las expresiones \eqref{grup_ec_fundamentos:4} como:
+%%%%
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:24}
+\begin{align}
+N_{\theta} &= - \dfrac{E_0}{\eta}\left[\cos\theta\sen\phi\,\mathbf{I}_1\,\mathbf{I}_2\right]
+\label{ec_apB:135}\\
+N_{\phi} &= - \dfrac{E_0}{\eta}\left[\cos\phi\,\mathbf{I}_1\,\mathbf{I}_2\right]
+\label{ec_apB:136}\\
+L_{\theta} &= E_0\left[\cos\theta\cos\phi\,\mathbf{I}_1\,\mathbf{I}_2\right]
+\label{ec_apB:137}\\
+L_{\phi} &= - E_0\left[\sen\phi\,\mathbf{I}_1\,\mathbf{I}_2\right]
+\label{ec_apB:138}
+\end{align}
+\end{subequations}
+%%%%
+donde:
+%%%%
+\begin{align}
+\mathbf{I}_1 &= \int_{-B/2}^{\,B/2}\!e^{jky'\sen\theta\sen\phi}e^{-jk\delta\left(y'\right)}\,dy'
+\label{ec_apB:139}\\
+\mathbf{I}_2 &= \int_{-A/2}^{\,A/2}\!\cos\left(\dfrac{\pi}{A}x'\right)e^{jkx'\sen\theta\cos\phi}e^{-jk\delta\left(x'\right)}\,dx'
+\label{ec_apB:140}
+\end{align}
+%%%%
+Las integrales $\mathbf{I}_1$ y $\mathbf{I}_2$  se resuelve numéricamente, expresando las diferencias de caminos en la dirección \emph{y} $\delta\left(y'\right)$ y en la dirección \emph{x} $\delta\left(x'\right)$ como:
+%%%%
+\begin{align}
+\delta\left(y'\right) &= R - R_1 = \sqrt{{R_1}^2 + {y'}^2} - R_1
+\label{ec_apB:141}\\
+\delta\left(x'\right) &= R - R_2 = \sqrt{{R_2}^2 + {x'}^2} - R_2
+\label{ec_apB:142}
+\end{align}
+%%%%
+Introduciendo las expresiones \eqref{grup_ec_apB:24}, los campos radiados por la abertura \eqref{grup_ec_fundamentos:3} pueden expresarse como:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:25}
+\begin{align}
+E_r &\simeq 0
+\label{ec_apB:143}\\
+E_{\theta} &\simeq j\dfrac{kE_0e^{-jkr}}{2\pi r}\left[\!\left(\dfrac{1 + \cos\theta}{2}\right)\sen\phi\,\mathbf{I}_1\,\mathbf{I}_2\right]
+\label{ec_apB:144}\\
+E_{\phi} &\simeq j\dfrac{kE_0e^{-jkr}}{2\pi r}\left[\!\left(\dfrac{1 + \cos\theta}{2}\right)\cos\phi\,\mathbf{I}_1\,\mathbf{I}_2\right]
+\label{ec_apB:145}\\
+H_r &\simeq 0
+\label{ec_apB:146}\\
+H_\theta &\simeq -\frac{E_\phi}{\eta}
+\label{ec_apB:147}\\
+H_\phi &\simeq +\frac{E_\theta}{\eta}
+\label{ec_apB:148}
+\end{align}
+\end{subequations}
+%%%%
+Para hallar la intensidad de radiación a partir de la expresión \eqref{ec_intro:15}, primero se determina $\lvert E_{\theta}^{\circ}\left(\theta,\phi\right)\rvert^2$ y $\lvert E_{\phi}^{\circ}\left(\theta,\phi\right)\vert^2$, cuyas expresiones son:
+%%%%
+\begin{subequations}
+\label{grup_ec_apB:26}
+\begin{align}
+\lvert E_{\theta}^{\circ}\left(\theta,\phi\right)\rvert^2 &= \frac{k^2\left|E_0\right|^2}{4\pi^2 r^2}\left(\dfrac{1 + \cos\theta}{2}\right)^2\!\sen^2\phi\,\lvert{\mathbf{I}_1}\,{\mathbf{I}_2}\rvert^2
+\label{ec_apB:149}\\
+\lvert E_{\phi}^{\circ}\left(\theta,\phi\right)\rvert^2 &= \frac{k^2\left|E_0\right|^2}{4\pi^2 r^2}\left(\dfrac{1 + \cos\theta}{2}\right)^2\!\cos^2\phi\,\lvert{\mathbf{I}_1}\,{\mathbf{I}_2}\rvert^2
+\label{ec_apB:150}
+\end{align}
+\end{subequations}
+%%%%
+La expresión de la intensidad de radiación resulta:
+%%%%
+\begin{align}
+U = \frac{k^2\left|E_0\right|^2}{8\pi^2\eta}\left(\dfrac{1 + \cos\theta}{2}\right)^2\!\lvert{\mathbf{I}_1}\,{\mathbf{I}_2}\rvert^2
+\label{ec_apB:151}
+\end{align}
+%%%%
+De la expresión \eqref{ec_apB:151} se obtiene el factor de diagrama de potencia $F\left(\theta,\phi\right)$ y la constante $B_0$, por lo que:
+%%%%
+\begin{gather}
+F\left(\theta,\phi\right) = \left(\dfrac{1 + \cos\theta}{2}\right)^2\!\lvert{\mathbf{I}_1}\,{\mathbf{I}_2}\rvert^2
+\label{ec_apB:152}\\
+B_0 = \frac{k^2\left|E_0\right|^2}{8\pi^2\eta}
+\label{ec_apB:153}
+\end{gather}
+%%%%
+La directividad se calcula a partir de la expresión \eqref{ec_intro:18}, empleando el factor de diagrama de potencia determinado en la expresión \eqref{ec_apB:152}.
+%%%%

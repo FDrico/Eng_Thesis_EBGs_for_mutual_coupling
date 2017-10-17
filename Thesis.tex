@@ -1,0 +1,323 @@
+%%  -------------------------------------------------------------------------------  %%
+%%  Thesis.tex  --  ARCHIVO PRINCIPAL (El que se compila con LaTeX)  %%
+%%  -------------------------------------------------------------------------------  %%
+
+
+%%  -----------------------------------  %%
+%%  Configuración del documento  %%
+%%  -----------------------------------  %%
+
+
+\documentclass[a4paper, 11pt, twoside]{Thesis}  % Cambiar twoside por oneside si la impresión no es doble faz.
+\graphicspath{{Figures/}}  % Directorio en el que se incluyen los gráficos (deben estar en formato PDF)
+
+
+%%  ----------------------  %%
+%%  Paquetes incluidos  %%
+%%  ----------------------  %%
+
+
+\usepackage[utf8]{inputenc}  % Para codificación de texto UTF8.
+\usepackage[spanish]{babel}  % Para escritura en castellano.
+\usepackage{graphicx}  % Para manejo de imágenes.
+\usepackage{float}  % Para manejo de objetos flotantes.
+\usepackage{amsmath}  % Para manejo de expresiones matemáticas.
+\usepackage{bigints}  % Para escribir integrales de gra tamaño.
+\usepackage{slashbox}  % Para tablas en las que las cuadrículas se deviden en 2 por una línea obllicua.
+\usepackage{bm}  % Para escribir símbolos matemáticos en negrita.
+\usepackage{upgreek}  % Para escribir letras griegas rectas.
+\usepackage{esint}  % Para usar integrales de superficie.
+\usepackage{subfigure}  % Para manejo de subfiguras.
+\usepackage{multirow}  % Para realizar tablas con multicolumnas y multifilas.
+\usepackage[titletoc]{appendix}
+\usepackage{listings}  % Para escritura de código fuente.
+\usepackage{textcomp}  % Para incluir símolos especiales en el texto.
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}  % Para configurar el color del código de Matlab/Octave (archivo mcode.sty).
+
+
+%%  -------------------------------------  %%
+%%  Configuración de la bibliografía  %%
+%%  -------------------------------------  %%
+
+
+\usepackage[fixlanguage]{babelbib}
+\selectbiblanguage{spanish}
+\setbtxfallbacklanguage{spanish}
+
+
+%%  ------------------------------  %%
+%%  Configuración de los links  %%
+%%  ------------------------------  %%
+
+
+\hypersetup{urlcolor=black, colorlinks=true}  % Muestra los links en negro en todo el documento, no solamente en las referencias.
+
+
+%%  -------------------------------------  %%
+%%  Definición de comandos nuevos  %%
+%%  -------------------------------------  %%
+
+
+\newcommand{\prodesc}{\boldsymbol{\cdot}}  % Producto escalar.
+\newcommand{\prodvec}{\boldsymbol{\times}}  % Producto vectorial.
+\newcommand{\gradiente}[1]{\nabla#1}  % Gradiente de una curva.
+\newcommand{\divergencia}[1]{\nabla\prodesc\mathbf{#1}}  % Divergencia de un vector.
+\newcommand{\rotor}[1]{\nabla\prodvec\mathbf{#1}}  % Rotor de un vector.
+\newcommand{\laplaciano}[1]{\nabla^2\mathbf{#1}}  % Laplaciano de un vector.
+\newcommand{\versor}[1]{\bm{\mathbf{\hat{#1}}}}  % Versor.
+\renewcommand{\labelitemi}{$\bullet$}  % Redefine el indicador de ítem en listas no numeradas (1º orden).
+\renewcommand{\labelitemii}{\fontsize{4}{4}\selectfont $\blacksquare$}  % Redefine el indicador de ítem en listas no numeradas (2º orden).
+\renewcommand{\theequation}{\thechapter\hspace{0.2mm}-\arabic{equation}}  % Coloca un guión entre el cápitulo y el número de ecuación.
+\renewcommand{\floatpagefraction}{0.75}
+\renewcommand{\appendixname}{Apéndices}
+\renewcommand{\appendixtocname}{Apéndices}
+\renewcommand{\appendixpagename}{Apéndices}
+\addto\captionsspanish{\def\tablename{Tabla} \def\listtablename{\'Indice de tablas}}  % Cambia "cuadro" por tabla e "índice de cuadros" por "índice de tablas".
+
+\hyphenation{dia-gra-ma co-rres-pon-de a-gra-de-ci-mien-to reali-zan-do-se vec-to-rial res-pec-ti-va-men-te elec-tro-mag-ne-tis-mo ver-ti-cal-men-te prin-ci-pio equian-gu-lar me-dian-te es-ta-cio-na-ria pro-pia-men-te con-si-de-ra-cio-nes re-que-ri-mien-to pro-pues-to si-mu-la-cio-nes an-te-na trans-for-ma-dor cons-tru-ir-se fre-cuen-cias fre-cuen-cia exce-len-tes exce-len-te trans-mi-so-ra re-flexio-nes se-miane-coi-ca e-qui-va-len-te li-te-ra-tu-ra de-sa-rro-llo}
+
+
+%%  ------------------------------  %%
+%%  Comienzo del documento  %%
+%%  ------------------------------  %%
+
+
+\begin{document}
+
+
+%%  -----------------------  %%
+%%  Portada de la Tesis  %%
+%%  -----------------------  %%
+
+
+\frontmatter  % Enumera las páginas con números romanos.
+
+\title  {Estudio de estructuras de banda prohibida electromagnética (EBG) para la reducción de acoplamiento mutuo entre antenas microstrip}  % Título de la tesis.
+\authors  {\texorpdfstring
+            {\href{federicoluna@protonmail.com}{Federico Luna}}  % Dirección de mail del tesista en la portada de la tesis.
+            {Federico Luna}  % Nombre del tesista.
+            }
+\addresses  {\groupname\\\deptname\\\univname}  % Editar este campo en el archivo "Thesis.cls".
+\date{11 de diciembre de 2017}  % Incluye la fecha al momento de compliar el documento.
+\subject{}
+\keywords{}
+\maketitle
+
+\setstretch{1.3}  % Espacio entre líneas de texto.
+
+\fancyhead{}  % Borra todos los encabezados y notas de pie de página.
+\rhead{\thepage}  % Muestra el número de página en la esquina superior derecha.
+\lhead{}  % Limpia la esquina superior izquierda.
+
+
+%%  --------------------  %%
+%%  Página con frase  %%
+%%  --------------------  %%
+
+
+\pagestyle{empty}
+\null\vfill
+\textit{``Study hard what interests you the most in the most undisciplined, irreverent and original manner possible.''}
+\begin{flushright}
+Richard Feynman
+\end{flushright}
+\clearpage
+
+\clearpage\pagestyle{empty}\mbox{}\clearpage  % Página en blanco.
+
+
+%%  ------------------------  %%
+%%  Página con resumen  %%
+%%  ------------------------  %%
+
+
+\pagestyle{empty}
+
+\addtotoc{Resumen}  % Agrega "Resumen" al índice.
+
+\abstract
+
+En este trabajo se han estudiado distintos tipos de alimentadores para antenas parabólicas empleando modelos teóricos y simulaciones computacionales. El diseño del alimentador fue realizado a partir de las dimensiones del reflector parabólico construido anteriormente por el autor de la presente tesis. Dicho diseño consiste en una solución de compromiso, la cual establece que la diferencia entre las potencias incidentes en el perímetro y en el vértice del reflector sea aproximadamente -11 dB.
+
+Se han utilizado como alimentador las siguientes antenas: aberturas rectangulares y circulares, guías de onda rectangulares y cilíndricas, y bocinas rectangulares y cónicas.
+
+La construcción del alimentador se realizó a partir de un cilindro de latón que se mecanizó para llegar a las dimensiones que fueron calculadas teóricamente y mediante simulación numérica. La adaptación del alimentador se realizó ajustando la distancia entre el excitador y el cortocircuito de la guía de onda para optimizar la relación de onda estacionaria (ROE).
+
+Respecto a los resultados experimentales, en este trabajo de tesis se han obtenido mejoras en las características del alimentador, particularmente en la radiación posterior (back-scattering) y en el lóbulo principal, en comparación con los alimentadores tradicionales fabricados con guías de onda cilíndricas.
+
+No se registran antecedentes en nuestro país de diseños de estos alimentadores, por lo tanto se estima que va a ser una contribución interesante para la industria local.
+
+\textbf{Palabras clave:} Alimentador, abertura, guía de onda, bocina, reflector parabólico, eficiencia de abertura.
+
+\clearpage
+
+\addtotoc{Abstract}  % Agrega "Abstract" al índice.
+
+\begin{center}
+\bigskip{\huge{\textit{Abstract}} \par}\bigskip
+\end{center}
+
+The purpose of this investigation was to study different parabolic reflector feeders, using theoretical models and computer simulations. The design of the feeder was made from the dimensions of a parabolic reflector which was previously built by the author of this thesis. Its design is a compromise solution, which establishes that the difference between the incident powers on the reflector's edge and vertex (edge ilumination) is about - 11 dB.
+
+The following antennas have been used as feeders: rectangular and circular apertures, rectangular and cylindrical waveguides, and rectangular and conical horns.
+
+The construction of the feeder was made from a brass cylinder that was turned to obtain the dimensions that were calculated theorically and then by numeric simulation. The feeder matching was made by adjusting the distance between the exciter and the waveguide short to optimize the voltage standing wave ratio (VSWR).
+
+As regards the experimental results in this thesis, improvements have been obtained in the feeder features, specially in the back-scattering radiation and in the main lobe, in comparison with traditional feeders built with cylindrical waveguides.
+
+In our country, there aren't any precedents of these feeders designs', therefore it is estimated that this design will be an interesting contribution to the local industry.
+
+\textbf{Keywords:} Feeder, aperture, waveguide, horn, parabolic reflector, aperture efficiency.
+
+\clearpage
+
+
+%%  --------------------------------  %%
+%%  Página de agradecimientos  %%
+%%  --------------------------------  %%
+
+
+\pagestyle{empty}
+
+\addtotoc{Agradecimientos}  % Agrega "Agradecimientos" al índice.
+\begin{center}
+\bigskip{\huge{\textit{Agradecimientos}} \par}\bigskip
+\end{center}
+\input{./Chapters/thanks}
+\clearpage
+
+
+%%  ------------------ %%
+%%  Índice general  %%
+%%  -----------------  %%
+
+
+\pagestyle{fancy}
+
+\lhead{\emph{Índice general}}
+\addtotoc{Índice general}  % Agrega "Índice general" al índice.
+\tableofcontents  % Agrega el índice.
+
+
+%%  -------------------------  %%
+%%  Página de dedicatoria  %%
+%%  -------------------------  %%
+
+
+\pagestyle{empty}
+
+\dedicatory{
+A mi padre, de quien heredé la vocación por la profesión y que ha sido fundamental a lo largo de estos años para que nunca baje los brazos ante las adversidades, contratiempos y frustraciones.
+
+A mi madre y a mis hermanos, por la confianza, el ánimo y porque han sido pilares fundamentales a lo largo de toda mi carrera.
+
+A Claudia, mi compañera, por la incondicionalidad, su gran paciencia y, sobre todo, por la virtud de poder sacarme una sonrisa hasta en los momentos más difíciles.
+}
+
+\addtocontents{toc}{\vspace{2em}}  % Agrega un espacio vertical en el índice, para separar de la enumeración de los capítulos.
+
+
+%%  ----------------------------------------------------------------------------------  %%
+%%  Aquí comienzan los capítulos, incluyéndolos como archivos separados  %%
+%%  ----------------------------------------------------------------------------------  %%
+
+
+\mainmatter  % Enumera las páginas con números tradicionales.
+
+\pagestyle{fancy}
+
+\chapter{Introducción}
+\label{cap_intro}
+\lhead{Capítulo \ref{cap_intro}. \emph{Introducción}} 
+\input{./Chapters/intro}
+
+\chapter{Fundamentos de antenas de abertura}
+\label{cap_fundamentos}
+\lhead{Capítulo \ref{cap_fundamentos}. \emph{Fundamentos de antenas de abertura}} 
+\input{./Chapters/fundamentos}
+
+\chapter{Principios de reflectores parabólicos}
+\label{cap_principios}
+\lhead{Capítulo \ref{cap_principios}. \emph{Principios de reflectores parabólicos}} 
+\input{./Chapters/principios}
+
+\chapter{Estudio y diseño del alimentador}
+\label{cap_estudio}
+\lhead{Capítulo \ref{cap_estudio}. \emph{Estudio y diseño del alimentador}}
+\input{./Chapters/estudio}
+
+\chapter{Resultados experimentales}
+\label{cap_resultados}
+\lhead{Capítulo \ref{cap_resultados}. \emph{Resultados experimentales}}
+\input{./Chapters/resultados}
+
+\chapter{Conclusiones}
+\label{cap_conclusiones}
+\lhead{Capítulo \ref{cap_conclusiones}. \emph{Conclusiones}}
+\input{./Chapters/conclusiones}
+
+\clearpage\pagestyle{empty}\mbox{}\clearpage  % Página en blanco.
+
+
+%%  ------------------------------------------------------------------------------------  %%
+%%  Aquí comienzan los apéndices, incluyéndolos como archivos separados  %%
+%%  ------------------------------------------------------------------------------------  %%
+
+
+\appendix  % Para incluir los apéndices.
+\clearpage
+\addappheadtotoc  % Agrega la página con la leyenda "Apéndices" al índice.
+\appendixpage  % Agrega una página con la leyenda "Apéndices".
+
+\chapter{Distribución de los campos en guías de onda}
+\label{apendice_a}
+\lhead{Apéndice \ref{apendice_a}. \emph{Distribución de los campos en guías de onda}}
+\input{./Appendices/AppendixA} % Distribución de los campos en guías de ondas
+
+\chapter{Expresiones de los campos radiados por aberturas rectangulares}
+\label{apendice_b}
+\lhead{Apéndice \ref{apendice_b}. \emph{Expresiones de los campos radiados por aberturas rectangulares}}
+\input{./Appendices/AppendixB}	% Expresiones de los campos radiados por aberturas rectangulares
+
+\chapter{Expresiones de los campos radiados por aberturas circulares}
+\label{apendice_c}
+\lhead{Apéndice \ref{apendice_c}. \emph{Expresiones de los campos radiados por aberturas circulares}}
+\input{./Appendices/AppendixC} % Expresiones de los campos radiados por aberturas circulares
+
+\chapter{Expresiones de los campos radiados por antenas parabólicas}
+\label{apendice_d}
+\lhead{Apéndice \ref{apendice_d}. \emph{Expresiones de los campos radiados por antenas parabólicas}}
+\input{./Appendices/AppendixD} % Expresiones de los campos radiados por antenas parabólicas
+
+\chapter{Incertezas en la instrumentación}
+\label{apendice_e}
+\lhead{Apéndice \ref{apendice_e}. \emph{Incertezas en la instrumentación}}
+\input{./Appendices/AppendixE} % Incertezas en la instrumentación
+
+\chapter{Código de MATLAB/OCTAVE}
+\label{apendice_f}
+\lhead{Apéndice \ref{apendice_f}. \emph{Código de MATLAB/OCTAVE}}
+\input{./Appendices/AppendixF} % Código de MATLAB/OCTAVE
+
+
+%%  -------------  %%
+%%  Bibliografía  %%
+%%  -------------  %%
+
+
+\backmatter
+
+\nocite{*}  % Para poner las referencias que no fueron citadas.
+
+\label{Bibliography}
+\lhead{\emph{Bibliografía}}  % Coloca "Bibliografía" en la esquina superior derecha de la página.
+\bibliographystyle{babunsrt}  % Estilo de la bibliografía.
+\bibliography{Bibliography}  % Carga las referencias del archivo "Bibliography.bib".
+
+
+%%  ----------------------  %%
+%%  Fin del documento  %%
+%%  ----------------------  %%
+
+
+\end{document}
