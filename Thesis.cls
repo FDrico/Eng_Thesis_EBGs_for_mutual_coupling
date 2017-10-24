@@ -207,30 +207,35 @@
       {\LARGE Tesista: \par}
       \smallskip
       {\huge \authornames \par}
-      IEEE Student Member \par
-      \texttt{pllannes@yahoo.com.ar} \par
+%      IEEE Student Member \par
+      \texttt{federicoluna@protonmail.com} \par
       \bigskip
       \bigskip
       {\large Director: \par}
       {\LARGE Dr. Ing. Walter Gustavo Fano\par}
 	  %\textit{IEEE Life Senior Member} \par
-	  IEEE Senior Member \par
+%	  IEEE Senior Member \par
       \texttt{gustavo.gf2005@gmail.com} \par
       \bigskip
+      {\large Co-directora: \par}
+      {\LARGE Ing. Silvina Boggi\par}
+      %\textit{IEEE Life Senior Member} \par
+      %	  IEEE Senior Member \par
+      \texttt{silvinaboggi@gmail.com} \par
+      \bigskip
       \vfill
-      {\LARGE Tesis de grado de \par}
-      {\LARGE Ingeniería Electrónica\par}
+      {\LARGE \textsc{Tesis de grado de Ingeniería Electrónica}\par}
   \vfill
       \bigskip
-      \bigskip
+%      \bigskip
       %{\large in the \par}
       {\large \facname \par}
       {\large \deptname \par}
       \bigskip
-      \bigskip
-      \bigskip
+%      \bigskip
+%      \bigskip
       \includegraphics[height = 2cm]{Figures/logo_fiuba}\\
-      \bigskip
+%      \bigskip
       \bigskip
       \bigskip
       {\Large \@date \par}

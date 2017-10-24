@@ -13,233 +13,232 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
-\bibitem {Baars}
-\btxnamefont {\btxlastnamefont {Baars}, Jacob\btxfnamespacelong
-  W.\btxfnamespacelong M.}\btxauthorcolon\ \btxtitlefont {The Paraboloidal
-  Reflector Antenna in Radio Astronomy and Communication}.
-\newblock \btxpublisherfont {Springer}, New York, USA, 2007.
+\bibitem {Barthia:Handbook}
+\btxnamefont {\btxlastnamefont {Garg}, R.}, \btxnamefont {P. \btxlastnamefont
+  {Bhartia}}, \btxnamefont {I. \btxlastnamefont {Bahl}}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {A. \btxlastnamefont
+  {Ittipiboon}}\btxauthorcolon\ \btxtitlefont {Microstrip Antenna Design
+  Handbook}.
+\newblock \btxpublisherfont {Artech House}, 2001.
 
-\bibitem {Fano2}
-\btxnamefont {\btxlastnamefont {Valentino~Trainotti}, Walter\btxfnamespacelong
-  Gustavo\btxfnamespacelong Fano} \btxandlong {}\ \btxnamefont
-  {Luis\btxfnamespacelong Antonio \btxlastnamefont {Dorado}}\btxauthorcolon\
-  \btxtitlefont {Ingeniería electromagnética, Tomo II}.
-\newblock \btxpublisherfont {Nueva Librería}, Buenos Aires, Argentina, 2005.
+\bibitem {Balanis:Theory}
+\btxnamefont {\btxlastnamefont {Balanis}, C.\btxfnamespacelong
+  A.}\btxauthorcolon\ \btxtitlefont {Antenna Theory: Analysis and design}.
+\newblock \btxpublisherfont {Wiley-Interscience}, 2005.
 
-\bibitem {Balanisantenas}
-\btxnamefont {\btxlastnamefont {Balanis}, Constantine\btxfnamespacelong
-  A.}\btxauthorcolon\ \btxtitlefont {Antenna Theory Analysis and Design}.
-\newblock \btxpublisherfont {Wiley-Interscience}, New Jersey, USA,
-  \btxeditionnumlong {3}{}, 2005.
+\bibitem {Balanis:Handbook}
+\btxnamefont {\btxlastnamefont {Balanis}, C.\btxfnamespacelong
+  A.}\btxauthorcolon\ \btxtitlefont {Modern Antenna Handbook}.
+\newblock \btxpublisherfont {Wiley}, 2008.
 
-\bibitem {Orfanidis}
-\btxnamefont {\btxlastnamefont {Orfanidis}, Sophocles\btxfnamespacelong
-  J.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Electromagnetic waves
-  and antennas}{Electromagnetic Waves and Antennas}}, 2008.
-\newblock {\latintext \btxurlfont{http://www.ece.rutgers.edu/~orfanidi/ewa/}}.
+\bibitem {Balanis:Advanced}
+\btxnamefont {\btxlastnamefont {Balanis}, C.\btxfnamespacelong
+  A.}\btxauthorcolon\ \btxtitlefont {Advanced Engineering Electromagnetics}.
+\newblock \btxpublisherfont {Wiley}, 2012.
 
-\bibitem {Silver}
-\btxnamefont {\btxlastnamefont {Silver}, Samuel}\btxauthorcolon\ \btxtitlefont
-  {Microwave Antenna Theory and Design}.
-\newblock \btxpublisherfont {Mc Graw Gill}, New York, USA, 1949.
+\bibitem {Yang:EBGAntennas}
+\btxnamefont {\btxlastnamefont {Yang}, F.} \btxandlong {}\ \btxnamefont {Y.
+  \btxlastnamefont {Rahmat-Samii}}\btxauthorcolon\ \btxtitlefont
+  {Electromagnetic Band Gap Structures in Antenna Engineering}.
+\newblock \btxpublisherfont {Cambridge University Press}, 2009.
 
-\bibitem {Cheng}
-\btxnamefont {\btxlastnamefont {Cheng}, David\btxfnamespacelong
-  K.}\btxauthorcolon\ \btxtitlefont {Fundamentals of Engineering
-  Electromagnetics}.
-\newblock \btxpublisherfont {Addison-Wesley}, Boston, USA, \btxeditionnumlong
-  {2}{}, 1993.
+\bibitem {Joannopoulos:PhotonicCrystals}
+\btxnamefont {\btxlastnamefont {Joannopoulos}, J.\btxfnamespacelong D.}
+  \btxandlong {}\ \btxnamefont {S.\btxfnamespacelong G. \btxlastnamefont
+  {Johnson}}\btxauthorcolon\ \btxtitlefont {Photonic Crystals: Molding the flow
+  of light}.
+\newblock \btxpublisherfont {Princeton University Press}, 2008.
 
-\bibitem {Stutzman}
-\btxnamefont {\btxlastnamefont {Stutzman}, Warren\btxfnamespacelong L.}
-  \btxandlong {}\ \btxnamefont {Gary\btxfnamespacelong A. \btxlastnamefont
-  {Thiele}}\btxauthorcolon\ \btxtitlefont {Antenna Theory and Design}.
-\newblock \btxpublisherfont {Wiley}, New Jersey, USA, \btxeditionnumlong {3}{},
-  2013.
+\bibitem {Markos:PhotonicCrystals}
+\btxnamefont {\btxlastnamefont {Markos}, P.} \btxandlong {}\ \btxnamefont
+  {C.\btxfnamespacelong M. \btxlastnamefont {Soukoulis}}\btxauthorcolon\
+  \btxtitlefont {Wave Propagation: From Electrons to Photonic Crystals and
+  Left-Handed Materials}.
+\newblock \btxpublisherfont {Princeton University Press}, 2008.
 
-\bibitem {Collin}
+\bibitem {Brillouin:WavePropagation}
+\btxnamefont {\btxlastnamefont {Brillouin}, L.}\btxauthorcolon\ \btxtitlefont
+  {Wave Propagation in Periodic Structures: Electric Filters adn Crystal
+  Lattices}.
+\newblock \btxpublisherfont {Dover Publications}, 1953.
+
+\bibitem {Jiang:Metamaterial}
+\btxnamefont {\btxlastnamefont {Jiang}, X.}\btxauthorcolon\ \btxtitlefont
+  {Metamaterial}.
+\newblock \btxpublisherfont {Intech: Open Science}, 2012.
+
+\bibitem {Pozar:MwEngineering}
+\btxnamefont {\btxlastnamefont {Pozar}, David\btxfnamespacelong
+  M.}\btxauthorcolon\ \btxtitlefont {Microwave Engineering}.
+\newblock \btxpublisherfont {Wiley}, 2011.
+
+\bibitem {Fernandez:Electromag}
+\btxnamefont {\btxlastnamefont {Fernández}, Juan\btxfnamespacelong
+  Carlos}\btxauthorcolon\ \btxtitlefont {Apuntes de Electromagnetismo}.
+\newblock \btxpublisherfont {FIUBA}, 2004.
+
+\bibitem {Harrington:TimeHarmonic}
+\btxnamefont {\btxlastnamefont {Harrington}, Roger\btxfnamespacelong
+  F.}\btxauthorcolon\ \btxtitlefont {Time Harmonic Electromagnetic Fields}.
+\newblock \btxpublisherfont {Wiley-IEEE Press}, 2001.
+
+\bibitem {Collin:GuidedWaves}
 \btxnamefont {\btxlastnamefont {Collin}, Robert\btxfnamespacelong
-  E.}\btxauthorcolon\ \btxtitlefont {Antennas and Radiowave Propagation}.
-\newblock \btxpublisherfont {Mc Graw Gill}, New York, USA, 1985.
+  E.}\btxauthorcolon\ \btxtitlefont {Field Theory of Guided Waves}.
+\newblock \btxpublisherfont {Wiley-IEEE Press}, 2001.
 
-\bibitem {Balaniselectro}
-\btxnamefont {\btxlastnamefont {Balanis}, Constantine\btxfnamespacelong
-  A.}\btxauthorcolon\ \btxtitlefont {Advanced Engineering electromagnetics}.
-\newblock \btxpublisherfont {Wiley}, New Jersey, USA, 1989.
-
-\bibitem {James}
-\btxnamefont {\btxlastnamefont {James}, G.\btxfnamespacelong
-  L.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Radiation properties of
-  90$^{\,\circ}$ conical horns}{Radiation Properties of 90$^{\,\circ}$ conical
-  horns}}.
-\newblock \Btxinlong {}\ \btxtitlefont {Electronics Letters}, \btxvolumelong
-  {}~\btxvolumefont {13}, \btxpageslong {}\ 293--294,
-  \btxprintmonthyear{.}{Mayo}{1977}{long}.
-
-\bibitem {Elliott}
-\btxnamefont {\btxlastnamefont {Elliott}, R.\btxfnamespacelong
-  S.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {On the theory of
-  corrugated plane surfaces}{On the Theory of Corrugated Plane Surfaces}}.
-\newblock \Btxinlong {}\ \btxtitlefont {IRE Trans. Antennas Propagat.},
-  \btxvolumelong {}~\btxvolumefont {2}, \btxpageslong {}\ 71--81,
-  \btxprintmonthyear{.}{Abril}{1954}{long}.
-
-\bibitem {ARRL}
-\btxnamefont {\btxlastnamefont {ARRL}}\btxauthorcolon\ \btxtitlefont {The ARRL
-  Antenna Book}.
-\newblock \btxpublisherfont {The ARRL Inc}, Connecticut, USA,
-  \btxeditionnumlong {21}{}, 2007.
-
-\bibitem {Carr}
-\btxnamefont {\btxlastnamefont {Carr}, Joseph\btxfnamespacelong
-  J.}\btxauthorcolon\ \btxtitlefont {Practical Antenna Handbook}.
-\newblock \btxpublisherfont {Mc Graw Hill}, New York, USA, \btxeditionnumlong
-  {4}{}, 2001.
-
-\bibitem {laton}
-\btxnamefont {\btxlastnamefont {Ltd.}, EIP\btxfnamespacelong
-  Metals}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Cuzn30 rolled brass
-  alloy}{CuZn30 Rolled Brass Alloy}}.
+\bibitem {Morin:Waves}
+\btxnamefont {\btxlastnamefont {Morin}, David}\btxauthorcolon\ \btxtitlefont
+  {Waves}.
+\newblock \btxpublisherfont {Aún no publicado a Octubre 2016}.
 \newblock {\latintext
-  \btxurlfont{http://www.aurubis.co.uk/images/uploads/cuzn30.pdf}}.
+  \btxurlfont{http://www.people.fas.harvard.edu/~djmorin/book.html}}.
 
-\bibitem {Fernandez}
-\btxnamefont {\btxlastnamefont {Fernandez}, Juan\btxfnamespacelong
-  Carlos}\btxauthorcolon\ \btxpublisherfont {\btxtitlefont {Apuntes de
-  Electromagnetismo}}.
-\newblock Buenos Aires, Argentina, 2004.
+\bibitem {Stutzman:AntennaTheory}
+\btxnamefont {\btxlastnamefont {Stutzman}, Warren\btxfnamespacelong L.}
+  \btxandlong {}\ \btxnamefont {Gary\btxfnamespacelong A \btxlastnamefont
+  {Thiele}}\btxauthorcolon\ \btxtitlefont {Antenna Theory and Design}.
+\newblock \btxpublisherfont {Wiley}, 2012.
 
-\bibitem {walfram_car_coord}
-\btxnamefont {\btxlastnamefont {Weisstein}, Eric\btxfnamespacelong
-  W.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {{"{}Cartesian
-  Coordinates".} from {MathWorld -- A Wolfram Web Resource}}{{"{}Cartesian
-  Coordinates".} From {MathWorld -- A Wolfram Web Resource}}}.
-\newblock {\latintext
-  \btxurlfont{http://www.mathworld.wolfram.com/CartesianCoordinates.html}}.
+\bibitem {Russell:BlochWaves}
+\btxnamefont {\btxlastnamefont {Burstein}, E.}, \btxnamefont {C
+  \btxlastnamefont {Weisbuch}}, \btxnamefont {Philip\btxfnamespacelong
+  St.\btxfnamespacelong J. \btxlastnamefont {Russell}}, \btxnamefont {Timothy
+  \btxlastnamefont {Birks}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Dominic \btxlastnamefont {Lloyd-Lucas}}\btxauthorcolon\ \btxtitlefont
+  {Confined Electrons and Photons: Photonic Bloch Waves and Photonic Band
+  Gaps}.
+\newblock \btxpublisherfont {Plenum Press}, 1995.
 
-\bibitem {walfram_sphe_coord}
-\btxnamefont {\btxlastnamefont {Weisstein}, Eric\btxfnamespacelong
-  W.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {{"{}Spherical
-  Coordinates".} from {MathWorld -- A Wolfram Web Resource}}{{"{}Spherical
-  Coordinates".} From {MathWorld -- A Wolfram Web Resource}}}.
-\newblock {\latintext
-  \btxurlfont{http://www.mathworld.wolfram.com/SphericalCoordinates.html}}.
+\bibitem {Allen:SurfaceWaveCoupling}
+\btxnamefont {\btxlastnamefont {Allen}, J.\btxfnamespacelong
+  L.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {On surface-wave
+  coupling between elements of large arrays}{On Surface-Wave coupling between
+  elements of Large Arrays}}.
+\newblock 1965.
 
-\bibitem {walfram_bessel}
-\btxnamefont {\btxlastnamefont {Weisstein}, Eric\btxfnamespacelong
-  W.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {{"{}Bessel Function".}
-  from {MathWorld -- A Wolfram Web Resource}}{{"{}Bessel Function".} From
-  {MathWorld -- A Wolfram Web Resource}}}.
-\newblock {\latintext
-  \btxurlfont{http://www.mathworld.wolfram.com/BesselFunction.html}}.
+\bibitem {Fano:CouplingReceiving}
+\btxnamefont {\btxlastnamefont {Amado}, José} \btxandlong {}\ \btxnamefont
+  {Gustavo \btxlastnamefont {Fano}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Antenna coupling model in receiving mode}{Antenna Coupling
+  Model in Receiving Mode}}.
+\newblock 2016.
 
-\bibitem {walfram_bessel_first}
-\btxnamefont {\btxlastnamefont {Weisstein}, Eric\btxfnamespacelong
-  W.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {{"{}Bessel Function of
-  the First Kind".} from {MathWorld -- A Wolfram Web Resource}}{{"{}Bessel
-  Function of the First Kind".} From {MathWorld -- A Wolfram Web Resource}}}.
-\newblock {\latintext
-  \btxurlfont{http://www.mathworld.wolfram.com/BesselFunctionoftheFirstKind.html}}.
+\bibitem {Malkomes:MutualCoupling}
+\btxnamefont {\btxlastnamefont {Malkomes}, M.}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Mutual coupling between microstrip patch antennas}{Mutual
+  coupling between microstrip patch antennas}}.
+\newblock 1982.
 
-\bibitem {Agilent_vna_cal}
-Agilent Technologies\btxauthorcolon\ \btxtitlefont {Electronic vs. Mechanical
-  Calibration Kits: Calibration Methods and Accuracy}, 2003.
+\bibitem {VanLil:TLModelCoupling}
+\btxnamefont {\btxlastnamefont {Lil}, E.\btxfnamespacelong H.\btxfnamespacelong
+  Van} \btxandlong {}\ \btxnamefont {A.\btxfnamespacelong R. \btxlastnamefont
+  {Van}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Transmission line
+  model for mutual coupling between microstrip antennas}{Transmission Line
+  Model for Mutual Coupling Between Microstrip Antennas}}.
+\newblock 1984.
 
-\bibitem {Agilent_vna_err}
-Agilent Technologies\btxauthorcolon\ \btxtitlefont {Agilent Vector Network
-  Analyzer Receiver, Dynamic Accuracy, Specifications ans Uncertainties}, 2011.
+\bibitem {Sievenpiper:HIESForbiddenBand}
+\btxnamefont {\btxlastnamefont {Sievenpiper}, D.}, \btxnamefont {L.
+  \btxlastnamefont {Zhang}}, \btxnamefont {R.\btxfnamespacelong F.
+  \btxlastnamefont {Jimenez}}, \btxnamefont {N.\btxfnamespacelong G.
+  \btxlastnamefont {Alexopoulos}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {E. \btxlastnamefont {Yablonovitch}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {High-impedance electromagnetic surfaces with a forbidden
+  frequency band}{High-Impedance Electromagnetic Surfaces with a Forbidden
+  Frequency Band}}.
+\newblock 1999.
 
-\bibitem {Agilent_vna_man}
-Agilent Technologies\btxauthorcolon\ \btxtitlefont {Agilent FieldFox RF Vector
-  Network Analyzer N9923A User's Guide}, 2010.
+\bibitem {Sievenpiper:Thesis}
+\btxnamefont {\btxlastnamefont {Sievenpiper}, D.}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {High-impedance electromagnetic surfaces
+  (phd thesis)}{High-Impedance Electromagnetic Surfaces (PHD Thesis)}}.
+\newblock 1999.
 
-\bibitem {walfram_error_prop}
-\btxnamefont {\btxlastnamefont {Weisstein}, Eric\btxfnamespacelong
-  W.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {{"{}Error Propagation".}
-  from {MathWorld -- A Wolfram Web Resource}}{{"{}Error Propagation".} From
-  {MathWorld -- A Wolfram Web Resource}}}.
-\newblock {\latintext
-  \btxurlfont{http://www.mathworld.wolfram.com/ErrorPropagation.html}}.
+\bibitem {Polo:SurfaceWavesReview}
+\btxnamefont {\btxlastnamefont {Polo}, J.\btxfnamespacelong A.} \btxandlong {}\
+  \btxnamefont {A \btxlastnamefont {Lakhtakia}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Surface electromagnetic waves: A review}{Surface
+  Electromagnetic Waves: A review}}.
+\newblock 2011.
 
-\bibitem {Agilent_an_esp_err}
-Agilent Technologies\btxauthorcolon\ \btxtitlefont {Agilent AN 1316: Optimizing
-  Spectrum Analyzer Amplitude Accuracy}, 2000.
+\bibitem {Saikh:EBGinMSA}
+\btxnamefont {\btxlastnamefont {Saikh}, S.\btxfnamespacelong A.}, \btxnamefont
+  {A.\btxfnamespacelong A. \btxlastnamefont {Desai}}\btxandcomma {} \btxandlong
+  {}\ \btxnamefont {A.\btxfnamespacelong A. \btxlastnamefont
+  {Deshmukh}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Electromagnetic
+  band gap structures in {MSA}}{Electromagnetic Band Gap Structures in {MSA}}}.
+\newblock 2014.
 
-\bibitem {LPT_ana_esp_man}
-LP Technologies\btxauthorcolon\ \btxtitlefont {LPT-6000 Digitally Synthesized
-  RF Spectrum Analyzer User's Guide}.
+\bibitem {Dodov:SurfaceWaveEffect}
+\btxnamefont {\btxlastnamefont {Dodov}, Nicola\btxfnamespacelong I.}
+  \btxandlong {}\ \btxnamefont {Peter\btxfnamespacelong Zh. \btxlastnamefont
+  {Petkov}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {The surface
+  waves' impact on the coupling effect in microstrip antennas}{The Surface
+  Waves' impact on the Coupling Effect in Microstrip Antennas}}.
+\newblock 2002.
 
-\bibitem {Krauss}
-\btxnamefont {\btxlastnamefont {Kraus}, J.\btxfnamespacelong D.} \btxandlong
-  {}\ \btxnamefont {R. \btxlastnamefont {Marhefka}}\btxauthorcolon\
-  \btxtitlefont {Antennas for all applications}.
-\newblock \btxpublisherfont {Mc Graw Gill}, New York, USA, \btxeditionnumlong
-  {3}{}, 2002.
+\bibitem {Meade:NaturePhotonicBandGaps}
+\btxnamefont {\btxlastnamefont {Meade}, R.\btxfnamespacelong M.}, \btxnamefont
+  {A.\btxfnamespacelong M. \btxlastnamefont {Rappe}}, \btxnamefont
+  {K.\btxfnamespacelong D. \btxlastnamefont {Brommer}}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {J.\btxfnamespacelong D. \btxlastnamefont
+  {Joannopoulos}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Nature of
+  photonic band gap: Some insigts from a field analysis}{Nature of Photonic
+  Band Gap: Some insigts from a field analysis}}.
+\newblock 1993.
 
-\bibitem {Johnson}
-\btxnamefont {\btxlastnamefont {Johnson}, Richard}\btxauthorcolon\
-  \btxtitlefont {Antenna Engineering Handbook}.
-\newblock \btxpublisherfont {Mc Graw Hill}, New York, USA, \btxeditionnumlong
-  {3}{}, 1993.
+\bibitem {Marcela:Tesis}
+\btxnamefont {\btxlastnamefont {Luberto}, M.\btxfnamespacelong
+  F.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Diseño de una antena
+  de microcintas para {WIFI} empleando estructuras {EBG} (electromagnetic band
+  gap)}{Diseño de una antena de microcintas para {WIFI} empleando estructuras
+  {EBG} (Electromagnetic Band Gap)}}.
+\newblock 2016.
 
-\bibitem {Milligan}
-\btxnamefont {\btxlastnamefont {Milligan}, Thomas\btxfnamespacelong
-  A.}\btxauthorcolon\ \btxtitlefont {Modern Antenna Design}.
-\newblock \btxpublisherfont {Wiley-Interscience}, New Jersey, USA,
-  \btxeditionnumlong {2}{}, 2005.
+\bibitem {Barlow:SurfaceWaves}
+\btxnamefont {\btxlastnamefont {Barlow}, H.\btxfnamespacelong M.} \btxandlong
+  {}\ \btxnamefont {A.\btxfnamespacelong L. \btxlastnamefont
+  {Cullen}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Surface
+  waves}{Surface Waves}}.
+\newblock 1953.
 
-\bibitem {Jordan}
-\btxnamefont {\btxlastnamefont {Jordan}, Edward\btxfnamespacelong C.}
-  \btxandlong {}\ \btxnamefont {Keith\btxfnamespacelong G. \btxlastnamefont
-  {Balmain}}\btxauthorcolon\ \btxtitlefont {Electromagnetic Waves and Radiating
-  Systems}.
-\newblock \btxpublisherfont {Prentice Hall}, New Jersey, USA,
-  \btxeditionnumlong {2}{}, 1968.
+\bibitem {Penard:MutualCouplingMicrostrip}
+\btxnamefont {\btxlastnamefont {Penard}, E.} \btxandlong {}\ \btxnamefont
+  {J.\btxfnamespacelong P. \btxlastnamefont {Daniel}}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {Mutual coupling between microstrip
+  antennas}{Mutual Coupling between Microstrip Antennas}}.
+\newblock 1982.
 
-\bibitem {Fano3}
-\btxnamefont {\btxlastnamefont {Trainotti}, Valentino} \btxandlong {}\
-  \btxnamefont {Walter\btxfnamespacelong Gustavo \btxlastnamefont
-  {Fano}}\btxauthorcolon\ \btxtitlefont {Ingeniería electromagnética, Tomo
-  III}.
-\newblock \btxpublisherfont {Nueva Librería}, Buenos Aires, Argentina, 2009.
+\bibitem {Gonzalo:PerformancePBG}
+\btxnamefont {\btxlastnamefont {Gonzalo}, Ramón}, \btxnamefont {Peter
+  de~\btxlastnamefont {Maagt}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Mario \btxlastnamefont {Sorolla}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Enhanced patch-antenna performance by suppressing surface
+  waves using photonic-bandgap substrates}{Enhanced Patch-Antenna Performance
+  by Suppressing Surface Waves Using Photonic-Bandgap Substrates}}.
+\newblock 1999.
 
-\bibitem {Dunsmore}
-\btxnamefont {\btxlastnamefont {Dunsmore}, Joel\btxfnamespacelong
-  P.}\btxauthorcolon\ \btxtitlefont {Handbook of Microwave Component
-  Measurements with Advanced VNA Techniques}.
-\newblock \btxpublisherfont {Wiley-Interscience}, New Jersey, USA, 2012.
+\bibitem {Dodov:SurfaceWavesImpact}
+\btxnamefont {\btxlastnamefont {Dodov}, Nicola\btxfnamespacelong I.}
+  \btxandlong {}\ \btxnamefont {Peter\btxfnamespacelong Zh. \btxlastnamefont
+  {Petkov}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {The surface waves
+  impact on the coupling effect in microstrip antennas}{The surface waves
+  impact on the coupling effect in microstrip antennas}}.
+\newblock 1982.
 
-\bibitem {Wade}
-\btxnamefont {\btxlastnamefont {Wade}, Paul}\btxauthorcolon\ \btxtitlefont
-  {\btxifchangecase {The w1ghz microwave antenna book online}{The W1GHZ
-  Microwave Antenna Book ONLINE}}, 2003.
-\newblock {\latintext \btxurlfont{http://www.qsl.net/n1bwt/contents.htm}}.
+\bibitem {Hendry:SurfaceWavesInteresting}
+\btxnamefont {\btxlastnamefont {Hendry}, Janice}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Surface waves: What are they? why are they
+  interesting?}{Surface Waves: What are they? Why are they interesting?}}
+\newblock 2009.
 
-\bibitem {Wikipedia}
-\btxnamefont {\btxlastnamefont {Wikipedia}}.
-\newblock {\latintext \btxurlfont{http://www.wikipedia.com}}.
-
-\bibitem {ieee_std_149}
-\btxtitlefont {ANSI/IEEE Standard Test Procedures for Antennas}.
-\newblock \btxpublisherfont {IEEE Std 149-1979 (R2008)}, 2008.
-
-\bibitem {ieee_std_145}
-\btxtitlefont {IEEE Standard Definitions of Terms for Antennas}.
-\newblock \btxpublisherfont {IEEE Std 145-1993},
-  \btxprintmonthyear{.}{Junio}{1993}{long}.
-
-\bibitem {FEKO}
-\btxnamefont {\btxlastnamefont {Software}}\btxauthorcolon\ \btxtitlefont
-  {\btxifchangecase {Feko 6.3}{FEKO 6.3}}.
-\newblock \url{https://www.feko.info/}, 2013.
-
-\bibitem {Inkscape}
-\btxnamefont {\btxlastnamefont {Software}}\btxauthorcolon\ \btxtitlefont
-  {\btxifchangecase {Inkscape 0.48.5}{Inkscape 0.48.5}}.
-\newblock \url{https://inkscape.org/es/}, 2014.
-
-\bibitem {Agilent_gen_rf_man}
-Agilent Technologies\btxauthorcolon\ \btxtitlefont {Agilent N9310A RF Signal
-  Generator User's Guide}, 2007.
+\bibitem {Alexopoulos:PrintedDipoles}
+\btxnamefont {\btxlastnamefont {Alexopoulos}, Nicolaos\btxfnamespacelong G.}
+  \btxandlong {}\ \btxnamefont {Inam\btxfnamespacelong E. \btxlastnamefont
+  {Rana}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Mutual impedance
+  computation between printed dipoles}{Mutual Impedance Computation Between
+  Printed Dipoles}}.
+\newblock 1981.
 
 \end{thebibliography}
