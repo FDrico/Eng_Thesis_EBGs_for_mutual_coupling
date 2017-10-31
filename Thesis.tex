@@ -34,7 +34,10 @@
 \usepackage{listings}  % Para escritura de código fuente.
 \usepackage{textcomp}  % Para incluir símolos especiales en el texto.
 \usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}  % Para configurar el color del código de Matlab/Octave (archivo mcode.sty).
-
+\usepackage{color, colortbl}
+\usepackage{xcolor}
+\usepackage{array,ragged2e}
+\usepackage{tabu}
 
 %%  -------------------------------------  %%
 %%  Configuración de la bibliografía  %%
@@ -75,9 +78,11 @@
 \renewcommand{\appendixpagename}{Apéndices}
 \addto\captionsspanish{\def\tablename{Tabla} \def\listtablename{\'Indice de tablas}}  % Cambia "cuadro" por tabla e "índice de cuadros" por "índice de tablas".
 
+\newcolumntype{g}{>{\columncolor{black!20}}c} % Para usar columnas grises en tablas de tabu
+
 \hyphenation{dia-gra-ma co-rres-pon-de a-gra-de-ci-mien-to reali-zan-do-se vec-to-rial res-pec-ti-va-men-te elec-tro-mag-ne-tis-mo ver-ti-cal-men-te prin-ci-pio equian-gu-lar me-dian-te es-ta-cio-na-ria pro-pia-men-te con-si-de-ra-cio-nes re-que-ri-mien-to pro-pues-to si-mu-la-cio-nes an-te-na trans-for-ma-dor cons-tru-ir-se fre-cuen-cias fre-cuen-cia exce-len-tes exce-len-te trans-mi-so-ra re-flexio-nes se-miane-coi-ca e-qui-va-len-te li-te-ra-tu-ra de-sa-rro-llo}
 
-
+\definecolor{Gray}{gray}{0.9}
 %%  ------------------------------  %%
 %%  Comienzo del documento  %%
 %%  ------------------------------  %%

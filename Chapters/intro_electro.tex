@@ -27,24 +27,30 @@ Recién finalizada la Segunda Guerra Mundial se comenzaron a fabricar circuitos 
 \section{Ecuaciones de Maxwell}
 \label{subsec_ecuaciones_maxwell}
 %%%%
-La teoría electromagnética propuesta por Maxwell, y simplificada por Heaviside, se reduce a cuatro ecuaciones diferenciales lineales vectoriales e interdependientes que, en notación diferencial, quedan expresadas de la siguiente manera \cite{Pozar:MwEngineering}:
+La teoría electromagnética propuesta por Maxwell, y simplificada por Heaviside, se reduce a cuatro ecuaciones diferenciales lineales vectoriales e interdependientes que, en notación diferencial, quedan expresadas como se observa a la izquierda de la ecuación \ref{eq:Maxwell} \cite{Pozar:MwEngineering}:
 
-\begin{subequations}
-	\label{eq:maxwell_equations}
-	\begin{align}	
-		\nabla \times \vec{E} & = -\frac{\partial \vec{B}}{\partial t} - \vec{M}  & \text{(Faraday)}\\
-		\nabla \times \vec{H} & = \frac{\partial \vec{D}}{\partial t} + \vec{J} & \text{(Ampère)} \label{eq:ampere} \\
-		\nabla \cdot \vec{D} & = \rho & \text{(Gauss)} \\
-		\nabla \cdot \vec{B} & = 0
-	\end{align}
-\end{subequations}
-
+\begin{align}
+\label{eq:Maxwell}
+\left.\begin{array}{rr@{\mskip\thickmuskip}l}
+\text{Faraday} &\nabla \times \vec{E} & = -\frac{\partial \vec{B}}{\partial t} - \vec{M}\\
+\text{Ampère} &\nabla \times \vec{H} & = \frac{\partial \vec{D}}{\partial t} + \vec{J} \\
+\text{Gauss} &\nabla \cdot \vec{D} & = \rho \\
+& \nabla \cdot \vec{B} & = 0
+\end{array} \right\}
+\quad \implies \quad
+\left\{\begin{array}{r@{\mskip\thickmuskip}l}
+\nabla \times \vec{E} & = -j \omega \vec{B} - \vec{M} \\
+\nabla \times \vec{H} & = j \omega \vec{D} + \vec{J} \\
+\nabla \cdot \vec{D} & = \rho\\
+\nabla \cdot \vec{B} & = 0
+\end{array}\right.
+\end{align}
 
 donde $\vec{E}$ es el campo eléctrico, en $(V/m)$; $\vec{H}$ es el campo magnético, en $(A/m)$; $\vec{D}$ es la densidad de flujo eléctrico, en $(C/m^2)$; $\vec{B}$ es la densidad de flujo magnético, en $(Wb/m)$; $\vec{M}$ es la densidad de corriente magnética, en $(V/m)$, y se considera por completitud y simetría; $\vec{J}$ es la densidad de corriente eléctrica, en $(A/m^2)$; y $\rho$ es la densidad de carga eléctrica, en $(C/m^2)$.
 
-De las ecuaciones \ref{eq:maxwell_equations} se deduce que las fuentes de campo electromagnético son las corrientes $\vec{M}$ y $\vec{J}$, y la densidad de carga eléctrica $\rho$.
+De las ecuaciones \ref{eq:Maxwell} se deduce que las fuentes de campo electromagnético son las corrientes $\vec{M}$ y $\vec{J}$, y la densidad de carga eléctrica $\rho$.
 
-Aplicando la divergencia a la ecuación de Ampere (\ref{eq:ampere}), y recordando que $\nabla \cdot (\nabla \times F) = 0$, se obtiene la ecuación de continuidad, que representa la conservación de la carga, o la continuidad de la corriente, dado que $\nabla \cdot \vec{J}$ representa el flujo de corriente en un punto, y $\partial \rho / \partial t$ representa la variación de la densidad de carga en el mismo punto.
+Aplicando la divergencia a la ecuación de Ampere, y recordando que $\nabla \cdot (\nabla \times F) = 0$, se obtiene la ecuación de continuidad, que representa la conservación de la carga, o la continuidad de la corriente.
 
 \begin{equation}
 	\label{eq:continuidad}
@@ -52,22 +58,12 @@ Aplicando la divergencia a la ecuación de Ampere (\ref{eq:ampere}), y recordand
 \end{equation}
 %%%%
 
-Dado que la mayor parte del análisis se realiza sobre campos de comportamiento armónico y en régimen permanente, la dependencia del tiempo de la ecuaciones de Maxwell se suele simplificar, y se puede utilizar notación fasorial. Para esto, todos los campos se consideran complejos, y la dependencia temporal, $e^{j \omega t}$, se suele dejar implícita, dado que resulta común para todos los términos. Considerando que cualquier variación en el tiempo físicamente realizable puede ser descompuesta según la transformada de Fourier, no hay pérdida de generalidad al tratar a las ecuaciones de Maxwell de esta manera. Así, las derivadas respecto del tiempo resultan más sencillas, y los vectores de campos se vuelven vectores complejos que son funciones complejas dependientes sólo de coordeanadas espaciales \cite{Collin:GuidedWaves}.
-
-\begin{subequations}
-	\label{eq:maxwell_equations_harmonic}
-	\begin{align}	
-	\nabla \times \vec{E} & = -j \omega \vec{B} - \vec{M} \label{eq:Faraday_harmonic}\\
-	\nabla \times \vec{H} & = j \omega \vec{D} + \vec{J} \label{eq:Ampere_harmonic}\\
-	\nabla \cdot \vec{D} & = \rho \label{eq:Gauss_harmonic}\\
-	\nabla \cdot \vec{B} & = 0
-	\end{align}
-\end{subequations}
+Dado que la mayor parte del análisis se realiza sobre campos de comportamiento armónico y en régimen permanente, la dependencia del tiempo de la ecuaciones de Maxwell se suele simplificar, y se puede utilizar notación fasorial. Para esto, todos los campos se consideran complejos, y la dependencia temporal, $e^{j \omega t}$, se suele dejar implícita, dado que resulta común para todos los términos. Considerando que cualquier variación en el tiempo físicamente realizable puede ser descompuesta según la transformada de Fourier, no hay pérdida de generalidad al tratar a las ecuaciones de Maxwell de esta manera. Así, las derivadas respecto del tiempo resultan más sencillas, y los vectores de campos se vuelven funciones vectoriales complejas dependientes sólo de coordenadas espaciales \cite{Collin:GuidedWaves}. El resultado de esta simplificación se observa en el lado derecho de la ecuación \ref{eq:Maxwell}.
 
 \subsection{Campos en medios materiales}
 \label{subsec_campos_en_dielectricos}
 
-Un campo eléctrico aplicado sobre cualquier material dieléctrico genera una polarización de sus átomos y/o moléculas, creando momentos dipolares eléctricos (o alineándolos, si en el material existían previamente), y dando lugar a un vector de polarización adicional, $\vec{P}_e$, que genera un decrecimiento en el campo eléctrico presente en el material. En el mismo sentido, un campo magnético aplicado sobre un medio material podría ser capaz de alinear los momentos dipolares magnéticos en un material magnético, produciendo un vector de polarización magnética $P_m$. Si el medio es, además, lineal e isotrópico, dichas polarizaciones son proporcionales al campo aplicado, de forma que $\vec{P}_e = \epsilon_0 \chi_e \vec{E}$ y $\vec{P}_m = \chi_m \vec{H}$, con $\chi_e$ y $\chi_m$ las susceptibilidades eléctrica y magnética, respectivamente. Dado que las susceptibilidades toman valores complejos, los medios materiales poseen permitividades eléctricas y permeabilidades magnéticas también complejas, por lo que las relaciones constitutivas resultan:
+Un campo eléctrico aplicado sobre cualquier material dieléctrico genera una polarización de sus átomos y/o moléculas, creando momentos dipolares eléctricos (o alineándolos, si en el material existían previamente), y dando lugar a un vector de polarización adicional, $\vec{P}_e$, que genera un decrecimiento en el campo eléctrico presente en el material. En el mismo sentido, un campo magnético aplicado sobre un medio material podría ser capaz de alinear los momentos dipolares magnéticos en un material magnético, produciendo un vector de polarización magnética $P_m$. Si el medio es, además, lineal e isotrópico, dichas polarizaciones son proporcionales al campo aplicado, de forma que $\vec{P}_e = \epsilon_0 \chi_e \vec{E}$ y $\vec{P}_m = \chi_m \vec{H}$, con $\chi_e$ y $\chi_m$ las susceptibilidades eléctrica y magnética, respectivamente. Dado que las susceptibilidades toman valores complejos, los medios materiales poseen permitividades eléctricas y permeabilidades magnéticas también complejas, asociadas a las pérdidas debidas al amortiguamiento causado por los momentos dipolares respectivos \cite{Fernandez:Electromag}. Las relaciones constitutivas resultan, entonces:
 \begin{subequations}
 	\label{eq:polarization_vector}
 	\begin{align}
@@ -76,8 +72,6 @@ Un campo eléctrico aplicado sobre cualquier material dieléctrico genera una po
 	\end{align}
 \end{subequations}
 
-Las partes imaginarias de la permitividad y la permeabilidad ($\epsilon''$ y $\mu''$) representan las pérdidas en el medio debido al amortiguamiento causado por los momentos dipolares respectivos \cite{Fernandez:Electromag}.
-
 Si, además, el material posee una conductividad $\sigma$, la aplicación de un campo eléctrico da lugar a la aparición de una densidad de corriente $\vec{J}$, que en algunos casos, cuando $\sigma$ es independiente del campo eléctrico aplicado, de la dirección del mismo y de la posición, se puede expresar según la ley de Ohm:
 
 \begin{equation}
@@ -85,25 +79,23 @@ Si, además, el material posee una conductividad $\sigma$, la aplicación de un 
 	\vec{J} = \sigma \vec{E}
 \end{equation}
 
-La ecuación \ref{eq:ampere} queda, entonces, expresada como
+La ecuación de Ampère de \ref{eq:Maxwell} queda, entonces, expresada como
 \begin{subequations}
 	\begin{align}
-		\nabla \times \vec{H} & = j \omega \vec{D} + \vec{J} \\
-		& = j \omega \epsilon \vec{E} + \sigma \vec{E} \\
-		& = j \omega \epsilon' \vec{E} + (\omega \epsilon'' + \sigma)\vec{E} \\
+		\nabla \times \vec{H} & = j \omega \vec{D} + \vec{J} = j \omega \epsilon \vec{E} + \sigma \vec{E} = j \omega \epsilon' \vec{E} + (\omega \epsilon'' + \sigma)\vec{E}\\
 		& = j \omega \left( \epsilon' - j\epsilon'' - j \frac{\sigma}{\omega} \right) \vec{E}
 	\end{align}
 \end{subequations}
 
-La relación entre la parte imaginaria y la parte real de la corriente total de desplazamiento se conoce como tangente de pérdidas, definida como \cite{Pozar:MwEngineering}
+La relación entre la parte imaginaria y la parte real de la corriente total de desplazamiento se conoce como tangente de pérdidas \cite{Pozar:MwEngineering}:
 
 \begin{equation}
-	tan (\delta) = \frac{\omega \epsilon'' + \sigma}{\omega \epsilon'}
+	tan \; \delta = \frac{\omega \epsilon'' + \sigma}{\omega \epsilon'}
 \end{equation}
 
-Cuando el material no es homogéneo, los coeficientes $\epsilon$ y $\mu$ dependen de la posición. Si, además, el material es anisotrópico, como en el caso de los cristales y gases ionizados, la relación expresada antes entre los vectores de polarizacón y los campos no se cumplen, sino que deben ser expresadas como tensores de rango 2 (diadas), de manera que quede expresada su dependencia de la dirección \cite{Collin:GuidedWaves}:
+Cuando el material no es homogéneo, los coeficientes $\epsilon$ y $\mu$ dependen de la posición. Si, además, el material es anisotrópico, como en el caso de los cristales y gases ionizados, la relaciones expresadas antes entre los vectores de polarizacón ($\vec{P}_e$ y $\vec{P}_m$)y los campos no se cumplen, sino que deben ser expresadas como tensores de rango 2 (diadas), como se muestra en la ecuación \ref{eq:diadas}, explicitando así su dependencia de la dirección \cite{Collin:GuidedWaves}. Si, además, el material no es lineal, los coeficientes $\epsilon_{ij}$ y $\mu_{ij}$ pueden ser funciones de $\vec{E}$ y $\vec{H}$ respectivamente.
 
-\begin{equation}
+\begin{equation} \label{eq:diadas}
 \begin{bmatrix}
 D_x \\
 D_y \\
@@ -139,8 +131,7 @@ H_z
 \end{bmatrix}
 \end{equation}
 
-Si, además, el material no es lineal, los coeficientes $\epsilon_{ij}$ y $\mu_{ij}$ pueden ser funciones de $\vec{E}$ y $\vec{H}$ respectivamente.
-\subsection{Condiciones de borde}
+\subsection{Condiciones de borde} \label{sec:condiciones-borde}
 
 \begin{figure}[htp]
 	\centering
@@ -178,7 +169,7 @@ Dado que la superficie conductora magnética representa el caso dual al de la su
 \label{subsec_eq_de_onda}
 %%%%
 
-Al considerar una región del espacio lineal, isotrópica y homogénea, se puede calcular el rotor de la primera ecuación de Maxwell, aplicar la segunda ecuación y, recordando que $\nabla \times \nabla \times \vec{E} = \nabla \nabla \cdot \vec{E} - \nabla^2\vec{E}$, donde $\nabla \times \vec{E} = \rho/\epsilon$, se puede deducir que:
+Al considerar una región del espacio lineal, isotrópica y homogénea, se puede calcular el rotor de la primera ecuación de Maxwell, aplicar la segunda ecuación y, recordando que $\nabla \times \nabla \times \vec{E} = \nabla \nabla \cdot \vec{E} - \nabla^2\vec{E}$, donde $\nabla \cdot \vec{E} = \rho/\epsilon$, se puede deducir que:
 
 \begin{align}
 	\nabla \times \nabla \times \vec{E} & = -j \omega \mu \nabla \times \vec{H} - \nabla \times \vec{M} \notag \\
@@ -212,7 +203,7 @@ Si, además, la región del espacio es libre de fuentes, se deducen las ecuacion
 
 Para el caso sin pérdidas se puede expresar como $k = \omega \sqrt{\mu \epsilon}$, mientras que si se considera que existen pérdidas óhmicas, las mismas pueden ser tenidas en cuenta si $k$ asume el valor complejo $-j\gamma$, con $\gamma = j\alpha + \beta = j \omega \sqrt{\mu \epsilon} \sqrt{1-j \sigma/(\omega \epsilon)}$. Para el caso de un buen conductor, $\gamma = j\alpha + \beta = j \omega \sqrt{\mu \epsilon} \sqrt{\sigma/(\omega \epsilon)} = (1+j) \sqrt{\omega \mu \sigma/2}$, lo que nos permite definir la profundidad de penetración como $\delta_s = 1/\alpha = \sqrt{2/(\omega \mu \sigma)}$, que decrece con la frecuencia.
 
-En coordenadas cartesianas, la ecuación \ref{eq:Helmholtz_E} se puede escribir como indica la ecuación \ref{eq:Helmholtz_cartesianas_completo}, que además se cumple para todas las coordenadas en que se desarrolla el campo $\vec{E}$. Para cada una de estas coordenadas, resulta sencillo aplicar el método de separación de variables, de forma que $E_i = f(x)g(y)h(z)$ para $i=x, y,$ o $z$, donde las funciones $f(x)$, $g(y)$ y $h(z)$ son independientes.
+En coordenadas cartesianas, la ecuación \ref{eq:Helmholtz_E} se puede escribir como indica la ecuación \ref{eq:Helmholtz_cartesianas_completo}, que además se cumple para todas las coordenadas en que se desarrolla el campo $\vec{E}$. Para cada una de estas coordenadas, resulta sencillo aplicar el método de separación de variables, de forma que $E_i = f(x)g(y)h(z)$ para $i=x, y,$ ó $z$, donde las funciones $f(x)$, $g(y)$ y $h(z)$ son independientes.
 
 \begin{equation}
 	\label{eq:Helmholtz_cartesianas_completo}
@@ -222,13 +213,13 @@ En coordenadas cartesianas, la ecuación \ref{eq:Helmholtz_E} se puede escribir 
 Sustituyendo, para la ecuación de Helmholtz de cada coordenada, la expresión de $E_i$, se obtiene:
 
 \begin{equation}
-	\frac{f''(x)}{f(x)} + \frac{g''(y)}{g(y)} + \frac{h''(z)}{h(z)} + k_0^2 = 0
+	\frac{f''(x)}{f(x)} + \frac{g''(y)}{g(y)} + \frac{h''(z)}{h(z)} + k_0^2 = 0 \nonumber
 \end{equation}
 
 Dado que las funciones propuestas son independientes, cada uno de los términos de la ecuación anterior deben dar lugar a una constante:
 
 \begin{equation}
-	\frac{f''(x)}{f(x)} = -k_x^2; \qquad \frac{g''(y)}{g(y)} = -k_y^2; \qquad \frac{h''(z)}{h(z)} = -k_z^2
+	\frac{f''(x)}{f(x)} = -k_x^2; \qquad \frac{g''(y)}{g(y)} = -k_y^2; \qquad \frac{h''(z)}{h(z)} = -k_z^2 \nonumber
 \end{equation}
 
 de manera que:
@@ -241,22 +232,20 @@ de manera que:
 Quedan, entonces, tres ecuaciones diferenciales ordinarias:
 
 \begin{equation}
-	\frac{d^2 f}{dx^2} + k_x^2 f = 0; \qquad \frac{d^2 g}{dy^2} + k_y^2 g = 0; \qquad \frac{d^2 h}{dz^2} + k_z^2 h = 0;
+	\frac{d^2 f}{dx^2} + k_x^2 f = 0; \qquad \frac{d^2 g}{dy^2} + k_y^2 g = 0; \qquad \frac{d^2 h}{dz^2} + k_z^2 h = 0; \nonumber
 \end{equation}
 
 cuyas soluciones son de la forma $e^{\pm j k_i i}$, con $i = x, y$ o $z$, respectivamente. Las soluciones con un signo positivo en el exponente corresponden a ondas que viajan en la dirección negativa ($-x, -y, -z$), mientras que las que tienen un signo negativo corresponden a ondas que viajan en la dirección positiva. Dado que ambas soluciones son válidas y posibles, en función de las condiciones de borde, en general la expresión de un campo $E_i (x, y, z), i=x,y,z$ quedará establecida como la suma de ambas, afectadas por un factor de amplitud dependiente de la coordenada evaluada. Para el caso de ondas que viajan en la dirección positiva:
 
 \begin{equation}
-	E_i(x,y,z) = A_i \;e^{-j(k_x x + k_y y + k_z z)}, \quad i=x,y,z
+	E_i(x,y,z) = A_i \;e^{-j(k_x x + k_y y + k_z z)}, \quad i=x,y,z \nonumber
 \end{equation}
-
-Lo que indica que la coordenada $i$-ésima del campo eléctrico tendrá un comportamiento exponencial complejo respecto de la posición. 
 
 Si definimos como $\hat{n}$ al versor en la dirección de propagación, podemos definir el vector de número de onda, $\vec{k}$, como:
 
 \begin{equation}
 	\label{eq:vector_numero_de_onda}
-	\vec{k} = k_x \hat{x} + k_y \hat{y} + k_z \hat{z} = k_o \hat{n}
+	\vec{k} = k_x \hat{x} + k_y \hat{y} + k_z \hat{z} = k_o \hat{n} \nonumber
 \end{equation}
 
 De esta forma, se puede expresar, estableciendo $\vec{E}_0 = A \hat{x} + B \hat{y} + C \hat{z}$, y $\vec{r} = x \hat{x} + y \hat{y} + z \hat{z}$, el campo eléctrico como:
@@ -269,19 +258,20 @@ De esta forma, se puede expresar, estableciendo $\vec{E}_0 = A \hat{x} + B \hat{
 Para el caso con pérdidas, y considerando que la dirección de propagación es $z$, las componentes $x$ e $y$ se comportan como:
 
 \begin{equation}
-E_i(z) = E_i \; e^{-\gamma z} = E_i \; e^{-\alpha z} \; e^{-j \beta z}, \quad i=x,y
+E_i(z) = E_i \; e^{-\gamma z} = E_i \; e^{-\alpha z} \; e^{-j \beta z}, \quad i=x,y \nonumber
 \end{equation}
 
 Al expresar la divergencia del campo eléctrico de la ecuación \ref{eq:electric_field_wave_solution}, que en una región sin fuentes es nula, y recordando que $\nabla \cdot (f \vec{A}) = \vec{A} \cdot \nabla f + f \nabla \cdot \vec{A}$, se obtiene:
 
+
 \begin{align}
-	\nabla \cdot \vec{E} = \nabla \cdot \vec{E}_0 e^{-j\vec{k} \cdot \vec{r}} & = \vec{E}_0 \cdot \nabla e^{-j \vec{k} \vec{r}} + e^{-j \vec{k} \vec{r}} \cancelto{0}{\nabla \cdot \vec{E}_0} = 0 \\
-	& -j \vec{k} \cdot \vec{E}_0 e^{-j \vec{k} \vec{r}} = 0
+	\nabla \cdot \vec{E} = \nabla \cdot \vec{E}_0 e^{-j\vec{k} \cdot \vec{r}} & = \vec{E}_0 \cdot \nabla e^{-j \vec{k} \vec{r}} + e^{-j \vec{k} \vec{r}} \cancelto{0}{\nabla \cdot \vec{E}_0} = 0 \nonumber \\
+	& = -j \vec{k} \cdot \vec{E}_0 e^{-j \vec{k} \vec{r}} = 0
 \end{align}
 
 De lo que se puede deducir que $\vec{k} \cdot \vec{E}_0 = 0$, de modo que el campo eléctrico, en una onda plana, es siempre perpendicular a la dirección de propagación.
 
-De la ecuación de Faraday (\ref{eq:Faraday_harmonic}), considerando espacio libre de cargas, se puede deducir que el campo magnético es siempre ortogonal al campo eléctrico y a la dirección de propagación, y que los campos están relacionados de forma que \cite{Fernandez:Electromag}:
+De la ecuación de Faraday de \ref{eq:Maxwell}, considerando espacio libre de cargas, se puede deducir que el campo magnético es siempre ortogonal al campo eléctrico y a la dirección de propagación, y que los campos están relacionados de forma que \cite{Fernandez:Electromag}:
 
 \begin{equation}
 	\vec{H}(\vec{r},t) = \pm \frac{\hat{n} \times \vec{E}(\vec{r},r)}{\eta}
@@ -293,10 +283,186 @@ La velocidad de fase se define como $v_p=\omega/\beta$, que para el caso sin pé
 
 La longitud de onda, $\lambda$, es la distancia espacial entre dos máximos sucesivos, por lo que se expresa como $\lambda = 2\pi / k = v_p/f$.
 
-\subsection{Incidencia normal de una onda plana sobre una interfaz}
+\subsection{Incidencia de una onda plana sobre una interfaz}
 
+Una onda electromagnética incidente sobre una superficie en un ángulo arbitrario puede analizarse descomponiendo el problema en dos casos canónicos de polarización (dirección del campo eléctrico): perpendicular (TE, trasversal eléctrico) o paralela (TM, transversal magnético) al plano de incidencia, que es el formado por el rayo incidente y la normal a la interfaz. El problema de la incidencia perpendicular a la interfaz combina ambos casos.
 
-\subsection{Incidencia oblicua de una onda plana sobre una interfaz}
+\begin{figure} [H]
+	\centering 
+	\subfigure[Polarización paralela (TM).]{
+		\label{fig:oblique_incidence_parallel}
+		\includegraphics[width=0.45\textwidth]{intro_electro/incidencia_oblicua_paralela-version2.eps}}
+	\hspace{5mm}
+	\subfigure[Polarización perpendicular (TE).]{
+		\label{fig:oblique_incidence_perp}
+		\includegraphics[width=0.45\textwidth]{intro_electro/incidencia_oblicua_perpendicular-version2.eps}}
+	\caption{Incidencia oblicua para los dos casos de polarización analizados.}
+	\label{fig:oblique_incidence}
+\end{figure}
+
+Los campos eléctrico y magnético incidentes, según el sistema de coordenadas definido en la figura \ref{fig:oblique_incidence}, pueden ser expresados, en forma general, como indican las ecuaciones \ref{eq:incident_fields}.
+
+\begin{subequations}
+	\label{eq:incident_fields}
+	\begin{align}
+	\vec{E}_i = \vec{E}_0 \;e^{-j\vec{k}_1 \cdot \vec{r}} \\
+	\vec{H}_i = \frac{\hat{k} \times \vec{E}_0}{\eta_1} \;e^{-j\vec{k}_1 \cdot \vec{r}}
+	\end{align}
+\end{subequations}
+
+donde $\vec{r}=(x,y,z)$, $\vec{k}_1 = \hat{k}_1 \;\omega \sqrt{\mu_1 \epsilon_1}$, $\hat{k}_1$ es la dirección de propagación de la onda plana, y $\eta_1 = \sqrt{\mu_1 / \epsilon_1} = j\omega \mu / \gamma$ es la impedancia de onda de región de incidencia, que puede ser compleja si el medio posee pérdidas.
+
+Se define al coeficiente de reflexión $\Gamma$ como la relación entre la magnitud del campo reflejado y del campo incidente, $E_r / E_i$. De la misma manera, el coeficiente de transmisión $T$ es la relación entre el módulo del campo transmitido al segundo medio y el campo incidente desde el primer medio, $E_t / E_i$, de manera que $1+\Gamma = T$ y que $(1-\Gamma)/\eta_1 = T/\eta_2$. 
+
+Usando estos coeficientes, a partir de las ecuaciones \ref{eq:incident_fields}, y teniendo en cuenta las condiciones de borde descriptas en la sección \ref{sec:condiciones-borde}, se pueden calcular los campos reflejados y transmitidos. Para los dos casos canónicos analizados, los campos incidentes, reflejados y transmitidos se resumen en la tabla \ref{table:incidencia_oblicua}, así como los coeficientes de reflexión y transmisión.
+
+\tabulinesep=1.2mm
+\taburulecolor{black!20}
+\begin{table}
+	
+	\begin{tabu} to 1\textwidth {gX[c]@{}X[c]@{}}
+		\rowcolor{black!20} & \multicolumn{1}{c}{\textbf{TM}} & \multicolumn{1}{c}{\textbf{TE}}\\
+		$\vec{E}_i$
+		&
+		\scalebox{0.86}{%
+			$
+			E_0\; (\hat{x}\; \mathrm{cos}\; \theta_i - \hat{z}\; \mathrm{sin}\; \theta_i)\; e^{-j k_1 (x\; \mathrm{sin}\; \theta_i + z\; \mathrm{cos}\; \theta_i)}
+			$
+		}	
+		&
+		\scalebox{0.86}{%
+			$
+			E_0\; \hat{y} \;e^{-j k_1 (x\; \mathrm{sin}\; \theta_i + z\; \mathrm{cos}\; \theta_i)}
+			$
+		} \\
+		$\vec{H}_i$
+		&
+		\scalebox{0.86}{%
+			$
+			-\frac{E_0}{\eta_1}\; \hat{y}\; e^{-j k_1 (x\; \mathrm{sin}\; \theta_i + z\; \mathrm{cos}\; \theta_i)}
+			$
+		}
+		&
+		\scalebox{0.86}{%
+			$
+			\frac{E_0}{\eta_1} \;(-\hat{x}\; \mathrm{cos}\; \theta_i + \hat{z}\; \mathrm{sin}\; \theta_i)\; e^{-j k_1 (x\; \mathrm{sin}\; \theta_i + z\; \mathrm{cos}\; \theta_i)}
+			$
+		} \\
+		\hline
+	
+		$\vec{E}_r$
+		&
+		\scalebox{0.86}{%
+			$
+			E_0\; \Gamma\; (\hat{x}\; \mathrm{cos}\; \theta_r + \hat{z}\; \mathrm{sin}\; \theta_r)\; e^{-j k_1 (x\; \mathrm{sin}\; \theta_r - z\; \mathrm{cos}\; \theta_r)}
+			$
+		}	
+		&
+		\scalebox{0.86}{%
+			$
+			E_0\; \Gamma\; \hat{y} \;e^{-j k_1 (x\; \mathrm{sin}\; \theta_r - z\; \mathrm{cos}\; \theta_r)}
+			$
+		} \\
+		$\vec{H}_r$
+		&
+		\scalebox{0.86}{%
+			$
+			-\frac{E_0\; \Gamma}{\eta_1}\; \hat{y}\; e^{-j k_1 (x\; \mathrm{sin}\; \theta_r - z\; \mathrm{cos}\; \theta_r)}
+			$
+		}
+		&
+		\scalebox{0.86}{%
+			$
+	 		\frac{E_0\; \Gamma}{\eta_1} \;(\hat{x}\; \mathrm{cos}\; \theta_r + \hat{z}\; \mathrm{sin}\; \theta_r)\; e^{-j k_1 (x\; \mathrm{sin}\; \theta_r - z\; \mathrm{cos}\; \theta_r)}
+			$
+		} \\
+	\hline
+		$\vec{E}_t$
+		&
+		\scalebox{0.86}{%
+			$
+			E_0\; T\; (\hat{x}\; \mathrm{cos}\; \theta_t - \hat{z}\; \mathrm{sin}\; \theta_t) e^{-j k_2 (x\; \mathrm{sin}\; \theta_t + z\; \mathrm{cos}\; \theta_t)}
+			$
+		}
+		&
+		\scalebox{0.86}{%
+			$
+			E_0\; T\; \hat{y}\; e^{-j k_2 (x\; \mathrm{sin}\; \theta_t + z\; \mathrm{cos}\; \theta_t)}
+			$
+		} \\
+		$\vec{H}_t$
+		&
+		\scalebox{0.86}{%
+			$
+	 		\frac{E_0\; T}{\eta_1}\; \hat{y}\; e^{-j k_2 (x\; \mathrm{sin}\; \theta_t + z\; \mathrm{cos}\; \theta_t)}
+			$
+		}
+		&
+		\scalebox{0.86}{%
+			$
+			\frac{E_0\; T}{\eta_2}\; (-\hat{x}\; \mathrm{cos}\; \theta_t + \hat{z}\; \mathrm{sin}\; \theta_t)\; e^{-j k_2 (x\; \mathrm{sin}\; \theta_t + z\; \mathrm{cos}\; \theta_t)}
+			$
+		} \\
+		\hline
+		
+		$\Gamma$
+		&
+		$\frac{\eta_2\; cos\; \theta_t - \eta_1 \; cos\; \theta_i}{\eta_2\; cos\; \theta_t + \eta_1 \; cos\; \theta_i}$
+		&
+		$\frac{\eta_2\; cos\; \theta_i - \eta_1 \; cos\; \theta_t}{\eta_2\; cos\; \theta_i + \eta_1 \; cos\; \theta_t}$
+		\\
+		$T$
+		&
+		$\frac{2 \;\eta_2 \; cos\; \theta_i}{\eta_2\; cos\; \theta_t + \eta_1 \; cos\; \theta_i}$
+		&
+		$\frac{2\; \eta_2 \; cos\; \theta_i}{\eta_2\; cos\; \theta_t + \eta_1 \; cos\; \theta_i}$
+	\end{tabu}
+	\caption{Campos incidentes, transmitidos y reflejados, y coeficientes de reflexión y transmisión para incidencia oblicua de una onda plana sobre una interfaz dieléctrica}
+	\label{table:incidencia_oblicua}
+\end{table}
+
+Si se fuerza la continuidad de las componentes tangenciales de los campos sobre la interfaz para ambos casos, $\vec{E}_i^{tg} + \vec{E}_r^{tg} = \vec{E}_t^{tg}$ y $\vec{H}_i^{tg} + \vec{H}_r^{tg} = \vec{H}_t^{tg}$, se obtienen las expresiones \ref{eq:continuidad_campos_paralelo} para el modo TM, y \ref{eq:continuidad_campos_perpendicular} para el modo TE.
+
+\begin{subequations}
+	\label{eq:continuidad_campos_paralelo}
+	\begin{align}
+		cos \; \theta_i \; e^{-j k_1 x sin \; \theta_i} + \Gamma \; cos \; \theta_r \; e^{-j k_1 x \; sin\; \theta_r} &= T\; cos\; \theta_t \; e^{-j k_2 x \; sin\; \theta_t}\\
+		\frac{1}{\eta_1} \; e^{-j k_1 x \; sin \theta_i} - \frac{\Gamma}{\eta_1} \; e^{-j k_1 x \; sin \; \theta_r} &= \frac{T}{\eta_2} \; e^{-j k_2 x \; sin\; \theta_t}
+	\end{align}
+\end{subequations}
+
+\begin{subequations}
+	\label{eq:continuidad_campos_perpendicular}
+	\begin{align}
+	e^{-j k_1 x sin \; \theta_i} + \Gamma \; e^{-j k_1 x \; sin\; \theta_r} &= T\; e^{-j k_2 x \; sin\; \theta_t}\\
+	-\frac{1}{\eta_1} cos\; \theta_i \; e^{-j k_1 x \; sin \theta_i} - \frac{\Gamma}{\eta_1} \; cos\; \theta_r e^{-j k_1 x \; sin \; \theta_r} &= -\frac{T}{\eta_2} \; cos\; \theta_t \; e^{-j k_2 x \; sin\; \theta_t}
+	\end{align}
+\end{subequations}
+
+En estas ecuaciones se observa que a ambos lados de las igualdades, las expresiones son funciones de la posición sobre la interfaz. Para que la condición de borde se cumpla en todos sus puntos, la variación en $x$ debe ser la misma en todos los términos, de forma que el efecto de la variación sea anulado: $k_1 \; sin\; \theta_i = k_1 \; sin \; \theta_r = k_2 \; sin\; \theta_t$.  De esta consideración se deriva la Ley de Snell (asumiendo que $\mu_1 = \mu_2$):
+
+\begin{subequations}
+	\label{eq:snell_law}
+	\begin{align}
+	\theta_i &= \theta_r \\
+	k_1 \; sin\; \theta_i = k_2 \; sin\; \theta_t & \overset{\eta=\frac{\omega\mu}{k}}{\Longrightarrow} \eta_2 \; sin\; \theta_i = \eta_1 \; sin\; \theta_t \label{eq:snell_law_second}
+	\end{align}
+\end{subequations}
+
+Utilizando estas expresiones, y a partir de las ecuaciones \ref{eq:continuidad_campos_paralelo} y \ref{eq:continuidad_campos_perpendicular}, se obtienen las expresiones para los coeficientes de reflexión y transmisión de la tabla \ref{table:incidencia_oblicua}. Resulta importante destacar que, para el caso de incidencia perpendicular ($\theta_i = 0$), los coeficientes quedan simplificados a $\Gamma = (\eta_2 - \eta_1)/(\eta_2 + \eta_1)$ y $T = (2 \; \eta_2)/(\eta_2 + \eta_1)$.
+
+\subsection{Ángulo de Brewster y ángulo crítico}
+
+Se conoce como ángulo de Brewster al $\theta_i$ necesario para que se produzca reflexión nula ($\Gamma = 0$) en una interfaz, cuando sobre ella incide una onda plana en forma oblicua. Este efecto se da únicamente para la polarización TM, es decir, cuando existe componente de campo eléctrico en la dirección normal a la intefaz, por lo que suele ser utilizado como mecanismo para lograr polarización de una onda electromagnética.
+
+Si se anulan los coeficientes de reflexión mostrados en la tabla \ref{table:incidencia_oblicua}, y se utilizan las ecuaciones \ref{eq:snell_law}, se puede observar que en el caso TE se requiere que $sin \; \theta_i / sin \; \theta_t = cos \; \theta_i / cos \; \theta_t = \eta_1 / \eta_2$, lo cual es imposible. Para el caso TM, en cambio, el requisito es $sin \; \theta_i / sin \; \theta_t = cos \; \theta_t / cos \; \theta_i = \eta_1 / \eta_2$, lo cual no supone una contradicción. Multiplicando la ecuación \ref{eq:snell_law_second} y el valor de $\Gamma$ para polarización TM, se obtiene que $sin\;\theta_i \; cos \; \theta_i = sin \; \theta_t \; cos \; \theta_t$, ó $sin \; 2\theta_i = sin \; 2\theta_t$, que se satisface cuando $2\theta_i = \pi - 2\theta_t$, de modo que $\theta_i + \theta_t = \pi/2$. Aplicando esta condición en la Ley de Snell (ecuación \ref{eq:snell_law_second}) se obtiene la expresión del ángulo de Brewster:
+
+\begin{align}
+	\label{eq:Brewster_angle}
+	tan\;\theta_i^{Brewster} = \frac{\eta_1}{\eta_2}
+\end{align}
+
+% Falta ángulo crítico
 
 \section{Guias de ondas}
 \label{subsec_guias_de_ondas}
