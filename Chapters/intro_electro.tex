@@ -19,7 +19,7 @@ El primer análisis de la propagación de ondas electromagnéticas en guías de 
 
 Los conjuntos de antenas se popularizaron a partir de la aparición de la antena de Yagui-Uda en 1926, formada por elementos lineales que dan lugar a una fase fija. Recién durante la Segunda Guerra Mundial surgieron los conjuntos de antena de fase variable \cite{Stutzman:AntennaTheory}, y las guías de ondas y las antenas tomaron un lugar prioritario entre los ingenieros, matemáticos y físicos de la época, lo que permitió el desarrollo de métodos de análisis para facilitar la formulación de problemas con condiciones de borde complejas.
 
-Recién finalizada la Segunda Guerra Mundial se comenzaron a fabricar circuitos \textit{microstrip}. En 1953, G. A. Deschamps presentó el primer trabajo sobre antenas con la misma tecnología, y la primer patente en ese sentido se registró en 1955 \cite{Balanis:Handbook}. Aún así, recién en la década del '70 comenzaron a utilizarse en aplicaciones prácticas, principalmente debido a la aparición de sustratos con bajas tangentes de pérdida, la mejora en técnicas de fotolitografía, y la optimización de modelos teóricos \cite{Barthia:Handbook}. Sin embargo, la simplificación constructiva trajo aparejados problemas de acoplamiento mutuo, que debieron ser abordados por técnicas de filtrado y blindaje.
+Recién finalizada la Segunda Guerra Mundial se comenzaron a fabricar circuitos \textit{microstrip}. En 1953, G. A. Deschamps presentó el primer trabajo sobre antenas con la misma tecnología, y la primer patente en ese sentido se registró en 1955 \cite{Balanis:Handbook}. Aún así, recién en la década del '70 comenzaron a utilizarse en aplicaciones prácticas, principalmente debido a la aparición de sustratos con bajas tangentes de pérdida, la mejora en técnicas de fotolitografía, y la optimización de modelos teóricos \cite{Barthia:Handbook}, que permitieron solucionar los problemas de dispersión y aparición de modos indeseados. Sin embargo, la simplificación constructiva trajo aparejados problemas de acoplamiento mutuo, que debieron ser abordados por técnicas de filtrado y blindaje.
 
 %%%%
 % NO QUEDÓ BIEN COMPLETO.
@@ -415,7 +415,7 @@ Usando estos coeficientes, a partir de las ecuaciones \ref{eq:incident_fields}, 
 		&
 		$\frac{2 \;\eta_2 \; cos\; \theta_i}{\eta_2\; cos\; \theta_t + \eta_1 \; cos\; \theta_i}$
 		&
-		$\frac{2\; \eta_2 \; cos\; \theta_i}{\eta_2\; cos\; \theta_t + \eta_1 \; cos\; \theta_i}$
+		$\frac{2\; \eta_2 \; cos\; \theta_i}{\eta_2\; cos\; \theta_i + \eta_1 \; cos\; \theta_t}$
 	\end{tabu}
 	\caption{Campos incidentes, transmitidos y reflejados, y coeficientes de reflexión y transmisión para incidencia oblicua de una onda plana sobre una interfaz dieléctrica}
 	\label{table:incidencia_oblicua}
@@ -462,7 +462,40 @@ Si se anulan los coeficientes de reflexión mostrados en la tabla \ref{table:inc
 	tan\;\theta_i^{Brewster} = \frac{\eta_1}{\eta_2}
 \end{align}
 
-% Falta ángulo crítico
+En ángulo crítico se define como el ángulo de incidencia para el cual la onda incidente es totalmente reflejada, y la onda transmitida no se propagará a la segunda región.
+
+Si se observan las expresiones del coeficiente de transmisión de la tabla \ref{table:incidencia_oblicua}, el único valor de $\theta_i$ para el cual la transmisión es nula es $\pi/2$, es decir, incidencia rasante. Sin embargo, a partir de la ecuación \ref{eq:snell_law_second}, se obtiene que $sin \; \theta_t = \eta_2 / \eta_1\; sin\; \theta_i$. Se puede observar que en los casos en que $\eta_2 > \eta_1$ es posible que el ángulo de transmisión alcance el valor $\pi/2$ antes de que lo haga en ángulo de incidencia. El ángulo crítico, entonces, surge de la expresión:
+
+\begin{equation}
+	\label{eq:angulo_critico}
+	sin\; \theta_i^c = \frac{\eta_1}{\eta_2}\;\cancelto{1}{sin \; \underbrace{\theta_t}_{\pi/2}} = \sqrt{\frac{\epsilon_2}{\epsilon_1}} \implies \theta_c = arcsin \;\sqrt{\frac{\epsilon_2}{\epsilon_1}} = arcsin \;\frac{\eta_1}{\eta_2}
+\end{equation}
+
+Para ángulos mayores a $\theta_c$, las expresiones del coeficiente de reflexión se vuelven complejas y de módulo 1, por lo que toda la energía electromagnética es reflejada, y la onda transmitida tiene un comportamiento evanescente, como se muestra en la figura \ref{fig:angulo_critico}. En la ecuación \ref{eq:angulo_critico} se observa que si $\theta_i > \theta_c$, el ángulo $\theta_t$ pierde significado físico, debido a que $sin\; \theta_t$ debería ser mayor a 1 para cumplir la ecuación.
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{intro_electro/angulo_critico.eps}
+	\caption{Ilustración del comportamiento de una onda plana durante la incidencia con ángulo critico y con ángulo mayor al $\theta_c$.}
+	\label{fig:angulo_critico}
+\end{figure}
+
+Se debe notar que en el argumento anterior no se consideró la polarización de la onda incidente, por lo que la reflexión completa se puede dar tanto en modo TM como en modo TE, siempre y cuando la incidencia se produzca desde el medio ópticamente más denso al menos denso \cite{Fernandez:Electromag}. Sin embargo, resulta útil expresar el comportamiento de los campos.
+
+Para el caso de una onda incidente con una polarización lineal arbitraria como la expresada en la ecuación \ref{eq:incident_fields}, se debe considerar que la componente longitudinal a la interfaz del vector de onda $\vec{k}$ se mantendrá constante, de modo que ${k_2}_x = {k_1}_x = k_1 \; sin \; \theta_i$. La componente transversal a la interfaz, en cambio, será ${k_2}_z = k_2\; cos \; \theta_t = k_2 \sqrt{1-sin^2\theta_t} = \beta$. Dado que para el caso en que el ángulo incidente es mayor al ángulo crítico se requiere que $sin\;\theta_t > 1$, el valor de ${k_2}_z$ será imaginario, $-i\alpha$. El signo negativo se desprende de la imposibilidad física de un crecimiento exponencial del valor del campo. De esta forma, para direcciones de campos arbitrarias, y teniendo en cuenta el hecho de que el vector $\vec{k}$ se desarrolla sobre el plano de incidencia:
+
+\begin{subequations}
+	\begin{align}
+		\vec{E}_t (\vec{r},t) = \vec{E}_2 \; e^{-j \vec{k}_2 \cdot \vec{r}} = \vec{E}_2 \; e^{-j({k_2}_x x + {k_2}_z z)} = \vec{E}_2 \; e^{-j(\beta x - j\alpha z)} = \vec{E}_2 \; e^{-j\beta x} \; e^{- \alpha z}\\
+		\vec{H}_t (\vec{r},t) = \vec{H}_2 \; e^{-j \vec{k}_2 \cdot \vec{r}} = \vec{H}_2 \; e^{-j({k_2}_x x + {k_2}_z z)} = \vec{H}_2 \; e^{-j(\beta x - j\alpha z)} = \vec{H}_2 \; e^{-j\beta x} \; e^{- \alpha z}
+	\end{align}
+\end{subequations}
+
+Se observa que en la dirección perpendicular a la interfaz hay un comportamiento evanescente o exponencial decreciente de la onda transmitida, mientras que existe propagación en la dirección paralela a la interfaz, dando lugar a lo que se conoce como onda de superficie.
+
+La ecuación del módulo del vector de onda (\ref{eq:numero_de_onda}) resulta redefinida como $\beta^2 - \alpha^2 = k_2^2$, de donde se deduce que $\alpha = \sqrt{k_1^2\;sin^2\;\theta_i - k_2^2}$.
+
+
 
 \section{Guias de ondas}
 \label{subsec_guias_de_ondas}
@@ -473,8 +506,9 @@ LOREM IPSUM
 
 \subsection{Guía de ondas dieléctricas con plano de tierra}
 
+\subsection{Línea microstrip}
 
-
+\section{Resonadores}
 
 \section{Líneas de transmisión}
 \label{subsec_lineas_de_transmision}
