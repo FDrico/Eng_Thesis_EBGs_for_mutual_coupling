@@ -500,9 +500,23 @@ La ecuación del módulo del vector de onda (\ref{eq:numero_de_onda}) resulta re
 \section{Guias de ondas}
 \label{subsec_guias_de_ondas}
 %%%%
-LOREM IPSUM
 %Pozar, pag 171
 %%%%
+
+Suponiendo una guía de ondas de forma arbitraria en la que la energía electromagnética se propaga en la dirección $z$, los campos eléctrico y magnético se pueden expresar como la suma de sus componentes longitudinales (en la dirección $z$) y sus componentes transversales (en el plano $xy$), ambas con una constante de propagación $\gamma$ y dependientes sólo de la posición en el plano transversal, de manera que:
+
+\begin{align}
+	\vec{E}(x,y,z) = \left[ \vec{e}_{xy}(x,y) + \hat{z} e_z(x,y) \right] e^{-j\beta z}
+\end{align}
+
+Aplicando las ecuaciones rotacionales de Maxwell (Faraday y Ampère en la ecuación \ref{eq:Maxwell}), considerando una región libre de cargas y un comportamiento armónico de los campos, se puede deducir \cite{Fernandez:Electromag} que las componentes transversales quedan en términos de las componentes longitudinales:
+
+\begin{align}
+	H_x &= \frac{j}{k_c^2} \left(\omega \epsilon \frac{\partial E_z}{\partial y} - \gamma \frac{\partial H_z}{\partial x} \right) & H_y &= \frac{-j}{k_c^2} \left(\omega \epsilon \frac{\partial E_z}{\partial x} + \gamma \frac{\partial H_z}{\partial y} \right) \\
+	E_x &= \frac{-j}{k_c^2} \left(\omega \mu \frac{\partial H_z}{\partial y} + \gamma \frac{\partial H_z}{\partial x} \right) & E_y &= \frac{j}{k_c^2} \left(\omega \mu \frac{\partial H_z}{\partial x} - \gamma \frac{\partial E_z}{\partial y} \right)
+\end{align}
+
+donde se definió $k_c^2 = k^2 - \beta^2$ como el número de onda de corte, siendo $k = \omega \sqrt{\mu \epsilon} = 2\pi/\lambda$ el número de onda  en el material que rellena la línea de transmisión.
 
 \subsection{Guía de ondas dieléctricas con plano de tierra}
 
