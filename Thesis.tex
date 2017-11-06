@@ -39,16 +39,14 @@
 \usepackage{array,ragged2e}
 \usepackage{tabu}
 
+
 %%  -------------------------------------  %%
 %%  Configuración de la bibliografía  %%
 %%  -------------------------------------  %%
 
-
-\usepackage[fixlanguage]{babelbib}
-\selectbiblanguage{spanish}
-\setbtxfallbacklanguage{spanish}
-
-
+\usepackage[backend=biber,style=ieee]{biblatex}
+\addbibresource{./Bibliography/bibliografia.bib}
+\usepackage{csquotes}
 %%  ------------------------------  %%
 %%  Configuración de los links  %%
 %%  ------------------------------  %%
@@ -313,12 +311,16 @@ A Claudia, mi compañera, por la incondicionalidad, su gran paciencia y, sobre t
 
 \backmatter
 
-\nocite{*}  % Para poner las referencias que no fueron citadas.
+%\nocite{*}  % Para poner las referencias que no fueron citadas.
+%
+%\label{Bibliography}
+%\lhead{\emph{Bibliografía}}  % Coloca "Bibliografía" en la esquina superior derecha de la página.
+%\bibliographystyle{ieee}  % Estilo de la bibliografía.
+%\bibliography{Bibliography/bibliografia}  % Carga las referencias del archivo "Bibliography.bib".
 
-\label{Bibliography}
-\lhead{\emph{Bibliografía}}  % Coloca "Bibliografía" en la esquina superior derecha de la página.
-\bibliographystyle{ieee}  % Estilo de la bibliografía.
-\bibliography{Bibliography/bibliografia}  % Carga las referencias del archivo "Bibliography.bib".
+\chapter{Bibliografía}
+\nocite{*}
+\printbibliography[heading=none]
 
 
 %%  ----------------------  %%

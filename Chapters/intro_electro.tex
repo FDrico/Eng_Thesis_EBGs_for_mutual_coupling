@@ -453,7 +453,7 @@ Utilizando estas expresiones, y a partir de las ecuaciones \ref{eq:continuidad_c
 
 \subsection{Ángulo de Brewster y ángulo crítico}
 
-Se conoce como ángulo de Brewster al $\theta_i$ necesario para que se produzca reflexión nula ($\Gamma = 0$) en una interfaz, cuando sobre ella incide una onda plana en forma oblicua. Este efecto se da únicamente para la polarización TM, es decir, cuando existe componente de campo eléctrico en la dirección normal a la intefaz, por lo que suele ser utilizado como mecanismo para lograr polarización de una onda electromagnética.
+Se conoce como ángulo de Brewster al ángulo de incidencia $\theta_i$ necesario para que se produzca reflexión nula ($\Gamma = 0$) en una interfaz, cuando sobre ella incide una onda plana en forma oblicua. Este efecto se da únicamente para la polarización TM, es decir, cuando existe componente de campo eléctrico en la dirección normal a la intefaz, por lo que suele ser utilizado como mecanismo para lograr polarización de una onda electromagnética.
 
 Si se anulan los coeficientes de reflexión mostrados en la tabla \ref{table:incidencia_oblicua}, y se utilizan las ecuaciones \ref{eq:snell_law}, se puede observar que en el caso TE se requiere que $sin \; \theta_i / sin \; \theta_t = cos \; \theta_i / cos \; \theta_t = \eta_1 / \eta_2$, lo cual es imposible. Para el caso TM, en cambio, el requisito es $sin \; \theta_i / sin \; \theta_t = cos \; \theta_t / cos \; \theta_i = \eta_1 / \eta_2$, lo cual no supone una contradicción. Multiplicando la ecuación \ref{eq:snell_law_second} y el valor de $\Gamma$ para polarización TM, se obtiene que $sin\;\theta_i \; cos \; \theta_i = sin \; \theta_t \; cos \; \theta_t$, ó $sin \; 2\theta_i = sin \; 2\theta_t$, que se satisface cuando $2\theta_i = \pi - 2\theta_t$, de modo que $\theta_i + \theta_t = \pi/2$. Aplicando esta condición en la Ley de Snell (ecuación \ref{eq:snell_law_second}) se obtiene la expresión del ángulo de Brewster:
 
@@ -512,11 +512,18 @@ Suponiendo una guía de ondas de forma arbitraria en la que la energía electrom
 Aplicando las ecuaciones rotacionales de Maxwell (Faraday y Ampère en la ecuación \ref{eq:Maxwell}), considerando una región libre de cargas y un comportamiento armónico de los campos, se puede deducir \cite{Fernandez:Electromag} que las componentes transversales quedan en términos de las componentes longitudinales:
 
 \begin{align}
-	H_x &= \frac{j}{k_c^2} \left(\omega \epsilon \frac{\partial E_z}{\partial y} - \gamma \frac{\partial H_z}{\partial x} \right) & H_y &= \frac{-j}{k_c^2} \left(\omega \epsilon \frac{\partial E_z}{\partial x} + \gamma \frac{\partial H_z}{\partial y} \right) \\
+	\label{eq:campos_guia_de_ondas}
+	H_x &= \frac{j}{k_c^2} \left(\omega \epsilon \frac{\partial E_z}{\partial y} - \gamma \frac{\partial H_z}{\partial x} \right) & H_y &= \frac{-j}{k_c^2} \left(\omega \epsilon \frac{\partial E_z}{\partial x} + \gamma \frac{\partial H_z}{\partial y} \right)  \nonumber\\
 	E_x &= \frac{-j}{k_c^2} \left(\omega \mu \frac{\partial H_z}{\partial y} + \gamma \frac{\partial H_z}{\partial x} \right) & E_y &= \frac{j}{k_c^2} \left(\omega \mu \frac{\partial H_z}{\partial x} - \gamma \frac{\partial E_z}{\partial y} \right)
 \end{align}
 
 donde se definió $k_c^2 = k^2 - \beta^2$ como el número de onda de corte, siendo $k = \omega \sqrt{\mu \epsilon} = 2\pi/\lambda$ el número de onda  en el material que rellena la línea de transmisión.
+
+Cuando no existen componentes de campo en la dirección de propagación, $z$, según las ecuaciones \ref{eq:campos_guia_de_ondas}, no existen campos en las direcciones transversales si $k_c \neq 0$. La indeterminación generada por el hecho de que $k_c$ se anula da como resultado que $\beta = \omega \sqrt{\mu \epsilon} = k$, de modo que no existe número de onda de corte, y haciendo que la impedancia de onda sea $\eta$.  A este modo de propagación sobre una guía de ondas se lo llama TEM (transversal electromagnético). Los campos transversales satisfacen que el Laplaciano es 0, de modo que se comportan como un campo electrostático., y el hecho de que  y es el motivo por el cual no pueden existir ondas TEM en guías de ondas de un único conductor.
+
+Cuando la componente $z$ del campo eléctrico se anula, el modo de propagación se denomina TE (transversal electrico), y pueden utilizarse las relaciones descriptas en la ecuación \ref{eq:campos_guia_de_ondas} para obtener el resto de los campos. La impedancia de onda, en este caso, resulta $Z_{TE} = k\eta/\beta$, dependiente de la frecuencia.
+
+Cuando la componente $z$ del campo magnético se anula, el modo de propagación es TM (transversal magnético), y con el mismo procedimiento que antes, se puede hallar su impedancia de onda, que resulta $Z_{TM} = \beta \eta / k$.
 
 \subsection{Guía de ondas dieléctricas con plano de tierra}
 

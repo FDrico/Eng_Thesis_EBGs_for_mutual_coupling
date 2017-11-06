@@ -1,48 +1,14 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: Thesis.aux
-The style file: babunsrt.bst
-Database file #1: Bibliography/bibliografia.bib
-Warning--I didn't find a database entry for "Baars"
-Warning--I didn't find a database entry for "Fano2"
-Warning--I didn't find a database entry for "Balanisantenas"
-Warning--I didn't find a database entry for "Orfanidis"
-Warning--I didn't find a database entry for "Silver"
-Warning--I didn't find a database entry for "Cheng"
-Warning--I didn't find a database entry for "Stutzman"
-Warning--I didn't find a database entry for "Collin"
-Warning--I didn't find a database entry for "Balaniselectro"
-Warning--I didn't find a database entry for "James"
-Warning--I didn't find a database entry for "Elliott"
-Warning--I didn't find a database entry for "ARRL"
-Warning--I didn't find a database entry for "Carr"
-Warning--I didn't find a database entry for "laton"
-Warning--I didn't find a database entry for "Fernandez"
-Warning--I didn't find a database entry for "walfram_car_coord"
-Warning--I didn't find a database entry for "walfram_sphe_coord"
-Warning--I didn't find a database entry for "walfram_bessel"
-Warning--I didn't find a database entry for "walfram_bessel_first"
-Warning--I didn't find a database entry for "Agilent_vna_cal"
-Warning--I didn't find a database entry for "Agilent_vna_err"
-Warning--I didn't find a database entry for "Agilent_vna_man"
-Warning--I didn't find a database entry for "walfram_error_prop"
-Warning--I didn't find a database entry for "Agilent_an_esp_err"
-Warning--I didn't find a database entry for "LPT_ana_esp_man"
-Warning--empty language in Barthia:Handbook
-Warning--empty year in Morin:Waves
-Warning--empty journal in Allen:SurfaceWaveCoupling
-Warning--empty journal in Fano:CouplingReceiving
-Warning--empty journal in Malkomes:MutualCoupling
-Warning--empty journal in VanLil:TLModelCoupling
-Warning--empty journal in Sievenpiper:HIESForbiddenBand
-Warning--empty journal in Sievenpiper:Thesis
-Warning--empty journal in Polo:SurfaceWavesReview
-Warning--empty journal in Saikh:EBGinMSA
-Warning--empty journal in Dodov:SurfaceWaveEffect
-Warning--empty journal in Meade:NaturePhotonicBandGaps
-Warning--empty journal in Marcela:Tesis
-Warning--empty journal in Barlow:SurfaceWaves
-Warning--empty journal in Penard:MutualCouplingMicrostrip
-Warning--empty journal in Gonzalo:PerformancePBG
-Warning--empty journal in Dodov:SurfaceWavesImpact
-Warning--empty journal in Hendry:SurfaceWavesInteresting
-Warning--empty journal in Alexopoulos:PrintedDipoles
-(There were 44 warnings)
+[0] Config.pm:302> INFO - This is Biber 2.8
+[1] Config.pm:305> INFO - Logfile is 'Thesis.blg'
+[87] biber-MSWIN64:313> INFO - === 
+[151] Biber.pm:361> INFO - Reading 'Thesis.bcf'
+[389] Biber.pm:844> INFO - Using all citekeys in bib section 0
+[433] Biber.pm:3971> INFO - Processing section 0
+[476] Biber.pm:4144> INFO - Looking for bibtex format file './Bibliography/bibliografia.bib' for section 0
+[483] bibtex.pm:1449> INFO - Decoding LaTeX character macros into UTF-8
+[499] bibtex.pm:1305> INFO - Found BibTeX data source './Bibliography/bibliografia.bib'
+[988] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[988] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[988] Biber.pm:3799> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'es-ES'
+[1059] bbl.pm:613> INFO - Writing 'Thesis.bbl' with encoding 'UTF-8'
+[1106] bbl.pm:716> INFO - Output to Thesis.bbl
