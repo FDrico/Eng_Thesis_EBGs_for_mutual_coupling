@@ -1,3 +1,4 @@
+% !TeX spellcheck = en_US
 %%%%  Las secciones de texto con fórmulas se separan con %%%%
 %% Las fórmulas presentes entre 2 secciones de texto se separan con %%
 
@@ -67,8 +68,8 @@ Un campo eléctrico aplicado sobre cualquier material dieléctrico genera una po
 \begin{subequations}
 	\label{eq:polarization_vector}
 	\begin{align}
-		\vec{D} = \epsilon_0 \vec{E} + \vec{P}_e = \epsilon_0 (1+\chi_e)\vec{E} = \epsilon \vec{E} &= \epsilon' - j \epsilon'' \vec{E}\\
-		\vec{B} = \mu_0 (\vec{H} + \vec{P}_m) = \mu_0 (1+\chi_m)\vec{H} = \mu \vec{H} &= \mu' - j \mu''\vec{H}
+		\vec{D} = \epsilon_0 \vec{E} + \vec{P}_e = \epsilon_0 (1+\chi_e)\vec{E} = \epsilon \vec{E} &= (\epsilon' - j \epsilon'') \vec{E}\\
+		\vec{B} = \mu_0 (\vec{H} + \vec{P}_m) = \mu_0 (1+\chi_m)\vec{H} = \mu \vec{H} &= (\mu' - j \mu'') \vec{H}
 	\end{align}
 \end{subequations}
 
@@ -152,15 +153,15 @@ Si se considera una interfaz entre dos medios, como la que se muestra en la figu
 \end{subequations}
 
 \subsubsection{Campos sobre una superficie dieléctrica}
-Dado que en una interfaz entre dos dieléctricos no hay carga eléctrica ni densidades de corriente, las ecuaciones \ref{eq:condiciones_borde} establecen que las componentes normales de los vectores $\vec{D}$ y $\vec{B}$ se conservan, y que las componentes tangenciales de $\vec{E}$ y $\vec{H}$ también lo hacen.
+Dado que en una interfaz entre dos dieléctricos no hay carga eléctrica ni densidades de corriente, las ecuaciones \ref{eq:condiciones_borde} establecen que \textbf{las componentes normales de los vectores $\vec{D}$ y $\vec{B}$ se conservan, y que las componentes tangenciales de $\vec{E}$ y $\vec{H}$ también lo hacen}.
 
 \subsubsection{Campos sobre una superficie conductora eléctrica}
-Si el conductor no tiene pérdidas ($\sigma \rightarrow \infty$), todos los campos deben ser cero en su interior, dado que la profundidad de penetración se anula. Considerando, además, que $\vec{M}_s = 0$, la componente tangencial del campo eléctrico, $E_t$ desaparece sobre la superficie del conductor. Dado que la diferencia entre las componentes normales del campo magnético está dada por $\vec{J}_s$, y el campo magnético debe anularse en el conductor, la densidad de corriente superficial está dada únicamente por el campo magnético externo al conductor. En el mismo sentido, la densidad de carga superficial $\rho_s$ es la expresión, sobre la superficie del conductor, de la componente normal de $\vec{D}$.
+Si el conductor no tiene pérdidas ($\sigma \rightarrow \infty$), todos los campos deben ser cero en su interior, dado que la profundidad de penetración se anula. Considerando, además, que $\vec{M}_s = 0$, la componente tangencial del campo eléctrico, \textbf{$E_t$ desaparece sobre la superficie del conductor}. Dado que la diferencia entre las componentes normales del campo magnético está dada por $\vec{J}_s$, y el campo magnético debe anularse en el conductor, \textbf{la densidad de corriente superficial está dada únicamente por el campo magnético externo al conductor}. En el mismo sentido, la densidad de carga superficial $\rho_s$ es la expresión, sobre la superficie del conductor, de la componente normal de $\vec{D}$.
 
 % SKIN DEPTH
 
 \subsubsection{Campos sobre una superficie conductora magnética}
-Dado que la superficie conductora magnética representa el caso dual al de la superficie conductora eléctrica, en este caso se espera que la componente tangencial de $\vec{H}$ se anule sobre la superficie, mientras que la componente tangencial del campo eléctrico dé lugar a corrientes magnéticas sobre la misma.
+Dado que la superficie conductora magnética representa el caso dual al de la superficie conductora eléctrica, en este caso se espera que la \textbf{componente tangencial de $\vec{H}$ se anule sobre la superficie}, mientras que la componente tangencial del campo eléctrico dé lugar a corrientes magnéticas sobre la misma.
 
 %%%%% QUEDA DECRI QUE PASA CON UNA CORRIWENTE EN HORIZRAON O VERTICAL - LIBRO DE YAMAT, PAG 10.
 %% COMPLETAR CON COLLIN %%
@@ -201,7 +202,7 @@ Si, además, la región del espacio es libre de fuentes, se deducen las ecuacion
 \end{subequations}
 %%%%
 
-Para el caso sin pérdidas se puede expresar como $k = \omega \sqrt{\mu \epsilon}$, mientras que si se considera que existen pérdidas óhmicas, las mismas pueden ser tenidas en cuenta si $k$ asume el valor complejo $-j\gamma$, con $\gamma = j\alpha + \beta = j \omega \sqrt{\mu \epsilon} \sqrt{1-j \sigma/(\omega \epsilon)}$. Para el caso de un buen conductor, $\gamma = j\alpha + \beta = j \omega \sqrt{\mu \epsilon} \sqrt{\sigma/(\omega \epsilon)} = (1+j) \sqrt{\omega \mu \sigma/2}$, lo que nos permite definir la profundidad de penetración como $\delta_s = 1/\alpha = \sqrt{2/(\omega \mu \sigma)}$, que decrece con la frecuencia.
+Para el caso sin pérdidas se puede expresar como $k = \omega \sqrt{\mu \epsilon}$, mientras que \textbf{si se considera que existen pérdidas óhmicas, las mismas pueden ser tenidas en cuenta si $k$ asume el valor complejo} $-j\gamma$, con $\gamma = j\alpha + \beta = j \omega \sqrt{\mu \epsilon} \sqrt{1-j \sigma/(\omega \epsilon)}$. Para el caso de un buen conductor, $\gamma = j\alpha + \beta = j \omega \sqrt{\mu \epsilon} \sqrt{\sigma/(\omega \epsilon)} = (1+j) \sqrt{\omega \mu \sigma/2}$, lo que nos permite definir la \textbf{profundidad de penetración} como $\delta_s = 1/\alpha = \sqrt{2/(\omega \mu \sigma)}$, que decrece con la frecuencia.
 
 En coordenadas cartesianas, la ecuación \ref{eq:Helmholtz_E} se puede escribir como indica la ecuación \ref{eq:Helmholtz_cartesianas_completo}, que además se cumple para todas las coordenadas en que se desarrolla el campo $\vec{E}$. Para cada una de estas coordenadas, resulta sencillo aplicar el método de separación de variables, de forma que $E_i = f(x)g(y)h(z)$ para $i=x, y,$ ó $z$, donde las funciones $f(x)$, $g(y)$ y $h(z)$ son independientes.
 
@@ -210,19 +211,7 @@ En coordenadas cartesianas, la ecuación \ref{eq:Helmholtz_E} se puede escribir 
 	\nabla^2 \vec{E} + k_0^2 \vec{E} = \frac{\partial^2 \vec{E}}{\partial x^2} + \frac{\partial^2 \vec{E}}{\partial y^2} + \frac{\partial^2 \vec{E}}{\partial z^2} +  k_0^2 \vec{E} = 0
 \end{equation}
 
-Sustituyendo, para la ecuación de Helmholtz de cada coordenada, la expresión de $E_i$, se obtiene:
-
-\begin{equation}
-	\frac{f''(x)}{f(x)} + \frac{g''(y)}{g(y)} + \frac{h''(z)}{h(z)} + k_0^2 = 0 \nonumber
-\end{equation}
-
-Dado que las funciones propuestas son independientes, cada uno de los términos de la ecuación anterior deben dar lugar a una constante:
-
-\begin{equation}
-	\frac{f''(x)}{f(x)} = -k_x^2; \qquad \frac{g''(y)}{g(y)} = -k_y^2; \qquad \frac{h''(z)}{h(z)} = -k_z^2 \nonumber
-\end{equation}
-
-de manera que:
+Sustituyendo, para la ecuación de Helmholtz de cada coordenada, la expresión de $E_i$, se obtiene que $\frac{f''(x)}{f(x)} + \frac{g''(y)}{g(y)} + \frac{h''(z)}{h(z)} + k_0^2 = 0$, y dado que las funciones propuestas son independientes, cada uno de los términos de la ecuación anterior deben dar lugar a una constante, de modo que $\frac{f''(x)}{f(x)} = -k_x^2$, $\frac{g''(y)}{g(y)} = -k_y^2$ y $\frac{h''(z)}{h(z)} = -k_z^2$. Esto nos permite concluir que:
 
 \begin{equation}
 	\label{eq:numero_de_onda}
@@ -527,6 +516,75 @@ Cuando la componente $z$ del campo magnético se anula, el modo de propagación 
 
 \subsection{Guía de ondas dieléctricas con plano de tierra}
 
+\section{Ondas de superficie}
+
+Existen estructuras abiertas que son capaces de mantener el campo electromagnético íntimamente ligadas a ellas, de forma que el campo decae exponencialmente con la distancia a las mismas, y permiten propagación de energía en una dirección, dando lugar a lo que se conoce como ondas de superficie. Estas estructuras se denominan guías de ondas superficiales, y pueden consistor en planos conductores recubiertos de dieléctrico, en planos corrugados o en simples interfaces entre dos medios distintos. Uller inauguró el campo en 1903, y luego Zenneck y Sommerfeld, entre 1907 y 1909, las utilizaron para explicar la propagación de ondas en la superficie terrestre. Recién en la década de 1960 se realizaron estudios teóricos de importancia, que permitieron hallar aplicaciones y nuevas configuraciones que permitían la propagación de este tipo de ondas.
+
+En la actualidad existen numerosos tipos de ondas de superficie, entre las que se destacan las ondas Zenneck (utilizadas en bajas frecuencias, cuando los medios intervinientes poseen altas pérdidas), las ondas de tipo resonante (que surgen cuando una onda incide sobre un material periódico), las ondas de superficie no lineales (que se generan en medios no lineales), los plasmones (utilizados en altas frecuencias, cuando los medios tienen bajas pérdidas) y las ondas de Dyakonov (donde al menos uno de los materiales es anisotrópico).
+
+Para este trabajo, resultan de importancia las ondas de Zenneck, ya que permiten explicar el comportamiento de las ondas sobre una placa dieléctrica fina que posee un plano conductor en uno de sus lados. La consideración de una guía dieléctrica gruesa (de espesor considerable respecto de la longitud de onda) no resulta de especial importancia en el problema abordado, por lo que no se analizará en detalle, aunque se hará una breve descripción en secciones subsiguientes.
+
+Si se considera que una onda plana incide con ángulo de Brewster en modo TM sobre una interfaz entre dos medios de bajas pérdidas ($\epsilon'' \ll \epsilon'$), cada uno con una permitividad eléctrica $\epsilon_i$ y una permeabilidad magnética $\mu_i$, $i=1,2$, como indica la figura \ref{fig:onda-superficie-brewster}, no existirá energía reflejada. De esta forma, toda la energía incidente es entregada a la interfaz. Con el fin de simplificar las expresiones, se considera que el medio 1 es aire.
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{intro_electro/onda-superficie-incidencia-brewster.eps}
+	\caption{Ilustración del comportamiento de una onda plana durante la incidencia con ángulo de Brewster.}
+	\label{fig:onda-superficie-brewster}
+\end{figure}
+
+\begin{subequations}
+	\label{eq:ondas-superficie-campos}
+	\begin{align}
+	{H_1}_y &= A e^{-j\ (z\; \overbrace{k_0\;sin \theta_i}^{\beta} - x\; \overbrace{k_0\;cos \theta_i)}^{h_1}},\;\; x>0 & j\omega\epsilon E_x &= -\frac{\partial H_y}{\partial z} \\
+	{H_2}_y &= A T e^{-j\; (z\; \overbrace{k\; sin \theta_t}^{\beta} - x\; \overbrace{k\; cos \theta_t)}^{h_2}},\;\; x<0   & j\omega\epsilon E_z &= -\frac{\partial H_y}{\partial x} 
+	\end{align}
+\end{subequations}
+
+Expresando los campos a uno y otro lado del plano, en función del sistema de coordenadas de la figura \ref{fig:onda-superficie-brewster}, se obtienen, en forma general, las expresiones mostradas en la ecuación \ref{eq:ondas-superficie-campos}. La componente longitudinal de los vectores de onda es igual a ambos lados de la interfaz, de modo que es $k \; \sin \; \theta_t = \beta = k_0 \; \sin \; \theta_i$. Las componentes normales a la interfaz, que llamaremos $h_i$, $i=1,2$, deben cumplir que
+
+\begin{align}
+& h_1^2 + \beta^2 = k_0^2 &h_2^2 + \beta^2 = k^2
+\end{align}
+
+Las impedancias de onda en ambas regiones es la relación entre los campos tangenciales a la interfaz sobre la que se incide, de modo que:
+
+\begin{subequations}
+\label{eq:impedancia-onda-superficie}
+\begin{align}
+	Z_1 = \frac{{E_z}_1}{{H_y}_1} = \eta_0 \; cos\; \theta_i \implies Z_1 = \frac{h_1}{k_0} \eta_0 \label{eq:impedancia-onda-incidente-onda-sup}\\
+	Z_2 = \frac{{E_z}_2}{{H_y}_2} = \eta \; cos \; \theta_t \implies Z_2 = \frac{h_2}{k} \eta \label{eq:impedancia-onda-transmitida-onda-sup}
+\end{align}
+\end{subequations}
+
+Para poder considerar que toda la energía de la onda incidente se transmite a la interfaz, $Z_1 = Z_2$, de modo que, igualando las ecuaciones \ref{eq:impedancia-onda-incidente-onda-sup} y \ref{eq:impedancia-onda-transmitida-onda-sup}, recordando que $k = \omega \sqrt{\mu \epsilon}$, igualando las componentes de $\vec{k}$ paralelas a la interfaz y asumiendo que $\mu_2 = \mu_0$, queda expresada la siguiente relación, que ilustra el caracter complejo de las componentes normales a la interfaz, $h_1$ y $h_2$:
+
+\begin{equation}
+	h_1\; (\epsilon' - j \epsilon'') = \epsilon_0 h_2
+\end{equation}
+
+De esta manera, $h_1 = h_1' - jh_1''$ y $h_2 = h_2' + jh_2''$. Como $k_0^2 = \beta^2 + h_1^2$, entonces $\beta = \beta' - j \beta''$ posee también un valor complejo.
+
+Si se considera una superficie con una impedancia de onda normalizada respecto de $\eta_0$, $Z_s = R_s + j X_s$, independiente del ángulo de incidencia, para polarización TM, entonces en base a la ecuación \ref{eq:impedancia-onda-incidente-onda-sup}, resulta:
+
+\begin{align}
+	h &= h'+jh'' = k_0 \frac{Z_1}{Z_0} = k_0 Z_s = k_0 R_s + j k_0 X_s \implies \\
+	\beta &= \beta' - j\beta'' = \sqrt{(k_0^2 - h^2)} = \sqrt{k_0^2 - (k_0 R_s + j k_0 X_s )^2} \nonumber\\
+		&= k_0 \sqrt{1+X_s^2 - R_s^2 - 2jR_s X_s} 
+\end{align}
+
+Reemplazando el valor de $h$ en la expresión del campo magnético de la ecuación \ref{eq:ondas-superficie-campos}, se observa que el campo presenta un decrecimiento exponencial en la dirección normal a la superficie si el valor de $X_s$ es positivo, de manera que presente una reactancia inductiva, que además debe ser grande para que la onda de superficie se mantenga cercana a la superficie. Si, además, el valor de $R_s$ es lo suficientemente pequeño, $\beta''$ será pequeño y habrá baja atenuación en la dirección de propagación.
+
+La velocidad de propagación se obtiene directamente de la componente real de $\beta$ que, si $R_s$ es pequeño y $X_s$ es grande, resulta: $\beta' = k_0 \sqrt{1+X_s^2}$, dando lugar a que la velocidad de propagación sobre la superficie resulte: $v_p = \omega/\beta' = c / \sqrt{1+X_s^2}$. En los casos en que la componente reactiva de la impedancia de superficie es grande, el valor de la velocidad de propagación es menor al de la luz.
+
+En el caso de una interfaz aire-conductor, la componente inductiva de la impedancia de superficie resulta igual a la componente resistiva, de forma que $\eta = (1+j)/(\sigma \delta)$ \cite{Fernandez:Electromag}. Aplicando las ecuaciones \ref{eq:impedancia-onda-superficie}, se obtiene que
+
+\begin{align}
+	h &= k_0 (1+j) \sqrt{\frac{k_0}{2 \sigma Z_0}} \\
+	\beta &= k_0 \sqrt{1-\frac{j k_0}{\sigma Z_0}} \approx k_0 - \frac{j k_0^2}{2 \sigma Z_0}
+\end{align}
+
+En general, un plano conductor soporta ondas de superficie, pero no es capaz de lograr una atenuación en la dirección normal al mismo tal que la energía se mantenga concentrada en la superficie para poder ser utilizada como guía de ondas. Para lograr que la energía de la onda decaiga rápidamente lejos de la interfaz es necesario aumentar considerablemente la resisitividad de la superficie, para lo que se suele agregar al conductor una capa dieléctrica.
 \subsection{Línea microstrip}
 
 \section{Resonadores}
