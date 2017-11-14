@@ -159,6 +159,29 @@
       \field{title}{Apuntes de Electromagnetismo}
       \field{year}{2004}
     \endentry
+    \entry{Barlow:SurfaceWaves}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9cb93b09eb80e787406100842d809ce9}{%
+           family={Barlow},
+           family_i={B\bibinitperiod},
+           given={H.\bibnamedelimi M.},
+           given_i={H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=b27352a76f562fb34ba35020ac1ad329}{%
+           family={Cullen},
+           family_i={C\bibinitperiod},
+           given={A.\bibnamedelimi L.},
+           given_i={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{bbe76701dc9d1620fb2599e5dd63e806}
+      \strng{fullhash}{bbe76701dc9d1620fb2599e5dd63e806}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE - Radio Section}
+      \field{title}{Surface Waves}
+      \field{year}{1953}
+    \endentry
     \entry{Balanis:Theory}{book}{}
       \name{author}{1}{}{%
         {{hash=5d18402cf9b2dbe8e8535e0f1fd22e7c}{%
@@ -658,29 +681,6 @@
       \field{journaltitle}{Tesis de grado. Facultad de Ingeniería, Universidad de Buenos Aires}
       \field{title}{Diseño de una antena de microcintas para {WIFI} empleando estructuras {EBG} (Electromagnetic Band Gap)}
       \field{year}{2016}
-    \endentry
-    \entry{Barlow:SurfaceWaves}{article}{}
-      \name{author}{2}{}{%
-        {{hash=9cb93b09eb80e787406100842d809ce9}{%
-           family={Barlow},
-           family_i={B\bibinitperiod},
-           given={H.\bibnamedelimi M.},
-           given_i={H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=b27352a76f562fb34ba35020ac1ad329}{%
-           family={Cullen},
-           family_i={C\bibinitperiod},
-           given={A.\bibnamedelimi L.},
-           given_i={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-      }
-      \strng{namehash}{bbe76701dc9d1620fb2599e5dd63e806}
-      \strng{fullhash}{bbe76701dc9d1620fb2599e5dd63e806}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE - Radio Section}
-      \field{title}{Surface Waves}
-      \field{year}{1953}
     \endentry
     \entry{Penard:MutualCouplingMicrostrip}{article}{}
       \name{author}{2}{}{%

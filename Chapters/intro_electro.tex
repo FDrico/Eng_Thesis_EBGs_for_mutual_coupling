@@ -1,11 +1,10 @@
-% !TeX spellcheck = en_US
+% !TeX spellcheck = es_ANY
 %%%%  Las secciones de texto con fórmulas se separan con %%%%
 %% Las fórmulas presentes entre 2 secciones de texto se separan con %%
 
 %%%%%%%%%%%%%%%
 %%  Capítulo 1: Introducción  %%
 %%%%%%%%%%%%%%%
-
 %%%%
 \section{Reseña histórica}
 \label{sec_intro_resenia}
@@ -51,7 +50,7 @@ donde $\vec{E}$ es el campo eléctrico, en $(V/m)$; $\vec{H}$ es el campo magné
 
 De las ecuaciones \ref{eq:Maxwell} se deduce que las fuentes de campo electromagnético son las corrientes $\vec{M}$ y $\vec{J}$, y la densidad de carga eléctrica $\rho$.
 
-Aplicando la divergencia a la ecuación de Ampere, y recordando que $\nabla \cdot (\nabla \times F) = 0$, se obtiene la ecuación de continuidad, que representa la conservación de la carga, o la continuidad de la corriente.
+Aplicando la divergencia a la ecuación de Ampere, y recordando que $\nabla \cdot (\nabla \times \vec{F}) = 0$, se obtiene la ecuación de continuidad, que representa la conservación de la carga, o la continuidad de la corriente.
 
 \begin{align}
 	\label{eq:continuidad}
@@ -91,7 +90,7 @@ La ecuación de Ampère de \ref{eq:Maxwell} queda, entonces, expresada como
 La relación entre la parte imaginaria y la parte real de la corriente total de desplazamiento se conoce como tangente de pérdidas \cite{Pozar:MwEngineering}:
 
 \begin{align}
-	tan \; \delta &= \frac{\omega \epsilon'' + \sigma}{\omega \epsilon'} & \text{Tangente de pérdidas}
+	\tan \; \delta &= \frac{\omega \epsilon'' + \sigma}{\omega \epsilon'} & \text{Tangente de pérdidas}
 \end{align}
 
 Cuando el material no es homogéneo, los coeficientes $\epsilon$ y $\mu$ dependen de la posición. Si, además, el material es anisotrópico, como en el caso de los cristales y gases ionizados, la relaciones expresadas antes entre los vectores de polarizacón ($\vec{P}_e$ y $\vec{P}_m$) y los campos no se cumplen, sino que deben ser expresadas como tensores de rango 2 (diadas), como se muestra en la ecuación \ref{eq:diadas}, explicitando así su dependencia de la dirección \cite{Collin:GuidedWaves}. Si, además, el material no es lineal, los coeficientes $\epsilon_{ij}$ y $\mu_{ij}$ pueden ser funciones de $\vec{E}$ y $\vec{H}$ respectivamente.
@@ -136,8 +135,8 @@ H_z
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{intro_electro/condiciones_borde.eps}
-	\caption{Corrientes, campos y carga superficial en una interfaz general entre dos medios \cite{Pozar:MwEngineering}}.
+	\includegraphics[width=0.8\textwidth]{intro_electro/condiciones_borde.pdf}
+	\caption{Corrientes, campos y carga superficial en una interfaz general entre dos medios \cite{Pozar:MwEngineering}.}.
 	\label{fig:condiciones_borde}
 \end{figure}
 
@@ -170,7 +169,7 @@ Dado que la superficie conductora magnética representa el caso dual al de la su
 \label{subsec_eq_de_onda}
 %%%%
 
-Al considerar una región del espacio lineal, isotrópica y homogénea, se puede calcular el rotor de la primera ecuación de Maxwell, aplicar la segunda ecuación y, recordando que $\nabla \times \nabla \times \vec{E} = \nabla \nabla \cdot \vec{E} - \nabla^2\vec{E}$, donde $\nabla \cdot \vec{E} = \rho/\epsilon$, se puede deducir que:
+Al considerar una región del espacio lineal, isotrópica y homogénea, se puede calcular el rotor de la primera ecuación de Maxwell y aplicar la segunda ecuación \footnote{Se deberá utilizar la identidad $\nabla \times \nabla \times \vec{E} = \nabla \nabla \cdot \vec{E} - \nabla^2\vec{E}$, donde $\nabla \cdot \vec{E} = \rho/\epsilon$.}:
 
 \begin{align}
 	\nabla \times \nabla \times \vec{E} & = -j \omega \mu \nabla \times \vec{H} - \nabla \times \vec{M} \notag \\
@@ -193,13 +192,14 @@ De las ecuaciones anteriores se observa que \textbf{el campo magnético está de
 
 Si, además, la región del espacio es libre de fuentes, se deducen las ecuaciones de Helmholtz para ambos campos, donde \textbf{$k$ es la constante de propagación o número de onda, en unidades de $(1/m)$}:
 
-\begin{subequations}
+\begin{equation}
 	\label{eq:Helmholtz}
-	\begin{align}
-		\nabla \times \vec{E} + k^2 \vec{E} &= 0 \label{eq:Helmholtz_E} \\
-		\nabla \times \vec{H} + k^2 \vec{H}& = 0 &\text{Helmholtz} \label{eq:Helmholtz_H}
-	\end{align}
-\end{subequations}
+	\begin{aligned}
+		\nabla \times \vec{E} + k^2 \vec{E} &= 0  \\
+		\nabla \times \vec{H} + k^2 \vec{H}& = 0 
+	\end{aligned}
+	\qquad \text{Helmholtz}
+\end{equation}
 %%%%
 
 Para el caso sin pérdidas se puede expresar como $k = \omega \sqrt{\mu \epsilon}$, mientras que \textbf{si se considera que existen pérdidas óhmicas, las mismas pueden ser tenidas en cuenta si $k$ asume el valor complejo} $-j\gamma$, donde:
@@ -221,14 +221,7 @@ lo que nos permite definir la \textbf{profundidad de penetración} como
 \delta_s = 1/\alpha &= \sqrt{\frac{2}{\omega \mu \sigma}} & \text{Profundidad de penetración}
 \end{align}
 
-En coordenadas cartesianas, la ecuación \ref{eq:Helmholtz_E} se puede escribir como indica la ecuación \ref{eq:Helmholtz_cartesianas_completo}, que además se cumple para todas las coordenadas en que se desarrolla el campo $\vec{E}$. Para cada una de estas coordenadas, resulta sencillo aplicar el método de separación de variables, de forma que $E_i = f_i(x)g_i(y)h_i(z)$ para $i=x, y,$ ó $z$, donde las funciones $f_i(x)$, $g_i(y)$ y $h_i(z)$ son independientes.
-
-\begin{align}
-	\label{eq:Helmholtz_cartesianas_completo}
-	\nabla^2 \vec{E} + k_0^2 \vec{E} = \frac{\partial^2 \vec{E}}{\partial x^2} + \frac{\partial^2 \vec{E}}{\partial y^2} + \frac{\partial^2 \vec{E}}{\partial z^2} +  k_0^2 \vec{E} &= 0 & \text{Helmholtz}
-\end{align}
-
-Sustituyendo, para la ecuación de Helmholtz de cada coordenada, la expresión de $E_i$, se obtiene que $\frac{f''(x)}{f(x)} + \frac{g''(y)}{g(y)} + \frac{h''(z)}{h(z)} + k_0^2 = 0$, y dado que las funciones propuestas son independientes, cada uno de los términos de la ecuación anterior deben dar lugar a una constante, de modo que $\frac{f''(x)}{f(x)} = -k_x^2$, $\frac{g''(y)}{g(y)} = -k_y^2$ y $\frac{h''(z)}{h(z)} = -k_z^2$. Estas son ecuaciones diferenciales ordinarias cuyas soluciones son de la forma $e^{\pm j k_i i}$, con $i = x, y$ o $z$, respectivamente. Las soluciones con un signo positivo en el exponente corresponden a ondas que viajan en la dirección negativa ($-x, -y, -z$), mientras que las que tienen un signo negativo corresponden a ondas que viajan en la dirección positiva. Dado que ambas soluciones son válidas y posibles, en función de las condiciones de borde, en general la expresión de un campo $E_i (x, y, z), i=x,y,z$ quedará establecida como la suma de ambas, afectadas por un factor de amplitud dependiente de la coordenada evaluada.
+En coordenadas cartesianas, para resolver las ecuaciones \ref{eq:Helmholtz} resulta sencillo aplicar el método de separación de variables\footnote{En coordenadas cartesianas, $\nabla^2 E = \frac{\partial^2 \vec{E}}{\partial x^2} + \frac{\partial^2 \vec{E}}{\partial y^2} + \frac{\partial^2 \vec{E}}{\partial z^2}$. Reemplazando las coordenadas $E_i$ de $\vec{E}, i=x,y,z$ por funciones $f(x),g(y),h(z)$ independientes entre sí, se obtiene que $\frac{f''(x)}{f(x)} + \frac{g''(y)}{g(y)} + \frac{h''(z)}{h(z)} + k_0^2 = 0$. Como las funciones $f$,$g$ y $h$ son independientes, se deduce que $\frac{f''(x)}{f(x)} = -k_x^2$, $\frac{g''(y)}{g(y)} = -k_y^2$ y $\frac{h''(z)}{h(z)} = -k_z^2$.}, que da lugar a ecuaciones de la forma $e^{\pm j k_i i}$, con $i = x, y$ o $z$, respectivamente. Las soluciones con un signo positivo en el exponente corresponden a ondas que viajan en la dirección negativa ($-x, -y, -z$), mientras que las que tienen un signo negativo corresponden a ondas que viajan en la dirección positiva. Dado que ambas soluciones son válidas y posibles, en función de las condiciones de borde, en general la expresión de un campo $E_i (x, y, z), i=x,y,z$ quedará establecida como la suma de ambas, afectadas por un factor de amplitud dependiente de la coordenada evaluada.
 
 Para el caso de ondas que viajan en la dirección positiva:
 
@@ -243,7 +236,7 @@ Si definimos como $\hat{n}$ al versor en la dirección de propagación, podemos 
 	\vec{k} = k_x \hat{x} + k_y \hat{y} + k_z \hat{z} &= k_o \hat{n} & \text{Vector de propagación}
 \end{align}
 
-En base a las expresiones \ref{eq:vector_numero_de_onda} y \ref{eq:Helmholtz_cartesianas_completo}, se puede concluir que:
+En base a las expresiones \ref{eq:vector_numero_de_onda} y \ref{eq:Helmholtz}, se puede concluir que:
 
 \begin{equation}
 \label{eq:numero_de_onda}
@@ -263,12 +256,11 @@ Para el caso con pérdidas, y considerando que la dirección de propagación es 
 E_i(z) = E_i \; e^{-\gamma z} = E_i \; e^{-\alpha z} \; e^{-j \beta z}, \quad i=x,y \nonumber
 \end{equation}
 
-Al expresar la divergencia del campo eléctrico de la ecuación \ref{eq:electric_field_wave_solution}, que en una región sin fuentes es nula, y recordando que $\nabla \cdot (f \vec{A}) = \vec{A} \cdot \nabla f + f \nabla \cdot \vec{A}$, se obtiene:
+Al expresar la divergencia del campo eléctrico de la ecuación \ref{eq:electric_field_wave_solution}, se obtiene\footnote{Aplicando $\nabla \cdot (f \vec{A}) = \vec{A} \cdot \nabla f + f \nabla \cdot \vec{A}$ a la expresión, resulta $\nabla \cdot \vec{E} = \vec{E}_0 \cdot \nabla e^{-j \vec{k} \vec{r}} + e^{-j \vec{k} \vec{r}}\nabla \cdot \vec{E}_0$, donde $\nabla \cdot \vec{E}_0 =0$}:
 
 
 \begin{align}
-	\nabla \cdot \vec{E} = \nabla \cdot \vec{E}_0 e^{-j\vec{k} \cdot \vec{r}} & = \vec{E}_0 \cdot \nabla e^{-j \vec{k} \vec{r}} + e^{-j \vec{k} \vec{r}} \cancelto{0}{\nabla \cdot \vec{E}_0} = 0 \nonumber \\
-	& = -j \vec{k} \cdot \vec{E}_0 e^{-j \vec{k} \vec{r}} = 0
+	\nabla \cdot \vec{E} = \nabla \cdot \vec{E}_0 e^{-j\vec{k} \cdot \vec{r}} & = -j \vec{k} \cdot \vec{E}_0 e^{-j \vec{k} \cdot \vec{r}} = 0
 \end{align}
 
 De lo que se puede deducir que $\vec{k} \cdot \vec{E}_0 = 0$, de modo que \textbf{el campo eléctrico, en una onda plana, es siempre perpendicular a la dirección de propagación}.
@@ -283,7 +275,7 @@ De la ecuación de Faraday de \ref{eq:Maxwell}, considerando espacio libre de ca
 donde $\eta$ es la impedancia de onda, que tiene la forma
 
 \begin{align}
-	\eta &= j \omega \mu / \gamma & \text{Impedancia de onda}
+	\eta &= \frac{j \omega \mu}{\gamma }& \text{Impedancia de onda}
 \end{align}
 
 Para el caso del vacío, la impedancia intrínseca se denota $\eta_0$ y tiene un valor de $377\; \Omega$, mientras que para otros materiales está determinada por su permitividad eléctrica y permeabilidad magnética, y \textbf{puede ser compleja si hay pérdidas}.
@@ -300,11 +292,11 @@ Una onda electromagnética incidente sobre una superficie en un ángulo arbitrar
 	\centering 
 	\subfigure[Polarización paralela (TM).]{
 		\label{fig:oblique_incidence_parallel}
-		\includegraphics[width=0.45\textwidth]{intro_electro/incidencia_oblicua_paralela-version2.eps}}
+		\includegraphics[width=0.45\textwidth]{intro_electro/incidencia_oblicua_paralela-version2.pdf}}
 	\hspace{5mm}
 	\subfigure[Polarización perpendicular (TE).]{
 		\label{fig:oblique_incidence_perp}
-		\includegraphics[width=0.45\textwidth]{intro_electro/incidencia_oblicua_perpendicular-version2.eps}}
+		\includegraphics[width=0.45\textwidth]{intro_electro/incidencia_oblicua_perpendicular-version2.pdf}}
 	\caption{Incidencia oblicua para los dos casos de polarización analizados.}
 	\label{fig:oblique_incidence}
 \end{figure}
@@ -416,63 +408,69 @@ Usando estos coeficientes, a partir de las ecuaciones \ref{eq:incident_fields}, 
 		
 		$\Gamma$
 		&
-		$\frac{\eta_2\; cos\; \theta_t - \eta_1 \; cos\; \theta_i}{\eta_2\; cos\; \theta_t + \eta_1 \; cos\; \theta_i}$
+		$\frac{\eta_2\; \cos\; \theta_t - \eta_1 \; \cos\; \theta_i}{\eta_2\; \cos\; \theta_t + \eta_1 \; \cos\; \theta_i}$
 		&
-		$\frac{\eta_2\; cos\; \theta_i - \eta_1 \; cos\; \theta_t}{\eta_2\; cos\; \theta_i + \eta_1 \; cos\; \theta_t}$
+		$\frac{\eta_2\; \cos\; \theta_i - \eta_1 \; \cos\; \theta_t}{\eta_2\; \cos\; \theta_i + \eta_1 \; \cos\; \theta_t}$
 		\\
 		$T$
 		&
-		$\frac{2 \;\eta_2 \; cos\; \theta_i}{\eta_2\; cos\; \theta_t + \eta_1 \; cos\; \theta_i}$
+		$\frac{2 \;\eta_2 \; \cos\; \theta_i}{\eta_2\; \cos\; \theta_t + \eta_1 \; \cos\; \theta_i}$
 		&
-		$\frac{2\; \eta_2 \; cos\; \theta_i}{\eta_2\; cos\; \theta_i + \eta_1 \; cos\; \theta_t}$
+		$\frac{2\; \eta_2 \; \cos\; \theta_i}{\eta_2\; \cos\; \theta_i + \eta_1 \; \cos\; \theta_t}$
 	\end{tabu}
-	\caption{Campos incidentes, transmitidos y reflejados, y coeficientes de reflexión y transmisión para incidencia oblicua de una onda plana sobre una interfaz dieléctrica}
+	\caption{Campos incidentes, transmitidos y reflejados, y coeficientes de reflexión y transmisión para incidencia oblicua de una onda plana sobre una interfaz dieléctrica.}
 	\label{table:incidencia_oblicua}
 \end{table}
 
 Si se fuerza la continuidad de las componentes tangenciales de los campos sobre la interfaz para ambos casos, $\vec{E}_i^{tg} + \vec{E}_r^{tg} = \vec{E}_t^{tg}$ y $\vec{H}_i^{tg} + \vec{H}_r^{tg} = \vec{H}_t^{tg}$, se obtienen las expresiones \ref{eq:continuidad_campos_paralelo} para el modo TM, y \ref{eq:continuidad_campos_perpendicular} para el modo TE.
 
-\begin{subequations}
+\begin{equation}
+	\begin{aligned}
+		cos \; \theta_i \; e^{-j k_1 x \sin \; \theta_i} + \Gamma \; cos \; \theta_r \; e^{-j k_1 x \; \sin\; \theta_r} &= T\; \cos\; \theta_t \; e^{-j k_2 x \; \sin\; \theta_t}\\
+		\frac{1}{\eta_1} \; e^{-j k_1 x \; \sin \theta_i} - \frac{\Gamma}{\eta_1} \; e^{-j k_1 x \; \sin \; \theta_r} &= \frac{T}{\eta_2} \; e^{-j k_2 x \; \sin\; \theta_t}
+	\end{aligned}
 	\label{eq:continuidad_campos_paralelo}
-	\begin{align}
-		cos \; \theta_i \; e^{-j k_1 x sin \; \theta_i} + \Gamma \; cos \; \theta_r \; e^{-j k_1 x \; sin\; \theta_r} &= T\; cos\; \theta_t \; e^{-j k_2 x \; sin\; \theta_t}\\
-		\frac{1}{\eta_1} \; e^{-j k_1 x \; sin \theta_i} - \frac{\Gamma}{\eta_1} \; e^{-j k_1 x \; sin \; \theta_r} &= \frac{T}{\eta_2} \; e^{-j k_2 x \; sin\; \theta_t}
-	\end{align}
-\end{subequations}
+\end{equation}
 
-\begin{subequations}
+\begin{equation}
+	\begin{aligned}
+		e^{-j k_1 x \sin \; \theta_i} + \Gamma \; e^{-j k_1 x \; \sin\; \theta_r} &= T\; e^{-j k_2 x \; \sin\; \theta_t}\\
+		-\frac{1}{\eta_1} \cos\; \theta_i \; e^{-j k_1 x \; \sin \theta_i} - \frac{\Gamma}{\eta_1} \; \cos\; \theta_r e^{-j k_1 x \; \sin \; \theta_r} &= -\frac{T}{\eta_2} \; \cos\; \theta_t \; e^{-j k_2 x \; \sin\; \theta_t}
+	\end{aligned}
 	\label{eq:continuidad_campos_perpendicular}
-	\begin{align}
-	e^{-j k_1 x sin \; \theta_i} + \Gamma \; e^{-j k_1 x \; sin\; \theta_r} &= T\; e^{-j k_2 x \; sin\; \theta_t}\\
-	-\frac{1}{\eta_1} cos\; \theta_i \; e^{-j k_1 x \; sin \theta_i} - \frac{\Gamma}{\eta_1} \; cos\; \theta_r e^{-j k_1 x \; sin \; \theta_r} &= -\frac{T}{\eta_2} \; cos\; \theta_t \; e^{-j k_2 x \; sin\; \theta_t}
-	\end{align}
-\end{subequations}
+\end{equation}
 
-En estas ecuaciones se observa que a ambos lados de las igualdades, las expresiones son funciones de la posición sobre la interfaz. Para que la condición de borde se cumpla en todos sus puntos, la variación en $x$ debe ser la misma en todos los términos, de forma que el efecto de la variación sea anulado: $k_1 \; sin\; \theta_i = k_1 \; sin \; \theta_r = k_2 \; sin\; \theta_t$.  De esta consideración se deriva la Ley de Snell (asumiendo que $\mu_1 = \mu_2$):
+En estas ecuaciones se observa que a ambos lados de las igualdades, las expresiones son funciones de la posición sobre la interfaz. Para que la condición de borde se cumpla en todos sus puntos, la variación en $x$ debe ser la misma en todos los términos, de forma que el efecto de la variación sea anulado: $k_1 \; \sin\; \theta_i = k_1 \; \sin \; \theta_r = k_2 \; \sin\; \theta_t$.  De esta consideración se deriva la Ley de Snell (asumiendo que $\mu_1 = \mu_2$), expresada en la ecuación \ref{eq:snell_law}. En la gráfica de la figura \ref{fig:ley_snell} se puede observar el comportamiento del ángulo de refracción según en ángulo de incidencia la incidencia sobre una interfaz entre aire y FR4, en sentidos opuestos.
 
 \begin{subequations}
 	\label{eq:snell_law}
 	\begin{align}
 	\theta_i &= \theta_r & \text{Snell para reflexión}\\
-	k_1 \; sin\; \theta_i = k_2 \; sin\; \theta_t & \overset{\eta=\frac{\omega\mu}{k}}{\Longrightarrow} \eta_2 \; sin\; \theta_i = \eta_1 \; sin\; \theta_t & \text{Snell para refracción}\label{eq:snell_law_second}
+	k_1 \; \sin\; \theta_i = k_2 \; \sin\; \theta_t & \overset{\eta=\frac{\omega\mu}{k}}{\Longrightarrow} \eta_2 \; \sin\; \theta_i = \eta_1 \; \sin\; \theta_t & \text{Snell para refracción}\label{eq:snell_law_second}
 	\end{align}
 \end{subequations}
 
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{intro_electro/angulo-refraccion-snell.pdf}
+	\caption{Ángulo de refracción en función del ángulo de incidencia, según la ley de Snell.}
+	\label{fig:ley_snell}
+\end{figure}
+
 Utilizando estas expresiones, y a partir de las ecuaciones \ref{eq:continuidad_campos_paralelo} y \ref{eq:continuidad_campos_perpendicular}, se obtienen las expresiones para los coeficientes de reflexión y transmisión de la tabla \ref{table:incidencia_oblicua}. Resulta importante destacar que, para el caso de incidencia perpendicular ($\theta_i = 0$), los coeficientes quedan simplificados a $\Gamma = (\eta_2 - \eta_1)/(\eta_2 + \eta_1)$ y $T = (2 \; \eta_2)/(\eta_2 + \eta_1)$.
 
-Los coeficientes de transmisión y reflexión para incidencia oblicua, en ambas polarizaciones, se pueden graficar en función del ángulo incidente, teniendo en cuenta las ecuaciones de Snell para expresar el ángulo de transmisión en función del ángulo de incidencia. Estas gráficas se muestran, para la interfaz aire-FR4, en la figura \ref{fig:coeficientes-aire-fr4}, donde, además,  teniendo en cuenta la constante de propagación compleja de la ecuación \ref{eq:constante-propagacion-compleja}, se graficó también el caso con pérdidas.
+Los coeficientes de transmisión y reflexión para incidencia oblicua, en ambas polarizaciones, se pueden graficar en función del ángulo incidente, teniendo en cuenta las ecuaciones de Snell para expresar el ángulo de transmisión en función del ángulo de incidencia. Estas gráficas se muestran, para la interfaz aire-FR4, en la figura \ref{fig:coeficientes-aire-fr4}, donde, además,  teniendo en cuenta la constante de propagación compleja de la ecuación \ref{eq:constante-propagacion-compleja}, se graficó también el caso con pérdidas, donde se observa, en general, una mayor reflexión y, por tanto, menor transmisión. Para ángulos de incidencia rasantes, la transmisión es mínima y la reflexión es máxima.
 
-Resulta ilustrativo, además, graficar el comportamiento según el ángulo de incidencia de la misma interfaz, pero en el sentido dieléctrico-aire. Este gráfico se observa en la figura \ref{fig:coeficientes-fr4-aire}.
+Resulta ilustrativo, además, graficar el comportamiento según el ángulo de incidencia de la misma interfaz, pero en el sentido dieléctrico-aire. Este gráfico se observa en la figura \ref{fig:coeficientes-fr4-aire}, donde los coeficientes de transmisión pueden ser mayores a 1 porque el ángulo de transmisión es menor al de incidencia, permitiendo conservar el flujo de energía por unidad de área.
 
 \begin{figure}[H]
 	\centering 
-	\subfigure[Coeficiente de reflexión entre aire y FR4 en función de $\theta_i$]{
+	\subfigure[Coeficiente de reflexión entre aire y FR4 en función de $\theta_i$.]{
 		\label{fig:coeficiente-reflexion-aire-fr4}
-		\includegraphics[width=0.48\textwidth]{intro_electro/plot-coeficientes-fresnel-lossy-lossless.eps}}
-	\hspace{1mm}
-	\subfigure[Coeficiente de transmisión entre aire y FR4 en función de $\theta_i$]{
+		\includegraphics[width=0.48\textwidth]{intro_electro/plot-comparacion-lossy-lossless-annotated.pdf}}
+	\subfigure[Coeficiente de transmisión entre aire y FR4 en función de $\theta_i$.]{
 		\label{fig:coeficiente-transmision-aire-fr4}
-		\includegraphics[width=0.48\textwidth]{intro_electro/plot-comparacion-lossy-lossless-T.eps}}
+		\includegraphics[width=0.48\textwidth]{intro_electro/plot-comparacion-lossy-lossless-T.pdf}}
 	\caption{Coeficientes de transmisión y reflexión para el caso en que el medio de incidencia es aire, y el medio de transmisión es FR4.}
 	\label{fig:coeficientes-aire-fr4}
 \end{figure}
@@ -480,7 +478,7 @@ Resulta ilustrativo, además, graficar el comportamiento según el ángulo de in
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{intro_electro/plot-coeficientes-fresnel-dirInversa.eps}
+	\includegraphics[width=0.7\textwidth]{intro_electro/plot-coeficientes-fresnel-dirInversa.pdf}
 	\caption{Comportamiento de los coeficientes de reflexión y transmisión para el caso de incidencia FR4-aire.}
 	\label{fig:coeficientes-fr4-aire}
 \end{figure}
@@ -491,52 +489,53 @@ Resulta ilustrativo, además, graficar el comportamiento según el ángulo de in
 
 Se conoce como ángulo de Brewster al ángulo de incidencia $\theta_i$ necesario para que se produzca reflexión nula ($\Gamma = 0$) en una interfaz, cuando sobre ella incide una onda plana en forma oblicua. Este efecto \textbf{se da únicamente para la polarización TM}, es decir, cuando existe componente de campo eléctrico en la dirección normal a la intefaz, por lo que suele ser utilizado como mecanismo para lograr polarización de una onda electromagnética.
 
-Si se anulan los coeficientes de reflexión mostrados en la tabla \ref{table:incidencia_oblicua}, y se utilizan las ecuaciones \ref{eq:snell_law}, se puede observar que en el caso TE se requiere que $sin \; \theta_i / sin \; \theta_t = cos \; \theta_i / cos \; \theta_t = \eta_1 / \eta_2$, lo cual es imposible. Para el caso TM, en cambio, el requisito es $sin \; \theta_i / sin \; \theta_t = cos \; \theta_t / cos \; \theta_i = \eta_1 / \eta_2$, lo cual no supone una contradicción. Multiplicando la ecuación \ref{eq:snell_law_second} y el valor de $\Gamma$ para polarización TM, se obtiene que $sin\;\theta_i \; cos \; \theta_i = sin \; \theta_t \; cos \; \theta_t$, ó $sin \; 2\theta_i = sin \; 2\theta_t$, que se satisface cuando $2\theta_i = \pi - 2\theta_t$, de modo que $\theta_i + \theta_t = \pi/2$. Aplicando esta condición en la Ley de Snell (ecuación \ref{eq:snell_law_second}) se obtiene la expresión del ángulo de Brewster:
+Si se anulan los coeficientes de reflexión mostrados en la tabla \ref{table:incidencia_oblicua}, y se utilizan las ecuaciones \ref{eq:snell_law}, se puede observar que, en el caso TE, para lograr reflexión nula, se requiere que $\sin \; \theta_i / \sin \; \theta_t = cos \; \theta_i / cos \; \theta_t = \eta_1 / \eta_2$, lo cual es imposible. Para el caso TM, en cambio, el requisito es $\sin \; \theta_i / \sin \; \theta_t = cos \; \theta_t / cos \; \theta_i = \eta_1 / \eta_2$, lo cual no supone una contradicción. Multiplicando la ecuación \ref{eq:snell_law_second} y el valor de $\Gamma$ para polarización TM, se obtiene que $\sin\;\theta_i \; cos \; \theta_i = \sin \; \theta_t \; cos \; \theta_t$, ó $\sin \; 2\theta_i = \sin \; 2\theta_t$, que se satisface cuando $2\theta_i = \pi - 2\theta_t$, de modo que $\theta_i + \theta_t = \pi/2$. Aplicando esta condición en la Ley de Snell (ecuación \ref{eq:snell_law_second}) se obtiene la expresión del ángulo de Brewster:
 
 %%% GRAFICAR LO DE ACA ARRIBA, REEMPLAZANDO THETA_T POR LA LEY DE SNELL. EJE X: THETA_I. DE ESTA MANERA SE PODRIA VERIFICAR QUE PARA TE NO HAY SOLUCION Y PARA TM SI.
 
 \begin{align}
 	\label{eq:Brewster_angle}
-	tan\;\theta_i^{Brewster} &= \frac{\eta_1}{\eta_2} = \sqrt{\frac{\epsilon_2}{\epsilon_1}} & \text{Relación del ángulo de Brewster}
+	\tan\;\theta_B &= \frac{\eta_1}{\eta_2} = \sqrt{\frac{\epsilon_2}{\epsilon_1}} & \text{Relación del ángulo de Brewster}
 \end{align}
 
 Como se observa en la figura \ref{fig:Brewster-funcion-epsilon}, el ángulo de Brewster tiende a $90^{\circ}$ cuando la permeabilidad eléctrica del segundo medio es mucho mayor a la del primero, lo que significa que para evitar reflexiones, el ángulo de incidencia debe ser rasante. Cuando se da el caso contrario, en que la permeabilidad eléctrica del medio incidente es mayor a la del medio de transmisión, el ángulo de Brewster se vuelve menor a $45^{\circ}$, de lo que se deduce que una incidencia \textit{casi} perpendicular a la interfaz, y en consecuencia con polarización \textit{cercana} a TEM (aunque no exactamente TEM) lograría evitar la reflexión. El ángulo de $45^{\circ}$ cuando las permeabilidades eléctricas de ambos medios son iguales es meramente anecdótico, ya que si no existen diferencias entre los dos medios que forman la interfaz, la misma no existe, y por lo tanto no hay onda reflejada para ningún ángulo de incidencia.
 
 \begin{figure} [H]
 	\centering 
-	\subfigure[Ángulo de Brewster en función de $\epsilon_2/\epsilon_1$]{
+	\subfigure[Ángulo de Brewster en función de $\epsilon_2/\epsilon_1$.]{
 		\label{fig:Brewster-funcion-epsilon}
-		\includegraphics[width=0.48\textwidth]{intro_electro/plot-brewster.eps}}
-	\hspace{1mm}
-	\subfigure[Ángulo crítico en función de $\epsilon_2/\epsilon_1$.]{
+		\includegraphics[width=0.48\textwidth]{intro_electro/plot-brewster.pdf}}
+	\subfigure[Ángulo crítico y rango de reflexión total en función de $\epsilon_2/\epsilon_1$.]{
 		\label{fig:angulo-critico-funcion-epsilon}
-		\includegraphics[width=0.48\textwidth]{intro_electro/plot-angulo-critico}}
+		\includegraphics[width=0.48\textwidth]{intro_electro/plot-angulo-critico.pdf}}
 	\caption{}
 	\label{fig:angulo-critico-epsilon}
 \end{figure}
 
+En la figura  \ref{fig:coeficientes-aire-fr4} se puede observar el comportamiento de los coeficientes de reflexión y transmisión alrededor del ángulo de Brewster para polarización TM, cuando no se consideran pérdidas. Para polarizacón TE, el ángulo de Brewster no existe, y una situación similar se da cuando existen pérdidas en los materiales, incluso para polarización TM. En la figura \ref{fig:coeficientes-fr4-aire} también se puede observar el fenómeno de ángulo de Brewster, aunque debido a la dirección de la onda incidente, el mismo es mucho menor.
+
 
 En ángulo crítico se define como el ángulo de incidencia para el cual la onda incidente es totalmente reflejada, y la onda transmitida no se propaga a la segunda región.
 
-Si se observan las expresiones del coeficiente de transmisión de la tabla \ref{table:incidencia_oblicua}, el único valor de $\theta_i$ para el cual la transmisión es nula es $\pi/2$, es decir, incidencia rasante. Sin embargo, a partir de la ecuación \ref{eq:snell_law_second}, se obtiene que $sin \; \theta_t = \eta_2 / \eta_1\; sin\; \theta_i$. Se puede observar que en los casos en que $\eta_2 > \eta_1$ es posible que el ángulo de transmisión alcance el valor $\pi/2$ antes de que lo haga en ángulo de incidencia. El ángulo crítico, entonces, surge de la expresión \ref{eq:angulo_critico}, graficada en la figura \ref{fig:angulo-critico-epsilon}. En la gráfica se puede observar que si $\epsilon_2 = \epsilon_1$, el único ángulo para el que hay reflexión completa es el rasante. A medida que disminuye la relación entre las permeabilidades dieléctricas, el valor del ángulo crítico disminuye, hasta que el caso en que el valor de la permitividad dieléctrica del segundo medio es mucho mayor a la del primero, lo que vuelve a las impedancias de onda muy disímiles, generando que haya reflexión total para cualquier ángulo de incidencia.
+Si se observan las expresiones del coeficiente de transmisión de la tabla \ref{table:incidencia_oblicua}, el único valor de $\theta_i$ para el cual la transmisión es nula es $\pi/2$, es decir, incidencia rasante. Sin embargo, a partir de la ecuación \ref{eq:snell_law_second}, se obtiene que $\sin \; \theta_t = \eta_2 / \eta_1\; \sin\; \theta_i$. Se puede observar que en los casos en que $\eta_2 > \eta_1$ es posible que el ángulo de transmisión alcance el valor $\pi/2$ antes de que lo haga en ángulo de incidencia. El ángulo crítico, entonces, surge de la expresión \ref{eq:angulo_critico}, graficada en la figura \ref{fig:angulo-critico-epsilon}. En la gráfica se puede observar que si $\epsilon_2 = \epsilon_1$, el único ángulo para el que hay reflexión completa es el rasante. A medida que disminuye la relación entre las permeabilidades dieléctricas, el valor del ángulo crítico disminuye, hasta que el caso en que el valor de la permitividad dieléctrica del segundo medio es mucho mayor a la del primero, lo que vuelve a las impedancias de onda muy disímiles, generando que haya reflexión total para cualquier ángulo de incidencia.
 
 \begin{equation}
 	\label{eq:angulo_critico}
-	sin\; \theta_i^c = \frac{\eta_1}{\eta_2}\;\cancelto{1}{\sin \; \underbrace{\theta_t}_{\pi/2}} = \sqrt{\frac{\epsilon_2}{\epsilon_1}} \implies \theta_c = arcsin \;\sqrt{\frac{\epsilon_2}{\epsilon_1}} = arcsin \;\frac{\eta_1}{\eta_2}
+	\sin\; \theta_i^c = \frac{\eta_1}{\eta_2}\;\sin \; \theta_t|_{\theta_t=\pi/2} = \sqrt{\frac{\epsilon_2}{\epsilon_1}} \implies \theta_c = \arcsin \;\sqrt{\frac{\epsilon_2}{\epsilon_1}} = \arcsin \;\frac{\eta_1}{\eta_2}
 \end{equation}
 
-Para ángulos mayores a $\theta_c$, las expresiones del coeficiente de reflexión se vuelven complejas y de módulo 1, por lo que toda la energía electromagnética es reflejada, y la onda transmitida tiene un comportamiento evanescente, como se muestra en la figura \ref{fig:angulo_critico}. En la ecuación \ref{eq:angulo_critico} se observa que si $\theta_i > \theta_c$, el ángulo $\theta_t$ pierde significado físico, debido a que $sin\; \theta_t$ debería ser mayor a 1 para cumplir la ecuación.
+Para ángulos mayores a $\theta_c$, las expresiones del coeficiente de reflexión se vuelven complejas y de módulo 1, por lo que toda la energía electromagnética es reflejada, y la onda transmitida tiene un comportamiento evanescente, como se muestra en la figura \ref{fig:angulo_critico}. En la ecuación \ref{eq:angulo_critico} se observa que si $\theta_i > \theta_c$, el ángulo $\theta_t$ pierde significado físico, debido a que $\sin\; \theta_t$ debería ser mayor a 1 para cumplir la ecuación.
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{intro_electro/angulo_critico.eps}
+	\includegraphics[width=0.6\textwidth]{intro_electro/angulo_critico.pdf}
 	\caption{Ilustración del comportamiento de una onda plana durante la incidencia con ángulo critico y con ángulo mayor al $\theta_c$.}
 	\label{fig:angulo_critico}
 \end{figure}
 
-Se debe notar que en el argumento anterior no se consideró la polarización de la onda incidente, por lo que \textbf{la reflexión completa se puede dar tanto en modo TM como en modo TE}, siempre y cuando la incidencia se produzca desde el medio ópticamente más denso al menos denso \cite{Fernandez:Electromag}. Sin embargo, resulta útil expresar el comportamiento de los campos.
+Se debe notar que en el argumento anterior no se consideró la polarización de la onda incidente, por lo que \textbf{la reflexión completa se puede dar tanto en modo TM como en modo TE}, siempre y cuando la incidencia se produzca desde el medio ópticamente más denso al menos denso \cite{Fernandez:Electromag}, como se muestra en la figura \ref{fig:coeficientes-fr4-aire}. Sin embargo, resulta útil expresar el comportamiento de los campos.
 
-Para el caso de una onda incidente con una polarización lineal arbitraria como la expresada en la ecuación \ref{eq:incident_fields}, se debe considerar que la componente longitudinal a la interfaz del vector de onda $\vec{k}$ se mantendrá constante, de modo que ${k_2}_x = {k_1}_x = k_1 \; sin \; \theta_i$. La componente transversal a la interfaz, en cambio, será ${k_2}_z = k_2\; cos \; \theta_t = k_2 \sqrt{1-sin^2\theta_t} = \beta$. Dado que para el caso en que el ángulo incidente es mayor al ángulo crítico se requiere que $sin\;\theta_t > 1$, el valor de ${k_2}_z$ será imaginario, $-i\alpha$. El signo negativo se desprende de la imposibilidad física de un crecimiento exponencial del valor del campo. De esta forma, para direcciones de campos arbitrarias, y teniendo en cuenta el hecho de que el vector $\vec{k}$ se desarrolla sobre el plano de incidencia:
+Para el caso de una onda incidente con una polarización lineal arbitraria como la expresada en la ecuación \ref{eq:incident_fields}, se debe considerar que la componente longitudinal a la interfaz del vector de onda $\vec{k}$ se mantendrá constante, de modo que ${k_2}_x = {k_1}_x = k_1 \; \sin \; \theta_i$. La componente transversal a la interfaz, en cambio, será ${k_2}_z = k_2\; \cos \; \theta_t = k_2 \sqrt{1-sin^2\theta_t} = \beta$. Dado que para el caso en que el ángulo incidente es mayor al ángulo crítico se requiere que $\sin\;\theta_t > 1$, el valor de ${k_2}_z$ será imaginario, $-i\alpha$ \footnote{El signo negativo se desprende de la imposibilidad física de un crecimiento exponencial del valor del campo, lo cual descarga la posibilidad de que el signo sea positivo}. De esta forma, para direcciones de campos arbitrarias, y teniendo en cuenta el hecho de que el vector $\vec{k}$ se desarrolla sobre el plano de incidencia:
 
 \begin{subequations}
 	\begin{align}
@@ -563,13 +562,15 @@ Suponiendo una guía de ondas de forma arbitraria en la que la energía electrom
 	\vec{E}(x,y,z) = \left[ \vec{e}_{xy}(x,y) + \hat{z} e_z(x,y) \right] e^{-j\beta z}
 \end{align}
 
-Aplicando las ecuaciones rotacionales de Maxwell (Faraday y Ampère en la ecuación \ref{eq:Maxwell}), considerando una región libre de cargas y un comportamiento armónico de los campos, se puede deducir \cite{Fernandez:Electromag} que las componentes transversales quedan en términos de las componentes longitudinales:
+Aplicando las ecuaciones rotacionales de Maxwell (Faraday y Ampère en la ecuación \ref{eq:Maxwell}), considerando una región libre de cargas y un comportamiento armónico de los campos, se puede deducir que las componentes transversales quedan en términos de las componentes longitudinales \cite{Fernandez:Electromag}:
 
-\begin{align}
+\begin{equation}
+	\begin{aligned}
+		H_x &= \frac{j}{k_c^2} \left(\omega \epsilon \frac{\partial E_z}{\partial y} - \gamma \frac{\partial H_z}{\partial x} \right) & H_y &= \frac{-j}{k_c^2} \left(\omega \epsilon \frac{\partial E_z}{\partial x} + \gamma \frac{\partial H_z}{\partial y} \right)\\
+		E_x &= \frac{-j}{k_c^2} \left(\omega \mu \frac{\partial H_z}{\partial y} + \gamma \frac{\partial H_z}{\partial x} \right) & E_y &= \frac{j}{k_c^2} \left(\omega \mu \frac{\partial H_z}{\partial x} - \gamma \frac{\partial E_z}{\partial y} \right)
+	\end{aligned}
 	\label{eq:campos_guia_de_ondas}
-	H_x &= \frac{j}{k_c^2} \left(\omega \epsilon \frac{\partial E_z}{\partial y} - \gamma \frac{\partial H_z}{\partial x} \right) & H_y &= \frac{-j}{k_c^2} \left(\omega \epsilon \frac{\partial E_z}{\partial x} + \gamma \frac{\partial H_z}{\partial y} \right)  \nonumber\\
-	E_x &= \frac{-j}{k_c^2} \left(\omega \mu \frac{\partial H_z}{\partial y} + \gamma \frac{\partial H_z}{\partial x} \right) & E_y &= \frac{j}{k_c^2} \left(\omega \mu \frac{\partial H_z}{\partial x} - \gamma \frac{\partial E_z}{\partial y} \right)
-\end{align}
+\end{equation}
 
 donde se definió \textbf{$k_c^2 = k^2 - \beta^2$ como el número de onda de corte}, siendo $k = \omega \sqrt{\mu \epsilon} = 2\pi/\lambda$ el número de onda  en el material que rellena la línea de transmisión.
 
@@ -587,30 +588,31 @@ Existen estructuras abiertas que son capaces de mantener el campo electromagnét
 
 En la actualidad existen numerosos tipos de ondas de superficie, entre las que se destacan las ondas Zenneck (utilizadas en bajas frecuencias, cuando los medios intervinientes poseen altas pérdidas), las ondas de tipo resonante (que surgen cuando una onda incide sobre un material periódico), las ondas de superficie no lineales (que se generan en medios no lineales), los plasmones (utilizados en altas frecuencias, cuando los medios tienen bajas pérdidas) y las ondas de Dyakonov (donde al menos uno de los materiales es anisotrópico).
 
-Para este trabajo, resultan de importancia las ondas de Zenneck, ya que permiten explicar el comportamiento de las ondas sobre una placa dieléctrica fina que posee un plano conductor en uno de sus lados. La consideración de una guía dieléctrica gruesa (de espesor considerable respecto de la longitud de onda) no resulta de especial importancia en el problema abordado, por lo que no se analizará en detalle, aunque se hará una breve descripción en secciones subsiguientes, dado que permite un abordaje más intuitivo.
+Para este trabajo, resultan de importancia las ondas de Zenneck, ya que permiten explicar el comportamiento de las ondas sobre una placa dieléctrica fina que posee un plano conductor en una de sus caras. La consideración de una guía dieléctrica gruesa (de espesor considerable respecto de la longitud de onda) no resulta de especial importancia en el problema abordado, por lo que no se analizará en detalle, aunque se hará una breve descripción en secciones subsiguientes, dado que permite un abordaje más intuitivo.
 
 Si se considera que una onda plana incide con ángulo de Brewster en modo TM sobre una interfaz entre dos medios de bajas pérdidas ($\epsilon'' \ll \epsilon'$), cada uno con una permitividad eléctrica $\epsilon_i$ y una permeabilidad magnética $\mu_i$, $i=1,2$, como indica la figura \ref{fig:onda-superficie-brewster}, no existirá energía reflejada. De esta forma, toda la energía incidente es entregada a la interfaz, y se obtienen las expresiones \ref{eq:ondas-superficie-campos}. Con el fin de simplificar las expresiones, se considera que el medio 1 es aire, de modo que $\epsilon_1 = \epsilon_0$, $\mu_1 = \mu_0$ y, en consecuencia, $\eta_1 = \eta_0$.
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{intro_electro/onda-superficie-incidencia-brewster.eps}
-	\caption{Ilustración del comportamiento de una onda plana durante la incidencia con ángulo de Brewster.}
+	\includegraphics[width=0.5\textwidth]{intro_electro/onda-superficie-incidencia-brewster.pdf}
+	%\input{Figures/intro_electro/onda-superficie-incidencia-brewster3.pdf_tex}
+	\caption{Ilustración del comportamiento de una onda plana durante la incidencia con ángulo de Brewster. Las rectas paralelas representan los frentes de onda, es decir, son rectas de fase constante. Es importante destacar que la longitud de onda paralela a la interfaz, $2\pi/\beta$, se mantiene constante a ambos lados, dado que sobre la interfaz se intersectan las rectas de fase constante.}
 	\label{fig:onda-superficie-brewster}
 \end{figure}
 
 \begin{subequations}
 	\label{eq:ondas-superficie-campos}
 	\begin{align}
-	{H_1}_y &= A e^{-j\ (z\; \overbrace{k_0\;sin \theta_i}^{\beta} - x\; \overbrace{k_0\;cos \theta_i)}^{h_1}},\;\; x>0 & j\omega\epsilon E_x &= -\frac{\partial H_y}{\partial z} \\
-	{H_2}_y &= A T e^{-j\; (z\; \overbrace{k\; sin \theta_t}^{\beta} - x\; \overbrace{k\; cos \theta_t)}^{h_2}},\;\; x<0   & j\omega\epsilon E_z &= -\frac{\partial H_y}{\partial x} 
+	{H_1}_y &= A e^{-j\ (z\; \overbrace{k_0\;\sin \theta_i}^{\beta} - x\; \overbrace{k_0\;\cos \theta_i}^{h_1}}),\;\; x>0 & j\omega\epsilon E_x &= -\frac{\partial H_y}{\partial z} \\
+	{H_2}_y &= A T e^{-j\; (z\; \overbrace{k\; \sin \theta_t}^{\beta} - x\; \overbrace{k\; \cos \theta_t)}^{h_2}},\;\; x<0   & j\omega\epsilon E_z &= -\frac{\partial H_y}{\partial x} 
 	\end{align}
 \end{subequations}
 
-La componente longitudinal de los vectores de onda es igual a ambos lados de la interfaz, de modo que es $k \; \sin \; \theta_t = \beta = k_0 \; \sin \; \theta_i$. Las componentes normales a la interfaz, que llamaremos $h_i$, $i=1,2$, deben cumplir la expresión de la ecuación \ref{eq:condicion-componentes-normales-ondas-superficie}.
+La componente longitudinal de los vectores de onda, $\beta$, es igual a ambos lados de la interfaz, como se muestra en la figura \ref{fig:onda-superficie-brewster}, de modo que es $k \; \sin \; \theta_t = \beta = k_0 \; \sin \; \theta_i$. Las componentes normales a la interfaz, que llamaremos $h_i$, $i=1,2$, deben cumplir la expresión de la ecuación \ref{eq:condicion-componentes-normales-ondas-superficie}, y están también mostradas en la figura \ref{fig:onda-superficie-brewster}.
 
 \begin{align}
-\label{eq:condicion-componentes-normales-ondas-superficie}
-& h_1^2 + \beta^2 = k_0^2 &h_2^2 + \beta^2 = k^2
+	\label{eq:condicion-componentes-normales-ondas-superficie}
+	& h_1^2 + \beta^2 = k_0^2 &h_2^2 + \beta^2 = k^2
 \end{align}
 
 Las impedancias de onda en ambas regiones se obtienen como la relación entre los campos tangenciales a la interfaz sobre la que se incide, de modo que:
@@ -618,39 +620,85 @@ Las impedancias de onda en ambas regiones se obtienen como la relación entre lo
 \begin{subequations}
 \label{eq:impedancia-onda-superficie}
 \begin{align}
-	Z_1 = \frac{{E_z}_1}{{H_y}_1} = \eta_0 \; cos\; \theta_i &\implies Z_1 = \frac{h_1}{k_0} \eta_0 \label{eq:impedancia-onda-incidente-onda-sup}\\
-	Z_2 = \frac{{E_z}_2}{{H_y}_2} = \eta \; cos \; \theta_t &\implies Z_2 = \frac{h_2}{k} \eta \label{eq:impedancia-onda-transmitida-onda-sup}
+	Z_1 = \frac{{E_z}_1}{{H_y}_1} = \eta_0 \; \cos\; \theta_i &\implies Z_1 = \frac{h_1}{k_0} \eta_0 \label{eq:impedancia-onda-incidente-onda-sup}\\
+	Z_2 = \frac{{E_z}_2}{{H_y}_2} = \eta \; \cos \; \theta_t &\implies Z_2 = \frac{h_2}{k} \eta \label{eq:impedancia-onda-transmitida-onda-sup}
 \end{align}
 \end{subequations}
 
-Para poder considerar que toda la energía de la onda incidente se transmite a la interfaz, debe suceder que $Z_1 = Z_2$. De este modo, igualando las ecuaciones \ref{eq:impedancia-onda-incidente-onda-sup} y \ref{eq:impedancia-onda-transmitida-onda-sup}, recordando que $k = \omega \sqrt{\mu \epsilon}$, igualando las componentes de $\vec{k}$ paralelas a la interfaz y asumiendo que $\mu_2 = \mu_0$, queda expresada la siguiente relación, que ilustra el caracter complejo de las componentes normales a la interfaz, $h_1$ y $h_2$:
+Para poder considerar que toda la energía de la onda incidente se transmite a la interfaz, debe suceder que las impedancias de onda a ambos lados de la interfaz sean iguales, de modo que $Z_1 = Z_2$. Igualando las ecuaciones \ref{eq:impedancia-onda-incidente-onda-sup} y \ref{eq:impedancia-onda-transmitida-onda-sup}, se deduce\footnote{Al igualar las expresiones de las impedancias de onda, se obtiene $\frac{h_1 \eta_0}{k_0} = \frac{h_2 \eta_2}{k}$. Recordando que $k_0=\omega \sqrt{\mu_0 \epsilon_0}$, $k=\omega \sqrt{\mu_0 (\epsilon'-j\epsilon'')}$, $\eta_0 = \sqrt{\mu_0 / \epsilon_0}$ y $\eta = \sqrt{\mu_0 / (\epsilon'-j\epsilon'')}$, se deduce que la relación entre $h_1$ y $h_2$ es compleja: $h_1\; (\epsilon' - j \epsilon'') = h_2 \epsilon_0$, de modo que en forma general se puede considerar que tanto $h_1$ como $h_2$ son complejos.} que, en forma general, si el medio sobre el que se incide tiene pérdidas,t $h_1$ y $h_2$ son complejos. De esta manera, $h_1 = h_1' - jh_1''$ y $h_2 = h_2' + jh_2''$. Como $\vec{k_0} = \vec{\beta} + \vec{h_1}$, entonces, la constante de propagación, $\beta = \beta' - j \beta''$, posee también un valor complejo.
+
+El campo magnético queda determinado por:
 
 \begin{equation}
-	h_1\; (\epsilon' - j \epsilon'') = \epsilon_0 h_2
+	H_y =
+	\left\lbrace
+	\begin{aligned}
+		A e^{-j\beta'z -\beta''z + (j h_1' - h_1'')x}, \quad x>0 \\
+		A e^{-j\beta'z -\beta''z + (j h_2' + h_2'')x}, \quad x<0 \\
+	\end{aligned}
+	\right.
 \end{equation}
 
-De esta manera, $h_1 = h_1' - jh_1''$ y $h_2 = h_2' + jh_2''$. Como $k_0^2 = \beta^2 + h_1^2$, entonces, la constante de propagación, $\beta = \beta' - j \beta''$, posee también un valor complejo.
+Se observa que los planos de fase constante, en el aire, los correspondientes a las exponenciales imaginarias de la ecuación anterior, $\beta'z - h_1'x = cte$, y se muestran en la figura \ref{fig:onda-superficie-brewster}. Los planos de amplitud constante se obtienen considerando las exponenciales decrecientes de las expresiones, de forma que $\beta''z + h_1''x = cte$, que para el caso analizado en la figura \ref{fig:onda-superficie-brewster}, son rectas con pendiente negativa (no mostradas en la figura).
 
-Si se considera una superficie con una impedancia de onda para polarización TM normalizada respecto de $\eta_0$, $Z_s = R_s + j X_s$, independiente del ángulo de incidencia, entonces en base a la ecuación \ref{eq:impedancia-onda-incidente-onda-sup}, resulta:
+Para bajas pérdidas, $\beta''$ será pequeño, por lo que habrá baja atenuación para la onda que se desplaza en dirección $z$, pero debido a que $h_1''$ y/o $h_2''$ también serán bajas, la energía no estará concentrada cerca de la interfaz.
+
+
+
+Si se considera una superficie con una impedancia de onda para polarización TM normalizada respecto de $\eta_0$, $Z_s = R_s + j X_s$, independiente del ángulo de incidencia, entonces, al igualar la impedancia de onda a la impedancia de superficie, y teniendo en cuenta las igualdades de la ecuación \ref{eq:impedancia-onda-superficie}, resulta:
 
 \begin{align}
-	h &= h'+jh'' = k_0 \frac{Z_1}{Z_0} = k_0 Z_s = k_0 R_s + j k_0 X_s \implies \\
-	\beta &= \beta' - j\beta'' = \sqrt{(k_0^2 - h^2)} = \sqrt{k_0^2 - (k_0 R_s + j k_0 X_s )^2} \nonumber\\
-		&= k_0 \sqrt{1+X_s^2 - R_s^2 - 2jR_s X_s} 
+	h_1 & = k_0 \frac{Z_1}{\eta_0} = k_0 Z_s = k_0 R_s + j k_0 X_s \label{eq:h1-onda-superficie}\\
+	\beta &= \sqrt{(k_0^2 - h_1^2)} = k_0 \sqrt{1+X_s^2 - R_s^2 - 2jR_s X_s} \label{eq:beta-onda-superficie}
 \end{align}
 
-Reemplazando el valor de $h$ en la expresión del campo magnético de la ecuación \ref{eq:ondas-superficie-campos}, se observa que el campo presenta un decrecimiento exponencial en la dirección normal a la superficie si el valor de $X_s$ es positivo, de manera que presente una reactancia inductiva, que además debe ser grande para que la onda de superficie se mantenga cercana a la superficie. Si, además, el valor de $R_s$ es lo suficientemente pequeño, $\beta''$ será pequeño y habrá baja atenuación en la dirección de propagación.
+La gráfica de las componentes real e imaginaria de $\beta$ se muestra en la figura \ref{fig:beta-reactancia-TM}. Se puede observar que, cuando la reactancia es inductiva (valores positivos de $X_s$), la parte imaginaria de $\beta$, $\beta''$, presenta valores positivos, por lo que habrá atenuación en la dirección de propagación $z$ ([a] en la figura) \footnote{Esto se debe a que si el campo eléctrico en la dirección $y$ se escribe como se indica en la ecuación \ref{eq:ondas-superficie-campos}, $\beta=\beta'-j\beta''$ y $h_1 = h_1'+jh_1''$, el exponente se expresa como $-j(\beta'-j\beta'')z + j(h_1'+jh_1'')x$. Para dirección de propagación $z$, con $z>0$, la componente de atenuación del exponente de la expresión dada resulta en $-\beta'' z$. Para que el comportamiento resulte decreciente, $\beta''$ debe ser mayor a $0$.}. A mayor reactancia, habrá una mayor disminución de la amplitud del campo a medida que aumenta el valor de $z$, aunque la mayor variación en el coeficiente de atenuación se observa con la variación de la resistencia, $R_s$, cuando existe un comportamiento reactivo apreciable ([b] en la figura).
 
-La velocidad de propagación se obtiene directamente de la componente real de $\beta$ que, si $R_s$ es pequeño y $X_s$ es grande, resulta: $\beta' = k_0 \sqrt{1+X_s^2}$, dando lugar a que la velocidad de propagación sobre la superficie resulte: $v_p = \omega/\beta' = c / \sqrt{1+X_s^2}$. En los casos en que la componente reactiva de la impedancia de superficie es grande, el valor de la velocidad de propagación es menor al de la luz.
+Si la reactancia es nula, un valor de $\beta$ real se obtiene sólo si la resistencia es muy baja o nula ([c] en la figura). A partir de un umbral de resistencia de superficie, dependiente de los medios materiales, cuando no existe comportamiento reactivo, no hay propagación de onda de superficie ($\beta=0$, [d] en la figura).
 
-En el caso de una interfaz aire-conductor, la componente inductiva de la impedancia de superficie resulta igual a la componente resistiva, de forma que $\eta = (1+j)/(\sigma \delta)$ \cite{Fernandez:Electromag}. Aplicando las ecuaciones \ref{eq:impedancia-onda-superficie}, se obtiene que
+El comportamiento de $h_1$, descripto en la ecuación \ref{eq:h1-onda-superficie} también regula el comportamiento de la onda de superficie, dado que si la parte imaginaria de $h_1$, $h_1''$, es muy pequeña, la onda no estará lo suficientemente cerca de la interfaz para ser guiada por ella. Un valor alto de $h_1''$ se da cuando la reactancia, $X_s$ es inductiva ($X_s>0$), lo cual coincide con el requisito para $\beta''$.
+
+Analizando la ecuación \ref{eq:beta-onda-superficie}, se deduce que un producto $R_s X_s$ pequeño dará lugar a atenuaciones pequeñas en la onda de superficie, de modo que para que se propague una onda sobre la interfaz, si se establece $X_s$ grande para obtener un valor de $\beta'$ grande, se deben disminuir el comportamiento resistivo tanto como sea posible ([e] en la figura).
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=\textwidth]{intro_electro/plot-beta-reactancia-TM.pdf}
+	%\input{Figures/intro_electro/onda-superficie-incidencia-brewster3.pdf_tex}
+	\caption{Comportamiento de la constante de propagación superficial $\beta$ en función de la resistencia y reactancia superficial para el caso de incidencia TM. Las líneas punteadas representan la parte imaginaria de $\beta$, y las líneas completas representan la parte real, de forma que $\beta = \beta' - j\beta''$.}
+	\label{fig:beta-reactancia-TM}
+\end{figure}
+
+La velocidad de propagación se obtiene directamente de la componente real de $\beta$ que, si $R_s$ es pequeño y $X_s$ es grande, resulta, a partir de la expresión \ref{eq:beta-onda-superficie}, $\beta' = k_0 \sqrt{1+X_s^2}$, de forma que la velocidad de propagación es:
+
+\begin{align}
+	v_p = \frac{\omega}{\beta'} = \frac{c}{\sqrt{1+X_s^2}}
+\end{align}
+
+En los casos en que la componente reactiva de la impedancia de superficie es grande, el valor de la velocidad de propagación es menor al de la luz (denotado como [f] en la figura).
+
+%%%%%%%%%%%%%%%%%
+
+Cuando la interfaz es de tipo aire-conductor, la componente inductiva de la impedancia de superficie resulta igual a la componente resistiva, de forma que \cite{Fernandez:Electromag}:
+
+\begin{align}
+	\eta &= \frac{1+j}{\sigma \delta} &\text{Impedancia de superficie - conductor}
+\end{align}
+ 
+Aplicando las ecuaciones \ref{eq:impedancia-onda-superficie}, se obtiene que
 
 \begin{align}
 	h &= k_0 (1+j) \sqrt{\frac{k_0}{2 \sigma Z_0}} \\
 	\beta &= k_0 \sqrt{1-\frac{j k_0}{\sigma Z_0}} \approx k_0 - \frac{j k_0^2}{2 \sigma Z_0}
 \end{align}
 
-En general, un plano conductor soporta ondas de superficie, pero no es capaz de lograr una atenuación en la dirección normal al mismo tal que la energía se mantenga concentrada en la superficie para poder ser utilizada como guía de ondas. Para lograr que la energía de la onda decaiga rápidamente lejos de la interfaz es necesario aumentar considerablemente la resisitividad de la superficie, para lo que se suele agregar al conductor una capa dieléctrica.
+En general, un plano conductor soporta ondas de superficie,, y la atenuación en la dirección de propagación es muy baja (ver figura \ref{fig:beta-reactancia-TM}), pero no es capaz de lograr una atenuación en la dirección normal al mismo tal que la energía se mantenga concentrada en la superficie para poder ser utilizada como guía de ondas. Esto se debe a que dado que la parte imaginaria de $h_1$ también es despreciable, especialmente debido a la alta conductividad del metal. Para lograr que la energía de la onda decaiga rápidamente lejos de la interfaz es necesario aumentar considerablemente la reactancia de la superficie, para lo que se suele agregar al conductor una capa dieléctrica, que además no aumenta considerablemente la resistividad.
+
+
+% Queda explicar modo TE, con dibujito incluido
+
+% Queda explicar qué pasa con el coating -> ubicar también los puntos en el dibujito, para saber por dónde es que nos movimos.
+
+
 \subsection{Línea microstrip}
 
 \section{Resonadores}
