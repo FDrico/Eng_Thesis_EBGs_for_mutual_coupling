@@ -42,9 +42,9 @@
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:zoom="1.6904762"
-     inkscape:cx="339.05498"
-     inkscape:cy="202.35126"
+     inkscape:zoom="1.1953472"
+     inkscape:cx="496.10694"
+     inkscape:cy="204.17324"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -57,6 +57,30 @@
   </sodipodi:namedview>
   <defs
      id="defs232">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3028">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3024" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop3026" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1444">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop1440" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop1442" />
+    </linearGradient>
     <marker
        inkscape:stockid="StopM"
        orient="auto"
@@ -877,15 +901,33 @@
          in2="result6"
          id="feBlend6162" />
     </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1444"
+       id="linearGradient1446"
+       x1="292.43494"
+       y1="234.19408"
+       x2="338.55554"
+       y2="234.19408"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3028"
+       id="linearGradient3030"
+       x1="289.847"
+       y1="234.38819"
+       x2="341.48398"
+       y2="234.38819"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <g
      id="surface509">
     <rect
-       x="0"
-       y="0"
+       x="12.23494"
+       y="1.8822984"
        width="504"
        height="360"
-       style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
        id="rect234" />
     <path
        style=" stroke:none;fill-rule:nonzero;fill:rgb(91.763306%,91.763306%,94.900513%);fill-opacity:1;"
@@ -1261,42 +1303,32 @@
          id="use394" />
     </g>
     <g
-       style="fill:rgb(14.99939%,14.99939%,14.99939%);fill-opacity:1;"
-       id="g400">
+       style="fill:#232323;fill-opacity:1"
+       id="g400"
+       transform="translate(12.391797,0.31371639)">
       <use
          xlink:href="#glyph3-1"
          x="251.98108"
-         y="334.897929"
-         id="use398" />
+         y="334.89792"
+         id="use398"
+         width="100%"
+         height="100%" />
     </g>
     <g
-       style="fill:rgb(14.99939%,14.99939%,14.99939%);fill-opacity:1;"
-       id="g404">
+       style="fill:#232323;fill-opacity:1"
+       id="g404"
+       transform="translate(10.980074,0.78429097)">
       <use
          xlink:href="#glyph4-1"
          x="265.33951"
-         y="337.363673"
-         id="use402" />
+         y="337.36368"
+         id="use402"
+         width="100%"
+         height="100%" />
     </g>
     <g
        style="fill:rgb(14.99939%,14.99939%,14.99939%);fill-opacity:1;"
-       id="g412">
-      <use
-         xlink:href="#glyph5-1"
-         x="275.797606"
-         y="334.897929"
-         id="use406" />
-      <use
-         xlink:href="#glyph5-2"
-         x="280.252401"
-         y="334.897929"
-         id="use408" />
-      <use
-         xlink:href="#glyph5-3"
-         x="291.874319"
-         y="334.897929"
-         id="use410" />
-    </g>
+       id="g412" />
     <g
        clip-path="url(#clip10)"
        clip-rule="nonzero"
@@ -2466,61 +2498,68 @@
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MathJax_SansSerif;-inkscape-font-specification:MathJax_SansSerif"
    id="tspan5435">n [f] </tspan>→ </tspan></text>
     <ellipse
-       style="opacity:0.899;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.75000006;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:3.00000011, 3.00000011000000022;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:0.89899998;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.75000006;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:3.00000011, 3.00000011;stroke-dashoffset:0;stroke-opacity:1"
        id="path5179"
-       cx="274.09991"
-       cy="145.65337"
+       cx="324.29453"
+       cy="140.32019"
        rx="3.9097714"
        ry="3.8241553" />
     <ellipse
-       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.725;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.72500002;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path5179-4"
-       cx="273.96127"
-       cy="205.82747"
+       cx="324.15588"
+       cy="196.10225"
        rx="3.9097714"
        ry="3.8241553" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:9px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter6164)"
-       x="291.92957"
+       style="font-style:normal;font-weight:normal;font-size:9px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="293.49814"
        y="237.5493"
        id="text5198"><tspan
          sodipodi:role="line"
          id="tspan5196"
-         x="291.92957"
+         x="293.49814"
          y="237.5493"
-         style="stroke-width:0.75px">Conductor</tspan></text>
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75px;stroke-opacity:1">Conductor</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-7-1-9)"
-       d="M 300.80779,228.4307 279.72154,212.18062"
+       d="m 300.84474,228.44061 18.90648,-26.17062"
        id="path3392-2-2-5"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-7-1-9-2)"
-       d="M 309.28813,228.41433 279.50705,152.98068"
+       d="m 300.83594,228.42735 21.63379,-80.47263"
        id="path3392-2-2-5-4"
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:9px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="275.73593"
-       y="227.67783"
+       x="309.30359"
+       y="223.2858"
        id="text6690"><tspan
          sodipodi:role="line"
          id="tspan6688"
-         x="275.73593"
-         y="227.67783"
-         style="stroke-width:0.75px;-inkscape-font-specification:MathJax_Math;font-family:MathJax_Math;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">β''</tspan></text>
+         x="309.30359"
+         y="223.2858"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;stroke-width:0.75px">β''</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:9px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="307.2851"
-       y="221.40492"
+       x="294.42273"
+       y="220.7775"
        id="text6694"><tspan
          sodipodi:role="line"
          id="tspan6692"
-         x="307.2851"
-         y="221.40492"
+         x="294.42273"
+         y="220.7775"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;stroke-width:0.75px">β'</tspan></text>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:url(#linearGradient3030);stroke-width:0.45;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect1562"
+       width="49.911972"
+       height="10.758802"
+       x="290.7095"
+       y="229.00879" />
   </g>
 </svg>
