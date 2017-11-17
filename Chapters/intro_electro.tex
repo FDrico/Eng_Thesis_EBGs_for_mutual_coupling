@@ -572,9 +572,17 @@ Existen estructuras abiertas que son capaces de mantener el campo electromagnét
 
 En la actualidad existen numerosos tipos de ondas de superficie, entre las que se destacan las ondas Zenneck (utilizadas en bajas frecuencias, cuando los medios intervinientes poseen altas pérdidas), las ondas de tipo resonante (que surgen cuando una onda incide sobre un material periódico), las ondas de superficie no lineales (que se generan en medios no lineales), los plasmones (utilizados en altas frecuencias, cuando los medios tienen bajas pérdidas) y las ondas de Dyakonov (donde al menos uno de los materiales es anisotrópico).
 
-Para este trabajo, resultan de importancia las ondas de Zenneck, ya que permiten explicar el comportamiento de las ondas sobre una placa dieléctrica fina que posee un plano conductor en una de sus caras. La consideración de una guía dieléctrica gruesa (de espesor considerable respecto de la longitud de onda) no resulta de especial importancia en el problema abordado, por lo que no se analizará en detalle, aunque se hará una breve descripción en secciones subsiguientes, dado que permite un abordaje más intuitivo.
+Para este trabajo, resultan de importancia las ondas de Zenneck, ya que permiten explicar el comportamiento de las ondas sobre una placa dieléctrica fina que posee un plano conductor en una de sus caras. Una representación tridimensional de las mismas se puede observar en la figura \ref{fig:onda-superficie-3d}.
 
-Si se considera que una onda plana incide con ángulo de Brewster en modo TM sobre una interfaz entre dos medios de bajas pérdidas ($\epsilon'' \ll \epsilon'$), cada uno con una permitividad eléctrica $\epsilon_i$ y una permeabilidad magnética $\mu_i$, $i=1,2$, como indica la figura \ref{fig:onda-superficie-brewster}, no existirá energía reflejada. De esta forma, toda la energía incidente es entregada a la interfaz, y se obtienen las expresiones \ref{eq:ondas-superficie-campos}. Con el fin de simplificar las expresiones, se considera que el medio 1 es aire, de modo que $\epsilon_1 = \epsilon_0$, $\mu_1 = \mu_0$ y, en consecuencia, $\eta_1 = \eta_0$.
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{intro_electro/ondas-superficie-3d.pdf}
+	%\input{Figures/intro_electro/onda-superficie-incidencia-brewster3.pdf_tex}
+	\caption{Representación gráfica del comportamiento de una onda de superficie sobre una interfaz reactiva.}
+	\label{fig:onda-superficie-3d}
+\end{figure}
+
+Si se considera que una onda plana incide con ángulo de Brewster en modo TM sobre una interfaz entre dos medios de bajas pérdidas ($\epsilon'' \ll \epsilon'$), cada uno con una permitividad eléctrica $\epsilon_i$ y una permeabilidad magnética $\mu_i$, $i=1,2$, como indica la figura \ref{fig:onda-superficie-brewster}, no existirá energía reflejada. De esta forma, toda la energía incidente es entregada a la interfaz, y se obtienen las expresiones \ref{eq:ondas-superficie-campos}. Con el fin de simplificar dichas ecuaciones, se considera que el medio 1 es aire, de modo que $\epsilon_1 = \epsilon_0$, $\mu_1 = \mu_0$ y, en consecuencia, $\eta_1 = \eta_0$.
 
 \begin{figure}[htp]
 	\centering
@@ -609,7 +617,7 @@ Las impedancias de onda en ambas regiones se obtienen como la relación entre lo
 \end{align}
 \end{subequations}
 
-Para poder considerar que toda la energía de la onda incidente se transmite a la interfaz, debe suceder que las impedancias de onda a ambos lados de la interfaz sean iguales, de modo que $Z_1 = Z_2$. Igualando las ecuaciones \ref{eq:impedancia-onda-incidente-onda-sup} y \ref{eq:impedancia-onda-transmitida-onda-sup}, se deduce\footnote{Al igualar las expresiones de las impedancias de onda, se obtiene $\frac{h_1 \eta_0}{k_0} = \frac{h_2 \eta_2}{k}$. Recordando que $k_0=\omega \sqrt{\mu_0 \epsilon_0}$, $k=\omega \sqrt{\mu_0 (\epsilon'-j\epsilon'')}$, $\eta_0 = \sqrt{\mu_0 / \epsilon_0}$ y $\eta = \sqrt{\mu_0 / (\epsilon'-j\epsilon'')}$, se deduce que la relación entre $h_1$ y $h_2$ es compleja: $h_1\; (\epsilon' - j \epsilon'') = h_2 \epsilon_0$, de modo que en forma general se puede considerar que tanto $h_1$ como $h_2$ son complejos.} que, en forma general, si el medio sobre el que se incide tiene pérdidas,t $h_1$ y $h_2$ son complejos. De esta manera, $h_1 = h_1' - jh_1''$ y $h_2 = h_2' + jh_2''$. Como $\vec{k_0} = \vec{\beta} + \vec{h_1}$, entonces, la constante de propagación, $\beta = \beta' - j \beta''$, posee también un valor complejo.
+Para poder considerar que toda la energía de la onda incidente se transmite a la interfaz, debe suceder que las impedancias de onda a ambos lados de la interfaz sean iguales, de modo que $Z_1 = Z_2$. Igualando las ecuaciones \ref{eq:impedancia-onda-incidente-onda-sup} y \ref{eq:impedancia-onda-transmitida-onda-sup}, se deduce\footnote{Al igualar las expresiones de las impedancias de onda, se obtiene $\frac{h_1 \eta_0}{k_0} = \frac{h_2 \eta_2}{k}$. Recordando que $k_0=\omega \sqrt{\mu_0 \epsilon_0}$, $k=\omega \sqrt{\mu_0 (\epsilon'-j\epsilon'')}$, $\eta_0 = \sqrt{\mu_0 / \epsilon_0}$ y $\eta = \sqrt{\mu_0 / (\epsilon'-j\epsilon'')}$, se deduce que la relación entre $h_1$ y $h_2$ es compleja: $h_1\; (\epsilon' - j \epsilon'') = h_2 \epsilon_0$, de modo que en forma general se puede considerar que tanto $h_1$ como $h_2$ son complejos.} que, en forma general, si el medio sobre el que se incide tiene pérdidas, entonces $h_1$ y $h_2$ son complejos. De esta manera, $h_1 = h_1' - jh_1''$ y $h_2 = h_2' + jh_2''$, lo que significa que además de avanzar en fase, la onda pierde energía, pues tiene un comportamiento evanescente, de modo que el vector de Poynting tiene una componente en la dirección perpendicular a la interfaz, debido al consumo de energía de la misma \cite{Barlow:SurfaceWaves}. A mayores pérdidas, mayor será la inclinación del vector de Poynting resultante respecto de la interfaz. Como $\vec{k_0} = \vec{\beta} + \vec{h_1}$, la constante de propagación, $\beta = \beta' - j \beta''$, posee también un valor complejo.
 
 El campo magnético queda determinado por:
 
@@ -640,7 +648,7 @@ La gráfica de las componentes real e imaginaria de $\beta$ se muestra en la fig
 
 Si la reactancia es nula, un valor de $\beta$ real se obtiene sólo si la resistencia es muy baja o nula ([c] en la figura). A partir de un umbral de resistencia de superficie, dependiente de los medios materiales, cuando no existe comportamiento reactivo, no hay propagación de onda de superficie ($\beta=0$, [d] en la figura).
 
-El comportamiento de $h_1$, descripto en la ecuación \ref{eq:h1-onda-superficie} también regula el comportamiento de la onda de superficie, dado que si la parte imaginaria de $h_1$, $h_1''$, es muy pequeña, la onda no estará lo suficientemente cerca de la interfaz para ser guiada por ella. Un valor alto de $h_1''$ se da cuando la reactancia, $X_s$ es inductiva ($X_s>0$), lo cual coincide con el requisito para $\beta''$.
+El comportamiento de $h_1$, descripto en la ecuación \ref{eq:h1-onda-superficie} también regula el comportamiento de la onda de superficie, dado que si la parte imaginaria de $h_1$, $h_1''$, es muy pequeña, la onda no estará lo suficientemente cerca de la interfaz para ser guiada por ella. Un valor alto de $h_1''$ se da cuando la reactancia, $X_s$ es inductiva ($X_s>0$), lo cual coincide con el requisito para $\beta''$. Dicho de otra forma, la reactancia de superficie es la responsable del decrecimiento exponencial de la onda al aumentar la distancia con la interfaz que funciona como guía.
 
 Analizando la ecuación \ref{eq:beta-onda-superficie}, se deduce que un producto $R_s X_s$ pequeño dará lugar a atenuaciones pequeñas en la onda de superficie, de modo que para que se propague una onda sobre la interfaz, si se establece $X_s$ grande para obtener un valor de $\beta'$ grande, se deben disminuir el comportamiento resistivo tanto como sea posible ([e] en la figura).
 
@@ -662,7 +670,7 @@ En los casos en que la componente reactiva de la impedancia de superficie es gra
 
 %%%%%%%%%%%%%%%%%
 
-Cuando la interfaz es de tipo aire-conductor, la componente inductiva de la impedancia de superficie resulta igual a la componente resistiva, de forma que \cite{Fernandez:Electromag}:
+Cuando la interfaz es de tipo aire-conductor, la componente inductiva de la impedancia de superficie (relacionada a la profundidad de penetración) resulta igual a la componente resistiva, de forma que \cite{Fernandez:Electromag}:
 
 \begin{align}
 	\eta &= \frac{1+j}{\sigma \delta} &\text{Impedancia de superficie - conductor}
@@ -676,7 +684,6 @@ Aplicando las ecuaciones \ref{eq:impedancia-onda-superficie}, se obtiene que
 \end{align}
 
 En general, un plano conductor soporta ondas de superficie, y la atenuación en la dirección de propagación es muy baja (ver figura \ref{fig:beta-reactancia-TM}), pero no es capaz de lograr una atenuación en la dirección normal al mismo tal que la energía se mantenga concentrada en la superficie para poder ser utilizada como guía de ondas. Esto se debe a que dado que la parte imaginaria de $h_1$ también es despreciable, especialmente debido a la alta conductividad del metal. Para lograr que la energía de la onda decaiga rápidamente lejos de la interfaz es necesario aumentar considerablemente la reactancia de la superficie, para lo que se suele agregar al conductor una capa dieléctrica, que además no aumenta considerablemente la resistividad.
-
 
 Para el caso de ondas de superficie en modo TE, los campos están dados por la ecuación \ref{eq:campo-electrico-superficie-TE}. La impedancia de onda, en tanto, queda expresada como indica la ecuación \ref{eq:impedancia-onda-superficie-TE}. Considerando que, para evitar reflexiones, la impedancia de superficie tiene que ser igual a la impedancia de onda, se obtiene la expresión para la constante de propagación en el sentido perpendicular a la interfaz mostrada en la ecuación \ref{eq:h1-onda-superficie-TE}, donde nuevamente la impedancia de superficie del conductor es $Z_s = R_s +jX_s$.
 
@@ -787,11 +794,11 @@ Para el caso TE, la solución es similar, y en este caso las expresiones resulta
 
 Las soluciones se pueden obtener gráficamente para ambos casos, mediante la intersección de las curvas correspondientes a las ecuaciones del sistema. Las gráficas, para distintas frecuencias, se muestran en la figura \ref{fig:intersecciones-tm-te}. Se puede observar que, dado que $|h_1|t$ no puede tomar valores negativos, las intersecciones que se dan en esas condiciones no son válidas como soluciones del sistema planteado, bajo las hipótesis consideradas.
 
-A medida que aumenta la frecuencia, el valor del radio de los círculos aumenta. Se observa que siempre existe, al menos, un modo TM de propagación sobre el plano de tierra, dado que todas las interseccioens entre las curvas ocurren para valores de $|h_1| t$ mayores a 0, como se muestra en la figura \ref{fig:soluciones-TM-tan-implicita-zoom}. Para frecuencias en que el radio del círculo genera que el mismo intersecte a más secciones de la curva tangente, aparecerían modos de propagación superiores.
+A medida que aumenta la frecuencia, el valor del radio de los círculos aumenta. Se observa que siempre existe, al menos, un modo TM de propagación sobre el plano de tierra, dado que todas las intersecciones entre las curvas ocurren para valores de $|h_1| t$ mayores a 0, como se muestra en la figura \ref{fig:soluciones-TM-tan-implicita-zoom}. Para frecuencias en que el radio del círculo genera que el mismo intersecte a más secciones de la curva tangente, aparecerían modos de propagación superiores.
 
-Para el caso TE, se observa que para frecuencias bajas no existe solución válida, como se muestra en la figura \ref{fig:soluciones-TE-tan-implicita-zoom}, por lo que no hay un modo fundamental TE por debajo de la frecuencia de corte, que se da para $fc = c/(4 t  \sqrt{\epsilon_{r_2}}-1)$, que en el caso graficado es de aproximadamente 25 GHz.
+Para el caso TE, se observa que para frecuencias bajas no existe solución válida, como se muestra en la figura \ref{fig:soluciones-TE-tan-implicita-zoom}, por lo que no hay un modo fundamental TE por debajo de la frecuencia de corte, que se da para $f_c = c/(4 t  \sqrt{\epsilon_{r_2}}-1)$, que en el caso graficado es de aproximadamente 25 GHz.
 
-Para el caso de FR4, en el rango de frecuencias de interés para este trabajo, no existe, entonces, propagación de ondas de superficie de polarización TE.
+Para el caso de FR4, en el rango de frecuencias de interés para este trabajo, no existe, entonces, propagación de ondas de superficie de polarización TE, por lo que el análisis del modo TM reviste mayor importancia.
 
 
 \begin{figure} [H]
@@ -812,10 +819,37 @@ Para el caso de FR4, en el rango de frecuencias de interés para este trabajo, n
 	\label{fig:intersecciones-tm-te}
 \end{figure}
 
-% Queda: 1) Terminar la demostración de TE. 2) Hacer los dibujos de TM y TE. 3) Explicar la relación con la impedancia de superficie Zs. Aplicar tanto como sea posible a cobre + FR4 (dibujos, especialmente)
+Obtenidos los valores de $h_1$ y $h_2$, se obtienen los campos del modo correspondiente de la onda de superficie \cite{Pozar:MwEngineering}. En particular, para el análisis del comportamiento de la impedancia, las expresiones de los campos tangenciales a la interfaz resultan de mayor interés, dado que permiten obtener las impedancias de onda en el aire y el dieléctrico, como se indica en las expresiones \ref{eq:impedancia-no-normalizada-aire} y \ref{eq:impedancia-no-normalizada-FR4}.
 
+\begin{subequations}
+	\begin{align}
+		H_{y_1} &= A e^{jh_1(x-t)-j\beta z}, &E_{z_1} &= \frac{A h_1}{\omega \epsilon_0} e^{jh_1(x-t)-j\beta z} &\implies& Z_1 = \frac{h_1}{\omega \epsilon_0} \label{eq:impedancia-no-normalizada-aire}\\
+		H_{y_2} &= 2 B \cos(h_2 x) e^{j\beta z}, &E_{z_2} &=  \frac{-2 B h_2 \sin(h_2 x)e^{-j\beta z}}{j \omega \epsilon_0 \epsilon_{r_2}} &\implies& Z_2 = \frac{jh_2 \tan(h_2 x)}{\omega \epsilon_0 \epsilon_{r_2}} \label{eq:impedancia-no-normalizada-FR4}
+	\end{align}
+\end{subequations}
+
+Normalizando respecto de la impedancia intrínseca del vacío, $\eta_0$, se obtiene, considerando $\theta_t$ el ángulo de transmisión desde el aire al dieléctrico que recubre el plano conductor,:
+
+\begin{align}
+	\frac{Z_{1}}{\eta_0} &= \frac{h_1}{\omega \epsilon_0 \eta_0} = \frac{k_0 \cos\theta_i}{\omega \epsilon_0 \eta_0} = \cos \theta_i \\
+	\frac{Z_{2}}{\eta_0} &= j\frac{h_2 \tan h_2 x}{\omega \epsilon_0 \epsilon_{r_2} \eta_0} = j\frac{k_2 \cos\theta_t \tan(k_2 x \cos\theta_t)}{\omega \epsilon_0 \epsilon_{r_2} \eta_0} = j \frac{\cos \theta_t}{\sqrt{\epsilon_{r_2}}}\tan(k_2 x \cos\theta_t)
+\end{align}
+
+Una onda incidente desde el aire, para evitar reflexiones y, por lo tanto, radiación desde la superficie que soporta una onda de superficie, debe estar adaptada a la impedancia de superficie que presenta el dieléctrico, que resulta de evaluar $Z_2/\eta_0$ en la superficie:
+
+\begin{align}
+	Z_s = j \frac{\cos \theta_t}{\sqrt{\epsilon_{r_2}}}\tan(k_2 t \cos\theta_t)
+\end{align}
+
+%% GRAFICAR!!! \theta_r puede ser obtenida por la ley de snell. Vemos que no es independiente del ángulo de incidencia. Barlow dice que son del mismo orden de magnitud los efectos viejos (prof de penetracion) y los nuevos (coating). Pagina 332. Carita triste.
+
+% Barlow parece contar cosas sobr la velocidad de fase, y más dealnte sobre el lauching y el angulo de brewster complejo. LEER para completar.
+
+Esta impedancia es puramente imaginaria positiva\footnote{Si el dieléctrico presentara pérdidas, existiría también un término real \cite{Barlow:SurfaceWaves}, por lo que, además de facilitar la propagación de ondas de superficie, si el dieléctrico tiene bajas pérdidas, no aumenta la resistencia de superficie. Además, esta componente inductiva se debe sumar al efecto producido por la componente inductiva de la impedancia de superficie del conductor, debida a la existencia de una profundidad de penetración.}, por lo que tiene un comportamiento inductivo, permitiendo la formación de ondas de superficie en modo TM. El ángulo $\theta_t$ se obtiene de las relaciones de Snell (\ref{eq:snell_law_second}), por lo que se deduce que, al contrario que en el caso del conductor sin recubrimiento dieléctrico, el comportamiento es dependiente del ángulo de incidencia.
 
 % Queda explicar qué pasa con el coating -> ubicar también los puntos en el dibujito, para saber por dónde es que nos movimos.
+
+
 
 
 \subsection{Línea microstrip}
