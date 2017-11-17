@@ -768,14 +768,49 @@ Para que la solución no sea trivial, el determinante de la matriz del sistema t
 Considerando que $h_1$ es puramente complejo positivo\footnote{Un análisis general requiere considerar $h_1$, $h_2$ y $\epsilon_2$ como complejos, de manera que se puedan considerar las pérdidas. Para simplificar el desarrollo, se debe considerar que, dado que se trata de ondas de superficie, la parte imaginaria de $h_1$ deberá ser negativa, de manera que a mayor distancia de la interfaz, la intensidad de los campos decrezca exponencialmente. La parte real de $h_1$, si bien puede existir, a efectos del estudio del comportamiento de la onda de superficie en la dirección de propagación, puede obviarse. Por otro lado, si se considera que el ancho del dieléctrico, $t$, es muy pequeño, de forma que se pueda considerar que $\tan(h_2 t) \approx h_2 t$, entonces la expresión \ref{eq:solucion-ondas-sup-tm-tan} resulta aproximadamente $h_2^2 t = -j h_1 \epsilon_{r_2}$. Asumiendo, por lo explicado antes, que $h_1$ es valor puramente imaginario positivo, el valor de $h_2$, obtenido de $h_2^2 t = h_1 \epsilon_{r_2}$, deberá ser real. Al argumento no descarta la existencia de valores complejos de $h_1$ y $h_2$, sino que permite una validación intuitiva del desarrollo posterior.}, la ecuación \ref{eq:solucion-ondas-sup-tm-h} se puede expresar como $k_0^2 (\epsilon_{r_2}-1) = h_2^2 + |h_1|^2$. Si se multiplica esta nueva expresión por $t^2$ y a la expresión \ref{eq:solucion-ondas-sup-tm-tan} por $t$, se obtienen dos expresiones que dan lugar a un sistema de ecuaciones trascendentales que se pueden resolver gráficamente, dado que representan una esfera de radio $k_0 t \sqrt{\epsilon_{r_2}-1}$ y una tangente:
 
 \begin{equation}
+	\label{eq:sistema-ondas-superficiales-TM}
 	\begin{cases}
 		(h_2 t)^2 + (h_1 t)^2 = (\epsilon_{r_2} - 1) (k_0 t)^2\\
-		h_2 t \tan (h_2 t) = |h_1| \epsilon_{r_2}
+		h_2 t \tan (h_2 t) = |h_1| \epsilon_{r_2} t
 	\end{cases}
 \end{equation}
 
-Para el caso TE, la solución es similar
+Para el caso TE, la solución es similar, y en este caso las expresiones resultan (considerando, nuevamente, que $h_1$ es puramente imaginario positivo):
 
+\begin{equation}
+	\label{eq:sistema-ondas-superficiales-TE}
+	\begin{cases}
+		(h_2 t)^2 + (h_1 t)^2 = (\epsilon_{r_2} - 1) (k_0 t)^2 \\
+		h_2 t \cot (h_2 t) = -|h_1| \epsilon_{r_2} t
+	\end{cases}
+\end{equation}
+
+Las soluciones se pueden obtener gráficamente para ambos casos, mediante la intersección de las curvas correspondientes a las ecuaciones del sistema. Las gráficas, para distintas frecuencias, se muestran en la figura \ref{fig:intersecciones-tm-te}. Se puede observar que, dado que $|h_1|t$ no puede tomar valores negativos, las intersecciones que se dan en esas condiciones no son válidas como soluciones del sistema planteado, bajo las hipótesis consideradas.
+
+A medida que aumenta la frecuencia, el valor del radio de los círculos aumenta. Se observa que siempre existe, al menos, un modo TM de propagación sobre el plano de tierra, dado que todas las interseccioens entre las curvas ocurren para valores de $|h_1| t$ mayores a 0, como se muestra en la figura \ref{fig:soluciones-TM-tan-implicita-zoom}. Para frecuencias en que el radio del círculo genera que el mismo intersecte a más secciones de la curva tangente, aparecerían modos de propagación superiores.
+
+Para el caso TE, se observa que para frecuencias bajas no existe solución válida, como se muestra en la figura \ref{fig:soluciones-TE-tan-implicita-zoom}, por lo que no hay un modo fundamental TE por debajo de la frecuencia de corte, que se da para $fc = c/(4 t  \sqrt{\epsilon_{r_2}}-1)$, que en el caso graficado es de aproximadamente 25 GHz.
+
+Para el caso de FR4, en el rango de frecuencias de interés para este trabajo, no existe, entonces, propagación de ondas de superficie de polarización TE.
+
+
+\begin{figure} [H]
+	\centering 
+	\subfigure[TM]{
+		\label{fig:soluciones-TM-tan-implicita}
+		\includegraphics[width=0.48\textwidth]{intro_electro/TM-tan-implicito}}
+	\subfigure[TE]{
+		\label{fig:soluciones-TE-tan-implicita}
+		\includegraphics[width=0.48\textwidth]{intro_electro/TE-tan-implicito}}
+	\subfigure[Zoom para modo TM]{
+		\label{fig:soluciones-TM-tan-implicita-zoom}
+		\includegraphics[width=0.48\textwidth]{intro_electro/TM-tan-implicito-zoom}}
+	\subfigure[Zoom para modo TE]{
+		\label{fig:soluciones-TE-tan-implicita-zoom}
+		\includegraphics[width=0.48\textwidth]{intro_electro/TE-tan-implicito-zoom}}
+	\caption{Curvas de los sistemas de ecuaciones que describen la existencia de ondas superficiales TM y TE, para distintas frecuencias, resuelto para el caso en que el dieléctrico es FR4 ($\epsilon_r = 4.5$).}
+	\label{fig:intersecciones-tm-te}
+\end{figure}
 
 % Queda: 1) Terminar la demostración de TE. 2) Hacer los dibujos de TM y TE. 3) Explicar la relación con la impedancia de superficie Zs. Aplicar tanto como sea posible a cobre + FR4 (dibujos, especialmente)
 
