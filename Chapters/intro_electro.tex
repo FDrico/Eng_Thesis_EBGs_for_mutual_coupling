@@ -13,11 +13,11 @@
 %%%%
 Las bases de la teoría electromagnética clásica para el dominio macroscópico fueron formuladas por James Clerk Maxwell en 1873, en base al conocimiento previo desarrollado por Gauss, Ampère y Faraday, entre otros. Entre 1885 y 1887, Oliver Heaviside simplificó las expresiones e introdujo la notación vectorial actual, facilitando así el modelado de guías de ondas y líneas de transmisión \cite{Pozar:MwEngineering}.
 
-En base a estos trabajos, Heinrich Hertz diseñó, entre 1887 y 1891, una serie de experimentos que validaron la teoría de ondas electromagnéticas propuesta por Maxwell. En 1886, Hertz construyó la primer antena dipolo, y en 1888, la primer antena parabólica, alimentada por un dipolo de 450 MHz, dando el puntapié inicial para el desarrollo de la radio durante la primera mitad del siglo \textsc{XX}.
+En base a estos trabajos, Heinrich Hertz diseñó, entre 1887 y 1891, una serie de experimentos que validaron la teoría de ondas electromagnéticas propuesta por Maxwell. En 1886, Hertz construyó la primer antena dipolo, y en 1888, la primer antena parabólica, alimentada por un dipolo de 450 MHz, dando el puntapié inicial para el desarrollo de la radio durante la primera mitad del siglo \textsc{XX} \cite{Collin:GuidedWaves}.
 
-El primer análisis de la propagación de ondas electromagnéticas en guías de ondas metálicas, publicado por Lord Rayleigh en 1897, y el posterior estudio teórico del comportamiento de ondas en guías dieléctricas por Debye y Hondros, en 1910, sentaron los cimientos para que durante la década del '30 comenzaran trabajos experimentales en transporte de ondas electromagnéticas en los laboratorios Bell \cite{Collin:GuidedWaves}.
+El primer análisis de la propagación de ondas electromagnéticas en guías de ondas metálicas, publicado por Lord Rayleigh en 1897, y el posterior estudio teórico del comportamiento de ondas en guías dieléctricas por Debye y Hondros, en 1910, sentaron los cimientos para que durante la década de 1930 comenzaran trabajos experimentales en transporte de ondas electromagnéticas en los laboratorios Bell \cite{Collin:GuidedWaves}.
 
-Los conjuntos de antenas se popularizaron a partir de la aparición de la antena de Yagui-Uda en 1926, formada por elementos lineales que dan lugar a una fase fija. Recién durante la Segunda Guerra Mundial surgieron los conjuntos de antena de fase variable \cite{Stutzman:AntennaTheory}, y las guías de ondas y las antenas tomaron un lugar prioritario entre los ingenieros, matemáticos y físicos de la época, lo que permitió el desarrollo de métodos de análisis para facilitar la formulación de problemas con condiciones de borde complejas.
+Los conjuntos de antenas se popularizaron a partir de la aparición de la antena de Yagui-Uda en 1926, formada por elementos lineales que dan lugar a una fase fija. Durante la Segunda Guerra Mundial surgieron los conjuntos de antena de fase variable \cite{Stutzman:AntennaTheory}, y las guías de ondas y las antenas tomaron un lugar prioritario entre los ingenieros, matemáticos y físicos de la época, lo que permitió el desarrollo de métodos de análisis para facilitar la formulación de problemas con condiciones de borde complejas.
 
 Recién finalizada la Segunda Guerra Mundial se comenzaron a fabricar circuitos \textit{microstrip}. En 1953, G. A. Deschamps presentó el primer trabajo sobre antenas con la misma tecnología, y la primer patente en ese sentido se registró en 1955 \cite{Balanis:Handbook}. Aún así, recién en la década del '70 comenzaron a utilizarse en aplicaciones prácticas, principalmente debido a la aparición de sustratos con bajas tangentes de pérdida, la mejora en técnicas de fotolitografía, y la optimización de modelos teóricos \cite{Barthia:Handbook}, que permitieron solucionar los problemas de dispersión y aparición de modos indeseados. Sin embargo, la simplificación constructiva trajo aparejados problemas de acoplamiento mutuo, que debieron ser abordados por técnicas de filtrado y blindaje.
 
@@ -213,7 +213,7 @@ Para el caso de un buen conductor:
 \gamma = j\alpha + \beta &= j \omega \sqrt{\mu \epsilon} \sqrt{\sigma/(\omega \epsilon)} = (1+j) \sqrt{\omega \mu \sigma/2} & \text{(buen conductor)}
 \end{align}
 
-lo que nos permite definir la \textbf{profundidad de penetración} como 
+lo que nos permite definir la profundidad de penetración como 
 
 \begin{align}
 \delta_s = 1/\alpha &= \sqrt{\frac{2}{\omega \mu \sigma}} & \text{Profundidad de penetración}
@@ -471,7 +471,7 @@ Resulta ilustrativo, además, graficar el comportamiento según el ángulo de in
 
 \subsection{Ángulo de Brewster y ángulo crítico}
 
-Se conoce como ángulo de Brewster al ángulo de incidencia $\theta_i$ necesario para que se produzca reflexión nula ($\Gamma = 0$) en una interfaz, cuando sobre ella incide una onda plana en forma oblicua. Este efecto \textbf{se da únicamente para la polarización TM}, es decir, cuando existe componente de campo eléctrico en la dirección normal a la intefaz, por lo que suele ser utilizado como mecanismo para lograr polarización de una onda electromagnética.
+Se conoce como ángulo de Brewster al ángulo de incidencia $\theta_i$ necesario para que se produzca reflexión nula ($\Gamma = 0$) en una interfaz, cuando sobre ella incide una onda plana en forma oblicua. Este efecto se da únicamente para la polarización TM, es decir, cuando existe componente de campo eléctrico en la dirección normal a la intefaz, por lo que suele ser utilizado como mecanismo para lograr polarización de una onda electromagnética.
 
 Si se anulan los coeficientes de reflexión mostrados en la tabla \ref{table:incidencia_oblicua}, y se utilizan las ecuaciones \ref{eq:snell_law}, se puede la polarización TE no presenta ángulo de Brewster\footnote{Para lograr reflexión nula en TE se requiere que $\sin \; \theta_i / \sin \; \theta_t = cos \; \theta_i / cos \; \theta_t = \eta_1 / \eta_2$, lo cual es imposible.}, aunque sí lo hace la polarización TM\footnote{Para lograr reflexión nula en TE se requiere que $\sin \; \theta_i / \sin \; \theta_t = cos \; \theta_t / cos \; \theta_i = \eta_1 / \eta_2$, lo cual no supone una contradicción. Multiplicando la ecuación \ref{eq:snell_law_second} y el valor de $\Gamma$ para polarización TM, se obtiene que $\sin\;\theta_i \; cos \; \theta_i = \sin \; \theta_t \; cos \; \theta_t$, ó $\sin \; 2\theta_i = \sin \; 2\theta_t$, que se satisface cuando $2\theta_i = \pi - 2\theta_t$, de modo que $\theta_i + \theta_t = \pi/2$.}, de forma que $\theta_i + \theta_t = \pi/2$. Aplicando esta condición en la Ley de Snell (ecuación \ref{eq:snell_law_second}) se obtiene la expresión del ángulo de Brewster:
 
@@ -556,7 +556,7 @@ Aplicando las ecuaciones rotacionales de Maxwell (Faraday y Ampère en la ecuaci
 	\label{eq:campos_guia_de_ondas}
 \end{equation}
 
-donde se definió \textbf{$k_c^2 = k^2 - \beta^2$ como el número de onda de corte}, siendo $k = \omega \sqrt{\mu \epsilon} = 2\pi/\lambda$ el número de onda  en el material que rellena la línea de transmisión.
+donde se definió $k_c^2 = k^2 - \beta^2$ como el número de onda de corte, siendo $k = \omega \sqrt{\mu \epsilon} = 2\pi/\lambda$ el número de onda  en el material que rellena la línea de transmisión.
 
 Cuando no existen componentes de campo en la dirección de propagación, $z$, según las ecuaciones \ref{eq:campos_guia_de_ondas}, no existen campos en las direcciones transversales si $k_c \neq 0$. La indeterminación generada por el hecho de que $k_c$ se anula da como resultado que $\beta = \omega \sqrt{\mu \epsilon} = k$, de modo que no existe número de onda de corte, y haciendo que la impedancia de onda sea $\eta$.  A este modo de propagación sobre una guía de ondas se lo llama TEM (transversal electromagnético). Los campos transversales satisfacen que el Laplaciano es 0, de modo que se comportan como un campo electrostático, y este es el motivo por el cual no pueden existir ondas TEM en guías de ondas de un único conductor.
 
@@ -701,7 +701,7 @@ Para el caso de ondas de superficie en modo TE, los campos están dados por la e
 
 \begin{align}
 	\label{eq:h1-onda-superficie-TE}
-	h = -\frac{k}{Z_s} = -k_0 \frac{R_s-jX_s}{R_s^2 + X_s^2}
+	h = -\frac{k}{Z_s} = -k_0 \frac{R_s}{{R_s^2 + X_s^2}}-j\frac{X_s}{R_s^2 + X_s^2}
 \end{align}
 
 Se observa que para que el valor de $h''$ resulte positivo, de manera que se de un decrecimiento exponencial desde la superficie, el valor de $X_s$ tiene que ser negativo, por lo que el comportamiento de la superficie tiene que ser capacitivo.
@@ -845,106 +845,11 @@ Una onda incidente desde el aire, para evitar reflexiones y, por lo tanto, radia
 
 % Barlow parece contar cosas sobr la velocidad de fase, y más dealnte sobre el lauching y el angulo de brewster complejo. LEER para completar.
 
-Esta impedancia es puramente imaginaria positiva\footnote{Si el dieléctrico presentara pérdidas, existiría también un término real \cite{Barlow:SurfaceWaves}, por lo que, además de facilitar la propagación de ondas de superficie, si el dieléctrico tiene bajas pérdidas, no aumenta la resistencia de superficie. Además, esta componente inductiva se debe sumar al efecto producido por la componente inductiva de la impedancia de superficie del conductor, debida a la existencia de una profundidad de penetración.}, por lo que tiene un comportamiento inductivo, permitiendo la formación de ondas de superficie en modo TM. El ángulo $\theta_t$ se obtiene de las relaciones de Snell (\ref{eq:snell_law_second}), por lo que se deduce que, al contrario que en el caso del conductor sin recubrimiento dieléctrico, el comportamiento es dependiente del ángulo de incidencia.
+Esta impedancia es puramente imaginaria positiva\footnote{Si el dieléctrico presentara pérdidas, existiría también un término real \cite{Barlow:SurfaceWaves}, por lo que, además de facilitar la propagación de ondas de superficie, si el dieléctrico tiene bajas pérdidas, no aumenta la resistencia de superficie. Además, esta componente inductiva se debe sumar al efecto producido por la componente inductiva de la impedancia de superficie del conductor, debida a la existencia de una profundidad de penetración.}, por lo que tiene un comportamiento inductivo, permitiendo la formación de ondas de superficie en modo TM, dado que la constante de atenuación $h''$ logra que el campo se concentre cerca de la superficie. Los valores de $\beta'$ y $\beta''$ no se ven modificados, pues el aporte del dieléctrico a la reactancia no es lo suficientemente alto. El ángulo $\theta_t$ se obtiene de las relaciones de Snell (\ref{eq:snell_law_second}), por lo que se deduce que, al contrario que en el caso del conductor sin recubrimiento dieléctrico, el comportamiento es dependiente del ángulo de incidencia.
 
 % Queda explicar qué pasa con el coating -> ubicar también los puntos en el dibujito, para saber por dónde es que nos movimos.
 
 
-
-
-\subsection{Línea microstrip}
-
-\section{Resonadores}
-
-\section{Líneas de transmisión}
-\label{subsec_lineas_de_transmision}
-%%%%
-LOREM IPSUM
-% Venkateswaran, cap 1.
-%%%%
-\section{Antenas}
-\label{subsec_antenas}
-%%%%
-LOREM IPSUM
-%%%%
-\subsection{Regiones de campo}
-\label{subsubsec_regiones_de_campo}
-%%%%
-LOREM IPSUM
-%%%%
-\subsection{Diagramas de radiación}
-\label{subsubsec_diag_de_rad}
-%%%%
-LOREM IPSUM
-%%%%
-\subsection{Potencia total radiada e intensidad de radiación}
-\label{subsubsec_pot_total_radiada}
-%%%%
-LOREM IPSUM
-%%%%
-\subsection{Directividad, eficiencia y ganancia}
-\label{subsubsec_directividad}
-%%%%
-LOREM IPSUM
-%%%%
-\subsection{Polarización}
-\label{subsubsec_polarizacion}
-%%%%
-LOREM IPSUM
-%%%%
-
-\subsection{Impedancia de entrada}
-\label{subsec_imp_entrada}
-%%%%
-LOREM IPSUM
-%%%%
-\subsection{Acoplamiento mutuo}
-\label{subsec_acoplamiento}
-%%%%
-LOREM IPSUM
-%%%%
-\subsection{Dieléctricos y pérdidas dieléctricas}
-\label{subsec_dielectricos}
-%%%%
-LOREM IPSUM
-% LibroSinNombre, pagina 816
-%%%%
-\subsection{Parámetros S}
-\label{subsec_parametros_s}
-%%%%
-LOREM IPSUM
-% Pozar, pag 178
-%%%%
-
-\subsection{Antenas Microstrip}
-\label{subsec_antenas_microstrip}
-%%%%
-LOREM IPSUM
-%%%%
-\subsubsection{Modelo de líneas de transmisión}
-\label{subsubsec_microstrip_modeloLineas}
-%%%%
-LOREM IPSUM
-% LibroSinNombre, pahgina 534
-%%%%
-\subsubsection{Modelo de cavidades multimodo}
-\label{subsubsec_microstrip_modeloCavidades}
-%%%%
-LOREM IPSUM
-% Pozar, rezonadores, capitulo 6
-%%%%
-
-\subsection{Acoplamiento mutuo en antenas Microstrip}
-\label{subsec_acoplamiento_microstrip}
-%%%%
-LOREM IPSUM
-%%%%
-% LibroSinNombre, pagina 562 y 631
-\subsubsection{Ondas de superficie}
-\label{subsubsec_microstrip_ondas_superficie}
-%%%%
-LOREM IPSUM
-%%%%
 % Engheta, pagina 289
 % Rahim (tesis), pagina 28
 % Collin, capitulo de Surface waveguides, pag 697
@@ -952,4 +857,189 @@ LOREM IPSUM
 % Pozar, pag 138
 % Tesis de Kovacs, pagina 8
 % Tesis de Zheng, apendice A, pag 48. Interfaces con diel y con metales.
+
+
+\section{Líneas de transmisión}
+\label{sec_lineas_de_transmision}
+%%%%
+
+%  Cuando los metamateriales son homogéneos, pueden ser representados por líneas de transmisión unidimensionales, donde la dirección representa cualquier dirección en el material (Caloz, Itoh).
+
+La teoría de líneas de transmisión representa el paso intermedio entre el estudio de campos electromagnéticos y de circuitos impresos, permitiendo considerar el fenómeno de propagación de ondas como una extensión de la teoría de circuitos (aplicable cuando la longitud eléctrica del circuito es mayor a la longitud de onda de operación), o como una solución particular de las ecuaciones de Maxwell \cite{Pozar:MwEngineering}.
+
+Las líneas de transmisión son redes de parámetros distribuidos, donde las corrientes y las tensiones, en contraposición a los circuitos de parámetros concentrados, pueden variar en magnitud y fase debido a la dimensión física del circuito. El análisis de una línea se puede llevar a cabo estableciendo el comportamiento de los trozos infinitesimales que la componen, de forma que cada uno de ellos se pueda modelar utilizando circuitos de parámetros concentrados independientes de la frecuencia, estableciendo, entonces, impedancias $Z'$ ($\Omega/m$) y admitancias $Y'$ ($S/m$) por unidad de longitud, como se muestra, de forma general, en la figura \ref{fig:TL-equivalente}.
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{intro_electro/LineaDeTransmision.pdf}
+	\caption{Circuito equivalente de porción de línea de transmisión.}
+	\label{fig:TL-equivalente}
+\end{figure}
+
+Las expresiones para la impedancia y la admitancia por unidad de longitud se puede expresar como indican las expresiones de \ref{eq:impedancia-admitancia-TL}. Se debe tener en cuenta que los subíndices R y L se deben al comportamiento de "mano izquierda"\footnote{La expresión "material de mano izquierda" fue utilizada por primera vez por físico ruso Viktor Velesago en 1967, cuando propuso la posibilidad de la existencia de materiales en que la propagación de ondas se daría de forma que el campo eléctrico, el campo magnético y el vector de propagación formaran una tríada de mano izquierda \cite{Caloz}.} o ``mano derecha`` asociado a cada componente. Si $L'_R$ y $C'_R$ son nulos, existe sólo un comportamiento "de mano izquierda", donde las velocidades de fase y de grupo son antiparalelas, y donde tanto la permitividad eléctrica $\epsilon$ como la permeabilidad magnética $\mu$ son negativas, de forma que el índice de refracción también lo sea, dando lugar a una propagación de ondas en sentido inverso. Cuando $L'_L$ y $C'_L$ son nulos, el comportamiento es denominado "de mano derecha", y es el que corresponde a propagación de onda comunmente analizada. Las componentes que corresponden al comportamiento de mano izquierda son, por sí solas, de existencia física imposibles, dado que las que generan comportamiento de mano derecha aparecen naturalmente por efectos constructivos. Las resistencias del circuito, por otro lado, representan las pérdidas dieléctricas y conductoras.
+
+
+\begin{align}
+\label{eq:impedancia-admitancia-TL}
+Z' &= j \left(\omega L'_r - \frac{1}{\omega C'_L} \right) & Y' =j \left(\omega C'_R - \frac{1}{\omega L'_L} \right)
+\end{align}
+
+Una descripción completa del análisis del caso general, que describe el comportamiento de numerosos metamateriales, se puede consultar en \cite{Caloz}. En adelante se analizará únicamente el caso tradicional, de mano derecha, ya que es el que se aplica al tipo de estructura analizado en este trabajo.
+
+Considerando una línea de transmisión que representa un comportamiento puramente de mano derecha, obteniendo el circuito equivalente de un infinitesimal de línea de la figura \ref{fig:TL-equivalente}, aplicando las leyes de Kirchhoff, y dividiendo por $\Delta z$ para obtener expresiones diferenciales, se obtienen las ecuaciones del telegrafista, expresadas en la ecuación \ref{eq:Telegrafista}, tanto en el dominio del tiempo como de la frecuencia \cite{Fernandez:Electromag}. La solución simultánea de ambas ecuaciones da lugar a ecuaciones de onda, expresadas en \ref{eq:ec-onda-TL}, donde $\gamma$ es la constante de propagación, cuyo valor se expresa \ref{eq:gamma-tl}.
+
+\begin{align}
+	\label{eq:Telegrafista}
+	\left. \begin{array}{rr@{\mskip\thickmuskip}l}
+	\frac{\partial v(z,t)}{\partial z} & = -R i(z,t) - L \frac{\partial i(z,t)}{\partial t}\\
+	\frac{\partial i(z,t)}{\partial z} & = -G v(z,t) - C \frac{\partial v(z,t)}{\partial t}
+	\end{array}\right\} \quad \implies \quad \left\{\begin{array}{r@{\mskip\thickmuskip}l}
+	\frac{dV(z)}{dz} & = -(R+j\omega L)I(z) \\
+	\frac{dI(z)}{dz} & = -(G+j\omega C)V(z) 
+	\end{array}\right.
+\end{align}
+
+
+\begin{equation}
+\begin{aligned}
+	\frac{d^2 V(z)}{dz^2} - \gamma^2 V(z) = 0 \\
+	\frac{d^2 I(z)}{dz^2} - \gamma^2 I(z) = 0
+\end{aligned}
+\label{eq:ec-onda-TL}
+\end{equation}
+
+\begin{align}
+	\label{eq:gamma-tl}
+	\gamma = \alpha + j\beta = \sqrt{(R+j\omega L)(G+j\omega C)}	
+\end{align}
+
+ Las ecuaciones de onda tienen como solución la superposición de una onda en dirección $+z$ y otra en dirección $-z$, tanto para la tensión como para la corriente, donde la longitud de onda queda expresada como $\lambda = \pi/\beta$. La relación entre las componentes de onda que viajan en dirección positiva se conoce como impedancia característica, $Z_0$, definida, según los parámetros, en la ecuación \ref{eq:TL-impedancia-caracteristica}.
+ 
+\begin{align}
+	\label{eq:TL-impedancia-caracteristica}
+	Z_0 = \frac{V_0^+}{I_0^+} = \sqrt{\frac{R+j\omega L}{G+j\omega C}}
+\end{align}
+
+Cuando una línea de transmisión es terminada en una impedancia arbitraria $Z_L$, se producen fenónemos de transmisión y reflexión de potencia, de manera análoga al caso de incidencia de campos electromagnéticos sobre interfaces entre medios de impedancias intrínsecas diferentes. Existe, también en este caso, un coeficiente de reflexión $R$, definido como la relación entre la tensión reflejada y la tensión incidente, como indica la ecuación \ref{eq:coef-reflexion-tl}. Cuando el coeficiente de transmisión es nulo, se dice que la carga está adaptada, de modo que $Z_L = Z_0$.
+
+\begin{align}
+	\label{eq:coef-reflexion-tl}
+	R = \frac{V_0^-}{V_0^+} = \frac{Z_L-Z_0}{Z_L+Z_0}
+\end{align}
+
+Si se generaliza el concepto de coeficiente de transmisión a cualquier punto de la línea, y no únicamente al nodo donde se coloca la carga $Z_L$, se obtiene el coeficiente de reflexión para cualquier punto $l$ de la línea a partir del que corresponde al nodo de carga, ubicado en la posición 0, como se indica en la ecuación \ref{eq:coef-reflexion-tl-generalizado}.
+
+\begin{align}
+\label{eq:coef-reflexion-tl-generalizado}
+R(l) = Re^{-2j\gamma l} = R e^{-2j\beta l} e^{-2\alpha l}
+\end{align}
+
+La impedancia característica también varía con la distancia a la carga, de forma que:
+
+\begin{align}
+Z_{in} = \frac{V(-l)}{I(-l)} = Z_0 \frac{Z_L +Z_0 \tanh \gamma l}{Z_0 + Z_L \tanh \gamma l}
+\end{align}
+% Venkateswaran, cap 1.
+%%%%
+\subsection{Línea \textit{microstrip}}
+
+Algunas de las líneas de transmisión más comunes están basadas en tecnologías de circuitos impresos, entre las que se destacan las striplines (donde el dieléctrico circundante al conductor es homogéneo), las líneas \textit{microstrip} (donde el dieléctrico circundante es aire en la mitad superior, y un dieléctrico de mayor permitividad en la mitad inferior), y las guías de ondas coplanares (donde el plano de tierra y la línea de señal comparten la misma cara del sustrato). Algunas de ellas son esquematizadas en la figura \ref{fig:strip-line-technology}. Los costos de fabricación de las mismas suelen ser muy bajos, y ofrecen comodidades para la implantación de componentes discretos, aunque en muchos casos se generan modos indeseados, que pueden ser disminuidos manteniendo el espesor del sustrato en valores bajos, lo que los vuelve frágiles. Además, los sustratos dieléctricos suelen presentar pérdidas que modifican el comportamiento de la señal. Las principales aplicaciones consisten en el diseño de filtros microondas, acopladores direccionales, transformadores de impedancia, planos de tierra y redes de distribución de energía de circuitos impresos e integrados \cite{Venkateswaran}.
+
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=\textwidth]{intro_electro/microstrip-stripline-coplanar.pdf}
+	\caption{Tecnologías de líneas de transmisión planares. De izquierda a derecha: \textit{Microstrip}, \textit{twinstrip}, línea coplanar y \textit{stripline}.}
+	\label{fig:strip-line-technology}
+\end{figure}
+
+Las striplines, debido a la homogeneidad del dieléctrico, soportan modos TEM. Las líneas microstrip, en cambio, sólo pueden presentar modos TE y TM, aunque en frecuencias bajas tienen un comportamiento que puede denominarse cuasi-TEM, dado que la mayor parte del campo se concentra en el dieléctrico, pero un comportamiento puramente TEM impediría el cumplimiento de la condición de fase en la interfaz, dado que las velocidades de propagación en ambos medios es distinta \cite{Pozar:MwEngineering}. Un diagrama simplificado de los campos y los parámetros de una línea microstrip se muestran en la figura \ref{fig:microstrip-campos}
+
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{intro_electro/microstrip-campos.pdf}
+	\caption{Campos de una línea \textit{microstrip}.}
+	\label{fig:strip-line-technology}
+\end{figure}
+
+En general, para simplificar el análisis, se considera que la cinta microstrip es una stripline, donde el dieléctrico tiene una constante dieléctrica efectiva, menor a la constante dieléctrica del sustrato, pero mayor a la del aire, dependiente del ancho del sustrato, el ancho del conductor y la frecuencia de trabajo. Las expresiones pueden consultarse en \cite{Pozar:MwEngineering}.
+
+\section{Antenas}
+\label{subsec_antenas}
+%%%%
+
+Una antena es un dispositivo que actúa como fuente de ondas electromagnéticas, dado que es una interfaz entre el espacio libre y un dispositivo de guiado (como una guía de ondas), para la cual puede ser modelada como una carga (en general, adaptada). Su función es recibir o transmitir energía, usualmente optimizando la energía en algunas direcciones, y suprimiendo o disminuyendo su valor en otras, para lo que se utilizan distintas tecnologías: antenas de hilo, de apertura y microstrip, muchas veces dispuestas en arreglos y con componentes reflectores \cite{Balanis:Theory}.
+
+%%%%
+\subsection{Regiones de campo}
+\label{subsubsec_regiones_de_campo}
+%%%%
+El espacio que rodea a una antena se suele dividir en tres regiones: Campo cercano reactivo (donde predominan los campos reactivos), campo de radiación cercano (Fresnel, donde la distribución angular de energía depende de la distancia a la antena) y campo lejano (Fraunhoffer, donde la distribución angular de energía es, en términos prácticos, independiente de la distancia al elemento radiante). En general, se considera que la región de campo lejano se encuenta a distancias mayores a $2D^2/\lambda$, donde D es la máxima dimensión de la antena, y $\lambda$ es la longitud de onda de trabajo.
+
+%%%%
+\subsection{Diagramas de radiación}
+\label{subsubsec_diag_de_rad}
+%%%%
+El diagrama de radiación es una representación gráfica o función matemática que representa las propiedades de radiación de una antena como función d elas coordenadas espaciales. En general, se especifica para la región de campo lejano, y en función de las coordenadas direccionales $\theta$ y $\phi$, que representan el ángulo de elevación y el azimutal, respectivamente, para una orientación arbitraria del radiador.
+
+En general, se calcula el patrón de potencial o el patrón de campo eléctrico, y se los normaliza respecto del máximo valor que obtienen, para luego graficarlos en escala logarítima o en decibeles.
+
+Sobre el patrón se distinguen lóbulos, clasificados como principal (en la dirección de mayor radiación) y menores (en otras direcciones). Si una antena es isotrópica, esta distinción no existe, aunque es físicamente irrealizable. Cuando no existen lóbulos distinguibles en un dado plano, la antena se clasifica como omnidireccional.
+%%%%
+
+\subsection{Impedancia de entrada}
+\label{subsec_imp_entrada}
+%%%%
+La impedancia de entrada de una antena es la que presenta una antena entre sus terminales. En general tiene una componente resistiva y una componente reactiva, de manera que $Z_A = R_A + j X_A$. En general, $R_A$ tiene dos componentes: $R_r$, la resistencia de radiación, y $R_L$, la resistencia de pérdidas.
+%%%%
+
+\subsection{Arreglos de antenas}
+% Ver apunte tesis overleaf
+
+\subsection{Acoplamiento mutuo}
+\label{subsec_acoplamiento}
+%%%%
+\lipsum[2]
+%Paper de fano y el cordobeés.
+%%%%
+\subsection{Dieléctricos y pérdidas dieléctricas}
+\label{subsec_dielectricos}
+%%%%
+\lipsum[2]
+% LibroSinNombre, pagina 816
+%%%%
+\subsection{Parámetros S}
+\label{subsec_parametros_s}
+%%%%
+\lipsum
+% Pozar, pag 178
+%%%%
+
+\subsection{Antenas Microstrip}
+\label{subsec_antenas_microstrip}
+%%%%
+\lipsum
+%%%%
+\subsubsection{Modelo de líneas de transmisión}
+\label{subsubsec_microstrip_modeloLineas}
+%%%%
+\lipsum
+% LibroSinNombre, pahgina 534
+%%%%
+\subsubsection{Modelo de cavidades multimodo}
+\label{subsubsec_microstrip_modeloCavidades}
+%%%%
+\lipsum
+
+% Pozar, rezonadores, capitulo 6
+%%%%
+
+\subsection{Acoplamiento mutuo en antenas Microstrip}
+\label{subsec_acoplamiento_microstrip}
+%%%%
+\lipsum
+%%%%
+% LibroSinNombre, pagina 562 y 631
+
 

@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -36,16 +36,16 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1600"
-     inkscape:window-height="876"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
      id="namedview831"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:zoom="3.228343"
-     inkscape:cx="433.81539"
-     inkscape:cy="225.60745"
-     inkscape:window-x="0"
+     inkscape:zoom="2.7300287"
+     inkscape:cx="406.40546"
+     inkscape:cy="240.94766"
+     inkscape:window-x="1600"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="surface509">
@@ -57,6 +57,18 @@
   </sodipodi:namedview>
   <defs
      id="defs232">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1460">
+      <stop
+         style="stop-color:#a4a4a4;stop-opacity:1;"
+         offset="0"
+         id="stop1456" />
+      <stop
+         style="stop-color:#f55353;stop-opacity:0"
+         offset="1"
+         id="stop1458" />
+    </linearGradient>
     <linearGradient
        inkscape:collect="always"
        id="linearGradient3028">
@@ -919,6 +931,33 @@
        x2="341.48398"
        y2="234.38819"
        gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1460"
+       id="linearGradient1554"
+       x1="362.09006"
+       y1="132.11983"
+       x2="341.21112"
+       y2="121.50531"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1444"
+       id="linearGradient1584"
+       gradientUnits="userSpaceOnUse"
+       x1="465.37976"
+       y1="200.93575"
+       x2="296.97488"
+       y2="136.10126" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1444"
+       id="linearGradient1586"
+       gradientUnits="userSpaceOnUse"
+       x1="652.19098"
+       y1="273.46246"
+       x2="240.93153"
+       y2="110.27735" />
   </defs>
   <g
      id="surface509">
@@ -2444,36 +2483,36 @@
        id="path3392-2-2"
        inkscape:connector-curvature="0" />
     <path
-       style="opacity:0.669;fill:#b3b3b3;fill-rule:evenodd;stroke:none;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 420.06623,148.89391 c -15.84513,0.53694 -28.60048,2.56612 -40.78312,7.33287 -10.75452,4.20796 -19.0449,8.84609 -23.21501,15.10572 -3.92577,5.89285 -4.25501,7.05819 -3.21925,13.46296 2.10185,12.99706 -1.23157,14.61512 8.3056,20.44696 7.42967,4.54314 8.00478,3.3721 13.1092,3.19442 26.85974,-0.93497 21.13844,0.79993 46.74374,-1e-5 11.17341,-0.34906 29.86987,-0.62841 33.97596,-0.80846 11.69008,-0.51262 16.34264,0.72893 17.51403,-2.77223 1.63865,-4.89777 1.78905,-13.39252 1.64227,-14.68583 -1.27243,-11.21154 1.04936,-0.82796 -1.36906,-17.95786 -2.02657,-14.35436 -1.97499,-15.49965 -12.23493,-19.35879 -17.27653,-6.49835 -18.35299,-4.70922 -40.46943,-3.95975 z"
+       style="opacity:0.48699999;fill:url(#linearGradient1586);fill-rule:evenodd;stroke:url(#linearGradient1554);stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="m 386.26562,108.76844 c -25.74177,0.89335 -55.8045,2.89589 -75.59624,10.8268 -17.47165,7.00121 -21.59951,16.09173 -28.37422,26.5065 -6.37775,9.80453 -4.71485,9.2176 -5.50467,19.87384 -1.65368,22.31137 -1.98698,46.10618 14.284,42.94979 12.68057,-2.45988 12.48834,-0.79382 20.78091,-1.08945 43.63595,-1.5556 34.3412,1.33092 75.93921,-2e-5 18.15216,-0.58077 48.52617,-1.04555 55.19687,-1.34511 18.99153,-0.8529 26.55002,1.21279 28.45304,-4.61243 2.66213,-8.14892 2.90647,-22.28248 2.66801,-24.43428 -2.06717,-18.65375 1.70477,-1.37756 -2.22415,-29.87827 -3.29234,-23.88278 -3.20855,-25.78831 -19.87669,-32.20915 -28.06722,-10.81194 -29.81602,-7.83518 -65.74607,-6.58822 z"
        id="path4203"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="sssssssssssss" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:9px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="369.24417"
-       y="167.06442"
+       x="399.53421"
+       y="157.46866"
        id="text4207"><tspan
          sodipodi:role="line"
-         x="369.24417"
-         y="167.06442"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:MathJax_SansSerif;-inkscape-font-specification:MathJax_SansSerif;stroke-width:0.75px"
+         x="399.53421"
+         y="157.46866"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:MathJax_SansSerif;-inkscape-font-specification:MathJax_SansSerif;text-align:center;text-anchor:middle;stroke-width:0.75px"
          id="tspan4209">Zona  de ondas de superficie</tspan><tspan
          sodipodi:role="line"
-         x="369.24417"
-         y="178.65231"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:MathJax_SansSerif;-inkscape-font-specification:MathJax_SansSerif;stroke-width:0.75px"
+         x="399.53421"
+         y="169.05655"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:MathJax_SansSerif;-inkscape-font-specification:MathJax_SansSerif;text-align:center;text-anchor:middle;stroke-width:0.75px"
          id="tspan5390">en TM [e]:</tspan><tspan
          sodipodi:role="line"
-         x="369.24417"
-         y="190.2402"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:MathJax_SansSerif;-inkscape-font-specification:MathJax_SansSerif;stroke-width:0.75px"
+         x="399.53421"
+         y="180.64444"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:MathJax_SansSerif;-inkscape-font-specification:MathJax_SansSerif;text-align:center;text-anchor:middle;stroke-width:0.75px"
          id="tspan4213">-Baja resistencia</tspan><tspan
          sodipodi:role="line"
-         x="369.24417"
-         y="201.82809"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:MathJax_SansSerif;-inkscape-font-specification:MathJax_SansSerif;stroke-width:0.75px"
+         x="399.53421"
+         y="192.23233"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:MathJax_SansSerif;-inkscape-font-specification:MathJax_SansSerif;text-align:center;text-anchor:middle;stroke-width:0.75px"
          id="tspan4215">-Comportamiento inductivo</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:3, 3;stroke-dashoffset:0;marker-start:url(#StopM);marker-end:url(#marker5292)"
