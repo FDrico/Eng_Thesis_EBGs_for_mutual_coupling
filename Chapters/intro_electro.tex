@@ -960,7 +960,7 @@ Las striplines, debido a la homogeneidad del dieléctrico, soportan modos TEM. L
 	\centering
 	\includegraphics[width=0.5\textwidth]{intro_electro/microstrip-campos.pdf}
 	\caption{Campos de una línea \textit{microstrip}.}
-	\label{fig:strip-line-technology}
+	\label{fig:microstrip-campos}
 \end{figure}
 
 En general, para simplificar el análisis, se considera que la cinta microstrip es una stripline, donde el dieléctrico tiene una constante dieléctrica efectiva, menor a la constante dieléctrica del sustrato, pero mayor a la del aire, dependiente del ancho del sustrato, el ancho del conductor y la frecuencia de trabajo. Las expresiones pueden consultarse en \cite{Pozar:MwEngineering}.
@@ -985,7 +985,7 @@ El diagrama de radiación es una representación gráfica o función matemática
 
 En general, se calcula el patrón de potencial o el patrón de campo eléctrico, y se los normaliza respecto del máximo valor que obtienen, para luego graficarlos en escala logarítima o en decibeles.
 
-Sobre el patrón se distinguen lóbulos, clasificados como principal (en la dirección de mayor radiación) y menores (en otras direcciones). Si una antena es isotrópica, esta distinción no existe, aunque es físicamente irrealizable. Cuando no existen lóbulos distinguibles en un dado plano, la antena se clasifica como omnidireccional.
+Sobre el patrón se distinguen lóbulos, clasificados como principal (en la dirección de mayor radiación) y menores (en otras direcciones). Si una antena es isotrópica, esta distinción no existe, aunque tal antena es físicamente irrealizable. Cuando no existen lóbulos distinguibles en un dado plano, la antena se clasifica como omnidireccional.
 %%%%
 
 \subsection{Impedancia de entrada}
@@ -997,18 +997,100 @@ La impedancia de entrada de una antena es la que presenta una antena entre sus t
 \subsection{Arreglos de antenas}
 % Ver apunte tesis overleaf
 
+Un arreglo de antenas es un conjunto de antenas dispuestas geométricamente, y alimentadas de manera tal que conformen un único sistema radiante. El primer conjunto de antenas usado extensivamente fue la antena Yagui-Uda, inventada en 1926, cuya fase no puede variarse electrónicamente. Recién durante la Segunda Guerra Mundial se inventaron los conjuntos de antena de fase variable, y a partir de 1950, con la invención de los defasadores de ferrita, la modificación de fase completa fue posible \cite{Stutzman:AntennaTheory}.
+
+El análisis más sencillo del comportamiento de conjuntos de antenas se presenta al analizar uno formado por antenas de iguales propiedades, cuyas amplitudes y fases pueden ser modificados, tanto en transmisión (a través de mecanismos de desfasaje) como en recepción (debido a diferencias e camino y circuitos de desfasaje). En general, el diagrama de radiación se puede calcular en base a la multiplicación del patrón de uno de los elementos y el patrón del arreglo, para el cual se asumen puntos de radiación isotrópicos en la posición de las antenas.
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{intro_electro/array-de-antenas.pdf}
+	\caption{Incidencia de una onda plana sobre un arreglo de antenas.}
+	\label{fig:rayosincidentes-array}
+\end{figure}
+
+El factor de \textit{array}, reemplazando cada elemento por radiadores isotrópicos, se obtiene considerando que una onda plana incide con ángulo $\theta$ sobre el conjunto, como se muestra en la figura \ref{fig:rayosincidentes-array}. Cada elemento es excitado con una fase $\xi_i$, debida a la diferencia de caminos y a las diferencias entre las líneas de transmisión de cada antena, de modo que:
+
+\begin{equation}
+AF=I_0e^{j\xi_0} + I_1e^{j\xi_1} + ... = \sum_{n=0}^{N-1} I_n e^{j\beta n d cos(\theta)}=\sum_{n=0}^{N-1} I_n e^{jn\Phi}
+\end{equation}
+
+Normalizando y simplificando la expresión, la misma queda:
+
+\begin{equation}
+	f(\Phi) = \frac{sin(N\Phi/2)}{N sin(\Phi/2)} \qquad (2\pi-\text{periódica})
+\end{equation}
+
+con N la cantidad de elementos radiantes. Se observa que si hay una mayor cantidad de elementos radiantes, los lóbulos, tanto secundarios como primarios, tiende a aumentar. Además, al mismo tiempo, la cantidad de lóbulos secundarios también crece (hay N-1 lóbulos secundarios), al mismo tiempo que disminuye la altura de los mismos \cite{Stutzman:AntennaTheory}.
+
 \subsection{Acoplamiento mutuo}
 \label{subsec_acoplamiento}
 %%%%
-\lipsum[2]
+Cuando se considera acoplamiento mutuo entre los elementos del \textit{array}, la multiplicación del patrón de radiación por el patrón del arreglo ya no es válida. Los elementos interactúan entre sí y alteran sus corrientes, y por lo tanto sus impedancias. La radiación de una antena induce corrientes sobre las antenas cercanas, que también radían e influyen sobre la corriente de la primer antena. Es un efecto de campo cercano.
+
+La impedancia de entrada de un elemento aislado en el espacio se denomina ``Impedancia de elemento aislado", o simplemente impedancia de antena. La impedancia de entrada de una antena que está dispuesta en un ambiente con elementos activos se denomina ``impedancia activa", y varía según las excitaciones a las que se someta al arreglo de antena. En general, la caracterización de los elementos radiantes sometidos a efectos de acoplamiento mutuo consisten en la obtención de la ``impedancia pasiva", que se logra excitando un elemento y conectando a cargas adaptadas los demás.
+
+Hay 3 efectos responsables del acoplamiento mutuo en arreglos de antenas:
+
+\begin{itemize}
+	\item Acoplamiento espacial entre elementos.
+	\item Acoplamiento espacial por \textit{scattering} en elementos cercanos.
+	\item Acoplamiento por la red de alimentación, que puede ser minimizado usando técnicas de acoplamiento apropiadas en cada elemento.
+\end{itemize}
+
+Si el acoplamiento en la red de alimentación se minimiza, se puede considerar que cada antena está alimentada independientemente con una tensión $V_m^g$, cuyo generador tiene una impedancia asociada $Z_m^g$. Sobre la antena se genera una diferencia de tensión $V_m$, y una corriente $I_m$, que incluye los efectos de acoplamiento. Un \textit{array} de N elementos es entonces una red de N puertos, representada por la ecuación \ref{eq:Matriz_impedancias_mutuas}, donde todos los elementos que pertenecen a la diagonal de la matriz $Z$ son las impedancias de elemento aislado, mientras que los elementos fuera de la diagonal representan las impedancias mutuas $Z_{mn}$, que no es más que la tensión impresa sobre el elemento $m$ por la corriente $n$, cuando todos los demás terminales están a circuito abierto ($Z_{mn}=V_m/I_n |_{I_i=0\; \forall i \neq n}$, lo que significa que la corriente es nula para todo el cuerpo de la antena). En general estos cálculos se realizan de forma numérica, tras las correspondientes simulaciones, y considerando a las antenas en modo transmisor \cite{Fano:CouplingReceiving}.
+
+\begin{equation} \label{eq:Matriz_impedancias_mutuas}
+\begin{bmatrix}
+V_1 \\ V_2 \\ \vdots \\ V_N
+\end{bmatrix}
+=
+\underbrace{\begin{bmatrix}
+	Z_{11} & Z_{12} & \cdots & Z_{1N} \\
+	Z_{12} & Z_{22} & \cdots & Z_{2N} \\
+	\vdots & \vdots & \cdots & \vdots \\
+	Z_{1N} & Z_{2N} & \cdots & Z_{NN} \\
+	\end{bmatrix}}_{Z}
+\begin{bmatrix}
+I_1 \\ I_2 \\ \vdots \\ I_N
+\end{bmatrix}
+\end{equation}
+
+Si suponemos que la antena no excitada tiene una impedancia de carga $Z^g_j$ sobre sus terminales (y que el generador de esa antena está apagado, $V^g_j=0$), la corriente generada sobre el elemento $j$ debido a la radiación del elemento $i$ será tal que $V_j=-Z^g_j I_j$, por lo que:
+
+\begin{equation} \label{eq:impmutua}
+V_j = -Z^g_j I_j = Z_{jj}I_j + \sum_{i=1, i \neq j}^{N} Z_{ji}I_i 
+\end{equation}
+
+En el caso en que se consideren sólo dos antenas, de la ecuación \ref{eq:impmutua} para dos elementos, podemos obtener la expresión de la corriente en el segundo elemento, que da lugar a la expresión de la impedancia total vista por el primer elemento, por efecto propio y de la radiación del segundo, como muestra la ecuación \ref{eq:impedanciamutua}, donde se asumió que la matriz Z es simétrica, y que permite deducir la ecuación \ref{eq:impedanciaAntenaEnArray}, que es la impedancia de entrada de cada elemento, en función de impedancias mesurables.
+
+\begin{equation}
+	\label{eq:impedanciamutua}
+	\left\{
+	\begin{aligned}
+		V_1 &= Z_{11} I_1 + Z_{12} I_2 \\
+		V_2 = -Z^g_2 I_2 &= Z_{22} I_2 + Z_{21}I_1
+	\end{aligned}
+	\right.
+\end{equation}
+
+\begin{align}
+	\label{eq:impedanciaAntenaEnArray}
+	I_2 = \frac{-Z_{21}I_1}{Z_{22}+Z^g_{2}} = \frac{-Z_{12}I_1}{Z_{22}+Z^g_{2}}  \quad \implies \quad
+	\frac{V_1}{I_1} = Z_1 = Z_{11} - \frac{(Z_{12})^2}{Z_{22}+Z^g_2}
+\end{align}
+
 %Paper de fano y el cordobeés.
 %%%%
 \subsection{Dieléctricos y pérdidas dieléctricas}
 \label{subsec_dielectricos}
-%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \lipsum[2]
 % LibroSinNombre, pagina 816
-%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Parámetros S}
 \label{subsec_parametros_s}
 %%%%
@@ -1019,7 +1101,13 @@ La impedancia de entrada de una antena es la que presenta una antena entre sus t
 \subsection{Antenas Microstrip}
 \label{subsec_antenas_microstrip}
 %%%%
-\lipsum
+Las antenas \textit{microstrip} cumplen varias de las especificaciones más importantes que imponen las diversas aplicaciones de antenas: Pueden ser pequeñas, tienen bajo peso, son económicas y fáciles de fabricar, y tienen bajo perfil, lo que permite adaptarlas a numerosos diseños. Suelen, sin embargo, tener un alto Q, suelen tener baja eficiencia, son de baja potencia, y presentan polarización impura. La baja eficiencia y el bajo ancho de banda, en muchos casos, suelen mitigarse con el aumento del ancho del sustrato, aunque esto genera ondas de superficie, generalmente indeseadas. Las ondas de superficie extraen potencia que no se convierte en radiación y, facilitan el acoplamiento entre elementos y, cuando inciden sobre discontinuidades, generan lóbulos secundarios que degradan el patrón de radiación y las características de polarización \cite{Balanis:Theory}.
+
+En general, el diseño de una antena \textit{microstrip} se realiza de forma tal que el máximo de radiación se concentre en la dirección normal al parche (\textit{broadside}), aunque también es posible lograr radiación en dirección paralela al mismo (\textit{end-fire}), dependiendo de la geometría elegida. El sustrato elegido para la fabricación suele influir en el ancho de banda y la eficiencia: Una mayor permitividad dieléctrica genera una menor eficiencia, un menor ancho de banda y un menor acoplamiento con elementos cercanos, debido a que los campos se encuentran contenidos en el sustrato.
+
+Existen múltiples formas de alimentación de una antena \textit{microstrip}, entre las que se destacan la línea microstrip de alimentación, que suele dar lugar a radiación espuria y a polarización cruzada, debido a la asimetría que impone; y la conexión directa de cable coaxil, donde el conductor central del mismo se conecta en un punto del parche, y la malla se conecta al plano de tierra que funciona como reflector, ubicado en la cara opuesta del sustrato.
+
+Existen varios métodos de análisis de antenas \textit{microstrip}, entre los que se destacan, por su sencillez, el modelo de líneas de transmisión y el modelo de cavidades resonantes, principalmente aplicables a parches rectangulares, que son los de interés en este trabajo.
 %%%%
 \subsubsection{Modelo de líneas de transmisión}
 \label{subsubsec_microstrip_modeloLineas}
@@ -1038,7 +1126,44 @@ La impedancia de entrada de una antena es la que presenta una antena entre sus t
 \subsection{Acoplamiento mutuo en antenas Microstrip}
 \label{subsec_acoplamiento_microstrip}
 %%%%
-\lipsum
+El acoplamiento mutuo está determinado principalmente por los campos que existen sobre la interfaz dieléctrico-aire: la onda espacial (decrece como $1/\rho$), los campos cercanos de superior (decreciendo como $1/\rho^2$), la onda de superficie (con dependencia de tipo $1/\rho^{1/2}$) y las ondas de tipo \textit{leaky} (con dependencia del tipo $e^{-Q}/e^{1/2}$). A mayor distancia del elemento radiante fuente, las ondas de superficie son las que tienen carácter dominante, siempre que en esa dirección existan \cite{Alexopoulos:PrintedDipoles}. En general, si la distancia entre los elementos radiantes es grande (mayor a $0.8 \lambda$), la influencia de las ondas de superficie es baja y el acoplamiento es por tanto bajo, aunque si el conjunto es grande, la suma de los efectos de los distintos parches puede dar lugar a efectos de acoplamiento significativos, incluso entre elementos no adyacentes \cite{Dodov:SurfaceWavesImpact}.
+
+Utilizando el modelo de cavidad, donde los campos interiores a la estructura Microstrip se desarrollan en sus modos resonantes (requiriendo la solución de un problema de autovalores), y donde los campos radiados se obtienen de la aplicación del teorema de equivalencia, la relación entre los campos y las corrientes queda:
+
+\begin{equation}
+M_1 = 2 t E_{z}(x,y) \hat{z} \times \hat{n}, \qquad t=\text{ancho del dieléctrico}
+\end{equation}
+
+donde $\hat{n}$ es la normal al límite de la cavidad, y el campo eléctrico $E_z(x,y)$ se calcula a partir de los modos posibles en la cavidad. El problema se reduce a dos aros magnéticos (rectangulares) que radían en la mitad superior del espacio libre, de manera que sólo hay que calcular integrales de línea.
+
+Considerando la expresión de la potencia radiada por las dos antenas, integrando sobre una superficie que encierra a ambas:
+
+\begin{equation}
+P_{rad} = \int \frac{\vec{E} \times \vec{H*}}{2} \cdot \hat{n} dS = - \frac{1}{2} \int (\vec{H}^H \cdot \vec{M} + \vec{E}^H \cdot \vec{J*}) dS
+\end{equation}
+
+Aplicando el teorema de Gauss, y considerando conductividad perfecta:
+
+\begin{equation}
+P_{rad} = \int \frac{\vec{E} \times \vec{H*}}{2} \cdot \hat{n} dS
+\end{equation}
+
+La impedancia mutua resulta, excitando el parche 1 y observando el efecto sobre el parche 2:
+
+\begin{equation}
+Z_{21}=-\frac{1}{I_1 I_{21}} \int_v \underbrace{\cancel{(E_{21} \cdot J_{2}}}_{\text{sólo fuentes magnéticas}} - H_{21} \cdot M_{2}) dv
+\end{equation}
+
+En un \textit{array} planar de antenas se deben considerar la amplitud y la fase de la onda incidente. En el plano H, el acoplamiento mutuo es menor al acoplamiento en el plano E (figura \ref{fig:acomplamientoEyH}, \cite{VanLil:TLModelCoupling}), y el aumento de la distancia entre los parches reduce el acoplamiento \cite{Dodov:SurfaceWavesImpact}. Sobre el plano H, el decrecimiento del parámetro $S_{12}$ es mucho más lento, debido a la presencia de ondas de superficie, comenzando a partir del modo TM, que no posee frecuencia de corte inferior, y aumentando con la aparición de modos TE y TM de orden superior, que aparecen con el aumento de espesor del sustrato y el crecimiento de la constante dieléctrica \cite{Alexopoulos:PrintedDipoles}.
+
+Según \cite{Dodov:SurfaceWavesImpact}, los efectos de onda de superficie son importantes cuando el valor de $\epsilon_r$ del sustrato es alto, y si las pérdidas son bajas, la onda de superficie se mantiene en un valor estable con el aumento de la distancia \cite{Gonzalo:PerformancePBG}. Esto hace que el acoplamiento mutuo entre las antenas sea mayor, porque existe una onda de superficie notoria. Por otro lado, según \cite{Penard:MutualCouplingMicrostrip}, si el ancho del dieléctrico es bajo, las ondas de superficie son despreciables.
+
+Resultados de las mediciones de acoplamientos mutuos se pueden observar en la figura \ref{fig:acoplamientomutuomicrostrip-penard}. A medida que aumenta la distancia entre los parches, el acoplamiento disminuye, mientras que si el valor de t (ancho del dieléctrico) aumenta, el acoplamiento tiende a aumentar ligeramente, posiblemente debido a la aparición de ondas de superficie. Para el mismo arreglo, la autoimpedancia resulta, a mayor distancia entre parches, cada vez más resistiva, decayendo a casi cero su componente imaginaria. Para separaciones pequeñas, los efectos de campo cercano son los que dominan; en la zona intermedia ($0.4\lambda  < d <  0.8 \lambda$), los efectos de la onda espacial directa son visibles, y en la zona más lejana sólo son reconocibles los efectos originados por las ondas de superficie \cite{Alexopoulos:PrintedDipoles}.
+
+
+Considerando que la impedancia mutua es función de la suma de 3 factores $R_1$, $R_2$ y $R_3$, observar sus variaciones en la esquina inferior izquierda de la figura \ref{fig:acoplamientomutuomicrostrip-penard} puede dar una idea del comportamiento.
+
+Resulta notable, de la figura \ref{fig:acoplamientomutuomicrostrip-penard}, que el acoplamiento depende de la posición relativa entre los elementos. Si los elementos se alinean de forma colineal sobre el plano E, el acoplamiento es mucho mayor que si se ubican de forma colineal sobre el plano H. 
 %%%%
 % LibroSinNombre, pagina 562 y 631
 
