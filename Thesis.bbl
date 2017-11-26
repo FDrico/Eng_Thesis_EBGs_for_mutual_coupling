@@ -182,6 +182,49 @@
       \field{title}{Surface Waves}
       \field{year}{1953}
     \endentry
+    \entry{Caloz:ElectromagneticMetamaterials}{book}{}
+      \name{author}{2}{}{%
+        {{hash=5076ec16d539245a594f79b86d2290d5}{%
+           family={Caloz},
+           family_i={C\bibinitperiod},
+           given={Christophe},
+           given_i={C\bibinitperiod}}}%
+        {{hash=b0e98452953451e32b8c761f6916c3f7}{%
+           family={Itoh},
+           family_i={I\bibinitperiod},
+           given={Tatsuo},
+           given_i={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{97db0d0eb9df65ca798ee1a48c3b6c05}
+      \strng{fullhash}{97db0d0eb9df65ca798ee1a48c3b6c05}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Electromagnetic Metamaterials: Transmission line theory and microwave applications. The Engineering Approach}
+      \field{year}{2006}
+    \endentry
+    \entry{Venkateswaran:Thesis}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6e8fabcb076e6bcc624fe65a93f69765}{%
+           family={Venkateswaran},
+           family_i={V\bibinitperiod},
+           given={Ajay},
+           given_i={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6e8fabcb076e6bcc624fe65a93f69765}
+      \strng{fullhash}{6e8fabcb076e6bcc624fe65a93f69765}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{McGill University, Canada}
+      \field{title}{Analysis of Planar EBG Structures Using Transmission Line Models (Thesis)}
+      \field{year}{2009}
+    \endentry
     \entry{Balanis:Theory}{book}{}
       \name{author}{1}{}{%
         {{hash=5d18402cf9b2dbe8e8535e0f1fd22e7c}{%
@@ -202,6 +245,47 @@
       \field{title}{Antenna Theory: Analysis and design}
       \field{year}{2005}
     \endentry
+    \entry{Fano:CouplingReceiving}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f9c10bef20da2d90f35c58f0c2e3872f}{%
+           family={Amado},
+           family_i={A\bibinitperiod},
+           given={José},
+           given_i={J\bibinitperiod}}}%
+        {{hash=e0f6f0fee09f9048f63bfac09c06e61c}{%
+           family={Fano},
+           family_i={F\bibinitperiod},
+           given={Gustavo},
+           given_i={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{ebd5e166070aa26b5ab6923b0b92123d}
+      \strng{fullhash}{ebd5e166070aa26b5ab6923b0b92123d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{GEMCCON 2016}
+      \field{title}{Antenna Coupling Model in Receiving Mode}
+      \field{year}{2016}
+    \endentry
+    \entry{Pozar:InputImpedanceMutualCoupling}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b5fe794e9696a49299f6e804eeb23d7e}{%
+           family={Pozar},
+           family_i={P\bibinitperiod},
+           given={David\bibnamedelima M.},
+           given_i={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b5fe794e9696a49299f6e804eeb23d7e}
+      \strng{fullhash}{b5fe794e9696a49299f6e804eeb23d7e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactops on Antennas and Propagation}
+      \field{title}{Input Impedance and Mutual Coupling of Rectangular Microstrip Antennas}
+      \field{year}{1982}
+    \endentry
     \entry{Balanis:Advanced}{book}{}
       \name{author}{1}{}{%
         {{hash=5d18402cf9b2dbe8e8535e0f1fd22e7c}{%
@@ -221,6 +305,155 @@
       \field{labeltitlesource}{title}
       \field{title}{Advanced Engineering Electromagnetics}
       \field{year}{2012}
+    \endentry
+    \entry{Alexopoulos:PrintedDipoles}{article}{}
+      \name{author}{2}{}{%
+        {{hash=170a9effc6217baca12af631d653ce1f}{%
+           family={Alexopoulos},
+           family_i={A\bibinitperiod},
+           given={Nicolaos\bibnamedelima G.},
+           given_i={N\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=3a3a2a8826198d72d035c441aa9b1692}{%
+           family={Rana},
+           family_i={R\bibinitperiod},
+           given={Inam\bibnamedelima E.},
+           given_i={I\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{c2d887e4dcee6f8084fa0345173e47fe}
+      \strng{fullhash}{c2d887e4dcee6f8084fa0345173e47fe}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Mutual Impedance Computation Between Printed Dipoles}
+      \field{year}{1981}
+    \endentry
+    \entry{Dodov:SurfaceWavesImpact}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b76f346db8ab515f1651f1746a200bc0}{%
+           family={Dodov},
+           family_i={D\bibinitperiod},
+           given={Nicola\bibnamedelima I.},
+           given_i={N\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=bd737d92ec6b52d55a6d80f800c98824}{%
+           family={Petkov},
+           family_i={P\bibinitperiod},
+           given={Peter\bibnamedelima Zh.},
+           given_i={P\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{75368e30480609b51827f37a252d69de}
+      \strng{fullhash}{75368e30480609b51827f37a252d69de}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Electronic Letters}
+      \field{title}{The surface waves impact on the coupling effect in microstrip antennas}
+      \field{year}{1982}
+    \endentry
+    \entry{VanLil:TLModelCoupling}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e7d28d84e00d9f895509e4adcc43876c}{%
+           family={Lil},
+           family_i={L\bibinitperiod},
+           given={E.\bibnamedelimi H.\bibnamedelimi Van},
+           given_i={E\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=61df337e7b12725994cd0f1043401077}{%
+           family={Van},
+           family_i={V\bibinitperiod},
+           given={A.\bibnamedelimi R.},
+           given_i={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{fc2fd14505422afec3d268354e631460}
+      \strng{fullhash}{fc2fd14505422afec3d268354e631460}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
+      \field{title}{Transmission Line Model for Mutual Coupling Between Microstrip Antennas}
+      \field{year}{1984}
+    \endentry
+    \entry{Gonzalo:PerformancePBG}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9b567b52faa9c0fe280e3e2daf575df3}{%
+           family={Gonzalo},
+           family_i={G\bibinitperiod},
+           given={Ramón},
+           given_i={R\bibinitperiod}}}%
+        {{hash=1cf9bc15fa3fbe3e0a07d54ef9fe64b2}{%
+           prefix={de},
+           prefix_i={d\bibinitperiod},
+           family={Maagt},
+           family_i={M\bibinitperiod},
+           given={Peter},
+           given_i={P\bibinitperiod}}}%
+        {{hash=17117a8545527e16a83318e33ee32d6e}{%
+           family={Sorolla},
+           family_i={S\bibinitperiod},
+           given={Mario},
+           given_i={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{9425c749918fc77fa0cefaba56fbc5f1}
+      \strng{fullhash}{9425c749918fc77fa0cefaba56fbc5f1}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Microwave Theory and Techniques (Vol. 47, Nº 11)}
+      \field{title}{Enhanced Patch-Antenna Performance by Suppressing Surface Waves Using Photonic-Bandgap Substrates}
+      \field{year}{1999}
+    \endentry
+    \entry{Penard:MutualCouplingMicrostrip}{article}{}
+      \name{author}{2}{}{%
+        {{hash=233e9088a8072c5f4d81e97ced2380e3}{%
+           family={Penard},
+           family_i={P\bibinitperiod},
+           given={E.},
+           given_i={E\bibinitperiod}}}%
+        {{hash=216f131f9c73e292eaa67610cf1d8e2e}{%
+           family={Daniel},
+           family_i={D\bibinitperiod},
+           given={J.\bibnamedelimi P.},
+           given_i={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{a869b78ed8920b9c04377e6f823bf43e}
+      \strng{fullhash}{a869b78ed8920b9c04377e6f823bf43e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Electronic Letters}
+      \field{title}{Mutual Coupling between Microstrip Antennas}
+      \field{year}{1982}
+    \endentry
+    \entry{Iluz:PhasedArray}{article}{}
+      \name{author}{3}{}{%
+        {{hash=04b245df15136288efb1afabd135155d}{%
+           family={Iluz},
+           family_i={I\bibinitperiod},
+           given={Zeev},
+           given_i={Z\bibinitperiod}}}%
+        {{hash=ab41637c4cd71b051a96e77c65ff16ca}{%
+           family={Shavit},
+           family_i={S\bibinitperiod},
+           given={Reuven},
+           given_i={R\bibinitperiod}}}%
+        {{hash=7dbbb89f1e9b195bd395b4fd1546b4b3}{%
+           family={Bauer},
+           family_i={B\bibinitperiod},
+           given={Reuven},
+           given_i={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{61736d5dbf9c1498278d57df26fb9edf}
+      \strng{fullhash}{61736d5dbf9c1498278d57df26fb9edf}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactops on Antennas and Propagation}
+      \field{title}{Microstrip Antenna Phased Array with Electromagnetic Bandgap Substrate}
+      \field{year}{2004}
     \endentry
     \entry{Yang:EBGAntennas}{book}{}
       \name{author}{2}{}{%
@@ -437,29 +670,6 @@
       \field{title}{On Surface-Wave coupling between elements of Large Arrays}
       \field{year}{1965}
     \endentry
-    \entry{Fano:CouplingReceiving}{article}{}
-      \name{author}{2}{}{%
-        {{hash=f9c10bef20da2d90f35c58f0c2e3872f}{%
-           family={Amado},
-           family_i={A\bibinitperiod},
-           given={José},
-           given_i={J\bibinitperiod}}}%
-        {{hash=e0f6f0fee09f9048f63bfac09c06e61c}{%
-           family={Fano},
-           family_i={F\bibinitperiod},
-           given={Gustavo},
-           given_i={G\bibinitperiod}}}%
-      }
-      \strng{namehash}{ebd5e166070aa26b5ab6923b0b92123d}
-      \strng{fullhash}{ebd5e166070aa26b5ab6923b0b92123d}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{GEMCCON 2016}
-      \field{title}{Antenna Coupling Model in Receiving Mode}
-      \field{year}{2016}
-    \endentry
     \entry{Malkomes:MutualCoupling}{article}{}
       \name{author}{1}{}{%
         {{hash=7b58ecdef3ddd8353d4768bc0d83f9bb}{%
@@ -477,29 +687,6 @@
       \field{journaltitle}{IET Electronic Letters}
       \field{title}{Mutual coupling between microstrip patch antennas}
       \field{year}{1982}
-    \endentry
-    \entry{VanLil:TLModelCoupling}{article}{}
-      \name{author}{2}{}{%
-        {{hash=e7d28d84e00d9f895509e4adcc43876c}{%
-           family={Lil},
-           family_i={L\bibinitperiod},
-           given={E.\bibnamedelimi H.\bibnamedelimi Van},
-           given_i={E\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-        {{hash=61df337e7b12725994cd0f1043401077}{%
-           family={Van},
-           family_i={V\bibinitperiod},
-           given={A.\bibnamedelimi R.},
-           given_i={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \strng{namehash}{fc2fd14505422afec3d268354e631460}
-      \strng{fullhash}{fc2fd14505422afec3d268354e631460}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
-      \field{title}{Transmission Line Model for Mutual Coupling Between Microstrip Antennas}
-      \field{year}{1984}
     \endentry
     \entry{Sievenpiper:HIESForbiddenBand}{article}{}
       \name{author}{5}{}{%
@@ -554,7 +741,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{University of California}
-      \field{title}{High-Impedance Electromagnetic Surfaces (PHD Thesis)}
+      \field{title}{High-Impedance Electromagnetic Surfaces (PhD Thesis)}
       \field{year}{1999}
     \endentry
     \entry{Polo:SurfaceWavesReview}{article}{}
@@ -682,82 +869,6 @@
       \field{title}{Diseño de una antena de microcintas para {WIFI} empleando estructuras {EBG} (Electromagnetic Band Gap)}
       \field{year}{2016}
     \endentry
-    \entry{Penard:MutualCouplingMicrostrip}{article}{}
-      \name{author}{2}{}{%
-        {{hash=233e9088a8072c5f4d81e97ced2380e3}{%
-           family={Penard},
-           family_i={P\bibinitperiod},
-           given={E.},
-           given_i={E\bibinitperiod}}}%
-        {{hash=216f131f9c73e292eaa67610cf1d8e2e}{%
-           family={Daniel},
-           family_i={D\bibinitperiod},
-           given={J.\bibnamedelimi P.},
-           given_i={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-      }
-      \strng{namehash}{a869b78ed8920b9c04377e6f823bf43e}
-      \strng{fullhash}{a869b78ed8920b9c04377e6f823bf43e}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Electronic Letters}
-      \field{title}{Mutual Coupling between Microstrip Antennas}
-      \field{year}{1982}
-    \endentry
-    \entry{Gonzalo:PerformancePBG}{article}{}
-      \name{author}{3}{}{%
-        {{hash=9b567b52faa9c0fe280e3e2daf575df3}{%
-           family={Gonzalo},
-           family_i={G\bibinitperiod},
-           given={Ramón},
-           given_i={R\bibinitperiod}}}%
-        {{hash=1cf9bc15fa3fbe3e0a07d54ef9fe64b2}{%
-           prefix={de},
-           prefix_i={d\bibinitperiod},
-           family={Maagt},
-           family_i={M\bibinitperiod},
-           given={Peter},
-           given_i={P\bibinitperiod}}}%
-        {{hash=17117a8545527e16a83318e33ee32d6e}{%
-           family={Sorolla},
-           family_i={S\bibinitperiod},
-           given={Mario},
-           given_i={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{9425c749918fc77fa0cefaba56fbc5f1}
-      \strng{fullhash}{9425c749918fc77fa0cefaba56fbc5f1}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Transactions on Microwave Theory and Techniques (Vol. 47, Nº 11)}
-      \field{title}{Enhanced Patch-Antenna Performance by Suppressing Surface Waves Using Photonic-Bandgap Substrates}
-      \field{year}{1999}
-    \endentry
-    \entry{Dodov:SurfaceWavesImpact}{article}{}
-      \name{author}{2}{}{%
-        {{hash=b76f346db8ab515f1651f1746a200bc0}{%
-           family={Dodov},
-           family_i={D\bibinitperiod},
-           given={Nicola\bibnamedelima I.},
-           given_i={N\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
-        {{hash=bd737d92ec6b52d55a6d80f800c98824}{%
-           family={Petkov},
-           family_i={P\bibinitperiod},
-           given={Peter\bibnamedelima Zh.},
-           given_i={P\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
-      }
-      \strng{namehash}{75368e30480609b51827f37a252d69de}
-      \strng{fullhash}{75368e30480609b51827f37a252d69de}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Electronic Letters}
-      \field{title}{The surface waves impact on the coupling effect in microstrip antennas}
-      \field{year}{1982}
-    \endentry
     \entry{Hendry:SurfaceWavesInteresting}{article}{}
       \name{author}{1}{}{%
         {{hash=e255af2f8a76b5c70dc8ce7949cf245b}{%
@@ -775,28 +886,6 @@
       \field{journaltitle}{Roke Manor Research}
       \field{title}{Surface Waves: What are they? Why are they interesting?}
       \field{year}{2009}
-    \endentry
-    \entry{Alexopoulos:PrintedDipoles}{article}{}
-      \name{author}{2}{}{%
-        {{hash=170a9effc6217baca12af631d653ce1f}{%
-           family={Alexopoulos},
-           family_i={A\bibinitperiod},
-           given={Nicolaos\bibnamedelima G.},
-           given_i={N\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=3a3a2a8826198d72d035c441aa9b1692}{%
-           family={Rana},
-           family_i={R\bibinitperiod},
-           given={Inam\bibnamedelima E.},
-           given_i={I\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-      }
-      \strng{namehash}{c2d887e4dcee6f8084fa0345173e47fe}
-      \strng{fullhash}{c2d887e4dcee6f8084fa0345173e47fe}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Mutual Impedance Computation Between Printed Dipoles}
-      \field{year}{1981}
     \endentry
   \endsortlist
 \endrefsection
