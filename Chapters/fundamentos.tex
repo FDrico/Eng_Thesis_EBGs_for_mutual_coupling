@@ -87,7 +87,33 @@ En base a la propuesta de Sievenpiper, y en búsqueda de una mayor facilidad de 
 
 \section{Teorema de Bloch-Floquet}
 
-El teorema Floquet fue presentado por Gaston Floquet en 1883, y explicita la forma canónica de las soluciones a ecuaciones diferenciales lineales ordinarias de coeficientes periódicos de la forma $x' = A(t)x$, con $t \in \Re$, $X \in \Re^n$, donde $A(t)$ es una función periódica con periodo $p$. Si $x=\phi(t)$ es solución, entonces también lo es $x=\phi(x\pm np)$, con $n \in \mathbb{N}$. Esto significa que toda solución encontrada para el sistema con condiciones de contorno periódicas, es también periódica, con la misma periodicidad que las condiciones de borde. Un resultado análogo en física del estado sólido es el teorema de Bloch, que indica que las soluciones a la función de onda de un electrón en un cristal tiene la forma:
+El teorema Floquet fue presentado por Gaston Floquet en 1883, y explicita la forma canónica de las soluciones a ecuaciones diferenciales lineales ordinarias de coeficientes periódicos de la forma $x' = A(t)x$, con $t \in \Re$, $X \in \Re^n$, donde $A(t)$ es una función periódica con periodo $p$. Si $x=\phi(t)$ es solución, entonces también lo es $x=\phi(x\pm np)$, con $n \in \mathbb{N}$. Esto significa que toda solución encontrada para el sistema con condiciones de contorno periódicas, es también periódica, con la misma periodicidad que las condiciones de borde, debiendo considerar además un factor de fase. Si bien el resultado es para ecuaciones de primer orden, toda ecuación de segundo orden puede ser transformada en un sistema de ecuaciones diferenciales de primer orden. En particular, para el caso en que varía periódicamente el vector de onda ($k = k(x)$) de la ecuación de Helmholtz (\ref{eq:Helmholtz}) que describe el comportamiento de los campos electromagnéticos en un medio, se puede plantear el sistema:
+
+\begin{equation}
+	\begin{bmatrix}
+		\phi'_1(x) \\
+		\phi'_2(x)
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+		0 & 1 \\
+		k(x) & 0
+	\end{bmatrix}
+	\begin{bmatrix}
+		\phi_1(x) \\
+		\phi_2(x)
+	\end{bmatrix}
+\end{equation}
+
+donde $k(x)$ es el vector de onda, variable en el espacio, de modo que en la estructura periódica, $k(x) = k(x+n p)$, $\phi_1(x) = E(x)$ y $\phi_2(x) = \frac{\partial E(x)}{\partial x} = \phi'_1(x)$. La matriz del sistema es periódica, por lo que cumple las condiciones del teorema de Floquet, de forma que la solución es de la forma
+
+\begin{equation}
+	\phi(x) = P(x) e^{xB}
+\end{equation}
+
+donde $P(x)$ es una función periódica del espacio, con la misma periodicidad que la matriz del sistema, y $B$ es una matriz cuadrada de rango 2.
+
+Un resultado análogo en física del estado sólido es el teorema de Bloch, que indica que las soluciones a la función de onda de un electrón en un cristal tiene la forma:
 
 \begin{equation}
 \phi(\vec{r}) = e^{j\vec{k} \cdot \vec{r}} u(\vec{r})
@@ -95,7 +121,7 @@ El teorema Floquet fue presentado por Gaston Floquet en 1883, y explicita la for
 
 donde $\vec{k}$ es el vector de onda cristalino, $\vec{r}$ es la posición y $u(\vec{r})$ es una función periódica con igual periodicidad que el cristal.
 
-La idea intuitiva detrás del resultado radica en que si la estructura es infinitamente periódica, con celdas unitarias idénticas, las mismas deberían ser indistinguibles, por lo que los campos electromagnéticos deberían repetirse, a excepción de un corrimiento de fase. Por lo tanto, se puede escribir:
+La idea intuitiva detrás del resultado radica en que si la estructura es infinitamente periódica, con celdas unitarias idénticas, las mismas deberían ser indistinguibles, por lo que los campos electromagnéticos deberían tener también un comportamiento periódico, a excepción de un corrimiento de fase. Por lo tanto, se puede escribir:
 
 \begin{equation}
 	E(x,y,z+d) = e^{j \beta d} E(x,y,z)
@@ -104,6 +130,7 @@ La idea intuitiva detrás del resultado radica en que si la estructura es infini
 donde $\beta$ es la constante de propagación en el medio periódico \cite{TaylorandFrancis}. El valor de la diferencia entre los campos en dos bordes de una celda unitaria, entonces, es $\beta d$, que puede reducirse al rango $[-\pi,\pi]$, de modo que los posibles valores de $\beta$ son $[-\pi/d,\pi/d]$, denominada la zona de Brillouin unidimensional. Todos los restantes valores de número de onda relevantes a la propagación dentro de la estructura periódica pueden ser reducidos a valores dentro de la Zona de Brillouin, ya que la misma contiene todos los número de onda físicamente posibles dentro de una estructura periódica.
 
 % EN ALGUN MOMENTO HAY QUE HABLAR DE LA ZONA DE BRILLOUIN PARA MÁS DIMENSIONES, Y HAY QUE HILAR CON LA RELACIÓN DE DISPERSIÓN, QUE TAMBIÉN ES PERIÓDICA.
+% RELACION FLOQUET-BLOCH: https://physics.stackexchange.com/questions/155466/floquet-and-blochs-theorems-connection
 \section{Relación de dispersión}
 \label{sec_bloch}
 %%%%
