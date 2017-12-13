@@ -282,7 +282,7 @@
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Transactops on Antennas and Propagation}
+      \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
       \field{title}{Input Impedance and Mutual Coupling of Rectangular Microstrip Antennas}
       \field{year}{1982}
     \endentry
@@ -455,6 +455,118 @@
       \field{title}{Microstrip Antenna Phased Array with Electromagnetic Bandgap Substrate}
       \field{year}{2004}
     \endentry
+    \entry{Rittenhouse:OpticalProblem}{article}{}
+      \name{author}{1}{}{%
+        {{hash=fbf07a78ba911ca9f60791102f8e11d5}{%
+           family={Rittenhouse},
+           family_i={R\bibinitperiod},
+           given={David},
+           given_i={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{fbf07a78ba911ca9f60791102f8e11d5}
+      \strng{fullhash}{fbf07a78ba911ca9f60791102f8e11d5}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Transactions of the American Philosophical Society}
+      \field{title}{An Optical Problem, Proposed by Mr. Hopkinson, and Solved by Mr. Rittenhouse}
+      \field{year}{1786}
+    \endentry
+    \entry{Brillouin:WavePropagation}{book}{}
+      \name{author}{1}{}{%
+        {{hash=6c01efb2bd87635a22edd2b75b92af22}{%
+           family={Brillouin},
+           family_i={B\bibinitperiod},
+           given={L.},
+           given_i={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Dover Publications}%
+      }
+      \strng{namehash}{6c01efb2bd87635a22edd2b75b92af22}
+      \strng{fullhash}{6c01efb2bd87635a22edd2b75b92af22}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Wave Propagation in Periodic Structures: Electric Filters adn Crystal Lattices}
+      \field{year}{1953}
+    \endentry
+    \entry{Sievenpiper:Thesis}{article}{}
+      \name{author}{1}{}{%
+        {{hash=418c0d0344009796600ae14c9c0ada77}{%
+           family={Sievenpiper},
+           family_i={S\bibinitperiod},
+           given={D.},
+           given_i={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{418c0d0344009796600ae14c9c0ada77}
+      \strng{fullhash}{418c0d0344009796600ae14c9c0ada77}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{University of California}
+      \field{title}{High-Impedance Electromagnetic Surfaces (PhD Thesis)}
+      \field{year}{1999}
+    \endentry
+    \entry{Marcela:Tesis}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c2971d96f0490ae78b34654c03de15a2}{%
+           family={Luberto},
+           family_i={L\bibinitperiod},
+           given={M.\bibnamedelimi F.},
+           given_i={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{c2971d96f0490ae78b34654c03de15a2}
+      \strng{fullhash}{c2971d96f0490ae78b34654c03de15a2}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Tesis de grado. Facultad de Ingeniería, Universidad de Buenos Aires}
+      \field{title}{Diseño de una antena de microcintas para {WIFI} empleando estructuras {EBG} (Electromagnetic Band Gap)}
+      \field{year}{2016}
+    \endentry
+    \entry{Sievenpiper:HIESForbiddenBand}{article}{}
+      \name{author}{5}{}{%
+        {{hash=418c0d0344009796600ae14c9c0ada77}{%
+           family={Sievenpiper},
+           family_i={S\bibinitperiod},
+           given={D.},
+           given_i={D\bibinitperiod}}}%
+        {{hash=4f9d4d2fa5b60c96090e0f4219c11d2c}{%
+           family={Zhang},
+           family_i={Z\bibinitperiod},
+           given={L.},
+           given_i={L\bibinitperiod}}}%
+        {{hash=57bb91210bdc2a19100dfc8a98cbf750}{%
+           family={Jimenez},
+           family_i={J\bibinitperiod},
+           given={R.\bibnamedelimi F.},
+           given_i={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=76405c573587f90e26e13e31e890993a}{%
+           family={Alexopoulos},
+           family_i={A\bibinitperiod},
+           given={N.\bibnamedelimi G.},
+           given_i={N\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=1eb9fbea39253b0dd6583ecad1d0408c}{%
+           family={Yablonovitch},
+           family_i={Y\bibinitperiod},
+           given={E.},
+           given_i={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{0b0c16b506da7fae94ea105c9147acc2}
+      \strng{fullhash}{b772573b25cc2703dbd59c17c7fa1d38}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Microwave Theory and Techniques}
+      \field{title}{High-Impedance Electromagnetic Surfaces with a Forbidden Frequency Band}
+      \field{year}{1999}
+    \endentry
     \entry{Yang:EBGAntennas}{book}{}
       \name{author}{2}{}{%
         {{hash=eb5d5ae09823dbd21f6e0bbbf8a1b5ba}{%
@@ -529,26 +641,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Wave Propagation: From Electrons to Photonic Crystals and Left-Handed Materials}
       \field{year}{2008}
-    \endentry
-    \entry{Brillouin:WavePropagation}{book}{}
-      \name{author}{1}{}{%
-        {{hash=6c01efb2bd87635a22edd2b75b92af22}{%
-           family={Brillouin},
-           family_i={B\bibinitperiod},
-           given={L.},
-           given_i={L\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Dover Publications}%
-      }
-      \strng{namehash}{6c01efb2bd87635a22edd2b75b92af22}
-      \strng{fullhash}{6c01efb2bd87635a22edd2b75b92af22}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Wave Propagation in Periodic Structures: Electric Filters adn Crystal Lattices}
-      \field{year}{1953}
     \endentry
     \entry{Jiang:Metamaterial}{book}{}
       \name{author}{1}{}{%
@@ -652,6 +744,102 @@
       \field{title}{Confined Electrons and Photons: Photonic Bloch Waves and Photonic Band Gaps}
       \field{year}{1995}
     \endentry
+    \entry{Tretyakov:AnalyticalModeling}{book}{}
+      \name{author}{1}{}{%
+        {{hash=7bb0655f7acb1d7dc9122a341c645c7f}{%
+           family={Tretyakov},
+           family_i={T\bibinitperiod},
+           given={Sergei},
+           given_i={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Artech House}%
+      }
+      \strng{namehash}{7bb0655f7acb1d7dc9122a341c645c7f}
+      \strng{fullhash}{7bb0655f7acb1d7dc9122a341c645c7f}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Analytical Modeling in Applied Electromagnetics}
+      \field{year}{2003}
+    \endentry
+    \entry{Yakovlev:AnalyticalModelingHIS}{article}{}
+      \name{author}{7}{}{%
+        {{hash=5467a7dc277996d4f5f607ed58a5c559}{%
+           family={Yakovlev},
+           family_i={Y\bibinitperiod},
+           given={A.\bibnamedelimi B.},
+           given_i={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=d536cca858507da08213c22a2f8d64ae}{%
+           family={Simovski},
+           family_i={S\bibinitperiod},
+           given={C.\bibnamedelimi R.},
+           given_i={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=a9a841d37faedc7cde476f9bfe70aa14}{%
+           family={Tretyakov},
+           family_i={T\bibinitperiod},
+           given={S.\bibnamedelimi A.},
+           given_i={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=a8336dca9eeb7c7fc9fe33c27e15e97e}{%
+           family={Luukkonen},
+           family_i={L\bibinitperiod},
+           given={O.},
+           given_i={O\bibinitperiod}}}%
+        {{hash=c94bcedb54109959a49239ef0dba9a96}{%
+           family={Hanson},
+           family_i={H\bibinitperiod},
+           given={G.\bibnamedelimi W.},
+           given_i={G\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=2f22f7ae4517297ba378b9010969ae1c}{%
+           family={Paulotto},
+           family_i={P\bibinitperiod},
+           given={S.},
+           given_i={S\bibinitperiod}}}%
+        {{hash=561f1aaecd8486701ddbe301a4658e74}{%
+           family={Baccarelli},
+           family_i={B\bibinitperiod},
+           given={P.},
+           given_i={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{b890ed32b48597ef016a69cb0b28906a}
+      \strng{fullhash}{10b50d06da1e1707a8e4ec0c10c5cd79}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NATO Security through Science Series B: Physics and Biophysics}
+      \field{title}{Analytical Modeling of Surface Waves on High Impedance Surfaces}
+      \field{year}{2009}
+    \endentry
+    \entry{Goussetis:TailoringAMCEBGCharacteristics}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b6f7bf1f554e6ed9ccfa1f3d1957e418}{%
+           family={Goussetis},
+           family_i={G\bibinitperiod},
+           given={George},
+           given_i={G\bibinitperiod}}}%
+        {{hash=4d4740b680c400e015c3f64a7334ab45}{%
+           family={Feresidis},
+           family_i={F\bibinitperiod},
+           given={Alexandros},
+           given_i={A\bibinitperiod}}}%
+        {{hash=f02a463581d276db76c71394dc4fd88a}{%
+           family={Vardaxoglou},
+           family_i={V\bibinitperiod},
+           given={John\bibnamedelima C.},
+           given_i={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{fcc18e585bde4c6d82d2e13ab0af98ea}
+      \strng{fullhash}{fcc18e585bde4c6d82d2e13ab0af98ea}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
+      \field{title}{Tayloring the AMC and EBG characteristics of periodic metallic arrays printed on grounded dielectric substrate}
+      \field{year}{2006}
+    \endentry
     \entry{Allen:SurfaceWaveCoupling}{article}{}
       \name{author}{1}{}{%
         {{hash=89d449670130f3e755ec17509e9f09e7}{%
@@ -687,62 +875,6 @@
       \field{journaltitle}{IET Electronic Letters}
       \field{title}{Mutual coupling between microstrip patch antennas}
       \field{year}{1982}
-    \endentry
-    \entry{Sievenpiper:HIESForbiddenBand}{article}{}
-      \name{author}{5}{}{%
-        {{hash=418c0d0344009796600ae14c9c0ada77}{%
-           family={Sievenpiper},
-           family_i={S\bibinitperiod},
-           given={D.},
-           given_i={D\bibinitperiod}}}%
-        {{hash=4f9d4d2fa5b60c96090e0f4219c11d2c}{%
-           family={Zhang},
-           family_i={Z\bibinitperiod},
-           given={L.},
-           given_i={L\bibinitperiod}}}%
-        {{hash=57bb91210bdc2a19100dfc8a98cbf750}{%
-           family={Jimenez},
-           family_i={J\bibinitperiod},
-           given={R.\bibnamedelimi F.},
-           given_i={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-        {{hash=76405c573587f90e26e13e31e890993a}{%
-           family={Alexopoulos},
-           family_i={A\bibinitperiod},
-           given={N.\bibnamedelimi G.},
-           given_i={N\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=1eb9fbea39253b0dd6583ecad1d0408c}{%
-           family={Yablonovitch},
-           family_i={Y\bibinitperiod},
-           given={E.},
-           given_i={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{0b0c16b506da7fae94ea105c9147acc2}
-      \strng{fullhash}{b772573b25cc2703dbd59c17c7fa1d38}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Transactions on Microwave Theory and Techniques}
-      \field{title}{High-Impedance Electromagnetic Surfaces with a Forbidden Frequency Band}
-      \field{year}{1999}
-    \endentry
-    \entry{Sievenpiper:Thesis}{article}{}
-      \name{author}{1}{}{%
-        {{hash=418c0d0344009796600ae14c9c0ada77}{%
-           family={Sievenpiper},
-           family_i={S\bibinitperiod},
-           given={D.},
-           given_i={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{418c0d0344009796600ae14c9c0ada77}
-      \strng{fullhash}{418c0d0344009796600ae14c9c0ada77}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{University of California}
-      \field{title}{High-Impedance Electromagnetic Surfaces (PhD Thesis)}
-      \field{year}{1999}
     \endentry
     \entry{Polo:SurfaceWavesReview}{article}{}
       \name{author}{2}{}{%
@@ -851,24 +983,6 @@
       \field{title}{Nature of Photonic Band Gap: Some insigts from a field analysis}
       \field{year}{1993}
     \endentry
-    \entry{Marcela:Tesis}{article}{}
-      \name{author}{1}{}{%
-        {{hash=c2971d96f0490ae78b34654c03de15a2}{%
-           family={Luberto},
-           family_i={L\bibinitperiod},
-           given={M.\bibnamedelimi F.},
-           given_i={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-      }
-      \strng{namehash}{c2971d96f0490ae78b34654c03de15a2}
-      \strng{fullhash}{c2971d96f0490ae78b34654c03de15a2}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Tesis de grado. Facultad de Ingeniería, Universidad de Buenos Aires}
-      \field{title}{Diseño de una antena de microcintas para {WIFI} empleando estructuras {EBG} (Electromagnetic Band Gap)}
-      \field{year}{2016}
-    \endentry
     \entry{Hendry:SurfaceWavesInteresting}{article}{}
       \name{author}{1}{}{%
         {{hash=e255af2f8a76b5c70dc8ce7949cf245b}{%
@@ -886,6 +1000,29 @@
       \field{journaltitle}{Roke Manor Research}
       \field{title}{Surface Waves: What are they? Why are they interesting?}
       \field{year}{2009}
+    \endentry
+    \entry{KimSchuttAine:AnalysisHybrid}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2df0dac13de305d8ea4e8b06e4bab282}{%
+           family={Kim},
+           family_i={K\bibinitperiod},
+           given={Ki\bibnamedelima Hyuk},
+           given_i={K\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=13f083b668fa5218074ca02351e02c9c}{%
+           family={Schutt-Ainé},
+           family_i={S\bibinithyphendelim A\bibinitperiod},
+           given={José\bibnamedelima E.},
+           given_i={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{a77ccc1a6898f9f48f076a8810c2a573}
+      \strng{fullhash}{a77ccc1a6898f9f48f076a8810c2a573}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Microwave Theory and Techniques}
+      \field{title}{Analysis and modeling of Hybrid Planar-Type Electromagnetic-Bandgap structures and Feasibility Study on Power Distribution Network Applications}
+      \field{year}{2008}
     \endentry
   \endsortlist
 \endrefsection
