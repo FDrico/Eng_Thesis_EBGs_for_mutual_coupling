@@ -197,9 +197,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.610391"
-     inkscape:cx="130.19339"
-     inkscape:cy="23.386969"
+     inkscape:zoom="3.5986522"
+     inkscape:cx="114.98909"
+     inkscape:cy="32.985637"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -288,7 +288,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -324,7 +324,7 @@
          id="tspan1391"
          x="131.74609"
          y="62.316875"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MathJax_SansSerif;-inkscape-font-specification:MathJax_SansSerif;fill:#a4a4a4;fill-opacity:1;stroke-width:0.26458332px">t</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;fill:#a4a4a4;fill-opacity:1;stroke-width:0.26458332px">t</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#767676;stroke-width:0.16500001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1405);marker-end:url(#marker1451)"
        d="m 164.9564,50.187563 v 16.83798 h 34.27732"
@@ -340,7 +340,7 @@
          id="tspan1391-0"
          x="162.74448"
          y="52.002625"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MathJax_SansSerif;-inkscape-font-specification:MathJax_SansSerif;stroke-width:0.26458332px;fill:#a4a4a4;fill-opacity:1;">x</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;stroke-width:0.26458332px;fill:#a4a4a4;fill-opacity:1">x</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#a4a4a4;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -351,7 +351,7 @@
          id="tspan1391-0-8"
          x="197.8837"
          y="65.544449"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MathJax_SansSerif;-inkscape-font-specification:MathJax_SansSerif;fill:#a4a4a4;fill-opacity:1;stroke-width:0.26458332px">z</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;fill:#a4a4a4;fill-opacity:1;stroke-width:0.26458332px">z</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#a4a4a4;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 148.01311,56.574351 2.00862,10.406811 1.98781,-10.406811 2.00453,10.373402 1.98781,-10.373402 2.00452,10.339993"
@@ -537,12 +537,12 @@
          id="tspan2623"
          x="174.26988"
          y="55.26136"
-         style="font-size:2.82222223px;fill:#767676;fill-opacity:1;">ε<tspan
-   style="font-size:64.99999762%;baseline-shift:sub;fill:#767676;fill-opacity:1;"
+         style="font-size:2.82222223px;fill:#767676;fill-opacity:1;-inkscape-font-specification:MathJax_Math;font-family:MathJax_Math;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">ε<tspan
+   style="font-size:64.99999762%;baseline-shift:sub;fill:#767676;fill-opacity:1;-inkscape-font-specification:MathJax_Math;font-family:MathJax_Math;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
    id="tspan2625">0</tspan>,μ<tspan
-   style="font-size:64.99999762%;baseline-shift:sub;fill:#767676;fill-opacity:1;"
+   style="font-size:64.99999762%;baseline-shift:sub;fill:#767676;fill-opacity:1;-inkscape-font-specification:MathJax_Math;font-family:MathJax_Math;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
    id="tspan2627">0</tspan>,η<tspan
-   style="font-size:64.99999762%;baseline-shift:sub;fill:#767676;fill-opacity:1;"
+   style="font-size:64.99999762%;baseline-shift:sub;fill:#767676;fill-opacity:1;-inkscape-font-specification:MathJax_Math;font-family:MathJax_Math;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
    id="tspan2629">0</tspan></tspan></text>
     <text
        xml:space="preserve"
@@ -554,37 +554,26 @@
          id="tspan2623-0"
          x="174.21947"
          y="60.314194"
-         style="font-size:2.82222223px;fill:#767676;fill-opacity:1;stroke-width:0.26458332px;">ε<tspan
-   style="font-size:64.99999762%;baseline-shift:sub;fill:#767676;fill-opacity:1;"
-   id="tspan919">2</tspan>,μ0,η<tspan
-   style="font-size:64.99999762%;baseline-shift:sub;fill:#767676;fill-opacity:1;"
+         style="font-size:2.82222223px;fill:#767676;fill-opacity:1;stroke-width:0.26458332px;-inkscape-font-specification:MathJax_Math;font-family:MathJax_Math;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">ε<tspan
+   style="font-size:64.99999762%;baseline-shift:sub;fill:#767676;fill-opacity:1;-inkscape-font-specification:MathJax_Math;font-family:MathJax_Math;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+   id="tspan919">2</tspan>,μ<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan956">0</tspan>,η<tspan
+   style="font-size:64.99999762%;baseline-shift:sub;fill:#767676;fill-opacity:1;-inkscape-font-specification:MathJax_Math;font-family:MathJax_Math;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
    id="tspan921">2</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#a4a4a4;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="143.37015"
-       y="51.704197"
-       id="text925"><tspan
-         sodipodi:role="line"
-         id="tspan923"
-         x="143.37015"
-         y="51.704197"
-         style="font-size:2.82222223px;stroke-width:0.26458332px;-inkscape-font-specification:MathJax_Math;font-family:MathJax_Math;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;stroke:none;stroke-opacity:1;fill:#a4a4a4;fill-opacity:1;">k<tspan
-   style="font-size:64.99999762%;baseline-shift:sub;-inkscape-font-specification:MathJax_Math;font-family:MathJax_Math;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;stroke:none;stroke-opacity:1;fill:#a4a4a4;fill-opacity:1;"
-   id="tspan927">1</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#a4a4a4;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="145.77635"
-       y="62.057972"
+       style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#a4a4a4;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="145.41243"
+       y="62.109959"
        id="text925-4"><tspan
          sodipodi:role="line"
-         id="tspan923-7"
-         x="145.77635"
-         y="62.057972"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;stroke-width:0.26458332px;fill:#a4a4a4;fill-opacity:1;">k<tspan
-   style="font-size:65%;baseline-shift:sub;fill:#a4a4a4;fill-opacity:1;"
-   id="tspan950">2</tspan></tspan></text>
+         id="tspan931"
+         x="145.41243"
+         y="62.109959"
+         style="-inkscape-font-specification:MathJax_Math;font-family:MathJax_Math;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">β<tspan
+   style="font-size:64.99999762%;baseline-shift:sub;-inkscape-font-specification:MathJax_Math;font-family:MathJax_Math;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+   id="tspan933">2</tspan></tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#a4a4a4;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 157.94756,66.897666 0.71891,-4.391484 v 0"
@@ -595,5 +584,18 @@
        d="m 158.70237,62.326988 0.27086,-1.349498 v 0"
        id="path1876"
        inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#a4a4a4;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="144.39612"
+       y="52.126862"
+       id="text925-4-3"><tspan
+         style="stroke-width:0.26458332px;-inkscape-font-specification:MathJax_Math;font-family:MathJax_Math;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         sodipodi:role="line"
+         id="tspan931-5"
+         x="144.39612"
+         y="52.126862">β<tspan
+   style="font-size:2.06374979px;baseline-shift:sub;stroke-width:0.26458332px;-inkscape-font-specification:MathJax_Math;font-family:MathJax_Math;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+   id="tspan933-7">2</tspan></tspan></text>
   </g>
 </svg>

@@ -948,9 +948,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.4626789"
-     inkscape:cx="3.9902381"
-     inkscape:cy="101.00242"
+     inkscape:zoom="4.7956018"
+     inkscape:cx="25.019725"
+     inkscape:cy="120.27557"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1033,7 +1033,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1443,7 +1443,7 @@
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#3f3f3f;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#3f3f3f;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="79.907646"
        y="95.652481"
        id="text12734"><tspan
@@ -1451,7 +1451,9 @@
          id="tspan1336"
          x="79.907646"
          y="95.652481"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;fill:#3f3f3f;fill-opacity:1;">2π/β</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;fill:#3f3f3f;fill-opacity:1">2π/β<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan1416">z</tspan></tspan></text>
     <rect
        style="display:inline;opacity:1;fill:#dcdcdc;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.035;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect15049-4-4"
@@ -1462,7 +1464,7 @@
        rx="1.4061854" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#3f3f3f;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#3f3f3f;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="78.61306"
        y="101.77209"
        id="text12734-8"><tspan
@@ -1470,7 +1472,9 @@
          id="tspan12738-6"
          x="78.61306"
          y="101.77209"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;fill:#3f3f3f;fill-opacity:1;">2π/β</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;fill:#3f3f3f;fill-opacity:1">2π/β<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan1418">z</tspan></tspan></text>
     <path
        style="display:inline;fill:none;fill-rule:evenodd;stroke:#3f3f3f;stroke-width:0.17335889;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker13054-0);opacity:0.684"
        d="m 94.443022,84.962723 0,7.059884"
@@ -1621,7 +1625,7 @@
        sodipodi:nodetypes="ccc" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:12px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#3f3f3f;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-weight:normal;font-size:12px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#3f3f3f;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="77.82769"
        y="82.07798"
        id="text12734-5"><tspan
@@ -1629,8 +1633,8 @@
          id="tspan1336-5"
          x="77.82769"
          y="82.07798"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;stroke-width:1px;fill:#3f3f3f;fill-opacity:1;">k<tspan
-   style="font-size:64.99999762%;baseline-shift:sub;fill:#3f3f3f;fill-opacity:1;"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;fill:#3f3f3f;fill-opacity:1;stroke-width:1px">β<tspan
+   style="font-size:64.99999762%;baseline-shift:sub;fill:#3f3f3f;fill-opacity:1"
    id="tspan1354">1</tspan></tspan></text>
     <path
        style="display:inline;opacity:0.68399999;fill:none;fill-rule:evenodd;stroke:#3f3f3f;stroke-width:0.12301706;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker13054-0-0)"
@@ -1657,7 +1661,7 @@
    id="tspan15041-2">1</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:12px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#3f3f3f;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-weight:normal;font-size:12px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#3f3f3f;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="75.308311"
        y="78.778481"
        id="text12734-6"><tspan
@@ -1665,7 +1669,9 @@
          id="tspan1336-8"
          x="75.308311"
          y="78.778481"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;stroke-width:1px;fill:#3f3f3f;fill-opacity:1;">β</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;fill:#3f3f3f;fill-opacity:1;stroke-width:1px">β<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan1414">z</tspan></tspan></text>
     <path
        style="display:inline;opacity:0.62599996;fill:none;fill-rule:evenodd;stroke:#404040;stroke-width:0.12726746;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Lend-0)"
        d="m 99.905543,110.40095 v 11.68581"
@@ -1691,7 +1697,7 @@
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:12px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#3f3f3f;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-weight:normal;font-size:12px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#3f3f3f;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="97.77066"
        y="109.6608"
        id="text12734-8-6"><tspan
@@ -1699,10 +1705,12 @@
          id="tspan12738-6-6"
          x="97.77066"
          y="109.6608"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;fill:#3f3f3f;fill-opacity:1;stroke-width:1px;">β</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;fill:#3f3f3f;fill-opacity:1;stroke-width:1px">β<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan1420">z</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:12px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#3f3f3f;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-weight:normal;font-size:12px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#3f3f3f;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="96.241661"
        y="121.43272"
        id="text12734-4-8-1-9"><tspan
@@ -1710,8 +1718,8 @@
          id="tspan12738-5-7-8-0"
          x="96.241661"
          y="121.43272"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;fill:#3f3f3f;fill-opacity:1;stroke-width:1px;">k<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111112px;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;baseline-shift:sub;fill:#3f3f3f;fill-opacity:1;stroke-width:1px;"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;fill:#3f3f3f;fill-opacity:1;stroke-width:1px">β<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111112px;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;baseline-shift:sub;fill:#3f3f3f;fill-opacity:1;stroke-width:1px"
    id="tspan15041-9-6-1">2</tspan></tspan></text>
   </g>
 </svg>

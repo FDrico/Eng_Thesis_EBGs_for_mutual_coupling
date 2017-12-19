@@ -24,13 +24,13 @@
 % Importancia de EBGs. Venkateswaran tesis, pag 1.
 % Algo de intro: Pagina 4, tesis Zheng.
 
-La definición de metamaterial aún está en discusión aunque, en términos generales, la más aceptada indica que son estructuras electromagnéticas artificiales efectivamente homogéneas que presentan propiedades que no se encuentran en la naturaleza \cite{Caloz:ElectromagneticMetamaterials}. Los materiales EBG (de banda prohibida electromagnética, \textit{Electromagnetic Bandgap}), PBG (de banda prohibida fotónica, \textit{Photonic Bandgap}) o cristales fotónicos son un tipo de estructura artificial, dieléctrica o metalodieléctrica, en algunos casos clasificadas como metamateriales, con capacidades para controlar ondas electromagnéticas \cite{Engheta} a partir de una variación periódica en el espacio de la constante dieléctrica $\epsilon$. Tienen la capacidad de permitir la propagación en direcciones determinadas, o de impedirla completamente, debido que presentan una banda prohibida electromagnética, concepto análogo al de banda prohibida electrónica, que controla el movimiento de ondas de electrones que viajan en un potencial periódico cristalino.
+La definición de metamaterial aún está en discusión aunque, en términos generales, la más aceptada indica que son estructuras electromagnéticas artificiales efectivamente homogéneas que presentan propiedades que no se encuentran en la naturaleza \cite{Caloz:ElectromagneticMetamaterials}. Los materiales EBG (de banda prohibida electromagnética, \textit{Electromagnetic Bandgap}), PBG (de banda prohibida fotónica, \textit{Photonic Bandgap}) o cristales fotónicos son un tipo de estructura artificial, dieléctrica o metalodieléctrica, en algunos casos clasificadas como metamateriales, con capacidades para controlar ondas electromagnéticas \cite{Engheta:Metamaterials} a partir de una variación periódica en el espacio de la constante dieléctrica $\epsilon$. Tienen la capacidad de permitir la propagación en direcciones determinadas, o de impedirla completamente, debido que presentan una banda prohibida electromagnética, concepto análogo al de banda prohibida electrónica, que controla el movimiento de ondas de electrones que viajan en un potencial periódico cristalino.
 
 La condición de homogeneidad efectiva de los metamateriales se cumple si las estructuras que forman al EBG están a distancias mucho menores a la longitud de onda guiada incidente, $\lambda_g$ \cite{Caloz:ElectromagneticMetamaterials}, de forma que la naturaleza de la estructura básica que se periodiza, denominada celda unitaria, determine parámetros constitutivos ($\epsilon$ y $\mu$) electromagnéticamente uniformes en la dirección de propagación, para la frecuencia de interés. En función de la relación entre estos parámetros constitutivos, las ondas electromagnéticas que lo atraviesan tienen comportamientos diferentes, como se muestra en la figura \ref{fig:tablamuepsilon}. El estudio de estructuras periódicas permitió, entonces, la fabricación de materiales con características en los cuatro cuadrantes del plano $\mu$-$\epsilon$.
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.4\textwidth]{Fundamentos/OndasSegunEyU.pdf}
+	\includegraphics[width=0.6\textwidth]{Fundamentos/OndasSegunEyU.pdf}
 	\caption{Tipos de ondas en función de los valores de $\epsilon$ y $\mu$.}
 	\label{fig:tablamuepsilon}
 \end{figure}
@@ -38,7 +38,7 @@ La condición de homogeneidad efectiva de los metamateriales se cumple si las es
 
 A fines del siglo XVIII, el físico estadounidense David Rittenhouse observó que algunos de los colores del espectro de luz visible desaparecían cuando una lámpara era vista a través de un pañuelo \cite{Rittenhouse:OpticalProblem}, mostrando por primera vez que un medio discontínuo puede presentar propiedades de transmisión diferentes en función de la frecuencia incidente. El estudio teórico del comportamiento de ondas electromagnéticas en medios periódicos comenzó a principios del siglo XX, aunque no fue hasta finalizada la segunda guerra mundial que se formalizaron algunos conceptos. Ya en 1919, Guglielmo Marconi y Charles Samuel Frankin utilizaron una estructura de conductores horizontales que operaban como una superficie reflectiva para cierta frecuencia, que podría considerarse la primera superficie selectora de frecuencias (FSS).
 
-En 1946, Louis Brillouin publicó su libro sobre ondas mecánicas, "\textit{Wave propagation in periodic structures: Electric filters and crystal lattices}" \cite{Brillouin:WavePropagation}, donde demostró que un arreglo periódico impone restricciones a los vectores de onda $\vec{k}$ que pueden propagarse en él, dado que el mismo establece condiciones de contorno para los modos permitidos. Aquellas ondas que no cumplen las condiciones derivadas de la periodicidad de la estructura, no son capaces de propagarse.
+En 1946, Louis Brillouin publicó su libro sobre ondas mecánicas, "\textit{Wave propagation in periodic structures: Electric filters and crystal lattices}" \cite{Brillouin:WavePropagation}, donde demostró que un arreglo periódico impone restricciones a los vectores de onda $\vec{\gamma}$ que pueden propagarse en él, dado que el mismo establece condiciones de contorno para los modos permitidos. Aquellas ondas que no cumplen las condiciones derivadas de la periodicidad de la estructura, no son capaces de propagarse.
 
 En 1968, el físico ruso Viktor Veselago describió por primera vez, de forma teórica, la posibilidad de que existieran sustancias naturales con índice de refracción negativo, denominados LHS (\textit{Left Handed Substances}, sustancias de mano izquierda), cuya permitividad eléctrica y permeabilidad magnética fueran simultáneamente negativas, de modo que la velocidad de fase de una onda que se propagara por ese medio resultara antiparalela a la velocidad de grupo. Treinta años más tarde, a fines de la década de 1990, Smith propuso propuso la primera forma de fabricación de un medio con esas características en una banda limitada de frecuencia, utilizando SSRs (\textit{Split-ring resonators}, resonadores de aro dividido), responsables de la permeabilidad magnética negativa, y cables conductores, responsables de la permitividad eléctrica negativa, ubicados en forma periódica, y estudiados previamente por Pendry (Figura \ref{fig:Pendry}). Recién en el año 2000 se construyó el primer metamaterial sobre las propuestas de Smith, mostrado en la figura \ref{fig:metamaterial-de-smith}, y varios experimentos confirmaron refracción negativa en los mismos. Hasta la fecha, no han sido encontrados materiales naturales con este comportamiento.
 
@@ -111,7 +111,7 @@ La celda unitaria de la red de Bravais se denomina celda de Wigner-Seitz, y rest
 	\label{fig:direct-and-reciprocal-lattice}
 \end{figure}
 
-Se puede definir, además, una red dual o recíproca, compuesta de vectores $\vec{b_j}$ tales que cada uno de ellos resulte ortonormal a uno de los vectores $\vec{a_i}$ de la red de Bravais, como se muestra en la figura \ref{fig:reciprocal-lattice}. Esto da lugar a que $a_i$ y $b_j$ sean inversamente proporcionales. El uso de un factor de $2\pi$ permite considerar a la red recíproca como una representación de la red en el espacio de los números de onda $k$, de manera que la distancia entre los elementos de la red resulte $2\pi/a$, con $a$ la separación entre los elementos de la red física o de Bravais. Dicho de otra manera, mientras la red de Bravais representa la periodicidad de los elementos que conforman la red física en $(x,y,z)$, la red recíproca es la representación de la misma estructura, pero en el espacio de los vectores de onda, $(k_x, k_y, k_z)$. La red recíproca es también periódica, y sobre ella se pueden buscar, también, celdas unitarias, denominadas regiones de Brillouin o celdas de Wigner-Seitz de la red recíproca, como se muestra en la figura \ref{fig:Celda-unitaria-de-Brillouin}.
+Se puede definir, además, una red dual o recíproca, compuesta de vectores $\vec{b_j}$ tales que cada uno de ellos resulte ortonormal a uno de los vectores $\vec{a_i}$ de la red de Bravais, como se muestra en la figura \ref{fig:reciprocal-lattice}. Esto da lugar a que $a_i$ y $b_j$ sean inversamente proporcionales. El uso de un factor de $2\pi$ permite considerar a la red recíproca como una representación de la red en el espacio de los números de onda $\beta$, de manera que la distancia entre los elementos de la red resulte $2\pi/a$, con $a$ la separación entre los elementos de la red física o de Bravais. Dicho de otra manera, mientras la red de Bravais representa la periodicidad de los elementos que conforman la red física en $(x,y,z)$, la red recíproca es la representación de la misma estructura, pero en el espacio de los vectores de onda, $(\beta_x, \beta_y, \beta_z)$. La red recíproca es también periódica, y sobre ella se pueden buscar, también, celdas unitarias, denominadas regiones de Brillouin o celdas de Wigner-Seitz de la red recíproca, como se muestra en la figura \ref{fig:Celda-unitaria-de-Brillouin}.
 
 Si, además, la celda de Brillouin es lo suficientemente simétrica, se puede definir la denominada zona irreducible de Brillouin, que forma parte de la primer zona de Brillouin, pero está limitada por sus líneas de simetría. Para el análisis de una estructura periódica cualquiera, sólo es necesario analizar esta zona irreducible, dado que el resto son simplemente sus reflexiones espejadas.
 
@@ -119,7 +119,7 @@ Si, además, la celda de Brillouin es lo suficientemente simétrica, se puede de
 	\centering 
 	\subfigure[Celda unitaria de Wigner-Seitz de la red de Bravais.]{
 		\label{fig:Wigner-Seitz}
-		\includegraphics[width=0.45\textwidth]{Fundamentos/direct-and-reciprocal-triangle-lattice-zoom.pdf}}
+		\includegraphics[width=0.45\textwidth]{Fundamentos/direct-and-reciprocal-triangle-lattice-zoom2.pdf}}
 	\hspace{0pt}
 	\subfigure[Celda unitaria de Brillouin, de la red recíproca, y zona irreducible de Brillouin.]{
 		\label{fig:Celda-unitaria-de-Brillouin}
@@ -141,7 +141,7 @@ Para el caso en que las celdas unitarias son rectangulares, la red recíproca es
 
 El teorema Floquet fue presentado por Gaston Floquet en 1883, y explicita la forma canónica de las soluciones a ecuaciones diferenciales lineales ordinarias de coeficientes periódicos, de la forma $x' = A(t)x$, con $t \in \Re$, $X \in \Re^n$, donde $A(t)$ es una función periódica con periodo $p$. Si $x=\phi(t)$ es solución, entonces también lo es $x=\phi(x\pm np)$, con $n \in \mathbb{N}$. Esto significa que toda solución encontrada para el sistema con condiciones de contorno periódicas, es también periódica, con la misma periodicidad que las condiciones de borde, debiendo considerar, además, un factor de fase. Si bien el teorema aplica a ecuaciones de primer orden, toda ecuación de segundo orden puede ser transformada en un sistema de ecuaciones diferenciales de primer orden.
 
-Para en análisis de ondas electromagnéticas en un material periódico, se puede considerar el caso particular en que, dado que varían las condiciones de propagación periódicamente, como se describió en la sección \ref{sec:celdas-unitarias}, existe una periodicidad en el espacio de los número de onda $k$. En el mismo sentido, una variación de los valores de permitividad eléctrica y permitividad magnética generan una variación en la constante de propagación, sin necesidad de considerar el análisis de estructuras cristalinas de la sección anterior. Dado que el vector de onda de la ecuación de Helmboltz (\ref{eq:Helmholtz}) varía periódicamente ($k = k(x)$), se puede plantear el sistema:
+Para en análisis de ondas electromagnéticas en un material periódico, se puede considerar el caso particular en que, dado que varían las condiciones de propagación periódicamente, como se describió en la sección \ref{sec:celdas-unitarias}, existe una periodicidad en el espacio de los número de onda $\gamma$. En el mismo sentido, una variación de los valores de permitividad eléctrica y permitividad magnética generan una variación en la constante de propagación, sin necesidad de considerar el análisis de estructuras cristalinas de la sección anterior. Dado que el vector de onda de la ecuación de Helmboltz (\ref{eq:Helmholtz}) varía periódicamente ($\gamma = \gamma(x)$), se puede plantear el sistema:
 
 \begin{equation}
 	\begin{bmatrix}
@@ -151,7 +151,7 @@ Para en análisis de ondas electromagnéticas en un material periódico, se pued
 	=
 	\begin{bmatrix}
 		0 & 1 \\
-		k(x) & 0
+		\gamma(x) & 0
 	\end{bmatrix}
 	\begin{bmatrix}
 		\phi_1(x) \\
@@ -159,7 +159,7 @@ Para en análisis de ondas electromagnéticas en un material periódico, se pued
 	\end{bmatrix}
 \end{equation}
 
-donde $k(x)$ es el vector de onda, variable en el espacio, de modo que en la estructura periódica, $k(x) = k(x+n p)$, $\phi_1(x) = E(x)$ y $\phi_2(x) = \frac{\partial E(x)}{\partial x} = \phi'_1(x)$. La matriz del sistema es periódica, por lo que cumple las condiciones del teorema de Floquet, de manera que la solución es de la forma
+donde $\gamma(x)$ es el vector de onda, variable en el espacio, de modo que en la estructura periódica, $\gamma(x) = \gamma(x+n p)$, $\phi_1(x) = E(x)$ y $\phi_2(x) = \frac{\partial E(x)}{\partial x} = \phi'_1(x)$. La matriz del sistema es periódica, por lo que cumple las condiciones del teorema de Floquet, de manera que la solución es de la forma
 
 \begin{equation}
 	\phi(x) = P(x) e^{xB}
@@ -170,10 +170,10 @@ donde $P(x)$ es una función periódica del espacio, con la misma periodicidad q
 La aplicación del teorema de Floquet a la física del estado sólido se denomina teorema de Bloch, e indica que las soluciones a la función de onda de un electrón en un cristal tiene la forma:
 
 \begin{equation}
-\phi(\vec{r}) = e^{j\vec{k} \cdot \vec{r}} u(\vec{r})
+\phi(\vec{r}) = e^{j\vec{\gamma} \cdot \vec{r}} u(\vec{r})
 \end{equation}
 
-donde $\vec{k}$ es el vector de onda cristalino, $\vec{r}$ es la posición y $u(\vec{r})$ es una función periódica con igual periodicidad que el cristal. El factor exponencial se corresponde con el comportamiento de una onda plana incidente en un espacio sin obstáculos, mientras que el factor periódico, $u(\vec{r})$, deviene del efecto del sistema. El efecto se puede observar gráficamente en la figura \ref{fig:bloch-periodico-1d}.
+donde $\vec{\gamma}$ es el vector de onda cristalino, $\vec{r}$ es la posición y $u(\vec{r})$ es una función periódica con igual periodicidad que el cristal. El factor exponencial se corresponde con el comportamiento de una onda plana incidente en un espacio sin obstáculos, mientras que el factor periódico, $u(\vec{r})$, deviene del efecto del sistema. El efecto se puede observar gráficamente en la figura \ref{fig:bloch-periodico-1d}.
 
 \begin{figure}[htp]
 	\centering
@@ -182,13 +182,13 @@ donde $\vec{k}$ es el vector de onda cristalino, $\vec{r}$ es la posición y $u(
 	\label{fig:bloch-periodico-1d}
 \end{figure}
 
-La idea intuitiva detrás del resultado radica en que si la estructura es infinitamente periódica, con celdas unitarias idénticas, las mismas deberían ser indistinguibles, por lo que los campos electromagnéticos deberían tener también un comportamiento periódico, a excepción de un corrimiento de fase. Por lo tanto, se puede escribir:
+La idea intuitiva detrás del resultado radica en que si la estructura es infinitamente periódica, con celdas unitarias idénticas, las mismas deberían ser indistinguibles, por lo que los campos electromagnéticos presentarían también un comportamiento periódico, a excepción de un corrimiento de fase. Por lo tanto, se puede escribir:
 
 \begin{equation}
 	E(x,y,z+d) = e^{j \beta d} E(x,y,z)
 \end{equation}
 
-donde $\beta$ es la constante de propagación en el medio periódico \cite{TaylorandFrancis}. El valor de la diferencia entre los campos en dos bordes de una celda unitaria, entonces, es $\beta d$, que puede reducirse al rango $[-\pi,\pi]$, de modo que los posibles valores de $\beta$ son $[-\pi/d,\pi/d]$, que son los límites de la celda de Brillouin descripta antes. La generalización para el comportamiento en dos dimensiones está íntimamente ligado a la definición de la zona de Brillouin del material analizado.
+donde $\beta$ es la constante de propagación en el medio periódico, considerando que no hay pérdidas ($\gamma = \beta$) \cite{Capolino:TheoryPhenomenaMetamaterials}. El valor de la diferencia entre los campos en dos bordes de una celda unitaria, entonces, es $\beta d$, que puede reducirse al rango $[-\pi,\pi]$, de modo que los posibles valores de $\beta$ son $[-\pi/d,\pi/d]$, que son los límites de la celda de Brillouin descripta antes. La generalización para el comportamiento en dos dimensiones está íntimamente ligado a la definición de la zona de Brillouin del material analizado.
 
 Si una onda plana incide sobre un medio periódico dispuesto en la dirección ortogonal al vector de propagación, el efecto es intuitivo, como se puede ver en la figura \ref{fig:bloch-ortogonal}. En este caso, la periodicidad se da sobre el eje $z$, y la constante de propagación en esa coordenada es nula, por lo que no hay diferencia de fase entre los elementos dispuestos periódicamente (la diferencia de fase se da, para la onda incidente dibujada, en la dirección $y$).
 
@@ -201,7 +201,7 @@ Si una onda plana incide sobre un medio periódico dispuesto en la dirección or
 
 
 \section{Relación y diagrama de dispersión}
-\label{sec_bloch}
+\label{sec:diag-de-dispersion}
 %%%%
 % Libro de rahmat. Pagina 46.
 % Zona de brillouin. Rahmat, libro, pagina 31.
@@ -232,7 +232,36 @@ Una línea de transmisión infinita cargada periódicamente puede analizarse pla
 	\end{bmatrix}
 \end{equation}
 
-Si se considera que la línea está cargada con una impedancia y una admitancia, como indica la figura \ref{fig:linea-transm-cargada-periodica}, entonces se puede dividir a cada celda unitaria en secciones diferenciadas, y multiplicar las matrices $\text{ABCD}_{i}$ de cada sección para obtener la matriz ABCD que corresponde a la celda unitaria completa;
+Si se considera que la línea está cargada con una impedancia y una admitancia, como indica la figura \ref{fig:linea-transm-cargada-periodica}, entonces se puede dividir a cada celda unitaria en secciones diferenciadas, y multiplicar las matrices $\text{ABCD}_{i}$ de cada sección para obtener la matriz ABCD que corresponde a la celda unitaria completa.
+
+\begin{figure}[htp]
+	\centering
+	\begin{circuitikz} \draw
+		(0,0) -- (1,0)node[midway,scale=2,fill=white]{$\cdots$}
+			to [transmission line,-o,v=$d/2$] (5,0)
+			-- (7,0)
+		(0,2) -- (1,2)node[midway,scale=2,fill=white]{$\cdots$} 
+			to [transmission line,-o,l_=$Z_0$] (5,2)
+			to [generic,l=$Z$] (7,2)
+			to [generic,l=$Y$] (7,0)
+			-- (7.5,0)
+			to [transmission line,o-,v=$d/2$]
+			(10,0) -- (11,0)node[midway,scale=2,fill=white]{$\cdots$}
+		(7,2) -- (7.5,2)
+			to [transmission line,-o,l_=$Z_0$]
+			(10,2) -- (11,2)node[midway,scale=2,fill=white]{$\cdots$};
+%			to [C,l=$C'_R \Delta_z$] (7,0)
+%		-- (9,0) to [L,l_=$L'_L / \Delta_z$] (9,2)
+%		-- (7,2)
+%		(9,2) -- (11,2)
+%		to [R,l=$R / \Delta_z$] (11,0)
+%		-- (9,0)
+%		(11,0) -- (12,0) -- (13,0)node[midway,scale=2,fill=white]{$\cdots$}
+%		(11,2) -- (12,2) -- (13,2)node[midway,scale=2,fill=white]{$\cdots$};
+	\end{circuitikz}  	
+	\caption{Circuito equivalente de porción de línea de transmisión cargada, de longitud $d$.}
+	\label{fig:linea-transm-cargada-periodica}
+\end{figure}
 
 \begin{enumerate}
 	\item La primera mitad de la línea de transmisión, de largo $d/2$, cuya matriz ABCD es, considerando $Z_0$ su impedancia característica y $\beta_{TL}$ la constante de propagación \cite{Pozar:MwEngineering}:
@@ -308,16 +337,16 @@ Reemplazando los valores de A y D de la matriz de transmisión de la celda unita
 \cosh (\gamma d) = \frac{Y Z}{2} \cos{\left (\beta_{TL} d \right )} + \frac{i Y Z_{0}}{2} \sin{\left (\beta_{TL} d \right )} + \frac{i Z}{2 Z_{0}} \sin{\left (\beta_{TL} d \right )} + \cos{\left (\beta_{TL} d \right )}
 \end{equation}
 
-Dado que $\gamma = \alpha + j \beta$ es la constante de onda en el material, resulta conveniente considerar el caso en que no hay comportamientos exponenciales negativos para las ondas que los atraviesan, de modo que $\alpha=0$ \footnote{$\cosh (\gamma d) = \cosh(\alpha d)\cos(\beta d) + j \sinh(\alpha d) \sin(\beta d) = \cos (\beta d)$}. Se obtiene, entonces, la ecuación de dispersión para una dimensión:
+Dado que $\gamma = \beta -j\alpha$ es la constante de onda en el material, resulta conveniente considerar el caso en que no hay comportamientos exponenciales negativos para las ondas que los atraviesan, de modo que $\alpha=0$ \footnote{$\cosh (\gamma d) = \cosh(\beta d)\cos(\alpha d) + j \sinh(\beta d) \sin(-\alpha d) = \cosh (\beta d)$}. Se obtiene, entonces, la ecuación de dispersión para una dimensión:
 
 \begin{align}
 	\label{eq:relacion-de-dispersion-general}
-	cos(\beta d) = \frac{Y Z}{2} \cos{\left (\beta_{TL} d \right )} + \frac{i Y Z_{0}}{2} \sin{\left (\beta_{TL} d \right )} + \frac{i Z}{2 Z_{0}} \sin{\left (\beta_{TL} d \right )} + \cos{\left (\beta_{TL} d \right )}
+	cosh(\beta d) = \frac{Y Z}{2} \cos{\left (\beta_{TL} d \right )} + \frac{i Y Z_{0}}{2} \sin{\left (\beta_{TL} d \right )} + \frac{i Z}{2 Z_{0}} \sin{\left (\beta_{TL} d \right )} + \cos{\left (\beta_{TL} d \right )}
 \end{align}
 
-El diagrama de dispersión es un gráfico que muestra la relación entre la frecuencia angular, $\omega$, y el módulo del vector de onda, $|\vec{k}|$. En la ecuación \ref{eq:relacion-de-dispersion-general}, si se reemplaza $\beta_{TL}$ por $\omega/v_p$, con $v_p$ la velocidad de fase de una onda monocromática que viaja por la línea de transmisión, se obtiene la relación buscada. Para el caso en que no existen discontinuidades periódicas, sino que la onda se desplaza sobre un medio homogéneo sin pérdidas, la relación es independiente de la frecuencia: $v_p = c/\sqrt{\epsilon_r \mu_r}$, la velocidad de la luz en el medio.
+El diagrama de dispersión es un gráfico que muestra la relación entre la frecuencia angular, $\omega$, y el módulo del vector de onda, $|\vec{\beta}|$. En la ecuación \ref{eq:relacion-de-dispersion-general}, si se reemplaza $\beta_{TL}$ por $\omega/v_p$, con $v_p$ la velocidad de fase de una onda monocromática que viaja por la línea de transmisión, se obtiene la relación buscada. Para el caso en que no existen discontinuidades periódicas, sino que la onda se desplaza sobre un medio homogéneo sin pérdidas, la relación es independiente de la frecuencia: $v_p = c/\sqrt{\epsilon_r \mu_r}$, la velocidad de la luz en el medio.
 
-Para el caso bidimensional, el análisis es similar, aunque se obtiene mayor información si se analizan simultáneamente las componentes ortogonales del vector $\vec{k}$. Para el caso de un medio homogéneo, el diagrama de dispersión es un cono, denominado comúnmente ``cono de luz", como se muestra en la figura \ref{fig:diagrama-dispersion-vacio-3d}, que surge de la expresión $\omega = c \sqrt{k_x^2 + k_y^2}$.
+Para el caso bidimensional, el análisis es similar, aunque se obtiene mayor información si se analizan simultáneamente las componentes ortogonales del vector $\vec{\beta}$. Para el caso de un medio homogéneo, el diagrama de dispersión es un cono, denominado comúnmente ``cono de luz", como se muestra en la figura \ref{fig:diagrama-dispersion-vacio-3d}, que surge de la expresión $\omega = c \sqrt{\beta_x^2 + \beta_y^2}$.
 
 \begin{figure}[htp]
 	\centering
@@ -337,7 +366,7 @@ En función de lo explicado en la sección \ref{sec:celdas-unitarias}, y en base
 	\label{fig:diagrama-dispersion-completo-deduccion}
 \end{figure}
 
-Para una superficie bidimensional, el análisis requiere que para cada punto dentro de la zona de Brillouin, se analice el valor de $\omega$ correspondiente. Para un caso sencillo como el mostrado en la figura \ref{fig:rectangulo-cuadrado}, el cálculo se debe realizar para todas las combinaciones posibles de valores de $k_x$ en el intervalo $[0,\pi/d_x]$ y de $k_y$ en el intervalo $[0,\pi/d_y]$. Este análisis da lugar a el diagrama de dispersión o diagrama de bandas completo, que sigue requiriendo una representación tridimensional, como se muestra en las figura \ref{fig:diagrama-dispersion-completo-deduccion}c), que explicita que el análisis del diagrama completo sobre una celda unitaria se puede realizar sobre la zona irreducible de Brillouin. Una simplificación muy utilizada, que reduce la cantidad de información a considerar, aunque vuelve incompleto el diagrama, es la mostrada en la figura d), donde se analizan únicamente los valores del diagrama de dispersión sobre los bordes de la zona irreducible de Brillouin. De esta forma, resulta fácil expresar un diagrama de dispersión en un gráfico bidimensional, como se muestra en la figura e). Los puntos denominados $\Gamma$, X y M representan los vértices de la zona de análisis.
+Para una superficie bidimensional, el análisis requiere que para cada punto dentro de la zona de Brillouin, se analice el valor de $\omega$ correspondiente. Para un caso sencillo como el mostrado en la figura \ref{fig:rectangulo-cuadrado}, el cálculo se debe realizar para todas las combinaciones posibles de valores de $\beta_x$ en el intervalo $[0,\pi/d_x]$ y de $\beta_y$ en el intervalo $[0,\pi/d_y]$. Este análisis da lugar a el diagrama de dispersión o diagrama de bandas completo, que sigue requiriendo una representación tridimensional, como se muestra en las figura \ref{fig:diagrama-dispersion-completo-deduccion}c), que explicita que el análisis del diagrama completo sobre una celda unitaria se puede realizar sobre la zona irreducible de Brillouin. Una simplificación muy utilizada, que reduce la cantidad de información a considerar, aunque vuelve incompleto el diagrama, es la mostrada en la figura d), donde se analizan únicamente los valores del diagrama de dispersión sobre los bordes de la zona irreducible de Brillouin. De esta forma, resulta fácil expresar un diagrama de dispersión en un gráfico bidimensional, como se muestra en la figura e). Los puntos denominados $\Gamma$, X y M representan los vértices de la zona de análisis.
 
 Para el caso particular del vacío, el diagrama de dispersión simplificado, calculado a partir del que se observa en la figura \ref{fig:diagrama-dispersion-vacio-3d}, es el mostrado en la figura \ref{fig:diagrama-dispersion-vacio-2d}.
 
@@ -350,11 +379,11 @@ Para el caso particular del vacío, el diagrama de dispersión simplificado, cal
 
 Una explicación intuitiva sobre el comportamiento en cada punto de la frontera de la zona irreducible de Brillouin se puede observar en la figura \ref{fig:explicacion-zona-brillouin}. En el centro de la misma se ubica una celda de Brillouin, que equivale a una celda de Wigner-Seitz del espacio recíproco. En la misma se destaca la zona irreducible de Brillouin de una celda cuadrada, cuyos vértices se denominan $\Gamma$, $X$ y $M$. Alrededor de la gráfica de la zona de Brillouin, se muestra una representación gráfica de una onda plana incidente, para el modo más bajo (la frecuencia más baja de las posibles).
 
-La gráfica de la zona de dispersión comienza en el punto $\Gamma$ de la zona irreducible de Brillouin, que corresponde a un valor de $k_x = 0$ y $k_y = 0$, por lo que no hay variación espacial del valor de los campos. El recorrido de las abscisas continúa hacia el punto $X$, que corresponde a un valor de $k_x$ equivalente a $\pi / d$, con $d$ la periocidad en $x$, como se muestra en la figura. Los valores intermedios entre $\Gamma$ y $X$ representan valores de $k_x$ cada vez mayores, mientras se mantiene la frecuencia espacial en el eje $y$ en cero. El aumento de la frecuencia espacial da lugar a longitudes de onda menores.
+La gráfica de la zona de dispersión comienza en el punto $\Gamma$ de la zona irreducible de Brillouin, que corresponde a un valor de $\beta_x = 0$ y $\beta_y = 0$, por lo que no hay variación espacial del valor de los campos. El recorrido de las abscisas continúa hacia el punto $X$, que corresponde a un valor de $\beta_x$ equivalente a $\pi / d$, con $d$ la periocidad en $x$, como se muestra en la figura. Los valores intermedios entre $\Gamma$ y $X$ representan valores de $\beta_x$ cada vez mayores, mientras se mantiene la frecuencia espacial en el eje $y$ en cero. El aumento de la frecuencia espacial da lugar a longitudes de onda menores.
 
-Una vez alcanzado el punto $X$ de la zona irreducible de Brillouin, el recorrido continúa hacia el punto $M$, donde el cambio se da sólo para el valor de $k_y$, con $k_x$ fijo en $\pi / a$. Esto indica una incidencia oblicua, como se esquematiza en las figuras que rodean a la zona de Brillouin.
+Una vez alcanzado el punto $X$ de la zona irreducible de Brillouin, el recorrido continúa hacia el punto $M$, donde el cambio se da sólo para el valor de $\beta_y$, con $\beta_x$ fijo en $\pi / a$. Esto indica una incidencia oblicua, como se esquematiza en las figuras que rodean a la zona de Brillouin.
 
-El recorrido se completa con el camino entre el punto $M$ y el punto $\Gamma$, donde ahora los valores de $k_x$ y $k_y$ disminuyen simultáneamente, a la misma velocidad, y en la dirección correspondiente a $45^\circ$, como se observa en las gráficas de la zona superior izquierda de la figura.
+El recorrido se completa con el camino entre el punto $M$ y el punto $\Gamma$, donde ahora los valores de $\beta_x$ y $\beta_y$ disminuyen simultáneamente, a la misma velocidad, y en la dirección correspondiente a $45^\circ$, como se observa en las gráficas de la zona superior izquierda de la figura.
 
 \begin{figure}[h]
 	\centering
@@ -363,43 +392,11 @@ El recorrido se completa con el camino entre el punto $M$ y el punto $\Gamma$, d
 	\label{fig:explicacion-zona-brillouin}
 \end{figure}
 
-Se debe tener en cuenta que, dado que existen distintos modos, frecuencias de incidencia mayores darían lugar a modos superiores, que compartirían el valor de $k_i$ con los modos inferiores. Esto se debe a que la diferencia de fase medida en los extremos de la celda unitaria de la red de Bravais no tiene en cuenta la cantidad de ciclos que le dieron origen (es decir, una diferencia de fase de $\phi$ da lugar al mismo $k_i$, $i=x,y$ que una diferencia de $\pi+2 n \pi$). Esto es esquematizado en la parte superior y los lados de las figuras que representan al arreglo periódico.
+Se debe tener en cuenta que, dado que existen distintos modos, frecuencias de incidencia mayores darían lugar a modos superiores, que compartirían el valor de $\beta_i$ con los modos inferiores. Esto se debe a que la diferencia de fase medida en los extremos de la celda unitaria de la red de Bravais no tiene en cuenta la cantidad de ciclos que le dieron origen (es decir, una diferencia de fase de $\phi$ da lugar al mismo $\beta_i$, $i=x,y$ que una diferencia de $\pi+2 n \pi$). Esto es esquematizado en la parte superior y los lados de las figuras que representan al arreglo periódico.
 
-\section{Modelos analíticos de estructuras superficiales de banda prohibida electromagnética}
+\section{Modelos analíticos de estructuras uniplanares de banda prohibida electromagnética}
 \label{sec_analitico}
 
-El análisis de estructuras de banda prohibida electromagnética, así como de superficies selectoras de frecuencia (FSS), se suele realizar a través de simulaciones numéricas de onda completa, utilizando el método de elementos finitos (FEM) o métodos en el dominio del tiempo, como FDTD, dado que permiten la resolución de los problemas de forma tridimensional, lo que habilita al diseñador a conocer el comportamiento de configuraciones de una o más capas, así como los efectos de curvaturas y discontinuidades en la periodicidad. Estos métodos, si bien son flexibles, no otorgan intuición física y resultan computacionalmente demandantes. Análisis numéricos bidimensionales han sido propuestos, principalmente utilizando el método de momentos, a partir de los cuales han surgido métodos de análisis basados en los resultados numéricos, en los que se buscan capacidades e inductancias dispuestas de forma tal que respuesta en frecuencia tenga un comportamiento similar al observado en las simulaciones. Estos métodos, que en ocasiones derivan en aproximaciones de primer orden a elementos circuitales, se denominan semi-analíticos, y se usan especialmente cuando la periodicidad es mucho menor a la longitud de onda incidente. Este tipo de análisis ha permitido la aplicación de otros métodos numéricos, como TMM (\textit{Transmission Matrix Method}) y TLM (\textit{Transmission-Line Matrix Method}), de mayor simplicidad y con suficiente acercamiento al problema físico para que el resultado resulte intuitivo para el diseño preliminar.
-
-Los métodos de modelado orientados a la descripción del comportamiento en el primer modo no requieren de una simulación numérica de onda completa previa \cite{KimSchuttAine:AnalysisHybrid}. En ellos, como se muestra en la figura \ref{fig:circuito-equivalente-kim-parches}, las inductancias y capacidades surgen del análisis intuitivo y cuasiestático del efecto de cada aspecto de la geometría de la estructura metalodieléctrica de las celdas unitarias. Así, para las celdas de dicha figura, se debe considerar que cada parche presenta una capacidad contra el plano conductor ($C_p$), y otra contra los parches cercanos ($C_g$). Además, tanto el parche como los puentes entre los parches dan lugar, cada uno, a una inductancia asociada ($L_{puente}$ y $L_p$, respectivamente). % DAR LAS EXPRESIONES, CON LAS RESPECTIVAS CITAS.
-
-Para el caso de las superficies de alta impedancia sin vías de conexión entre la geometría superior y el plano de tierra inferior, Tretyankov y otros (\cite{Tretyakov:AnalyticalModeling} \cite{Yakovlev:AnalyticalModelingHIS}) han propuesto un análisis centrado en la similitud con las FSS, considerando a las superficies EBG uniplanares como FSS con un plano de tierra. De esta manera es posible utilizar los modelos desarrollados durante el siglo XX para el análisis de las superficies selectoras de frecuencias, en el estudio de EBGs, dado que el comportamiento de banda prohibida se da por el mismo motivo que el comportamiento de filtro de las FSS \cite{Goussetis:TailoringAMCEBGCharacteristics}, relacionado a la frecuencia de resonancia del arreglo de elementos. Para ello, se considera el circuito equivalente de la figura \ref{fig:tretyankov-circuito-equivalente}, donde $Z_g$ es la impedancia que impone la FSS que se dispone sobre el plano dieléctrico, y $Z_d$ es la impedancia del conjunto formado por el dieléctrico y el plano conductor. De esta forma, la impedancia de superficie resulta del paralelo de ambas. La impedancia del conjunto dieléctrico-plano conductor fue analizada en el capítulo anterior, y depende de la polarización (TE o TM). La impedancia que impone el arreglo periódico bidimensional, la FSS, requiere de un análisis particular de cada caso, y los resultados analíticos en la literatura están limitados a arreglos de rectángulos, dipolos y cruces, y sus correspondientes estructuras complementarias.
-\begin{figure}
-\centering
-\begin{circuitikz} \draw
-	(0,2) to[transmission line, o-o] (3,2)
-			to[generic, o-o,l=$Z_g$] (3,4)
-			to[transmission line, o-o, mirror] (0,4)
-	(3,2) -- (5,2)
-			to[generic,o-o,l=$Z_d$] (5,4)
-			-- (3,4);
-\end{circuitikz}
-\label{fig:tretyankov-circuito-equivalente}
-\caption{Circuito equivalente propuesto por \cite{Yakovlev:AnalyticalModelingHIS} para un EBG.}
-\end{figure}
-%%%%
-% Rahmat. Pagina 77 libro.
-% Engheta, pagina 290.
-
-% Lightline stuff. Rahmat, pagina 28. Caloz, pagina 139. Pozar pag 386
-\section{Tipos de EBG}
-\label{sec_tipos_mtm}
-%%%%
-\lipsum[1]
-% Tesis de kovacs, pagina 7.
-\subsection{EBGs uniplanares}
-\label{subsec_ebg_uniplanar}
-%%%%
-\lipsum
 % buena intro en rahmat (libro), pagina 35-37
 % Buscar las distintas formas, incluyendo Peano. Relación con FSS.
 % Buena intro esn Goussetis, Feresidis, Vardaxoglou.
@@ -410,6 +407,61 @@ Para el caso de las superficies de alta impedancia sin vías de conexión entre 
 % Analisis en Goussetis, Feresidis, paper posta. Tipos de resonancia.
 % Lamminen, Vimpari, Saily. 
 % Maci, Caiazzo, Cucini. Jodido, interesante. Leer.
+% Rahmat. Pagina 77 libro.
+% Engheta, pagina 290.
+
+% Lightline stuff. Rahmat, pagina 28. Caloz, pagina 139. Pozar pag 386
+
+
+El análisis de estructuras de banda prohibida electromagnética, así como de superficies selectoras de frecuencia (FSS), se suele realizar a través de simulaciones numéricas de onda completa, utilizando el método de elementos finitos (FEM) o métodos en el dominio del tiempo, como FDTD, dado que permiten la resolución de los problemas de forma tridimensional, lo que habilita al diseñador a conocer el comportamiento de configuraciones de una o más capas, así como los efectos de curvaturas y discontinuidades en la periodicidad. Estos métodos, si bien son flexibles, no otorgan intuición física y resultan computacionalmente demandantes. Análisis de tipo numérico en dos dimensiones han sido propuestos, principalmente utilizando el método de momentos, a partir de los cuales han surgido otras técnicas de estudio de las estructuras bidimensionales, basadas en la búsqueda de capacidades e inductancias equivalentes, dispuestas de forma tal que respuesta en frecuencia tenga un comportamiento similar al observado en las simulaciones. Estos métodos, que en ocasiones derivan en aproximaciones de primer orden a elementos circuitales, se denominan semi-analíticos, y se usan especialmente cuando la periodicidad es mucho menor a la longitud de onda incidente. Este tipo de análisis ha permitido la aplicación de otros métodos numéricos, como TMM (\textit{Transmission Matrix Method}) y TLM (\textit{Transmission-Line Matrix Method}), de mayor simplicidad y con suficiente acercamiento al problema físico para que el resultado resulte intuitivo para el diseño preliminar.
+
+Los métodos de modelado orientados a la descripción del comportamiento en el primer modo (en bajas frecuencias) no requieren de una simulación numérica de onda completa previa \cite{KimSchuttAine:AnalysisHybrid}. En ellos, como se muestra en la figura \ref{fig:circuito-equivalente-kim-parches}, las inductancias y capacidades surgen del análisis intuitivo y cuasiestático del efecto de cada aspecto de la geometría de la estructura metalodieléctrica de las celdas unitarias. Así, para las celdas de dicha figura, formadas por parches rectangulares unidos por puentes \textit{microstrip}, se debe considerar que cada parche presenta una capacidad contra el plano conductor ($C_p$), dada simplemente como la expresión de capacidad entre placas planas paralelas, y una inductancia $L_p$, dadas por:
+
+\begin{align}
+	\label{eq:Cp_Lp}
+	C_p = \frac{\epsilon_r \epsilon_0 b^2}{b} \\
+	L_p = \mu_0 d
+\end{align}
+
+Los parches cercanos dan lugar a una capacidad ($C_g$) \cite{Marcela:Tesis} \cite{Sievenpiper:Thesis} \cite{KimSchuttAine:AnalysisHybrid}, y los puentes entre parches generan una inductandia ($L_{puente}$) \cite{KimSchuttAine:AnalysisHybrid}:
+
+\begin{align}
+	\label{eq:cgap-y-lgap}
+	C_{gap} = \frac{b \epsilon_0 (1+\epsilon_r)}{\pi} \cosh^{-1} (a / g) \\
+	L_{puente} = 0.2\; \text{nH/mm} \cdot \ln (2\pi \frac{d}{w})
+\end{align}
+
+donde $a$ es el tamaño de la celda unitaria, $d$ es el ancho del dieléctrico y $w$ es el ancho del puente. Estos parámetros permiten calcular los valores de $Y$ y $Z$ requeridos para el análisis con líneas de transmisión cargadas, utilizados para calcular los diagramas de dispersión en la sección \ref{sec:diag-de-dispersion}.
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Fundamentos/circuito-equivalente-celda-unitaria.pdf}
+	\caption{Circuito equivalente propuesto para el análisis de primer modo de una celda unitaria bidimensional arbitraria, propuesto por \cite{KimSchuttAine:AnalysisHybrid}}
+	\label{fig:circuito-equivalente-kim-parches}
+\end{figure}
+
+Para el caso de las superficies de alta impedancia sin vías de conexión entre la geometría superior y el plano de tierra inferior, Tretyakov y otros (\cite{Tretyakov:AnalyticalModeling} \cite{Yakovlev:AnalyticalModelingHIS}) han propuesto un análisis centrado en la similitud con las FSS, considerando a las superficies EBG uniplanares como FSS con un plano de tierra. De esta manera es posible utilizar los modelos desarrollados durante el siglo \textsc{XX} para el análisis de las superficies selectoras de frecuencias, en el estudio de EBGs, dado que el comportamiento de banda prohibida se da por el mismo motivo que el comportamiento de filtro de las FSS \cite{Goussetis:TailoringAMCEBGCharacteristics}, relacionado a la frecuencia de resonancia del arreglo de elementos. Para ello, se considera el circuito equivalente de la figura \ref{fig:tretyankov-circuito-equivalente}, donde $Z_g$ es la impedancia que impone la FSS que se dispone sobre el plano dieléctrico, y $Z_d$ es la impedancia del conjunto formado por el dieléctrico y el plano conductor. De esta forma, la impedancia de superficie resulta del paralelo de ambas. La impedancia del conjunto dieléctrico-plano conductor fue analizada en el capítulo anterior, y depende de la polarización (TE o TM). La impedancia que impone el arreglo periódico bidimensional, la FSS, requiere de un análisis particular de cada caso, y los resultados analíticos en la literatura están limitados a arreglos de rectángulos, dipolos y cruces, y sus correspondientes estructuras complementarias.
+
+\begin{figure}
+\centering
+\begin{circuitikz} \draw
+	(0,2) to[transmission line, o-o,l=$Z_0$] (3,2)
+			to[generic, o-o,l=$Z_g$] (3,4)
+	(0,4) to[transmission line, o-o] (3,4)
+	(3,2) -- (5,2)
+			to[generic,o-o,l=$Z_d$] (5,4)
+			-- (3,4);
+\end{circuitikz}
+\caption{Circuito equivalente propuesto por \cite{Yakovlev:AnalyticalModelingHIS} para un EBG.}
+\label{fig:tretyankov-circuito-equivalente}
+\end{figure}
+
+Un planteo intuitivo de los resultados de Tretyankov requiere comenzar el análisis a partir del conocimiento de que, para ondas TM, como se demostró en la seccion \ref{sec:ondas-de-superficie}, y como se muestra en la figura \ref{fig:beta-reactancia-TM}, una superficie con impedancia inductiva es capaz de soportar ondas TM. la impedancia de un plano de tierra recubierto por un material dieléctrico, como se muestra en la ecuación \ref{eq:impedancia-superficie-tm-teorica}, da lugar a una impedancia $Z_d$ inductiva. Para lograr una impedancia superficial $Z_s$ menos inductiva, en vistas de disminuir el comportamiento de guía de ondas de la estructura, se debe imponer una impedancia $Z_g$ acorde.
+
+El metamaterial basado en FSS más usual, el arreglo de parches, da lugar a una impedancia $Z_g$ capacitiva, tanto por la capacidad impuesta entre los parches y el plano de tierra, como por la capacidad entre los parches adyacentes. Para frecuencias bajas, el comportamiento del circuito equivalente es inductivo, pero para frecuencias por encima de la de resonancia, el comportamiento es capacitivo. Por otro lado, es posible considerar, si los parches son lo suficientemente grandes, que los mismos presentan una inductancia, en serie con las capacidades parásitas descriptas antes. Un inductor en paralelo con el inductor correspondiente al plano conductor de la cara inferior del dieléctrico disminuye la inductancia total, por lo que se logra el efecto deseado. Finalmente, si los parches son conectados, como se mostró en la figura \ref{fig:circuito-equivalente-kim-parches}, la inductancia en paralelo con la capacidad entre parches acrecentará este efecto. Los efectos que se presentan por encima de la frecuencia de resonancia impiden que el análisis intuitivo describa la existencia de modos superiores, por lo que el análisis no es completo, lo que obliga a que la frecuencia de resonancia no esté muy por debajo de la frecuencia de ondas de superficie que se desea bloquear con la estructura EBG.
+
+
 \section{Modelado y simulación de metamateriales}
 \label{sec_simulacion_mtm}
 %%%%

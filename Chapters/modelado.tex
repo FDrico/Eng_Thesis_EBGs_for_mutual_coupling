@@ -20,7 +20,6 @@
 \label{sec_estudio_tlm}
 %%%%
 \lipsum
-\lipsum
 %Pasos: Barchloui: Simulation of FSS surfaces using 3d TLM, 2003. Primer paper de un librito. Buena explciaci{on.}
 % Paper importante: Hoefer 1985. Johns, 1971.
 % Leer Janyani, Paul, TLM modelling of nonlinear optical effects in fibre bragg gratings, 2004.
@@ -31,4 +30,59 @@
 \subsection{Algoritmo utilizando programación orientada a objetos}
 \label{subsec_estudio_tlm}
 %%%%
-\lipsum
+La simulación se corre a través de un \textit{script} de Python, donde se establecen las condiciones de la simulación en forma manual, editando el archivo \textsc{tlm.py} para modificar el contenido de las tuplas de simulación. Las mismas establecen si la simulación requiere o no que se grafiquen los resultados inmediatamente, o si los mismos deben ser únicamente almacenados para luego permitir su representación gráfica. Además, se permite determinar si se utilizaran las capacidades de acople entre elementos, si se utilizará una admitancia de radiación para considerar la energía perdida en las aperturas, la cantidad de tiempos a simular y las frecuencias superior e inferior.
+
+La entrada de datos se realiza a través de un archivo con formato PGM, que establece una matriz de pixeles, cada uno con un valor, entre 1 y 255, donde 1 representa el negro, 255 el blanco, y los valores intermedios corresponden a una escala de grises. El archivo se puede generar a partir de un programa de edición de imágenes, lo que facilita la creación de estructuras a simular, ya que la misma sólo debe ser dibujada. Si la imagen creada ocupa una mayor cantidad de pixeles, la granularidad espacial utilizada en la simulación será mayor, dado que existe una relación 1 a 1 entre los pixeles gráficos y la discretización utilizada. El análisis se realiza pixel a pixel, donde cada tiene un comportamiento en función de su tipo (indicado por el color que posee) y su posición respecto de los demás.
+
+Existen 4 tipos de pixeles:
+\begin{enumerate}
+	\item Inner / Interno. Estos pixeles representan superficies metálicas que se encuentran en el interior de un plano conductor.
+	\item Interfaz. Estos pixeles representan superficies metálicas que se encuentran en los bordes de una estructura metálica, lo que significa que tienen vecinos que son otros pixeles de tipo metálico (de interfaz o internos) y vecinos dieléctricos. Son los pixeles que poseen las propiedades de capacidad de \textit{fringe} y, en algunos casos, de conductividad de radiación.
+	\item Dieléctricos. Son pixeles que representan las zonas donde no hay cobre, sino simplemente dieléctrico desnudo (en particular, FR4). Estos pixeles no participan del intercambio de energía, excepto aquellos que son vecinos de pixeles de interfaz. Cuando existe un pixel vecino interfaz, el pixel dieléctrico guarda la información de la tensión que recibe del mismo, y envía la información al pixel dieléctrico que se encuenta inmediatamente en frente, con el que se encuenta vinculado capacitivamente.
+	\item Contorno. Los pixeles contorno tienen un comportamiento especial. Pueden intentar simular una superficie perfectamente adaptada, o una superficie metálica, en función de las necesidades de la simulación. Se ubican en el borde de la imagen \textit{.pgm} creada, para que actúen como el borde del espacio de simulación.
+\end{enumerate}
+
+Los pixeles están ordenados en una superficie, creada al momento de leer la imagen .pgm del disco. En función de los colores, se crean, para cada pixel gráfico y en base a su color, objetos "Pixel" de alguno de los tipos previamente nombrados, y se ubican en una matriz que se carga en memoria, y que tiene comportamientos diferentes según el tipo de pixel representado.
+
+Capa pixel tiene una capacidad y una inductancia asociada, descriptas en las ecuaciones \ref{eq:Cp_Lp}, a partir de las cuales se puede obtener una impedancia:
+
+\begin{align}
+Z_{inn} = \sqrt{L_{inn} / C_{inn}}
+\end{align}
+
+Por otro lado, se puede obtener la admitancia debido a la conductividad, dada por \cite{Saguet}:
+
+\begin{equation}
+\sigma_{Cu} * l * \sqrt{\mu_0 / \epsilon_0}
+\end{equation}
+
+Los pixeles interfaz poseen, además, una capacidad de \textit{fringe}, que se relaciona al comportamiento no-TEM de las líneas de campo cerca de los bordes de las estructuras \textit{microstrip}. Esta capacidad de \textit{fringe} se suma a la capacidad de placas planas paralelas propia del pixel en la dirección correspondiente (la dirección cuyo vecino es una pixel de tipo dieléctrico). La expresión de la capacidad de \textit{fringe} para cada celda es la siguiente \cite{ThummWiesbeck:CharacteristicImpedance}:
+
+\begin{equation}
+	C_{fringe} = \epsilon_0 \epsilon_r / \pi \ln (2 \pi e^{\frac{prof}{2 h} + 0.92})
+\end{equation}
+
+Para el análisis de transferencia entre un punto y otro de la estructura, se debe fijar una posición de entrada y una posición de salida, cuya tensión, para cada tiempo, deberá ser almacenada.
+
+Una vez creada la matriz a partir de la información obtenida de la imagen, se debe establecer una tensión inicial en el nodo de entrada. Se puede establecer un $\delta(t)$ de tensión, de manera que se fija el valor de tensión inicial y luego se lo deja libre para todos los tiempos posteriores. También puede estableceserse un seno y un pulso Gaussiano, que permite una excitación limitada en frecuencia \cite{Barthia:Handbook}. En todos los casos, la tensión impuesta puede sumarse a la tensión que obtiene naturalmente el nodo en los tiempos posteriores al tiempo inicial, o puede fijarse arbitrariamente para todos los tiempos, en función de las necesidades. 
+
+Al momento de crear la superficie, además, se realizan 3 acciones previas a la simulación:
+\begin{enumerate}
+	\item Establecer la admitancia de radiación. CONSULTAR. Por ahora no hace nada.
+	\item Vincular capacitivamente los bordes de las estructuras metálicas. Para esto se toman todos los bordes de las estructuras metálicas (los pixeles de tipo Interfaz), y se recorre horizontal y verticalmente la matriz, una vez por dirección, vinculando los bordes interfaz de a pares, teniendo en cuenta que aquellos pixeles de interfaz que corresponden a la misma estructura o a la misma celda unitaria (a la misma isla metálica) no deben ser vinculados. Por cada par encontrado, se obtiene la capacidad de acople, utilizando la expresión \ref{eq:cgap-y-lgap}. En esta expresión, $a$ es el tamaño de las islas metálicas y $g$ representa la distancia entre las islas conductoras. El valor de $b$, en tanto, representa la distancia longitudinal del $gap$, que se obtiene calculando la cantidad de pixeles enfrentado a distancia constante que existen. Hecho esto, consideranto todos los pixeles a uno y otro lado del $gap$, se busca la "profunidad" de la celda, que no es más que la cantidad de pixeles metálicos detrás de los pixeles frontera que pueden hallarse simultáneamente a ambos lados del gap, manteniendo al cantidad longitudinal de pixeles metálicos del borde. Así, el valor de $a$ queda representado por, aproximadamente, $2*prof+g$, con $prof$ en unidades de metro. El valor de la capacidad total de acople se divide entre la cantidad de pixeles que participan del cálculo. La vinculación se realiza entre pixeles dieléctricos adyacentes a los pixeles frontera en cuestión, de forma que los pixeles frontera no participen del intercambio de información con otros pixeles.
+	\item Calcular las matrices S de cada pixel. Las matrices S son las matrices que, multiplicadas por un vector de tensiones incidentes, $V_i$, devuelven un vector de igual dimensión de tensiones reflejadas, $V_r$. Cada uno de los elementos de estos vectores representan una dirección (arriba, abajo, derecha, izquierda) de la celda unitaria. Las expresiones de la matriz S son las mostradas en la ecuación \ref{eq:matriz-s-expresiones}:
+	\begin{subequations}
+		\label{eq:matriz-s-expresiones}
+		\begin{align}
+			S_{i,i} = \frac{Z_{j}||Z_{k}||Z_{l} -Z_{i}}{Z_{j}||Z_{k}||Z_{l} +Z_{i}} \\
+			S_{j,i} = \frac{2 Z_{j}||Z_{k}||Z_{l}}{Z_{j}||Z_{k}||Z_{l} +Z_{i}}
+		\end{align}
+	\end{subequations}
+	Además, se pueden establecer pérdidas para el transporte de tensión de un pixel a otro, de manera que se puedan simular, de forma simplificada, las pérdidas por conductividad.
+	
+	Los pixeles de tipo dieléctrico no poseen matriz S, debido a que en su mayoría no tendrán información de tensión incidente. Los que sí tienen información de tension incidente, funcionan simplemente como almacenadores de tensiones incidentes, ya que al momento en que un pixel interfaz adyacente excita una tensión sobre el dieléctrico, la información se envía al pixel dieléctrico con el que fue vinculado capacitivamente.
+\end{enumerate}
+	
+La simulación resulta una simulación de tipo TLM, donde existe una tensión inicial impuesta como condición inicial, y elegida previamente al cálculo. A partir de la tensión ubicada en uno de los nodos, se calcula, en cada tiempo discreto, el valor de las tensiones incidentes a cada nodo, y a partir de las mismas, se calculan las tensiones reflejadas en todas las direcciones (\textit{scattering}), sumándose los efectos en todas direcciones.
+
+El resultado arrojado por la simulación será un archivo, de formato .npy, que es una matriz tridimensional, que puede ser considerada como un apilamiento, de tamaño igual a la cantidad de tiempos simulados, de de matrices bidimensionales con tamaño igual al de la estructura. En cada una de estas últimas matrices bidimensionales, cada elemento posee un valor, que no es más que la tensión vista en ese nodo en el tiempo al que la matriz bidimensional corresponde. De ser necesario, se pueden establecer los parámetros de una ventana de Hanning para disminuir el comportamiento espúreo de alta frecuencia debido a la limitación en tiempo de la señal de salida.

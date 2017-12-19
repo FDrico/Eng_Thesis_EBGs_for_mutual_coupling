@@ -86,19 +86,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.24748737"
-     inkscape:cx="831.40098"
-     inkscape:cy="135.94715"
+     inkscape:zoom="1.4172519"
+     inkscape:cx="452.08194"
+     inkscape:cy="43.123426"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="723"
-     inkscape:window-height="399"
-     inkscape:window-x="121"
-     inkscape:window-y="227"
-     inkscape:window-maximized="0"
+     inkscape:window-width="1600"
+     inkscape:window-height="876"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -117,7 +117,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -209,14 +209,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.28686857px;line-height:125%;font-family:MathJax_SansSerif;-inkscape-font-specification:MathJax_SansSerif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33042929px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="99.60215"
-       y="99.023651"
+       x="99.272133"
+       y="99.271164"
        id="text5974"><tspan
          sodipodi:role="line"
-         id="tspan5972"
-         x="99.60215"
-         y="99.023651"
-         style="stroke-width:0.33042929px">k</tspan></text>
+         id="tspan868"
+         x="99.272133"
+         y="99.271164"
+         style="-inkscape-font-specification:MathJax_Math;font-family:MathJax_Math;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">β</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.23447262px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 99.924549,94.762899 h 2.052601"
@@ -244,7 +244,7 @@
          id="tspan6091"
          x="170.54089"
          y="133.53284"
-         style="stroke-width:0.26458332px">y</tspan></text>
+         style="stroke-width:0.26458332px;-inkscape-font-specification:MathJax_Math;font-family:MathJax_Math;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">y</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:125%;font-family:MathJax_SansSerif;-inkscape-font-specification:MathJax_SansSerif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -255,6 +255,6 @@
          id="tspan6095"
          x="181.01158"
          y="141.76126"
-         style="stroke-width:0.26458332px">z</tspan></text>
+         style="stroke-width:0.26458332px;-inkscape-font-specification:MathJax_Math;font-family:MathJax_Math;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">z</tspan></text>
   </g>
 </svg>
