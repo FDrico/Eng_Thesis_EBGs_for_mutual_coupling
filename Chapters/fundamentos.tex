@@ -419,7 +419,7 @@ Los métodos de modelado orientados a la descripción del comportamiento en el p
 
 \begin{align}
 	\label{eq:Cp_Lp}
-	C_p = \frac{\epsilon_r \epsilon_0 b^2}{b} \\
+	C_p = \frac{\epsilon_r \epsilon_0 b^2}{h} \\
 	L_p = \mu_0 h
 \end{align}
 
@@ -440,6 +440,34 @@ donde $a$ es el tamaño de la celda unitaria, $h$ es el ancho del dieléctrico y
 	\caption{Circuito equivalente propuesto para el análisis de primer modo de una celda unitaria bidimensional arbitraria, propuesto por \cite{KimSchuttAine:AnalysisHybrid}}
 	\label{fig:circuito-equivalente-kim-parches}
 \end{figure}
+
+%\begin{figure}[htp]
+%	\centering
+%	\begin{circuitikz} \draw
+%		(0,0) -- (1,0)node[midway,scale=2,fill=white]{$\cdots$}
+%		-- (9,0) -- (10,0)node[midway,scale=2,fill=white]{$\cdots$}
+%		(0,2) -- (1,2)node[midway,scale=2,fill=white]{$\cdots$} 
+%		to [L,-o,l_=$L_p/2$] (2.5,2)
+%		to [L,o-o,l_=$L_p/2$] (4,2)
+%		to [L,o-o,l_=$L_{puente}/2$] (6,2)
+%		to [L,o-o,l_=$L_p/2$] (7.5,2)
+%		to [L,o-,l_=$L_p/2$] (9,2)
+%		-- (10,2)node[midway,scale=2,fill=white]{$\cdots$}
+%		(2.5,2) to [C,o-o,l_=$C_p$] (2.5,0)
+%		(7.5,2) to [C,o-o,l_=$C_p$] (7.5,0)
+%		(4,3) to [C,o-o,l^=$C_g$] (6,3);
+%		%			to [C,l=$C'_R \Delta_z$] (7,0)
+%		%		-- (9,0) to [L,l_=$L'_L / \Delta_z$] (9,2)
+%		%		-- (7,2)
+%		%		(9,2) -- (11,2)
+%		%		to [R,l=$R / \Delta_z$] (11,0)
+%		%		-- (9,0)
+%		%		(11,0) -- (12,0) -- (13,0)node[midway,scale=2,fill=white]{$\cdots$}
+%		%		(11,2) -- (12,2) -- (13,2)node[midway,scale=2,fill=white]{$\cdots$};
+%	\end{circuitikz}  	
+%	\caption{Circuito equivalente de porción de línea de transmisión cargada, de longitud $d$.}
+%	\label{fig:linea-transm-cargada-periodica}
+%\end{figure}
 
 Para el caso de las superficies de alta impedancia sin vías de conexión entre la geometría superior y el plano de tierra inferior, Tretyakov y otros (\cite{Tretyakov:AnalyticalModeling} \cite{Yakovlev:AnalyticalModelingHIS}) han propuesto un análisis centrado en la similitud con las FSS, considerando a las superficies EBG uniplanares como FSS con un plano de tierra. De esta manera es posible utilizar los modelos desarrollados durante el siglo \textsc{XX} para el análisis de las superficies selectoras de frecuencias, en el estudio de EBGs, dado que el comportamiento de banda prohibida se da por el mismo motivo que el comportamiento de filtro de las FSS \cite{Goussetis:TailoringAMCEBGCharacteristics}, relacionado a la frecuencia de resonancia del arreglo de elementos. Para ello, se considera el circuito equivalente de la figura \ref{fig:tretyankov-circuito-equivalente}, donde $Z_g$ es la impedancia que impone la FSS que se dispone sobre el plano dieléctrico, y $Z_d$ es la impedancia del conjunto formado por el dieléctrico y el plano conductor. De esta forma, la impedancia de superficie resulta del paralelo de ambas. La impedancia del conjunto dieléctrico-plano conductor fue analizada en el capítulo anterior, y depende de la polarización (TE o TM). La impedancia que impone el arreglo periódico bidimensional, la FSS, requiere de un análisis particular de cada caso, y los resultados analíticos en la literatura están limitados a arreglos de rectángulos, dipolos y cruces, y sus correspondientes estructuras complementarias.
 
