@@ -754,6 +754,36 @@
       \field{journaltitle}{Karlsruhe Institute of Technology}
       \field{title}{Characteristic Impedance and Permittivity (diapositivas)}
     \endentry
+    \entry{Tesche:EMC}{book}{}
+      \name{author}{3}{}{%
+        {{hash=cbf4c97cc69a8e27cd4cf09a25faa246}{%
+           family={Tesche},
+           family_i={T\bibinitperiod},
+           given={Frederick\bibnamedelima M.},
+           given_i={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=88bf2d1e15b89a7fa09f9354c46f1c9e}{%
+           family={Ianoz},
+           family_i={I\bibinitperiod},
+           given={Michel\bibnamedelima V.},
+           given_i={M\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=8fc9e07b43c6be47ca7bc4d2a5f332fd}{%
+           family={Karlsson},
+           family_i={K\bibinitperiod},
+           given={Torbjörn},
+           given_i={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley-Interscience}%
+      }
+      \strng{namehash}{341a3c7fb7c5829ceefdcb4362892d4a}
+      \strng{fullhash}{341a3c7fb7c5829ceefdcb4362892d4a}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{EMC Analysis Methods and Computational Models}
+      \field{year}{1997}
+    \endentry
     \entry{Yang:EBGAntennas}{book}{}
       \name{author}{2}{}{%
         {{hash=eb5d5ae09823dbd21f6e0bbbf8a1b5ba}{%

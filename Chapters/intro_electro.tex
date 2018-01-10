@@ -841,11 +841,30 @@ Una onda incidente desde el aire, para evitar reflexiones y, por lo tanto, radia
 	Z_s^{TM} = j \frac{\cos \theta_t}{\sqrt{\epsilon_{r_2}}}\tan(\gamma_2 t \cos\theta_t)
 \end{align}
 
+
+\begin{figure} [H]
+	\centering 
+	\subfigure[$Z_s^{TM}$ en función del ancho del dieléctrico, para una permitividad dieléctrica relativa de $4.5$ y en incidencia perpendicular.]{
+		\label{fig:zstm-ancho-diel}
+		\includegraphics[width=0.45\textwidth]{intro_electro/plot-zstm-funciont.pdf}}
+	\hspace{5mm}
+	\subfigure[$Z_s^{TM}$ en función de la permitividad dieléctrica, para un ancho de dieléctrico de $1.6\;mm$ y en incidencia perpendicular.]{
+		\label{fig:zstm-permit-diel}
+		\includegraphics[width=0.45\textwidth]{intro_electro/plot-zstm-funcioner.pdf}}
+	\\
+	
+	\subfigure[$Z_s^{TM}$ en función del ángulo de incidencia, para un ancho de dieléctrico de $1.6\;mm$ y una permitividad de $4.5$.]{
+		\label{fig:zstm-angulo-incidencia}
+		\includegraphics[width=0.45\textwidth]{intro_electro/plot-zstm-funciontheta.pdf}}
+	\caption{Valor de la impedancia de superficie en función de sus parámetros.}
+	\label{fig:Zstm-parametros}
+\end{figure}
+
 %% GRAFICAR!!! \theta_r puede ser obtenida por la ley de snell. Vemos que no es independiente del ángulo de incidencia. Barlow dice que son del mismo orden de magnitud los efectos viejos (prof de penetracion) y los nuevos (coating). Pagina 332. Carita triste.
 
 % Barlow parece contar cosas sobr la velocidad de fase, y más dealnte sobre el lauching y el angulo de brewster complejo. LEER para completar.
 
-Esta impedancia es puramente imaginaria positiva\footnote{Si el dieléctrico presentara pérdidas, existiría también un término real \cite{Barlow:SurfaceWaves}, por lo que, además de facilitar la propagación de ondas de superficie, si el dieléctrico tiene bajas pérdidas, no aumenta la resistencia de superficie. Además, esta componente inductiva se debe sumar al efecto producido por la componente inductiva de la impedancia de superficie del conductor, debida a la existencia de una profundidad de penetración.}, por lo que tiene un comportamiento inductivo, permitiendo la formación de ondas de superficie en modo TM, dado que la constante de atenuación $\alpha_{x_i}, i=1,2$ logra que el campo se concentre cerca de la superficie. Los valores de $\beta_z$ y $\alpha_z$ no se ven modificados, pues el aporte del dieléctrico a la reactancia no es lo suficientemente alto. El ángulo $\theta_t$ se obtiene de las relaciones de Snell (\ref{eq:snell_law_second}), por lo que se deduce que, al contrario que en el caso del conductor sin recubrimiento dieléctrico, el comportamiento es dependiente del ángulo de incidencia.
+Esta impedancia es puramente imaginaria positiva\footnote{Si el dieléctrico presentara pérdidas, existiría también un término real \cite{Barlow:SurfaceWaves}, por lo que, además de facilitar la propagación de ondas de superficie, si el dieléctrico tiene bajas pérdidas, no aumenta la resistencia de superficie. Además, esta componente inductiva se debe sumar al efecto producido por la componente inductiva de la impedancia de superficie del conductor, debida a la existencia de una profundidad de penetración.}, por lo que tiene un comportamiento inductivo, permitiendo la formación de ondas de superficie en modo TM, dado que la constante de atenuación $\alpha_{x_i}, i=1,2$ logra que el campo se concentre cerca de la superficie. Los valores de $\beta_z$ y $\alpha_z$ no se ven modificados, pues el aporte del dieléctrico a la reactancia no es lo suficientemente alto. El ángulo $\theta_t$ se obtiene de las relaciones de Snell (\ref{eq:snell_law_second}), por lo que se deduce que, al contrario que en el caso del conductor sin recubrimiento dieléctrico, el comportamiento es dependiente del ángulo de incidencia, como se muestra en la figura \ref{fig:zstm-angulo-incidencia}. Por otro lado, en la figura \ref{fig:zstm-ancho-diel} se puede observar que el valor de la impedancia crece a medida que aumenta el ancho del dieléctrico, volviéndose más inductiva, de forma similar a la que se da cuando aumenta la permitividad (figura \ref{fig:zstm-permit-diel}).
 
 Para el caso TE, los campos paralelos a la superficie son:
 
@@ -1139,7 +1158,7 @@ En el caso en que se consideren sólo dos antenas, de la ecuación \ref{eq:impmu
 \subsection{Antenas Microstrip}
 \label{subsec_antenas_microstrip}
 %%%%
-Las antenas \textit{microstrip} cumplen varias de las especificaciones más importantes que imponen las diversas aplicaciones de antenas: Pueden ser pequeñas, tienen bajo peso, son económicas y fáciles de fabricar, y tienen bajo perfil, lo que permite adaptarlas a numerosos diseños. Suelen, sin embargo, tener un alto Q, ya que funcionan debido a sus propiedades resonantes, suelen tener baja eficiencia, son de baja potencia, y presentan polarización impura. La baja eficiencia y el bajo ancho de banda, en muchos casos, suelen mitigarse con el aumento del ancho del sustrato, aunque esto genera ondas de superficie, generalmente indeseadas. Las ondas de superficie extraen potencia que no se convierte en radiación y, facilitan el acoplamiento entre elementos y, cuando inciden sobre discontinuidades, generan lóbulos secundarios que degradan el patrón de radiación y las características de polarización \cite{Balanis:Theory}.
+Las antenas \textit{microstrip} cumplen varias de las especificaciones más importantes que imponen las diversas aplicaciones de antenas: Pueden ser pequeñas, tienen bajo peso, son económicas y fáciles de fabricar, y tienen bajo perfil, lo que permite adaptarlas a numerosos diseños. Suelen, sin embargo, tener un alto Q, ya que funcionan debido a sus propiedades resonantes, suelen tener baja eficiencia, son de baja potencia, y presentan polarización impura.
 
 En general, el diseño de una antena \textit{microstrip} se realiza de forma tal que el máximo de radiación se concentre en la dirección normal al parche (\textit{broadside}), aunque también es posible lograr radiación en dirección paralela al mismo (\textit{end-fire}), dependiendo de la geometría elegida. El sustrato elegido para la fabricación suele influir en el ancho de banda y la eficiencia: Una mayor permitividad dieléctrica genera una menor eficiencia, un menor ancho de banda y un menor acoplamiento con elementos cercanos, debido a que los campos se encuentran contenidos en el sustrato.
 
