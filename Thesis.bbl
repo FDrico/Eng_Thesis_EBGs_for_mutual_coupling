@@ -999,6 +999,52 @@
       \field{title}{On Surface-Wave coupling between elements of Large Arrays}
       \field{year}{1965}
     \endentry
+    \entry{Kumar:Non-radiating}{article}{}
+      \name{author}{2}{}{%
+        {{hash=195fd44e31dba6df5ee8dacd5035eab8}{%
+           family={Kumar},
+           family_i={K\bibinitperiod},
+           given={Girish},
+           given_i={G\bibinitperiod}}}%
+        {{hash=cc1562c302be40d9160fe1c134e80686}{%
+           family={Gupta},
+           family_i={G\bibinitperiod},
+           given={Kuldip.\bibnamedelimi C.},
+           given_i={K\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{8d36a691c7352563b944248bbc328e6e}
+      \strng{fullhash}{8d36a691c7352563b944248bbc328e6e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
+      \field{title}{Nonradiating edges and four edges gap-coupled multiple resonator broad-band microstrip antennas}
+      \field{year}{1985}
+    \endentry
+    \entry{Kumar:radiating}{article}{}
+      \name{author}{2}{}{%
+        {{hash=195fd44e31dba6df5ee8dacd5035eab8}{%
+           family={Kumar},
+           family_i={K\bibinitperiod},
+           given={Girish},
+           given_i={G\bibinitperiod}}}%
+        {{hash=cc1562c302be40d9160fe1c134e80686}{%
+           family={Gupta},
+           family_i={G\bibinitperiod},
+           given={Kuldip.\bibnamedelimi C.},
+           given_i={K\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{8d36a691c7352563b944248bbc328e6e}
+      \strng{fullhash}{8d36a691c7352563b944248bbc328e6e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
+      \field{title}{Broad-band microstrip antennas using additional resonators gap-coupled to the radiating edges}
+      \field{year}{1984}
+    \endentry
     \entry{Malkomes:MutualCoupling}{article}{}
       \name{author}{1}{}{%
         {{hash=7b58ecdef3ddd8353d4768bc0d83f9bb}{%

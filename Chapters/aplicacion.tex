@@ -22,12 +22,12 @@ Entre las distintas técnicas que han surgido para la disminución de la presenc
 	\centering 
 	\subfigure[Antena rodeada por una estructura EBG.]{
 		\label{fig:sustrato-antena-ebg}
-		\includegraphics[width=0.35\textwidth]{Aplicacion/foto-ebg-alrededor-antena.pdf}}
+		\includegraphics[width=0.40\textwidth]{Aplicacion/foto-ebg-alrededor-antena.pdf}}
 	\hspace{30pt}
 	\subfigure[Antena rodeada por un escalón de sustrato,]{
 		\label{fig:escalon-sustrato}
-		\includegraphics[width=0.45\textwidth]{Aplicacion/foto-escalon-alrededor-antena.pdf}}
-	\caption{Fotos de diseños de antenas parches con limitadores a la propagación de onda de superficie \cite{Yang:EBGAntennas}}
+		\includegraphics[width=0.40\textwidth]{Aplicacion/foto-escalon-alrededor-antena.pdf}}
+	\caption{Fotos de diseños de antenas parches con limitadores a la propagación de onda de superficie \cite{Yang:EBGAntennas}.}
 	\label{fig:limitadores-ondas-superficie-yang}
 \end{figure}
 
@@ -36,13 +36,37 @@ Las primeras estructuras EBG utilizadas con estos fines consistían en arreglos 
 Para el presente trabajo, estas estructuras se ubicarán entre dos antenas microstrip, alineadas según distintos criterios, a fin de comparar el diagrama de radiación y el acoplamiento mutuo con el que se logra con el mismo arreglo radiante, pero sin el uso de EBG entre ellas.
 
 % Coccioli, Yang, Itoh, intro historica.
-\section{Técnicas de aumento del ancho de banda para el análisis}
+\section{Criterios y técnicas utilizados para aumentar el ancho de banda de las antenas microstrip}
 \label{sec_aumento_bw}
 %%%%
-\lipsum
-% Rahmat. Pagina 127, libro. Efecto de algunos parámetros.}
-% Paper Kumar, Gupta, Nonradiating
-% Notar que paper de Assimonis, Yioultsis no usa esto. MAL.
+Para poder utilizar las técnicas de blindaje contra ondas de superficie utilizando metamateriales, como las descriptas antes, es necesario que el ancho de la banda prohibida de la estructura EBG resulte mayor al ancho de banda de la antena. Es debido al alto valor del factor Q (y por tanto, bajo ancho de banda) de las antenas \textit{microstrip} rectangulares el motivo por el que el uso de estructuras EBG es factible.
+
+Considerando que el objetivo del presente trabajo no es meramente la determinación de la posibilidad o no del uso de EBGs para disminuir el acoplamiento mutuo de antenas \textit{microstrip}, sino que se pretende describir y caracterizar someramente el comportamiento del metamaterial en cuestión, resulta necesario utilizar antenas de ancho de banda mayor a las \textit{microstrip} convencionales que se describieron en el capítulo \ref{cap_intro_electro}. De esta manera, sería posible encontrar los límites de uso y la tolerancia a variación de tamaños sin variación de la estructura EBG utilizada, lo que flexibiliza el trabajo de diseño.
+
+Existen numerosas técnicas que permiten aumentar el ancho de banda de las estructuras radiantes de tecnología \textit{microstrip}. Como se explicó antes, una técnica común consiste en aumentar al ancho del sustrato, o cambiarlo por otro de constante dieléctrica menor. Debido a que la modificación de cualquiera de los dos parámetros condicionaría sustancialmente el comportamiento de las ondas de superficie generadas sobre el sustrato, se decidió que resultaba importante independizarlos del análisis.
+
+En otros casos, se ha propuesto la modificación de la geometría del elemento radiante, descartando el tradicional parche rectangular por figuras con formas de U o de E, o por formas geométricas con aperturas radiantes embebidas \cite{Yang:EBGAntennas}. Para las mediciones de este trabajo se consideró, y finalmente se descartó, el uso de antenas \textit{microstrip} de tipo moño (\textit{bow-tie}), que presentan una transición geométrica suave, intuitivamente apta para las necesidades presentadas. Entre las dificultades que ofrece, está su principio de funcionamiento, comparable al de un dipolo, y requiriendo, por tanto, una alimentación en modo diferencial, lo que obligaría a realizar un diseño de un balún \textit{microstrip}, lejano a las pretensiones del trabajo.
+
+Otra técnica común consiste en diseñar conjuntos de elementos que resuenan a distintas y frecuencias, acoplados capacitivamente, denominados estructuras multi-resonantes. Si las distintas frecuencias de resonancia están lo suficientemente cerca unas de otras, se logra un efecto de continuidad, aumentando notoriamente el ancho de banda. En muchos casos, y debido a los costos cada vez más despreciables de la fabricación de circuitos multicapa, los elementos resonantes se ubican apilados, generando un acoplamiento capacitivo máximo entre ellos. Para el caso de las pruebas que se requieren hacer para validar y caracterizar el comportamiento de las estructuras EBG, elementos radiantes coplanares con el parche activo resonante resultan suficientes.
+
+La estructura propuesta consiste en un parche rectangular, ubicado sobre un sustrato de FR4, de comportamiento resonante en una frecuencia aproximada de 2.4 GHz, y ubicado entre dos rectángulos \textit{microstrip} pasivos iguales, de un largo establecido de forma que la frecuencia de resonancia de los mismos resulte ligeramente diferente a la del parche activo. La distancia entre estos elementos de carga y la antena original debe ser tal que el acoplamiento sea notorio, requisito que presenta complejidades \cite{Kumar:radiating} debido a que los parches deben estar ubicados frente a los bordes no radiantes de la antena para evitar reducir el espacio utilizado por la estructura EBG con la que compartirán sustrato. En la figura \ref{fig:antena-propuesta-con-ebg} se puede observar el arreglo final de elementos. Se debe destacar que la elección de que ambos parches posean las mismas propiedades geométricas se debe a la búsqueda de la máxima simetría par para simplificar el análisis de la estructura, aún cuando esta elección merme la flexibilidad del diseño de banda ancha.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Aplicacion/estructura-antenas-ebg.pdf}
+	\caption{Estructura propuesta para la caracterización del efecto de EBGs sobre antenas microstrip.}
+	\label{fig:antena-propuesta-con-ebg}
+\end{figure}
+
+
+Los parches rectangulares, al igual que en el desarrollo del análisis de estructuras EBG, están acoplados al elemento activo mediante lo que puede modelarse como una red $\pi$ de capacitores (acoplamiento capacitivo) \cite{Kumar:Non-radiating}, similar a mostrada en la figura \ref{fig:acoplamiento-capacitivo-modelo}, donde los denominados \textit{pixeles} deben ser reemplazados por los parches propiamente dichos. En términos generales, los parámetros que modificarán la impedancia de entrada y que, por lo tanto, afectarán al ancho de banda, son la distancia entre el resonador activo y los pasivos ($g$), la longitud de los parches acoplados ($l'$) y la posición del punto de alimentación \cite{Kumar:Non-radiating}.
+
+La existencia de estos parches, que pueden considerarse como de carga, implican una modificación de la impedancia de entrada para distintas frecuencias.
+
+Si los parches pasivos poseen dimensiones muy disímiles al parche activo central, las frecuencias de resonancia de los elementos estarán tan alejadas entre sí que es posible un análisis simplificado del comportamiento: A bajas frecuencias, los rectángulo pasivos no resuenan ni se acoplan visiblemente al parche activo. A medida que la frecuencia de trabajo aumenta, los mismos comienzan a acoplarse, adoptando un comportamiento capacitivo, al mismo tiempo que debido a que forman un paralelo con la carga impuesta por la resistencia de radiación, disminuyen el valor de la resistencia de entrada. Una vez que los parches resuenan, logrando que se presente la mínima resistencia de entrada, obtienen un comportamiento de carácter inductivo, hasta que nuevamente, a altas frecuencias, dejan de tener injerencia palpable sobre el valor de la impedancia de entrada. La variación de la distancia entre los parches da lugar a que estos efectos se vuelvan más o menos plausibles, en función del acoplamiento capacitivo \cite{Kumar:Non-radiating}.
+
+Cuando los parches pasivos poseen geometrías similares a la del parche original, el problema resulta más complejo, debido a que no puede analizarse la resonancia de cada elemento por separado sin considerar la carga que los demás ejercen sobre él. Debido a que, a fin de aumentar el ancho de banda, todos los parches deberán tener geometrías similares, resulta necesario realizar simulaciones numéricas que permitan predecir el comportamiento.
+
 %%%%
 \section{Diseño de la antena microstrip}
 \label{sec_disenio_microstrip}
