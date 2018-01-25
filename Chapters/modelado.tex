@@ -1,21 +1,242 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Capítulo 3: Modelado y simulacion de metamateriales  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Modelos analíticos de estructuras uniplanares de banda prohibida electromagnética}
+\label{sec:modelo_analitico}
 
-%%%%
-\section{Análisis de estructuras periódicas}
+% buena intro en rahmat (libro), pagina 35-37
+% Buscar las distintas formas, incluyendo Peano. Relación con FSS.
+% Buena intro esn Goussetis, Feresidis, Vardaxoglou.
+% Diseños para incidencia obliucua: Kim, Yand, Elsherbeni. Tambien en Lin, Li, Zhang.
+% Hilbert: McVAy, Engheta, Hoorfar.
+% Power loss analysis: Mohajer-Iravani, Ramahi, de Hindawi corp.
+% Kern, Douglas, Werner.
+% Analisis en Goussetis, Feresidis, paper posta. Tipos de resonancia.
+% Lamminen, Vimpari, Saily. 
+% Maci, Caiazzo, Cucini. Jodido, interesante. Leer.
+% Rahmat. Pagina 77 libro.
+% Engheta, pagina 290.
+
+% Lightline stuff. Rahmat, pagina 28. Caloz, pagina 139. Pozar pag 386
+
+
+El análisis de estructuras de banda prohibida electromagnética, así como de superficies selectoras de frecuencia (FSS), se suele realizar a través de simulaciones numéricas de onda completa, utilizando el método de elementos finitos (FEM) o métodos en el dominio del tiempo, como FDTD, dado que permiten la resolución de los problemas de forma tridimensional, lo que habilita al diseñador a conocer el comportamiento de configuraciones de una o más capas, así como los efectos de curvaturas y discontinuidades en la periodicidad. Estos métodos, si bien son flexibles, no otorgan intuición física y resultan computacionalmente demandantes. Análisis de tipo numérico en dos dimensiones han sido propuestos, principalmente utilizando el método de momentos, a partir de los cuales han surgido otras técnicas de estudio de las estructuras bidimensionales, basadas en la búsqueda de capacidades e inductancias equivalentes, dispuestas de forma tal que respuesta en frecuencia tenga un comportamiento similar al observado en las simulaciones. Estos métodos, que en ocasiones derivan en aproximaciones de primer orden a elementos circuitales, se denominan semi-analíticos, y se usan especialmente cuando la periodicidad es mucho menor a la longitud de onda incidente. Este tipo de análisis ha permitido la aplicación de otros métodos numéricos, como TMM (\textit{Transmission Matrix Method}) y TLM (\textit{Transmission-Line Matrix Method}), de mayor simplicidad y con suficiente acercamiento al problema físico para que el resultado resulte intuitivo para el diseño preliminar.
+
+Los métodos de modelado orientados a la descripción del comportamiento en el primer modo (en bajas frecuencias) no requieren de una simulación numérica de onda completa previa \cite{KimSchuttAine:AnalysisHybrid}. En ellos, como se muestra en la figura \ref{fig:circuito-equivalente-kim-parches}, las inductancias y capacidades surgen del análisis intuitivo y cuasiestático del efecto de cada aspecto de la geometría de la estructura metalodieléctrica de las celdas unitarias. Así, para las celdas de dicha figura, formadas por parches rectangulares unidos por puentes \textit{microstrip}, se debe considerar que cada parche presenta una capacidad contra el plano conductor ($C_p$), dada simplemente como la expresión de capacidad entre placas planas paralelas, y una inductancia $L_p$, dadas por:
+
+\begin{align}
+\label{eq:Cp_Lp}
+C_p = \frac{\epsilon_r \epsilon_0 b^2}{h} \\
+L_p = \mu_0 h
+\end{align}
+
+Los parches cercanos dan lugar a una capacidad ($C_g$) \cite{Marcela:Tesis} \cite{Sievenpiper:Thesis} \cite{KimSchuttAine:AnalysisHybrid}, y los puentes entre parches generan una inductandia ($L_{puente}$) \cite{KimSchuttAine:AnalysisHybrid}:
+
+\begin{align}
+\label{eq:cgap-y-lgap}
+C_{gap} = \frac{b \epsilon_0 (1+\epsilon_r)}{\pi} \cosh^{-1} (a / g) \\
+L_{puente} = 0.2\; \text{nH/mm} \cdot \ln (2\pi \frac{h}{w})
+\end{align}
+
+donde $a$ es el tamaño de la celda unitaria, $h$ es el ancho del dieléctrico y $w$ es el ancho del puente. Estos parámetros permiten calcular los valores de $Y$ y $Z$ requeridos para el análisis con líneas de transmisión cargadas, utilizados para calcular los diagramas de dispersión en la sección \ref{sec:diag-de-dispersion}.
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Fundamentos/circuito-equivalente-celda-unitaria.pdf}
+	\caption{Circuito equivalente propuesto para el análisis de primer modo de una celda unitaria bidimensional arbitraria, propuesto por \cite{KimSchuttAine:AnalysisHybrid}}
+	\label{fig:circuito-equivalente-kim-parches}
+\end{figure}
+
+%\begin{figure}[htp]
+%	\centering
+%	\begin{circuitikz} \draw
+%		(0,0) -- (1,0)node[midway,scale=2,fill=white]{$\cdots$}
+%		-- (9,0) -- (10,0)node[midway,scale=2,fill=white]{$\cdots$}
+%		(0,2) -- (1,2)node[midway,scale=2,fill=white]{$\cdots$} 
+%		to [L,-o,l_=$L_p/2$] (2.5,2)
+%		to [L,o-o,l_=$L_p/2$] (4,2)
+%		to [L,o-o,l_=$L_{puente}/2$] (6,2)
+%		to [L,o-o,l_=$L_p/2$] (7.5,2)
+%		to [L,o-,l_=$L_p/2$] (9,2)
+%		-- (10,2)node[midway,scale=2,fill=white]{$\cdots$}
+%		(2.5,2) to [C,o-o,l_=$C_p$] (2.5,0)
+%		(7.5,2) to [C,o-o,l_=$C_p$] (7.5,0)
+%		(4,3) to [C,o-o,l^=$C_g$] (6,3);
+%		%			to [C,l=$C'_R \Delta_z$] (7,0)
+%		%		-- (9,0) to [L,l_=$L'_L / \Delta_z$] (9,2)
+%		%		-- (7,2)
+%		%		(9,2) -- (11,2)
+%		%		to [R,l=$R / \Delta_z$] (11,0)
+%		%		-- (9,0)
+%		%		(11,0) -- (12,0) -- (13,0)node[midway,scale=2,fill=white]{$\cdots$}
+%		%		(11,2) -- (12,2) -- (13,2)node[midway,scale=2,fill=white]{$\cdots$};
+%	\end{circuitikz}  	
+%	\caption{Circuito equivalente de porción de línea de transmisión cargada, de longitud $d$.}
+%	\label{fig:linea-transm-cargada-periodica}
+%\end{figure}
+
+Para el caso de las superficies de alta impedancia sin vías de conexión entre la geometría superior y el plano de tierra inferior, Tretyakov y otros (\cite{Tretyakov:AnalyticalModeling} \cite{Yakovlev:AnalyticalModelingHIS}) han propuesto un análisis centrado en la similitud con las FSS, considerando a las superficies EBG uniplanares como FSS con un plano de tierra. De esta manera es posible utilizar los modelos desarrollados durante el siglo \textsc{XX} para el análisis de las superficies selectoras de frecuencias, en el estudio de EBGs, dado que el comportamiento de banda prohibida se da por el mismo motivo que el comportamiento de filtro de las FSS \cite{Goussetis:TailoringAMCEBGCharacteristics}, relacionado a la frecuencia de resonancia del arreglo de elementos. Para ello, se considera el circuito equivalente de la figura \ref{fig:tretyankov-circuito-equivalente}, donde $Z_g$ es la impedancia que impone la FSS que se dispone sobre el plano dieléctrico, y $Z_d$ es la impedancia del conjunto formado por el dieléctrico y el plano conductor. De esta forma, la impedancia de superficie resulta del paralelo de ambas. La impedancia del conjunto dieléctrico-plano conductor fue analizada en el capítulo anterior, y depende de la polarización (TE o TM). La impedancia que impone el arreglo periódico bidimensional, la FSS, requiere de un análisis particular de cada caso, y los resultados analíticos en la literatura están limitados a arreglos de rectángulos, dipolos y cruces, y sus correspondientes estructuras complementarias.
+
+\begin{figure}
+	\centering
+	\begin{circuitikz} \draw
+		(0,2) to[transmission line, o-o,l=$Z_0$] (3,2)
+		to[generic, o-o,l=$Z_g$] (3,4)
+		(0,4) to[transmission line, o-o] (3,4)
+		(3,2) -- (5,2)
+		to[generic,o-o,l=$Z_d$] (5,4)
+		-- (3,4);
+	\end{circuitikz}
+	\caption{Circuito equivalente propuesto por \cite{Yakovlev:AnalyticalModelingHIS} para un EBG.}
+	\label{fig:tretyankov-circuito-equivalente}
+\end{figure}
+
+Un planteo intuitivo de los resultados de Tretyankov requiere comenzar el análisis a partir del conocimiento de que, para ondas TM, como se demostró en la seccion \ref{sec:ondas-de-superficie}, y como se muestra en la figura \ref{fig:beta-reactancia-TM}, una superficie con impedancia inductiva es capaz de soportar ondas TM. la impedancia de un plano de tierra recubierto por un material dieléctrico, como se muestra en la ecuación \ref{eq:impedancia-superficie-tm-teorica}, da lugar a una impedancia $Z_d$ inductiva. Para lograr una impedancia superficial $Z_s$ menos inductiva, en vistas de disminuir el comportamiento de guía de ondas de la estructura, se debe imponer una impedancia $Z_g$ acorde.
+
+El metamaterial basado en FSS más usual, el arreglo de parches, da lugar a una impedancia $Z_g$ capacitiva, tanto por la capacidad impuesta entre los parches y el plano de tierra, como por la capacidad entre los parches adyacentes. Para frecuencias bajas, el comportamiento del circuito equivalente es inductivo, pero para frecuencias por encima de la de resonancia, el comportamiento es capacitivo. Por otro lado, es posible considerar, si los parches son lo suficientemente grandes, que los mismos presentan una inductancia, en serie con las capacidades parásitas descriptas antes. Un inductor en paralelo con el inductor correspondiente al plano conductor de la cara inferior del dieléctrico disminuye la inductancia total, por lo que se logra el efecto deseado. Finalmente, si los parches son conectados, como se mostró en la figura \ref{fig:circuito-equivalente-kim-parches}, la inductancia en paralelo con la capacidad entre parches acrecentará este efecto. Los efectos que se presentan por encima de la frecuencia de resonancia impiden que el análisis intuitivo describa la existencia de modos superiores, por lo que el análisis no es completo, lo que obliga a que la frecuencia de resonancia no esté muy por debajo de la frecuencia de ondas de superficie que se desea bloquear con la estructura EBG.
+
+\section{Técnicas numéricas de onda completa}
 \label{sec_estructuras_periodicas}
 %%%%
-\lipsum
 % Libro de rahmat. Pagina 59.
 %%%%
-\section{Análisis de estructuras planares propuestas}
+
+El análisis mediante circuitos equivalentes sólo permite el modelado de efectos de primer orden y, en general, en sólo dos dimensiones. El uso de herramientas tridimensionales de cálculo numérico permite observar los efectos de orden superior, así como evaluar los campos radiados por la estructura y los posibles efectos de campo cercano \cite{Mohajer:SupressionBand}.
+
+Las técnicas de simulación de onda completa son aquellas en las que se resuelven las ecuaciones de Maxwell (ecuaciones \ref{eq:Maxwell}) sin simplificaciones, por lo que los campos solución son, en general, variables en el tiempo y dependientes de la frecuencia, y el cálculo es más lento que en los métodos simplificados. Requieren del establecimiento de condiciones de borde, y permiten conocer el comportamiento de estructuras arbitrarias.
+
+La solución de las ecuaciones diferenciales vectoriales en el espacio y el tiempo se pueden realizar utilizando distintas técnicas, entre las que destacan el método de momentos (MOM), el método de elementos finitos (FEM) y el método de diferencias finitas en el dominio del tiempo (FDTD).
+
+\begin{itemize}
+	\item Método de elementos finitos (FEM): Tiene su origen en el análisis estructural. Consiste en dividir en recinto en un número finito de regiones o elementos pequeños (habitualmente triángulos), deducir las ecuaciones que describen los campos dentro de un elemento cualquiera (habitualmente utilizando polinomios de orden $n$), plantear las ecuaciones que dan las condiciones de ajuste de las soluciones en las superficies frontera (en general, agregando como requisito que la solución sea la de mínima energía) y, finalmente, resolver el sistema de ecuaciones lineales resultante \cite{Fernandez:Electromag}.
+	\item Método de momentos (MOM): Se suele utilizar pa el cálculo de estructuras radiantes. Consiste en establecer un operador lineal, para luego resolver un sistema de ecuaciones operacionales lineales, donde la función solución (los campos que se desea hallar) se representan como un desarrollo en serie de funciones base a las que se aplica el operador, donde las incógnitas son los coeficientes constantes utilizados en el desarrollo en serie de la función resultado. Es un método en el dominio de la frecuencia, y su implementación más conocida es la realizada por el software NEC-2 \cite{Fernandez:Electromag}.
+	\item Método de diferencias finitas en el dominio del tiempo (FDTD): Consiste en la discretización en el espacio y el tiempo, mediante las denominadas celdas de Yee, lo que permite el análisis en banda ancha. Los campos eléctrico y magnético se evalúan en puntos alternados (en la mitad de los puntos se evalúa únicamente el campo eléctrico, y en la otra mitad, campo magnético), de forma que cada punto donde se evalúa campo eléctrico quede rodeado de cuatro componentes donde se evalúa campo magnético, y viceversa. La evaluación en el tiempo es también alternada: los campos magnéticos se evalúan $\Delta t/2$ más tarde que los campos eléctricos, de forma que resulte fácil calcular las derivadas en el tiempo y el espacio mediante diferencias finitas.
+\end{itemize}
+
+Para el caso particular del FDTD, es posible resolver problemas de autovalores (particularmente, el analizado en la sección \ref{sec:automodos}), útiles en la descripción de guías de onda y metamateriales periódicos. Una vez impuesta una excitación en el tiempo $t=0$, los valores de campos se actualizan tiempo a tiempo para todos los puntos del dominio de cálculo de forma iterativa, hasta que se logra una señal resonante estable.
+
+Para el caso del estudio de cavidades y guías de ondas, las condiciones de borde para el análisis de autovalores suelen ser conductores eléctricos, con o sin pérdidas. Cuando se analizan estructuras periódicas, es común utilizar condiciones de borde periódicas (PBC, \textit{periodic boundary conditions}), que modelan el efecto de replicación periódica, de manera que es posible simular una única celda unitaria para obtener el efecto del metamaterial completo en base a su diagrama de dispersión \cite{Yang:EBGAntennas}, utilizando la disposición mostrada en la figura \ref{fig:esquema-simulacion-periodica}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{Modelado/esquema-simulacion-periodica.pdf}
+	\caption{Dominio de simulación de una celda unitaria de un metamaterial bidimensional, utilizando condiciones de borde periódicas.}
+	\label{fig:esquema-simulacion-periodica}
+\end{figure}
+
+El uso de estas condiciones de borde periódicas deriva del teorema de Bloch-Floquet, tratado en la sección \ref{sec:bloch-floquet}. Como se muestra en la ecuación \ref{eq:comportamiento-periodico-campo-bloch}, el campo eléctrico (o magnético) resulta periódico, con la misma periodicidad que el material, a excepción de una variación de fase, dada por el valor de la constante de propagación $\beta$ del medio.
+
+Para obtener el diagrama de dispersión, cada frecuencia $\omega$ debe estar asociada a una o más constantes de propagación de onda $\beta$. O, dicho de otra forma, dada una constante de propagación $\beta$, es necesario encontrar las autofrecuencias asociadas. Fijar el valor de la constante de propagación $\beta$, según la ecuación \ref{eq:comportamiento-periodico-campo-bloch}, equivale a establecer la diferencia de fase entre las paredes opuestas de la celda unitaria ($e^{-j\beta d}$). Una simulación del comportamiento en el tiempo, una posterior transformada de Fourier para obtener el comportamiento en frecuencia, permite observar picos de amplitud de campo para algunas frecuencias en particular, que son las que autofrecuencias del problema. Dado que la misma diferencia de fase se puede obtener para frecuencias mayores (un ciclo más tarde), se presentarán distintos modos.
+
+Como se observó en la sección \ref{sec:diag-de-dispersion}, para la descripción del comportamiento de la relación de dispersión sólo es necesario el cálculo en la denominada zona irreducible de Brillouin, dado que a partir de reflexiones y transposiciones de la misma es posible reconstruir la celda unitaria en el espacio recíproco. Para el caso de celdas unitarias en que hay simetría sobre los ejes $x$ e $y$, y además hay simetría diagonal, la zona irreducible es un triángulo, como se mostró en la figura \ref{fig:rectangulo-cuadrado}.
+
+De esta forma, únicamente hay que fijar, como condiciones de borde, diferencias de fase que se correspondan, entre los distintos puntos que forman una celda de Wignet-Seitz y que se corresponden a la zona irreducible de Brillouin.
+
+% Fullwave: Baccarelli, Paulotto, impreso.
+% Hacer estudio gráfico similar al CALOZ, pag 176.
+
+
+\section{Análisis de campos y modos para distintas estructuras}
 \label{sec_estructuras_propuestas}
+
+\subsection{Metamaterial formado por parches cuadrados unidos por finas trazas \textit{microstrip}}
+
+Uno de los metamateriales más fáciles de construir, y que en general presenta buenos resultados al mismo tiempo que mantiene una geometría sencilla es el que se observa en la figura \ref{fig:celda-orlandi}. En la misma, $d$ es el lado de la celda unitaria (cuadrada), $l$ es el tamaño del lado del cuadrado metálico (de cobre), y $l_m$ y $w_m$ son el largo y el ancho de los puentes que comunican a los parches, respectivamente.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\textwidth]{Modelado/orlandi-celda.pdf}
+	\caption{Celda unitaria de un metamaterial formado por parches cuadrados unidos por finas trazas \textit{microstrip}.}
+	\label{fig:celda-orlandi}
+\end{figure}
+
+Esta geometría resulta sencilla de analizar, debido principalmente a que, como se estudió en la sección \ref{sec:modelo_analitico}, cada aspecto de la misma tiene un equivalente circuital, al menos para las frecuencias más bajas, que varía en función de los parámetros constructivos. La celda unidad propuesta posee una simetría tal que permite realizar un análisis en una zona de Brillouin triangular, como la que se mostró, teóricamente, en la figura \ref{fig:explicacion-zona-brillouin}.
+
+Aplicando el análisis de autovalores explicado en la sección precedente, es posible obtener, para cada condición de borde periódica en que va variando la fase de las paredes opuestas que conforman el contorno condicionado, un conjunto de frecuencias que representan los modos de propagación en cada dirección analizada, lo que permite crear un diagrama de dispersión, similar al mostrado en la figura \ref{fig:diagrama-dispersion-vacio-2d}, aunque con modos superiores.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/orlandi-modo1-Enorma-Etangencial.pdf}
+	\caption{Comportamiento, en promedio temporal, de los campos eléctrico y magnético sobre una celda unitaria formada por un parche central y 4 puentes laterales, para el primer y segundo modo de propagación.}
+	\label{fig:orlandi-analisis-campos}
+\end{figure}
+
+En la figura \ref{fig:orlandi-analisis-campos} se ilustran\footnote{Debido a la naturaleza de la simuación con autovalores, que no impone una tensión inicial, los valores obtenidos de los campos no son representativos de la situación física (aunque sí la morfología espacial). Estos valores obtenidos, no mostrados en la figura, suelen ser altos debido al mecanismo de simulación. El análisis que se pretende realizar aquí del comportamiento de los campos es puramente conceptual.}, para los dos primeros modos de propagación, los campos eléctrico y magnético en dirección normal y tangencial a la superficie, considerando una dirección de propagación horizontal (equivalente al punto $M$ en la figura \ref{fig:explicacion-zona-brillouin}).
+
+En la figura \ref{fig:orlandi-analisis-campos} a) se muestra el comportamiento del campo eléctrico promedio perpendicular a la superficie para el primer modo de propagación. Resulta claro que el mismo se concentra debajo del parche metálico que conforma a la celda unitaria, debido a que la presencia de un plano de tierra genera un comportamiento de planas planas paralelas, conformando efectivamente un capacitor. Es también notoria la presencia de campo eléctrico en dirección normal a la superficie en los puentes \textit{microstrip} superior e inferior, debido principalmente a que no hay movimiento de cargas en dirección longitudinal a los mismos, sino que actúan como extensiones al parche central, aumentando ligeramente la capacidad del dispositivo.
+
+El campo eléctrico en la dirección tangencial, también para el primer modo de propagación, es ilustrado en la figura \ref{fig:orlandi-analisis-campos} b), y permite observar la existencia de notorios efectos de \textit{fringing} alrededor de todo el parche, que deben ser considerados en el análisis. Estos efectos son mayores sobre los puentes superior e inferior, nuevamente, mientras que sobre los puentes ubicados horizontalmente parece no haber concentración de cargas. Esto se confirma al analizar las figuras \ref{fig:orlandi-analisis-campos} c) y d), que ilustran el campo magnético en dirección normal y tangencial a la superficie, respectivamente. Se puede observar que no existen campos magnéticos normales a la superficie debajo del parche metálico, sino que, como muestra la figura d), son puramente tangenciales. Debajo del parche, entonces, para el primer modo de propagación, los campos son cuasi-TEM. La presencia de campo magnético sobre los puentes horizontales corrobora la hipótesis de que sobre los mismos se genera corriente, que ingresa al parche metálico para ser conducida.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/orlandi-modo1-EH-fases.pdf}
+	\caption{Comportamiento, para dos tiempos diferentes, de los campos eléctrico y magnético sobre una celda unitaria formada por un parche central y 4 puentes laterales, para el primer y segundo modo de propagación.}
+	\label{fig:orlandi-analisis-campos-fases}
+\end{figure}
+
+El análisis para el primer modo de propagación continúa en la figura \ref{fog:orlandi-analisis-campos-fases}. En las figuras \ref{fig:orlandi-analisis-campos-fases} a) y b) se muestra el comportamiento del campo eléctrico para dos momentos de tiempo diferentes. Se observa que el parche almacena cargas durante un breve tiempo, y las expele inmediatamente después. Esto se ve corroborado por el comportamiento del campo magnético normal a la superficie, mostrado en escala lineal en las figuras \ref{fig:orlandi-analisis-campos-fases} c) y d), para dos tiempos distintos, y donde se ven colores cuando el campo es positivo en la dirección perpendicular saliente a la superficie del parche. A través del uso de la regla de la mano derecha, se pueden deducir las direcciones de las corrientes sobre los puentes, que son las especificadas por flechas, y donde se observa que son opuestas en el primer modo. Es decir, de forma intuitiva, las corrientes son entrantes al parche de todas direcciones al mismo tiempo, y son salientes del mismo hacia todas direcciones en un tiempo subsiguiente. De esta forma, el parche posee cargas positivas completamente en un tiempo, y luego cargas negativas en el tiempo siguiente, lo cual coincide con la intuición del concepto de un primer modo de propagación, y con el análisis intuitivo detallado.
+
+El segundo modo de propagación, para la misma dirección y posición sobre el diagrama de dispersión (punto "M"), posee un comportamiento más complejo. Como se observa en la figura \ref{fig:orlandi-analisis-campos} e), el campo eléctrico presenta un cero en el centro de la celda unidad, en la figura f) es coherente con esta observación, dado que cerca del centro y de los puentes verticales no hay campo de \textit{fringing}. El campo magnético, por otro lado, mostrado en las figuras g) y h), nuevamente no parece permitir concebir corrientes sobre los puentes verticales, aunque sí en el interior del parche metálico propiamente dicho.
+
+El análisis de dos tiempos diferentes dentro del ciclo para el segundo modo de propagación, mostrado en las figuras \ref{fig:orlandi-analisis-campos-fases} e)-h), permite comprender más intuitivamente el comportamiento. Se observa que el parche central es excitado (posee campo eléctrico vertical) en dos tiempos diferentes, y sólo una de sus mitades lo es cada vez. Hay un desfasaje de $180^\circ$ entre ambos lados del parche. Observando el campo magnético, resula también intuitivo considerar que cuando la mitad izquierda del parche está excitada, es decir, cuando posee cargas almacenadas, formando un capacitor con el plano de tierra, se genera una corriente hacia la celda vecina, que posee un parche con tensión opuesta. En el lado derecho, el efecto es análogo. Es importante notar que, al contrario que en el caso del primer modo, en el segundo modo de propagación las corrientes de los puentes tienen el mismo sentido en cada tiempo.
+
+La figura \ref{fig:dibujito-modos} ilustra, de forma esquemática e informal, el comportamiento de la fase del campo eléctrico para ambos modos de propagación, de manera que se pueda apreciar el requerido aumento de frecuencia para la concreción del segundo modo.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\textwidth]{Modelado/modos-de-propagacion-ilustracion.pdf}
+	\caption{Comportamiento, para dos tiempos diferentes, de los campos eléctrico y magnético sobre una celda unitaria formada por un parche central y 4 puentes laterales, para el primer y segundo modo de propagación.}
+	\label{fig:dibujito-modos}
+\end{figure}
+
+
+\subsubsection{Efecto de la variación del ancho del sustrato}
+
+\subsubsection{Efecto del escalamiento de la celda unitaria}
+
+\subsubsection{Efecto de la variación del tamaño del parche metálico}
+
+\subsubsection{Variación de la longitud de los puentes}
+
+\subsubsection{Variación del ancho de los puentes}
+
+\subsubsection{Efecto de la variación del ancho del sustrato dieléctrico}
+
+\subsection{Celda de Yang}
+% Dibujo
+% Simulaciones como la figura 3.5 y 3.6
+% Explicar por qué es mejor, y por qué se le puede haber ocurrido a Yang plantearla.
+% Comentar sobre las dificultades de construcción
+% Comentar sobre la posibilidad de lograr tamaños menores
+% Comentar sobre la existencia de otras estructuras posibles
+% Comentar algunos efectos de variación de parámetros, si vale la pena y si son distintos a los de la celda orlandi. Sino, simplemente refenciar.
+
+\section{Modelado por líneas de transmisión}
 %%%%
 \lipsum
-\lipsum
-% Comentar cómo se logró periodicidad, vinculando las fases.
+% Caloz, pag 60, 67, 76, 79
+% Bidimensional, Caloz, pag 133
+% Rahman Stuchly.ç
+% Calculo de la inductancia de meander inductors: Stojanovic, Zivanov
+% Cuentas! Wu, Lin, Wang, Wang, Chen
+% Kim, Schutt-Ainé, 178. Modelado para PDN.
+%Venkateswaran, pag 40 en adelante.
+% Impedancia: hacer algo similar. Tesis Zheng, pag 8
+
+\subsection{TMM}
 %%%%
+\lipsum[2]
+% Caloz, pagina 144
+% Choi (tesis), pag 54
+\subsection{TLM}
+\label{subsubsec_tlm}
+%%%%
+\lipsum
+% Caloz, pag 155
+%%%%
+
+
 \section{Estudio de estructuras mediante TLM}
 \label{sec_estudio_tlm}
 %%%%

@@ -138,6 +138,7 @@ Para el caso en que las celdas unitarias son rectangulares, la red recíproca es
 \end{figure}
 
 \section{Teorema de Bloch-Floquet}
+\label{sec:bloch-floquet}
 
 El teorema Floquet fue presentado por Gaston Floquet en 1883, y explicita la forma canónica de las soluciones a ecuaciones diferenciales lineales ordinarias de coeficientes periódicos, de la forma $x' = A(t)x$, con $t \in \Re$, $X \in \Re^n$, donde $A(t)$ es una función periódica con periodo $p$. Si $x=\phi(t)$ es solución, entonces también lo es $x=\phi(x\pm np)$, con $n \in \mathbb{N}$. Esto significa que toda solución encontrada para el sistema con condiciones de contorno periódicas, es también periódica, con la misma periodicidad que las condiciones de borde, debiendo considerar, además, un factor de fase. Si bien el teorema aplica a ecuaciones de primer orden, toda ecuación de segundo orden puede ser transformada en un sistema de ecuaciones diferenciales de primer orden.
 
@@ -185,6 +186,7 @@ donde $\vec{\gamma}$ es el vector de onda cristalino, $\vec{r}$ es la posición 
 La idea intuitiva detrás del resultado radica en que si la estructura es infinitamente periódica, con celdas unitarias idénticas, las mismas deberían ser indistinguibles, por lo que los campos electromagnéticos presentarían también un comportamiento periódico, a excepción de un corrimiento de fase. Por lo tanto, se puede escribir:
 
 \begin{equation}
+	\label{eq:comportamiento-periodico-campo-bloch}
 	E(x,y,z+d) = e^{j \beta d} E(x,y,z)
 \end{equation}
 
@@ -394,132 +396,3 @@ El recorrido se completa con el camino entre el punto $M$ y el punto $\Gamma$, d
 
 Se debe tener en cuenta que, dado que existen distintos modos, frecuencias de incidencia mayores darían lugar a modos superiores, que compartirían el valor de $\beta_i$ con los modos inferiores. Esto se debe a que la diferencia de fase medida en los extremos de la celda unitaria de la red de Bravais no tiene en cuenta la cantidad de ciclos que le dieron origen (es decir, una diferencia de fase de $\phi$ da lugar al mismo $\beta_i$, $i=x,y$ que una diferencia de $\pi+2 n \pi$). Esto es esquematizado en la parte superior y los lados de las figuras que representan al arreglo periódico.
 
-\section{Modelos analíticos de estructuras uniplanares de banda prohibida electromagnética}
-\label{sec_analitico}
-
-% buena intro en rahmat (libro), pagina 35-37
-% Buscar las distintas formas, incluyendo Peano. Relación con FSS.
-% Buena intro esn Goussetis, Feresidis, Vardaxoglou.
-% Diseños para incidencia obliucua: Kim, Yand, Elsherbeni. Tambien en Lin, Li, Zhang.
-% Hilbert: McVAy, Engheta, Hoorfar.
-% Power loss analysis: Mohajer-Iravani, Ramahi, de Hindawi corp.
-% Kern, Douglas, Werner.
-% Analisis en Goussetis, Feresidis, paper posta. Tipos de resonancia.
-% Lamminen, Vimpari, Saily. 
-% Maci, Caiazzo, Cucini. Jodido, interesante. Leer.
-% Rahmat. Pagina 77 libro.
-% Engheta, pagina 290.
-
-% Lightline stuff. Rahmat, pagina 28. Caloz, pagina 139. Pozar pag 386
-
-
-El análisis de estructuras de banda prohibida electromagnética, así como de superficies selectoras de frecuencia (FSS), se suele realizar a través de simulaciones numéricas de onda completa, utilizando el método de elementos finitos (FEM) o métodos en el dominio del tiempo, como FDTD, dado que permiten la resolución de los problemas de forma tridimensional, lo que habilita al diseñador a conocer el comportamiento de configuraciones de una o más capas, así como los efectos de curvaturas y discontinuidades en la periodicidad. Estos métodos, si bien son flexibles, no otorgan intuición física y resultan computacionalmente demandantes. Análisis de tipo numérico en dos dimensiones han sido propuestos, principalmente utilizando el método de momentos, a partir de los cuales han surgido otras técnicas de estudio de las estructuras bidimensionales, basadas en la búsqueda de capacidades e inductancias equivalentes, dispuestas de forma tal que respuesta en frecuencia tenga un comportamiento similar al observado en las simulaciones. Estos métodos, que en ocasiones derivan en aproximaciones de primer orden a elementos circuitales, se denominan semi-analíticos, y se usan especialmente cuando la periodicidad es mucho menor a la longitud de onda incidente. Este tipo de análisis ha permitido la aplicación de otros métodos numéricos, como TMM (\textit{Transmission Matrix Method}) y TLM (\textit{Transmission-Line Matrix Method}), de mayor simplicidad y con suficiente acercamiento al problema físico para que el resultado resulte intuitivo para el diseño preliminar.
-
-Los métodos de modelado orientados a la descripción del comportamiento en el primer modo (en bajas frecuencias) no requieren de una simulación numérica de onda completa previa \cite{KimSchuttAine:AnalysisHybrid}. En ellos, como se muestra en la figura \ref{fig:circuito-equivalente-kim-parches}, las inductancias y capacidades surgen del análisis intuitivo y cuasiestático del efecto de cada aspecto de la geometría de la estructura metalodieléctrica de las celdas unitarias. Así, para las celdas de dicha figura, formadas por parches rectangulares unidos por puentes \textit{microstrip}, se debe considerar que cada parche presenta una capacidad contra el plano conductor ($C_p$), dada simplemente como la expresión de capacidad entre placas planas paralelas, y una inductancia $L_p$, dadas por:
-
-\begin{align}
-	\label{eq:Cp_Lp}
-	C_p = \frac{\epsilon_r \epsilon_0 b^2}{h} \\
-	L_p = \mu_0 h
-\end{align}
-
-Los parches cercanos dan lugar a una capacidad ($C_g$) \cite{Marcela:Tesis} \cite{Sievenpiper:Thesis} \cite{KimSchuttAine:AnalysisHybrid}, y los puentes entre parches generan una inductandia ($L_{puente}$) \cite{KimSchuttAine:AnalysisHybrid}:
-
-\begin{align}
-	\label{eq:cgap-y-lgap}
-	C_{gap} = \frac{b \epsilon_0 (1+\epsilon_r)}{\pi} \cosh^{-1} (a / g) \\
-	L_{puente} = 0.2\; \text{nH/mm} \cdot \ln (2\pi \frac{h}{w})
-\end{align}
-
-donde $a$ es el tamaño de la celda unitaria, $h$ es el ancho del dieléctrico y $w$ es el ancho del puente. Estos parámetros permiten calcular los valores de $Y$ y $Z$ requeridos para el análisis con líneas de transmisión cargadas, utilizados para calcular los diagramas de dispersión en la sección \ref{sec:diag-de-dispersion}.
-
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.9\textwidth]{Fundamentos/circuito-equivalente-celda-unitaria.pdf}
-	\caption{Circuito equivalente propuesto para el análisis de primer modo de una celda unitaria bidimensional arbitraria, propuesto por \cite{KimSchuttAine:AnalysisHybrid}}
-	\label{fig:circuito-equivalente-kim-parches}
-\end{figure}
-
-%\begin{figure}[htp]
-%	\centering
-%	\begin{circuitikz} \draw
-%		(0,0) -- (1,0)node[midway,scale=2,fill=white]{$\cdots$}
-%		-- (9,0) -- (10,0)node[midway,scale=2,fill=white]{$\cdots$}
-%		(0,2) -- (1,2)node[midway,scale=2,fill=white]{$\cdots$} 
-%		to [L,-o,l_=$L_p/2$] (2.5,2)
-%		to [L,o-o,l_=$L_p/2$] (4,2)
-%		to [L,o-o,l_=$L_{puente}/2$] (6,2)
-%		to [L,o-o,l_=$L_p/2$] (7.5,2)
-%		to [L,o-,l_=$L_p/2$] (9,2)
-%		-- (10,2)node[midway,scale=2,fill=white]{$\cdots$}
-%		(2.5,2) to [C,o-o,l_=$C_p$] (2.5,0)
-%		(7.5,2) to [C,o-o,l_=$C_p$] (7.5,0)
-%		(4,3) to [C,o-o,l^=$C_g$] (6,3);
-%		%			to [C,l=$C'_R \Delta_z$] (7,0)
-%		%		-- (9,0) to [L,l_=$L'_L / \Delta_z$] (9,2)
-%		%		-- (7,2)
-%		%		(9,2) -- (11,2)
-%		%		to [R,l=$R / \Delta_z$] (11,0)
-%		%		-- (9,0)
-%		%		(11,0) -- (12,0) -- (13,0)node[midway,scale=2,fill=white]{$\cdots$}
-%		%		(11,2) -- (12,2) -- (13,2)node[midway,scale=2,fill=white]{$\cdots$};
-%	\end{circuitikz}  	
-%	\caption{Circuito equivalente de porción de línea de transmisión cargada, de longitud $d$.}
-%	\label{fig:linea-transm-cargada-periodica}
-%\end{figure}
-
-Para el caso de las superficies de alta impedancia sin vías de conexión entre la geometría superior y el plano de tierra inferior, Tretyakov y otros (\cite{Tretyakov:AnalyticalModeling} \cite{Yakovlev:AnalyticalModelingHIS}) han propuesto un análisis centrado en la similitud con las FSS, considerando a las superficies EBG uniplanares como FSS con un plano de tierra. De esta manera es posible utilizar los modelos desarrollados durante el siglo \textsc{XX} para el análisis de las superficies selectoras de frecuencias, en el estudio de EBGs, dado que el comportamiento de banda prohibida se da por el mismo motivo que el comportamiento de filtro de las FSS \cite{Goussetis:TailoringAMCEBGCharacteristics}, relacionado a la frecuencia de resonancia del arreglo de elementos. Para ello, se considera el circuito equivalente de la figura \ref{fig:tretyankov-circuito-equivalente}, donde $Z_g$ es la impedancia que impone la FSS que se dispone sobre el plano dieléctrico, y $Z_d$ es la impedancia del conjunto formado por el dieléctrico y el plano conductor. De esta forma, la impedancia de superficie resulta del paralelo de ambas. La impedancia del conjunto dieléctrico-plano conductor fue analizada en el capítulo anterior, y depende de la polarización (TE o TM). La impedancia que impone el arreglo periódico bidimensional, la FSS, requiere de un análisis particular de cada caso, y los resultados analíticos en la literatura están limitados a arreglos de rectángulos, dipolos y cruces, y sus correspondientes estructuras complementarias.
-
-\begin{figure}
-\centering
-\begin{circuitikz} \draw
-	(0,2) to[transmission line, o-o,l=$Z_0$] (3,2)
-			to[generic, o-o,l=$Z_g$] (3,4)
-	(0,4) to[transmission line, o-o] (3,4)
-	(3,2) -- (5,2)
-			to[generic,o-o,l=$Z_d$] (5,4)
-			-- (3,4);
-\end{circuitikz}
-\caption{Circuito equivalente propuesto por \cite{Yakovlev:AnalyticalModelingHIS} para un EBG.}
-\label{fig:tretyankov-circuito-equivalente}
-\end{figure}
-
-Un planteo intuitivo de los resultados de Tretyankov requiere comenzar el análisis a partir del conocimiento de que, para ondas TM, como se demostró en la seccion \ref{sec:ondas-de-superficie}, y como se muestra en la figura \ref{fig:beta-reactancia-TM}, una superficie con impedancia inductiva es capaz de soportar ondas TM. la impedancia de un plano de tierra recubierto por un material dieléctrico, como se muestra en la ecuación \ref{eq:impedancia-superficie-tm-teorica}, da lugar a una impedancia $Z_d$ inductiva. Para lograr una impedancia superficial $Z_s$ menos inductiva, en vistas de disminuir el comportamiento de guía de ondas de la estructura, se debe imponer una impedancia $Z_g$ acorde.
-
-El metamaterial basado en FSS más usual, el arreglo de parches, da lugar a una impedancia $Z_g$ capacitiva, tanto por la capacidad impuesta entre los parches y el plano de tierra, como por la capacidad entre los parches adyacentes. Para frecuencias bajas, el comportamiento del circuito equivalente es inductivo, pero para frecuencias por encima de la de resonancia, el comportamiento es capacitivo. Por otro lado, es posible considerar, si los parches son lo suficientemente grandes, que los mismos presentan una inductancia, en serie con las capacidades parásitas descriptas antes. Un inductor en paralelo con el inductor correspondiente al plano conductor de la cara inferior del dieléctrico disminuye la inductancia total, por lo que se logra el efecto deseado. Finalmente, si los parches son conectados, como se mostró en la figura \ref{fig:circuito-equivalente-kim-parches}, la inductancia en paralelo con la capacidad entre parches acrecentará este efecto. Los efectos que se presentan por encima de la frecuencia de resonancia impiden que el análisis intuitivo describa la existencia de modos superiores, por lo que el análisis no es completo, lo que obliga a que la frecuencia de resonancia no esté muy por debajo de la frecuencia de ondas de superficie que se desea bloquear con la estructura EBG.
-
-
-\section{Modelado y simulación de metamateriales}
-\label{sec_simulacion_mtm}
-%%%%
-\lipsum
-% Un modelado medio simple se puede ver en la tesis de Choi, pag 90-99
-\subsection{Métodos de cavidades periódicas}
-\label{subsec_eigenfunctions}
-%%%%
-\lipsum
-% Fullwave: Baccarello, Paulotto, impreso.
-% Hacer estudio gráfico similar al CALOZ, pag 176.
-\subsection{Modelado por líneas de transmisión}
-%%%%
-\lipsum
-% Caloz, pag 60, 67, 76, 79
-% Bidimensional, Caloz, pag 133
-% Rahman Stuchly.ç
-% Calculo de la inductancia de meander inductors: Stojanovic, Zivanov
-% Cuentas! Wu, Lin, Wang, Wang, Chen
-% Kim, Schutt-Ainé, 178. Modelado para PDN.
-%Venkateswaran, pag 40 en adelante.
-% Impedancia: hacer algo similar. Tesis Zheng, pag 8
-
-\subsubsection{TMM}
-%%%%
-\lipsum[2]
-% Caloz, pagina 144
-% Choi (tesis), pag 54
-\subsubsection{TLM}
-\label{subsubsec_tlm}
-%%%%
-\lipsum
-% Caloz, pag 155

@@ -56,7 +56,12 @@ De las ecuaciones \ref{eq:Maxwell} se deduce que las fuentes de campo electromag
 \end{align}
 %%%%
 
-Dado que la mayor parte del análisis se realiza sobre campos de comportamiento armónico y en régimen permanente, la dependencia del tiempo de la ecuaciones de Maxwell se suele simplificar, y se puede utilizar notación fasorial. Para esto, todos los campos se consideran complejos, y la dependencia temporal, $e^{j \omega t}$, se suele dejar implícita, dado que resulta común para todos los términos. Considerando que cualquier variación en el tiempo físicamente realizable puede ser descompuesta según la transformada de Fourier, no hay pérdida de generalidad al tratar a las ecuaciones de Maxwell de esta manera. Así, las derivadas respecto del tiempo resultan más sencillas, y los vectores de campos se vuelven funciones vectoriales complejas dependientes sólo de coordenadas espaciales \cite{Collin:GuidedWaves}. El resultado de esta simplificación se observa en el lado derecho de la ecuación \ref{eq:Maxwell}.
+
+A partir de las ecuaciones de Maxwell (\ref{eq:Maxwell}), y considerando relaciones constitutivas que no varían en el tiempo ni en función de la frecuencia (no hay dispersión), y donde no hay cargas libres ni corrientes ($\rho=0$ y $\vec{J}=0$), donde el material es isótropo y macroscópico, y donde no se consideran pérdidas, es posible, utilizando la linealidad de dichas ecuaciones, separar el comportamiento en el tiempo y en el espacio, expandiendo los campos en modos armónicos, y expresándolos como combinaciones lineales de los mismos. Los modos, entonces, resultan de un patrón espacial ($\vec{H}(\vec{r})$ o $\vec{E}(\vec{r})$) multiplicado por un patrón temporal, este último expresado en forma de exponencial compleja o fasorial.
+
+Dado que la mayor parte del análisis se realiza sobre campos de comportamiento armónico y en régimen permanente, la dependencia del tiempo de la ecuaciones de Maxwell se suele simplificar, y la dependencia temporal, $e^{j \omega t}$, se suele dejar implícita, dado que resulta común para todos los términos. Así, las derivadas respecto del tiempo resultan más sencillas, y los vectores de campos se vuelven funciones vectoriales complejas dependientes sólo de coordenadas espaciales \cite{Collin:GuidedWaves}. El resultado de esta simplificación se observa en el lado derecho de la ecuación \ref{eq:Maxwell}.
+
+Bajo estas consideraciones, resulta claro que las configuraciones posibles de campo son transversales: Para cualquier campo magnético $\vec{H}(\vec{r}) = \vec{a} \exp(j \vec{\beta} \cdot \vec{r})$, la ecuación de la divergencia del campo magnético obliga a que $\vec{a} \cdot \vec{\beta} = 0$.
 
 \subsection{Campos en medios materiales}
 \label{subsec_campos_en_dielectricos}
@@ -128,6 +133,38 @@ H_y \\
 H_z
 \end{bmatrix}
 \end{equation}
+
+\subsection{Análisis de automodos}
+\label{sec:automodos}
+
+Las ecuaciones del rotor de las ecuaciones de Maxwell (\ref{eq:Maxwell}) pueden ser desacopladas\footnote{El desacople se realiza de la siguiente manera:
+	\begin{align}
+		\nabla \times \vec{H}(\vec{r}) + j\omega\vec{D}(\vec{r}) = 0 \\
+		\frac{1}{\epsilon_r} \nabla \times \vec{H}(\vec{r}) + j\omega\epsilon_0\vec{E}(\vec{r}) = 0 \\
+		\nabla \times \left(\frac{1}{\epsilon_r} \nabla \times \vec{H}(\vec{r})\right)= - \nabla \times (j\omega\epsilon_0\vec{E}(\vec{r})) = -j \omega\epsilon_0 \nabla \times \vec{E}(\vec{r}) \\
+		\nabla \times \left(\frac{1}{\epsilon_r} \nabla \times \vec{H}(\vec{r})\right) = -j \omega\epsilon_0 \mu \vec{H}(\vec{r})
+	\end{align}
+	
+	}, de manera que resulte la siguiente ecuación:
+	
+	\begin{align}
+		\label{eq:master-eq}
+		\nabla \times \left(\frac{1}{\epsilon_r} \nabla \times \vec{H}(\vec{r}) \right) = \left(\frac{\omega}{c}\right)^2 \vec{H}(\vec{r})
+	\end{align}
+
+Una expresión similar se puede obtener para el campo eléctrico. Sin embargo, es posible también obtener el campo eléctrico a partir de la ecuación de divergencia, una vez resuelta la ecuación \ref{eq:master-eq}:
+
+\begin{align}
+	\vec{E}(\vec{r}) = \frac{j}{\omega \epsilon_0 \epsilon_r} \nabla \times \vec{H}(\vec{r})
+\end{align}
+
+La ecuación \ref{eq:master-eq} es una ecuación de autovalores: El lado izquierdo puede ser considerado un operador, $\hat{\Theta}$, de manera que resulte:
+
+\begin{align}
+	\hat{\Theta} \vec{H}(\vec{r}) = \left(  \frac{\omega}{c} \right)^2 \vec{H}(\vec{r})
+\end{align}
+
+Donde los autovectores son los valores que toma $\vec{H}(\vec{r})$, es decir, los patrones espaciales, y los autovalores son $(\omega/c)^2$, proporcionales a las frecuencias de esos modos. El operador $\hat{\Theta}$ es lineal\footnotesize{Es posible demostrar que, además, el operador es hermítico, lo que permite deducir que: los autovalores serán siempre no-negativos, y por lo tanto las frecuencias $\omega$ serán siempre reales; cualesquiera dos modos armónicos de diferentes frecuencias serán siempre ortogonales, y los modos que comparten frecuencia, los modos degenerados, surgen por las simetrías e inviariancias del medio; y que se cumple el teorema variacional, que indica que los autovalores más pequeños coinciden con los modos de menor energía \cite{Joannopoulos:PhotonicCrystals}.}, de manera que cualquier combinación lineal de soluciones es también solución. Este acercamiento a las ecuaciones de Maxwell permite resolver problemas tridimensionales, especialmente los relacionados a estructuras resonantes cerradas y estructuras periódicas.
 
 \subsection{Condiciones de borde} \label{sec:condiciones-borde}
 
@@ -557,7 +594,7 @@ Aplicando las ecuaciones rotacionales de Maxwell (Faraday y Ampère en la ecuaci
 	\label{eq:campos_guia_de_ondas}
 \end{equation}
 
-donde se definió $gamma_t^2 = \gamma^2 - \beta_z^2$ como el número de onda de corte, siendo $\gamma = \omega \sqrt{\mu \epsilon}$, que para el caso sin pérdidas es, además, $\gamma = \beta = 2\pi/\lambda$, el número de onda  en el material que rellena la línea de transmisión.
+donde se definió $\gamma_t^2 = \gamma^2 - \beta_z^2$ como el número de onda de corte, siendo $\gamma = \omega \sqrt{\mu \epsilon}$, que para el caso sin pérdidas es, además, $\gamma = \beta = 2\pi/\lambda$, el número de onda  en el material que rellena la línea de transmisión.
 
 Cuando no existen componentes de campo en la dirección de propagación, $z$, según las ecuaciones \ref{eq:campos_guia_de_ondas}, no existen campos en las direcciones transversales si $\gamma_t \neq 0$. La indeterminación generada por el hecho de que $\gamma_t$ se anula da como resultado que $\beta_z = \omega \sqrt{\mu \epsilon} = \beta$, de modo que no existe número de onda de corte, y haciendo que la impedancia de onda sea $\eta$.  A este modo de propagación sobre una guía de ondas se lo llama TEM (transversal electromagnético). Los campos transversales satisfacen que el Laplaciano es 0, de modo que se comportan como un campo electrostático, y este es el motivo por el cual no pueden existir ondas TEM en guías de ondas de un único conductor.
 
