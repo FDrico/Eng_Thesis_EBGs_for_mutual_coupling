@@ -186,20 +186,69 @@ La figura \ref{fig:dibujito-modos} ilustra, de forma esquemática e informal, el
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.4\textwidth]{Modelado/modos-de-propagacion-ilustracion.pdf}
-	\caption{Comportamiento, para dos tiempos diferentes, de los campos eléctrico y magnético sobre una celda unitaria formada por un parche central y 4 puentes laterales, para el primer y segundo modo de propagación.}
+	\caption{Comportamiento, para dos tiempos diferentes, del campo eléctrico sobre una celda unitaria formada por un parche central y 4 puentes laterales, para el primer y segundo modo de propagación.}
 	\label{fig:dibujito-modos}
 \end{figure}
 
 
-\subsubsection{Efecto de la variación del ancho del sustrato}
+Para comprender el efecto de la variación de distintos parámetros geométricos, se realizaron varias simulaciones, obteniendo de ellas los diagramas de dispersión.
+
+\subsubsection{Análisis de un diagrama de dispersión típico}
+
+En la figura \ref{fig:diag-dispersion-tipico} se puede observar un diagrama de dispersión típico.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{Modelado/ejemplo-diag-disp.pdf}
+	\caption{Ejemplo típico de un diagrama de dispersión que presenta un metamaterial bidimensional.}
+	\label{fig:diag-dispersion-tipico}
+\end{figure}
+
+En azul se puede observar el primer modo de propagación, en marrón el segundo, en verde el tercero, en rojo en cuarto y en violeta el quinto. Además, se dibujaron las líneas de vista (\textit{light-lines}) para vacío y para FR-4, que indican el comportamiento de una onda plana que circula por esos materiales. Representan el corte del diagrama de dispersión tridimensional mostrado en la figura \ref{fig:diagrama-dispersion-vacio-3d} sobre los bordes de la celda de Brillouin, como se ve en la figura \ref{fig:diagrama-dispersion-vacio-2d}, para los dos materiales. La línea de vista del FR-4 presenta, naturalmente, una pendiente menor a la del vacío, pues la velocidad de propagación sobre ese medio es menor.
+
+La línea de vista del vacío separa las llamadas ondas lentas (\textit{slow waves}), que poseen una velocidad de fase menor a la del vacío ($c$), de las ondas rápidas (\textit{fast waves}), con velocidad de fase superior a $c$. Dado que, para el vacío, $k=\omega/c$, si se extiende a definición a dos dimensiones, se obtiene que $k_x^2 + k_y^2 = \omega^2/c^2$. Cuando el valor de $|k|$ supera al correspondiente a la propagación en el vacío para la misma frecuencia, necesariamente la velocidad de fase es menor ($k = \omega / v_p$). Cuando la velocidad es mayor, es decir, cuando se analizan resultados para pares $(\omega,k)$ que están por encima de la línea de vista, el estudio no se da sobre ondas de superficie, sino sobre ondas incidentes o reflejadas con ángulo determinado. En algunos casos \cite{Maci:pole-zero-matching}, para algunos usos de metamateriales (especialmente cuando se los diseña de forma que actúen como paredes conductoras magnéticas), esa zona del diagrama de dispersión resulta de gran utilidad \cite{Yang:EBGAntennas}.
+
+Las zonas demarcadas en gris representan, para cada una de las direcciones analizadas, la zona de frecuencias prohibidas o \textit{band-gap}. En particular, para la zona $\Gamma-X$, el primer \textit{band-gap} se demarcó en rojo. Se debe tener en cuenta que se calculan los \textit{band-gaps} para  las tres direcciones de forma separada. Existe un \textit{band-gap} completo (en azul), cuando existe en todas las direcciones analizadas. Para las frecuencias dentro de la zona prohibida completa, no existirá ángulo de incidencia que permita su propagación. Es importante notar que, para los intervalos $\Gamma-X$ y $M-\Gamma$, las zonas prohibidas para la propagación de ondas lentas (\textit{slow-waves}) de superficie se calculan por debajo de la línea de vista del vacío. Por encima de dicha línea, las ondas se propagan libremente.
+
+En general, el diseño de EBGs tiene como objetivo aumentar el ancho de la banda prohibida de frecuencias para la propagación de ondas de superficie, la variación de la frecuencia central de los \textit{band-gaps}, y la independización del mismo de la dirección de propagación (que equivale a lograr \textit{band-gaps} completos). Estos objetivos se logran modificando la geometría de la celda unitaria, aumentando el acoplamiento entre las mismas y conectando los parches al plano de tierra \cite{Marcela:Tesis}. La independización de las zonas prohibidas para cualquier dirección azimutal de propagación de ondas de superficie requiere celdas simétricas, aunque para ciertas aplicaciones la anisotropía es buscada \cite{Maci:Pole-zero-matching}.
+
+El diagrama de dispersión, además, da una idea de las velocidades de fase ($v_p = w/k$) y grupo ($v_g = d\omega / dk$) para los modos existentes.
+
+
+
+%%%% ESTARRIA MUY BUENO EN ALGUN MOMENTO PONER UN DIAGRAMA DE DISPERSION DE UN SLAB DESNUDO Y OTRO DE UN SLAB CON DIELECTRICO; PARA UNIIR CON LA PARTE TEÓRICA ANTERIOR.
+
+\subsubsection{Efecto de la variación del ancho del puente \textit{microstrip}}
+
+La primera variación analizada es la del ancho de los puentes \textit{microstrip} que unen a los parches metálicos que conforman la estructura. Estableciendo una celda de $2\;\text{cm}$ de lado, y un parche de $1.8\;\text{cm}$, para el caso de sustrato FR4 de $1.6\;\text{mm}$ de espesor, se obtuvieron los diagramas de dispersión sobre el borde de la celda de Brillouin que se muestran en la figura \ref{fig:diagdisp-orlandi-variacion-ancho-puente}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/Orlandi-DeltaAnchoConector.pdf}
+	\caption{Diagramas de dispersión para la variación del ancho de los puentes microstrip que conforman una celda unitaria cuadrada, de lado $2\;\text{cm}$, parche de $1.8\;\text{cm}$, con sustrato de FR-4 de $1.6\;\text{mm}$ de espesor.}
+	\label{fig:diagdisp-orlandi-variacion-ancho-puente}
+\end{figure}
+
+En la misma se observa que la formación de una zona prohibida completa entre los dos primeros modos de propagación, se ve dificultada cuando el ancho del puente aumenta, debido a que, para todas las direcciones de propagación, el ancho de los \textit{band-gaps} disminuye drásticamente.
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/Orlandi-DeltaAnchoConector-comparacion.pdf}
+	\caption{Diagramas de dispersión para la variación del ancho de los puentes microstrip que conforman una celda unitaria cuadrada, de lado $2\;\text{cm}$, parche de $1.8\;\text{cm}$, con sustrato de FR-4 de $1.6\;\text{mm}$ de espesor.}
+	\label{fig:comparacion-diagdisp-orlandi-variacion-ancho-puente}
+\end{figure}
+
+La principal causa se puede deducir de la figura \ref{fig:comparacion-diagdisp-orlandi-variacion-ancho-puente}, donde es notorio el crecimiento generalizado de las frecuencias necesarias para obtener el primer modo de propagación (la curva azul de la figura \ref{fig:diagdisp-orlandi-variacion-ancho-puente} se eleva), lo que se condice con una aumento en la velocidad de propagación en el metamaterial. Una explicación intuitiva, válida únicamente para las frecuencias en que se puede aplicar el modelo cuasiestático y considerar corrientes y tensiones sobre los conductores que conforman la estructura, se basa en la posible disminución de la resistencia al paso de corriente, lo que permite una carga y descarga del capacitor de placas planas paralelas (formado por el parche y el plano de tierra) más rápida.
+
+Para modos superiores, especialmente para el rango de frecuencias entre el cuarto y el quinto modo, existe una zona prohibida, pero se da para frecuencias mucho más altas, de escaso valor práctico.
+
 
 \subsubsection{Efecto del escalamiento de la celda unitaria}
 
 \subsubsection{Efecto de la variación del tamaño del parche metálico}
 
 \subsubsection{Variación de la longitud de los puentes}
-
-\subsubsection{Variación del ancho de los puentes}
 
 \subsubsection{Efecto de la variación del ancho del sustrato dieléctrico}
 
