@@ -159,6 +159,31 @@
       \field{title}{Apuntes de Electromagnetismo}
       \field{year}{2004}
     \endentry
+    \entry{Joannopoulos:PhotonicCrystals}{book}{}
+      \name{author}{2}{}{%
+        {{hash=fa9afa226fa9a838261e3386e20890c2}{%
+           family={Joannopoulos},
+           family_i={J\bibinitperiod},
+           given={J.\bibnamedelimi D.},
+           given_i={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=fe5be6ff1427708cf6dac16d929f043a}{%
+           family={Johnson},
+           family_i={J\bibinitperiod},
+           given={S.\bibnamedelimi G.},
+           given_i={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{09c485abb520b01511900c188c77cbfa}
+      \strng{fullhash}{09c485abb520b01511900c188c77cbfa}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Photonic Crystals: Molding the flow of light}
+      \field{year}{2008}
+    \endentry
     \entry{Barlow:SurfaceWaves}{article}{}
       \name{author}{2}{}{%
         {{hash=9cb93b09eb80e787406100842d809ce9}{%
@@ -732,6 +757,87 @@
       \field{title}{Tayloring the AMC and EBG characteristics of periodic metallic arrays printed on grounded dielectric substrate}
       \field{year}{2006}
     \endentry
+    \entry{Mohajer:SupressionBand}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1449373c66841b6ba7ee0d3e3e4f3238}{%
+           family={Mohajer-Iravani},
+           family_i={M\bibinithyphendelim I\bibinitperiod},
+           given={Baharak},
+           given_i={B\bibinitperiod}}}%
+        {{hash=b325e056a5d9594cff5c607d0c06402c}{%
+           family={Ramahi},
+           family_i={R\bibinitperiod},
+           given={Omar\bibnamedelima M.},
+           given_i={O\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d3ea6c402c8205136ff4633408de799a}
+      \strng{fullhash}{d3ea6c402c8205136ff4633408de799a}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Hindawi Publishing Corporation: International Journal of Antennas and Propagation}
+      \field{title}{On the suppression band and bandgap of planar electromagnetic bandgap structures}
+      \field{year}{2014}
+    \endentry
+    \entry{Yang:EBGAntennas}{book}{}
+      \name{author}{2}{}{%
+        {{hash=eb5d5ae09823dbd21f6e0bbbf8a1b5ba}{%
+           family={Yang},
+           family_i={Y\bibinitperiod},
+           given={F.},
+           given_i={F\bibinitperiod}}}%
+        {{hash=07654a0d3a6117987a4a96c6c0e06bd9}{%
+           family={Rahmat-Samii},
+           family_i={R\bibinithyphendelim S\bibinitperiod},
+           given={Y.},
+           given_i={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{02fddd1d2c86bd7cb0217ff535a4506a}
+      \strng{fullhash}{02fddd1d2c86bd7cb0217ff535a4506a}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Electromagnetic Band Gap Structures in Antenna Engineering}
+      \field{year}{2009}
+    \endentry
+    \entry{Maci:Pole-zero-matching}{article}{}
+      \name{author}{4}{}{%
+        {{hash=d3e18f466901c25240e4398097282a7a}{%
+           family={Maci},
+           family_i={M\bibinitperiod},
+           given={Stefano},
+           given_i={S\bibinitperiod}}}%
+        {{hash=536452c003692bdf1bef57dcdc0a909f}{%
+           family={Caiazzo},
+           family_i={C\bibinitperiod},
+           given={Marco},
+           given_i={M\bibinitperiod}}}%
+        {{hash=a56cbf0bac1da704e5d768141cd6d67c}{%
+           family={Cucini},
+           family_i={C\bibinitperiod},
+           given={Alession},
+           given_i={A\bibinitperiod}}}%
+        {{hash=900c38fc082e05cefeccd6d0c605929b}{%
+           family={Casaletti},
+           family_i={C\bibinitperiod},
+           given={Massimiliano},
+           given_i={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{7ba89ee1e122c9bb32e042709a788d03}
+      \strng{fullhash}{2bcf0ce162687001d062d521a21b4ead}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
+      \field{title}{A Pole-Zero Matching Method for EBG Surfaces Composed of a Dipole FSS Printed on a Grounded Dielectric Slab}
+      \field{year}{2005}
+    \endentry
     \entry{ThummWiesbeck:CharacteristicImpedance}{article}{}
       \name{author}{2}{}{%
         {{hash=fe298ec663bb2b23033123946835044e}{%
@@ -784,55 +890,51 @@
       \field{title}{EMC Analysis Methods and Computational Models}
       \field{year}{1997}
     \endentry
-    \entry{Yang:EBGAntennas}{book}{}
+    \entry{Kumar:radiating}{article}{}
       \name{author}{2}{}{%
-        {{hash=eb5d5ae09823dbd21f6e0bbbf8a1b5ba}{%
-           family={Yang},
-           family_i={Y\bibinitperiod},
-           given={F.},
-           given_i={F\bibinitperiod}}}%
-        {{hash=07654a0d3a6117987a4a96c6c0e06bd9}{%
-           family={Rahmat-Samii},
-           family_i={R\bibinithyphendelim S\bibinitperiod},
-           given={Y.},
-           given_i={Y\bibinitperiod}}}%
+        {{hash=195fd44e31dba6df5ee8dacd5035eab8}{%
+           family={Kumar},
+           family_i={K\bibinitperiod},
+           given={Girish},
+           given_i={G\bibinitperiod}}}%
+        {{hash=cc1562c302be40d9160fe1c134e80686}{%
+           family={Gupta},
+           family_i={G\bibinitperiod},
+           given={Kuldip.\bibnamedelimi C.},
+           given_i={K\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{02fddd1d2c86bd7cb0217ff535a4506a}
-      \strng{fullhash}{02fddd1d2c86bd7cb0217ff535a4506a}
+      \strng{namehash}{8d36a691c7352563b944248bbc328e6e}
+      \strng{fullhash}{8d36a691c7352563b944248bbc328e6e}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Electromagnetic Band Gap Structures in Antenna Engineering}
-      \field{year}{2009}
+      \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
+      \field{title}{Broad-band microstrip antennas using additional resonators gap-coupled to the radiating edges}
+      \field{year}{1984}
     \endentry
-    \entry{Joannopoulos:PhotonicCrystals}{book}{}
+    \entry{Kumar:Non-radiating}{article}{}
       \name{author}{2}{}{%
-        {{hash=fa9afa226fa9a838261e3386e20890c2}{%
-           family={Joannopoulos},
-           family_i={J\bibinitperiod},
-           given={J.\bibnamedelimi D.},
-           given_i={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=fe5be6ff1427708cf6dac16d929f043a}{%
-           family={Johnson},
-           family_i={J\bibinitperiod},
-           given={S.\bibnamedelimi G.},
-           given_i={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=195fd44e31dba6df5ee8dacd5035eab8}{%
+           family={Kumar},
+           family_i={K\bibinitperiod},
+           given={Girish},
+           given_i={G\bibinitperiod}}}%
+        {{hash=cc1562c302be40d9160fe1c134e80686}{%
+           family={Gupta},
+           family_i={G\bibinitperiod},
+           given={Kuldip.\bibnamedelimi C.},
+           given_i={K\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Princeton University Press}%
-      }
-      \strng{namehash}{09c485abb520b01511900c188c77cbfa}
-      \strng{fullhash}{09c485abb520b01511900c188c77cbfa}
+      \strng{namehash}{8d36a691c7352563b944248bbc328e6e}
+      \strng{fullhash}{8d36a691c7352563b944248bbc328e6e}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Photonic Crystals: Molding the flow of light}
-      \field{year}{2008}
+      \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
+      \field{title}{Nonradiating edges and four edges gap-coupled multiple resonator broad-band microstrip antennas}
+      \field{year}{1985}
     \endentry
     \entry{Markos:PhotonicCrystals}{book}{}
       \name{author}{2}{}{%
@@ -998,52 +1100,6 @@
       \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
       \field{title}{On Surface-Wave coupling between elements of Large Arrays}
       \field{year}{1965}
-    \endentry
-    \entry{Kumar:Non-radiating}{article}{}
-      \name{author}{2}{}{%
-        {{hash=195fd44e31dba6df5ee8dacd5035eab8}{%
-           family={Kumar},
-           family_i={K\bibinitperiod},
-           given={Girish},
-           given_i={G\bibinitperiod}}}%
-        {{hash=cc1562c302be40d9160fe1c134e80686}{%
-           family={Gupta},
-           family_i={G\bibinitperiod},
-           given={Kuldip.\bibnamedelimi C.},
-           given_i={K\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-      }
-      \strng{namehash}{8d36a691c7352563b944248bbc328e6e}
-      \strng{fullhash}{8d36a691c7352563b944248bbc328e6e}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
-      \field{title}{Nonradiating edges and four edges gap-coupled multiple resonator broad-band microstrip antennas}
-      \field{year}{1985}
-    \endentry
-    \entry{Kumar:radiating}{article}{}
-      \name{author}{2}{}{%
-        {{hash=195fd44e31dba6df5ee8dacd5035eab8}{%
-           family={Kumar},
-           family_i={K\bibinitperiod},
-           given={Girish},
-           given_i={G\bibinitperiod}}}%
-        {{hash=cc1562c302be40d9160fe1c134e80686}{%
-           family={Gupta},
-           family_i={G\bibinitperiod},
-           given={Kuldip.\bibnamedelimi C.},
-           given_i={K\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-      }
-      \strng{namehash}{8d36a691c7352563b944248bbc328e6e}
-      \strng{fullhash}{8d36a691c7352563b944248bbc328e6e}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
-      \field{title}{Broad-band microstrip antennas using additional resonators gap-coupled to the radiating edges}
-      \field{year}{1984}
     \endentry
     \entry{Malkomes:MutualCoupling}{article}{}
       \name{author}{1}{}{%
