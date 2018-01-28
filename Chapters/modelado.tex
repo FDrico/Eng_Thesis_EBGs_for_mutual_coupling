@@ -204,7 +204,7 @@ En la figura \ref{fig:diag-dispersion-tipico} se puede observar un diagrama de d
 	\label{fig:diag-dispersion-tipico}
 \end{figure}
 
-En azul se puede observar el primer modo de propagación, en marrón el segundo, en verde el tercero, en rojo en cuarto y en violeta el quinto. Además, se dibujaron las líneas de vista (\textit{light-lines}) para vacío y para FR-4, que indican el comportamiento de una onda plana que circula por esos materiales. Representan el corte del diagrama de dispersión tridimensional mostrado en la figura \ref{fig:diagrama-dispersion-vacio-3d} sobre los bordes de la celda de Brillouin, como se ve en la figura \ref{fig:diagrama-dispersion-vacio-2d}, para los dos materiales. La línea de vista del FR-4 presenta, naturalmente, una pendiente menor a la del vacío, pues la velocidad de propagación sobre ese medio es menor.
+La línea azul corresponde al primer modo de propagación, la marrón al segundo, la verde al tercero, la roja al cuarto y la violeta al quinto. Además, se dibujaron las líneas de vista (\textit{light-lines}) para vacío y para FR-4, que indican el comportamiento de una onda plana que circula por esos materiales. Representan el corte del diagrama de dispersión tridimensional mostrado en la figura \ref{fig:diagrama-dispersion-vacio-3d} sobre los bordes de la celda de Brillouin, como se ve en la figura \ref{fig:diagrama-dispersion-vacio-2d}, para los dos materiales. La línea de vista del FR-4 presenta, naturalmente, una pendiente menor a la del vacío, pues la velocidad de propagación sobre ese medio es menor.
 
 La línea de vista del vacío separa las llamadas ondas lentas (\textit{slow waves}), que poseen una velocidad de fase menor a la del vacío ($c$), de las ondas rápidas (\textit{fast waves}), con velocidad de fase superior a $c$. Dado que, para el vacío, $k=\omega/c$, si se extiende a definición a dos dimensiones, se obtiene que $k_x^2 + k_y^2 = \omega^2/c^2$. Cuando el valor de $|k|$ supera al correspondiente a la propagación en el vacío para la misma frecuencia, necesariamente la velocidad de fase es menor ($k = \omega / v_p$). Cuando la velocidad es mayor, es decir, cuando se analizan resultados para pares $(\omega,k)$ que están por encima de la línea de vista, el estudio no se da sobre ondas de superficie, sino sobre ondas incidentes o reflejadas con ángulo determinado. En algunos casos \cite{Maci:pole-zero-matching}, para algunos usos de metamateriales (especialmente cuando se los diseña de forma que actúen como paredes conductoras magnéticas), esa zona del diagrama de dispersión resulta de gran utilidad \cite{Yang:EBGAntennas}.
 
@@ -225,7 +225,7 @@ La primera variación analizada es la del ancho de los puentes \textit{microstri
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{Modelado/Orlandi-DeltaAnchoConector.pdf}
-	\caption{Diagramas de dispersión para la variación del ancho de los puentes microstrip que conforman una celda unitaria cuadrada, de lado $2\;\text{cm}$, parche de $1.8\;\text{cm}$, con sustrato de FR-4 de $1.6\;\text{mm}$ de espesor.}
+	\caption{Diagramas de dispersión para la variación del ancho de los puentes \textit{microstrip} que conforman una celda unitaria cuadrada, de lado $2\;\text{cm}$, parche de $1.8\;\text{cm}$, con sustrato de FR-4 de $1.6\;\text{mm}$ de espesor.}
 	\label{fig:diagdisp-orlandi-variacion-ancho-puente}
 \end{figure}
 
@@ -235,22 +235,115 @@ En la misma se observa que la formación de una zona prohibida completa entre lo
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{Modelado/Orlandi-DeltaAnchoConector-comparacion.pdf}
-	\caption{Diagramas de dispersión para la variación del ancho de los puentes microstrip que conforman una celda unitaria cuadrada, de lado $2\;\text{cm}$, parche de $1.8\;\text{cm}$, con sustrato de FR-4 de $1.6\;\text{mm}$ de espesor.}
+	\caption{Comparación del ancho del primer band-gap (entre el primer y el segundo modo de propagación) para las tres direcciones analizadas, en función del ancho del puente que une los parches metálicos.}
 	\label{fig:comparacion-diagdisp-orlandi-variacion-ancho-puente}
 \end{figure}
 
 La principal causa se puede deducir de la figura \ref{fig:comparacion-diagdisp-orlandi-variacion-ancho-puente}, donde es notorio el crecimiento generalizado de las frecuencias necesarias para obtener el primer modo de propagación (la curva azul de la figura \ref{fig:diagdisp-orlandi-variacion-ancho-puente} se eleva), lo que se condice con una aumento en la velocidad de propagación en el metamaterial. Una explicación intuitiva, válida únicamente para las frecuencias en que se puede aplicar el modelo cuasiestático y considerar corrientes y tensiones sobre los conductores que conforman la estructura, se basa en la posible disminución de la resistencia al paso de corriente, lo que permite una carga y descarga del capacitor de placas planas paralelas (formado por el parche y el plano de tierra) más rápida.
 
-Para modos superiores, especialmente para el rango de frecuencias entre el cuarto y el quinto modo, existe una zona prohibida, pero se da para frecuencias mucho más altas, de escaso valor práctico.
+Para modos superiores, especialmente para el rango de frecuencias entre el cuarto y el quinto modo, existe una zona prohibida que se extiende en todas direcciones, pero se da para frecuencias mucho más altas, de escaso valor práctico.
 
-
+\clearpage
 \subsubsection{Efecto del escalamiento de la celda unitaria}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/Orlandi-DeltaTamanioCelda-RelacionParcheFija.pdf}
+	\caption{Diagramas de dispersión para la variación del ancho de las celdas unitarias (y, en consecuencia, también del parche que contiene) que conforman una celda unitaria cuadrada. El lado del parche es $3/4$ del lado de la celda unitaria. El sustrato de FR-4 de $1.6\;\text{mm}$ de espesor.}
+	\label{fig:diagdisp-orlandi-variacion-tam-celda-unitaria}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/Orlandi-DeltaTamanioCelda-RelacionParcheFija-Comparacion.pdf}
+	\caption{Compraración del ancho del primer band-gap (entre el primer y el segundo modo de propagación) para las tres direcciones analizadas, en función del tamaño de la celda unitaria.}
+	\label{fig:comparacion-diagdisp-orlandi-variacion-tam-celda-unitaria}
+\end{figure}
+
+Un escalamiento de la celda unitaria, debido a la linealidad de las ecuaciones de Maxwell, debería únicamente generar un cambio en las frecuencias centrales de los \textit{band-gaps}. Para celdas unitarias pequeñas, las frecuencias centrales de las zonas prohibidas son altas, y resulta más difícil obtener un \textit{bandgap} completo, como se observa en la figura \ref{fig:diagdisp-orlandi-variacion-tam-celda-unitaria}.
+
+En la figura \ref{fig:comparacion-diagdisp-orlandi-variacion-tam-celda-unitaria} se puede observar el comportamiento del primer \textit{bandgap} (ubicado entre el primer y el segundo modo de propagación), en función del tamaño de la celda unitaria analizada. A medida que la misma disminuye, las frecuencias centrales decaen a un ritmo de $sarasa$. La variación del tamaño de la celda unitaria, por sí solo, facilita la superposición de zonas prohibidas en todas las direcciones sólo para frecuencias bajas, y cuando la celda unitaria es grande. La superposición de las tres direcciones de propagación analizadas se puede observar en la gráfica inferior de la figura \ref{fig:comparacion-diagdisp-orlandi-variacion-tam-celda-unitaria}.
+
+El comportamiento de la primer zona prohibida se puede explicar intuitivamente considerando que, de no variar la velocidad de propagación en el medio, y dado que $\omega =k*v_p$, entonces al variar el número de onda requerido por aumentar el tamaño de la celda unitaria (disminuye, permitiendo que el primer modo se corresponda con una longitud de onda mayor), el valor de $\omega$ debe disminuir en consecuencia.
+
+A este efecto se debe añadir el correspondiente al aumento del efecto capacitivo por el aumento del tamaño del parche. Si se considera, como se explicó antes, que un análisis a bajas frecuencias, utilizando razonamientos cuasiestáticos, nos conduce a un filtro LC equivalente. La frecuencia de resonancia de ese tipo de filtro es, en general, y sin considerar pérdidas, $f_r \approx 1/\sqrt{LC}$. Dado que se está escalonando la celda unitaria, y que por tanto también está creciendo el tamaño del parche, el valor de la capacidad aumenta. La relación entre la capacidad y el tamaño del parche es cuadrática, como se puede ver en la ecuación \ref{eq:Cp_Lp}, y la inductancia no aumentará apreciablemente en comparación. De esta forma: $f_r \propto 1/\sqrt{l^2} = 1/l$, con $l$ el tamaño del parche, según la figura \ref{fig:celda-orlandi}.
+
+Resulta importante destacar que la variación del tamaño de la celda unitaria en su conjunto es la forma más fácil (aunque en general, la menos conveniente) de modificar la frecuencia de trabajo del EBG.
+
+\clearpage
 
 \subsubsection{Efecto de la variación del tamaño del parche metálico}
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/Orlandi-DeltaParcheMetalicoCeldaFija.pdf}
+	\caption{Diagramas de dispersión para la variación del tamaño del parche metálico, sin una variación en el tamaño de la celda unitaria. El sustrato de FR-4 de $1.6\;\text{mm}$ de espesor.}
+	\label{fig:diagdisp-orlandi-variacion-tam-parche}
+\end{figure}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/Orlandi-DeltaParcheMetalicoCeldaFija-Comparacion.pdf}
+	\caption{Compraración del ancho del primer band-gap (entre el primer y el segundo modo de propagación) para las tres direcciones analizadas, en función del tamaño del parche.}
+	\label{fig:comparacion-diagdisp-orlandi-variacion-tam-parche}
+\end{figure}
+
+La figura \ref{fig:diagdisp-orlandi-variacion-tam-parche} muestra que, al contrario que en el caso anterior, la mera variación del tamaño del parche metálico, sin la modificación del tamaño de la celda unitaria, no genera los mismos efectos. La variación de la capacidad, como antes, da lugar a una disminución en la frecuencia central del primer \textit{bandgap}.
+
+Por otro lado, la inductancia impuesta por los puentes disminuye considerablemente cuando el tamaño del parche aumenta sin que lo haya la celda unitaria en general. En este sentido, manteniendo la analogía con el filtro LC presentado antes, dado que el ancho de banda de resonancia de un filtro LC es aproxidamente $BW_r \approx \sqrt{L/C}$, si disminuye el valor de la inductancia (por puentes más cortos) y, al mismo tiempo, aumenta el valor de la capacidad (por el aumento del efecto de capacitor de placas planas paralelas y las capacidades mutuas entre celdas vecinas) , el ancho de banda disminuirá notablemente.
+
+Como se puede ver en la figura \ref{fig:comparacion-diagdisp-orlandi-variacion-tam-parche}, un mayor ancho de banda prohibida se obtiene con parches de tamaño moderado, con los que además es posible obtener bandas prohibidas completas.
+
+
 \subsubsection{Variación de la longitud de los puentes}
 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/Orlandi-DeltaSeparacionParches-DeltaTamanioCelda-ParcheFijo.pdf}
+	\caption{Diagramas de dispersión para la variación del largo de los puentes, que equivale a un aumento del tamaño de la celda unitaria, si las dimensiones del parche \textit{microstrip} se mantienen fijas. El sustrato de FR-4 de $1.6\;\text{mm}$ de espesor.}
+	\label{fig:diagdisp-orlandi-variacion-long-puentes}
+\end{figure}
+
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/Orlandi-DeltaSeparacionParches-DeltaTamanioCelda-ParcheFijo-Comparacion.pdf}
+	\caption{Compraración del ancho del primer band-gap (entre el primer y el segundo modo de propagación) para las tres direcciones analizadas, en función del largo de los puentes que unen a los parches.}
+	\label{fig:comparacion-diagdisp-orlandi-long-puentes}
+\end{figure}
+
+
+Para la variación de la longitud de los puentes es necesario, nuevamente, modificar el tamaño de la celda unitaria, por lo que, necesariamente, a medida que exista una mayor separación entre los parches (y por tanto una mayor longitud de puentes), la frecuencia central de la banda prohibida disminuirá.
+
+Por otro lado, dado que la capacidad no cambiará (excepto aquella correspondiente al efecto de capacidad entre parches cercanos, que estarán cada vez más alejados), los efectos más notorios, bajo un análisis cuasiestático, se darán por el aumento de la inductancia. El alejamiento de los parches metálicos entre sí disminuirá la capacidad total de cada celda unitaria, pero los efectos no son lo suficientemente notorios. Si los puentes no exisitieran, el efecto sería el opuesto al que se da en esta geometría \cite{Yang:EBGAntennas}. Este aumento en la inductancia generará un mayor ancho de banda, que se ve reflejado en la figura \ref{fig:comparacion-diagdisp-orlandi-long-puentes}.
+
 \subsubsection{Efecto de la variación del ancho del sustrato dieléctrico}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/Orlandi-DeltaAnchoSustrato.pdf}
+	\caption{Diagramas de dispersión para la variación del ancho del sustrato dieléctrico. El sustrato de FR-4 de $1.6\;\text{mm}$ de espesor.}
+	\label{fig:diagdisp-orlandi-variacion-ancho-diel}
+\end{figure}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/Orlandi-3direcciones-anchoSustrato-Comparacion.pdf}
+	\caption{Comparación del ancho del primer band-gap (entre el primer y el segundo modo de propagación) para las tres direcciones analizadas, en función del ancho del sustrato dieléctrico.}
+	\label{fig:comparacion-diagdisp-orlandi-variacion-ancho-diel}
+\end{figure}
+
+La variación del ancho del sustrato tiene importantes consecuencias en el EBG. Por un lado, es importante notar que el comportamiento del ancho de banda es opuesto al que se obtiene considerando el modelo cuasiestático: Un aumento en la capacidad (debido al acercamiento de los planos paralelos que forman los parches y el plano conductor inferior, cuando disminuye el ancho del sustrato), debería dar lugar a una disminución notoria en el ancho de banda. Sin embargo, como se observa en la figura \ref{fig:comparacion-diagdisp-orlandi-variacion-ancho-diel}, se da el efecto contrario.
+
+El comportamiento resulta más intuitivo si se recuerda que, como se explicó en la sección \ref{cap_intro_electro}, un sustrato delgado dificulta la aparición de ondas de superficie, volviendo a las zonas prohibidas de propagación más notorias.
+
+A medida que aumenta el tamaño del mismo, disminuye el ancho de banda de la zona prohibida, y resulta más dificultoso obtener un \textit{bandgap} completo.
+
+\clearpage
 
 \subsection{Celda de Yang}
 % Dibujo
@@ -263,7 +356,7 @@ Para modos superiores, especialmente para el rango de frecuencias entre el cuart
 
 \section{Modelado por líneas de transmisión}
 %%%%
-\lipsum
+
 % Caloz, pag 60, 67, 76, 79
 % Bidimensional, Caloz, pag 133
 % Rahman Stuchly.ç
@@ -275,13 +368,13 @@ Para modos superiores, especialmente para el rango de frecuencias entre el cuart
 
 \subsection{TMM}
 %%%%
-\lipsum[2]
+
 % Caloz, pagina 144
 % Choi (tesis), pag 54
 \subsection{TLM}
 \label{subsubsec_tlm}
 %%%%
-\lipsum
+
 % Caloz, pag 155
 %%%%
 
@@ -289,7 +382,7 @@ Para modos superiores, especialmente para el rango de frecuencias entre el cuart
 \section{Estudio de estructuras mediante TLM}
 \label{sec_estudio_tlm}
 %%%%
-\lipsum
+
 %Pasos: Barchloui: Simulation of FSS surfaces using 3d TLM, 2003. Primer paper de un librito. Buena explciaci{on.}
 % Paper importante: Hoefer 1985. Johns, 1971.
 % Leer Janyani, Paul, TLM modelling of nonlinear optical effects in fibre bragg gratings, 2004.
@@ -300,7 +393,7 @@ Para modos superiores, especialmente para el rango de frecuencias entre el cuart
 \subsection{Algoritmo utilizando programación orientada a objetos}
 \label{subsec_estudio_tlm}
 %%%%
-La simulación se corre a través de un \textit{script} editable de Python, donde se establecen las condiciones de la simulación en forma manual, y se determina si se leerán resultados calculados previamente o se calcularán nuevos. En el mismo, además, se permite elegir si se considerarán  las capacidades de acople entre elementos, la cantidad de tiempos a simular y las frecuencias superior e inferior de análisis. Se debe tener en cuenta, además, que se especifica la discretización espacial (cantidad de milímetros de cada estructura simulada, denominada \textit{Pixel}). La discretización espacial se relaciona con la temporal, dado que en TLM están vinculadas por la velocidad de propagación de una onda electromagnética en el medio. Así, la primera deberá asegurar que la segunda permita cumplir con las condiciones del teorema de Nyquist para la caracterización de las señales calculadas (esto significa que, dado que la velocidad de propagación, $v_p=\frac{\Delta l}{\Delta t}$ relaciona las discretizaciones espacial y temporal, la discretización espacial debe ser tal que $\Delta l = v_p \frac{\Delta t}{2}$ para cumplir las condiciones del teorema de Nyquist, lo que deriva en que $\Delta l = \frac{v_p}{2f}$, con $f$ la frecuencia de interés, que en nuestro caso es $2.4\;GHz$).
+La simulación se corre a través de un \textit{script} editable de Python, donde se establecen las condiciones de la simulación en forma manual, y se determina si se leerán resultados calculados previamente o se calcularán nuevos. En el mismo, además, se permite elegir si se considerarán  las capacidades de acople entre elementos, la cantidad de tiempos a simular y las frecuencias superior e inferior de análisis. Se debe tener en cuenta, además, que se especifica la discretización espacial (cantidad de milímetros de cada estructura simulada, denominada \textit{Pixel}). La discretización espacial se relaciona con la temporal, dado que en TLM están vinculadas por la velocidad de propagación de una onda electromagnética en el medio. Así, la primera deberá asegurar que la segunda permita cumplir con las condiciones del teorema de Nyquist para la caracterización de las señales calculadas (esto significa que, dado que la velocidad de propagación, $v_p=\frac{\Delta l}{\Delta t}$ relaciona las discretizaciones espacial y temporal, la discretización espacial debe ser tal que $\Delta l = v_p \frac{\Delta t}{2}$ para cumplir las condiciones del teorema de Nyquist, lo que deriva en que $\Delta l = \frac{v_p}{2f}$, con $f$ la frecuencia de interés, que en nuestro caso es $2.4\;\text{GHz}$).
 
 \begin{figure}[h]
 	\centering
