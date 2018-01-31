@@ -76,6 +76,67 @@ donde $a$ es el tamaño de la celda unitaria, $h$ es el ancho del dieléctrico y
 %	\label{fig:linea-transm-cargada-periodica}
 %\end{figure}
 
+Para el caso unidimensional, resulta sencillo obtener una expresión de la ecuación de dispersión, utilizando un acercamiento circuital, considerando el circuito de la figura \ref{fig:circuito-equivalente-kim-parches}, donde se demarcaron las tensiones y corrientes a considerar, alrededor de una celda unitaria determinada ($n$). A partir del planteo de las ecuaciones circuitales, y considerando que las tensiones y corrientes tienen un comportamiento armónico:
+
+\begin{align}
+	v_n - v_{n+1} = i_n \left( \frac{L_p}{2} + \frac{j \omega L_b C_p}{1-\omega^2 L_b C_g} + \frac{L_p}{2} \right) \\
+	\frac{i_n - i_{n+1}}{j\omega C_p} = v_n
+\end{align}
+
+Reordenando e imponiendo la condición de Bloch-Floquet, que indica, expresado de forma conveniente, que $i_{n+1} = i_{n} e^{-\gamma a}$, y que $v_{n+1} = v_{n} e^{-\gamma a}$:
+
+\begin{align}
+	\begin{bmatrix}
+		1 & -j \omega C_p \\
+		-\frac{L_p}{2} + \frac{j \omega L_b C_p}{1-\omega^2 L_b C_g} + \frac{L_p}{2} & 1
+	\end{bmatrix}
+	\begin{bmatrix}
+		i_n \\
+		v_n
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+		i_{n+1} \\
+		v_{n+1}
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+		i_n e^{-\gamma a} \\
+		v_n e^{-\gamma a}
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+		1 & 0 \\
+		0 & 1
+	\end{bmatrix}
+	\begin{bmatrix}
+		i_n e^{-\gamma a} \\
+		v_n e^{-\gamma a}
+	\end{bmatrix}
+\end{align}
+
+Lo que se reduce a:
+
+\begin{align}
+	\begin{bmatrix}
+		1-e^{-\gamma a} & -j \omega C_p \\
+		-\frac{L_p}{2} + \frac{j \omega L_b C_p}{1-\omega^2 L_b C_g} + \frac{L_p}{2} & 1-e^{-\gamma a}
+	\end{bmatrix}
+	\begin{bmatrix}
+		i_n \\
+		v_n
+	\end{bmatrix}
+	=0
+\end{align}
+
+Para obtener soluciones más allá de la trivial, el determinante de la matriz debe ser cero, por lo que resulta la ecuación de dispersión:
+
+\begin{align}
+	1+e^{-2\gamma d} - 2 e^{-\gamma d} - j \omega C_p L_p - \frac{\omega^2 C_p^2 L_b}{1-\omega^2 L_b C_g} = 0
+\end{align}
+
+%POdría poner un gráfico.
+
 Para el caso de las superficies de alta impedancia sin vías de conexión entre la geometría superior y el plano de tierra inferior, Tretyakov y otros (\cite{Tretyakov:AnalyticalModeling} \cite{Yakovlev:AnalyticalModelingHIS}) han propuesto un análisis centrado en la similitud con las FSS, considerando a las superficies EBG uniplanares como FSS con un plano de tierra. De esta manera es posible utilizar los modelos desarrollados durante el siglo \textsc{XX} para el análisis de las superficies selectoras de frecuencias, en el estudio de EBGs, dado que el comportamiento de banda prohibida se da por el mismo motivo que el comportamiento de filtro de las FSS \cite{Goussetis:TailoringAMCEBGCharacteristics}, relacionado a la frecuencia de resonancia del arreglo de elementos. Para ello, se considera el circuito equivalente de la figura \ref{fig:tretyankov-circuito-equivalente}, donde $Z_g$ es la impedancia que impone la FSS que se dispone sobre el plano dieléctrico, y $Z_d$ es la impedancia del conjunto formado por el dieléctrico y el plano conductor. De esta forma, la impedancia de superficie resulta del paralelo de ambas. La impedancia del conjunto dieléctrico-plano conductor fue analizada en el capítulo anterior, y depende de la polarización (TE o TM). La impedancia que impone el arreglo periódico bidimensional, la FSS, requiere de un análisis particular de cada caso, y los resultados analíticos en la literatura están limitados a arreglos de rectángulos, dipolos y cruces, y sus correspondientes estructuras complementarias.
 
 \begin{figure}
@@ -92,7 +153,7 @@ Para el caso de las superficies de alta impedancia sin vías de conexión entre 
 	\label{fig:tretyankov-circuito-equivalente}
 \end{figure}
 
-Un planteo intuitivo de los resultados de Tretyankov requiere comenzar el análisis a partir del conocimiento de que, para ondas TM, como se demostró en la seccion \ref{sec:ondas-de-superficie}, y como se muestra en la figura \ref{fig:beta-reactancia-TM}, una superficie con impedancia inductiva es capaz de soportar ondas TM. la impedancia de un plano de tierra recubierto por un material dieléctrico, como se muestra en la ecuación \ref{eq:impedancia-superficie-tm-teorica}, da lugar a una impedancia $Z_d$ inductiva. Para lograr una impedancia superficial $Z_s$ menos inductiva, en vistas de disminuir el comportamiento de guía de ondas de la estructura, se debe imponer una impedancia $Z_g$ acorde.
+Un planteo intuitivo de los resultados de Tretyankov requiere comenzar el análisis a partir del conocimiento de que, para ondas TM, como se demostró en la sección \ref{sec:ondas-de-superficie}, y como se muestra en la figura \ref{fig:beta-reactancia-TM}, una superficie con impedancia inductiva es capaz de soportar ondas TM. la impedancia de un plano de tierra recubierto por un material dieléctrico, como se muestra en la ecuación \ref{eq:impedancia-superficie-tm-teorica}, da lugar a una impedancia $Z_d$ inductiva. Para lograr una impedancia superficial $Z_s$ menos inductiva, en vistas de disminuir el comportamiento de guía de ondas de la estructura, se debe imponer una impedancia $Z_g$ acorde.
 
 El metamaterial basado en FSS más usual, el arreglo de parches, da lugar a una impedancia $Z_g$ capacitiva, tanto por la capacidad impuesta entre los parches y el plano de tierra, como por la capacidad entre los parches adyacentes. Para frecuencias bajas, el comportamiento del circuito equivalente es inductivo, pero para frecuencias por encima de la de resonancia, el comportamiento es capacitivo. Por otro lado, es posible considerar, si los parches son lo suficientemente grandes, que los mismos presentan una inductancia, en serie con las capacidades parásitas descriptas antes. Un inductor en paralelo con el inductor correspondiente al plano conductor de la cara inferior del dieléctrico disminuye la inductancia total, por lo que se logra el efecto deseado. Finalmente, si los parches son conectados, como se mostró en la figura \ref{fig:circuito-equivalente-kim-parches}, la inductancia en paralelo con la capacidad entre parches acrecentará este efecto. Los efectos que se presentan por encima de la frecuencia de resonancia impiden que el análisis intuitivo describa la existencia de modos superiores, por lo que el análisis no es completo, lo que obliga a que la frecuencia de resonancia no esté muy por debajo de la frecuencia de ondas de superficie que se desea bloquear con la estructura EBG.
 
@@ -357,38 +418,20 @@ A medida que aumenta el tamaño del mismo, disminuye el ancho de banda de la zon
 \section{Modelado por líneas de transmisión}
 %%%%
 
-% Caloz, pag 60, 67, 76, 79
-% Bidimensional, Caloz, pag 133
-% Rahman Stuchly.ç
-% Calculo de la inductancia de meander inductors: Stojanovic, Zivanov
+Además del acercamiento a través del uso de circuitos equivalentes de primer orden, en general es posible expresar el problema a partir de su generalización como un conjunto de líneas de transmisión efectivas (en lugar de líneas de transmisión propiamente dichas), discretizando el espacio de forma que cada paso de discretización resulte mucho menor a $\lambda/4$ \cite{Caloz:ElectromagneticMetamaterials}, aproximadamente. Este acercamiento, y el uso de líneas de transmisión generalizadas (donde se pueden considerar capacidades en serie e inductancias en paralelo) resultan útiles para describir distintos tipos de metamateriales, incluyendo aquellos que son conocidos como de mano izquierda \cite{Caloz:ElectromagneticMetamaterials}.
+
+Para el caso bidimensional, la discretización debe ser también bidimensional, lo que conlleva mayores esfuerzos numéricos. Un problema práctico cualquiera puede contener una enorme cantidad de celdas unitarias, con bordes complejos y con medios inhomogéneos, lo que obliga a considerar las propiedades de las celdas unitarias de la forma lo más sencilla posible.
+
+Existen numerosos métodos que utilizan líneas de transmisión para simular metamateriales, entre los que destacan el método de TMM (\textit{Transmission-Matrix Method}) y de TLM (\textit{Transmission-Line Matrix Method}). Si bien los nombres son similares, la resolución del problema varía fundamentalmente \cite{Caloz:ElectromagneticMetamaterials}. En este trabajo se desarrollará brevemente el método de TLM, que luego será implementado y explicado en detalle en la sección \ref{subsec_estudio_tlm}.
+
+El método de matrices\footnote{Aquí el término matrices se refiere a un arreglo bidimensional, y no a un objeto matemático.} de líneas de transmisión consiste en la discretización espacial del problema físico en pequeñas subceldas, que se modelan unidas entre sí por líneas de transmisión, capaces de transmitir impulsos cortos sin distorsión, y de distribuirlos en cada uno de los nodos, de acuerdo a un algoritmo local para cada subcelda \cite{Caloz:ElectromagneticMetamaterials}. Este algoritmo local no es más que la multiplicación del pulso incidente por los parámetros S de transmisión y reflexión en cada tiempo, que se pueden obtener a partir del análisis de la celda y sus vecinas. De esta manera, se discretiza un circuito equivalente al problema físico a resolver, y se simula la propagación de ondas electromagnéticas a partir del \textit{scattering} de impulsos en una red de lineas de transmisión n-dimensional.
+
+El algoritmo fue propuesto inicialmente en 1971 por Johns y Beurle \cite{JohnsBeurle:TLM}, y provee soluciones en el dominio del tiempo, a partir del estudio de la propagación de impulsos electromagnéticos muy cortos en las estructuras. La información en el dominio de la frecuencia se obtiene realizando una transformada de Fourier\footnote{Numéricamente, se suele realizar una transformada discreta de Fourier, cuya implementación más conocida es la Fast Fourier Transform (FFT)} de la respuesta de la red al impulso, como en todo método numérico en el dominio del tiempo. Esta metodología lo vuelve útil especialmente para aplicaciones de gran ancho de banda, donde se desea obtener características en un amplio rango de frecuencias con una única simulación.
+
+El método fue generalizado más tarde al estudio de estructuras tridimensionales, donde se reemplazaron los conceptos de capacidad e inductancia de la línea de transmisión, por parámetros físicos del medio. En general, la capacidad e inductancia asociadas a las líneas de transmisión que unen los nodos que representan un medio en particular son elegidas de forma que la impedancia característica coincida con la impedancia intrínseca del mismo. En general, las pérdidas en el medio se tienen en cuenta a partir del uso de resistencias.
+
 % Cuentas! Wu, Lin, Wang, Wang, Chen
-% Kim, Schutt-Ainé, 178. Modelado para PDN.
-%Venkateswaran, pag 40 en adelante.
-% Impedancia: hacer algo similar. Tesis Zheng, pag 8
 
-\subsection{TMM}
-%%%%
-
-% Caloz, pagina 144
-% Choi (tesis), pag 54
-\subsection{TLM}
-\label{subsubsec_tlm}
-%%%%
-
-% Caloz, pag 155
-%%%%
-
-
-\section{Estudio de estructuras mediante TLM}
-\label{sec_estudio_tlm}
-%%%%
-
-%Pasos: Barchloui: Simulation of FSS surfaces using 3d TLM, 2003. Primer paper de un librito. Buena explciaci{on.}
-% Paper importante: Hoefer 1985. Johns, 1971.
-% Leer Janyani, Paul, TLM modelling of nonlinear optical effects in fibre bragg gratings, 2004.
-% Kim Kim Kang, Yook: Modeling and analysis of ebg in power distribution networks.
-% sadiku
-		
 %%%%
 \subsection{Algoritmo utilizando programación orientada a objetos}
 \label{subsec_estudio_tlm}
