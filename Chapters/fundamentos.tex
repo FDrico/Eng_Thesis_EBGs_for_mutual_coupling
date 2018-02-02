@@ -37,6 +37,7 @@ La condición de homogeneidad efectiva de los metamateriales se cumple si las es
 
 
 A fines del siglo XVIII, el físico estadounidense David Rittenhouse observó que algunos de los colores del espectro de luz visible desaparecían cuando una lámpara era vista a través de un pañuelo \cite{Rittenhouse:OpticalProblem}, mostrando por primera vez que un medio discontínuo puede presentar propiedades de transmisión diferentes en función de la frecuencia incidente. El estudio teórico del comportamiento de ondas electromagnéticas en medios periódicos comenzó a principios del siglo XX, aunque no fue hasta finalizada la segunda guerra mundial que se formalizaron algunos conceptos. Ya en 1919, Guglielmo Marconi y Charles Samuel Frankin utilizaron una estructura de conductores horizontales que operaban como una superficie reflectiva para cierta frecuencia, que podría considerarse la primera superficie selectora de frecuencias (FSS).
+% Historia: FSS > EBG, e Taylor & Francis, Pag 30-4.
 
 En 1946, Louis Brillouin publicó su libro sobre ondas mecánicas, "\textit{Wave propagation in periodic structures: Electric filters and crystal lattices}" \cite{Brillouin:WavePropagation}, donde demostró que un arreglo periódico impone restricciones a los vectores de onda $\vec{\gamma}$ que pueden propagarse en él, dado que el mismo establece condiciones de contorno para los modos permitidos. Aquellas ondas que no cumplen las condiciones derivadas de la periodicidad de la estructura, no son capaces de propagarse.
 
@@ -139,6 +140,8 @@ Para el caso en que las celdas unitarias son rectangulares, la red recíproca es
 
 \section{Teorema de Bloch-Floquet}
 \label{sec:bloch-floquet}
+
+% Floquet es como fourier en el espacio. Taylor and francis, pag 30-5.
 
 El teorema Floquet fue presentado por Gaston Floquet en 1883, y explicita la forma canónica de las soluciones a ecuaciones diferenciales lineales ordinarias de coeficientes periódicos, de la forma $x' = A(t)x$, con $t \in \Re$, $X \in \Re^n$, donde $A(t)$ es una función periódica con periodo $p$. Si $x=\phi(t)$ es solución, entonces también lo es $x=\phi(x\pm np)$, con $n \in \mathbb{N}$. Esto significa que toda solución encontrada para el sistema con condiciones de contorno periódicas, es también periódica, con la misma periodicidad que las condiciones de borde, debiendo considerar, además, un factor de fase. Si bien el teorema aplica a ecuaciones de primer orden, toda ecuación de segundo orden puede ser transformada en un sistema de ecuaciones diferenciales de primer orden.
 

@@ -14,7 +14,7 @@
    version="1.2"
    id="svg647"
    sodipodi:docname="plot-brewster.svg"
-   inkscape:version="0.92.2 (unknown)">
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
   <metadata
      id="metadata651">
     <rdf:RDF>
@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -36,17 +36,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="1600"
+     inkscape:window-height="878"
      id="namedview649"
      showgrid="false"
-     inkscape:zoom="0.42261905"
-     inkscape:cx="336"
-     inkscape:cy="240"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg647" />
+     inkscape:zoom="1.1953472"
+     inkscape:cx="267.03085"
+     inkscape:cy="171.14774"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="surface407" />
   <defs
      id="defs178">
     <g
@@ -496,13 +496,16 @@
          d="M 71.964844 82 L 477.265625 82 L 477.265625 299.824219 L 71.964844 299.824219 Z M 71.964844 82 "
          id="path175" />
     </clipPath>
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern" />
   </defs>
   <g
      id="surface407">
-    <path
-       style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
-       d="M 0 359.984375 L 503.976562 359.984375 L 503.976562 -0.015625 L 0 -0.015625 Z M 0 359.984375 "
-       id="path180" />
     <path
        style=" stroke:none;fill-rule:nonzero;fill:rgb(91.796875%,91.796875%,94.921875%);fill-opacity:1;"
        d="M 71.964844 299.824219 L 477.21875 299.824219 L 477.21875 61.992188 L 71.964844 61.992188 Z M 71.964844 299.824219 "
@@ -917,644 +920,21 @@
          y="173.336"
          id="use358" />
     </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g364">
-      <use
-         xlink:href="#glyph7-2"
-         x="147.7457"
-         y="31.82"
-         id="use362" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g368">
-      <use
-         xlink:href="#glyph7-3"
-         x="146.30586"
-         y="36.62"
-         id="use366" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g372">
-      <use
-         xlink:href="#glyph7-4"
-         x="157.466032"
-         y="36.62"
-         id="use370" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g376">
-      <use
-         xlink:href="#glyph7-5"
-         x="166.105883"
-         y="36.62"
-         id="use374" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g380">
-      <use
-         xlink:href="#glyph7-6"
-         x="174.505893"
-         y="36.62"
-         id="use378" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g384">
-      <use
-         xlink:href="#glyph7-7"
-         x="183.145743"
-         y="36.62"
-         id="use382" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g388">
-      <use
-         xlink:href="#glyph7-8"
-         x="187.105902"
-         y="36.62"
-         id="use386" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g392">
-      <use
-         xlink:href="#glyph7-9"
-         x="201.265695"
-         y="36.62"
-         id="use390" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g396">
-      <use
-         xlink:href="#glyph7-10"
-         x="209.905558"
-         y="36.62"
-         id="use394" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g400">
-      <use
-         xlink:href="#glyph7-11"
-         x="223.105569"
-         y="36.62"
-         id="use398" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g404">
-      <use
-         xlink:href="#glyph7-12"
-         x="234.385664"
-         y="36.62"
-         id="use402" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g408">
-      <use
-         xlink:href="#glyph7-10"
-         x="240.145839"
-         y="36.62"
-         id="use406" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g412">
-      <use
-         xlink:href="#glyph7-13"
-         x="247.585682"
-         y="36.62"
-         id="use410" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g416">
-      <use
-         xlink:href="#glyph7-14"
-         x="259.105619"
-         y="36.62"
-         id="use414" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g420">
-      <use
-         xlink:href="#glyph7-15"
-         x="265.585694"
-         y="36.62"
-         id="use418" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g424">
-      <use
-         xlink:href="#glyph7-10"
-         x="271.705636"
-         y="36.62"
-         id="use422" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g428">
-      <use
-         xlink:href="#glyph7-12"
-         x="279.145479"
-         y="36.62"
-         id="use426" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g432">
-      <use
-         xlink:href="#glyph7-10"
-         x="290.425587"
-         y="36.62"
-         id="use430" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g436">
-      <use
-         xlink:href="#glyph7-4"
-         x="297.865429"
-         y="36.62"
-         id="use434" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g440">
-      <use
-         xlink:href="#glyph7-16"
-         x="312.265468"
-         y="36.62"
-         id="use438" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g444">
-      <use
-         xlink:href="#glyph7-6"
-         x="317.425634"
-         y="36.62"
-         id="use442" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g448">
-      <use
-         xlink:href="#glyph7-4"
-         x="326.065496"
-         y="36.62"
-         id="use446" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g452">
-      <use
-         xlink:href="#glyph7-17"
-         x="334.705359"
-         y="36.62"
-         id="use450" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g456">
-      <use
-         xlink:href="#glyph7-18"
-         x="342.145202"
-         y="36.62"
-         id="use454" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g460">
-      <use
-         xlink:href="#glyph7-2"
-         x="346.10536"
-         y="36.62"
-         id="use458" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g464">
-      <use
-         xlink:href="#glyph7-8"
-         x="346.10536"
-         y="36.62"
-         id="use462" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g468">
-      <use
-         xlink:href="#glyph7-4"
-         x="354.505383"
-         y="36.62"
-         id="use466" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g472">
-      <use
-         xlink:href="#glyph7-9"
-         x="369.025338"
-         y="36.62"
-         id="use470" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g476">
-      <use
-         xlink:href="#glyph7-10"
-         x="377.665201"
-         y="36.62"
-         id="use474" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g480">
-      <use
-         xlink:href="#glyph7-7"
-         x="390.745295"
-         y="36.62"
-         id="use478" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g484">
-      <use
-         xlink:href="#glyph7-19"
-         x="394.705454"
-         y="36.62"
-         id="use482" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g488">
-      <use
-         xlink:href="#glyph7-12"
-         x="133.87776"
-         y="55.0442"
-         id="use486" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g492">
-      <use
-         xlink:href="#glyph7-10"
-         x="139.637923"
-         y="55.0442"
-         id="use490" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g496">
-      <use
-         xlink:href="#glyph7-7"
-         x="147.077778"
-         y="55.0442"
-         id="use494" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g500">
-      <use
-         xlink:href="#glyph7-19"
-         x="151.037937"
-         y="55.0442"
-         id="use498" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g504">
-      <use
-         xlink:href="#glyph7-17"
-         x="159.07779"
-         y="55.0442"
-         id="use502" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g508">
-      <use
-         xlink:href="#glyph7-18"
-         x="166.517645"
-         y="55.0442"
-         id="use506" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g512">
-      <use
-         xlink:href="#glyph7-2"
-         x="170.477804"
-         y="55.0442"
-         id="use510" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g516">
-      <use
-         xlink:href="#glyph7-8"
-         x="170.477804"
-         y="55.0442"
-         id="use514" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g520">
-      <use
-         xlink:href="#glyph7-4"
-         x="178.877814"
-         y="55.0442"
-         id="use518" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g524">
-      <use
-         xlink:href="#glyph7-10"
-         x="193.397751"
-         y="55.0442"
-         id="use522" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g528">
-      <use
-         xlink:href="#glyph7-4"
-         x="200.837606"
-         y="55.0442"
-         id="use526" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g532">
-      <use
-         xlink:href="#glyph7-15"
-         x="209.477469"
-         y="55.0442"
-         id="use530" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g536">
-      <use
-         xlink:href="#glyph7-12"
-         x="215.597411"
-         y="55.0442"
-         id="use534" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g540">
-      <use
-         xlink:href="#glyph7-10"
-         x="221.357586"
-         y="55.0442"
-         id="use538" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g544">
-      <use
-         xlink:href="#glyph7-7"
-         x="234.557597"
-         y="55.0442"
-         id="use542" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g548">
-      <use
-         xlink:href="#glyph7-19"
-         x="238.517756"
-         y="55.0442"
-         id="use546" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g552">
-      <use
-         xlink:href="#glyph7-14"
-         x="246.557609"
-         y="55.0442"
-         id="use550" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g556">
-      <use
-         xlink:href="#glyph7-17"
-         x="258.677546"
-         y="55.0442"
-         id="use554" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g560">
-      <use
-         xlink:href="#glyph7-8"
-         x="266.117388"
-         y="55.0442"
-         id="use558" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g564">
-      <use
-         xlink:href="#glyph7-4"
-         x="274.517411"
-         y="55.0442"
-         id="use562" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g568">
-      <use
-         xlink:href="#glyph7-14"
-         x="283.157274"
-         y="55.0442"
-         id="use566" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g572">
-      <use
-         xlink:href="#glyph7-15"
-         x="289.637349"
-         y="55.0442"
-         id="use570" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g576">
-      <use
-         xlink:href="#glyph7-19"
-         x="295.757291"
-         y="55.0442"
-         id="use574" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g580">
-      <use
-         xlink:href="#glyph7-4"
-         x="303.797144"
-         y="55.0442"
-         id="use578" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g584">
-      <use
-         xlink:href="#glyph7-15"
-         x="312.437007"
-         y="55.0442"
-         id="use582" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g588">
-      <use
-         xlink:href="#glyph7-10"
-         x="318.556948"
-         y="55.0442"
-         id="use586" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g592">
-      <use
-         xlink:href="#glyph7-14"
-         x="325.996791"
-         y="55.0442"
-         id="use590" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g596">
-      <use
-         xlink:href="#glyph7-9"
-         x="338.236645"
-         y="55.0442"
-         id="use594" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g600">
-      <use
-         xlink:href="#glyph7-18"
-         x="346.876507"
-         y="55.0442"
-         id="use598" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g604">
-      <use
-         xlink:href="#glyph7-10"
-         x="350.836666"
-         y="55.0442"
-         id="use602" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g608">
-      <use
-         xlink:href="#glyph7-7"
-         x="358.276509"
-         y="55.0442"
-         id="use606" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g612">
-      <use
-         xlink:href="#glyph7-2"
-         x="361.756589"
-         y="55.0442"
-         id="use610" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g616">
-      <use
-         xlink:href="#glyph7-10"
-         x="362.236686"
-         y="55.0442"
-         id="use614" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g620">
-      <use
-         xlink:href="#glyph7-17"
-         x="369.676529"
-         y="55.0442"
-         id="use618" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g624">
-      <use
-         xlink:href="#glyph7-15"
-         x="377.116372"
-         y="55.0442"
-         id="use622" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g628">
-      <use
-         xlink:href="#glyph7-12"
-         x="383.236313"
-         y="55.0442"
-         id="use626" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g632">
-      <use
-         xlink:href="#glyph7-18"
-         x="388.996489"
-         y="55.0442"
-         id="use630" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g636">
-      <use
-         xlink:href="#glyph7-17"
-         x="392.956648"
-         y="55.0442"
-         id="use634" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g640">
-      <use
-         xlink:href="#glyph7-19"
-         x="400.396491"
-         y="55.0442"
-         id="use638" />
-    </g>
-    <g
-       style="fill:rgb(14.988708%,14.988708%,14.988708%);fill-opacity:1;"
-       id="g644">
-      <use
-         xlink:href="#glyph7-14"
-         x="408.436343"
-         y="55.0442"
-         id="use642" />
-    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.29107666px;line-height:1.25;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.16138458"
+       x="280.20505"
+       y="26.904516"
+       id="text1082"><tspan
+         sodipodi:role="line"
+         x="280.20505"
+         y="26.904516"
+         style="stroke-width:2.16138458"
+         id="tspan1084">Ángulo de Brewster en función de la</tspan><tspan
+         sodipodi:role="line"
+         x="280.20505"
+         y="48.51836"
+         style="stroke-width:2.16138458"
+         id="tspan595">relación entre las constantes dieléctricas</tspan></text>
   </g>
 </svg>
