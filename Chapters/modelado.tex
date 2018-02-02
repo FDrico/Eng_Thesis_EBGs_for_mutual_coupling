@@ -141,6 +141,7 @@ De esta forma, únicamente hay que fijar, como condiciones de borde, diferencias
 \label{sec_estructuras_propuestas}
 
 \subsection{Metamaterial formado por parches cuadrados unidos por finas trazas \textit{microstrip}}
+\label{sec:celda-orlandi}
 
 Uno de los metamateriales más fáciles de construir, y que en general presenta buenos resultados al mismo tiempo que mantiene una geometría sencilla es el que se observa en la figura \ref{fig:celda-orlandi}. En la misma, $d$ es el lado de la celda unitaria (cuadrada), $l$ es el tamaño del lado del cuadrado metálico (de cobre), y $l_m$ y $w_m$ son el largo y el ancho de los puentes que comunican a los parches, respectivamente.
 
@@ -171,7 +172,7 @@ El campo eléctrico en la dirección tangencial, también para el primer modo de
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{Modelado/orlandi-modo1-EH-fases.pdf}
-	\caption{Comportamiento, para dos tiempos diferentes, de los campos eléctrico y magnético sobre una celda unitaria formada por un parche central y 4 puentes laterales, para el primer y segundo modo de propagación.}
+	\caption{Comportamiento, para dos tiempos diferentes, de los campos eléctrico y magnético normales a la superficie, sobre una celda unitaria formada por un parche central y 4 puentes laterales, para el primer y segundo modo de propagación.}
 	\label{fig:orlandi-analisis-campos-fases}
 \end{figure}
 
@@ -346,13 +347,41 @@ A medida que aumenta el tamaño del mismo, disminuye el ancho de banda de la zon
 \clearpage
 
 \subsection{Celda de Yang}
-% Dibujo
-% Simulaciones como la figura 3.5 y 3.6
-% Explicar por qué es mejor, y por qué se le puede haber ocurrido a Yang plantearla.
-% Comentar sobre las dificultades de construcción
-% Comentar sobre la posibilidad de lograr tamaños menores
-% Comentar sobre la existencia de otras estructuras posibles
-% Comentar algunos efectos de variación de parámetros, si vale la pena y si son distintos a los de la celda orlandi. Sino, simplemente refenciar.
+
+La búsqueda de estructuras que requirieran un menor tamaño de celda unitaria para lograr zonas prohibidas en frecuencias bajas, impulsó a Fei-Ran Yang, Kuang-Ping Ma, Yongxi Qian y Tatsuo Itoh, en 1991, a presentar \cite{Yang:UCPBG} la geometría mostrada en la figura \ref{fig:celda-yang}. En la misma, como se puede observar, se intentó maximizar la longitud de los puentes, estableciendo lo que se conoce como un \textit{inset} en el parche \textit{microstrip}. De esta forma, el parche puede crecer, y por tanto aumentar la capacidad, sin que por ello la inductancia deba disminuir. Esto permite, además, que los parches de las distintas celdas unitarias se ubiquen a corta distancia unos de otros, aumentando entonces el acoplamiento capacitivo entre ellos, y por tanto la capacidad del sistema completo. A pesar de las modificaciones, la simetría se mantuvo, por lo que las rectas de análisis de la zona irreducible de Brillouin son las mismas que para el caso de la celda analizada en la sección \ref{sec:celdas-orlandi}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\textwidth]{Modelado/yang-celda.pdf}
+	\caption{Celda unitaria del metamaterial presentado en 1999 por Yang, Ma, Qian e Itoh.}
+	\label{fig:celda-yang}
+\end{figure}
+
+Aplicando, nuevamente el análisis de autovalores con condiciones de borde periódicas, se puede observar el comportamiento de los campos, más complejo que en la celda unitaria analizada antes. El mismo se muestra en la figura \ref{fig:yang-analisis-campos}.
+
+Para el primer modo de propagación, resuelta evidente que, como en la estructura de parches cuadrados unidos por puentes analizada antes, el campo eléctrico es principalmente normal al plano sobre el que se ubica la estructura, y se ubica mayormente bajo el parche, donde se presenta el efecto de placas planas paralelas. Sin embargo, debido  a que ahora los puentes parten desde el interior del parche, existen también componentes tangenciales a la superficie. Estas componentes, como se puede observar en la figura \ref{fig:yang-analisis-campos} b) (para el primer modo) y f) (para el segundo modo), son muy notorias en los bordes de la celda unidad, por lo que los efectos de acoplamiento capacitivo mutuo entre celdas son mucho más notorios que en la celda analizada antes.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/yang-modo1-Enorma-Etangencial.pdf}
+	\caption{Comportamiento, en promedio temporal, de los campos eléctrico y magnético sobre una celda unitaria de Yang, para el primer y segundo modo de propagación.}
+	\label{fig:yang-analisis-campos}
+\end{figure}
+
+Los campos magnéticos, por otro lado, para el primer modo de propagación son muy similares a los que presenta la celda analizada antes, incluyendo su variación temporal, que puede verse en las figuras \ref{fig:yang-analisis-campos-fases} c) y d) para dos tiempos distintos dentro del periodo. En el primero de ellos, cuando el campo eléctrico tiene amplitud máxima sobre el parche (figura a)), la corriente saliente al parche a través de los puentes horizontales crece. De la misma forma, cuando la tensión en el parche decrece a su mínimo, la corriente entrante al parche es máxima.
+
+Para el segundo modo de propagación, el campo eléctrico, en promedio (figura \ref{fig:yang-analisis-campos} e) y f)) tiene un comportamiento muy similar al primer modo de propagación, pero como se puede observar en las figuras correspondientes de la figura \ref{fig:yang-analisis-campos-fases}, para tiempos distintos, el campo es mayor, alternadamente, en la parte superior e inferior de los parches. El campo magnético normal a superficie, en promedio, se puede observar, para este modo de propagación, presente en todas las aperturas metálicas de la celda unidad, indicando que sobre los parches y los bordes del parche circula una corriente notoria. En las figuras \ref{fig:yang-analisis-campos-fases} g) y h) se puede observar el campo magnético para dos momentos de tiempo distinto. Este campo magnético sugiere que en los puentes horizontales hay corrientes en ambas direcciones en todo momento (debido a que las dos aperturas que lo rodean presentan un campo magnético normal saliente), mientras que los puentes verticales poseen corrientes en un único sentido y, al contrario que para el caso de los puentes horizontales del primer modo, en este caso el sentido es el mismo.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/yang-modo1-EH-fases.pdf}
+	\caption{Comportamiento, para dos tiempos diferentes, de los campos eléctrico y magnético normales a la superficie, sobre la celda propuesta por Yang, Ma, Qian e Itoh, para el primer y segundo modo de propagación.}
+	\label{fig:yang-analisis-campos-fases}
+\end{figure}
+
+
+Se debe tener en cuenta que el uso de esta estructura presenta mayores dificultades, especialmente cuando su construcción se realiza por técnicas rudimentarias. Sin embargo, gracias a un mejor aprovechamiento del espacio, que permiten obtener una mayor capacidad e inductancia por celda unitaria, la geometría permite diseñar celdas unitarias más pequeñas para lograr zonas prohibidas para frecuencias de microondas que las que se pueden lograr utilizando la geometría analizada en la sección \ref{sec:celda-orlandi}.
+
 
 \section{Modelado por líneas de transmisión}
 %%%%
@@ -366,11 +395,6 @@ A medida que aumenta el tamaño del mismo, disminuye el ancho de banda de la zon
 %Venkateswaran, pag 40 en adelante.
 % Impedancia: hacer algo similar. Tesis Zheng, pag 8
 
-\subsection{TMM}
-%%%%
-
-% Caloz, pagina 144
-% Choi (tesis), pag 54
 \subsection{TLM}
 \label{subsubsec_tlm}
 %%%%
