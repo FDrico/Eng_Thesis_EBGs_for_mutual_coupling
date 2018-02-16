@@ -71,30 +71,30 @@ Cuando los parches pasivos poseen geometrías similares a la del parche original
 \section{Diseño de la antena \textit{microstrip}}
 \label{sec_disenio_microstrip}
 %%%%
-El diseño de la antena microstrip consta de dos etapas: La primera de ellas consiste en el uso de los modelos teóricos de la sección \ref{sec:antenas_microstrip} para diseñar una antena \textit{microstrip} para la frecuencia deseada; y la segunda consiste en la modificación del diseño, para lograr aumentar su ancho de banda de forma notoria, lo que inevitablemente genera cambios en la frecuencia de resonancia y valor de ROE de la antena. Estas variaciones se pueden predecir mediante simulación, lo que obliga a un proceso iterativo de corrección y simulación para lograr las características deseadas, que en los programas comerciales suele estar automatizado, bajo el nombre de optimización.
+El diseño de la antena microstrip consta de dos etapas: La primera de ellas consiste en el uso de los modelos teóricos de la sección \ref{subsec_antenas_microstrip} para diseñar una antena \textit{microstrip} para la frecuencia deseada; y la segunda consiste en la modificación del diseño, para lograr aumentar su ancho de banda de forma notoria, lo que inevitablemente genera cambios en la frecuencia de resonancia y valor de ROE de la antena. Estas variaciones se pueden predecir mediante simulación, lo que obliga a un proceso iterativo de corrección y simulación para lograr las características deseadas, que en los programas comerciales suele estar automatizado, bajo el nombre de optimización.
 
 Se debe calcular, en primer lugar, un valor tentativo del ancho W de la antena (con W según la figura \ref{fig:antema-microstrip-inset} a)), teniendo en cuenta que un mayor ancho W da lugar a una menor resistencia de entrada $R_{in}$. Una fórmula empírica está dada por \cite{Barthia:Handbook}, y para una frecuencia de resonancia de unos 2.42 GHz y sustrato FR-4 de 1.6 mm de espesor, resulta:
 
 \begin{align}
-W = \frac{c_0}{2 f_r} \sqrt{\frac{2}{\epsilon_r+1}} = 37.35 mm
+W = \frac{c_0}{2 f_r} \sqrt{\frac{2}{\epsilon_r+1}} = 37.35\; mm
 \end{align}
 
-Obtenido el ancho aproximado, se puede calcular la permitividad eléctrica eficaz, $\epsilon_{eff}$, de la ecuación \ref{eq:epsiloneff}, que resulta en 4.17. Esto permite, conociendo la frecuencia de resonancia buscada, calcular la longitud efectiva de la línea de transmisión, como:
+Obtenido el ancho aproximado, se puede calcular la permitividad eléctrica eficaz, $\epsilon_{eff}$, de la ecuación \ref{eq:epsilon_eff}, que obtiene el valor 4.17. Esto permite, conociendo la frecuencia de resonancia buscada, calcular la longitud efectiva de la línea de transmisión, como:
 
 \begin{align}
-	L_{eff} = \frac{c_0}{2 f_r \sqrt{\epsilon_{reff}}} = 30.32 mm
+	L_{eff} = \frac{c_0}{2 f_r \sqrt{\epsilon_{r_{eff}}}} = 30.32\; mm
 \end{align}
 
 Dado que $L_{eff} = L + 2 \Delta L$, a partir del cálculo de $\Delta L$, que cuantiza el efecto del \textit{fringing} sobre la frecuencia de resonancia, usando la expresión \ref{eq:deltaL-antena-microstrip}, que resulta en 0.74 mm, se puede saber el valor de L a utilizar ($L = L_{eff} - 2 \Delta L$), que es de 28.85 mm.
 
-Además de la antena, debe diseñarse también la alimentación de la misma. De entre las múltiples formas de alimentación de una antena \textit{microstrip} \cite{Barthia:Handbook}, la seleccionada por su facilidad de fabricación es la que consiste en una línea de la misma tecnología, que vincula a un conector en el borde de la placa con el parche. En particular, es importante que la impedancia característica de la línea \textit{microstrip} utilizada sea de $50\;\Omega$, para lo que debe seleccionarse con cuidado su ancho, en función de la altura del sustrato y la permitividad del dieléctrico. Según las expresiones que se pueden hallar en el Apéndice B de \cite{Barthia:Handbook}, el ancho necesario para obtener una impedancia de $50\;\Omega$ es de aproximadamente 3.1 mm.
+Además de la antena, debe diseñarse también la alimentación de la misma. De entre las múltiples formas de alimentación de una antena \textit{microstrip} \cite{Barthia:Handbook}, la seleccionada por su facilidad de fabricación es la que consiste en una línea de la misma tecnología, que vincula a un conector en el borde de la placa con el parche, esquematizado antes en la figura \ref{fig:antema-microstrip-inset}. En particular, es importante que la impedancia característica de la línea \textit{microstrip} utilizada sea de $50\;\Omega$, para lo que debe seleccionarse con cuidado su ancho, en función de la altura del sustrato y la permitividad del dieléctrico. Según las expresiones que se pueden hallar en el Apéndice B de \cite{Barthia:Handbook}, el ancho necesario para obtener una impedancia de $50\;\Omega$ es de aproximadamente 3.1 mm.
 
-Conocidos estos valores, resta determinar el \textit{inset} que debe aplicarse para obtener una impedancia de entrada de 50 $\Omega$, a fin de lograr adaptación. Para esto, se debe utilizar la curva de la figura \ref{fig:antema-microstrip-inset} b), conociendo previamente el valor de la impedancia sobre el borde del parche rectangular. A partir de las expresiones de la parte real de la admitancia, o conductancia, obtenidas de \cite{Balanis:Theory} y mostradas en las ecuaciones \ref{eq:conductancia-microstrip-balanis} (donde $J_0$ es una función de Bessel del primer tipo de orden cero), la resistencia de entrada resulta $R_{in} = \frac{1}{2(G_1 \pm G_{12})}$. A partir de este valor, la consulta a la gráfica permite deducir que el valor de \textit{inset} requerido es de aproximadamente 10.73 mm.
+Conocidos estos valores, resta determinar el \textit{inset} que debe aplicarse para obtener una impedancia de entrada de 50 $\Omega$, a fin de lograr adaptación. Para esto, se debe utilizar la curva de la figura \ref{fig:antema-microstrip-inset} b), conociendo previamente el valor de la impedancia sobre el borde del parche rectangular. A partir de las expresiones de la parte real de la admitancia, o conductancia, obtenidas de \cite{Balanis:Theory} y mostradas en las ecuaciones \ref{eq:conductancia-microstrip-balanis} (donde $J_0$ es una función de Bessel del primer tipo de orden cero), la resistencia de entrada resulta $R_{in} = 1/[2(G_1 \pm G_{12})]$. A partir de este valor, la consulta a la gráfica permite deducir que el valor de \textit{inset} requerido es de aproximadamente 10.73 mm.
 
 \begin{align}
 	\label{eq:conductancia-microstrip-balanis}
-	G_1 = \frac{1}{\pi \eta_0} \int_0^\pi \left[ \frac{\sin \left( \frac{k_0 W}{2} \cos \theta \right) }{\cos \theta}\right]^2 \sin^3 \theta d\theta \\
-	G_{12} = \frac{1}{120 \pi^2} \int_0^{\pi} \left[ \frac{\sin \left( \frac{k_0 W}{2} \cos \theta \right) }{\cos \theta}\right]^2 J_o(k_0 L \sin \theta) \sin^3 \theta d\theta
+	G_1 &=& \frac{1}{\pi \eta_0} \int_0^\pi \left[ \frac{\sin \left( \frac{k_0 W}{2} \cos \theta \right) }{\cos \theta}\right]^2 \sin^3 \theta d\theta \\
+	G_{12} &=& \frac{1}{120 \pi^2} \int_0^{\pi} \left[ \frac{\sin \left( \frac{k_0 W}{2} \cos \theta \right) }{\cos \theta}\right]^2 J_o(k_0 L \sin \theta) \sin^3 \theta d\theta
 \end{align}
 
 El siguiente paso consiste en describir geométricamente la estructura calculada para el uso de un software de simulación que permita optimizar los parámetros, en vistas de que la frecuencia de resonancia sea 2.41 GHz, y que el parámetro $S_{11}$, correspondiente al puerto de alimentación, sea tan pequeño como sea posible. Es importante aclarar que el agregado de los parches de carga y de la estructura EBG modificará la frecuencia de resonancia, y que este análisis se realiza en miras de comprender los cambios que se producen sobre la antena original, y confirmar el aumento de ancho de banda mediante la técnica mencionada antes.
@@ -102,7 +102,17 @@ El siguiente paso consiste en describir geométricamente la estructura calculada
 %Comentar resultados de simulación. Imagenes de la misma.%
 % Las simulaciones quedaron en mi pc: Metamateriales/Simulaciones/Simo3-CST/Celdas Unitarias / Celdas Unitarias Consideradas / UCPBG / Simulaciones para medicion / UnParche-SinCarga-SinEBG.cst
 
+% Comparar:
+% -varios insets, mismo alto y largo total de antena
+% -mostrar qué pasa cuando varía el largo de la antena, para un inset fijo
+% -mostrar qué pasa cuando varía el alto de la antena, apra inset fijo.
+
+% Simular la optimización y poner los resultados.
+% Incluir farfields!
+
 Finalizado el diseño analítico del parche único, resta considerar el uso de los parches \textit{microstrip} acoplados capacitivamente al parche activo principal. Para ello, se realizaron sucesivas simulaciones en el software de simulación CST Microwave Studio, realizando una optimización para obtener el mayor ancho de banda posible dentro del rango de interés. Los parches deben ser de un largo similar a la antena, aunque ligeramente diferente, para aumentar el ancho de banda. Por otro lado, se eligió que fueran simétricos, a fin de no aumentar la anisotropía del problema.
+
+% Acá seguramente hay que hacer aun las simulaciones. los valores de la antena oroginal no están 100% definidos, y algo pueden cambiar en la optimización. La idea es fijar un valor, mostrar cómo cambia, y luego optimizar.
 
 %% Poner resultados
 
@@ -111,6 +121,8 @@ El diseño de un único parche cargado no equivale al problema completo, aunque 
 Para poder estudiar este problema, será necesario comprender cómo se comporta un conjunto de dos antenas \textit{microstrip} sin estructuras entre ellas, separadas una distancia adecuada para que los efectos de acoplamiento mutuo resulten visibles.
 
 %% COMO ES ESA DISTANCIA??
+
+% Simular, incluyendo farfield.
 
 % PONER FOTO
 % Poner resultados finales
