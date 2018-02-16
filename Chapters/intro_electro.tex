@@ -1059,6 +1059,7 @@ Las \textit{striplines}, debido a la homogeneidad del dieléctrico, soportan mod
 En general, para simplificar el análisis, se considera que la cinta \textit{microstrip} es una \textit{stripline}, donde el dieléctrico tiene una constante dieléctrica efectiva, menor a la constante dieléctrica del sustrato, pero mayor a la del aire, dependiente del ancho del sustrato, el ancho del conductor y la frecuencia de trabajo. La expresión de esta constante es la siguiente:
 
 \begin{align}
+\label{eq:epsilon_eff}
 	\epsilon_{eff} = \epsilon_0 \left(\frac{\epsilon_r+1}{2} + \frac{\epsilon_r-1}{2} \left( 1+12 \frac{h}{W} \right)^{-1/2} \right)
 	\label{eq:cte-diel-efectiva-microstrip}
 \end{align}
@@ -1233,7 +1234,7 @@ El efecto de \textit{fringing} en los bordes del parche, que da lugar a un aumen
 La impedancia de entrada de una antena \textit{microstrip} depende fuertemente de la posición de la alimentación, además de los valores de $G$ y $B$ de los \textit{slots} radiantes \cite{Balanis:Advanced}. Cuando la alimentación se realiza mediante una cinta \textit{microstrip}, se suele terminar la misma en el interior del parche, a una distancia $y_0$ del borde, como se indica en la figura \ref{fig:antema-microstrip-inset}, permitiendo una mejor adaptación, aunque introduciendo una capacidad de juntura que afecta a la frecuencia de resonancia. La distancia del punto de alimentación al borde del parche será menor a la mitad de la longitud total del parche, en lo que se identificó como "zona de adaptación'' en la misma figura.
 
 \begin{figure} [H]
-	\centering 
+	\centering
 	\subfigure[]{
 		\includegraphics[width=0.48\textwidth]{intro_electro/antena-inset-drawing.pdf}}
 	\subfigure[]{
