@@ -71,12 +71,12 @@ Cuando los parches pasivos poseen geometrías similares a la del parche original
 \section{Diseño de la antena \textit{microstrip}}
 \label{sec_disenio_microstrip}
 %%%%
-El diseño de la antena microstrip consta de dos etapas: La primera de ellas consiste en el uso de los modelos teóricos de la sección \ref{subsec_antenas_microstrip} para diseñar una antena \textit{microstrip} para la frecuencia deseada; y la segunda consiste en la modificación del diseño, para lograr aumentar su ancho de banda de forma notoria, lo que inevitablemente genera cambios en la frecuencia de resonancia y valor de ROE de la antena. Estas variaciones se pueden predecir mediante simulación, lo que obliga a un proceso iterativo de corrección y simulación para lograr las características deseadas, que en los programas comerciales suele estar automatizado, bajo el nombre de optimización.
+El diseño de la antena \textit{microstrip} consta de dos etapas: La primera de ellas consiste en el uso de los modelos teóricos de la sección \ref{subsec_antenas_microstrip} para diseñar una antena \textit{microstrip} para la frecuencia deseada; y la segunda consiste en la modificación del diseño, para lograr aumentar su ancho de banda de forma notoria, lo que inevitablemente genera cambios en la frecuencia de resonancia y valor de ROE de la antena. Estas variaciones se pueden predecir mediante simulación, lo que obliga a un proceso iterativo de corrección y simulación para lograr las características deseadas, que en los programas comerciales suele estar automatizado, bajo el nombre de optimización.
 
 Se debe calcular, en primer lugar, un valor tentativo del ancho W de la antena (con W según la figura \ref{fig:antema-microstrip-inset} a)), teniendo en cuenta que un mayor ancho W da lugar a una menor resistencia de entrada $R_{in}$. Una fórmula empírica está dada por \cite{Barthia:Handbook}, y para una frecuencia de resonancia de unos 2.42 GHz y sustrato FR-4 de 1.6 mm de espesor, resulta:
 
 \begin{align}
-W = \frac{c_0}{2 f_r} \sqrt{\frac{2}{\epsilon_r+1}} = 37.35\; mm
+	W = \frac{c_0}{2 f_r} \sqrt{\frac{2}{\epsilon_r+1}} = 37.35\; mm
 \end{align}
 
 Obtenido el ancho aproximado, se puede calcular la permitividad eléctrica eficaz, $\epsilon_{eff}$, de la ecuación \ref{cte-diel-efectiva-microstrip}, que obtiene el valor 4.17. Esto permite, conociendo la frecuencia de resonancia buscada, calcular la longitud efectiva de la línea de transmisión, como:
@@ -93,25 +93,52 @@ Conocidos estos valores, resta determinar el \textit{inset} que debe aplicarse p
 
 \begin{align}
 	\label{eq:conductancia-microstrip-balanis}
-	G_1 &=& \frac{1}{\pi \eta_0} \int_0^\pi \left[ \frac{\sin \left( \frac{k_0 W}{2} \cos \theta \right) }{\cos \theta}\right]^2 \sin^3 \theta d\theta \\
-	G_{12} &=& \frac{1}{120 \pi^2} \int_0^{\pi} \left[ \frac{\sin \left( \frac{k_0 W}{2} \cos \theta \right) }{\cos \theta}\right]^2 J_o(k_0 L \sin \theta) \sin^3 \theta d\theta
+	G_1 &= \frac{1}{\pi \eta_0} \int_0^\pi \left[ \frac{\sin \left( \frac{k_0 W}{2} \cos \theta \right) }{\cos \theta}\right]^2 \sin^3 \theta d\theta \\
+	G_{12} &= \frac{1}{120 \pi^2} \int_0^{\pi} \left[ \frac{\sin \left( \frac{k_0 W}{2} \cos \theta \right) }{\cos \theta}\right]^2 J_o(k_0 L \sin \theta) \sin^3 \theta d\theta
 \end{align}
 
 El siguiente paso consiste en describir geométricamente la estructura calculada para el uso de un software de simulación que permita optimizar los parámetros, en vistas de que la frecuencia de resonancia sea 2.41 GHz, y que el parámetro $S_{11}$, correspondiente al puerto de alimentación, sea tan pequeño como sea posible. Es importante aclarar que el agregado de los parches de carga y de la estructura EBG modificará la frecuencia de resonancia, y que este análisis se realiza en miras de comprender los cambios que se producen sobre la antena original, y confirmar el aumento de ancho de banda mediante la técnica mencionada antes.
 
-%Comentar resultados de simulación. Imagenes de la misma.%
-% Las simulaciones quedaron en mi pc: Metamateriales/Simulaciones/Simo3-CST/Celdas Unitarias / Celdas Unitarias Consideradas / UCPBG / Simulaciones para medicion / UnParche-SinCarga-SinEBG.cst
+Los resultados de la variación de los tres parámetros de interés en el diseño de la antena, ya elegido el sustrato, se observan en la figura \ref{fig:simulaciones-microstrip-1parche}. Como se puede observar, en efecto de la variación del largo L es muy notorio, debido a que, como se explicó antes, modifica la frecuencia de resonancia: A mayor largo L, menor resulta la frecuencia de resonancia, debido a que la longitud de onda en resonancia es más corta. Se observa que para alrededor de 45 mm de largo, la frecuencia de resonancia ronda la buscada.
 
-% Comparar:
-% -varios insets, mismo alto y largo total de antena
-% -mostrar qué pasa cuando varía el largo de la antena, para un inset fijo
-% -mostrar qué pasa cuando varía el alto de la antena, apra inset fijo.
 
-% Simular la optimización y poner los resultados.
-% Incluir farfields!
+% ESTAN MAL LOS L!!!! VER PARA CAMBIAR, MIRAR EL DIBUJO DE LA SIMU. EL NUMERO ESTÁ MAL PORQUE CONSIDERA EL LARGO DEL PUENTE. CUIDADO!
+
+
+\begin{figure}[H]
+	\centering 
+	\subfigure[Variación del largo L.]{
+		\label{fig:1parche-varlargo}
+		\includegraphics[width=0.40\textwidth]{Aplicacion/VariacionLargo-UnParche.pdf}}
+	\hspace{30pt}
+	\subfigure[Variación del ancho W.]{
+		\label{fig:1parche-varancho}
+		\includegraphics[width=0.40\textwidth]{Aplicacion/VariacionAncho-UnParche.pdf}}
+	\subfigure[Variación de valor del \textit{inset}.]{
+		\label{fig:1parche-varinset}
+		\includegraphics[width=0.40\textwidth]{Aplicacion/VariacionInset-UnParche.pdf}}
+	\caption{Variación del parámetro $S_{11}$ del puerto en función de distintos parámetros del parche único.}
+	\label{fig:simulaciones-microstrip-1parche}
+\end{figure}
+
+La variación del valor del ancho W produce efectos menos notorios, modificando ligeramente la frecuencia de resonancia debido a que tiene impacto sobre la longitud efectiva del parche. Además, como se explicó previamente, el ancho del parche modifica la resistencia de entrada, lo que modifica  los valores de $S_{11}$, haciendo que cerca de 40 mm se obtenga el valor óptimo.
+
+Finalmente, el parámetro de más fácil variación en un parche, el valor del \textit{inset}, da lugar a variaciones muy grandes en el valor del parámetro $S_{11}$. Esto permite una fácil adaptación manual de la antena. Se observa que el valor de \textit{inset} de aproximadamente 10 mm genera los resultados deseados.
+
+La optimización, realizada con CST Microwave Studio, con objetivo en establecer los valores más adecuados automáticamente para lograr el mínimo valor de S11 en 2.41 GHz, arrojó como resultado un valor de L de XX, un valor de W de XX y un valor de \textit{inset} de XX.
+
+En miras de comparar el efecto sobre el campo lejano de las modificaciones a realizarse sobre el parche para aumentar el ancho de banda, se muestra, en la figura \ref{fig:farfield-1parche-sincarga-sinebg}, el comportamiento en campo lejano, donde se asume un sustrato de 190 mm $\times$ 135 mm.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Aplicacion/FarfieldResults.pdf}
+	\caption{Comportamiento del campo lejano para un parche microstrip sin modificaciones, en la frecuencia de resonancia. La imagen tridimensional izquierda muestra la estructura y, en colores, el valor de la directividad para cada dirección. Además, muestra la dirección de variación de $\theta$ y $\phi$. La gráfica superior derecha representa, en rojo, la variación de la directividad en función de $\phi$, para un $\theta$ de $90^\circle$, es decir, rasante al plano de la antena. La gráfica inferior derecha representa la variación de la directividad en función de $\theta$, para un valor de $\phi$ de $90^\circle$.}
+	\label{fig:farfield-1parche-sincarga-sinebg}
+\end{figure}
 
 Finalizado el diseño analítico del parche único, resta considerar el uso de los parches \textit{microstrip} acoplados capacitivamente al parche activo principal. Para ello, se realizaron sucesivas simulaciones en el software de simulación CST Microwave Studio, realizando una optimización para obtener el mayor ancho de banda posible dentro del rango de interés. Los parches deben ser de un largo similar a la antena, aunque ligeramente diferente, para aumentar el ancho de banda. Por otro lado, se eligió que fueran simétricos, a fin de no aumentar la anisotropía del problema.
 
+Debido a que los parámetros para un parche sólo están optimizados, resulta conveniente, en este caso, realizar simulaciones para comprender el efecto de la variación de distintos parámetros.
 % Acá seguramente hay que hacer aun las simulaciones. los valores de la antena oroginal no están 100% definidos, y algo pueden cambiar en la optimización. La idea es fijar un valor, mostrar cómo cambia, y luego optimizar.
 
 %% Poner resultados
