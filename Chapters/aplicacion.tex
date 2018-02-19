@@ -59,7 +59,7 @@ La estructura propuesta consiste en un parche rectangular, ubicado sobre un sust
 \end{figure}
 
 
-Los parches rectangulares, al igual que en el desarrollo del análisis de estructuras EBG, están acoplados al elemento activo mediante lo que puede modelarse como una red $\pi$ de capacitores (acoplamiento capacitivo) \cite{Kumar:Non-radiating}, similar a mostrada en la figura \ref{fig:acoplamiento-capacitivo-modelo}, donde los denominados \textit{pixeles} deben ser reemplazados por los parches propiamente dichos. En términos generales, los parámetros que modificarán la impedancia de entrada y que, por lo tanto, afectarán al ancho de banda, son la distancia entre el resonador activo y los pasivos ($g$), la longitud de los parches acoplados ($l'$) y la posición del punto de alimentación \cite{Kumar:Non-radiating}.
+Los parches rectangulares, al igual que en el desarrollo del análisis de estructuras EBG, están acoplados al elemento activo mediante lo que puede modelarse como una red $\pi$ de capacitores (acoplamiento capacitivo) \cite{Kumar:Non-radiating}, similar a mostrada en la figura \ref{fig:acoplamiento-capacitivo-modelo}, donde los denominados \textit{pixeles} deben ser reemplazados por los parches propiamente dichos. En términos generales, los parámetros que modificarán la impedancia de entrada y que, por lo tanto, afectarán al ancho de banda, son la distancia entre el resonador activo y los pasivos ($g'$), la longitud de los parches acoplados ($l'$) y la posición del punto de alimentación \cite{Kumar:Non-radiating}.
 
 La existencia de estos parches, que pueden considerarse como de carga, implican una modificación de la impedancia de entrada para distintas frecuencias.
 
@@ -101,10 +101,6 @@ El siguiente paso consiste en describir geométricamente la estructura calculada
 
 Los resultados de la variación de los tres parámetros de interés en el diseño de la antena, ya elegido el sustrato, se observan en la figura \ref{fig:simulaciones-microstrip-1parche}. Como se puede observar, en efecto de la variación del largo L es muy notorio, debido a que, como se explicó antes, modifica la frecuencia de resonancia: A mayor largo L, menor resulta la frecuencia de resonancia, debido a que la longitud de onda en resonancia es más corta. Se observa que para alrededor de 45 mm de largo, la frecuencia de resonancia ronda la buscada.
 
-
-% ESTAN MAL LOS L!!!! VER PARA CAMBIAR, MIRAR EL DIBUJO DE LA SIMU. EL NUMERO ESTÁ MAL PORQUE CONSIDERA EL LARGO DEL PUENTE. CUIDADO!
-
-
 \begin{figure}[H]
 	\centering 
 	\subfigure[Variación del largo L.]{
@@ -117,7 +113,11 @@ Los resultados de la variación de los tres parámetros de interés en el diseñ
 	\subfigure[Variación de valor del \textit{inset}.]{
 		\label{fig:1parche-varinset}
 		\includegraphics[width=0.40\textwidth]{Aplicacion/VariacionInset-UnParche.pdf}}
-	\caption{Variación del parámetro $S_{11}$ del puerto en función de distintos parámetros del parche único.}
+	\hspace{30pt}
+	\subfigure[Antena sin cargas optimizada.]{
+		\label{fig:antena-optimizada}
+		\includegraphics[width=0.40\textwidth]{Aplicacion/antena-optimizada.PNG}}
+	\caption{Variación del parámetro $S_{11}$ del puerto en función de distintos parámetros del parche único, y antena optimizada final.}
 	\label{fig:simulaciones-microstrip-1parche}
 \end{figure}
 
@@ -125,7 +125,7 @@ La variación del valor del ancho W produce efectos menos notorios, modificando 
 
 Finalmente, el parámetro de más fácil variación en un parche, el valor del \textit{inset}, da lugar a variaciones muy grandes en el valor del parámetro $S_{11}$. Esto permite una fácil adaptación manual de la antena. Se observa que el valor de \textit{inset} de aproximadamente 10 mm genera los resultados deseados.
 
-La optimización, realizada con CST Microwave Studio, con objetivo en establecer los valores más adecuados automáticamente para lograr el mínimo valor de S11 en 2.41 GHz, arrojó como resultado un valor de L de XX, un valor de W de XX y un valor de \textit{inset} de XX.
+La optimización, realizada con CST Microwave Studio, con objetivo en establecer los valores más adecuados automáticamente para lograr el mínimo valor de S11 en 2.41 GHz, arrojó como resultado un valor de L de 28.86 mm, un valor de W de 40.41 mm y un valor de \textit{inset} de 9.59 mm, como se indica en la figura \ref{fig:antena-optimizada}.
 
 En miras de comparar el efecto sobre el campo lejano de las modificaciones a realizarse sobre el parche para aumentar el ancho de banda, se muestra, en la figura \ref{fig:farfield-1parche-sincarga-sinebg}, el comportamiento en campo lejano, donde se asume un sustrato de 190 mm $\times$ 135 mm.
 
@@ -136,12 +136,34 @@ En miras de comparar el efecto sobre el campo lejano de las modificaciones a rea
 	\label{fig:farfield-1parche-sincarga-sinebg}
 \end{figure}
 
-Finalizado el diseño analítico del parche único, resta considerar el uso de los parches \textit{microstrip} acoplados capacitivamente al parche activo principal. Para ello, se realizaron sucesivas simulaciones en el software de simulación CST Microwave Studio, realizando una optimización para obtener el mayor ancho de banda posible dentro del rango de interés. Los parches deben ser de un largo similar a la antena, aunque ligeramente diferente, para aumentar el ancho de banda. Por otro lado, se eligió que fueran simétricos, a fin de no aumentar la anisotropía del problema.
+Finalizado el diseño analítico del parche único, resta considerar el uso de los parches \textit{microstrip} acoplados capacitivamente al parche activo principal para aumentar el ancho de banda del sistema radiante. Para ello, se realizaron sucesivas simulaciones en el software de simulación CST Microwave Studio, realizando una optimización para obtener el mayor ancho de banda posible dentro del rango de interés. Los parches deben ser de un largo similar a la antena, aunque ligeramente diferente, para aumentar el ancho de banda. Por otro lado, se eligió que fueran simétricos, a fin de no aumentar la anisotropía del problema.
 
-Debido a que los parámetros para un parche sólo están optimizados, resulta conveniente, en este caso, realizar simulaciones para comprender el efecto de la variación de distintos parámetros.
-% Acá seguramente hay que hacer aun las simulaciones. los valores de la antena oroginal no están 100% definidos, y algo pueden cambiar en la optimización. La idea es fijar un valor, mostrar cómo cambia, y luego optimizar.
+Debido a que los parámetros para un parche sólo están optimizados, resulta conveniente, en este caso, realizar simulaciones para comprender el efecto de la variación de distintos parámetros, en particular de la distancia entre el radiador activo y los parches, $g'$, el ancho $w'$ de los parches y su largo $l'$. Las primeras simulaciones, utilizando los valores obtenidos en el análisis de un parche único, demostraron que los parches de carga efectivamente cambian las frecuencia de resonancia. 
 
-%% Poner resultados
+En la figura \ref{fig:unparche-concarga-sinebg-varAnchoLprima} se puede observar el comportamiento, para distintos valores de $l'$, con $w'$ y $g'$ fijos, habiendo elegido los valores del parche óptimos obtenidos antes (donde se consideró un parche sin carga). Se observa que para todos los valores de $l'$ probados, la frecuencia de resonancia del sistema, o la frecuencia para la que el parámetro $S_{11}$ es mínima, disminuye notablemente, debido al acoplamiento entre elementos y la aparición de modos de menor frecuencia. En todas las curvas se observan dos mínimos locales. Cuando las cargas tienen un largo $l'$ menor al de la antena \textit{microstrip}, como es el caso para 25 mm y 28.75 mm, existe un mínimo a una frecuencia superior a la buscada, que para el caso de 25 mm queda fuera de la gráfica. De la misma manera, cuando el largo de las cargas es mayor al del parche, se presenta un mínimo a una frecuencia inferior. Como se explicó antes, el caso óptimo se da cuando ambos mínimos coinciden o están lo suficientemente cerca en frecuencia para aumentar el ancho de banda del sistema radiante. Se observa, también, que el mínimo absoluto del parámetro $S_{11}$ adopta un valor menor, más deseable, para valores de $l'$ por debajo de $L$, mientras que se ubica en una posición más cercana a la frecuencia buscada para valores por encima de $L$. Esta última variación podría controlarse mediante la disminución del tamaño de la geometría completa.
+
+En la figura \ref{fig:unparche-concarga-sinebg-varDistanciaCarga} se puede observar que una mayor distancia entre el parche \textit{microstrip} y las cargas da lugar a una frecuencia de resonancia menor. Sin embargo, el mínimo local cercano a 2.17 GHz generado por la presencia de los parches de carga no varía notoriamente con la distancia. Por otro lado, el valor que adopta el mínimo absoluto parece ser menor cuando la distancia es pequeña.
+
+Finalmente, en la figura \ref{fig:unparche-concarga-sinebg-varAltoWprima} se muestra la variación del comportamiento en frecuencia del parámetro $S_{11}$ en función de la variación del ancho $w'$ de los parches carga. La frecuencia donde se ubica el mínimo absoluto es mayor cuando el parche carga es angosto, ya que limita la formación de modos indeseados.
+
+\begin{figure}[H]
+	\centering 
+	\subfigure[Variación del largo $l'$.]{
+		\label{fig:unparche-concarga-sinebg-varAnchoLprima}
+		\includegraphics[width=0.40\textwidth]{Aplicacion/VariacionAnchoLprima-UnParcheConCarga.pdf}}
+	\hspace{30pt}
+	\subfigure[Variación de la distancia entre la carga y el parche, $g'$.]{
+		\label{fig:unparche-concarga-sinebg-varDistanciaCarga}
+		\includegraphics[width=0.40\textwidth]{Aplicacion/VariacionDistanciagprimera-UnParcheConCarga.pdf}}
+	\subfigure[Variación de valor de $w'$.]{
+		\label{fig:unparche-concarga-sinebg-varAltoWprima}
+		\includegraphics[width=0.40\textwidth]{Aplicacion/VariacionAltowprima-UnParcheConCarga.pdf}}
+	\caption{Variación del parámetro $S_{11}$ del puerto en función de distintos parámetros del parche único, y antena optimizada final.}
+	\label{fig:simulaciones-microstrip-1parchecargado}
+\end{figure}
+
+% Analizar por qué pasan cosas raras.
+% Poner foto del diseño del único parche cargado final.
 
 El diseño de un único parche cargado no equivale al problema completo, aunque sí permitirá luego comparar el comportamiento del parche aislado con el que se obtiene cuando se ubica otra antena \textit{microstrip} rectangular cerca, y cuando se utilizan estructuras EBG para intentar aislarlas.
 
@@ -158,25 +180,70 @@ Para poder estudiar este problema, será necesario comprender cómo se comporta 
 %%%%
 \section{Elección del metamaterial}
 \label{sec_eleccion}
-%%%%
-% Cantidad de celdas minima: Bouali, Aguili, impreso.
-% Pedir que bw del metamaterial sera mayor al de la antena
-% Mirar el analisis de Coccioli, Yang, Itoh, pag 2126
-% ¿criterio para la distancia? IMPORTANTE!!!!!
-%%%%
+
+Existen numerosas posibles celdas unitarias uniplanares, que fueron creadas a partir de la propuesta inicial de Yang y otros \cite{Yang:UCPBG}, y que procuran aumentar el ancho de banda prohibida y la atenuación de microondas, muchas veces utilizando técnicas de miniaturización, que buscan lograr geometrías que presenten una mayor o menor inductancia, y una mayor o menor capacidad con el plano de tierra y con celdas vecinas, en función de las necesidades. La búsqueda, en el contexto de la disminución del acoplamiento mutuo entre antenas \textit{microstrip}, de celdas unitarias ópticas gira alrededor de la búsqueda de anchos de banda prohibida lo suficientemente amplios como para cubrir el ancho de banda de las antenas \textit{microstrip} en cuestión.
+
+Para este trabajo se seleccionó la celda de Yang, analizada en la sección \ref{sec:celda-yang}, debido a que fue la primer variante publicada, y posee optimizaciones sobre la celda de Orlandi, analizada en la sección \ref{sec:celda-orlandi}.
+
+Sin embargo, existen numerosos diseños y geometrías, entre las que destacan la celda analizada por Goussetis \cite{Goussetis:TailoringAMCEBGCharacteristics}, que consiste en parches cuadrados sin interconexión entre sí, como el mostrado en la figura \ref{fig:rectangulo-cuadrado}, por lo que presentan capacidad con el plano de tierra y con otros parches o celdas unitarias aledañas, pero poseen una baja inductancia, lo que los vuelve subóptimos. Otros trabajos de interés son los de Abidin \cite{Abidin;Thesis}, que propuso las estructuras mostradas en las figuras \ref{fig:abidin1} y \ref{fig:abidin2}, que poseen un ancho de banda mayor al de Yang, aunque requieren más iteraciones de simulación, debido a la complejidad de las geometrías.
+
+Estructuras más sencillas son propuestas en \cite{Asimonis:designoptimization}, mostradas en las figuras \ref{fig:assimonis1}, \ref{fig:assimonis2} y \ref{fig:assimonis3}, con resultados similares a la geometría elegida.
+
+Entre los esfuerzos más intuitivos para aumentar la inductancia, se destaca el propuesto por \cite{IslamAlam:CompactEBG}, mostrado en la figura \ref{fig:islamalam}. En ella se observa que se aumentó el largo y la capacidad de las cintas \textit{microstrip} que unen los parches, modificando las líneas para que ocuparan la mayor cantidad de espacio posible. Las simulaciones de esta estructura ofrecen mejores resultados que los de la celda elegida, aunque al costo de dificultar su diseño en programas \textsc{CAD}. Un modelo utilizando líneas de transmisión para caracterizar el comportamiento de estas celdas está presentado por \cite{Venkateswaran:Thesis}. 
+
+En este sentido, \cite{Kovacs:DesignOptimization} propone, en su tesis doctoral, un algoritmo genético capaz de obtener un mayor ancho de banda prohibida mediante sucesivas simulaciones, sin la intervención de un diseñador, obteniendo celdas complejas pero muy efectivas, como la mostrada en la figura \ref{fig:kovacs}.
+
+
+\begin{figure}[H]
+	\centering 
+	\subfigure[Celda unitaria propuesta por \cite{Abidin:Thesis}.]{
+		\label{fig:abidin1}
+		\includegraphics[width=0.40\textwidth]{Aplicacion/abidin1.png}}
+	\hspace{30pt}
+	\subfigure[Celda unitaria propuesta por \cite{Abidin:Thesis}.]{
+		\label{fig:abidin2}
+		\includegraphics[width=0.40\textwidth]{Aplicacion/abidin2.png}}
+	\subfigure[Celda unitaria propuesta por \cite{Asimonis:designoptimization}.]{
+		\label{fig:assimonis1}
+		\includegraphics[width=0.40\textwidth]{Aplicacion/assimonis1.png}}
+	\hspace{30pt}
+	\subfigure[Celda unitaria propuesta por \cite{Asimonis:designoptimization}.]{
+		\label{fig:assimonis2}
+		\includegraphics[width=0.40\textwidth]{Aplicacion/assimonis2.png}}
+	\subfigure[Celda unitaria propuesta por \cite{Asimonis:designoptimization}.]{
+		\label{fig:assimonis3}
+		\includegraphics[width=0.40\textwidth]{Aplicacion/assimonis3.png}}
+	\subfigure[Celda unitaria propuesta por \cite{IslamAlam:CompactEBG}.]{
+		\label{fig:islamalam}
+		\includegraphics[width=0.40\textwidth]{Aplicacion/islamalam.png}}
+	\subfigure[Celda unitaria propuesta por \cite{Kovacs:DesignOptimization}.]{
+		\label{fig:kovacs}
+		\includegraphics[width=0.40\textwidth]{Aplicacion/kovacs.png}}
+	\caption{Variación del parámetro $S_{11}$ del puerto en función de distintos parámetros del parche único, y antena optimizada final.}
+	\label{fig:simulaciones-microstrip-1parche}
+\end{figure}
+
+La miniaturización cumple un papel importante debido a que es necesaria una profundidad mínima de celdas unitarias entre los parches para que el efecto de disminución de acoplamiento sea notorio. Si las celdas unitarias soy muy grandes, obligaría a separar los parches aún más, consecuencia indeseable. Además, entre la estructura de celdas unitarias y los parches se debe mantener una distancia $g$ mínima, de modo que los efectos de acoplamiento de campo cercano entre la antena y la estructura EBG despreciables.
 
 \section{Estudio del efecto de la distancia sobre el ancho de banda}
 \label{sec_efecto_distancia}
 %%%%
-%Coccioli, Yang, Itoh, pag 2127
+%Coccioli, Yang, Itoh, pag 2127 -> básicamente dice que afecta, que disminuye la frecuencia de resonancia del parche si están demasiado cerca.
 % Iluz, Shavit, pag 1448
 
-Finalmente, es necesario agregar las estructuras EBG para observar el efecto que producen en el arreglo de antenas. Para ello, en primer lugar se debe reducir el efecto que las estructuras ejercen sobre cada uno de los parches por separado, para lo cual también se realizó un conjunto de simulaciones, donde las estructuras se ubicaron a distintas distancias de la antena.
+Finalmente, es necesario agregar las estructuras EBG para observar el efecto que producen en el arreglo de antenas. Para ello, en primer lugar se debe reducir el efecto que las estructuras ejercen sobre cada uno de los parches por separado, para lo cual también se realizó un conjunto de simulaciones, donde las estructuras se ubicaron a distintas distancias de la antena ($g$ en la figura \ref{fig:antena-propuesta-con-ebg}).
+
+% Creo que va a pasar esto
+Como se puede observar, una mayor cercanía entre la estructura EBG y la antena radiante disminuye la frecuencia de resonancia de la misma, debido a los efectos de acoplamiento mutuo.
+% PUede ir esto
+% De las gráficas de la figura, se puede concluir que, si se buscan disminuir el acoplamiento mutuo entre antenas que están cerca mediante la reducción de ondas de superficie, resulta importante considerar, en el diseño de las antenas, a la estructura EBG utilizada, debido que la misma modifica parámetros importantes de la antena.
+% O puede ir esto
+% De las gráficas de la figura, se puede concluir que, si se buscan disminuir el acoplamiento mutuo entre antenas que están cerca mediante la reducción de ondas de superficie, se debe ubicar a la estructura EBG a una distancia tal que los efectos de acoplamiento mutuo sean despreciables para cada antena y para el diagrama de radiación.
 
 \section{Estudio del efecto sobre el acoplamiento mutuo}
 \label{sec_estudio_acoplam_mutuo}
 %%%%
-Establecida la distancia adecuada, es posible ahora incorporar a la simulación las estructuras EBG para observar el efecto sobre el acoplamiento mutuo. Se debe tener en cuenta que la cantidad de celdas unitarias debe ser suficiente para lograr el efecto deseado.
+Establecida la distancia adecuada, es posible ahora incorporar a la simulación las estructuras EBG para observar el efecto sobre el acoplamiento mutuo. Se debe tener en cuenta que la cantidad de celdas unitarias debe ser suficiente para lograr el efecto de reducción del acoplamiento mutuo.
 
 
 % Ondas de superficie se proparagan por plano E? Pagina 132. Rahmat, lbro,.
