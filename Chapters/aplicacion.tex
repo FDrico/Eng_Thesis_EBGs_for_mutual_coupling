@@ -105,18 +105,17 @@ Los resultados de la variación de los tres parámetros de interés en el diseñ
 	\centering 
 	\subfigure[Variación del largo L.]{
 		\label{fig:1parche-varlargo}
-		\includegraphics[width=0.40\textwidth]{Aplicacion/VariacionLargo-UnParche.pdf}}
-	\hspace{30pt}
+		\includegraphics[width=0.48\textwidth]{Aplicacion/VariacionLargo-UnParche.pdf}}
 	\subfigure[Variación del ancho W.]{
 		\label{fig:1parche-varancho}
-		\includegraphics[width=0.40\textwidth]{Aplicacion/VariacionAncho-UnParche.pdf}}
+		\includegraphics[width=0.48\textwidth]{Aplicacion/VariacionAncho-UnParche.pdf}}
 	\subfigure[Variación de valor del \textit{inset}.]{
 		\label{fig:1parche-varinset}
-		\includegraphics[width=0.40\textwidth]{Aplicacion/VariacionInset-UnParche.pdf}}
-	\hspace{30pt}
+		\includegraphics[width=0.48\textwidth]{Aplicacion/VariacionInset-UnParche.pdf}}
+	\hspace{19pt}
 	\subfigure[Antena sin cargas optimizada.]{
 		\label{fig:antena-optimizada}
-		\includegraphics[width=0.40\textwidth]{Aplicacion/antena-optimizada.PNG}}
+		\includegraphics[width=0.42\textwidth]{Aplicacion/antena-optimizada.PNG}}
 	\caption{Variación del parámetro $S_{11}$ del puerto en función de distintos parámetros del parche único, y antena optimizada final.}
 	\label{fig:simulaciones-microstrip-1parche}
 \end{figure}
@@ -125,14 +124,14 @@ La variación del valor del ancho W produce efectos menos notorios, modificando 
 
 Finalmente, el parámetro de más fácil variación en un parche, el valor del \textit{inset}, da lugar a variaciones muy grandes en el valor del parámetro $S_{11}$. Esto permite una fácil adaptación manual de la antena. Se observa que el valor de \textit{inset} de aproximadamente 10 mm genera los resultados deseados.
 
-La optimización, realizada con CST Microwave Studio, con objetivo en establecer los valores más adecuados automáticamente para lograr el mínimo valor de S11 en 2.41 GHz, arrojó como resultado un valor de L de 28.86 mm, un valor de W de 40.41 mm y un valor de \textit{inset} de 9.59 mm, como se indica en la figura \ref{fig:antena-optimizada}.
+La optimización, realizada con CST Microwave Studio, con objetivo en establecer los valores más adecuados automáticamente para lograr el mínimo valor de $S_{11}$ en 2.41 GHz, arrojó como resultado un valor de L de 28.86 mm, un valor de W de 40.41 mm y un valor de \textit{inset} de 9.59 mm, como se indica en la figura \ref{fig:antena-optimizada}.
 
 En miras de comparar el efecto sobre el campo lejano de las modificaciones a realizarse sobre el parche para aumentar el ancho de banda, se muestra, en la figura \ref{fig:farfield-1parche-sincarga-sinebg}, el comportamiento en campo lejano, donde se asume un sustrato de 190 mm $\times$ 135 mm.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Aplicacion/FarfieldResults.pdf}
-	\caption{Comportamiento del campo lejano para un parche microstrip sin modificaciones, en la frecuencia de resonancia. La imagen tridimensional izquierda muestra la estructura y, en colores, el valor de la directividad para cada dirección. Además, muestra la dirección de variación de $\theta$ y $\phi$. La gráfica superior derecha representa, en rojo, la variación de la directividad en función de $\phi$, para un $\theta$ de $90^\circle$, es decir, rasante al plano de la antena. La gráfica inferior derecha representa la variación de la directividad en función de $\theta$, para un valor de $\phi$ de $90^\circle$.}
+	\includegraphics[width=1\textwidth]{Aplicacion/FarfieldResults.pdf}
+	\caption{Comportamiento del campo lejano para un parche \textit{microstrip} sin modificaciones, en la frecuencia de resonancia. La imagen tridimensional izquierda muestra la estructura y, en colores, el valor de la directividad para cada dirección. Además, muestra la dirección de variación de $\theta$ y $\phi$. La gráfica superior derecha representa, en rojo, la variación de la directividad en función de $\phi$, para un $\theta$ de $90^{\circ}$, es decir, rasante al plano de la antena. La gráfica inferior derecha representa la variación de la directividad en función de $\theta$, para un valor de $\phi$ de $90^{\circ}$.}
 	\label{fig:farfield-1parche-sincarga-sinebg}
 \end{figure}
 
@@ -150,14 +149,13 @@ Finalmente, en la figura \ref{fig:unparche-concarga-sinebg-varAltoWprima} se mue
 	\centering 
 	\subfigure[Variación del largo $l'$.]{
 		\label{fig:unparche-concarga-sinebg-varAnchoLprima}
-		\includegraphics[width=0.40\textwidth]{Aplicacion/VariacionAnchoLprima-UnParcheConCarga.pdf}}
-	\hspace{30pt}
+		\includegraphics[width=0.47\textwidth]{Aplicacion/VariacionAnchoLprima-UnParcheConCarga.pdf}}
 	\subfigure[Variación de la distancia entre la carga y el parche, $g'$.]{
 		\label{fig:unparche-concarga-sinebg-varDistanciaCarga}
-		\includegraphics[width=0.40\textwidth]{Aplicacion/VariacionDistanciagprimera-UnParcheConCarga.pdf}}
+		\includegraphics[width=0.47\textwidth]{Aplicacion/VariacionDistanciagprimera-UnParcheConCarga.pdf}}
 	\subfigure[Variación de valor de $w'$.]{
 		\label{fig:unparche-concarga-sinebg-varAltoWprima}
-		\includegraphics[width=0.40\textwidth]{Aplicacion/VariacionAltowprima-UnParcheConCarga.pdf}}
+		\includegraphics[width=0.50\textwidth]{Aplicacion/VariacionAltowprima-UnParcheConCarga.pdf}}
 	\caption{Variación del parámetro $S_{11}$ del puerto en función de distintos parámetros del parche único, y antena optimizada final.}
 	\label{fig:simulaciones-microstrip-1parchecargado}
 \end{figure}
@@ -185,7 +183,7 @@ Existen numerosas posibles celdas unitarias uniplanares, que fueron creadas a pa
 
 Para este trabajo se seleccionó la celda de Yang, analizada en la sección \ref{sec:celda-yang}, debido a que fue la primer variante publicada, y posee optimizaciones sobre la celda de Orlandi, analizada en la sección \ref{sec:celda-orlandi}.
 
-Sin embargo, existen numerosos diseños y geometrías, entre las que destacan la celda analizada por Goussetis \cite{Goussetis:TailoringAMCEBGCharacteristics}, que consiste en parches cuadrados sin interconexión entre sí, como el mostrado en la figura \ref{fig:rectangulo-cuadrado}, por lo que presentan capacidad con el plano de tierra y con otros parches o celdas unitarias aledañas, pero poseen una baja inductancia, lo que los vuelve subóptimos. Otros trabajos de interés son los de Abidin \cite{Abidin;Thesis}, que propuso las estructuras mostradas en las figuras \ref{fig:abidin1} y \ref{fig:abidin2}, que poseen un ancho de banda mayor al de Yang, aunque requieren más iteraciones de simulación, debido a la complejidad de las geometrías.
+Sin embargo, existen numerosos diseños y geometrías, entre las que destacan la celda analizada por Goussetis \cite{Goussetis:TailoringAMCEBGCharacteristics}, que consiste en parches cuadrados sin interconexión entre sí, como el mostrado en la figura \ref{fig:rectangulo-cuadrado}, por lo que presentan capacidad con el plano de tierra y con otros parches o celdas unitarias aledañas, pero poseen una baja inductancia, lo que los vuelve subóptimos. Otros trabajos de interés son los de Abidin \cite{Abidin:Thesis}, que propuso las estructuras mostradas en las figuras \ref{fig:abidin1} y \ref{fig:abidin2}, que poseen un ancho de banda mayor al de Yang, aunque requieren más iteraciones de simulación, debido a la complejidad de las geometrías.
 
 Estructuras más sencillas son propuestas en \cite{Asimonis:designoptimization}, mostradas en las figuras \ref{fig:assimonis1}, \ref{fig:assimonis2} y \ref{fig:assimonis3}, con resultados similares a la geometría elegida.
 
@@ -198,27 +196,28 @@ En este sentido, \cite{Kovacs:DesignOptimization} propone, en su tesis doctoral,
 	\centering 
 	\subfigure[Celda unitaria propuesta por \cite{Abidin:Thesis}.]{
 		\label{fig:abidin1}
-		\includegraphics[width=0.40\textwidth]{Aplicacion/abidin1.png}}
+		\includegraphics[width=0.30\textwidth]{Aplicacion/abidin1.png}}
 	\hspace{30pt}
 	\subfigure[Celda unitaria propuesta por \cite{Abidin:Thesis}.]{
 		\label{fig:abidin2}
-		\includegraphics[width=0.40\textwidth]{Aplicacion/abidin2.png}}
+		\includegraphics[width=0.30\textwidth]{Aplicacion/abidin2.png}}
 	\subfigure[Celda unitaria propuesta por \cite{Asimonis:designoptimization}.]{
 		\label{fig:assimonis1}
-		\includegraphics[width=0.40\textwidth]{Aplicacion/assimonis1.png}}
+		\includegraphics[width=0.30\textwidth]{Aplicacion/assimonis1.png}}
 	\hspace{30pt}
 	\subfigure[Celda unitaria propuesta por \cite{Asimonis:designoptimization}.]{
 		\label{fig:assimonis2}
-		\includegraphics[width=0.40\textwidth]{Aplicacion/assimonis2.png}}
+		\includegraphics[width=0.30\textwidth]{Aplicacion/assimonis2.png}}
 	\subfigure[Celda unitaria propuesta por \cite{Asimonis:designoptimization}.]{
 		\label{fig:assimonis3}
-		\includegraphics[width=0.40\textwidth]{Aplicacion/assimonis3.png}}
+		\includegraphics[width=0.30\textwidth]{Aplicacion/assimonis3.png}}
+	\hspace{30pt}
 	\subfigure[Celda unitaria propuesta por \cite{IslamAlam:CompactEBG}.]{
 		\label{fig:islamalam}
-		\includegraphics[width=0.40\textwidth]{Aplicacion/islamalam.png}}
+		\includegraphics[width=0.30\textwidth]{Aplicacion/islamalam.png}}
 	\subfigure[Celda unitaria propuesta por \cite{Kovacs:DesignOptimization}.]{
 		\label{fig:kovacs}
-		\includegraphics[width=0.40\textwidth]{Aplicacion/kovacs.png}}
+		\includegraphics[width=0.30\textwidth]{Aplicacion/kovacs.png}}
 	\caption{Variación del parámetro $S_{11}$ del puerto en función de distintos parámetros del parche único, y antena optimizada final.}
 	\label{fig:simulaciones-microstrip-1parche}
 \end{figure}

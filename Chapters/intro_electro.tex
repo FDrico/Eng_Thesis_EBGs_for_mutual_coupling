@@ -1215,7 +1215,6 @@ El modelo de líneas de transmisión es el más sencillo y el que ofrece una may
 
 
 
-
 Al igual que en el caso de las líneas \textit{microstrip}, se debe considerar una constante dieléctrica efectivo $\epsilon_{r_{eff}}$, que depende no sólo del ancho del sustrato, sino también de la frecuencia, debido a que a mayor frecuencia hay una mayor concentración de campo sobre el dieléctrico, otorgando mayor prevalencia a la constante dieléctrica del sustrato que a la del aire circundante en el cálculo de la constante efectiva. La expresión es la misma utilizada para líneas \textit{microstrip} (ecuación \ref{eq:cte-diel-efectiva-microstrip}), siempre y cuando $W>h$.
 
 El efecto de \textit{fringing} en los bordes del parche, que da lugar a un aumento del tamaño eléctrico, se modelan mediante la consideración de una extensión en la línea de transmisión que une a las aperturas radiantes, en función de la altura del sustrato. El cambio en la extensión de la línea de transmisión sugiere un cambio en la frecuencia de resonancia de la antena, al mismo tiempo que un mayor ancho de banda, sin una modificación del tamaño físico. En la ecuación \ref{eq:deltaL-antena-microstrip} se muestra una expresión aproximada de la variación del tamaño eléctrico, de forma que la longitud efectiva de la línea de transmisión resulta $L_{eff} = L + 2 \Delta L$. Esta expresión se utiliza para la obtención de la frecuencia de resonancia, como indica la expresión \ref{eq:frec-resonancia-modelo-linea-microstrip} para el modo dominante, $TM_{010}$.
@@ -1226,7 +1225,7 @@ El efecto de \textit{fringing} en los bordes del parche, que da lugar a un aumen
 \end{align}
 
 \begin{align}
-	f_{{r}_{010}} = \frac{v_p}{\lambda} = \frac{c/\sqrt{\epsilon_{r_{eff}}}{2*L_{eff}} = \frac{1}{2 L_{eff} \sqrt{\epsilon_{eff}} \sqrt{\mu_0 \epsilon_0}} = \frac{1}{2 (L+2 \Delta L) \sqrt{\epsilon_{eff}} \sqrt{\mu_0 \epsilon_0}}
+	f_{{r}_{010}} = \frac{v_p}{\lambda} = \frac{c/\sqrt{\epsilon_{r_{eff}}}{2*L_{eff}}} = \frac{1}{2 L_{eff} \sqrt{\epsilon_{eff}} \sqrt{\mu_0 \epsilon_0}} = \frac{1}{2 (L+2 \Delta L) \sqrt{\epsilon_{eff}} \sqrt{\mu_0 \epsilon_0}}
 	\label{eq:frec-resonancia-modelo-linea-microstrip}
 \end{align}
 

@@ -992,6 +992,93 @@
       \field{title}{Nonradiating edges and four edges gap-coupled multiple resonator broad-band microstrip antennas}
       \field{year}{1985}
     \endentry
+    \entry{Asimonis:designoptimization}{article}{}
+      \name{author}{3}{}{%
+        {{hash=307a0e73745ba89a79ff1cd33ee79b15}{%
+           family={Assimonis},
+           family_i={A\bibinitperiod},
+           given={Stylianos\bibnamedelima D.},
+           given_i={S\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=b80b6c4ddde7371c0051003de3deafea}{%
+           family={Yioultsis},
+           family_i={Y\bibinitperiod},
+           given={Traianos\bibnamedelima V.},
+           given_i={T\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=188588600f43cc59b0cbc3e20e29ab0d}{%
+           family={Antonopoulos},
+           family_i={A\bibinitperiod},
+           given={Christos\bibnamedelima S.},
+           given_i={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c12eb836518a0b16915bb369bcd09d3}
+      \strng{fullhash}{4c12eb836518a0b16915bb369bcd09d3}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on antennas and propagation}
+      \field{title}{Design and optimization of uniplanar EBG structures for low profible antenna applications and mutual coupling reduction}
+      \field{year}{2012}
+    \endentry
+    \entry{IslamAlam:CompactEBG}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8118a01082e71b5085ad49a801dca1b1}{%
+           family={Islam},
+           family_i={I\bibinitperiod},
+           given={Mohammad\bibnamedelima Tariqul},
+           given_i={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=2faf0a7ccc10f5252c4ea51d39f197ef}{%
+           family={Alam},
+           family_i={A\bibinitperiod},
+           given={Shahidul},
+           given_i={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{1259ad1f38f55e44fa60877575009f30}
+      \strng{fullhash}{1259ad1f38f55e44fa60877575009f30}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Progress in Electromagnetics Research}
+      \field{title}{Compact EBG structures for alleviating mutual coupling between patch antenna array elements}
+      \field{year}{2013}
+    \endentry
+    \entry{Kovacs:DesignOptimization}{article}{}
+      \name{author}{1}{}{%
+        {{hash=88812b90cbc404e2e7fee100bcdc95c4}{%
+           family={Kovács},
+           family_i={K\bibinitperiod},
+           given={Peter},
+           given_i={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{88812b90cbc404e2e7fee100bcdc95c4}
+      \strng{fullhash}{88812b90cbc404e2e7fee100bcdc95c4}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Brno University of Technology}
+      \field{title}{Design and optimization of electromagnetic bandgap structures (PhD Thesis)}
+      \field{year}{2010}
+    \endentry
+    \entry{Abidin:Thesis}{article}{}
+      \name{author}{1}{}{%
+        {{hash=bd6f4d37af13fdd21a35cd7444308c27}{%
+           family={Abidin},
+           family_i={A\bibinitperiod},
+           given={Zuhairiah\bibnamedelima Zainal},
+           given_i={Z\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{bd6f4d37af13fdd21a35cd7444308c27}
+      \strng{fullhash}{bd6f4d37af13fdd21a35cd7444308c27}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{University of Bradford}
+      \field{title}{Design, modelind and implementation of antennas using electromagnetic bandgap material and defected ground planes (PhD Thesis)}
+      \field{year}{2011}
+    \endentry
     \entry{Markos:PhotonicCrystals}{book}{}
       \name{author}{2}{}{%
         {{hash=eaafed502353d4506d009f53b53e1093}{%
