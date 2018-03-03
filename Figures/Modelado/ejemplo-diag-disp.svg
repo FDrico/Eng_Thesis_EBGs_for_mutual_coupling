@@ -10,9 +10,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="858.1474mm"
-   height="407.38681mm"
-   viewBox="0 0 858.1474 407.38681"
+   width="857.86407mm"
+   height="434.59161mm"
+   viewBox="0 0 857.86407 434.59161"
    version="1.1"
    id="svg7941"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
@@ -34,30 +34,32 @@
     <marker
        inkscape:stockid="Arrow2Lstart"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="Arrow2Lstart"
        style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path10656"
-         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
-         transform="scale(1.1) translate(1,0)" />
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(1.1,0,0,1.1,1.1,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow2Mstart"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="Arrow2Mstart"
        style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path10662"
-         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
-         transform="scale(0.6) translate(0,0)" />
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(0.6)"
+         inkscape:connector-curvature="0" />
     </marker>
     <linearGradient
        inkscape:collect="always"
@@ -979,10 +981,10 @@
        inkscape:collect="always"
        xlink:href="#linearGradient10620"
        id="linearGradient10622"
-       x1="-266.83473"
-       y1="59.72511"
-       x2="522.39091"
-       y2="59.72511"
+       x1="-266.83472"
+       y1="59.725109"
+       x2="522.39093"
+       y2="59.725109"
        gradientUnits="userSpaceOnUse" />
     <marker
        inkscape:stockid="Arrow2Lstart"
@@ -1091,9 +1093,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.4350364"
-     inkscape:cx="1756.8519"
-     inkscape:cy="672.50324"
+     inkscape:zoom="0.30761719"
+     inkscape:cx="2146.4019"
+     inkscape:cy="697.8861"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1119,7 +1121,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(333.49181,165.34354)">
+     transform="translate(333.20847,192.54834)">
     <path
        style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.32291663;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m -266.54915,-108.27008 0.003,326.02824 788.70086,-0.52911"
@@ -2927,7 +2929,7 @@
        rx="0.11390726"
        ry="0.085430443" />
     <path
-       style="fill:url(#linearGradient11969);fill-rule:evenodd;stroke:url(#linearGradient10622);stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.23125;opacity:0.452;fill-opacity:1"
+       style="opacity:0.45199998;fill:url(#linearGradient11969);fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient10622);stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.23125"
        d="M -266.54596,217.22903 -3.6456944,-87.095666 328.43888,-98.834839 522.15488,218.28739 Z"
        id="path10613"
        inkscape:connector-curvature="0" />
@@ -2943,15 +2945,15 @@
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.38266182px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="87.143661"
-       y="-316.40579"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.38266182px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="87.613167"
+       y="-308.9968"
        id="text10634-4"
        transform="rotate(58.633935)"><tspan
          sodipodi:role="line"
-         x="87.143661"
-         y="-316.40579"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.19133091px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.26458332px;"
+         x="87.613167"
+         y="-308.9968"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.93333244px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332px"
          id="tspan11393-9">Zona de ondas de superficie (lentas)</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.46500015;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow2Lstart-7-6-5)"
@@ -2960,11 +2962,11 @@
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.46500003;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow2Lstart-7-3)"
-       d="m 342.36972,78.336776 -93.58091,8.609108"
+       d="m 342.46918,77.543457 -73.19302,6.690542"
        id="path10636-3-0"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.46499989;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:2.46499989,2.46499989;stroke-dashoffset:0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.46499991;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.46499989, 2.46499989;stroke-dashoffset:0;stroke-opacity:1"
        d="M -266.54596,217.7582 -40.954034,142.90885"
        id="path13486"
        inkscape:connector-curvature="0" />
@@ -2981,42 +2983,42 @@
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111111px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-187.53777"
-       y="136.41449"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.55053139px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-207.77417"
+       y="147.37112"
        id="text13494"
        transform="rotate(-18.179378)"
-       inkscape:transform-center-x="-94.437085"
-       inkscape:transform-center-y="33.277629"><tspan
+       inkscape:transform-center-x="-164.3018"
+       inkscape:transform-center-y="57.896463"><tspan
          sodipodi:role="line"
          id="tspan13492"
-         x="-187.53777"
-         y="136.41449"
+         x="-207.77417"
+         y="147.37112"
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman,  Italic';stroke-width:0.26458332px">w/<tspan
-   style="-inkscape-font-specification:'Cambria Math Italic';font-family:'Cambria Math';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math Italic';stroke-width:0.26458332px"
    id="tspan789">β</tspan> = v<tspan
-   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.06254864px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman,  Italic';baseline-shift:sub;stroke-width:0.26458332px"
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.50683594px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman,  Italic';baseline-shift:sub;stroke-width:0.26458332px"
    id="tspan13496">fase</tspan></tspan></text>
     <path
-       style="fill:#ff8080;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.498"
+       style="opacity:0.49800002;fill:#ff8080;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M -3.6456944,93.201218 -158.94224,93.645739 -197.36168,138.20191 H -3.2464646 Z"
        id="path13519"
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111111px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-112.54727"
-       y="126.63531"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.81698036px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-104.65174"
+       y="125.50861"
        id="text13494-5"
        transform="rotate(-11.055849)"><tspan
          sodipodi:role="line"
          id="tspan13492-8"
-         x="-112.54727"
-         y="126.63531"
+         x="-104.65174"
+         y="125.50861"
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman,  Italic';stroke-width:0.26458332px">dw/d<tspan
-   style="-inkscape-font-specification:'Cambria Math Italic';font-family:'Cambria Math';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math Italic';stroke-width:0.26458332px"
    id="tspan787">β</tspan> = v<tspan
-   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.06254864px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman,  Italic';baseline-shift:sub;stroke-width:0.26458332px"
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.27065277px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman,  Italic';baseline-shift:sub;stroke-width:0.26458332px"
    id="tspan13496-1">grupo</tspan></tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.46500003;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow2Lstart-7-7)"
@@ -3025,43 +3027,54 @@
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.29735374px;line-height:44.99999881%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.29735374px;line-height:44.99999881%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="189.84695"
        y="166.87822"
        id="text10634-6-1-0"><tspan
          sodipodi:role="line"
          x="189.84695"
          y="166.87822"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.64867687px;line-height:44.99999881%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.26458332px;"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.93333333px;line-height:44.99999881%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';text-align:center;text-anchor:middle;stroke-width:0.26458332px;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal"
          id="tspan14498-3">Band-gap</tspan><tspan
          sodipodi:role="line"
          x="189.84695"
          y="181.24857"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.64867687px;line-height:44.99999881%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.26458332px;"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.93333333px;line-height:44.99999881%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';text-align:center;text-anchor:middle;stroke-width:0.26458332px;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal"
          id="tspan14502-4">completo</tspan><tspan
          sodipodi:role="line"
          x="189.84695"
          y="195.61893"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.64867687px;line-height:44.99999881%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.26458332px;"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.93333333px;line-height:44.99999881%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';text-align:center;text-anchor:middle;stroke-width:0.26458332px;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal"
          id="tspan14927">(en todas</tspan><tspan
          sodipodi:role="line"
          x="189.84695"
          y="209.98927"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.64867687px;line-height:44.99999881%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.26458332px;"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.93333333px;line-height:44.99999881%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';text-align:center;text-anchor:middle;stroke-width:0.26458332px;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal"
          id="tspan14929">direcciones)</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.46500027;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow2Lstart-7-7-0)"
        d="m 225.85478,101.69389 -27.68323,54.43455"
        id="path10636-3-04-0"
        inkscape:connector-curvature="0" />
-  </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1678"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:'Latin Modern Roman';font-style:normal;font-weight:normal;font-size:8px;line-height:1.25;letter-spacing:0px;word-spacing:0px;text-anchor:middle;text-align:center;-inkscape-font-specification:'Latin Modern Roman, Normal';font-stretch:normal;font-variant:normal;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal"><flowRegion
+         id="flowRegion1680"><rect
+           id="rect1682"
+           width="366.07748"
+           height="599.28607"
+           x="2553.0112"
+           y="439.80505" /></flowRegion><flowPara
+         id="flowPara1684"></flowPara></flowRoot>  </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Agregados">
+     inkscape:label="Agregados"
+     transform="translate(-0.28334884,27.204802)">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.07485008px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.07485008px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-162.87308"
        y="-306.39392"
        id="text7371"
@@ -3070,11 +3083,11 @@
          id="tspan7369"
          x="-162.87308"
          y="-306.39392"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.1984375px;">Frecuencia [GHz]</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.1984375px">Frecuencia [GHz]</tspan></text>
     <text
        transform="translate(333.49181,165.34354)"
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.95553017px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.95553017px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-277.22006"
        y="240.1069"
        id="text6789"><tspan
@@ -3082,11 +3095,11 @@
          id="tspan6797"
          x="-277.22006"
          y="240.1069"
-         style="stroke-width:0.1984375px;-inkscape-font-specification:'Latin Modern Roman, ';font-family:'Latin Modern Roman';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;">Γ</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.1984375px">Γ</tspan></text>
     <text
        transform="translate(333.49181,165.34354)"
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.95553017px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.95553017px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-16.532587"
        y="240.81198"
        id="text6789-9"><tspan
@@ -3094,11 +3107,11 @@
          id="tspan6797-4"
          x="-16.532587"
          y="240.81198"
-         style="stroke-width:0.1984375px;-inkscape-font-specification:'Latin Modern Roman, ';font-family:'Latin Modern Roman';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;">X</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.1984375px">X</tspan></text>
     <text
        transform="translate(333.49181,165.34354)"
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.95553017px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.95553017px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="245.50348"
        y="242.04327"
        id="text6789-9-2"><tspan
@@ -3106,11 +3119,11 @@
          id="tspan6797-4-4"
          x="245.50348"
          y="242.04327"
-         style="stroke-width:0.1984375px;-inkscape-font-specification:'Latin Modern Roman, ';font-family:'Latin Modern Roman';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;">M</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.1984375px">M</tspan></text>
     <text
        transform="translate(333.49181,165.34354)"
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.95553017px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.95553017px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="503.71021"
        y="240.81201"
        id="text6789-92"><tspan
@@ -3118,11 +3131,11 @@
          id="tspan6797-9"
          x="503.71021"
          y="240.81201"
-         style="stroke-width:0.1984375px;-inkscape-font-specification:'Latin Modern Roman, ';font-family:'Latin Modern Roman';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;">Γ</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.1984375px">Γ</tspan></text>
     <text
        transform="translate(333.49181,165.34354)"
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-287.1676"
        y="225.78775"
        id="text6955"><tspan
@@ -3130,11 +3143,11 @@
          id="tspan6953"
          x="-287.1676"
          y="225.78775"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.1984375px;">0</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.1984375px">0</tspan></text>
     <text
        transform="translate(333.49181,165.34354)"
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-287.1676"
        y="184.84274"
        id="text6955-6"><tspan
@@ -3142,11 +3155,11 @@
          id="tspan6953-5"
          x="-287.1676"
          y="184.84274"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.1984375px;">1</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.1984375px">1</tspan></text>
     <text
        transform="translate(333.49181,165.34354)"
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-287.1676"
        y="143.89771"
        id="text6955-1"><tspan
@@ -3154,11 +3167,11 @@
          id="tspan6953-6"
          x="-287.1676"
          y="143.89771"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.1984375px;">2</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.1984375px">2</tspan></text>
     <text
        transform="translate(333.49181,165.34354)"
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-287.1676"
        y="104.1569"
        id="text6955-2"><tspan
@@ -3166,11 +3179,11 @@
          id="tspan6953-9"
          x="-287.1676"
          y="104.1569"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.1984375px;">3</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.1984375px">3</tspan></text>
     <text
        transform="translate(333.49181,165.34354)"
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-288.34976"
        y="63.211887"
        id="text6955-4"><tspan
@@ -3178,11 +3191,11 @@
          id="tspan6953-8"
          x="-288.34976"
          y="63.211887"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.1984375px;">4</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.1984375px">4</tspan></text>
     <text
        transform="translate(333.49181,165.34354)"
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-287.1676"
        y="23.471121"
        id="text6955-4-9"><tspan
@@ -3190,11 +3203,11 @@
          id="tspan6953-8-3"
          x="-287.1676"
          y="23.471121"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.1984375px;">5</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.1984375px">5</tspan></text>
     <text
        transform="translate(333.49181,165.34354)"
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-287.1676"
        y="-18.076082"
        id="text6955-4-6"><tspan
@@ -3202,11 +3215,11 @@
          id="tspan6953-8-32"
          x="-287.1676"
          y="-18.076082"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.1984375px;">6</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.1984375px">6</tspan></text>
     <text
        transform="translate(333.49181,165.34354)"
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-287.1676"
        y="-58.418964"
        id="text6955-4-3"><tspan
@@ -3214,11 +3227,11 @@
          id="tspan6953-8-5"
          x="-287.1676"
          y="-58.418964"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.1984375px;">7</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.1984375px">7</tspan></text>
     <text
        transform="translate(333.49181,165.34354)"
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1984375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-287.1676"
        y="-98.930405"
        id="text6955-4-0"><tspan
@@ -3226,10 +3239,10 @@
          id="tspan6953-8-9"
          x="-287.1676"
          y="-98.930405"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.1984375px;">8</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.1984375px">8</tspan></text>
     <text
        transform="matrix(0.9801819,0,0,1.0202188,333.49181,165.34354)"
-       style="font-variant:normal;font-weight:normal;font-size:12.58455372px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';writing-mode:lr-tb;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26458335;font-style:normal;font-stretch:normal;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.58455372px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';writing-mode:lr-tb;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26458335"
        id="text5880"
        x="-294.48578"
        y="-145.48817">
@@ -3238,11 +3251,11 @@
          y="-145.48817"
          sodipodi:role="line"
          id="tspan5878"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.26458335;">Modo 1</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.26458335">Modo 1</tspan>
     </text>
     <text
        transform="matrix(0.9801819,0,0,1.0202188,333.49181,165.34354)"
-       style="font-variant:normal;font-weight:normal;font-size:12.58455372px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';writing-mode:lr-tb;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26458335;font-style:normal;font-stretch:normal;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.58455372px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';writing-mode:lr-tb;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26458335"
        id="text5886"
        x="-187.81198"
        y="-145.48817">
@@ -3251,11 +3264,11 @@
          y="-145.48817"
          sodipodi:role="line"
          id="tspan5884"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.26458335;">Modo 2</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.26458335">Modo 2</tspan>
     </text>
     <text
        transform="matrix(0.9801819,0,0,1.0202188,333.49181,165.34354)"
-       style="font-variant:normal;font-weight:normal;font-size:12.58455372px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';writing-mode:lr-tb;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26458335;font-style:normal;font-stretch:normal;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.58455372px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';writing-mode:lr-tb;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26458335"
        id="text5892"
        x="-81.138344"
        y="-145.48817">
@@ -3264,11 +3277,11 @@
          y="-145.48817"
          sodipodi:role="line"
          id="tspan5890"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.26458335;">Modo 3</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.26458335">Modo 3</tspan>
     </text>
     <text
        transform="matrix(0.9801819,0,0,1.0202188,333.49181,165.34354)"
-       style="font-variant:normal;font-weight:normal;font-size:12.58455372px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';writing-mode:lr-tb;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26458335;font-style:normal;font-stretch:normal;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.58455372px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';writing-mode:lr-tb;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26458335"
        id="text5898"
        x="25.535604"
        y="-145.48817">
@@ -3277,11 +3290,11 @@
          y="-145.48817"
          sodipodi:role="line"
          id="tspan5896"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.26458335;">Modo 4</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.26458335">Modo 4</tspan>
     </text>
     <text
        transform="matrix(0.9801819,0,0,1.0202188,333.49181,165.34354)"
-       style="font-variant:normal;font-weight:normal;font-size:12.58455372px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';writing-mode:lr-tb;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26458335;font-style:normal;font-stretch:normal;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.58455372px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';writing-mode:lr-tb;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26458335"
        id="text5904"
        x="132.2093"
        y="-145.48817">
@@ -3290,11 +3303,11 @@
          y="-145.48817"
          sodipodi:role="line"
          id="tspan5902"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.26458335;">Modo 5</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.26458335">Modo 5</tspan>
     </text>
     <text
        transform="matrix(0.9801819,0,0,1.0202188,333.49181,165.34354)"
-       style="font-variant:normal;font-weight:normal;font-size:12.58455372px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';writing-mode:lr-tb;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26458335;font-style:normal;font-stretch:normal;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.58455372px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';writing-mode:lr-tb;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26458335"
        id="text5912"
        x="238.88306"
        y="-145.48817">
@@ -3303,11 +3316,11 @@
          y="-145.48817"
          sodipodi:role="line"
          id="tspan5910"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.26458335;">Light line en vacío</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.26458335">Light line en vacío</tspan>
     </text>
     <text
        transform="matrix(0.9801819,0,0,1.0202188,333.49181,165.34354)"
-       style="font-variant:normal;font-weight:normal;font-size:12.58455372px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';writing-mode:lr-tb;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26458335;font-style:normal;font-stretch:normal;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.58455372px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';writing-mode:lr-tb;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26458335"
        id="text5920"
        x="414.49649"
        y="-145.48817">
@@ -3316,23 +3329,23 @@
          y="-145.48817"
          sodipodi:role="line"
          id="tspan5918"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.26458335;">Light line en FR4</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.26458335">Light line en FR4</tspan>
     </text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.33606911px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="-60.931255"
-       y="318.59412"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.33606911px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-80.502136"
+       y="325.59506"
        id="text10634"
        transform="rotate(-49.760689)"><tspan
          sodipodi:role="line"
-         x="-60.931255"
-         y="318.59412"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.16803455px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.26458332px;"
+         x="-80.502136"
+         y="325.59506"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.93333244px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332px"
          id="tspan11393">Zona de ondas de superficie (lentas)</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.29735374px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.29735374px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="431.64661"
        y="255.25056"
        id="text10634-6"><tspan
@@ -3340,82 +3353,82 @@
          id="tspan10632-2"
          x="431.64661"
          y="255.25056"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.64867687px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.26458332px;">Línea de vista de FR-4</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.93333333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';stroke-width:0.26458332px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal">Línea de vista de FR-4</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.79999924px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="331.64917"
-       y="-8.1548023"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.79999924px;line-height:125%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="334.08191"
+       y="-7.5466156"
        id="text10634-6-5"><tspan
          sodipodi:role="line"
          id="tspan10632-2-5"
-         x="331.64917"
-         y="-8.1548023"
-         style="font-size:25.39999962px;stroke-width:0.26458332px;-inkscape-font-specification:'Latin Modern Roman, ';font-family:'Latin Modern Roman';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;">Línea de vista del aire/vacío</tspan></text>
+         x="334.08191"
+         y="-7.5466156"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.39999962px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.26458332px">Línea de vista del aire/vacío</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.73729706px;line-height:56.00000024%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="69.296692"
-       y="280.06589"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.73729706px;line-height:56.00000024%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="50.371128"
+       y="269.71475"
        id="text10634-5"
        transform="rotate(-50.177399)"><tspan
          sodipodi:role="line"
-         x="71.516098"
-         y="280.06589"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.36864853px;line-height:56.00000024%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.26458332px;"
+         x="53.132717"
+         y="269.71475"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.93333244px;line-height:56.00000024%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332px"
          id="tspan11989">Zona de ondas de incidencia </tspan><tspan
          sodipodi:role="line"
-         x="69.296692"
-         y="295.38635"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.36864853px;line-height:56.00000024%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.26458332px;"
+         x="50.371128"
+         y="284.94254"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.93333244px;line-height:56.00000024%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332px"
          id="tspan11995">oblicua (rápidas)</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.48618889px;line-height:56.00000024%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="480.26031"
-       y="-566.32111"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.48618889px;line-height:56.00000024%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="496.40234"
+       y="-575.92896"
        id="text10634-5-5"
        transform="rotate(59.815989)"><tspan
          sodipodi:role="line"
-         x="482.62488"
-         y="-566.32111"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.24309444px;line-height:56.00000024%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.26458332px;"
+         x="499.16394"
+         y="-575.92896"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.93333244px;line-height:56.00000024%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332px"
          id="tspan11989-7">Zona de ondas de incidencia </tspan><tspan
          sodipodi:role="line"
-         x="480.26031"
-         y="-549.99854"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.24309444px;line-height:56.00000024%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.26458332px;"
+         x="496.40234"
+         y="-559.67633"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.93333244px;line-height:56.00000024%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332px"
          id="tspan11995-7">oblicua (rápidas)</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.29735374px;line-height:44.99999881%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.29735374px;line-height:44.99999881%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="134.8347"
        y="141.89066"
        id="text10634-6-1"><tspan
          sodipodi:role="line"
-         x="92.483208"
+         x="134.8347"
          y="141.89066"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.64867687px;line-height:44.99999881%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.26458332px;text-anchor:middle;text-align:center;"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.64867687px;line-height:44.99999881%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.26458332px"
          id="tspan14498">Band-gap en</tspan><tspan
          sodipodi:role="line"
-         x="92.483208"
+         x="134.8347"
          y="156.261"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.64867687px;line-height:44.99999881%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.26458332px;text-anchor:middle;text-align:center;"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.64867687px;line-height:44.99999881%;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.26458332px"
          id="tspan14502">una dirección</tspan></text>
     <path
-       style="fill:#0000ff;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.194"
+       style="opacity:0.194;fill:#0000ff;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 174.54957,258.98928 H 778.8258 l 4.82269,7.86841 H 167.40338 Z"
        id="path14496"
        inkscape:connector-curvature="0" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot771"
-       style="fill:black;fill-opacity:1;stroke:none;font-family:'Latin Modern Roman';font-style:normal;font-weight:normal;font-size:8px;line-height:1.25;letter-spacing:0px;word-spacing:0px;text-anchor:middle;text-align:center;-inkscape-font-specification:'Latin Modern Roman, Normal';font-stretch:normal;font-variant:normal;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal"><flowRegion
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
          id="flowRegion773"><rect
            id="rect775"
            width="92.117607"
            height="45.09536"
            x="160.90608"
            y="480.04825" /></flowRegion><flowPara
-         id="flowPara777"></flowPara></flowRoot>  </g>
+         id="flowPara777" /></flowRoot>  </g>
 </svg>
