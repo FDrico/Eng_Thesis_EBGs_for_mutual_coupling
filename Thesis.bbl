@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.6 $
+% $ biblatex bbl format version 2.9 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,22 +18,26 @@
 
 
 \refsection{0}
-  \sortlist[entry]{none/global}
+  \datalist[entry]{none/global//global/global}
     \entry{Pozar:MwEngineering}{book}{}
       \name{author}{1}{}{%
         {{hash=b5fe794e9696a49299f6e804eeb23d7e}{%
            family={Pozar},
-           family_i={P\bibinitperiod},
+           familyi={P\bibinitperiod},
            given={David\bibnamedelima M.},
-           given_i={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Wiley}%
       }
       \strng{namehash}{b5fe794e9696a49299f6e804eeb23d7e}
       \strng{fullhash}{b5fe794e9696a49299f6e804eeb23d7e}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{b5fe794e9696a49299f6e804eeb23d7e}
+      \strng{authorbibnamehash}{b5fe794e9696a49299f6e804eeb23d7e}
+      \strng{authornamehash}{b5fe794e9696a49299f6e804eeb23d7e}
+      \strng{authorfullhash}{b5fe794e9696a49299f6e804eeb23d7e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Microwave Engineering}
@@ -43,17 +47,21 @@
       \name{author}{1}{}{%
         {{hash=1f7d6ef35bcff840824f77eb43f1a877}{%
            family={Collin},
-           family_i={C\bibinitperiod},
+           familyi={C\bibinitperiod},
            given={Robert\bibnamedelima E.},
-           given_i={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Wiley-IEEE Press}%
       }
       \strng{namehash}{1f7d6ef35bcff840824f77eb43f1a877}
       \strng{fullhash}{1f7d6ef35bcff840824f77eb43f1a877}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{1f7d6ef35bcff840824f77eb43f1a877}
+      \strng{authorbibnamehash}{1f7d6ef35bcff840824f77eb43f1a877}
+      \strng{authornamehash}{1f7d6ef35bcff840824f77eb43f1a877}
+      \strng{authorfullhash}{1f7d6ef35bcff840824f77eb43f1a877}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Field Theory of Guided Waves}
@@ -63,22 +71,26 @@
       \name{author}{2}{}{%
         {{hash=ec00773f437582aa44b4c3239170cff0}{%
            family={Stutzman},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={Warren\bibnamedelima L.},
-           given_i={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
         {{hash=7a1bd30418417e3386f9339069a1c8ae}{%
            family={Thiele},
-           family_i={T\bibinitperiod},
+           familyi={T\bibinitperiod},
            given={Gary\bibnamedelima A},
-           given_i={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Wiley}%
       }
       \strng{namehash}{1ab6d3495df96c23fff1893cce39be2c}
       \strng{fullhash}{1ab6d3495df96c23fff1893cce39be2c}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{1ab6d3495df96c23fff1893cce39be2c}
+      \strng{authorbibnamehash}{1ab6d3495df96c23fff1893cce39be2c}
+      \strng{authornamehash}{1ab6d3495df96c23fff1893cce39be2c}
+      \strng{authorfullhash}{1ab6d3495df96c23fff1893cce39be2c}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Antenna Theory and Design}
@@ -88,17 +100,21 @@
       \name{author}{1}{}{%
         {{hash=5d18402cf9b2dbe8e8535e0f1fd22e7c}{%
            family={Balanis},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={C.\bibnamedelimi A.},
-           given_i={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Wiley}%
       }
       \strng{namehash}{5d18402cf9b2dbe8e8535e0f1fd22e7c}
       \strng{fullhash}{5d18402cf9b2dbe8e8535e0f1fd22e7c}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{5d18402cf9b2dbe8e8535e0f1fd22e7c}
+      \strng{authorbibnamehash}{5d18402cf9b2dbe8e8535e0f1fd22e7c}
+      \strng{authornamehash}{5d18402cf9b2dbe8e8535e0f1fd22e7c}
+      \strng{authorfullhash}{5d18402cf9b2dbe8e8535e0f1fd22e7c}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Modern Antenna Handbook}
@@ -108,32 +124,36 @@
       \name{author}{4}{}{%
         {{hash=55e7e33f2365bb8f0c9edaca53b37319}{%
            family={Garg},
-           family_i={G\bibinitperiod},
+           familyi={G\bibinitperiod},
            given={R.},
-           given_i={R\bibinitperiod}}}%
+           giveni={R\bibinitperiod}}}%
         {{hash=f6ccb14e904ac10be51783c2c199556c}{%
            family={Bhartia},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={P.},
-           given_i={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod}}}%
         {{hash=9f1dc71b032320f898f66b7897c9b063}{%
            family={Bahl},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={I.},
-           given_i={I\bibinitperiod}}}%
+           giveni={I\bibinitperiod}}}%
         {{hash=1188c30e2dc471697d1e31c16256de7a}{%
            family={Ittipiboon},
-           family_i={I\bibinitperiod},
+           familyi={I\bibinitperiod},
            given={A.},
-           given_i={A\bibinitperiod}}}%
+           giveni={A\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Artech House}%
       }
       \strng{namehash}{edae12159832d071daa843c94ff17056}
       \strng{fullhash}{4941c0d7e893a8167c23f5ef27c230d8}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{4941c0d7e893a8167c23f5ef27c230d8}
+      \strng{authorbibnamehash}{4941c0d7e893a8167c23f5ef27c230d8}
+      \strng{authornamehash}{edae12159832d071daa843c94ff17056}
+      \strng{authorfullhash}{4941c0d7e893a8167c23f5ef27c230d8}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Microstrip Antenna Design Handbook}
@@ -143,17 +163,21 @@
       \name{author}{1}{}{%
         {{hash=cd24948024a2586494872d24d1b87a3f}{%
            family={Fernández},
-           family_i={F\bibinitperiod},
+           familyi={F\bibinitperiod},
            given={Juan\bibnamedelima Carlos},
-           given_i={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {FIUBA}%
       }
       \strng{namehash}{cd24948024a2586494872d24d1b87a3f}
       \strng{fullhash}{cd24948024a2586494872d24d1b87a3f}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{cd24948024a2586494872d24d1b87a3f}
+      \strng{authorbibnamehash}{cd24948024a2586494872d24d1b87a3f}
+      \strng{authornamehash}{cd24948024a2586494872d24d1b87a3f}
+      \strng{authorfullhash}{cd24948024a2586494872d24d1b87a3f}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Apuntes de Electromagnetismo}
@@ -163,22 +187,26 @@
       \name{author}{2}{}{%
         {{hash=fa9afa226fa9a838261e3386e20890c2}{%
            family={Joannopoulos},
-           family_i={J\bibinitperiod},
+           familyi={J\bibinitperiod},
            given={J.\bibnamedelimi D.},
-           given_i={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
         {{hash=fe5be6ff1427708cf6dac16d929f043a}{%
            family={Johnson},
-           family_i={J\bibinitperiod},
+           familyi={J\bibinitperiod},
            given={S.\bibnamedelimi G.},
-           given_i={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Princeton University Press}%
       }
       \strng{namehash}{09c485abb520b01511900c188c77cbfa}
       \strng{fullhash}{09c485abb520b01511900c188c77cbfa}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{09c485abb520b01511900c188c77cbfa}
+      \strng{authorbibnamehash}{09c485abb520b01511900c188c77cbfa}
+      \strng{authornamehash}{09c485abb520b01511900c188c77cbfa}
+      \strng{authorfullhash}{09c485abb520b01511900c188c77cbfa}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Photonic Crystals: Molding the flow of light}
@@ -188,19 +216,23 @@
       \name{author}{2}{}{%
         {{hash=9cb93b09eb80e787406100842d809ce9}{%
            family={Barlow},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={H.\bibnamedelimi M.},
-           given_i={H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
         {{hash=b27352a76f562fb34ba35020ac1ad329}{%
            family={Cullen},
-           family_i={C\bibinitperiod},
+           familyi={C\bibinitperiod},
            given={A.\bibnamedelimi L.},
-           given_i={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
       }
       \strng{namehash}{bbe76701dc9d1620fb2599e5dd63e806}
       \strng{fullhash}{bbe76701dc9d1620fb2599e5dd63e806}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{bbe76701dc9d1620fb2599e5dd63e806}
+      \strng{authorbibnamehash}{bbe76701dc9d1620fb2599e5dd63e806}
+      \strng{authornamehash}{bbe76701dc9d1620fb2599e5dd63e806}
+      \strng{authorfullhash}{bbe76701dc9d1620fb2599e5dd63e806}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE - Radio Section}
@@ -211,22 +243,26 @@
       \name{author}{2}{}{%
         {{hash=5076ec16d539245a594f79b86d2290d5}{%
            family={Caloz},
-           family_i={C\bibinitperiod},
+           familyi={C\bibinitperiod},
            given={Christophe},
-           given_i={C\bibinitperiod}}}%
+           giveni={C\bibinitperiod}}}%
         {{hash=b0e98452953451e32b8c761f6916c3f7}{%
            family={Itoh},
-           family_i={I\bibinitperiod},
+           familyi={I\bibinitperiod},
            given={Tatsuo},
-           given_i={T\bibinitperiod}}}%
+           giveni={T\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Wiley}%
       }
       \strng{namehash}{97db0d0eb9df65ca798ee1a48c3b6c05}
       \strng{fullhash}{97db0d0eb9df65ca798ee1a48c3b6c05}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{97db0d0eb9df65ca798ee1a48c3b6c05}
+      \strng{authorbibnamehash}{97db0d0eb9df65ca798ee1a48c3b6c05}
+      \strng{authornamehash}{97db0d0eb9df65ca798ee1a48c3b6c05}
+      \strng{authorfullhash}{97db0d0eb9df65ca798ee1a48c3b6c05}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Electromagnetic Metamaterials: Transmission line theory and microwave applications. The Engineering Approach}
@@ -236,14 +272,18 @@
       \name{author}{1}{}{%
         {{hash=6e8fabcb076e6bcc624fe65a93f69765}{%
            family={Venkateswaran},
-           family_i={V\bibinitperiod},
+           familyi={V\bibinitperiod},
            given={Ajay},
-           given_i={A\bibinitperiod}}}%
+           giveni={A\bibinitperiod}}}%
       }
       \strng{namehash}{6e8fabcb076e6bcc624fe65a93f69765}
       \strng{fullhash}{6e8fabcb076e6bcc624fe65a93f69765}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{6e8fabcb076e6bcc624fe65a93f69765}
+      \strng{authorbibnamehash}{6e8fabcb076e6bcc624fe65a93f69765}
+      \strng{authornamehash}{6e8fabcb076e6bcc624fe65a93f69765}
+      \strng{authorfullhash}{6e8fabcb076e6bcc624fe65a93f69765}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{McGill University, Canada}
@@ -254,17 +294,21 @@
       \name{author}{1}{}{%
         {{hash=5d18402cf9b2dbe8e8535e0f1fd22e7c}{%
            family={Balanis},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={C.\bibnamedelimi A.},
-           given_i={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Wiley-Interscience}%
       }
       \strng{namehash}{5d18402cf9b2dbe8e8535e0f1fd22e7c}
       \strng{fullhash}{5d18402cf9b2dbe8e8535e0f1fd22e7c}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{5d18402cf9b2dbe8e8535e0f1fd22e7c}
+      \strng{authorbibnamehash}{5d18402cf9b2dbe8e8535e0f1fd22e7c}
+      \strng{authornamehash}{5d18402cf9b2dbe8e8535e0f1fd22e7c}
+      \strng{authorfullhash}{5d18402cf9b2dbe8e8535e0f1fd22e7c}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Antenna Theory: Analysis and design}
@@ -274,19 +318,23 @@
       \name{author}{2}{}{%
         {{hash=f9c10bef20da2d90f35c58f0c2e3872f}{%
            family={Amado},
-           family_i={A\bibinitperiod},
+           familyi={A\bibinitperiod},
            given={José},
-           given_i={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod}}}%
         {{hash=e0f6f0fee09f9048f63bfac09c06e61c}{%
            family={Fano},
-           family_i={F\bibinitperiod},
+           familyi={F\bibinitperiod},
            given={Gustavo},
-           given_i={G\bibinitperiod}}}%
+           giveni={G\bibinitperiod}}}%
       }
       \strng{namehash}{ebd5e166070aa26b5ab6923b0b92123d}
       \strng{fullhash}{ebd5e166070aa26b5ab6923b0b92123d}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{ebd5e166070aa26b5ab6923b0b92123d}
+      \strng{authorbibnamehash}{ebd5e166070aa26b5ab6923b0b92123d}
+      \strng{authornamehash}{ebd5e166070aa26b5ab6923b0b92123d}
+      \strng{authorfullhash}{ebd5e166070aa26b5ab6923b0b92123d}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{GEMCCON 2016}
@@ -297,14 +345,18 @@
       \name{author}{1}{}{%
         {{hash=b5fe794e9696a49299f6e804eeb23d7e}{%
            family={Pozar},
-           family_i={P\bibinitperiod},
+           familyi={P\bibinitperiod},
            given={David\bibnamedelima M.},
-           given_i={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
       }
       \strng{namehash}{b5fe794e9696a49299f6e804eeb23d7e}
       \strng{fullhash}{b5fe794e9696a49299f6e804eeb23d7e}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{b5fe794e9696a49299f6e804eeb23d7e}
+      \strng{authorbibnamehash}{b5fe794e9696a49299f6e804eeb23d7e}
+      \strng{authornamehash}{b5fe794e9696a49299f6e804eeb23d7e}
+      \strng{authorfullhash}{b5fe794e9696a49299f6e804eeb23d7e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
@@ -315,17 +367,21 @@
       \name{author}{1}{}{%
         {{hash=5d18402cf9b2dbe8e8535e0f1fd22e7c}{%
            family={Balanis},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={C.\bibnamedelimi A.},
-           given_i={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Wiley}%
       }
       \strng{namehash}{5d18402cf9b2dbe8e8535e0f1fd22e7c}
       \strng{fullhash}{5d18402cf9b2dbe8e8535e0f1fd22e7c}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{5d18402cf9b2dbe8e8535e0f1fd22e7c}
+      \strng{authorbibnamehash}{5d18402cf9b2dbe8e8535e0f1fd22e7c}
+      \strng{authornamehash}{5d18402cf9b2dbe8e8535e0f1fd22e7c}
+      \strng{authorfullhash}{5d18402cf9b2dbe8e8535e0f1fd22e7c}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Advanced Engineering Electromagnetics}
@@ -335,19 +391,23 @@
       \name{author}{2}{}{%
         {{hash=170a9effc6217baca12af631d653ce1f}{%
            family={Alexopoulos},
-           family_i={A\bibinitperiod},
+           familyi={A\bibinitperiod},
            given={Nicolaos\bibnamedelima G.},
-           given_i={N\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+           giveni={N\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
         {{hash=3a3a2a8826198d72d035c441aa9b1692}{%
            family={Rana},
-           family_i={R\bibinitperiod},
+           familyi={R\bibinitperiod},
            given={Inam\bibnamedelima E.},
-           given_i={I\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+           giveni={I\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
       }
       \strng{namehash}{c2d887e4dcee6f8084fa0345173e47fe}
       \strng{fullhash}{c2d887e4dcee6f8084fa0345173e47fe}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{c2d887e4dcee6f8084fa0345173e47fe}
+      \strng{authorbibnamehash}{c2d887e4dcee6f8084fa0345173e47fe}
+      \strng{authornamehash}{c2d887e4dcee6f8084fa0345173e47fe}
+      \strng{authorfullhash}{c2d887e4dcee6f8084fa0345173e47fe}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Mutual Impedance Computation Between Printed Dipoles}
@@ -357,19 +417,23 @@
       \name{author}{2}{}{%
         {{hash=b76f346db8ab515f1651f1746a200bc0}{%
            family={Dodov},
-           family_i={D\bibinitperiod},
+           familyi={D\bibinitperiod},
            given={Nicola\bibnamedelima I.},
-           given_i={N\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+           giveni={N\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
         {{hash=bd737d92ec6b52d55a6d80f800c98824}{%
            family={Petkov},
-           family_i={P\bibinitperiod},
+           familyi={P\bibinitperiod},
            given={Peter\bibnamedelima Zh.},
-           given_i={P\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+           giveni={P\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
       }
       \strng{namehash}{75368e30480609b51827f37a252d69de}
       \strng{fullhash}{75368e30480609b51827f37a252d69de}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{75368e30480609b51827f37a252d69de}
+      \strng{authorbibnamehash}{75368e30480609b51827f37a252d69de}
+      \strng{authornamehash}{75368e30480609b51827f37a252d69de}
+      \strng{authorfullhash}{75368e30480609b51827f37a252d69de}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Electronic Letters}
@@ -380,19 +444,23 @@
       \name{author}{2}{}{%
         {{hash=e7d28d84e00d9f895509e4adcc43876c}{%
            family={Lil},
-           family_i={L\bibinitperiod},
+           familyi={L\bibinitperiod},
            given={E.\bibnamedelimi H.\bibnamedelimi Van},
-           given_i={E\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+           giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
         {{hash=61df337e7b12725994cd0f1043401077}{%
            family={Van},
-           family_i={V\bibinitperiod},
+           familyi={V\bibinitperiod},
            given={A.\bibnamedelimi R.},
-           given_i={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
       }
       \strng{namehash}{fc2fd14505422afec3d268354e631460}
       \strng{fullhash}{fc2fd14505422afec3d268354e631460}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{fc2fd14505422afec3d268354e631460}
+      \strng{authorbibnamehash}{fc2fd14505422afec3d268354e631460}
+      \strng{authornamehash}{fc2fd14505422afec3d268354e631460}
+      \strng{authorfullhash}{fc2fd14505422afec3d268354e631460}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
@@ -403,26 +471,30 @@
       \name{author}{3}{}{%
         {{hash=9b567b52faa9c0fe280e3e2daf575df3}{%
            family={Gonzalo},
-           family_i={G\bibinitperiod},
+           familyi={G\bibinitperiod},
            given={Ramón},
-           given_i={R\bibinitperiod}}}%
-        {{hash=1cf9bc15fa3fbe3e0a07d54ef9fe64b2}{%
-           prefix={de},
-           prefix_i={d\bibinitperiod},
+           giveni={R\bibinitperiod}}}%
+        {{hash=4587b1e6fd7fd19e6d1bbf425b9e9413}{%
            family={Maagt},
-           family_i={M\bibinitperiod},
+           familyi={M\bibinitperiod},
            given={Peter},
-           given_i={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
         {{hash=17117a8545527e16a83318e33ee32d6e}{%
            family={Sorolla},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={Mario},
-           given_i={M\bibinitperiod}}}%
+           giveni={M\bibinitperiod}}}%
       }
-      \strng{namehash}{9425c749918fc77fa0cefaba56fbc5f1}
-      \strng{fullhash}{9425c749918fc77fa0cefaba56fbc5f1}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{0b02e265412ccc72abc6ebc50db0ee42}
+      \strng{fullhash}{0b02e265412ccc72abc6ebc50db0ee42}
+      \strng{bibnamehash}{0b02e265412ccc72abc6ebc50db0ee42}
+      \strng{authorbibnamehash}{0b02e265412ccc72abc6ebc50db0ee42}
+      \strng{authornamehash}{0b02e265412ccc72abc6ebc50db0ee42}
+      \strng{authorfullhash}{0b02e265412ccc72abc6ebc50db0ee42}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Microwave Theory and Techniques (Vol. 47, Nº 11)}
@@ -433,19 +505,23 @@
       \name{author}{2}{}{%
         {{hash=233e9088a8072c5f4d81e97ced2380e3}{%
            family={Penard},
-           family_i={P\bibinitperiod},
+           familyi={P\bibinitperiod},
            given={E.},
-           given_i={E\bibinitperiod}}}%
+           giveni={E\bibinitperiod}}}%
         {{hash=216f131f9c73e292eaa67610cf1d8e2e}{%
            family={Daniel},
-           family_i={D\bibinitperiod},
+           familyi={D\bibinitperiod},
            given={J.\bibnamedelimi P.},
-           given_i={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
       }
       \strng{namehash}{a869b78ed8920b9c04377e6f823bf43e}
       \strng{fullhash}{a869b78ed8920b9c04377e6f823bf43e}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{a869b78ed8920b9c04377e6f823bf43e}
+      \strng{authorbibnamehash}{a869b78ed8920b9c04377e6f823bf43e}
+      \strng{authornamehash}{a869b78ed8920b9c04377e6f823bf43e}
+      \strng{authorfullhash}{a869b78ed8920b9c04377e6f823bf43e}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Electronic Letters}
@@ -456,24 +532,28 @@
       \name{author}{3}{}{%
         {{hash=04b245df15136288efb1afabd135155d}{%
            family={Iluz},
-           family_i={I\bibinitperiod},
+           familyi={I\bibinitperiod},
            given={Zeev},
-           given_i={Z\bibinitperiod}}}%
+           giveni={Z\bibinitperiod}}}%
         {{hash=ab41637c4cd71b051a96e77c65ff16ca}{%
            family={Shavit},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={Reuven},
-           given_i={R\bibinitperiod}}}%
+           giveni={R\bibinitperiod}}}%
         {{hash=7dbbb89f1e9b195bd395b4fd1546b4b3}{%
            family={Bauer},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={Reuven},
-           given_i={R\bibinitperiod}}}%
+           giveni={R\bibinitperiod}}}%
       }
       \strng{namehash}{61736d5dbf9c1498278d57df26fb9edf}
       \strng{fullhash}{61736d5dbf9c1498278d57df26fb9edf}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{61736d5dbf9c1498278d57df26fb9edf}
+      \strng{authorbibnamehash}{61736d5dbf9c1498278d57df26fb9edf}
+      \strng{authornamehash}{61736d5dbf9c1498278d57df26fb9edf}
+      \strng{authorfullhash}{61736d5dbf9c1498278d57df26fb9edf}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactops on Antennas and Propagation}
@@ -484,14 +564,14 @@
       \name{author}{2}{}{%
         {{hash=033ea15741f9ed720bedcff49b15f49f}{%
            family={Engheta},
-           family_i={E\bibinitperiod},
+           familyi={E\bibinitperiod},
            given={Nader},
-           given_i={N\bibinitperiod}}}%
+           giveni={N\bibinitperiod}}}%
         {{hash=27e93a836394a26a05f966b6ad0869c9}{%
            family={Ziolkowski},
-           family_i={Z\bibinitperiod},
+           familyi={Z\bibinitperiod},
            given={Richard\bibnamedelima W.},
-           given_i={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
       }
       \list{publisher}{2}{%
         {IEEE Press}%
@@ -499,8 +579,12 @@
       }
       \strng{namehash}{e54750e83c3a18353fedce9fde1e37c5}
       \strng{fullhash}{e54750e83c3a18353fedce9fde1e37c5}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{e54750e83c3a18353fedce9fde1e37c5}
+      \strng{authorbibnamehash}{e54750e83c3a18353fedce9fde1e37c5}
+      \strng{authornamehash}{e54750e83c3a18353fedce9fde1e37c5}
+      \strng{authorfullhash}{e54750e83c3a18353fedce9fde1e37c5}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Metamaterials: Physics and engineering explorations}
@@ -510,14 +594,18 @@
       \name{author}{1}{}{%
         {{hash=fbf07a78ba911ca9f60791102f8e11d5}{%
            family={Rittenhouse},
-           family_i={R\bibinitperiod},
+           familyi={R\bibinitperiod},
            given={David},
-           given_i={D\bibinitperiod}}}%
+           giveni={D\bibinitperiod}}}%
       }
       \strng{namehash}{fbf07a78ba911ca9f60791102f8e11d5}
       \strng{fullhash}{fbf07a78ba911ca9f60791102f8e11d5}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{fbf07a78ba911ca9f60791102f8e11d5}
+      \strng{authorbibnamehash}{fbf07a78ba911ca9f60791102f8e11d5}
+      \strng{authornamehash}{fbf07a78ba911ca9f60791102f8e11d5}
+      \strng{authorfullhash}{fbf07a78ba911ca9f60791102f8e11d5}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Transactions of the American Philosophical Society}
@@ -528,17 +616,21 @@
       \name{author}{1}{}{%
         {{hash=6c01efb2bd87635a22edd2b75b92af22}{%
            family={Brillouin},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={L.},
-           given_i={L\bibinitperiod}}}%
+           giveni={L\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Dover Publications}%
       }
       \strng{namehash}{6c01efb2bd87635a22edd2b75b92af22}
       \strng{fullhash}{6c01efb2bd87635a22edd2b75b92af22}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{6c01efb2bd87635a22edd2b75b92af22}
+      \strng{authorbibnamehash}{6c01efb2bd87635a22edd2b75b92af22}
+      \strng{authornamehash}{6c01efb2bd87635a22edd2b75b92af22}
+      \strng{authorfullhash}{6c01efb2bd87635a22edd2b75b92af22}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Wave Propagation in Periodic Structures: Electric Filters adn Crystal Lattices}
@@ -548,14 +640,18 @@
       \name{author}{1}{}{%
         {{hash=418c0d0344009796600ae14c9c0ada77}{%
            family={Sievenpiper},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={D.},
-           given_i={D\bibinitperiod}}}%
+           giveni={D\bibinitperiod}}}%
       }
       \strng{namehash}{418c0d0344009796600ae14c9c0ada77}
       \strng{fullhash}{418c0d0344009796600ae14c9c0ada77}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{418c0d0344009796600ae14c9c0ada77}
+      \strng{authorbibnamehash}{418c0d0344009796600ae14c9c0ada77}
+      \strng{authornamehash}{418c0d0344009796600ae14c9c0ada77}
+      \strng{authorfullhash}{418c0d0344009796600ae14c9c0ada77}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{University of California}
@@ -566,14 +662,18 @@
       \name{author}{1}{}{%
         {{hash=c2971d96f0490ae78b34654c03de15a2}{%
            family={Luberto},
-           family_i={L\bibinitperiod},
+           familyi={L\bibinitperiod},
            given={M.\bibnamedelimi F.},
-           given_i={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
       }
       \strng{namehash}{c2971d96f0490ae78b34654c03de15a2}
       \strng{fullhash}{c2971d96f0490ae78b34654c03de15a2}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{c2971d96f0490ae78b34654c03de15a2}
+      \strng{authorbibnamehash}{c2971d96f0490ae78b34654c03de15a2}
+      \strng{authornamehash}{c2971d96f0490ae78b34654c03de15a2}
+      \strng{authorfullhash}{c2971d96f0490ae78b34654c03de15a2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Tesis de grado. Facultad de Ingeniería, Universidad de Buenos Aires}
@@ -584,34 +684,38 @@
       \name{author}{5}{}{%
         {{hash=418c0d0344009796600ae14c9c0ada77}{%
            family={Sievenpiper},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={D.},
-           given_i={D\bibinitperiod}}}%
+           giveni={D\bibinitperiod}}}%
         {{hash=4f9d4d2fa5b60c96090e0f4219c11d2c}{%
            family={Zhang},
-           family_i={Z\bibinitperiod},
+           familyi={Z\bibinitperiod},
            given={L.},
-           given_i={L\bibinitperiod}}}%
+           giveni={L\bibinitperiod}}}%
         {{hash=57bb91210bdc2a19100dfc8a98cbf750}{%
            family={Jimenez},
-           family_i={J\bibinitperiod},
+           familyi={J\bibinitperiod},
            given={R.\bibnamedelimi F.},
-           given_i={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
         {{hash=76405c573587f90e26e13e31e890993a}{%
            family={Alexopoulos},
-           family_i={A\bibinitperiod},
+           familyi={A\bibinitperiod},
            given={N.\bibnamedelimi G.},
-           given_i={N\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+           giveni={N\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
         {{hash=1eb9fbea39253b0dd6583ecad1d0408c}{%
            family={Yablonovitch},
-           family_i={Y\bibinitperiod},
+           familyi={Y\bibinitperiod},
            given={E.},
-           given_i={E\bibinitperiod}}}%
+           giveni={E\bibinitperiod}}}%
       }
       \strng{namehash}{0b0c16b506da7fae94ea105c9147acc2}
       \strng{fullhash}{b772573b25cc2703dbd59c17c7fa1d38}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{b772573b25cc2703dbd59c17c7fa1d38}
+      \strng{authorbibnamehash}{b772573b25cc2703dbd59c17c7fa1d38}
+      \strng{authornamehash}{0b0c16b506da7fae94ea105c9147acc2}
+      \strng{authorfullhash}{b772573b25cc2703dbd59c17c7fa1d38}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Microwave Theory and Techniques}
@@ -622,17 +726,21 @@
       \name{author}{1}{}{%
         {{hash=5ef5a77217b6aaa391987c23265b3cba}{%
            family={Capolino},
-           family_i={C\bibinitperiod},
+           familyi={C\bibinitperiod},
            given={Filippo},
-           given_i={F\bibinitperiod}}}%
+           giveni={F\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {CRC Press}%
       }
       \strng{namehash}{5ef5a77217b6aaa391987c23265b3cba}
       \strng{fullhash}{5ef5a77217b6aaa391987c23265b3cba}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{5ef5a77217b6aaa391987c23265b3cba}
+      \strng{authorbibnamehash}{5ef5a77217b6aaa391987c23265b3cba}
+      \strng{authornamehash}{5ef5a77217b6aaa391987c23265b3cba}
+      \strng{authorfullhash}{5ef5a77217b6aaa391987c23265b3cba}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Theory and Phenomena of Metamaterials}
@@ -642,19 +750,23 @@
       \name{author}{2}{}{%
         {{hash=2df0dac13de305d8ea4e8b06e4bab282}{%
            family={Kim},
-           family_i={K\bibinitperiod},
+           familyi={K\bibinitperiod},
            given={Ki\bibnamedelima Hyuk},
-           given_i={K\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+           giveni={K\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
         {{hash=13f083b668fa5218074ca02351e02c9c}{%
            family={Schutt-Ainé},
-           family_i={S\bibinithyphendelim A\bibinitperiod},
+           familyi={S\bibinithyphendelim A\bibinitperiod},
            given={José\bibnamedelima E.},
-           given_i={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
       }
       \strng{namehash}{a77ccc1a6898f9f48f076a8810c2a573}
       \strng{fullhash}{a77ccc1a6898f9f48f076a8810c2a573}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{a77ccc1a6898f9f48f076a8810c2a573}
+      \strng{authorbibnamehash}{a77ccc1a6898f9f48f076a8810c2a573}
+      \strng{authornamehash}{a77ccc1a6898f9f48f076a8810c2a573}
+      \strng{authorfullhash}{a77ccc1a6898f9f48f076a8810c2a573}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Microwave Theory and Techniques}
@@ -665,17 +777,21 @@
       \name{author}{1}{}{%
         {{hash=7bb0655f7acb1d7dc9122a341c645c7f}{%
            family={Tretyakov},
-           family_i={T\bibinitperiod},
+           familyi={T\bibinitperiod},
            given={Sergei},
-           given_i={S\bibinitperiod}}}%
+           giveni={S\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Artech House}%
       }
       \strng{namehash}{7bb0655f7acb1d7dc9122a341c645c7f}
       \strng{fullhash}{7bb0655f7acb1d7dc9122a341c645c7f}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{7bb0655f7acb1d7dc9122a341c645c7f}
+      \strng{authorbibnamehash}{7bb0655f7acb1d7dc9122a341c645c7f}
+      \strng{authornamehash}{7bb0655f7acb1d7dc9122a341c645c7f}
+      \strng{authorfullhash}{7bb0655f7acb1d7dc9122a341c645c7f}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Analytical Modeling in Applied Electromagnetics}
@@ -685,44 +801,48 @@
       \name{author}{7}{}{%
         {{hash=5467a7dc277996d4f5f607ed58a5c559}{%
            family={Yakovlev},
-           family_i={Y\bibinitperiod},
+           familyi={Y\bibinitperiod},
            given={A.\bibnamedelimi B.},
-           given_i={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
         {{hash=d536cca858507da08213c22a2f8d64ae}{%
            family={Simovski},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={C.\bibnamedelimi R.},
-           given_i={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
         {{hash=a9a841d37faedc7cde476f9bfe70aa14}{%
            family={Tretyakov},
-           family_i={T\bibinitperiod},
+           familyi={T\bibinitperiod},
            given={S.\bibnamedelimi A.},
-           given_i={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
         {{hash=a8336dca9eeb7c7fc9fe33c27e15e97e}{%
            family={Luukkonen},
-           family_i={L\bibinitperiod},
+           familyi={L\bibinitperiod},
            given={O.},
-           given_i={O\bibinitperiod}}}%
+           giveni={O\bibinitperiod}}}%
         {{hash=c94bcedb54109959a49239ef0dba9a96}{%
            family={Hanson},
-           family_i={H\bibinitperiod},
+           familyi={H\bibinitperiod},
            given={G.\bibnamedelimi W.},
-           given_i={G\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
         {{hash=2f22f7ae4517297ba378b9010969ae1c}{%
            family={Paulotto},
-           family_i={P\bibinitperiod},
+           familyi={P\bibinitperiod},
            given={S.},
-           given_i={S\bibinitperiod}}}%
+           giveni={S\bibinitperiod}}}%
         {{hash=561f1aaecd8486701ddbe301a4658e74}{%
            family={Baccarelli},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={P.},
-           given_i={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod}}}%
       }
       \strng{namehash}{b890ed32b48597ef016a69cb0b28906a}
       \strng{fullhash}{10b50d06da1e1707a8e4ec0c10c5cd79}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{10b50d06da1e1707a8e4ec0c10c5cd79}
+      \strng{authorbibnamehash}{10b50d06da1e1707a8e4ec0c10c5cd79}
+      \strng{authornamehash}{b890ed32b48597ef016a69cb0b28906a}
+      \strng{authorfullhash}{10b50d06da1e1707a8e4ec0c10c5cd79}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{NATO Security through Science Series B: Physics and Biophysics}
@@ -733,24 +853,28 @@
       \name{author}{3}{}{%
         {{hash=b6f7bf1f554e6ed9ccfa1f3d1957e418}{%
            family={Goussetis},
-           family_i={G\bibinitperiod},
+           familyi={G\bibinitperiod},
            given={George},
-           given_i={G\bibinitperiod}}}%
+           giveni={G\bibinitperiod}}}%
         {{hash=4d4740b680c400e015c3f64a7334ab45}{%
            family={Feresidis},
-           family_i={F\bibinitperiod},
+           familyi={F\bibinitperiod},
            given={Alexandros},
-           given_i={A\bibinitperiod}}}%
+           giveni={A\bibinitperiod}}}%
         {{hash=f02a463581d276db76c71394dc4fd88a}{%
            family={Vardaxoglou},
-           family_i={V\bibinitperiod},
+           familyi={V\bibinitperiod},
            given={John\bibnamedelima C.},
-           given_i={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
       }
       \strng{namehash}{fcc18e585bde4c6d82d2e13ab0af98ea}
       \strng{fullhash}{fcc18e585bde4c6d82d2e13ab0af98ea}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{fcc18e585bde4c6d82d2e13ab0af98ea}
+      \strng{authorbibnamehash}{fcc18e585bde4c6d82d2e13ab0af98ea}
+      \strng{authornamehash}{fcc18e585bde4c6d82d2e13ab0af98ea}
+      \strng{authorfullhash}{fcc18e585bde4c6d82d2e13ab0af98ea}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
@@ -761,19 +885,23 @@
       \name{author}{2}{}{%
         {{hash=1449373c66841b6ba7ee0d3e3e4f3238}{%
            family={Mohajer-Iravani},
-           family_i={M\bibinithyphendelim I\bibinitperiod},
+           familyi={M\bibinithyphendelim I\bibinitperiod},
            given={Baharak},
-           given_i={B\bibinitperiod}}}%
+           giveni={B\bibinitperiod}}}%
         {{hash=b325e056a5d9594cff5c607d0c06402c}{%
            family={Ramahi},
-           family_i={R\bibinitperiod},
+           familyi={R\bibinitperiod},
            given={Omar\bibnamedelima M.},
-           given_i={O\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+           giveni={O\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
       }
       \strng{namehash}{d3ea6c402c8205136ff4633408de799a}
       \strng{fullhash}{d3ea6c402c8205136ff4633408de799a}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{d3ea6c402c8205136ff4633408de799a}
+      \strng{authorbibnamehash}{d3ea6c402c8205136ff4633408de799a}
+      \strng{authornamehash}{d3ea6c402c8205136ff4633408de799a}
+      \strng{authorfullhash}{d3ea6c402c8205136ff4633408de799a}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Hindawi Publishing Corporation: International Journal of Antennas and Propagation}
@@ -784,22 +912,26 @@
       \name{author}{2}{}{%
         {{hash=eb5d5ae09823dbd21f6e0bbbf8a1b5ba}{%
            family={Yang},
-           family_i={Y\bibinitperiod},
+           familyi={Y\bibinitperiod},
            given={F.},
-           given_i={F\bibinitperiod}}}%
+           giveni={F\bibinitperiod}}}%
         {{hash=07654a0d3a6117987a4a96c6c0e06bd9}{%
            family={Rahmat-Samii},
-           family_i={R\bibinithyphendelim S\bibinitperiod},
+           familyi={R\bibinithyphendelim S\bibinitperiod},
            given={Y.},
-           given_i={Y\bibinitperiod}}}%
+           giveni={Y\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Cambridge University Press}%
       }
       \strng{namehash}{02fddd1d2c86bd7cb0217ff535a4506a}
       \strng{fullhash}{02fddd1d2c86bd7cb0217ff535a4506a}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{02fddd1d2c86bd7cb0217ff535a4506a}
+      \strng{authorbibnamehash}{02fddd1d2c86bd7cb0217ff535a4506a}
+      \strng{authornamehash}{02fddd1d2c86bd7cb0217ff535a4506a}
+      \strng{authorfullhash}{02fddd1d2c86bd7cb0217ff535a4506a}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Electromagnetic Band Gap Structures in Antenna Engineering}
@@ -809,29 +941,33 @@
       \name{author}{4}{}{%
         {{hash=d3e18f466901c25240e4398097282a7a}{%
            family={Maci},
-           family_i={M\bibinitperiod},
+           familyi={M\bibinitperiod},
            given={Stefano},
-           given_i={S\bibinitperiod}}}%
+           giveni={S\bibinitperiod}}}%
         {{hash=536452c003692bdf1bef57dcdc0a909f}{%
            family={Caiazzo},
-           family_i={C\bibinitperiod},
+           familyi={C\bibinitperiod},
            given={Marco},
-           given_i={M\bibinitperiod}}}%
+           giveni={M\bibinitperiod}}}%
         {{hash=a56cbf0bac1da704e5d768141cd6d67c}{%
            family={Cucini},
-           family_i={C\bibinitperiod},
+           familyi={C\bibinitperiod},
            given={Alession},
-           given_i={A\bibinitperiod}}}%
+           giveni={A\bibinitperiod}}}%
         {{hash=900c38fc082e05cefeccd6d0c605929b}{%
            family={Casaletti},
-           family_i={C\bibinitperiod},
+           familyi={C\bibinitperiod},
            given={Massimiliano},
-           given_i={M\bibinitperiod}}}%
+           giveni={M\bibinitperiod}}}%
       }
       \strng{namehash}{7ba89ee1e122c9bb32e042709a788d03}
       \strng{fullhash}{2bcf0ce162687001d062d521a21b4ead}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{2bcf0ce162687001d062d521a21b4ead}
+      \strng{authorbibnamehash}{2bcf0ce162687001d062d521a21b4ead}
+      \strng{authornamehash}{7ba89ee1e122c9bb32e042709a788d03}
+      \strng{authorfullhash}{2bcf0ce162687001d062d521a21b4ead}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
@@ -842,29 +978,33 @@
       \name{author}{4}{}{%
         {{hash=561fe7183911083316bb59d90a430259}{%
            family={Yang},
-           family_i={Y\bibinitperiod},
+           familyi={Y\bibinitperiod},
            given={Fei-Ran},
-           given_i={F\bibinithyphendelim R\bibinitperiod}}}%
+           giveni={F\bibinithyphendelim R\bibinitperiod}}}%
         {{hash=2d0c23b9c142a4e99d095b40b09b99f2}{%
            family={Ma},
-           family_i={M\bibinitperiod},
+           familyi={M\bibinitperiod},
            given={Kuan-Ping},
-           given_i={K\bibinithyphendelim P\bibinitperiod}}}%
+           giveni={K\bibinithyphendelim P\bibinitperiod}}}%
         {{hash=4b0d4543e1023eaa326c658137d5057e}{%
            family={Qian},
-           family_i={Q\bibinitperiod},
+           familyi={Q\bibinitperiod},
            given={Yongxi},
-           given_i={Y\bibinitperiod}}}%
+           giveni={Y\bibinitperiod}}}%
         {{hash=b0e98452953451e32b8c761f6916c3f7}{%
            family={Itoh},
-           family_i={I\bibinitperiod},
+           familyi={I\bibinitperiod},
            given={Tatsuo},
-           given_i={T\bibinitperiod}}}%
+           giveni={T\bibinitperiod}}}%
       }
       \strng{namehash}{a36af85bda4669f392ba2924d7d71d71}
       \strng{fullhash}{214d91a1563855119c6a63353c4eb5be}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{214d91a1563855119c6a63353c4eb5be}
+      \strng{authorbibnamehash}{214d91a1563855119c6a63353c4eb5be}
+      \strng{authornamehash}{a36af85bda4669f392ba2924d7d71d71}
+      \strng{authorfullhash}{214d91a1563855119c6a63353c4eb5be}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Microwave Theory and Techniques}
@@ -875,19 +1015,23 @@
       \name{author}{2}{}{%
         {{hash=f1e600528a54061987abf0e0a11190d9}{%
            family={Johns},
-           family_i={J\bibinitperiod},
+           familyi={J\bibinitperiod},
            given={P.\bibnamedelimi B.},
-           given_i={P\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+           giveni={P\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
         {{hash=fe2fb3e1567613ca43f7791fcf95b880}{%
            family={Beurle},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={R.\bibnamedelimi L.},
-           given_i={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
       }
       \strng{namehash}{8bfd2d8f73fd2c35a8d0ef2215ae8e91}
       \strng{fullhash}{8bfd2d8f73fd2c35a8d0ef2215ae8e91}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{8bfd2d8f73fd2c35a8d0ef2215ae8e91}
+      \strng{authorbibnamehash}{8bfd2d8f73fd2c35a8d0ef2215ae8e91}
+      \strng{authornamehash}{8bfd2d8f73fd2c35a8d0ef2215ae8e91}
+      \strng{authorfullhash}{8bfd2d8f73fd2c35a8d0ef2215ae8e91}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proc. IEEE}
@@ -898,19 +1042,23 @@
       \name{author}{2}{}{%
         {{hash=fe298ec663bb2b23033123946835044e}{%
            family={Thumm},
-           family_i={T\bibinitperiod},
+           familyi={T\bibinitperiod},
            given={Manfred},
-           given_i={M\bibinitperiod}}}%
+           giveni={M\bibinitperiod}}}%
         {{hash=20b7cc0dd72eb348e8a0da4d4162c281}{%
            family={Wiesbeck},
-           family_i={W\bibinitperiod},
+           familyi={W\bibinitperiod},
            given={Werner},
-           given_i={W\bibinitperiod}}}%
+           giveni={W\bibinitperiod}}}%
       }
       \strng{namehash}{a7a29412e801e32df69c77bc1b098971}
       \strng{fullhash}{a7a29412e801e32df69c77bc1b098971}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{a7a29412e801e32df69c77bc1b098971}
+      \strng{authorbibnamehash}{a7a29412e801e32df69c77bc1b098971}
+      \strng{authornamehash}{a7a29412e801e32df69c77bc1b098971}
+      \strng{authorfullhash}{a7a29412e801e32df69c77bc1b098971}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Karlsruhe Institute of Technology}
@@ -920,100 +1068,84 @@
       \name{author}{3}{}{%
         {{hash=cbf4c97cc69a8e27cd4cf09a25faa246}{%
            family={Tesche},
-           family_i={T\bibinitperiod},
+           familyi={T\bibinitperiod},
            given={Frederick\bibnamedelima M.},
-           given_i={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
         {{hash=88bf2d1e15b89a7fa09f9354c46f1c9e}{%
            family={Ianoz},
-           family_i={I\bibinitperiod},
+           familyi={I\bibinitperiod},
            given={Michel\bibnamedelima V.},
-           given_i={M\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+           giveni={M\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
         {{hash=8fc9e07b43c6be47ca7bc4d2a5f332fd}{%
            family={Karlsson},
-           family_i={K\bibinitperiod},
+           familyi={K\bibinitperiod},
            given={Torbjörn},
-           given_i={T\bibinitperiod}}}%
+           giveni={T\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Wiley-Interscience}%
       }
       \strng{namehash}{341a3c7fb7c5829ceefdcb4362892d4a}
       \strng{fullhash}{341a3c7fb7c5829ceefdcb4362892d4a}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{341a3c7fb7c5829ceefdcb4362892d4a}
+      \strng{authorbibnamehash}{341a3c7fb7c5829ceefdcb4362892d4a}
+      \strng{authornamehash}{341a3c7fb7c5829ceefdcb4362892d4a}
+      \strng{authorfullhash}{341a3c7fb7c5829ceefdcb4362892d4a}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{EMC Analysis Methods and Computational Models}
       \field{year}{1997}
     \endentry
-    \entry{Kumar:radiating}{article}{}
-      \name{author}{2}{}{%
-        {{hash=195fd44e31dba6df5ee8dacd5035eab8}{%
-           family={Kumar},
-           family_i={K\bibinitperiod},
-           given={Girish},
-           given_i={G\bibinitperiod}}}%
-        {{hash=cc1562c302be40d9160fe1c134e80686}{%
-           family={Gupta},
-           family_i={G\bibinitperiod},
-           given={Kuldip.\bibnamedelimi C.},
-           given_i={K\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+    \entry{Abidin:Thesis}{article}{}
+      \name{author}{1}{}{%
+        {{hash=bd6f4d37af13fdd21a35cd7444308c27}{%
+           family={Abidin},
+           familyi={A\bibinitperiod},
+           given={Zuhairiah\bibnamedelima Zainal},
+           giveni={Z\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
       }
-      \strng{namehash}{8d36a691c7352563b944248bbc328e6e}
-      \strng{fullhash}{8d36a691c7352563b944248bbc328e6e}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{bd6f4d37af13fdd21a35cd7444308c27}
+      \strng{fullhash}{bd6f4d37af13fdd21a35cd7444308c27}
+      \strng{bibnamehash}{bd6f4d37af13fdd21a35cd7444308c27}
+      \strng{authorbibnamehash}{bd6f4d37af13fdd21a35cd7444308c27}
+      \strng{authornamehash}{bd6f4d37af13fdd21a35cd7444308c27}
+      \strng{authorfullhash}{bd6f4d37af13fdd21a35cd7444308c27}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
-      \field{title}{Broad-band microstrip antennas using additional resonators gap-coupled to the radiating edges}
-      \field{year}{1984}
-    \endentry
-    \entry{Kumar:Non-radiating}{article}{}
-      \name{author}{2}{}{%
-        {{hash=195fd44e31dba6df5ee8dacd5035eab8}{%
-           family={Kumar},
-           family_i={K\bibinitperiod},
-           given={Girish},
-           given_i={G\bibinitperiod}}}%
-        {{hash=cc1562c302be40d9160fe1c134e80686}{%
-           family={Gupta},
-           family_i={G\bibinitperiod},
-           given={Kuldip.\bibnamedelimi C.},
-           given_i={K\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-      }
-      \strng{namehash}{8d36a691c7352563b944248bbc328e6e}
-      \strng{fullhash}{8d36a691c7352563b944248bbc328e6e}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
-      \field{title}{Nonradiating edges and four edges gap-coupled multiple resonator broad-band microstrip antennas}
-      \field{year}{1985}
+      \field{journaltitle}{University of Bradford}
+      \field{title}{Design, modelind and implementation of antennas using electromagnetic bandgap material and defected ground planes (PhD Thesis)}
+      \field{year}{2011}
     \endentry
     \entry{Asimonis:designoptimization}{article}{}
       \name{author}{3}{}{%
         {{hash=307a0e73745ba89a79ff1cd33ee79b15}{%
            family={Assimonis},
-           family_i={A\bibinitperiod},
+           familyi={A\bibinitperiod},
            given={Stylianos\bibnamedelima D.},
-           given_i={S\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
         {{hash=b80b6c4ddde7371c0051003de3deafea}{%
            family={Yioultsis},
-           family_i={Y\bibinitperiod},
+           familyi={Y\bibinitperiod},
            given={Traianos\bibnamedelima V.},
-           given_i={T\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+           giveni={T\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
         {{hash=188588600f43cc59b0cbc3e20e29ab0d}{%
            family={Antonopoulos},
-           family_i={A\bibinitperiod},
+           familyi={A\bibinitperiod},
            given={Christos\bibnamedelima S.},
-           given_i={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
       }
       \strng{namehash}{4c12eb836518a0b16915bb369bcd09d3}
       \strng{fullhash}{4c12eb836518a0b16915bb369bcd09d3}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{4c12eb836518a0b16915bb369bcd09d3}
+      \strng{authorbibnamehash}{4c12eb836518a0b16915bb369bcd09d3}
+      \strng{authornamehash}{4c12eb836518a0b16915bb369bcd09d3}
+      \strng{authorfullhash}{4c12eb836518a0b16915bb369bcd09d3}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on antennas and propagation}
@@ -1024,19 +1156,23 @@
       \name{author}{2}{}{%
         {{hash=8118a01082e71b5085ad49a801dca1b1}{%
            family={Islam},
-           family_i={I\bibinitperiod},
+           familyi={I\bibinitperiod},
            given={Mohammad\bibnamedelima Tariqul},
-           given_i={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
         {{hash=2faf0a7ccc10f5252c4ea51d39f197ef}{%
            family={Alam},
-           family_i={A\bibinitperiod},
+           familyi={A\bibinitperiod},
            given={Shahidul},
-           given_i={S\bibinitperiod}}}%
+           giveni={S\bibinitperiod}}}%
       }
       \strng{namehash}{1259ad1f38f55e44fa60877575009f30}
       \strng{fullhash}{1259ad1f38f55e44fa60877575009f30}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{1259ad1f38f55e44fa60877575009f30}
+      \strng{authorbibnamehash}{1259ad1f38f55e44fa60877575009f30}
+      \strng{authornamehash}{1259ad1f38f55e44fa60877575009f30}
+      \strng{authorfullhash}{1259ad1f38f55e44fa60877575009f30}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Progress in Electromagnetics Research}
@@ -1047,58 +1183,102 @@
       \name{author}{1}{}{%
         {{hash=88812b90cbc404e2e7fee100bcdc95c4}{%
            family={Kovács},
-           family_i={K\bibinitperiod},
+           familyi={K\bibinitperiod},
            given={Peter},
-           given_i={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod}}}%
       }
       \strng{namehash}{88812b90cbc404e2e7fee100bcdc95c4}
       \strng{fullhash}{88812b90cbc404e2e7fee100bcdc95c4}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{88812b90cbc404e2e7fee100bcdc95c4}
+      \strng{authorbibnamehash}{88812b90cbc404e2e7fee100bcdc95c4}
+      \strng{authornamehash}{88812b90cbc404e2e7fee100bcdc95c4}
+      \strng{authorfullhash}{88812b90cbc404e2e7fee100bcdc95c4}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Brno University of Technology}
       \field{title}{Design and optimization of electromagnetic bandgap structures (PhD Thesis)}
       \field{year}{2010}
     \endentry
-    \entry{Abidin:Thesis}{article}{}
-      \name{author}{1}{}{%
-        {{hash=bd6f4d37af13fdd21a35cd7444308c27}{%
-           family={Abidin},
-           family_i={A\bibinitperiod},
-           given={Zuhairiah\bibnamedelima Zainal},
-           given_i={Z\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+    \entry{Kumar:radiating}{article}{}
+      \name{author}{2}{}{%
+        {{hash=195fd44e31dba6df5ee8dacd5035eab8}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Girish},
+           giveni={G\bibinitperiod}}}%
+        {{hash=cc1562c302be40d9160fe1c134e80686}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Kuldip.\bibnamedelimi C.},
+           giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
       }
-      \strng{namehash}{bd6f4d37af13fdd21a35cd7444308c27}
-      \strng{fullhash}{bd6f4d37af13fdd21a35cd7444308c27}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{8d36a691c7352563b944248bbc328e6e}
+      \strng{fullhash}{8d36a691c7352563b944248bbc328e6e}
+      \strng{bibnamehash}{8d36a691c7352563b944248bbc328e6e}
+      \strng{authorbibnamehash}{8d36a691c7352563b944248bbc328e6e}
+      \strng{authornamehash}{8d36a691c7352563b944248bbc328e6e}
+      \strng{authorfullhash}{8d36a691c7352563b944248bbc328e6e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{University of Bradford}
-      \field{title}{Design, modelind and implementation of antennas using electromagnetic bandgap material and defected ground planes (PhD Thesis)}
-      \field{year}{2011}
+      \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
+      \field{title}{Broad-band microstrip antennas using additional resonators gap-coupled to the radiating edges}
+      \field{year}{1984}
+    \endentry
+    \entry{Kumar:Non-radiating}{article}{}
+      \name{author}{2}{}{%
+        {{hash=195fd44e31dba6df5ee8dacd5035eab8}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Girish},
+           giveni={G\bibinitperiod}}}%
+        {{hash=cc1562c302be40d9160fe1c134e80686}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Kuldip.\bibnamedelimi C.},
+           giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{8d36a691c7352563b944248bbc328e6e}
+      \strng{fullhash}{8d36a691c7352563b944248bbc328e6e}
+      \strng{bibnamehash}{8d36a691c7352563b944248bbc328e6e}
+      \strng{authorbibnamehash}{8d36a691c7352563b944248bbc328e6e}
+      \strng{authornamehash}{8d36a691c7352563b944248bbc328e6e}
+      \strng{authorfullhash}{8d36a691c7352563b944248bbc328e6e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
+      \field{title}{Nonradiating edges and four edges gap-coupled multiple resonator broad-band microstrip antennas}
+      \field{year}{1985}
     \endentry
     \entry{Markos:PhotonicCrystals}{book}{}
       \name{author}{2}{}{%
         {{hash=eaafed502353d4506d009f53b53e1093}{%
            family={Markos},
-           family_i={M\bibinitperiod},
+           familyi={M\bibinitperiod},
            given={P.},
-           given_i={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod}}}%
         {{hash=36760b14c57912d67de2eb6efe190a8f}{%
            family={Soukoulis},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={C.\bibnamedelimi M.},
-           given_i={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Princeton University Press}%
       }
       \strng{namehash}{53d0cd6010783e6708de56c864af4860}
       \strng{fullhash}{53d0cd6010783e6708de56c864af4860}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{53d0cd6010783e6708de56c864af4860}
+      \strng{authorbibnamehash}{53d0cd6010783e6708de56c864af4860}
+      \strng{authornamehash}{53d0cd6010783e6708de56c864af4860}
+      \strng{authorfullhash}{53d0cd6010783e6708de56c864af4860}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Wave Propagation: From Electrons to Photonic Crystals and Left-Handed Materials}
@@ -1108,17 +1288,21 @@
       \name{author}{1}{}{%
         {{hash=e8e49f483879f73f5efb9bdf49a81bdf}{%
            family={Jiang},
-           family_i={J\bibinitperiod},
+           familyi={J\bibinitperiod},
            given={X.},
-           given_i={X\bibinitperiod}}}%
+           giveni={X\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Intech: Open Science}%
       }
       \strng{namehash}{e8e49f483879f73f5efb9bdf49a81bdf}
       \strng{fullhash}{e8e49f483879f73f5efb9bdf49a81bdf}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{e8e49f483879f73f5efb9bdf49a81bdf}
+      \strng{authorbibnamehash}{e8e49f483879f73f5efb9bdf49a81bdf}
+      \strng{authornamehash}{e8e49f483879f73f5efb9bdf49a81bdf}
+      \strng{authorfullhash}{e8e49f483879f73f5efb9bdf49a81bdf}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Metamaterial}
@@ -1128,17 +1312,21 @@
       \name{author}{1}{}{%
         {{hash=9b143cb461629aa1ffe4aeef784659b5}{%
            family={Harrington},
-           family_i={H\bibinitperiod},
+           familyi={H\bibinitperiod},
            given={Roger\bibnamedelima F.},
-           given_i={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Wiley-IEEE Press}%
       }
       \strng{namehash}{9b143cb461629aa1ffe4aeef784659b5}
       \strng{fullhash}{9b143cb461629aa1ffe4aeef784659b5}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{9b143cb461629aa1ffe4aeef784659b5}
+      \strng{authorbibnamehash}{9b143cb461629aa1ffe4aeef784659b5}
+      \strng{authornamehash}{9b143cb461629aa1ffe4aeef784659b5}
+      \strng{authorfullhash}{9b143cb461629aa1ffe4aeef784659b5}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Time Harmonic Electromagnetic Fields}
@@ -1148,20 +1336,27 @@
       \name{author}{1}{}{%
         {{hash=aef5bd6e3dec245764935a24ef74aa14}{%
            family={Morin},
-           family_i={M\bibinitperiod},
+           familyi={M\bibinitperiod},
            given={David},
-           given_i={D\bibinitperiod}}}%
+           giveni={D\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Aún no publicado a Marzo 2018}%
       }
       \strng{namehash}{aef5bd6e3dec245764935a24ef74aa14}
       \strng{fullhash}{aef5bd6e3dec245764935a24ef74aa14}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{authorbibnamehash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{authornamehash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{authorfullhash}{aef5bd6e3dec245764935a24ef74aa14}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Waves}
+      \verb{urlraw}
+      \verb http://www.people.fas.harvard.edu/~djmorin/book.html
+      \endverb
       \verb{url}
       \verb http://www.people.fas.harvard.edu/~djmorin/book.html
       \endverb
@@ -1170,37 +1365,41 @@
       \name{author}{5}{}{%
         {{hash=76f3426e811101cc903edde3be7b8001}{%
            family={Burstein},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={E.},
-           given_i={E\bibinitperiod}}}%
+           giveni={E\bibinitperiod}}}%
         {{hash=837d4d7d3a97260674f08d27277f7b93}{%
            family={Weisbuch},
-           family_i={W\bibinitperiod},
+           familyi={W\bibinitperiod},
            given={C},
-           given_i={C\bibinitperiod}}}%
+           giveni={C\bibinitperiod}}}%
         {{hash=0f221919371158d2277fa7d18868763b}{%
            family={Russell},
-           family_i={R\bibinitperiod},
+           familyi={R\bibinitperiod},
            given={Philip\bibnamedelimb St.\bibnamedelimi J.},
-           given_i={P\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
         {{hash=610c928923e91b5df5b16907e77b673a}{%
            family={Birks},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={Timothy},
-           given_i={T\bibinitperiod}}}%
+           giveni={T\bibinitperiod}}}%
         {{hash=d3c6a7bfbeff980d3fe7f548fbfac47b}{%
            family={Lloyd-Lucas},
-           family_i={L\bibinithyphendelim L\bibinitperiod},
+           familyi={L\bibinithyphendelim L\bibinitperiod},
            given={Dominic},
-           given_i={D\bibinitperiod}}}%
+           giveni={D\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Plenum Press}%
       }
       \strng{namehash}{aa58e98081bc30689c8779b3402a7e81}
       \strng{fullhash}{45ed51fba7f718e0f9964790c09d4615}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{45ed51fba7f718e0f9964790c09d4615}
+      \strng{authorbibnamehash}{45ed51fba7f718e0f9964790c09d4615}
+      \strng{authornamehash}{aa58e98081bc30689c8779b3402a7e81}
+      \strng{authorfullhash}{45ed51fba7f718e0f9964790c09d4615}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Confined Electrons and Photons: Photonic Bloch Waves and Photonic Band Gaps}
@@ -1210,17 +1409,21 @@
       \name{author}{1}{}{%
         {{hash=f40bf2ee746be7ce19da9f0cc47da598}{%
            family={Saguet},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={Pierre},
-           given_i={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {ISTE - Wiley}%
       }
       \strng{namehash}{f40bf2ee746be7ce19da9f0cc47da598}
       \strng{fullhash}{f40bf2ee746be7ce19da9f0cc47da598}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{f40bf2ee746be7ce19da9f0cc47da598}
+      \strng{authorbibnamehash}{f40bf2ee746be7ce19da9f0cc47da598}
+      \strng{authornamehash}{f40bf2ee746be7ce19da9f0cc47da598}
+      \strng{authorfullhash}{f40bf2ee746be7ce19da9f0cc47da598}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Numerical Analysis in Electromagnetics}
@@ -1230,14 +1433,18 @@
       \name{author}{1}{}{%
         {{hash=89d449670130f3e755ec17509e9f09e7}{%
            family={Allen},
-           family_i={A\bibinitperiod},
+           familyi={A\bibinitperiod},
            given={J.\bibnamedelimi L.},
-           given_i={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
       }
       \strng{namehash}{89d449670130f3e755ec17509e9f09e7}
       \strng{fullhash}{89d449670130f3e755ec17509e9f09e7}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{89d449670130f3e755ec17509e9f09e7}
+      \strng{authorbibnamehash}{89d449670130f3e755ec17509e9f09e7}
+      \strng{authornamehash}{89d449670130f3e755ec17509e9f09e7}
+      \strng{authorfullhash}{89d449670130f3e755ec17509e9f09e7}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
@@ -1248,14 +1455,18 @@
       \name{author}{1}{}{%
         {{hash=7b58ecdef3ddd8353d4768bc0d83f9bb}{%
            family={Malkomes},
-           family_i={M\bibinitperiod},
+           familyi={M\bibinitperiod},
            given={M.},
-           given_i={M\bibinitperiod}}}%
+           giveni={M\bibinitperiod}}}%
       }
       \strng{namehash}{7b58ecdef3ddd8353d4768bc0d83f9bb}
       \strng{fullhash}{7b58ecdef3ddd8353d4768bc0d83f9bb}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{7b58ecdef3ddd8353d4768bc0d83f9bb}
+      \strng{authorbibnamehash}{7b58ecdef3ddd8353d4768bc0d83f9bb}
+      \strng{authornamehash}{7b58ecdef3ddd8353d4768bc0d83f9bb}
+      \strng{authorfullhash}{7b58ecdef3ddd8353d4768bc0d83f9bb}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IET Electronic Letters}
@@ -1266,19 +1477,23 @@
       \name{author}{2}{}{%
         {{hash=b6c884ee6ae7c90885693ad6ba4913cf}{%
            family={Polo},
-           family_i={P\bibinitperiod},
+           familyi={P\bibinitperiod},
            given={J.\bibnamedelimi A.},
-           given_i={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
         {{hash=7c7ba8bc695580aba05f46054bf568dd}{%
            family={Lakhtakia},
-           family_i={L\bibinitperiod},
+           familyi={L\bibinitperiod},
            given={A},
-           given_i={A\bibinitperiod}}}%
+           giveni={A\bibinitperiod}}}%
       }
       \strng{namehash}{7d8993d1ed864319c9361d1937eadcb1}
       \strng{fullhash}{7d8993d1ed864319c9361d1937eadcb1}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{7d8993d1ed864319c9361d1937eadcb1}
+      \strng{authorbibnamehash}{7d8993d1ed864319c9361d1937eadcb1}
+      \strng{authornamehash}{7d8993d1ed864319c9361d1937eadcb1}
+      \strng{authorfullhash}{7d8993d1ed864319c9361d1937eadcb1}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Laser and Photonics Reviews}
@@ -1289,24 +1504,28 @@
       \name{author}{3}{}{%
         {{hash=985e315de19c139b29e5ceb8174bdc76}{%
            family={Saikh},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={S.\bibnamedelimi A.},
-           given_i={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
         {{hash=9f550f0b20b8bcdc67c0608864b9b7bf}{%
            family={Desai},
-           family_i={D\bibinitperiod},
+           familyi={D\bibinitperiod},
            given={A.\bibnamedelimi A.},
-           given_i={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
         {{hash=a0d4945ff85f50f5db2e8a328763952d}{%
            family={Deshmukh},
-           family_i={D\bibinitperiod},
+           familyi={D\bibinitperiod},
            given={A.\bibnamedelimi A.},
-           given_i={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
       }
       \strng{namehash}{2fb14d95dc61026544a2b0b56dadee25}
       \strng{fullhash}{2fb14d95dc61026544a2b0b56dadee25}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{2fb14d95dc61026544a2b0b56dadee25}
+      \strng{authorbibnamehash}{2fb14d95dc61026544a2b0b56dadee25}
+      \strng{authornamehash}{2fb14d95dc61026544a2b0b56dadee25}
+      \strng{authorfullhash}{2fb14d95dc61026544a2b0b56dadee25}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal of Computer Applications}
@@ -1317,19 +1536,23 @@
       \name{author}{2}{}{%
         {{hash=b76f346db8ab515f1651f1746a200bc0}{%
            family={Dodov},
-           family_i={D\bibinitperiod},
+           familyi={D\bibinitperiod},
            given={Nicola\bibnamedelima I.},
-           given_i={N\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+           giveni={N\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
         {{hash=bd737d92ec6b52d55a6d80f800c98824}{%
            family={Petkov},
-           family_i={P\bibinitperiod},
+           familyi={P\bibinitperiod},
            given={Peter\bibnamedelima Zh.},
-           given_i={P\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+           giveni={P\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
       }
       \strng{namehash}{75368e30480609b51827f37a252d69de}
       \strng{fullhash}{75368e30480609b51827f37a252d69de}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{75368e30480609b51827f37a252d69de}
+      \strng{authorbibnamehash}{75368e30480609b51827f37a252d69de}
+      \strng{authornamehash}{75368e30480609b51827f37a252d69de}
+      \strng{authorfullhash}{75368e30480609b51827f37a252d69de}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ICEST 2002}
@@ -1340,29 +1563,33 @@
       \name{author}{4}{}{%
         {{hash=e57f50421894aa1ab781c42bd507985a}{%
            family={Meade},
-           family_i={M\bibinitperiod},
+           familyi={M\bibinitperiod},
            given={R.\bibnamedelimi M.},
-           given_i={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
         {{hash=5fcef6d3627f641ced36b8de65ac1b24}{%
            family={Rappe},
-           family_i={R\bibinitperiod},
+           familyi={R\bibinitperiod},
            given={A.\bibnamedelimi M.},
-           given_i={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
         {{hash=6f28a97a5963d0d8aeb78fe017adcff9}{%
            family={Brommer},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={K.\bibnamedelimi D.},
-           given_i={K\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
         {{hash=fa9afa226fa9a838261e3386e20890c2}{%
            family={Joannopoulos},
-           family_i={J\bibinitperiod},
+           familyi={J\bibinitperiod},
            given={J.\bibnamedelimi D.},
-           given_i={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
       }
       \strng{namehash}{cee60fcea7cc35239b773920ad75bde0}
       \strng{fullhash}{0b217c3d5b3985038b8688f93cfb18f0}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{0b217c3d5b3985038b8688f93cfb18f0}
+      \strng{authorbibnamehash}{0b217c3d5b3985038b8688f93cfb18f0}
+      \strng{authornamehash}{cee60fcea7cc35239b773920ad75bde0}
+      \strng{authorfullhash}{0b217c3d5b3985038b8688f93cfb18f0}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of the Optical Society of America}
@@ -1373,21 +1600,25 @@
       \name{author}{1}{}{%
         {{hash=e255af2f8a76b5c70dc8ce7949cf245b}{%
            family={Hendry},
-           family_i={H\bibinitperiod},
+           familyi={H\bibinitperiod},
            given={Janice},
-           given_i={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod}}}%
       }
       \strng{namehash}{e255af2f8a76b5c70dc8ce7949cf245b}
       \strng{fullhash}{e255af2f8a76b5c70dc8ce7949cf245b}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{e255af2f8a76b5c70dc8ce7949cf245b}
+      \strng{authorbibnamehash}{e255af2f8a76b5c70dc8ce7949cf245b}
+      \strng{authornamehash}{e255af2f8a76b5c70dc8ce7949cf245b}
+      \strng{authorfullhash}{e255af2f8a76b5c70dc8ce7949cf245b}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Roke Manor Research}
       \field{title}{Surface Waves: What are they? Why are they interesting?}
       \field{year}{2009}
     \endentry
-  \endsortlist
+  \enddatalist
 \endrefsection
 \endinput
 

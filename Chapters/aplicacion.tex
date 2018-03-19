@@ -37,18 +37,16 @@ Para el presente trabajo, estas estructuras se ubicarán entre dos antenas micro
 
 % Coccioli, Yang, Itoh, intro historica.
 %%%%
-\section{Diseño de la antena \textit{microstrip}}
+\section{Diseño de una antena \textit{microstrip}}
 \label{sec_disenio_microstrip}
 %%%%
-El diseño de la antena \textit{microstrip} consta de dos etapas: La primera de ellas consiste en el uso de los modelos teóricos de la sección \ref{subsec_antenas_microstrip} para diseñar una antena \textit{microstrip} para la frecuencia deseada; y la segunda consiste en la modificación del diseño, para lograr aumentar su ancho de banda de forma notoria, lo que inevitablemente genera cambios en la frecuencia de resonancia y valor de ROE de la antena. Estas variaciones se pueden predecir mediante simulación, lo que obliga a un proceso iterativo de corrección y simulación para lograr las características deseadas, que en los programas comerciales suele estar automatizado, bajo el nombre de optimización.
-
-Se debe calcular, en primer lugar, un valor tentativo del ancho W de la antena (con W según la figura \ref{fig:antema-microstrip-inset} a)), teniendo en cuenta que un mayor ancho W da lugar a una menor resistencia de entrada $R_{in}$. Una fórmula empírica está dada por \cite{Barthia:Handbook}, y para una frecuencia de resonancia de unos 2.42 GHz y sustrato FR-4 de 1.6 mm de espesor, resulta:
+Para el diseño de una antena microstrip, se deben utilizar los modelos teoricos analizados en la sección \ref{sec:modelo_analitico}. Se debe calcular, en primer lugar, un valor tentativo del ancho W de la antena (con W según la figura \ref{fig:antema-microstrip-inset} a)), teniendo en cuenta que un mayor ancho W da lugar a una menor resistencia de entrada $R_{in}$. Una fórmula empírica está dada por \cite{Barthia:Handbook}, y para una frecuencia de resonancia de unos 2.42 GHz y sustrato FR-4 de 1.6 mm de espesor, resulta:
 
 \begin{align}
 	W = \frac{c_0}{2 f_r} \sqrt{\frac{2}{\epsilon_r+1}} = 37.35\; mm
 \end{align}
 
-Obtenido el ancho aproximado, se puede calcular la permitividad eléctrica eficaz, $\epsilon_{eff}$, de la ecuación \ref{cte-diel-efectiva-microstrip}, que obtiene el valor 4.17. Esto permite, conociendo la frecuencia de resonancia buscada, calcular la longitud efectiva de la línea de transmisión, como:
+Obtenido el ancho aproximado, se puede calcular la permitividad eléctrica eficaz, $\epsilon_{eff}$, de la ecuación \ref{eq:cte-diel-efectiva-microstrip}, que resulta 4.17. Esto permite, conociendo la frecuencia de resonancia buscada, calcular la longitud efectiva de la línea de transmisión, como:
 
 \begin{align}
 	L_{eff} = \frac{c_0}{2 f_r \sqrt{\epsilon_{r_{eff}}}} = 30.32\; mm
@@ -56,9 +54,9 @@ Obtenido el ancho aproximado, se puede calcular la permitividad eléctrica efica
 
 Dado que $L_{eff} = L + 2 \Delta L$, a partir del cálculo de $\Delta L$, que cuantiza el efecto del \textit{fringing} sobre la frecuencia de resonancia, usando la expresión \ref{eq:deltaL-antena-microstrip}, que resulta en 0.74 mm, se puede saber el valor de L a utilizar ($L = L_{eff} - 2 \Delta L$), que es de 28.85 mm.
 
-Además de la antena, debe diseñarse también la alimentación de la misma. De entre las múltiples formas de alimentación de una antena \textit{microstrip} \cite{Barthia:Handbook}, la seleccionada por su facilidad de fabricación es la que consiste en una línea de la misma tecnología, que vincula a un conector en el borde de la placa con el parche, esquematizado antes en la figura \ref{fig:antema-microstrip-inset}. En particular, es importante que la impedancia característica de la línea \textit{microstrip} utilizada sea de $50\;\Omega$, para lo que debe seleccionarse con cuidado su ancho, en función de la altura del sustrato y la permitividad del dieléctrico. Según las expresiones que se pueden hallar en el Apéndice B de \cite{Barthia:Handbook}, el ancho necesario para obtener una impedancia de $50\;\Omega$ es de aproximadamente 3.1 mm.
+Además de la antena, debe diseñarse también la alimentación de la misma. De entre las múltiples formas de alimentación de una antena \textit{microstrip} \cite{Barthia:Handbook}, la seleccionada, en este trabajo, por su facilidad de fabricación, es la que consiste en una línea de la misma tecnología, que vincula a un conector en el borde de la placa con el parche, esquematizado antes en la figura \ref{fig:antema-microstrip-inset}. En particular, es importante que la impedancia característica de la línea \textit{microstrip} utilizada sea de $50\;\Omega$, para lo que debe seleccionarse con cuidado su ancho, en función de la altura del sustrato y la permitividad del dieléctrico. Según las expresiones que se pueden hallar en el Apéndice B de \cite{Barthia:Handbook}, el ancho necesario para obtener una impedancia de $50\;\Omega$ es de aproximadamente 3.1 mm.
 
-Conocidos estos valores, resta determinar el \textit{inset} que debe aplicarse para obtener una impedancia de entrada de 50 $\Omega$, a fin de lograr adaptación. Para esto, se debe utilizar la curva de la figura \ref{fig:antema-microstrip-inset} b), conociendo previamente el valor de la impedancia sobre el borde del parche rectangular. A partir de las expresiones de la parte real de la admitancia, o conductancia, obtenidas de \cite{Balanis:Theory} y mostradas en las ecuaciones \ref{eq:conductancia-microstrip-balanis} (donde $J_0$ es una función de Bessel del primer tipo de orden cero), la resistencia de entrada resulta $R_{in} = 1/[2(G_1 \pm G_{12})]$. A partir de este valor, la consulta a la gráfica permite deducir que el valor de \textit{inset} requerido es de aproximadamente 10.73 mm.
+Conocidos estos valores, resta determinar el \textit{inset} que debe aplicarse para obtener una impedancia de entrada de 50 $\Omega$, a fin de lograr adaptación entre la línea \textit{microstrip} de alimentación y el parche radiantec. Para esto, se debe utilizar la curva de la figura \ref{fig:antema-microstrip-inset} b), conociendo previamente el valor de la impedancia sobre el borde del parche rectangular. A partir de las expresiones de la parte real de la admitancia, o conductancia, obtenidas de \cite{Balanis:Theory} y mostradas en las ecuaciones \ref{eq:conductancia-microstrip-balanis} (donde $J_0$ es una función de Bessel del primer tipo de orden cero), la resistencia de entrada resulta $R_{in} = 1/[2(G_1 \pm G_{12})]$. A partir de este valor, la consulta a la gráfica permite deducir que el valor de \textit{inset} requerido es de aproximadamente 10.73 mm.
 
 \begin{align}
 	\label{eq:conductancia-microstrip-balanis}
@@ -89,11 +87,11 @@ Los resultados de la variación de los tres parámetros de interés en el diseñ
 	\label{fig:simulaciones-microstrip-1parche}
 \end{figure}
 
-La variación del valor del ancho W produce efectos menos notorios, modificando ligeramente la frecuencia de resonancia debido a que tiene impacto sobre la longitud efectiva del parche. Además, como se explicó previamente, el ancho del parche modifica la resistencia de entrada, lo que modifica  los valores de $S_{11}$, haciendo que cerca de 40 mm se obtenga el valor óptimo.
+La variación del valor del ancho W produce efectos menos notorios, modificando ligeramente la frecuencia de resonancia debido a que tiene impacto sobre la longitud efectiva del parche. Además, como se explicó previamente, el ancho del parche modifica la resistencia de entrada, lo que modifica  los valores de $S_{11}$, haciendo que para valores cercanos a 40 mm se obtenga el valor óptimo.
 
-Finalmente, el parámetro de más fácil variación en un parche, el valor del \textit{inset}, da lugar a variaciones muy grandes en el valor del parámetro $S_{11}$. Esto permite una fácil adaptación manual de la antena. Se observa que el valor de \textit{inset} de aproximadamente 10 mm genera los resultados deseados.
+Finalmente, el parámetro de más fácil modificación manual en un parche, el valor del \textit{inset}, da lugar a variaciones muy grandes en el valor del parámetro $S_{11}$. Esto permite una fácil adaptación manual de la antena. Se observa que el valor de \textit{inset} de aproximadamente 10 mm genera los resultados deseados.
 
-La optimización, realizada con CST Microwave Studio, con objetivo en establecer los valores más adecuados automáticamente para lograr el mínimo valor de $S_{11}$ en 2.41 GHz, arrojó como resultado un valor de L de 28.86 mm, un valor de W de 40.41 mm y un valor de \textit{inset} de 9.59 mm, como se indica en la figura \ref{fig:antena-optimizada}.
+La optimización de los parámetros geométricos, realizada con CST Microwave Studio, con objetivo en establecer los valores más adecuados automáticamente para lograr el mínimo valor de $S_{11}$ en 2.41 GHz, arrojó como resultado un valor de L de 28.86 mm, un valor de W de 40.41 mm y un valor de \textit{inset} de 9.59 mm, como se indica en la figura \ref{fig:antena-optimizada}.
 
 En miras de comparar el efecto sobre el campo lejano de las modificaciones a realizarse sobre el parche para aumentar el ancho de banda, se muestra, en la figura \ref{fig:farfield-1parche-sincarga-sinebg}, el comportamiento en campo lejano, donde se asume un sustrato de 190 mm $\times$ 135 mm.
 
@@ -105,7 +103,7 @@ En miras de comparar el efecto sobre el campo lejano de las modificaciones a rea
 \end{figure}
 
 
-Para poder estudiar este problema, será necesario comprender cómo se comporta un conjunto de dos antenas \textit{microstrip} sin estructuras entre ellas, separadas una distancia adecuada para que los efectos de acoplamiento mutuo resulten visibles. Para evitar, tanto como sea posible, el acoplamiento debido a fenómenos no relacionados a la propagación de ondas de superficie, se debe ubicar a los elementos radiantes a una distancia tal que el diagrama de radiación tenga un comportamiento \textit{broadside}, es decir, que el lóbulo principal del diagrama de radiación tenga dirección perpendicular al plano de tierra. Para esto, la distancia entre las antenas debe ser múltiplo de $\lambda_g/2$, donde $\lambda_g$ es la longitud de onda en el sustrato (FR-4, en nuestro caso), donde se considera un valor de $\epsilon_{eff}$ de 4.17. Este valor de permitividad modifica la velocidad de las ondas electromagnéticas, de modo que la longitud de onda, para la frecuencia de resonancia $f_r$ de la antena \textit{microstrip}, es menor a la del vacío. En nuestro caso:
+Para poder estudiar este problema, será necesario comprender cómo se comporta un conjunto de dos antenas \textit{microstrip} sin estructuras entre ellas, separadas una distancia adecuada para que los efectos de acoplamiento mutuo resulten visibles. Para evitar, tanto como sea posible, el acoplamiento debido a fenómenos no relacionados a la propagación de ondas de superficie, se debe ubicar a los elementos radiantes a una distancia tal que el diagrama de radiación tenga un comportamiento \textit{broadside}, es decir, que el lóbulo principal del diagrama de radiación tenga dirección perpendicular al plano de tierra. Para esto, la distancia entre las antenas debe ser múltiplo impar de $\lambda_g/2$, donde $\lambda_g$ es la longitud de onda en el sustrato (FR-4, en nuestro caso), donde se considera un valor de $\epsilon_{eff}$ de 4.17. Este valor de permitividad modifica la velocidad de las ondas electromagnéticas, de modo que la longitud de onda, para la frecuencia de resonancia $f_r$ de la antena \textit{microstrip}, es menor a la del vacío. En nuestro caso:
 
 \begin{align}
 	\label{eq:lambdag}
@@ -125,23 +123,48 @@ Considerando que se debe dejar espacio entre las antenas para que se pueda ubica
 
 % Condiciones de borde: LIbroSinNombre, pagina 398.
 %%%%
+
+\section{Diseño de un conjunto de dos antenas \textit{microstrip}}
+\label{sec_conjunto}
+El diseño de una única antena microstrip representa el primer paso en la obtención de un conjunto capaz de aumentar la directividad, y por tanto la ganancia, de la estructura. Lamentablemente, la simple utilización de los valores calculados en la sección \ref{sec_disenio_microstrip} no ofrece, en general, buenos resultados. Esto se debe a que las antenas que conforman el conjunto se deben disponer a distancias tales que modifican el espacio circundante a cada una de ellas, generando acoplamiento indeseados y variaciones en la frecuencia de resonancia y los parámetros de adaptación. Es por esto que la sección precedente sólo ofrece valores aproximados a los que se utilizan en el diseño final.
+
+En miras de la obtención de resultados simulados que contemplen las posibilidades de fabricación de un conjunto de dos antenas \textit{microstrip} separadas una distancia de $3/2 \lambda$, se simularon las mismas considerando un sustrato de 135 mm $\times$ 190 mm, de forma que las mismas se ubican a corta distancia del borde de la placa de sustrato utilizada, como se muestra en la figura \ref{fig:conjunto-sin-ebg}. En la misma, los valores de alto, ancho y valor de \textit{inset} de las antenas son iguales, y fueron elegidos tras la simulación a valores cercanos a los obtenidos en la sección anterior. Estos valores, mostrados en la tabla \ref{table:valores-dosparches-geometría}, serán los utilizados para la comparación con las geometrias radiantes con estructuras de banda prohibida electromagnética. En la figura \ref{fig:farfield-2parches-sinebg} se puede observar el diagrama de radiación tridimensional para la estructura propuesta, con las dimensiones elegidas.
+
+\begin{table}
+	\centering
+	\begin{tabular}{c|c|c|c|c}
+		$L$ & $W$ & $y_0$ & $w_{linea}$ & $s$ \\
+		\hline
+		$31$ mm & $38$ mm & $11$ mm & $3$ mm & $91.35$ mm
+	\end{tabular}
+	\caption{Tabla de valores elegidos para los parches que conforman al arreglo de dos antenas \textit{microstrip}.}
+	\label{table:valores-dosparches-geometría}
+\end{table}
+
+GeometriaconjuntoSinEBG.png
+
+FarField3D-DosParches-SinEBG
+FarField2D-phifijo-DosParches-SinEBG
+
+
+
 \section{Elección del metamaterial}
 \label{sec_eleccion}
 
-Existen numerosas posibles celdas unitarias uniplanares, que fueron creadas a partir de la propuesta inicial de Yang y otros \cite{Yang:UCPBG}, y que procuran aumentar el ancho de banda prohibida y la atenuación de microondas, muchas veces utilizando técnicas de miniaturización, que buscan lograr geometrías que presenten una mayor o menor inductancia, y una mayor o menor capacidad con el plano de tierra y con celdas vecinas, en función de las necesidades. La búsqueda, en el contexto de la disminución del acoplamiento mutuo entre antenas \textit{microstrip}, de celdas unitarias ópticas gira alrededor de la búsqueda de anchos de banda prohibida lo suficientemente amplios como para cubrir el ancho de banda de las antenas \textit{microstrip} en cuestión.
+Existen numerosas posibles celdas unitarias uniplanares, que fueron creadas a partir de la propuesta inicial de Yang y otros \cite{Yang:UCPBG}, y que procuran aumentar el ancho de banda prohibida y el valor de atenuación, muchas veces utilizando técnicas de miniaturización, que buscan lograr geometrías que presenten una mayor o menor inductancia, y una mayor o menor capacidad con el plano de tierra y con celdas vecinas, en función de las necesidades. La búsqueda, en el contexto de la disminución del acoplamiento mutuo entre antenas \textit{microstrip}, de celdas unitarias óptimas, gira alrededor de la búsqueda de anchos de banda prohibidos lo suficientemente amplios para cubrir el ancho de banda de las antenas \textit{microstrip} en cuestión.
 
-Para este trabajo se seleccionó la celda de Yang, analizada en la sección \ref{sec:celda-yang}, debido a que fue la primer variante publicada, y posee optimizaciones sobre la celda de Orlandi, analizada en la sección \ref{sec:celda-orlandi}.
+Para este trabajo se seleccionó la celda de Yang, analizada en la sección \ref{sec:celda-yang}, debido a que fue la primer variante publicada, y posee optimizaciones sobre la celda de Orlandi, analizada en la sección \ref{sec:celdas-orlandi}.
 
-Sin embargo, existen numerosos diseños y geometrías, entre las que destacan la celda analizada por Goussetis \cite{Goussetis:TailoringAMCEBGCharacteristics}, que consiste en parches cuadrados sin interconexión entre sí, como el mostrado en la figura \ref{fig:rectangulo-cuadrado}, por lo que presentan capacidad con el plano de tierra y con otros parches o celdas unitarias aledañas, pero poseen una baja inductancia, lo que los vuelve subóptimos. Otros trabajos de interés son los de Abidin \cite{Abidin:Thesis}, que propuso las estructuras mostradas en las figuras \ref{fig:abidin1} y \ref{fig:abidin2}, que poseen un ancho de banda mayor al de Yang, aunque requieren más iteraciones de simulación, debido a la complejidad de las geometrías.
+Sin embargo, existen numerosos diseños y geometrías, entre las que destacan la celda analizada por Goussetis \cite{Goussetis:TailoringAMCEBGCharacteristics}, que consiste en parches cuadrados sin interconexión entre sí, como el mostrado en la figura \ref{fig:rectangulo-cuadrado}. Si bien, debido a su geometría, estas celdas unitarias presentan capacidad con el plano de tierra y con otros parches aledaños, presentan una baja inductancia, lo que los vuelve subóptimos. Otros trabajos de interés son los de Abidin \cite{Abidin:Thesis}, quien propuso las estructuras mostradas en las figuras \ref{fig:abidin1} y \ref{fig:abidin2}, que poseen un ancho de banda mayor al de las celdas de Yang, aunque requieren más iteraciones de simulación, debido a la complejidad de las geometrías.
 
-Estructuras más sencillas son propuestas en \cite{Asimonis:designoptimization}, mostradas en las figuras \ref{fig:assimonis1}, \ref{fig:assimonis2} y \ref{fig:assimonis3}, con resultados similares a la geometría elegida.
+Estructuras más sencillas son propuestas en \cite{Asimonis:designoptimization}, mostradas en las figuras \ref{fig:assimonis1}, \ref{fig:assimonis2} y \ref{fig:assimonis3}, con resultados similares a la geometría elegida en este trabajo.
 
-Entre los esfuerzos más intuitivos para aumentar la inductancia, se destaca el propuesto por \cite{IslamAlam:CompactEBG}, mostrado en la figura \ref{fig:islamalam}. En ella se observa que se aumentó el largo y la capacidad de las cintas \textit{microstrip} que unen los parches, modificando las líneas para que ocuparan la mayor cantidad de espacio posible. Las simulaciones de esta estructura ofrecen mejores resultados que los de la celda elegida, aunque al costo de dificultar su diseño en programas \textsc{CAD}. Un modelo utilizando líneas de transmisión para caracterizar el comportamiento de estas celdas está presentado por \cite{Venkateswaran:Thesis}. 
+Entre los esfuerzos más intuitivos para aumentar la inductancia, se destaca el propuesto por \cite{IslamAlam:CompactEBG}, mostrado en la figura \ref{fig:islamalam}. En ella se observa que se aumentó el largo y la capacidad de las cintas \textit{microstrip} que unen los parches, modificando las líneas para que ocuparan la mayor cantidad de espacio posible. Las simulaciones de esta estructura ofrecen mejores resultados que los de la celda elegida, aunque al costo de dificultar su diseño en programas \textsc{CAD}. Un modelo utilizando líneas de transmisión para caracterizar el comportamiento de estas celdas está presentado en \cite{Venkateswaran:Thesis}. 
 
 En este sentido, \cite{Kovacs:DesignOptimization} propone, en su tesis doctoral, un algoritmo genético capaz de obtener un mayor ancho de banda prohibida mediante sucesivas simulaciones, sin la intervención de un diseñador, obteniendo celdas complejas pero muy efectivas, como la mostrada en la figura \ref{fig:kovacs}.
 
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering 
 	\subfigure[Celda unitaria propuesta por \cite{Abidin:Thesis}.]{
 		\label{fig:abidin1}
@@ -171,11 +194,11 @@ En este sentido, \cite{Kovacs:DesignOptimization} propone, en su tesis doctoral,
 	\label{fig:simulaciones-microstrip-1parche}
 \end{figure}
 
-La miniaturización cumple un papel importante debido a que es necesaria una profundidad mínima de celdas unitarias entre los parches para que el efecto de disminución de acoplamiento sea notorio. Si las celdas unitarias soy muy grandes, obligaría a separar los parches aún más, consecuencia indeseable. Además, entre la estructura de celdas unitarias y los parches se debe mantener una distancia $g$ mínima, de modo que los efectos de acoplamiento de campo cercano entre la antena y la estructura EBG despreciables.
+La miniaturización cumple un papel importante debido a que es necesaria una cantidad (o profundidad) mínima de celdas unitarias entre los parches para que el efecto de disminución de acoplamiento resulte notorio. Si cada una de las celdas unitarias ocupara demasaiada superficie, obligaría a separar los parches aún más, consecuencia que resulta indeseable. Además, entre la estructura de celdas unitarias y los parches se debe mantener una distancia $g$ mínima, de modo que los efectos de acoplamiento de campo cercano entre la antena y la estructura EBG puedan considerarse despreciables.
 
-Considerando las descripciones teóricas de la sencilla celda unitaria analizada en la sección \ref{sec:celdas-orlandi}, se deben realizar aproximaciones numéricas al comportamiento de la celda propuesta por Yang, descripta intuitivamente en la sección \ref{sec:celda-yang}. Considerando las limitaciones constructivas impuestas por la tecnología de fabricación de los circuitos \textit{microstrip}, el tamaño mínimo de celda unitaria ($d$, en la figura \ref{fig:celda-yang}) logrado es de 15 mm, con un tamaño de parche central $l$ de 4 mm, por lo que los puentes tendrán una longitud $l_m$ de 5.5 mm. Un parámetro que resulta importante es la distancia, entre celdas vecinas, de los parches ubicados en las esquinas de las celdas unitarias, $a_p$: Una menor distancia disminuye el valor de la frecuencia central del \textit{bandgap}.
+En base a las descripciones teóricas de la sencilla celda unitaria analizada en la sección \ref{sec:celdas-orlandi}, se deben realizar aproximaciones numéricas al comportamiento de la celda propuesta por Yang, descripta intuitivamente en la sección \ref{sec:celda-yang}. Considerando las limitaciones constructivas impuestas por la tecnología de fabricación de los circuitos \textit{microstrip}, el tamaño mínimo de celda unitaria ($d$, en la figura \ref{fig:celda-yang}) logrado es de 15 mm, con un tamaño de parche central $l$ de 4 mm, por lo que los puentes tendrán una longitud $l_m$ de 5.5 mm. Un parámetro que resulta importante es la distancia, entre celdas vecinas, de los parches ubicados en las esquinas de las celdas unitarias, $2 \cdot a_p$: Una menor distancia disminuye el valor de la frecuencia central del \textit{bandgap}.
 
-Para el caso de una distancia entre los parches de aproximadamente $3\lambda/2$, la cantidad de filas de celdas unitarias que se pueden ubicar entre los mismos para observar efectos de atenuación del acoplamiento mutuo varía entre 3 y 5. Las técnicas de modelado presentadas, y en particular las que requieren de simulación de una celda unitaria y la aplicación de paredes periódicas describen el comportamiento de la estructura EBG se extiende infinitamente. Como en general este no es el caso, se procedió, utilizando como base la información brindada por los diagramas de dispersión (que en nuestro caso, debido a que la cantidad de celdas unitarias es finita, describen en forma aproximada las zonas frecuencia de atenuación), a obtener la relación del parámetro $S_{21}$ con la frecuencia para distintos parámetros, simulando la estructura completa, mostrada en la figura \ref{fig:estructura-completa-simulada-hfss}, con 4 puertos que permitieran analizar el efecto del agregado de más celdas unitarias.
+Para el caso de una distancia entre los parches de aproximadamente $3\lambda/2$, la cantidad de filas de celdas unitarias que se pueden ubicar entre los mismos para observar efectos de atenuación del acoplamiento mutuo varía entre 3 y 5. Las técnicas de modelado presentadas, y en particular las que requieren de simulación de una celda unitaria y la aplicación de condiciones de borde periódicas, describen el comportamiento de la estructura EBG cuando ésta se extiende infinitamente. Como, en general, este no es el caso, se procedió, utilizando como base la información brindada por los diagramas de dispersión (que en nuestro caso, debido a que la cantidad de celdas unitarias es finita, describen en forma aproximada las zonas frecuencia de atenuación), a obtener la relación del parámetro $S_{21}$ con la frecuencia para distintos valores geométricos, simulando la estructura completa, mostrada en la figura \ref{fig:estructura-completa-simulada-hfss}, con 4 puertos que permitieran analizar el efecto del agregado de más celdas unitarias.
 
 El diagrama de dispersión de mejores resultados en la dirección de interés ($\Gamma-X$) se muestra en la figura \ref{fig:diag-dispersion-ucbg}. En el mismo se observa que el primer \textit{bandgap}, ubicado entre los dos primeros modos de propagación, es incompleto. Sin embargo, para la aplicación buscada (en que las antenas \textit{microstrip} que se desea desacoplar son colineales), la dirección $M-\Gamma$ carece de importancia. Sí resultará importante para arreglos \textit{microstrip} bidimensionales, donde los radiadores podrían influenciarse mutuamente si están dispuestos de manera oblicua.
 
@@ -189,11 +212,11 @@ El diagrama de dispersión de mejores resultados en la dirección de interés ($
 
 De los parámetros analizados que describen la geometría de las celdas unitarias de Yang, para ambos análisis (el que corresponde a la resolución de una única celda unitaria con condiciones de contorno periódicas, y el que simula una estructura finita completa), los más importantes resultaron: el tamaño de la celda unitaria, el tamaño del parche central y la distancia entre los parches de dos celdas unitarias aledañas. En las figuras \ref{fig:resultados-ucpbg-hfss} se muestra la variación del coeficiente $S_{21}$ con distintos parámetros (manteniendo los demás fijos), según simulaciones realizadas utilizando el software de simulación HFSS, que utiliza el método de elementos finitos para calcular estructuras electromagnéticas.
 
-En la figura \ref{fig:ucpbg-efecto-variacion-d} se observa que, en general, un mayor tamaño de celda da lugar a una banda de atenuación ubicada a frecuencias más bajas. Se debe tener en cuenta que resulta óptima una estructura que permita inexactitudes en el proceso de fabricación, por lo que un tamaño de celda de 15 mm (curva azul) no representaría una buena elección. La variación respecto del valor de $l$ permite deducir que un área de parche central más grande genera un corrimiento positivo en la frecuencia central, y por el mismo motivo que para el caso de la variación del parámetro $d$, la elección gira en torno a que la frecuencia de resonancia del sistema sobre el que se desea probar el comportamiento de la estructura se ubique en una zona segura ante problemas de fabricación. Finalmente, los efectos sobre $S_{21}$ de la variación de la distancia entre los parches esquina de distintas celdas unitarias se observa en la figura \ref{fig:estructura-completa-simulada-hfss}, donde se observa que para menores distancias (y por tanto, mayor acoplamiento capacitivo entre celdas cercanas) se logra que la frecuencia de $2.41$ GHz quede en el centro del rango de frecuencias atenuadas.
+En la figura \ref{fig:ucpbg-efecto-variacion-d} se observa que, en general, un mayor tamaño de celda da lugar a una banda de atenuación ubicada a frecuencias más bajas. Se debe tener en cuenta que resulta óptima una estructura que permita inexactitudes en el proceso de fabricación, por lo que un tamaño de celda de 15 mm (curva azul) no representaría una buena elección. La variación respecto del valor de $l$ permite deducir que un área de parche central más grande genera un corrimiento positivo en la frecuencia central, y por el mismo motivo que para el caso de la variación del parámetro $d$, la elección gira en torno a que la frecuencia de resonancia del sistema sobre el que se desea probar el comportamiento de la estructura se ubique en una zona segura ante problemas y tolerancias de fabricación. Finalmente, los efectos sobre $S_{21}$ de la variación de la distancia entre los parches esquina de distintas celdas unitarias se observa en la figura \ref{fig:estructura-completa-simulada-hfss}, donde se observa que para menores distancias (y por tanto, mayor acoplamiento capacitivo entre celdas cercanas) se logra que la frecuencia de $2.41$ GHz quede en el centro del rango de frecuencias atenuadas.
 
 \begin{figure}[H]
 	\centering 
-	\subfigure[Efecto de la variación de D,]{
+	\subfigure[Efecto de la variación de D.]{
 		\label{fig:ucpbg-efecto-variacion-d}
 		\includegraphics[width=0.40\textwidth]{Aplicacion/variacionD.pdf}}
 	\hspace{30pt}
@@ -208,34 +231,24 @@ En la figura \ref{fig:ucpbg-efecto-variacion-d} se observa que, en general, un m
 		\label{fig:estructura-completa-simulada-hfss}
 		\includegraphics[width=0.40\textwidth]{Aplicacion/captura-estructura-completa-hfss.png}}
 	\caption{Resultados de la variación de parámetros, según simulaciones de la estructura d) en Ansoft HFSS.}
-	\label{fig:limitadores-ondas-superficie-yang}
+	\label{fig:resultados-ucpbg-hfss}
 \end{figure}
 
 En todos los casos, resulta claro que el rango de frecuencias de atenuación es mayor que el estimado mediante la simulación de una única celda unitaria con paredes periódicas. Esto es así debido a que la simulación de las estructuras infinitas sólo destaca zonas de frecuencia donde la propagación está impedida, y no donde las ondas son simplemente atenuadas sin que por ello su desarrollo físico resulte incompatible.
 
-En la tabla \ref{table:parametros-ebg-usados} se lista el valor de los parámetros de diseño usados, según la nomenclatura definida en la figura \ref{fig:celda-yang}.
+En la tabla \ref{table:valores-parametros-finale} se lista el valor de los parámetros de diseño usados, según la nomenclatura definida en la figura \ref{fig:celda-yang}.
 
-\begin{tabular}{|c|c|}
-	\label{table:valores-parametros-finales}
-	\hline 
-	$d$ & $16$ mm \\ 
-	\hline 
-	$l$ & $4$ mm \\ 
-	\hline 
-	$a_m$ & $0.4$ mm \\ 
-	\hline 
-	$l_m$ & $6$ mm  \\ 
-	\hline 
-	$w_m$ & $3$ mm  \\ 
-	\hline 
-	$a_p$ & $0.2$ mm \\ 
-	\hline
-\end{tabular} 
 
-Para ilustrar la importancia de la ubicación de una cantidad importante de celdas unitarias entre los radiadores para lograr el efecto deseado, en la figura \ref{fig:comparacion-dos-distancias} se puede observar la variación del parámetro $S$ que vincula pares de puertos enfrentados dispuestos a igual distancia. La curva roja representa el comportamiento cuando no hay celdas unitarias entre los puertos; la curva azul, cuando hay 5 filas de celdas unitarias; y la curva verde, cuando se disponen 7 filas de celdas unitarias entre los mismos.
-
-PONER ESTA COMPARACIÓN PARA QUE SE VEA EL EFECTO REALMENTE. ESTO ES IMPORTANTE.
-
+\begin{table}
+	\centering
+	\begin{tabular}{c|c|c|c|c|c}
+		$d$ & $l$ & $a_m$ & $l_m$ & $w_m$ & $a_p$ \\
+		\hline
+		$16$ mm & $4$ mm & $0.4$ mm & $6$ mm & $3$ mm & $0.2$ mm
+	\end{tabular}
+\caption{Tabla de valores elegidos para la celda unitaria.}
+\label{table:valores-parametros-finales}
+\end{table}
 
 \section{Estudio del efecto de la distancia sobre el ancho de banda}
 \label{sec_efecto_distancia}
