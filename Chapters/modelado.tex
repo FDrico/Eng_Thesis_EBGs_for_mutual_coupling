@@ -446,6 +446,84 @@ Para el segundo modo de propagación, el campo eléctrico, en promedio (figura \
 
 Se debe tener en cuenta que el uso de esta estructura presenta mayores dificultades, especialmente cuando su construcción se realiza por técnicas rudimentarias. Sin embargo, gracias a un mejor aprovechamiento del espacio, que permiten obtener una mayor capacidad e inductancia por celda unitaria, la geometría permite diseñar celdas unitarias más pequeñas para lograr zonas prohibidas para frecuencias de microondas que las que se pueden lograr utilizando la geometría analizada en la sección \ref{sec:celda-orlandi}.
 
+\section{Modelado circuital}
+
+La forma más sencilla de modelar el comportamiento resonante es la representación circuital, como la discutida en la sección \ref{sec:modelo_analitico}. En la misma deben intervenir capacitores e inductores con valores seleccionados en función del comportamiento de la energía en la estructura. Si bien los efectos de altas frecuencias no podrán ser analizados bajo esta representación, sí debería ser posible observar, al menos en forma general, los fenómenos analizados para las frecuencias de trabajo, de manera que se pueda realizar una acercamiento intuitivo y conceptual al problema.
+
+Para el caso particular de la celda de Yang presentada en la sección \ref{sec:celda-yang}, a raíz de la visualización del comportamiento de los campos, resulta fácil comprender que, si bien los fenómenos que intervienen son numerosos, los más importantes están fuertemente vinculados a la circulación de corriente por el puente y al desarrollo del campo eléctrico entre las celdas.
+
+Se propusieron distintos circuitos, de diversa complejidad, para representar a cada celda unitaria propuesta por Yang, basados principalmente en el circuito mostrado en la figura \ref{fig:circuito-equivalente-kim-parches} y se analizaron los parámetros S21 de cada uno, en vistas de lograr un comportamiento similar al obtenido cuando se utiliza el software CST Microwave Studio para simular la estructura. El primero de los circuitos propuestos se puede observar en la figura \ref{fig:primerCircuitoPropuesto}. En el mismo se intentó utilizar la estructura LC paralela resonante para obtener un bandgap para el rango de frecuencias estudiado.
+
+La estructura LC paralela posee una frecuencia de resonancia en $f=1/(2 \pi \sqrt{LC})$, en la que abandona su comportamiento inductivo, y adopta un comportamiento predominantemente capacitivo. Para esa frecuencia, existe un intercambio de energía entre el inductor y el capacitor, de forma que la impedancia de entrada presenta un máximo. A esta frecuencia, entonces, el circuito se comporta como un filtro de tipo notch, que podría explicar parte del comportamiento de bandgap en microondas.
+
+Los valores geométricos de la celda unitaria utilizada como testigo son los que se muestran en la tabla \ref{table:CeldaUnitariaAnalisisiCircuital}, en función de los valores descriptos en la figura \ref{fig:primerCircuitoPropuesto}. Se consideró la permitividad relativa del FR-4, de 4.4.
+
+\begin{tabular}{|c|c|c|c|c|c|}
+	\label{table:CeldaUnitariaAnalisisiCircuital}
+	\hline 
+	$d$ & $l$ & $w$ & $d_l$ & $g$ & $h$ & $d_w$\\ 
+	\hline 
+	$22.6\;mm$ & $6\;mm$ & $1.1\;mm$ & $0.8\;mm$ & $0.8\;mm$ & $1.6\;mm$ & $16.6\;mm$\\ 
+	\hline 
+\end{tabular} 
+
+La inductancia parcial del puente, $L_b$, se obtiene en base a 3 cálculos independientes, provenientes de modelos distintos de comportamiento de estructuras \textit{microstrip}. El primero de ellos es el mostrado en la ecuación \ref{eq:cgap-y-lgap}, repetido en la ecuación \ref{eq:lbridge1-circuital} por comodidad.
+
+\begin{equation}
+\label{eq:lbridge1-circuital}
+L_{b} = 0.2\; \text{nH/mm} \cdot \ln (2\pi \frac{h}{w}).
+\end{equation}
+
+El segundo método es el propuesto por C. Paul en \cite{CPaul:InductanceLoopAndPartial}:
+
+\begin{equation}
+\label{eq:lbridge2-circuital-cpaul}
+L_{b} = \begin{cases}
+			\frac{60 l}{c} \ln \left( \frac{8h}{w} + \frac{w}{4h} \right) \text{ para } \frac{w}{h}\leq 1\\
+			\frac{120 \pi l}{c} \frac{1}{w/h+1.393+0.667\ln(w/h+1.444)} \text{ para } \frac{w}{h} \g 1 \\
+		\end{cases}
+\end{equation}
+
+Por último, la inductancia parcial se calculó utilizando el software Ansys Q3D Extractor de Ansoft, que realiza simulaciones cuasiestáticas utilizando el método BEM (\textit{Boundary Element Method}), basado en la resolución de las funciones de Green, y que por lo tanto sólo requiere la discretización de la fuente de campo, y no del espacio circundante.
+
+Los valores de $L_b$ obtenidos se muestran en la tabla \ref{table:Lb}.
+
+\begin{tabular}{|c|c|c|}
+	\label{table:Lb}
+	\hline 
+	Método 1 & Método 2 & Método 3\\ 
+	\hline 
+	$7.34\;nH$ & $8.2\;nH$ & $7.7\;nH$\\ 
+	\hline 
+\end{tabular}
+
+El valor de la capacidad entre las protuberancias de las celdas unitarias, $C_g$, se calculó utilizando la expresión de la ecuación \ref{eq:lbridge1-circuital}, repetida aquí por comodidad, y bajo la nomenclatura del problema:
+
+\begin{equation}
+\label{eq:cgap1-circuital}
+C_{g} = \frac{d_w\epsilon_0(1+\epsilon_r)}{\pi}\cosh^{-1}(\frac{2 d_w + g}{g}).
+\end{equation}
+
+Además, se utilizó también Q3D Extractor para obtener un valor aproximado de capacidad entre dos celdas unitarias, utilizando la geometría mostrada en la figura \ref{fig:capacidad-cg-Q3D}. Se consideró, tanto en la ecuación \ref{eq:cgap1-circuital} como en la simulación, que la principal responsabilidad por la capacidad entre celdas vecinas recae sobre las esquinas más próximas de las celdas unitarias. Además, para la simulación fue necesario eliminar el puente \textit{microstrip} que las conectaba, debido a que, dado que la simulación es cuasiestática, si el conductor es el mismo, la capacidad resulta nula.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/capacidad-cg-Q3D.png}
+	\caption{Geometría utilizada para calcular la capacidad entre celdas vecinas con Q3D Extractor.}
+	\label{fig:capacidad-cg-Q3D}
+\end{figure}
+
+\begin{tabular}{|c|c|c|}
+	\label{table:Lb}
+	\hline 
+	Aproximación matemática & Simulación \\ 
+	\hline 
+	$475 fF\;$ & $211 fF$\\ 
+	\hline 
+\end{tabular}
+
+Se observa que los valores son disímiles entre sí, por lo que, en el circuito, el valor de esta capacidad deberá ser obtenido por deducción en base al comportamiento en frecuencia, manteniendo estos valores como referencia.
+
 
 \section{Modelado por líneas de transmisión}
 %%%%
