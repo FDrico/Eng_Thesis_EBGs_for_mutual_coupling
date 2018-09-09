@@ -452,13 +452,15 @@ La forma más sencilla de modelar el comportamiento resonante es la representaci
 
 Para el caso particular de la celda de Yang presentada en la sección \ref{sec:celda-yang}, a raíz de la visualización del comportamiento de los campos, resulta fácil comprender que, si bien los fenómenos que intervienen son numerosos, los más importantes están fuertemente vinculados a la circulación de corriente por el puente y al desarrollo del campo eléctrico entre las celdas.
 
-Se propusieron distintos circuitos, de diversa complejidad, para representar a cada celda unitaria propuesta por Yang, basados principalmente en el circuito mostrado en la figura \ref{fig:circuito-equivalente-kim-parches} y se analizaron los parámetros S21 de cada uno, en vistas de lograr un comportamiento similar al obtenido cuando se utiliza el software CST Microwave Studio para simular la estructura. El primero de los circuitos propuestos se puede observar en la figura \ref{fig:primerCircuitoPropuesto}. En el mismo se intentó utilizar la estructura LC paralela resonante para obtener un bandgap para el rango de frecuencias estudiado.
+Se propusieron distintos circuitos, de diversa complejidad, para representar a cada celda unitaria propuesta por Yang, basados principalmente en el circuito mostrado en la figura \ref{fig:circuito-equivalente-kim-parches} y se analizaron los parámetros S21 de cada uno, en vistas de lograr un comportamiento similar al obtenido cuando se utiliza el software CST Microwave Studio para simular la estructura. El primero de los circuitos propuestos se puede observar en la figura \ref{fig:primerCircuitoPropuesto}. En el mismo se intentó utilizar la estructura LC paralela resonante para obtener un \textit{bandgap} para el rango de frecuencias estudiado.
 
-La estructura LC paralela posee una frecuencia de resonancia en $f=1/(2 \pi \sqrt{LC})$, en la que abandona su comportamiento inductivo, y adopta un comportamiento predominantemente capacitivo. Para esa frecuencia, existe un intercambio de energía entre el inductor y el capacitor, de forma que la impedancia de entrada presenta un máximo. A esta frecuencia, entonces, el circuito se comporta como un filtro de tipo notch, que podría explicar parte del comportamiento de bandgap en microondas.
+La estructura LC paralela posee una frecuencia de resonancia en $f=1/(2 \pi \sqrt{LC})$, en la que abandona su comportamiento inductivo, y adopta un comportamiento predominantemente capacitivo. Para esa frecuencia, existe un intercambio de energía entre el inductor y el capacitor, de forma que la impedancia de entrada presenta un máximo. A esta frecuencia, entonces, el circuito se comporta como un filtro de tipo \textit{notch}, que podría explicar parte del comportamiento de \textit{bandgap} en microondas.
+
+Por otro lado, la existencia de una capacidad de las celdas contra el plano de tierra establece, al menos para las bajas frecuencias, un comportamiento pasabajos, debido a la relación entre los componentes $L_b$ y $C_p$.
 
 Los valores geométricos de la celda unitaria utilizada como testigo son los que se muestran en la tabla \ref{table:CeldaUnitariaAnalisisiCircuital}, en función de los valores descriptos en la figura \ref{fig:primerCircuitoPropuesto}. Se consideró la permitividad relativa del FR-4, de 4.4.
 
-\begin{tabular}{|c|c|c|c|c|c|}
+\begin{tabular}{|c|c|c|c|c|c|c|}
 	\label{table:CeldaUnitariaAnalisisiCircuital}
 	\hline 
 	$d$ & $l$ & $w$ & $d_l$ & $g$ & $h$ & $d_w$\\ 
@@ -514,7 +516,7 @@ Además, se utilizó también Q3D Extractor para obtener un valor aproximado de 
 \end{figure}
 
 \begin{tabular}{|c|c|c|}
-	\label{table:Lb}
+	\label{table:Cg}
 	\hline 
 	Aproximación matemática & Simulación \\ 
 	\hline 
@@ -523,6 +525,58 @@ Además, se utilizó también Q3D Extractor para obtener un valor aproximado de 
 \end{tabular}
 
 Se observa que los valores son disímiles entre sí, por lo que, en el circuito, el valor de esta capacidad deberá ser obtenido por deducción en base al comportamiento en frecuencia, manteniendo estos valores como referencia.
+
+Finalmente, la capacidad contra el plano de tierra, $C_p$ se calculó utilizando la noción de capacitor de placas planas paralelas, debido a la corta distancia entre las celdas unitarias y el plano de tierra (según la tabla \ref{tabla:CeldaUnitariaAnalisisiCircuital}, $h=1.6\;mm$). El área total resulta:
+
+\begin{align}
+Sup = l^2+4 d_w^2+4 \frac{(d-l)}{2} w - 4 \right(frac{(l-w-2*d_l)}{2}\left)^2 \\
+C_{p} = \frac{Sup \epsilon_0 \epsilon_r}{h}
+\end{align}
+
+Además, se utilizó el software de simulación Q3D Extractor para obtener un resultado comparativo. Los resultados se muestran en la tabla \ref{tabla:Cp-modelo1-circuital}, en donde se observa que la aproximación de placas planas paralelas ofrece un valor cercano al simulado utilizando BEM, incluso cuando no considera los efectos de \textit{fringing} en los bordes.
+
+\begin{tabular}{|c|c|c|}
+	\label{table:Cp-modelo1-circuital}
+	\hline 
+	Superficie | Cálculo analítico & Q3D Extractor\\ 
+	\hline 
+	$458\; mm^2$ & $11.14\;pF$ & $12.26\;pF$\\ 
+	\hline 
+\end{tabular}
+
+Tras la estimación de los valores circuitales correspondientes, se debe analizar el comportamiento del parámetro S21 de la estructura, para estudiar el efecto de atenuación. El mismo se muestra en la figura \ref{fig:s21-modelo1}, donde se grafica, además, el comportamiento de este parámetro según simulaciones de onda completa realizadas con CST Microwave Studio, utilizando FEM (\textit{Finite Elements Method}), que es un método numérico en el dominio de la frecuencia. Como resultaba previsible, la frecuencia de resonancia cumple, al menos en forma aproximada (sin considerar más efectos que los expuestos hasta el momento) que $1.8\;GHz \aprox \frac{1}{2\pi\sqrt{L_{b} 2C_{g}}} \leq 2.9 \;GHz $, según los máximos y mínimos valores posibles de $L_b$ y $C_g$ mostrados en las tablas \ref{table:Lb} y \ref{table:Cg} respectivamente.
+
+Como se puede observar, el comportamiento del modelo circuital difiere del obtenido mediante la simulación de onda completa, en particular en lo que respecta a la frecuencia de resonancia y al comportamiento en altas frecuencias, donde resulta esperable que el \textbf{bandgap} termine.
+
+Bajo estas consideraciones, resulta menester considerar más condiciones que las seleccionadas inicialmente, nuevamente en base al circuito \ref{fig:circuito-equivalente-kim-parches}. Si se asume que las esquinas presentan una inductancia que no resulta despreciable, la misma resonará en serie con el capacitor $C_g$, imponiendo una menor impedancia para un rango de frecuencias, habilitando un camino de corriente, y mejorando la transferencia a través de la celda unitaria, lo que efectivamente limitaría el ancho de banda del \textit{bandgap}. El circuito propuesto se muestra en la figura \ref{fig:modelo-circuital-con-lw}. Si de esta estructura sólo se analiza intuitivamente el fenómeno de resonancia serie, se puede trabajar sobre el circuito mostrado en la figura \ref{fig:modelo-circuital-resonancia-serie-p13-p14} a), cuya gráfica de parámetro S12 se observa en la figura b). Para el caso graficado, la frecuencia de resonancia serie se ubica en aproximadamente $6\; GHz$, donde se manifiesta el efecto descripto.
+
+El valor de la inductancia que imponen los parches de las esquinas se calculó de tres formas. La primera se basa en el uso de la expresión de la inductancia de la ecuación \ref{eq:Cp_Lp}. La segunda consiste en el uso de las ecuaciones presentadas en \ref{eq:lbridge2-circuital-cpaul}. Finalmente, además, se realizaron simulaciones utilizando Q3D Extractor, para validar el uso de las expresiones. Los resultados se muestran en la tabla \ref{eq:lw}. Resulta importante, sin embargo, señalar que, si bien la inductancia es un parámetro puramente geométrico, las posiciones de los puertos de entrada y salida modifican su valor. Estas posiciones no son tenidas en cuenta en las expresiones propuestas por la literatura, pero se las considera lo suficientemente cercanas al valor final.
+
+
+\begin{tabular}{|c|c|c|}
+	\label{table:Cp-modelo1-circuital}
+	\hline 
+	Según expresión \ref{eq:Cp_Lp} & Según expresión \ref{eq:lbridge2-circuital-cpaul} & Q3D Extractor \\ 
+	\hline 
+	$2\;nH$ & $1.55\;nH$ & $4\;nH$\\ 
+	\hline 
+\end{tabular}
+
+La frecuencia de resonancia serie resulta, entonces, de
+
+\begin{equation}
+	f_r^{\text{serie}} = \frac{1}{2\pi \sqrt{C_g 2 L_w}},
+\end{equation}
+
+que, para los parámetros geométricos establecidos, varía entre $3.6\;GHz$ y $8\;GHz$. La amplitud de la incertidumbre se debe a la propia incertidumbre del valor la capacidad $C_g$.
+
+Sin embargo, la aparición de estas nuevas inductancias $L_{w}$ modificará fuertemente la frecuencia de resonancia del circuito LC paralelo analizado antes. Para este nuevo circuito, la inductancia vista por sus terminales está dada por $L_{b}+2 L_{w}/2$, debido a que por los componentes circuitales correspondientes a las esquinas sólo circula la mitad de la corriente que lo hace por la inductancia central. El valor de la frecuencia de resonancia, entonces, debido al aumento de la inductancia equivalente, disminuye, para adoptar valores entre $1.4\;GHz$ y $2.6\;GHz$. Este mismo cambio de resonancia se observaría si las inductancias $L_w$ estuvieran dispuestas sobre la rama central, como se muestra en la figura \ref{fig:modelo-circuital-resonancia-serie-p13-p14}, lo cual valida el análisis, debido a que el hecho de que no estén en serie con los capacitores elimina el efecto de resonancia LC.
+
+En la figura \ref{fig:modelo-circuital-resonancia-serie-gráficos} se pueden observar que la composición de los dos efectos más importantes analizados hasta el momento (las resonancias serie y paralela) da lugar a la transferencia del circuito analizado.
+
+Queda aún por explicar el comportamiento de la transferencia entre las dos frecuencias de resonancia, donde los efectos no pueden considerarse fruto de la relación entre los elementos de un subconjunto del circuito. Resulta necesario tener en cuenta la inductancia que impone el parche central, análoga a la que imponen las esquinas de la celda unitaria. Esto obliga a que la capacidad de la celda unitaria no sea única y centralizada, como hasta el momento, sino que debe estar correctamente distribuída en la geometría: parte de la capacidad se debe al aporte de las esquinas, y otra parte al parche central. El circuito, más complejo, se muestra en la figura \ref{fig:modelo-circuital-todojunto}.
+
+
 
 
 \section{Modelado por líneas de transmisión}
