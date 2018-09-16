@@ -465,22 +465,27 @@ La estructura LC paralela posee una frecuencia de resonancia en $f=1/(2 \pi \sqr
 
 Por otro lado, la existencia de una capacidad de las celdas contra el plano de tierra da lugar, al menos para las bajas frecuencias, a un comportamiento pasabajos, debido a la relación entre los componentes $L_b$ y $C_p$.
 
-Los valores geométricos de la celda unitaria utilizada como testigo son los que se muestran en la tabla \ref{table:CeldaUnitariaAnalisisiCircuital}, en función de los valores descriptos en la figura \ref{fig:primerCircuitoPropuesto}. Se consideró la permitividad relativa del FR-4, de 4.4.
+Los valores geométricos de la celda unitaria utilizada como testigo son los que se muestran en la tabla \ref{table:CeldaUnitariaAnalisisiCircuital}, en función de los valores descriptos en la figura \ref{fig:primerCircuitoPropuesto}. Se consideró la permitividad relativa del FR-4, de $4.4$.
 
-\begin{tabular}{|c|c|c|c|c|c|c|}
+\begin{table}
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		
+		\hline
+		$d$ & $l$ & $w$ & $d_l$ & $g$ & $h$ & $d_w$\\ 
+		\hline
+		$22.6\;mm$ & $6\;mm$ & $1.1\;mm$ & $0.8\;mm$ & $0.8\;mm$ & $1.6\;mm$ & $16.6\;mm$\\ 
+		\hline 
+	\end{tabular}
+	\caption{Valores geométricos de la celda unitaria analizada.}
 	\label{table:CeldaUnitariaAnalisisiCircuital}
-	\hline 
-	$d$ & $l$ & $w$ & $d_l$ & $g$ & $h$ & $d_w$\\ 
-	\hline 
-	$22.6\;mm$ & $6\;mm$ & $1.1\;mm$ & $0.8\;mm$ & $0.8\;mm$ & $1.6\;mm$ & $16.6\;mm$\\ 
-	\hline 
-\end{tabular} 
+\end{table}
 
 La inductancia parcial del puente, $L_b$, se obtiene en base a 3 cálculos independientes, provenientes de modelos distintos de comportamiento de estructuras \textit{microstrip}. El primero de ellos es el mostrado en la ecuación \ref{eq:cgap-y-lgap}, repetido en la ecuación \ref{eq:lbridge1-circuital} por comodidad.
 
 \begin{equation}
 \label{eq:lbridge1-circuital}
-L_{b} = 0.2\; \text{nH/mm} \cdot \ln (2\pi \frac{h}{w}).
+L_{b} = 0.2\; \text{nH/mm} \cdot \ln \left(2\pi \frac{h}{w}\right).
 \end{equation}
 
 El segundo método es el propuesto por C. Paul en \cite{CPaul:InductanceLoopAndPartial}:
@@ -489,7 +494,7 @@ El segundo método es el propuesto por C. Paul en \cite{CPaul:InductanceLoopAndP
 \label{eq:lbridge2-circuital-cpaul}
 L_{b} = \begin{cases}
 			\frac{60 l}{c} \ln \left( \frac{8h}{w} + \frac{w}{4h} \right) \text{ para } \frac{w}{h}\leq 1\\
-			\frac{120 \pi l}{c} \frac{1}{w/h+1.393+0.667\ln(w/h+1.444)} \text{ para } \frac{w}{h} \g 1 \\
+			\frac{120 \pi l}{c} \frac{1}{w/h+1.393+0.667\ln(w/h+1.444)} \text{ para } \frac{w}{h} > 1 \\
 		\end{cases}
 \end{equation}
 
@@ -497,61 +502,73 @@ Por último, la inductancia parcial se calculó utilizando el software \textit{A
 
 Los valores de $L_b$ obtenidos se muestran en la tabla \ref{table:Lb}.
 
-\begin{tabular}{|c|c|c|}
+\begin{table}
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline 
+		Método 1 & Método 2 & Método 3\\ 
+		\hline 
+		$7.34\;nH$ & $8.2\;nH$ & $7.7\;nH$\\ 
+		\hline 
+	\end{tabular}
+	\caption{Valores de inductancia de puente $L_b$ calculados por distintos métodos.}
 	\label{table:Lb}
-	\hline 
-	Método 1 & Método 2 & Método 3\\ 
-	\hline 
-	$7.34\;nH$ & $8.2\;nH$ & $7.7\;nH$\\ 
-	\hline 
-\end{tabular}
+\end{table}
 
 El valor de la capacidad entre las protuberancias de las celdas unitarias, $C_g$, se calculó utilizando la expresión de la ecuación \ref{eq:lbridge1-circuital}, repetida aquí por comodidad, y bajo la nomenclatura del problema:
 
 \begin{equation}
 \label{eq:cgap1-circuital}
-C_{g} = \frac{d_w\epsilon_0(1+\epsilon_r)}{\pi}\cosh^{-1}(\frac{2 d_w + g}{g}).
+C_{g} = \frac{d_w\epsilon_0(1+\epsilon_r)}{\pi}\cosh^{-1}\left(\frac{2 d_w + g}{g}\right).
 \end{equation}
 
 Además, se utilizó también \textit{Q3D Extractor} para obtener un valor aproximado de capacidad entre dos celdas unitarias, utilizando la geometría mostrada en la figura \ref{fig:capacidad-cg-Q3D}. Se consideró, tanto en la ecuación \ref{eq:cgap1-circuital} como en la simulación, que la principal responsabilidad por la capacidad entre celdas vecinas recae sobre las esquinas más próximas de las celdas unitarias. Además, para la simulación fue necesario eliminar el puente \textit{microstrip} que las conectaba, debido a que, dado que la simulación es cuasiestática, si el conductor es el mismo, la capacidad resulta nula.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=1\textwidth]{Modelado/capacidad-cg-Q3D.png}
+	\includegraphics[width=0.5\textwidth]{Modelado/capacidad-cg-Q3D.png}
 	\caption{Geometría utilizada para calcular la capacidad entre celdas vecinas con Q3D Extractor.}
 	\label{fig:capacidad-cg-Q3D}
 \end{figure}
 
-\begin{tabular}{|c|c|c|}
+\begin{table}
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline 
+		Aproximación matemática & Simulación \\ 
+		\hline 
+		$475 fF\;$ & $130 fF$\\ 
+		\hline 
+	\end{tabular}
+	\caption{Valores de capacidad de \textit{gap} calculados por distintos métodos.}
 	\label{table:Cg}
-	\hline 
-	Aproximación matemática & Simulación \\ 
-	\hline 
-	$475 fF\;$ & $130 fF$\\ 
-	\hline 
-\end{tabular}
+\end{table}
 
-Se observa que los valores son disímiles entre sí, por lo que, en el circuito, el valor de esta capacidad deberá ser obtenido por deducción en base al comportamiento en frecuencia, manteniendo estos valores como referencia o cotas aproximadas.
+Se observa que los valores son disimiles entre sí, por lo que, en el circuito, el valor de esta capacidad deberá ser obtenido por deducción en base al comportamiento en frecuencia, manteniendo estos valores como referencia o cotas aproximadas.
 
-Finalmente, la capacidad contra el plano de tierra, $C_p$ se calculó utilizando la noción de capacitor de placas planas paralelas, debido a la corta distancia entre las celdas unitarias y el plano de tierra (según la tabla \ref{tabla:CeldaUnitariaAnalisisiCircuital}, $h=1.6\;mm$). El área total resulta:
+Finalmente, la capacidad contra el plano de tierra, $C_p$ se calculó utilizando la noción de capacitor de placas planas paralelas, debido a la corta distancia entre las celdas unitarias y el plano de tierra (según la tabla \ref{table:CeldaUnitariaAnalisisiCircuital}, $h=1.6\;mm$). El área total resulta:
 
 \begin{align}
-Sup = l^2+4 d_w^2+4 \frac{(d-l)}{2} w - 4 \right(frac{(l-w-2*d_l)}{2}\left)^2 \\
-C_{p} = \frac{Sup \epsilon_0 \epsilon_r}{h}
+	Sup = l^2+4 d_w^2+4 \frac{d-l}{2} w - 4 \left(\frac{l-w-2 d_l}{2}\right)^2 \\
+	C_{p} = \frac{Sup\; \epsilon_0 \epsilon_r}{h}
 \end{align}
 
-Además, se utilizó el software de simulación \textit{Q3D Extractor} para obtener un resultado comparativo. Los resultados se muestran en la tabla \ref{tabla:Cp-modelo1-circuital}, en donde se observa que la aproximación de placas planas paralelas ofrece un valor cercano al simulado utilizando BEM, incluso cuando no considera los efectos de \textit{fringing} en los bordes.
+Además, se utilizó el software de simulación \textit{Q3D Extractor} para obtener un resultado comparativo. Los resultados se muestran en la tabla \ref{table:Cp-modelo1-circuital}, en donde se observa que la aproximación de placas planas paralelas ofrece un valor cercano al simulado utilizando BEM, incluso cuando no considera los efectos de \textit{fringing} en los bordes.
 
-\begin{tabular}{|c|c|c|}
+\begin{table}
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline 
+		Superficie & Cálculo analítico & Q3D Extractor\\ 
+		\hline 
+		$458\; mm^2$ & $11.14\;pF$ & $12.26\;pF$\\ 
+		\hline 
+	\end{tabular}
+	\caption{Valores de capacidad $C_p$ calculados por distintos métodos.}
 	\label{table:Cp-modelo1-circuital}
-	\hline 
-	Superficie | Cálculo analítico & Q3D Extractor\\ 
-	\hline 
-	$458\; mm^2$ & $11.14\;pF$ & $12.26\;pF$\\ 
-	\hline 
-\end{tabular}
+\end{table}
 
-Tras la estimación de los valores circuitales correspondientes, se debe analizar el comportamiento del parámetro $S_{21}$ de la estructura, para estudiar el efecto de atenuación. El mismo se muestra en la figura \ref{fig:s21-modelo1}, donde se grafica, además, el comportamiento de este parámetro según simulaciones de onda completa realizadas con \textit{CST Microwave Studio}, utilizando FEM (\textit{Finite Elements Method}), que es un método numérico en el dominio de la frecuencia. Como resultaba previsible, la frecuencia de resonancia cumple, al menos en forma aproximada (sin considerar más efectos que los expuestos hasta el momento) que $1.8\;GHz \aprox \frac{1}{2\pi\sqrt{L_{b} 2C_{g}}} \leq 3.75 \;GHz $, según los máximos y mínimos valores posibles de $L_b$ y $C_g$ mostrados en las tablas \ref{table:Lb} y \ref{table:Cg} respectivamente.
+Tras la estimación de los valores circuitales correspondientes, se debe analizar el comportamiento del parámetro $S_{21}$ de la estructura, para estudiar el efecto de atenuación. El mismo se muestra en la figura \ref{fig:s21-modelo1}, donde se grafica, además, el comportamiento de este parámetro según simulaciones de onda completa realizadas con \textit{CST Microwave Studio}, utilizando FEM (\textit{Finite Elements Method}), que es un método numérico en el dominio de la frecuencia. Como resultaba previsible, la frecuencia de resonancia cumple, al menos en forma aproximada (sin considerar más efectos que los expuestos hasta el momento) que $1.8\;GHz \approx 1/(2\pi\sqrt{L_{b} 2C_{g}}) \leq 3.75 \;GHz $, según los máximos y mínimos valores posibles de $L_b$ y $C_g$ mostrados en las tablas \ref{table:Lb} y \ref{table:Cg} respectivamente.
 
 \begin{figure}[h]
 	\centering
@@ -560,9 +577,9 @@ Tras la estimación de los valores circuitales correspondientes, se debe analiza
 	\label{fig:s21-modelo1}
 \end{figure}
 
-Como se puede observar, el comportamiento del modelo circuital difiere del obtenido mediante la simulación de onda completa, en particular en lo que respecta a la posición de la frecuencia de resonancia y al comportamiento en altas frecuencias, donde resulta esperable que el \textbf{bandgap} ya no sea observable.
+Como se puede observar, el comportamiento del modelo circuital difiere del obtenido mediante la simulación de onda completa, en particular en lo que respecta a la posición de la frecuencia de resonancia y al comportamiento en altas frecuencias, donde resulta esperable que el \textit{bandgap} ya no sea observable.
 
-Bajo estas consideraciones, resulta menester considerar más condiciones que las seleccionadas inicialmente, nuevamente en base al circuito \ref{fig:circuito-equivalente-kim-parches}. Si se asume que las esquinas presentan una inductancia que no resulta despreciable, la misma resonará en serie con el capacitor $C_g$, imponiendo una menor impedancia para un rango de frecuencias, habilitando un camino de corriente, y mejorando la transferencia a través de la celda unitaria, lo que efectivamente limitaría el ancho de banda del \textit{bandgap}. El circuito propuesto se muestra en la figura \ref{fig:modelo-circuital-con-lw}. Si de esta estructura sólo se analiza intuitivamente el fenómeno de resonancia serie, se puede trabajar sobre el circuito mostrado en la figura \ref{fig:modelo-circuital-resonancia-serie-p13-p14} a), cuya gráfica de parámetro S12 se observa en la figura \ref{fig:modelo-circuital-resonancia-serie-p13-p14-s21}. Para el caso graficado, la frecuencia de resonancia serie se ubica en aproximadamente $6\; GHz$, donde se manifiesta el efecto descripto.
+Bajo estas consideraciones, resulta menester considerar más condiciones que las seleccionadas inicialmente, nuevamente en base al circuito \ref{fig:circuito-equivalente-kim-parches}. Si se asume que las esquinas presentan una inductancia que no resulta despreciable, la misma resonará en serie con el capacitor $C_g$, imponiendo una menor impedancia para un rango de frecuencias, habilitando un camino de corriente, y mejorando la transferencia a través de la celda unitaria, lo que efectivamente limitaría el ancho de banda del \textit{bandgap}. El circuito propuesto se muestra en la figura \ref{fig:modelo-circuital-con-lw}. 
 
 \begin{figure}[h]
 	\centering
@@ -571,29 +588,35 @@ Bajo estas consideraciones, resulta menester considerar más condiciones que las
 	\label{fig:modelo-circuital-con-lw}
 \end{figure}
 
+Si de esta estructura sólo se analiza intuitivamente el fenómeno de resonancia serie, se puede trabajar sobre el circuito mostrado en la figura \ref{fig:p13-p14-sdf} a), cuya gráfica de parámetro S12 se observa en la figura \ref{fig:p13-p14-sdf} b). Para el caso graficado, la frecuencia de resonancia serie se ubica en aproximadamente $6\; GHz$, donde se manifiesta el efecto descripto.
+
 \begin{figure}[H]
 	\centering 
 	\subfigure[Circuito equivalente considerando sólo el efecto de la resonancia serie.]{
 		\label{fig:modelo-circuital-resonancia-serie-p13-p14}
-		\includegraphics[width=0.45\textwidth]{Fundamentos/circuito-equivalente-celda-YANG-3.pdf}}
+		\includegraphics[width=0.50\textwidth]{Fundamentos/circuito-equivalente-celda-YANG-3.pdf}}
 	\hspace{0pt}
 	\subfigure[Parámetro $S_{21}$ considerando resonancia serie únicamente.]{
 		\label{fig:modelo-circuital-resonancia-serie-p13-p14-s12}
 		\includegraphics[width=0.45\textwidth]{Modelado/13-14.pdf}}
-	\label{fig:direct-and-reciprocal-lattice}
+	\caption{Análisis de la resonancia serie.}
+	\label{fig:p13-p14-sdf}
 \end{figure}
 
-El valor de la inductancia que imponen los parches de las esquinas se calculó de tres formas. La primera se basa en el uso de la expresión de la inductancia de la ecuación \ref{eq:Cp_Lp}. La segunda consiste en el uso de las ecuaciones presentadas en \ref{eq:lbridge2-circuital-cpaul}. Finalmente, además, se realizaron simulaciones utilizando Q3D Extractor, para validar el uso de las expresiones. Los resultados se muestran en la tabla \ref{eq:lw}. Resulta importante, sin embargo, señalar que, si bien la inductancia es un parámetro puramente geométrico, las posiciones de los puertos de entrada y salida modifican su valor. Estas posiciones no son tenidas en cuenta en las expresiones propuestas por la literatura, pero se las considera lo suficientemente cercanas al valor final.
+El valor de la inductancia que imponen los parches de las esquinas se calculó de tres formas. La primera se basa en el uso de la expresión de la inductancia de la ecuación \ref{eq:Cp_Lp}. La segunda consiste en el uso de las ecuaciones presentadas en \ref{eq:lbridge2-circuital-cpaul}. Finalmente, además, se realizaron simulaciones utilizando Q3D Extractor, para validar el uso de las expresiones. Los resultados se muestran en la tabla \ref{table:lw}. Resulta importante, sin embargo, señalar que, si bien la inductancia es un parámetro puramente geométrico, las posiciones de los puertos de entrada y salida modifican su valor. Estas posiciones no son tenidas en cuenta en las expresiones propuestas por la literatura, pero se las considera lo suficientemente cercanas al valor final.
 
-
-\begin{tabular}{|c|c|c|}
-	\label{table:Cp-modelo1-circuital}
-	\hline 
-	Según expresión \ref{eq:Cp_Lp} & Según expresión \ref{eq:lbridge2-circuital-cpaul} & Q3D Extractor \\ 
-	\hline 
-	$2\;nH$ & $1.55\;nH$ & $4\;nH$\\ 
-	\hline 
-\end{tabular}
+\begin{table}
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline 
+		Según expresión \ref{eq:Cp_Lp} & Según expresión \ref{eq:lbridge2-circuital-cpaul} & Q3D Extractor \\ 
+		\hline 
+		$2\;nH$ & $1.55\;nH$ & $4\;nH$\\ 
+		\hline 
+	\end{tabular}
+	\caption{Valores de inductancia $L_w$ calculados por distintos métodos.}
+	\label{table:lw}
+\end{table}
 
 La frecuencia de resonancia serie resulta, entonces, de
 
@@ -603,7 +626,7 @@ La frecuencia de resonancia serie resulta, entonces, de
 
 que, para los parámetros geométricos establecidos, varía entre $3.6\;GHz$ y $8\;GHz$. La amplitud de la incertidumbre se debe a la propia incertidumbre del valor la capacidad $C_g$.
 
-Sin embargo, la aparición de estas nuevas inductancias $L_{w}$ modificará fuertemente la frecuencia de resonancia del circuito LC paralelo analizado antes. Para este nuevo circuito, la inductancia vista por sus terminales está dada por $L_{b}+2 L_{w}/2$, debido a que por los componentes circuitales correspondientes a las esquinas sólo circula la mitad de la corriente que lo hace por la inductancia central. El valor de la frecuencia de resonancia, entonces, debido al aumento de la inductancia equivalente, disminuye, para adoptar valores entre $1.4\;GHz$ y $2.6\;GHz$. Este mismo cambio de resonancia se observaría si las inductancias $L_w$ estuvieran dispuestas sobre la rama central, como se muestra en la figura \ref{fig:modelo-circuital-resonancia-serie-p21-22}, lo cual valida el análisis, debido a que el hecho de que no estén en serie con los capacitores elimina el efecto de resonancia LC.
+Sin embargo, la aparición de estas nuevas inductancias $L_{w}$ modificará fuertemente la frecuencia de resonancia del circuito LC paralelo analizado antes. Para este nuevo circuito, la inductancia vista por sus terminales está dada por $L_{b}+2 L_{w}/2$, debido a que por los componentes circuitales correspondientes a las esquinas sólo circula la mitad de la corriente que lo hace por la inductancia central. El valor de la frecuencia de resonancia, entonces, debido al aumento de la inductancia equivalente, disminuye, para adoptar valores entre $1.4\;GHz$ y $2.6\;GHz$. Este mismo cambio de resonancia se observaría si las inductancias $L_w$ estuvieran dispuestas sobre la rama central, como se muestra en la figura \ref{fig:res-serie-p21p22}, lo cual valida el análisis, debido a que el hecho de que no estén en serie con los capacitores elimina el efecto de resonancia LC.
 
 \begin{figure}[H]
 	\centering 
@@ -614,15 +637,17 @@ Sin embargo, la aparición de estas nuevas inductancias $L_{w}$ modificará fuer
 	\subfigure[Parámetro $S_{21}$ del circuito, comparado con el comportamiento mostrado en la figura \ref{fig:s21-modelo1}.]{
 		\label{fig:modelo-circuital-resonancia-serie-p13-p14-s12}
 		\includegraphics[width=0.45\textwidth]{Modelado/3-4-21-22.pdf}}
+	\caption{Análisis del efecto sobre la resonancia LC paralelo de las inductancias de ala consideradas.}
+	\label{fig:res-serie-p21p22}
 \end{figure}
 
-En la figura \ref{fig:modelo-circuital-resonancia-serie-gráficos} se pueden observar que la composición de los dos efectos más importantes analizados hasta el momento (las resonancias serie y paralela) da lugar a un comportamiento similar a transferencia del circuito analizado.
+En la figura \ref{fig:modelo-circuital-resonancia-serie-graficos} se pueden observar que la composición de los dos efectos más importantes analizados hasta el momento (las resonancias serie y paralela) da lugar a un comportamiento similar a transferencia del circuito analizado.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{Modelado/composicion.pdf}
 	\caption{Superposición de los comportamientos de los circuitos analizados hasta el momento y la simulación obtenida con \textit{CST Microwave Studio}.}
-	\label{fig:modelo-circuital-resonancia-serie-gráficos}
+	\label{fig:modelo-circuital-resonancia-serie-graficos}
 \end{figure}
 
 
@@ -652,7 +677,7 @@ Las pérdidas por conductividad pueden ser representadas por una resistencia rep
 
 \begin{align}
 R_{dc} = \frac{l}{\sigma S}, \\
-R_{ac} = \frac{l}{\sigma(2 w \delta_s+2 t \delta_s)} = \frac{l}{2\sigma \delta_s(w +t)} = \frac{l \sqrt{2 \pi f \mu \sigma}}{2 \sqrt{2}\sigma \delta_s(w +t)},
+R_{ac} = \frac{l}{\sigma(2 w \delta_s+2 t \delta_s)} = \frac{l}{2\sigma \delta_s(w +t)} = \frac{l \sqrt{2 \pi f \mu \sigma}}{2 \sqrt{2}\sigma \delta_s(w +t)}, \\
 R_s = R_{dc} + R_{ac} = \frac{l}{\sigma} (\frac{1}{\sigma} + \frac{\sqrt{\pi f \mu \sigma}}{2 (w+t)})
 \end{align}
 
@@ -663,8 +688,8 @@ Para el caso de las pérdidas dieléctricas, las pérdidas se representan como u
 Dicha conductancia puede ser calculada en base a la tangente de pérdidas del material, que es un parámetro ofrecido por el fabricante, y que fue definido en la ecuación \ref{eq:tan_perdidas}. El uso de una tangente de pérdidas asume la existencia de una impedancia imaginaria entre la capa superior y el plano de tierra en una celda unitaria, de manera que esta tangente representa la relación entre las partes real e imaginaria:
 
 \begin{align}
-\tan(\delta} = X/R = \frac{1/\omega C}/{R} = \frac{G}{\omega C}, \\
-G = \omega C \tan(\delta) = \frac{1}{R_p}
+	\tan(\delta) = X/R = \frac{1/\omega C}{R} = \frac{G}{\omega C}, \\
+	G = \omega C \tan(\delta) = \frac{1}{R_p}
 \end{align}
 
 Para el caso de FR-4, la tangente de pérdidas posee el valor de 0.017.
@@ -689,20 +714,30 @@ Una comparación entre el comportamiento del parámetro $S_{21}$ considerando y 
 
 Los valores finales de los parámetros utilizados para modelar la celda unitaria estudiada se muestran en la tabla \ref{table:valoresFinalesModelo}.
 
-\begin{tabular}{|c|c||c|c|}
+\begin{table}
+	\centering
+	\begin{tabular}{|c c||c c|}
+		\hline 
+		$L_b$ & $6.9\; nH$ & $C_g$ & $155\; fF$\\
+		\hline
+		$L_w$ & $1.9\; nH$ & $C_c$ & $1.24\; pF$ \\
+		\hline
+		$C_b$ & $378 \;fF$ & $C_w$ & $2 \; pF$\\
+		\hline
+		$C'_w$ & $2.372\; pF$ & $L'_w$ & $1.9\; nH$ \\
+		\hline
+		$R_{wp}$ & $936\; \Omega$ & $R_{ws}$ & $0.01\; \Omega$\\
+		\hline
+		$R_{bp}$ & $0.15\; \Omega$ & $R_{bs}$ & $4953\; \Omega$\\
+		\hline
+		$R_{cp}$ & $1509\; \Omega$ & $R_{cs}$ & $0.01\; \Omega$ \\
+		\hline 
+	\end{tabular}
+	\caption{Tabla de valores finales elegidos.}
 	\label{table:valoresFinalesModelo}
-	\hline 
-	$L_b$ & $6.9\; nH$ & $C_g$ & $155\; fF$\\
-	$L_w$ & $1.9\; nH$ & $C_c$ & $1.24\; pF$ \\
-	$C_b$ & $378 \;fF$ & $C_w$ & $2 \; pF$\\
-	$C'_w$ & $2.372\; pF$ & $L'w$ & $1.9\; nH$ \\
-	$R_{wp}$ & $936\; \Omega$ & $R_{ws}$ & $0.01\; \Omega$\\
-	$R_{bp}$ & $0.15\; \Omega$ & $R_{bs}$ & $4953\; \Omega$\\
-	$R_{cp}$ & $1509\; \Omega$ & $R_{cs}$ & $0.01\; \Omega$
-	\hline 
-\end{tabular}
+\end{table}
 
-El comportamiento del parámetro $S_{21}$ según del modelo circuital se puede comparar al simulado utilizando CST Microwave Studio en la figura \ref{fig:s12_modelo_final}.
+El comportamiento del parámetro $S_{21}$ según del modelo circuital se puede comparar al simulado utilizando \textit{CST Microwave Studio} en la figura \ref{fig:s12_modelo_final}.
 
 \begin{figure}[h]
 	\centering

@@ -62,6 +62,7 @@
 \abx@aux@segm{0}{0}{Pozar:MwEngineering}
 \abx@aux@segm{0}{0}{Collin:GuidedWaves}
 \newlabel{eq:ohms_law}{{1\hspace  {0.2mm}-4}{4}{Campos en medios materiales}{equation.16}{}}
+\newlabel{eq:tan_perdidas}{{1\hspace  {0.2mm}-6}{4}{Campos en medios materiales}{equation.20}{}}
 \newlabel{eq:diadas}{{1\hspace  {0.2mm}-7}{4}{Campos en medios materiales}{equation.21}{}}
 \abx@aux@cite{Joannopoulos:PhotonicCrystals}
 \abx@aux@segm{0}{0}{Joannopoulos:PhotonicCrystals}
@@ -83,6 +84,7 @@
 \newlabel{eq:eq_ondas_completa_E_H}{{1\hspace  {0.2mm}-12}{7}{Ecuación de onda}{equation.40}{}}
 \newlabel{eq:Helmholtz}{{1\hspace  {0.2mm}-13}{7}{Ecuación de onda}{equation.41}{}}
 \newlabel{eq:constante-propagacion-compleja}{{1\hspace  {0.2mm}-14}{7}{Ecuación de onda}{equation.42}{}}
+\newlabel{eq:prof_penetacion}{{1\hspace  {0.2mm}-16}{7}{Ecuación de onda}{equation.44}{}}
 \abx@aux@segm{0}{0}{Fernandez:Electromag}
 \newlabel{eq:electric_field_wave_solution}{{1\hspace  {0.2mm}-17}{8}{Ecuación de onda}{equation.46}{}}
 \newlabel{eq:numero_de_onda}{{1\hspace  {0.2mm}-18}{8}{Ecuación de onda}{equation.47}{}}
@@ -440,52 +442,106 @@
 \newlabel{fig:celda-yang}{{3.19}{79}{Celda unitaria del metamaterial presentado en 1999 por Yang, Ma, Qian e Itoh.\relax }{figure.caption.243}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.20}{\ignorespaces Comportamiento, en promedio temporal, de los campos el\IeC {\'e}ctrico y magn\IeC {\'e}tico sobre una celda unitaria de Yang, para el primer y segundo modo de propagaci\IeC {\'o}n.\relax }}{80}{figure.caption.244}}
 \newlabel{fig:yang-analisis-campos}{{3.20}{80}{Comportamiento, en promedio temporal, de los campos eléctrico y magnético sobre una celda unitaria de Yang, para el primer y segundo modo de propagación.\relax }{figure.caption.244}{}}
-\abx@aux@segm{0}{0}{Caloz:ElectromagneticMetamaterials}
-\abx@aux@segm{0}{0}{Caloz:ElectromagneticMetamaterials}
-\abx@aux@segm{0}{0}{Caloz:ElectromagneticMetamaterials}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.21}{\ignorespaces Comportamiento, para dos tiempos diferentes, de los campos el\IeC {\'e}ctrico y magn\IeC {\'e}tico normales a la superficie, sobre la celda propuesta por Yang, Ma, Qian e Itoh, para el primer y segundo modo de propagaci\IeC {\'o}n.\relax }}{81}{figure.caption.245}}
 \newlabel{fig:yang-analisis-campos-fases}{{3.21}{81}{Comportamiento, para dos tiempos diferentes, de los campos eléctrico y magnético normales a la superficie, sobre la celda propuesta por Yang, Ma, Qian e Itoh, para el primer y segundo modo de propagación.\relax }{figure.caption.245}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Modelado por l\IeC {\'\i }neas de transmisi\IeC {\'o}n}{81}{section.246}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Modelado circuital}{81}{section.246}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Valores geom\IeC {\'e}tricos de la celda unitaria analizada.\relax }}{82}{table.caption.248}}
+\newlabel{table:CeldaUnitariaAnalisisiCircuital}{{3.1}{82}{Valores geométricos de la celda unitaria analizada.\relax }{table.caption.248}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.22}{\ignorespaces Primer circuito equivalente propuesto, con LC paralelo para obtener efecto \textit  {notch}.\relax }}{82}{figure.caption.247}}
+\newlabel{fig:primerCircuitoPropuesto}{{3.22}{82}{Primer circuito equivalente propuesto, con LC paralelo para obtener efecto \textit {notch}.\relax }{figure.caption.247}{}}
+\abx@aux@cite{CPaul:InductanceLoopAndPartial}
+\abx@aux@segm{0}{0}{CPaul:InductanceLoopAndPartial}
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Valores de inductancia de puente $L_b$ calculados por distintos m\IeC {\'e}todos.\relax }}{83}{table.caption.251}}
+\newlabel{table:Lb}{{3.2}{83}{Valores de inductancia de puente $L_b$ calculados por distintos métodos.\relax }{table.caption.251}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces Valores de capacidad de \textit  {gap} calculados por distintos m\IeC {\'e}todos.\relax }}{83}{table.caption.254}}
+\newlabel{table:Cg}{{3.3}{83}{Valores de capacidad de \textit {gap} calculados por distintos métodos.\relax }{table.caption.254}{}}
+\newlabel{eq:lbridge1-circuital}{{3\hspace  {0.2mm}-10}{83}{Modelado circuital}{equation.249}{}}
+\newlabel{eq:lbridge2-circuital-cpaul}{{3\hspace  {0.2mm}-11}{83}{Modelado circuital}{equation.250}{}}
+\newlabel{eq:cgap1-circuital}{{3\hspace  {0.2mm}-12}{83}{Modelado circuital}{equation.252}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.23}{\ignorespaces Geometr\IeC {\'\i }a utilizada para calcular la capacidad entre celdas vecinas con Q3D Extractor.\relax }}{84}{figure.caption.253}}
+\newlabel{fig:capacidad-cg-Q3D}{{3.23}{84}{Geometría utilizada para calcular la capacidad entre celdas vecinas con Q3D Extractor.\relax }{figure.caption.253}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces Valores de capacidad $C_p$ calculados por distintos m\IeC {\'e}todos.\relax }}{84}{table.caption.257}}
+\newlabel{table:Cp-modelo1-circuital}{{3.4}{84}{Valores de capacidad $C_p$ calculados por distintos métodos.\relax }{table.caption.257}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.24}{\ignorespaces Comportamiento del par\IeC {\'a}metro $S_{21}$ para el modelo 1.\relax }}{85}{figure.caption.258}}
+\newlabel{fig:s21-modelo1}{{3.24}{85}{Comportamiento del parámetro $S_{21}$ para el modelo 1.\relax }{figure.caption.258}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.25}{\ignorespaces Segundo circuito equivalente propuesto.\relax }}{86}{figure.caption.259}}
+\newlabel{fig:modelo-circuital-con-lw}{{3.25}{86}{Segundo circuito equivalente propuesto.\relax }{figure.caption.259}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces Valores de inductancia $L_w$ calculados por distintos m\IeC {\'e}todos.\relax }}{86}{table.caption.263}}
+\newlabel{table:lw}{{3.5}{86}{Valores de inductancia $L_w$ calculados por distintos métodos.\relax }{table.caption.263}{}}
+\@writefile{lot}{\contentsline {subtable}{\numberline{(a)}{\ignorespaces {Circuito equivalente considerando s\IeC {\'o}lo el efecto de la resonancia serie.}}}{86}{table.caption.263}}
+\@writefile{lot}{\contentsline {subtable}{\numberline{(b)}{\ignorespaces {Par\IeC {\'a}metro $S_{21}$ considerando resonancia serie \IeC {\'u}nicamente.}}}{86}{table.caption.263}}
+\newlabel{fig:modelo-circuital-resonancia-serie-p13-p14}{{3.26(a)}{86}{Subfigure 3 3.26(a)}{subfigure.261}{}}
+\newlabel{sub@fig:modelo-circuital-resonancia-serie-p13-p14}{{(a)}{86}{Subfigure 3 3.26(a)\relax }{subfigure.261}{}}
+\newlabel{fig:modelo-circuital-resonancia-serie-p13-p14-s12}{{3.26(b)}{86}{Subfigure 3 3.26(b)}{subfigure.262}{}}
+\newlabel{sub@fig:modelo-circuital-resonancia-serie-p13-p14-s12}{{(b)}{86}{Subfigure 3 3.26(b)\relax }{subfigure.262}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.26}{\ignorespaces An\IeC {\'a}lisis de la resonancia serie.\relax }}{86}{figure.caption.260}}
+\newlabel{fig:p13-p14-sdf}{{3.26}{86}{Análisis de la resonancia serie.\relax }{figure.caption.260}{}}
+\newlabel{fig:modelo-circuital-resonancia-serie-p13-p14}{{3.27(a)}{87}{Subfigure 3 3.27(a)}{subfigure.266}{}}
+\newlabel{sub@fig:modelo-circuital-resonancia-serie-p13-p14}{{(a)}{87}{Subfigure 3 3.27(a)\relax }{subfigure.266}{}}
+\newlabel{fig:modelo-circuital-resonancia-serie-p13-p14-s12}{{3.27(b)}{87}{Subfigure 3 3.27(b)}{subfigure.267}{}}
+\newlabel{sub@fig:modelo-circuital-resonancia-serie-p13-p14-s12}{{(b)}{87}{Subfigure 3 3.27(b)\relax }{subfigure.267}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.27}{\ignorespaces An\IeC {\'a}lisis del efecto sobre la resonancia LC paralelo de las inductancias de ala consideradas.\relax }}{87}{figure.caption.265}}
+\newlabel{fig:res-serie-p21p22}{{3.27}{87}{Análisis del efecto sobre la resonancia LC paralelo de las inductancias de ala consideradas.\relax }{figure.caption.265}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.28}{\ignorespaces Superposici\IeC {\'o}n de los comportamientos de los circuitos analizados hasta el momento y la simulaci\IeC {\'o}n obtenida con \textit  {CST Microwave Studio}.\relax }}{88}{figure.caption.268}}
+\newlabel{fig:modelo-circuital-resonancia-serie-graficos}{{3.28}{88}{Superposición de los comportamientos de los circuitos analizados hasta el momento y la simulación obtenida con \textit {CST Microwave Studio}.\relax }{figure.caption.268}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Circuito equivalente para el c\IeC {\'a}lculo de la frecuencia de resonancia paralela, considerando las inductancias de las esquinas.}}}{88}{figure.caption.268}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Par\IeC {\'a}metro $S_{21}$ del circuito, comparado con el comportamiento mostrado en la figura \ref {fig:s21-modelo1}.}}}{88}{figure.caption.268}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.29}{\ignorespaces Tercer circuito equivalente propuesto, considerando inductancias y capacidades distribu\IeC {\'\i }das en la celda unitaria.\relax }}{88}{figure.caption.269}}
+\newlabel{fig:modelo-circuital-todojunto-sinR}{{3.29}{88}{Tercer circuito equivalente propuesto, considerando inductancias y capacidades distribuídas en la celda unitaria.\relax }{figure.caption.269}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.30}{\ignorespaces Comportamiento del par\IeC {\'a}metro $S_{21}$ para el modelo propuesto, comparado a la simulaci\IeC {\'o}n obtenida con \textit  {CST Microwave Studio}.\relax }}{89}{figure.caption.270}}
+\newlabel{fig:s21-total-sin-R}{{3.30}{89}{Comportamiento del parámetro $S_{21}$ para el modelo propuesto, comparado a la simulación obtenida con \textit {CST Microwave Studio}.\relax }{figure.caption.270}{}}
+\abx@aux@segm{0}{0}{Caloz:ElectromagneticMetamaterials}
+\abx@aux@segm{0}{0}{Caloz:ElectromagneticMetamaterials}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.31}{\ignorespaces Circuito final equivalente propuesto, considerando inductancias y capacidades distribu\IeC {\'\i }das en la celda unitaria, y resistencias de p\IeC {\'e}rdidas.\relax }}{91}{figure.caption.276}}
+\newlabel{fig:modelo-circuital-todojunto-conR}{{3.31}{91}{Circuito final equivalente propuesto, considerando inductancias y capacidades distribuídas en la celda unitaria, y resistencias de pérdidas.\relax }{figure.caption.276}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.32}{\ignorespaces Comportamiento del par\IeC {\'a}metro $S_{21}$ para el modelo propuesto, con y sin resistencias de p\IeC {\'e}rdidas.\relax }}{91}{figure.caption.277}}
+\newlabel{fig:con-sin-R}{{3.32}{91}{Comportamiento del parámetro $S_{21}$ para el modelo propuesto, con y sin resistencias de pérdidas.\relax }{figure.caption.277}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Modelado por l\IeC {\'\i }neas de transmisi\IeC {\'o}n}{91}{section.280}}
+\abx@aux@segm{0}{0}{Caloz:ElectromagneticMetamaterials}
+\@writefile{lot}{\contentsline {table}{\numberline {3.6}{\ignorespaces Tabla de valores finales elegidos.\relax }}{92}{table.caption.278}}
+\newlabel{table:valoresFinalesModelo}{{3.6}{92}{Tabla de valores finales elegidos.\relax }{table.caption.278}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.33}{\ignorespaces Comportamiento del par\IeC {\'a}metro $S_{21}$ para el modelo propuesto, comparado con el obtenido mediante simulaci\IeC {\'o}n con \textit  {CST Microwave Studio}.\relax }}{92}{figure.caption.279}}
+\newlabel{fig:s12_modelo_final}{{3.33}{92}{Comportamiento del parámetro $S_{21}$ para el modelo propuesto, comparado con el obtenido mediante simulación con \textit {CST Microwave Studio}.\relax }{figure.caption.279}{}}
 \abx@aux@segm{0}{0}{Caloz:ElectromagneticMetamaterials}
 \abx@aux@cite{JohnsBeurle:TLM}
 \abx@aux@segm{0}{0}{JohnsBeurle:TLM}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Algoritmo utilizando programaci\IeC {\'o}n orientada a objetos}{82}{subsection.249}}
-\newlabel{subsec_estudio_tlm}{{3.4.1}{82}{Algoritmo utilizando programación orientada a objetos}{subsection.249}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.22}{\ignorespaces Esquema de ingreso de datos al simulador.\relax }}{83}{figure.caption.250}}
-\newlabel{fig:esquema-ingreso-datos}{{3.22}{83}{Esquema de ingreso de datos al simulador.\relax }{figure.caption.250}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.23}{\ignorespaces Circuitos equivalentes propuestos para cada tipo de pixel.\relax }}{84}{figure.caption.252}}
-\newlabel{fig:tiposdepixeles}{{3.23}{84}{Circuitos equivalentes propuestos para cada tipo de pixel.\relax }{figure.caption.252}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}Algoritmo utilizando programaci\IeC {\'o}n orientada a objetos}{93}{subsection.283}}
+\newlabel{subsec_estudio_tlm}{{3.5.1}{93}{Algoritmo utilizando programación orientada a objetos}{subsection.283}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.34}{\ignorespaces Esquema de ingreso de datos al simulador.\relax }}{94}{figure.caption.284}}
+\newlabel{fig:esquema-ingreso-datos}{{3.34}{94}{Esquema de ingreso de datos al simulador.\relax }{figure.caption.284}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.35}{\ignorespaces Circuitos equivalentes propuestos para cada tipo de pixel.\relax }}{95}{figure.caption.286}}
+\newlabel{fig:tiposdepixeles}{{3.35}{95}{Circuitos equivalentes propuestos para cada tipo de pixel.\relax }{figure.caption.286}{}}
 \abx@aux@cite{ThummWiesbeck:CharacteristicImpedance}
 \abx@aux@segm{0}{0}{ThummWiesbeck:CharacteristicImpedance}
-\newlabel{eq:capacidad-inductancia-impedancia-modelado}{{3\hspace  {0.2mm}-10}{85}{Algoritmo utilizando programación orientada a objetos}{equation.257}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.24}{\ignorespaces Circuito equivalente de l\IeC {\'\i }neas de transmisi\IeC {\'o}n, donde se observa la relaci\IeC {\'o}n con la capacidad e inductancia de cada \textit  {Pixel}.\relax }}{85}{figure.caption.261}}
-\newlabel{fig:modelo-con-lineas-de-transmision}{{3.24}{85}{Circuito equivalente de líneas de transmisión, donde se observa la relación con la capacidad e inductancia de cada \textit {Pixel}.\relax }{figure.caption.261}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.25}{\ignorespaces C\IeC {\'a}lculo de la capacidad de \textit  {fringe} de una pared horizontal.\relax }}{86}{figure.caption.263}}
-\newlabel{fig:profundidad-para-cfringe}{{3.25}{86}{Cálculo de la capacidad de \textit {fringe} de una pared horizontal.\relax }{figure.caption.263}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.26}{\ignorespaces C\IeC {\'a}lculo de las distintas capacidades de acople horizontales para los pixeles que participan del c\IeC {\'a}lculo num\IeC {\'e}rico. Para un caso particular se muestran las capacidades de acople asociadas a los pixeles enfrentados por un \textit  {gap}.\relax }}{87}{figure.caption.265}}
-\newlabel{fig:calculoCapacidadTLM}{{3.26}{87}{Cálculo de las distintas capacidades de acople horizontales para los pixeles que participan del cálculo numérico. Para un caso particular se muestran las capacidades de acople asociadas a los pixeles enfrentados por un \textit {gap}.\relax }{figure.caption.265}{}}
-\newlabel{eq:multiplicacion-matriz-s}{{3\hspace  {0.2mm}-12}{88}{Algoritmo utilizando programación orientada a objetos}{equation.267}{}}
-\newlabel{eq:matriz-s-expresiones}{{3\hspace  {0.2mm}-13}{88}{Algoritmo utilizando programación orientada a objetos}{equation.268}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.27}{\ignorespaces Descripci\IeC {\'o}n gr\IeC {\'a}fica del uso de la matriz S.\relax }}{88}{figure.caption.271}}
-\newlabel{fig:esquema-matriz-s}{{3.27}{88}{Descripción gráfica del uso de la matriz S.\relax }{figure.caption.271}{}}
+\newlabel{eq:capacidad-inductancia-impedancia-modelado}{{3\hspace  {0.2mm}-21}{96}{Algoritmo utilizando programación orientada a objetos}{equation.291}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.36}{\ignorespaces Circuito equivalente de l\IeC {\'\i }neas de transmisi\IeC {\'o}n, donde se observa la relaci\IeC {\'o}n con la capacidad e inductancia de cada \textit  {Pixel}.\relax }}{96}{figure.caption.295}}
+\newlabel{fig:modelo-con-lineas-de-transmision}{{3.36}{96}{Circuito equivalente de líneas de transmisión, donde se observa la relación con la capacidad e inductancia de cada \textit {Pixel}.\relax }{figure.caption.295}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.37}{\ignorespaces C\IeC {\'a}lculo de la capacidad de \textit  {fringe} de una pared horizontal.\relax }}{97}{figure.caption.297}}
+\newlabel{fig:profundidad-para-cfringe}{{3.37}{97}{Cálculo de la capacidad de \textit {fringe} de una pared horizontal.\relax }{figure.caption.297}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.38}{\ignorespaces C\IeC {\'a}lculo de las distintas capacidades de acople horizontales para los pixeles que participan del c\IeC {\'a}lculo num\IeC {\'e}rico. Para un caso particular se muestran las capacidades de acople asociadas a los pixeles enfrentados por un \textit  {gap}.\relax }}{98}{figure.caption.299}}
+\newlabel{fig:calculoCapacidadTLM}{{3.38}{98}{Cálculo de las distintas capacidades de acople horizontales para los pixeles que participan del cálculo numérico. Para un caso particular se muestran las capacidades de acople asociadas a los pixeles enfrentados por un \textit {gap}.\relax }{figure.caption.299}{}}
+\newlabel{eq:multiplicacion-matriz-s}{{3\hspace  {0.2mm}-23}{99}{Algoritmo utilizando programación orientada a objetos}{equation.301}{}}
+\newlabel{eq:matriz-s-expresiones}{{3\hspace  {0.2mm}-24}{99}{Algoritmo utilizando programación orientada a objetos}{equation.302}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.39}{\ignorespaces Descripci\IeC {\'o}n gr\IeC {\'a}fica del uso de la matriz S.\relax }}{99}{figure.caption.305}}
+\newlabel{fig:esquema-matriz-s}{{3.39}{99}{Descripción gráfica del uso de la matriz S.\relax }{figure.caption.305}{}}
 \abx@aux@segm{0}{0}{Barthia:Handbook}
 \abx@aux@cite{Tesche:EMC}
 \abx@aux@segm{0}{0}{Tesche:EMC}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.28}{\ignorespaces Proceso de c\IeC {\'a}lculo en el dominio del tiempo.\relax }}{90}{figure.caption.272}}
-\newlabel{fig:procedimiento-tlm}{{3.28}{90}{Proceso de cálculo en el dominio del tiempo.\relax }{figure.caption.272}{}}
-\newlabel{eq:expresiones-fuentes-controladas}{{3\hspace  {0.2mm}-14}{90}{Algoritmo utilizando programación orientada a objetos}{equation.274}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.29}{\ignorespaces Modelo de acoplamiento capacitivo entre dos \textit  {pixeles}.\relax }}{91}{figure.caption.273}}
-\newlabel{fig:acoplamiento-capacitivo-modelo}{{3.29}{91}{Modelo de acoplamiento capacitivo entre dos \textit {pixeles}.\relax }{figure.caption.273}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.30}{\ignorespaces Circuito equivalente del modelo de acoplamiento capacitivo d\IeC {\'e}bil, utilizando fuentes de corriente, para una carga de impedancia igual a la impedancia caracter\IeC {\'\i }stica de la l\IeC {\'\i }nea de transmisi\IeC {\'o}n conectada.\relax }}{91}{figure.caption.277}}
-\newlabel{fig:circuito-equivalente-acoplamiento-capacitivo-debil}{{3.30}{91}{Circuito equivalente del modelo de acoplamiento capacitivo débil, utilizando fuentes de corriente, para una carga de impedancia igual a la impedancia característica de la línea de transmisión conectada.\relax }{figure.caption.277}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.31}{\ignorespaces Estructura de la matriz que se guarda y se lee del disco r\IeC {\'\i }gido. La estructura posee todas las tensiones calculadas para cada tiempo y para cada pixel en particular.\relax }}{93}{figure.caption.281}}
-\newlabel{fig:EstructuraTiemposMatrizNumpy}{{3.31}{93}{Estructura de la matriz que se guarda y se lee del disco rígido. La estructura posee todas las tensiones calculadas para cada tiempo y para cada pixel en particular.\relax }{figure.caption.281}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.40}{\ignorespaces Proceso de c\IeC {\'a}lculo en el dominio del tiempo.\relax }}{101}{figure.caption.306}}
+\newlabel{fig:procedimiento-tlm}{{3.40}{101}{Proceso de cálculo en el dominio del tiempo.\relax }{figure.caption.306}{}}
+\newlabel{eq:expresiones-fuentes-controladas}{{3\hspace  {0.2mm}-25}{101}{Algoritmo utilizando programación orientada a objetos}{equation.308}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.41}{\ignorespaces Modelo de acoplamiento capacitivo entre dos \textit  {pixeles}.\relax }}{102}{figure.caption.307}}
+\newlabel{fig:acoplamiento-capacitivo-modelo}{{3.41}{102}{Modelo de acoplamiento capacitivo entre dos \textit {pixeles}.\relax }{figure.caption.307}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.42}{\ignorespaces Circuito equivalente del modelo de acoplamiento capacitivo d\IeC {\'e}bil, utilizando fuentes de corriente, para una carga de impedancia igual a la impedancia caracter\IeC {\'\i }stica de la l\IeC {\'\i }nea de transmisi\IeC {\'o}n conectada.\relax }}{102}{figure.caption.311}}
+\newlabel{fig:circuito-equivalente-acoplamiento-capacitivo-debil}{{3.42}{102}{Circuito equivalente del modelo de acoplamiento capacitivo débil, utilizando fuentes de corriente, para una carga de impedancia igual a la impedancia característica de la línea de transmisión conectada.\relax }{figure.caption.311}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.43}{\ignorespaces Estructura de la matriz que se guarda y se lee del disco r\IeC {\'\i }gido. La estructura posee todas las tensiones calculadas para cada tiempo y para cada pixel en particular.\relax }}{104}{figure.caption.315}}
+\newlabel{fig:EstructuraTiemposMatrizNumpy}{{3.43}{104}{Estructura de la matriz que se guarda y se lee del disco rígido. La estructura posee todas las tensiones calculadas para cada tiempo y para cada pixel en particular.\relax }{figure.caption.315}{}}
 \abx@aux@segm{0}{0}{Yang:EBGAntennas}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Aplicaci\IeC {\'o}n de EBGs en estructuras microstrip}{95}{chapter.282}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Aplicaci\IeC {\'o}n de EBGs en estructuras microstrip}{105}{chapter.316}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{cap_aplicacion}{{4}{95}{Aplicación de EBGs en estructuras microstrip}{chapter.282}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Introducci\IeC {\'o}n}{95}{section.283}}
+\newlabel{cap_aplicacion}{{4}{105}{Aplicación de EBGs en estructuras microstrip}{chapter.316}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Introducci\IeC {\'o}n}{105}{section.317}}
 \abx@aux@segm{0}{0}{Balanis:Theory}
 \abx@aux@segm{0}{0}{Marcela:Tesis}
 \abx@aux@segm{0}{0}{Yang:EBGAntennas}
@@ -493,40 +549,40 @@
 \abx@aux@segm{0}{0}{Sievenpiper:Thesis}
 \abx@aux@segm{0}{0}{Sievenpiper:HIESForbiddenBand}
 \abx@aux@segm{0}{0}{Marcela:Tesis}
-\newlabel{fig:sustrato-antena-ebg}{{4.1(a)}{96}{Subfigure 4 4.1(a)}{subfigure.285}{}}
-\newlabel{sub@fig:sustrato-antena-ebg}{{(a)}{96}{Subfigure 4 4.1(a)\relax }{subfigure.285}{}}
-\newlabel{fig:escalon-sustrato}{{4.1(b)}{96}{Subfigure 4 4.1(b)}{subfigure.286}{}}
-\newlabel{sub@fig:escalon-sustrato}{{(b)}{96}{Subfigure 4 4.1(b)\relax }{subfigure.286}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Fotos de dise\IeC {\~n}os de antenas parches con limitadores a la propagaci\IeC {\'o}n de onda de superficie \cite {Yang:EBGAntennas}.\relax }}{96}{figure.caption.284}}
-\newlabel{fig:limitadores-ondas-superficie-yang}{{4.1}{96}{Fotos de diseños de antenas parches con limitadores a la propagación de onda de superficie \cite {Yang:EBGAntennas}.\relax }{figure.caption.284}{}}
+\newlabel{fig:sustrato-antena-ebg}{{4.1(a)}{106}{Subfigure 4 4.1(a)}{subfigure.319}{}}
+\newlabel{sub@fig:sustrato-antena-ebg}{{(a)}{106}{Subfigure 4 4.1(a)\relax }{subfigure.319}{}}
+\newlabel{fig:escalon-sustrato}{{4.1(b)}{106}{Subfigure 4 4.1(b)}{subfigure.320}{}}
+\newlabel{sub@fig:escalon-sustrato}{{(b)}{106}{Subfigure 4 4.1(b)\relax }{subfigure.320}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Fotos de dise\IeC {\~n}os de antenas parches con limitadores a la propagaci\IeC {\'o}n de onda de superficie \cite {Yang:EBGAntennas}.\relax }}{106}{figure.caption.318}}
+\newlabel{fig:limitadores-ondas-superficie-yang}{{4.1}{106}{Fotos de diseños de antenas parches con limitadores a la propagación de onda de superficie \cite {Yang:EBGAntennas}.\relax }{figure.caption.318}{}}
 \abx@aux@segm{0}{0}{Barthia:Handbook}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Dise\IeC {\~n}o de una antena \textit  {microstrip}}{97}{section.287}}
-\newlabel{sec_disenio_microstrip}{{4.2}{97}{Diseño de una antena \textit {microstrip}}{section.287}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Dise\IeC {\~n}o de una antena \textit  {microstrip}}{107}{section.321}}
+\newlabel{sec_disenio_microstrip}{{4.2}{107}{Diseño de una antena \textit {microstrip}}{section.321}{}}
 \abx@aux@segm{0}{0}{Barthia:Handbook}
 \abx@aux@segm{0}{0}{Barthia:Handbook}
 \abx@aux@segm{0}{0}{Balanis:Theory}
-\newlabel{eq:conductancia-microstrip-balanis}{{4\hspace  {0.2mm}-3}{98}{Diseño de una antena \textit {microstrip}}{equation.290}{}}
-\newlabel{fig:1parche-varlargo}{{4.2(a)}{99}{Subfigure 4 4.2(a)}{subfigure.293}{}}
-\newlabel{sub@fig:1parche-varlargo}{{(a)}{99}{Subfigure 4 4.2(a)\relax }{subfigure.293}{}}
-\newlabel{fig:1parche-varancho}{{4.2(b)}{99}{Subfigure 4 4.2(b)}{subfigure.294}{}}
-\newlabel{sub@fig:1parche-varancho}{{(b)}{99}{Subfigure 4 4.2(b)\relax }{subfigure.294}{}}
-\newlabel{fig:1parche-varinset}{{4.2(c)}{99}{Subfigure 4 4.2(c)}{subfigure.295}{}}
-\newlabel{sub@fig:1parche-varinset}{{(c)}{99}{Subfigure 4 4.2(c)\relax }{subfigure.295}{}}
-\newlabel{fig:antena-optimizada}{{4.2(d)}{99}{Subfigure 4 4.2(d)}{subfigure.296}{}}
-\newlabel{sub@fig:antena-optimizada}{{(d)}{99}{Subfigure 4 4.2(d)\relax }{subfigure.296}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Variaci\IeC {\'o}n del par\IeC {\'a}metro $S_{11}$ del puerto en funci\IeC {\'o}n de distintos par\IeC {\'a}metros del parche \IeC {\'u}nico, y antena optimizada final.\relax }}{99}{figure.caption.292}}
-\newlabel{fig:simulaciones-microstrip-1parche}{{4.2}{99}{Variación del parámetro $S_{11}$ del puerto en función de distintos parámetros del parche único, y antena optimizada final.\relax }{figure.caption.292}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Comportamiento del campo lejano para un parche \textit  {microstrip} sin modificaciones, en la frecuencia de resonancia. La imagen tridimensional izquierda muestra la estructura y, en colores, el valor de la directividad para cada direcci\IeC {\'o}n. Adem\IeC {\'a}s, muestra la direcci\IeC {\'o}n de variaci\IeC {\'o}n de $\theta $ y $\phi $. La gr\IeC {\'a}fica superior derecha representa, en rojo, la variaci\IeC {\'o}n de la directividad en funci\IeC {\'o}n de $\phi $, para un $\theta $ de $90^{\circ }$, es decir, rasante al plano de la antena. La gr\IeC {\'a}fica inferior derecha representa la variaci\IeC {\'o}n de la directividad en funci\IeC {\'o}n de $\theta $, para un valor de $\phi $ de $90^{\circ }$.\relax }}{100}{figure.caption.297}}
-\newlabel{fig:farfield-1parche-sincarga-sinebg}{{4.3}{100}{Comportamiento del campo lejano para un parche \textit {microstrip} sin modificaciones, en la frecuencia de resonancia. La imagen tridimensional izquierda muestra la estructura y, en colores, el valor de la directividad para cada dirección. Además, muestra la dirección de variación de $\theta $ y $\phi $. La gráfica superior derecha representa, en rojo, la variación de la directividad en función de $\phi $, para un $\theta $ de $90^{\circ }$, es decir, rasante al plano de la antena. La gráfica inferior derecha representa la variación de la directividad en función de $\theta $, para un valor de $\phi $ de $90^{\circ }$.\relax }{figure.caption.297}{}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Antena rodeada por una estructura EBG.}}}{100}{figure.caption.297}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Antena rodeada por un escal\IeC {\'o}n de sustrato,}}}{100}{figure.caption.297}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Variaci\IeC {\'o}n del largo L.}}}{100}{figure.caption.297}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Variaci\IeC {\'o}n del ancho W.}}}{100}{figure.caption.297}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Variaci\IeC {\'o}n de valor del \textit {inset}.}}}{100}{figure.caption.297}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {Antena sin cargas optimizada.}}}{100}{figure.caption.297}}
-\newlabel{eq:lambdag}{{4\hspace  {0.2mm}-5}{101}{Diseño de una antena \textit {microstrip}}{equation.298}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Dise\IeC {\~n}o de un conjunto de dos antenas \textit  {microstrip}}{101}{section.299}}
-\newlabel{sec_conjunto}{{4.3}{101}{Diseño de un conjunto de dos antenas \textit {microstrip}}{section.299}{}}
+\newlabel{eq:conductancia-microstrip-balanis}{{4\hspace  {0.2mm}-3}{108}{Diseño de una antena \textit {microstrip}}{equation.324}{}}
+\newlabel{fig:1parche-varlargo}{{4.2(a)}{109}{Subfigure 4 4.2(a)}{subfigure.327}{}}
+\newlabel{sub@fig:1parche-varlargo}{{(a)}{109}{Subfigure 4 4.2(a)\relax }{subfigure.327}{}}
+\newlabel{fig:1parche-varancho}{{4.2(b)}{109}{Subfigure 4 4.2(b)}{subfigure.328}{}}
+\newlabel{sub@fig:1parche-varancho}{{(b)}{109}{Subfigure 4 4.2(b)\relax }{subfigure.328}{}}
+\newlabel{fig:1parche-varinset}{{4.2(c)}{109}{Subfigure 4 4.2(c)}{subfigure.329}{}}
+\newlabel{sub@fig:1parche-varinset}{{(c)}{109}{Subfigure 4 4.2(c)\relax }{subfigure.329}{}}
+\newlabel{fig:antena-optimizada}{{4.2(d)}{109}{Subfigure 4 4.2(d)}{subfigure.330}{}}
+\newlabel{sub@fig:antena-optimizada}{{(d)}{109}{Subfigure 4 4.2(d)\relax }{subfigure.330}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Variaci\IeC {\'o}n del par\IeC {\'a}metro $S_{11}$ del puerto en funci\IeC {\'o}n de distintos par\IeC {\'a}metros del parche \IeC {\'u}nico, y antena optimizada final.\relax }}{109}{figure.caption.326}}
+\newlabel{fig:simulaciones-microstrip-1parche}{{4.2}{109}{Variación del parámetro $S_{11}$ del puerto en función de distintos parámetros del parche único, y antena optimizada final.\relax }{figure.caption.326}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Comportamiento del campo lejano para un parche \textit  {microstrip} sin modificaciones, en la frecuencia de resonancia. La imagen tridimensional izquierda muestra la estructura y, en colores, el valor de la directividad para cada direcci\IeC {\'o}n. Adem\IeC {\'a}s, muestra la direcci\IeC {\'o}n de variaci\IeC {\'o}n de $\theta $ y $\phi $. La gr\IeC {\'a}fica superior derecha representa, en rojo, la variaci\IeC {\'o}n de la directividad en funci\IeC {\'o}n de $\phi $, para un $\theta $ de $90^{\circ }$, es decir, rasante al plano de la antena. La gr\IeC {\'a}fica inferior derecha representa la variaci\IeC {\'o}n de la directividad en funci\IeC {\'o}n de $\theta $, para un valor de $\phi $ de $90^{\circ }$.\relax }}{110}{figure.caption.331}}
+\newlabel{fig:farfield-1parche-sincarga-sinebg}{{4.3}{110}{Comportamiento del campo lejano para un parche \textit {microstrip} sin modificaciones, en la frecuencia de resonancia. La imagen tridimensional izquierda muestra la estructura y, en colores, el valor de la directividad para cada dirección. Además, muestra la dirección de variación de $\theta $ y $\phi $. La gráfica superior derecha representa, en rojo, la variación de la directividad en función de $\phi $, para un $\theta $ de $90^{\circ }$, es decir, rasante al plano de la antena. La gráfica inferior derecha representa la variación de la directividad en función de $\theta $, para un valor de $\phi $ de $90^{\circ }$.\relax }{figure.caption.331}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Antena rodeada por una estructura EBG.}}}{110}{figure.caption.331}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Antena rodeada por un escal\IeC {\'o}n de sustrato,}}}{110}{figure.caption.331}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Variaci\IeC {\'o}n del largo L.}}}{110}{figure.caption.331}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Variaci\IeC {\'o}n del ancho W.}}}{110}{figure.caption.331}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Variaci\IeC {\'o}n de valor del \textit {inset}.}}}{110}{figure.caption.331}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {Antena sin cargas optimizada.}}}{110}{figure.caption.331}}
+\newlabel{eq:lambdag}{{4\hspace  {0.2mm}-5}{111}{Diseño de una antena \textit {microstrip}}{equation.332}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Dise\IeC {\~n}o de un conjunto de dos antenas \textit  {microstrip}}{111}{section.333}}
+\newlabel{sec_conjunto}{{4.3}{111}{Diseño de un conjunto de dos antenas \textit {microstrip}}{section.333}{}}
 \abx@aux@segm{0}{0}{Yang:UCPBG}
 \abx@aux@segm{0}{0}{Goussetis:TailoringAMCEBGCharacteristics}
 \abx@aux@cite{Abidin:Thesis}
@@ -536,10 +592,10 @@
 \abx@aux@cite{IslamAlam:CompactEBG}
 \abx@aux@segm{0}{0}{IslamAlam:CompactEBG}
 \abx@aux@segm{0}{0}{Venkateswaran:Thesis}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Tabla de valores elegidos para los parches que conforman al arreglo de dos antenas \textit  {microstrip}.\relax }}{102}{table.caption.300}}
-\newlabel{table:valores-dosparches-geometr\IeC {\'\i }a}{{4.1}{102}{Tabla de valores elegidos para los parches que conforman al arreglo de dos antenas \textit {microstrip}.\relax }{table.caption.300}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Elecci\IeC {\'o}n del metamaterial}{102}{section.301}}
-\newlabel{sec_eleccion}{{4.4}{102}{Elección del metamaterial}{section.301}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Tabla de valores elegidos para los parches que conforman al arreglo de dos antenas \textit  {microstrip}.\relax }}{112}{table.caption.334}}
+\newlabel{table:valores-dosparches-geometria}{{4.1}{112}{Tabla de valores elegidos para los parches que conforman al arreglo de dos antenas \textit {microstrip}.\relax }{table.caption.334}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Elecci\IeC {\'o}n del metamaterial}{112}{section.335}}
+\newlabel{sec_eleccion}{{4.4}{112}{Elección del metamaterial}{section.335}{}}
 \abx@aux@cite{Kovacs:DesignOptimization}
 \abx@aux@segm{0}{0}{Kovacs:DesignOptimization}
 \abx@aux@segm{0}{0}{Abidin:Thesis}
@@ -556,182 +612,172 @@
 \abx@aux@segm{0}{0}{IslamAlam:CompactEBG}
 \abx@aux@segm{0}{0}{Kovacs:DesignOptimization}
 \abx@aux@segm{0}{0}{Kovacs:DesignOptimization}
-\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces Tabla de valores elegidos para la celda unitaria.\relax }}{105}{table.caption.316}}
-\newlabel{table:valores-parametros-finales}{{4.2}{105}{Tabla de valores elegidos para la celda unitaria.\relax }{table.caption.316}{}}
-\@writefile{lot}{\contentsline {subtable}{\numberline{(a)}{\ignorespaces {Efecto de la variaci\IeC {\'o}n de D.}}}{105}{table.caption.316}}
-\@writefile{lot}{\contentsline {subtable}{\numberline{(b)}{\ignorespaces {Efecto de la variaci\IeC {\'o}n de L.}}}{105}{table.caption.316}}
-\@writefile{lot}{\contentsline {subtable}{\numberline{(c)}{\ignorespaces {Efecto de la variaci\IeC {\'o}n de la distancia entre parches de esquinas.}}}{105}{table.caption.316}}
-\@writefile{lot}{\contentsline {subtable}{\numberline{(d)}{\ignorespaces {Estructura simulada en HFSS}}}{105}{table.caption.316}}
-\newlabel{fig:ucpbg-efecto-variacion-d}{{4.6(a)}{105}{Subfigure 4 4.6(a)}{subfigure.312}{}}
-\newlabel{sub@fig:ucpbg-efecto-variacion-d}{{(a)}{105}{Subfigure 4 4.6(a)\relax }{subfigure.312}{}}
-\newlabel{fig:ucpbg-efecto-variacion-l}{{4.6(b)}{105}{Subfigure 4 4.6(b)}{subfigure.313}{}}
-\newlabel{sub@fig:ucpbg-efecto-variacion-l}{{(b)}{105}{Subfigure 4 4.6(b)\relax }{subfigure.313}{}}
-\newlabel{fig:ucpbg-efecto-variacion-distancia}{{4.6(c)}{105}{Subfigure 4 4.6(c)}{subfigure.314}{}}
-\newlabel{sub@fig:ucpbg-efecto-variacion-distancia}{{(c)}{105}{Subfigure 4 4.6(c)\relax }{subfigure.314}{}}
-\newlabel{fig:estructura-completa-simulada-hfss}{{4.6(d)}{105}{Subfigure 4 4.6(d)}{subfigure.315}{}}
-\newlabel{sub@fig:estructura-completa-simulada-hfss}{{(d)}{105}{Subfigure 4 4.6(d)\relax }{subfigure.315}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Resultados de la variaci\IeC {\'o}n de par\IeC {\'a}metros, seg\IeC {\'u}n simulaciones de la estructura d) en Ansoft HFSS.\relax }}{105}{figure.caption.311}}
-\newlabel{fig:resultados-ucpbg-hfss}{{4.6}{105}{Resultados de la variación de parámetros, según simulaciones de la estructura d) en Ansoft HFSS.\relax }{figure.caption.311}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}Estudio del efecto de la distancia sobre el ancho de banda}{106}{section.317}}
-\newlabel{sec_efecto_distancia}{{4.5}{106}{Estudio del efecto de la distancia sobre el ancho de banda}{section.317}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.6}Estudio del efecto sobre el acoplamiento mutuo}{106}{section.318}}
-\newlabel{sec_estudio_acoplam_mutuo}{{4.6}{106}{Estudio del efecto sobre el acoplamiento mutuo}{section.318}{}}
-\newlabel{fig:abidin1}{{4.4(a)}{107}{Subfigure 4 4.4(a)}{subfigure.303}{}}
-\newlabel{sub@fig:abidin1}{{(a)}{107}{Subfigure 4 4.4(a)\relax }{subfigure.303}{}}
-\newlabel{fig:abidin2}{{4.4(b)}{107}{Subfigure 4 4.4(b)}{subfigure.304}{}}
-\newlabel{sub@fig:abidin2}{{(b)}{107}{Subfigure 4 4.4(b)\relax }{subfigure.304}{}}
-\newlabel{fig:assimonis1}{{4.4(c)}{107}{Subfigure 4 4.4(c)}{subfigure.305}{}}
-\newlabel{sub@fig:assimonis1}{{(c)}{107}{Subfigure 4 4.4(c)\relax }{subfigure.305}{}}
-\newlabel{fig:assimonis2}{{4.4(d)}{107}{Subfigure 4 4.4(d)}{subfigure.306}{}}
-\newlabel{sub@fig:assimonis2}{{(d)}{107}{Subfigure 4 4.4(d)\relax }{subfigure.306}{}}
-\newlabel{fig:assimonis3}{{4.4(e)}{107}{Subfigure 4 4.4(e)}{subfigure.307}{}}
-\newlabel{sub@fig:assimonis3}{{(e)}{107}{Subfigure 4 4.4(e)\relax }{subfigure.307}{}}
-\newlabel{fig:islamalam}{{4.4(f)}{107}{Subfigure 4 4.4(f)}{subfigure.308}{}}
-\newlabel{sub@fig:islamalam}{{(f)}{107}{Subfigure 4 4.4(f)\relax }{subfigure.308}{}}
-\newlabel{fig:kovacs}{{4.4(g)}{107}{Subfigure 4 4.4(g)}{subfigure.309}{}}
-\newlabel{sub@fig:kovacs}{{(g)}{107}{Subfigure 4 4.4(g)\relax }{subfigure.309}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Variaci\IeC {\'o}n del par\IeC {\'a}metro $S_{11}$ del puerto en funci\IeC {\'o}n de distintos par\IeC {\'a}metros del parche \IeC {\'u}nico, y antena optimizada final.\relax }}{107}{figure.caption.302}}
-\newlabel{fig:simulaciones-microstrip-1parche}{{4.4}{107}{Variación del parámetro $S_{11}$ del puerto en función de distintos parámetros del parche único, y antena optimizada final.\relax }{figure.caption.302}{}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Celda unitaria propuesta por \cite {Abidin:Thesis}.}}}{107}{figure.caption.302}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Celda unitaria propuesta por \cite {Abidin:Thesis}.}}}{107}{figure.caption.302}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Celda unitaria propuesta por \cite {Asimonis:designoptimization}.}}}{107}{figure.caption.302}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {Celda unitaria propuesta por \cite {Asimonis:designoptimization}.}}}{107}{figure.caption.302}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {Celda unitaria propuesta por \cite {Asimonis:designoptimization}.}}}{107}{figure.caption.302}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {Celda unitaria propuesta por \cite {IslamAlam:CompactEBG}.}}}{107}{figure.caption.302}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(g)}{\ignorespaces {Celda unitaria propuesta por \cite {Kovacs:DesignOptimization}.}}}{107}{figure.caption.302}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagrama de dispersi\IeC {\'o}n para una celda unitaria con las caracter\IeC {\'\i }sticas listadas en el cuadro \ref  {table:valores-parametros-finales}. Se observa que no hay un \textit  {bandgap} completo, aunque s\IeC {\'\i } existe para la direcci\IeC {\'o}n de inter\IeC {\'e}s, $\Gamma -X$.\relax }}{108}{figure.caption.310}}
-\newlabel{fig:diag-dispersion-ucbg}{{4.5}{108}{Diagrama de dispersión para una celda unitaria con las características listadas en el cuadro \ref {table:valores-parametros-finales}. Se observa que no hay un \textit {bandgap} completo, aunque sí existe para la dirección de interés, $\Gamma -X$.\relax }{figure.caption.310}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Resultados experimentales}{109}{chapter.319}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{cap_resultados}{{5}{109}{Resultados experimentales}{chapter.319}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Construcci\IeC {\'o}n del prototipo}{109}{section.320}}
-\newlabel{sec_construccion}{{5.1}{109}{Construcción del prototipo}{section.320}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Banco de medici\IeC {\'o}n}{109}{section.321}}
-\newlabel{sec_banco}{{5.2}{109}{Banco de medición}{section.321}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Resultados}{109}{section.322}}
-\newlabel{sec_comparacion_res}{{5.3}{109}{Resultados}{section.322}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces Tabla de valores elegidos para la celda unitaria.\relax }}{115}{table.caption.350}}
+\newlabel{table:valores-parametros-finales}{{4.2}{115}{Tabla de valores elegidos para la celda unitaria.\relax }{table.caption.350}{}}
+\@writefile{lot}{\contentsline {subtable}{\numberline{(a)}{\ignorespaces {Efecto de la variaci\IeC {\'o}n de D.}}}{115}{table.caption.350}}
+\@writefile{lot}{\contentsline {subtable}{\numberline{(b)}{\ignorespaces {Efecto de la variaci\IeC {\'o}n de L.}}}{115}{table.caption.350}}
+\@writefile{lot}{\contentsline {subtable}{\numberline{(c)}{\ignorespaces {Efecto de la variaci\IeC {\'o}n de la distancia entre parches de esquinas.}}}{115}{table.caption.350}}
+\@writefile{lot}{\contentsline {subtable}{\numberline{(d)}{\ignorespaces {Estructura simulada en HFSS}}}{115}{table.caption.350}}
+\newlabel{fig:ucpbg-efecto-variacion-d}{{4.6(a)}{115}{Subfigure 4 4.6(a)}{subfigure.346}{}}
+\newlabel{sub@fig:ucpbg-efecto-variacion-d}{{(a)}{115}{Subfigure 4 4.6(a)\relax }{subfigure.346}{}}
+\newlabel{fig:ucpbg-efecto-variacion-l}{{4.6(b)}{115}{Subfigure 4 4.6(b)}{subfigure.347}{}}
+\newlabel{sub@fig:ucpbg-efecto-variacion-l}{{(b)}{115}{Subfigure 4 4.6(b)\relax }{subfigure.347}{}}
+\newlabel{fig:ucpbg-efecto-variacion-distancia}{{4.6(c)}{115}{Subfigure 4 4.6(c)}{subfigure.348}{}}
+\newlabel{sub@fig:ucpbg-efecto-variacion-distancia}{{(c)}{115}{Subfigure 4 4.6(c)\relax }{subfigure.348}{}}
+\newlabel{fig:estructura-completa-simulada-hfss}{{4.6(d)}{115}{Subfigure 4 4.6(d)}{subfigure.349}{}}
+\newlabel{sub@fig:estructura-completa-simulada-hfss}{{(d)}{115}{Subfigure 4 4.6(d)\relax }{subfigure.349}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Resultados de la variaci\IeC {\'o}n de par\IeC {\'a}metros, seg\IeC {\'u}n simulaciones de la estructura d) en Ansoft HFSS.\relax }}{115}{figure.caption.345}}
+\newlabel{fig:resultados-ucpbg-hfss}{{4.6}{115}{Resultados de la variación de parámetros, según simulaciones de la estructura d) en Ansoft HFSS.\relax }{figure.caption.345}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Estudio del efecto de la distancia sobre el ancho de banda}{116}{section.351}}
+\newlabel{sec_efecto_distancia}{{4.5}{116}{Estudio del efecto de la distancia sobre el ancho de banda}{section.351}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Estudio del efecto sobre el acoplamiento mutuo}{116}{section.352}}
+\newlabel{sec_estudio_acoplam_mutuo}{{4.6}{116}{Estudio del efecto sobre el acoplamiento mutuo}{section.352}{}}
+\newlabel{fig:abidin1}{{4.4(a)}{117}{Subfigure 4 4.4(a)}{subfigure.337}{}}
+\newlabel{sub@fig:abidin1}{{(a)}{117}{Subfigure 4 4.4(a)\relax }{subfigure.337}{}}
+\newlabel{fig:abidin2}{{4.4(b)}{117}{Subfigure 4 4.4(b)}{subfigure.338}{}}
+\newlabel{sub@fig:abidin2}{{(b)}{117}{Subfigure 4 4.4(b)\relax }{subfigure.338}{}}
+\newlabel{fig:assimonis1}{{4.4(c)}{117}{Subfigure 4 4.4(c)}{subfigure.339}{}}
+\newlabel{sub@fig:assimonis1}{{(c)}{117}{Subfigure 4 4.4(c)\relax }{subfigure.339}{}}
+\newlabel{fig:assimonis2}{{4.4(d)}{117}{Subfigure 4 4.4(d)}{subfigure.340}{}}
+\newlabel{sub@fig:assimonis2}{{(d)}{117}{Subfigure 4 4.4(d)\relax }{subfigure.340}{}}
+\newlabel{fig:assimonis3}{{4.4(e)}{117}{Subfigure 4 4.4(e)}{subfigure.341}{}}
+\newlabel{sub@fig:assimonis3}{{(e)}{117}{Subfigure 4 4.4(e)\relax }{subfigure.341}{}}
+\newlabel{fig:islamalam}{{4.4(f)}{117}{Subfigure 4 4.4(f)}{subfigure.342}{}}
+\newlabel{sub@fig:islamalam}{{(f)}{117}{Subfigure 4 4.4(f)\relax }{subfigure.342}{}}
+\newlabel{fig:kovacs}{{4.4(g)}{117}{Subfigure 4 4.4(g)}{subfigure.343}{}}
+\newlabel{sub@fig:kovacs}{{(g)}{117}{Subfigure 4 4.4(g)\relax }{subfigure.343}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Variaci\IeC {\'o}n del par\IeC {\'a}metro $S_{11}$ del puerto en funci\IeC {\'o}n de distintos par\IeC {\'a}metros del parche \IeC {\'u}nico, y antena optimizada final.\relax }}{117}{figure.caption.336}}
+\newlabel{fig:simulaciones-microstrip-1parche}{{4.4}{117}{Variación del parámetro $S_{11}$ del puerto en función de distintos parámetros del parche único, y antena optimizada final.\relax }{figure.caption.336}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Celda unitaria propuesta por \cite {Abidin:Thesis}.}}}{117}{figure.caption.336}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Celda unitaria propuesta por \cite {Abidin:Thesis}.}}}{117}{figure.caption.336}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Celda unitaria propuesta por \cite {Asimonis:designoptimization}.}}}{117}{figure.caption.336}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {Celda unitaria propuesta por \cite {Asimonis:designoptimization}.}}}{117}{figure.caption.336}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {Celda unitaria propuesta por \cite {Asimonis:designoptimization}.}}}{117}{figure.caption.336}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {Celda unitaria propuesta por \cite {IslamAlam:CompactEBG}.}}}{117}{figure.caption.336}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(g)}{\ignorespaces {Celda unitaria propuesta por \cite {Kovacs:DesignOptimization}.}}}{117}{figure.caption.336}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagrama de dispersi\IeC {\'o}n para una celda unitaria con las caracter\IeC {\'\i }sticas listadas en el cuadro \ref  {table:valores-parametros-finales}. Se observa que no hay un \textit  {bandgap} completo, aunque s\IeC {\'\i } existe para la direcci\IeC {\'o}n de inter\IeC {\'e}s, $\Gamma -X$.\relax }}{118}{figure.caption.344}}
+\newlabel{fig:diag-dispersion-ucbg}{{4.5}{118}{Diagrama de dispersión para una celda unitaria con las características listadas en el cuadro \ref {table:valores-parametros-finales}. Se observa que no hay un \textit {bandgap} completo, aunque sí existe para la dirección de interés, $\Gamma -X$.\relax }{figure.caption.344}{}}
 \abx@aux@cite{Kern:multiband}
 \abx@aux@segm{0}{0}{Kern:multiband}
 \abx@aux@cite{McVay:Hilbert}
 \abx@aux@segm{0}{0}{McVay:Hilbert}
 \abx@aux@segm{0}{0}{Asimonis:designoptimization}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusiones}{111}{chapter.323}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusiones}{119}{chapter.353}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{cap_conclusiones}{{6}{111}{Conclusiones}{chapter.323}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Propuestas de trabajos futuros}{111}{section.324}}
-\@writefile{toc}{\contentsline {chapter}{Ap\IeC {\'e}ndices}{113}{section*.325}}
+\newlabel{cap_conclusiones}{{5}{119}{Conclusiones}{chapter.353}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Propuestas de trabajos futuros}{119}{section.354}}
+\@writefile{toc}{\contentsline {chapter}{Ap\IeC {\'e}ndices}{121}{section*.355}}
 \abx@aux@cite{Agilent_vna_cal}
 \abx@aux@segm{0}{0}{Agilent_vna_cal}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Incertezas en la instrumentaci\IeC {\'o}n}{115}{appendix.326}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Incertezas en la instrumentaci\IeC {\'o}n}{123}{appendix.356}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{apendice_e}{{A}{115}{Incertezas en la instrumentación}{appendix.326}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.1}Analizador vectorial de redes}{115}{section.327}}
+\newlabel{apendice_e}{{A}{123}{Incertezas en la instrumentación}{appendix.356}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}Analizador vectorial de redes}{123}{section.357}}
 \abx@aux@cite{Agilent_vna_err}
 \abx@aux@segm{0}{0}{Agilent_vna_err}
-\@writefile{lof}{\contentsline {figure}{\numberline {A.1}{\ignorespaces Diagrama de flujo de la medici\IeC {\'o}n del coeficiente de reflexi\IeC {\'o}n $\Gamma $ con los errores sistem\IeC {\'a}ticos incluidos.\relax }}{116}{figure.caption.328}}
-\newlabel{fig_apE:1}{{A.1}{116}{Diagrama de flujo de la medición del coeficiente de reflexión $\Gamma $ con los errores sistemáticos incluidos.\relax }{figure.caption.328}{}}
-\newlabel{ec_apE:1}{{A\hspace  {0.2mm}-1}{116}{Analizador vectorial de redes}{equation.329}{}}
-\newlabel{grup_ec_apE:1}{{A\hspace  {0.2mm}-2}{116}{Analizador vectorial de redes}{equation.330}{}}
-\newlabel{ec_apE:2}{{A\hspace  {0.2mm}-2a}{116}{Analizador vectorial de redes}{equation.331}{}}
-\newlabel{ec_apE:3}{{A\hspace  {0.2mm}-2b}{116}{Analizador vectorial de redes}{equation.332}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.1}{\ignorespaces Diagrama de flujo de la medici\IeC {\'o}n del coeficiente de reflexi\IeC {\'o}n $\Gamma $ con los errores sistem\IeC {\'a}ticos incluidos.\relax }}{124}{figure.caption.358}}
+\newlabel{fig_apE:1}{{A.1}{124}{Diagrama de flujo de la medición del coeficiente de reflexión $\Gamma $ con los errores sistemáticos incluidos.\relax }{figure.caption.358}{}}
+\newlabel{ec_apE:1}{{A\hspace  {0.2mm}-1}{124}{Analizador vectorial de redes}{equation.359}{}}
+\newlabel{grup_ec_apE:1}{{A\hspace  {0.2mm}-2}{124}{Analizador vectorial de redes}{equation.360}{}}
+\newlabel{ec_apE:2}{{A\hspace  {0.2mm}-2a}{124}{Analizador vectorial de redes}{equation.361}{}}
+\newlabel{ec_apE:3}{{A\hspace  {0.2mm}-2b}{124}{Analizador vectorial de redes}{equation.362}{}}
 \abx@aux@cite{Agilent_vna_man}
 \abx@aux@segm{0}{0}{Agilent_vna_man}
 \abx@aux@cite{walfram_error_prop}
 \abx@aux@segm{0}{0}{walfram_error_prop}
-\@writefile{lot}{\contentsline {table}{\numberline {A.1}{\ignorespaces Especificaciones de los errores del analizador vectorial de redes Agilent N9923A y sus conversiones a valores lineales.\relax }}{117}{table.caption.333}}
-\newlabel{tabla_apE:1}{{A.1}{117}{Especificaciones de los errores del analizador vectorial de redes Agilent N9923A y sus conversiones a valores lineales.\relax }{table.caption.333}{}}
-\newlabel{ec_apE:4}{{A\hspace  {0.2mm}-3}{117}{Analizador vectorial de redes}{equation.334}{}}
-\newlabel{ec_apE:5}{{A\hspace  {0.2mm}-4}{117}{Analizador vectorial de redes}{equation.335}{}}
-\newlabel{grup_ec_apE:2}{{A\hspace  {0.2mm}-5}{118}{Analizador vectorial de redes}{equation.336}{}}
-\newlabel{ec_apE:6}{{A\hspace  {0.2mm}-5a}{118}{Analizador vectorial de redes}{equation.337}{}}
-\newlabel{ec_apE:7}{{A\hspace  {0.2mm}-5b}{118}{Analizador vectorial de redes}{equation.338}{}}
-\newlabel{grup_ec_apE:3}{{A\hspace  {0.2mm}-6}{118}{Analizador vectorial de redes}{equation.339}{}}
-\newlabel{ec_apE:8}{{A\hspace  {0.2mm}-6a}{118}{Analizador vectorial de redes}{equation.340}{}}
-\newlabel{ec_apE:9}{{A\hspace  {0.2mm}-6b}{118}{Analizador vectorial de redes}{equation.341}{}}
-\newlabel{grup_ec_apE:4}{{A\hspace  {0.2mm}-7}{118}{Analizador vectorial de redes}{equation.342}{}}
-\newlabel{ec_apE:10}{{A\hspace  {0.2mm}-7a}{118}{Analizador vectorial de redes}{equation.343}{}}
-\newlabel{ec_apE:11}{{A\hspace  {0.2mm}-7b}{118}{Analizador vectorial de redes}{equation.344}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {A.1}{\ignorespaces Especificaciones de los errores del analizador vectorial de redes Agilent N9923A y sus conversiones a valores lineales.\relax }}{125}{table.caption.363}}
+\newlabel{tabla_apE:1}{{A.1}{125}{Especificaciones de los errores del analizador vectorial de redes Agilent N9923A y sus conversiones a valores lineales.\relax }{table.caption.363}{}}
+\newlabel{ec_apE:4}{{A\hspace  {0.2mm}-3}{125}{Analizador vectorial de redes}{equation.364}{}}
+\newlabel{ec_apE:5}{{A\hspace  {0.2mm}-4}{125}{Analizador vectorial de redes}{equation.365}{}}
+\newlabel{grup_ec_apE:2}{{A\hspace  {0.2mm}-5}{126}{Analizador vectorial de redes}{equation.366}{}}
+\newlabel{ec_apE:6}{{A\hspace  {0.2mm}-5a}{126}{Analizador vectorial de redes}{equation.367}{}}
+\newlabel{ec_apE:7}{{A\hspace  {0.2mm}-5b}{126}{Analizador vectorial de redes}{equation.368}{}}
+\newlabel{grup_ec_apE:3}{{A\hspace  {0.2mm}-6}{126}{Analizador vectorial de redes}{equation.369}{}}
+\newlabel{ec_apE:8}{{A\hspace  {0.2mm}-6a}{126}{Analizador vectorial de redes}{equation.370}{}}
+\newlabel{ec_apE:9}{{A\hspace  {0.2mm}-6b}{126}{Analizador vectorial de redes}{equation.371}{}}
+\newlabel{grup_ec_apE:4}{{A\hspace  {0.2mm}-7}{126}{Analizador vectorial de redes}{equation.372}{}}
+\newlabel{ec_apE:10}{{A\hspace  {0.2mm}-7a}{126}{Analizador vectorial de redes}{equation.373}{}}
+\newlabel{ec_apE:11}{{A\hspace  {0.2mm}-7b}{126}{Analizador vectorial de redes}{equation.374}{}}
 \abx@aux@cite{Agilent_an_esp_err}
 \abx@aux@segm{0}{0}{Agilent_an_esp_err}
 \abx@aux@cite{LPT_ana_esp_man}
 \abx@aux@segm{0}{0}{LPT_ana_esp_man}
-\newlabel{grup_ec_apE:5}{{A\hspace  {0.2mm}-8}{119}{Analizador vectorial de redes}{equation.345}{}}
-\newlabel{ec_apE:12}{{A\hspace  {0.2mm}-8a}{119}{Analizador vectorial de redes}{equation.346}{}}
-\newlabel{ec_apE:13}{{A\hspace  {0.2mm}-8b}{119}{Analizador vectorial de redes}{equation.347}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.2}Analizador de espectros}{119}{section.348}}
-\@writefile{lot}{\contentsline {table}{\numberline {A.2}{\ignorespaces Cotas de error en la medici\IeC {\'o}n de $G_{fn}\left (\theta _0\right )$.\relax }}{120}{table.caption.349}}
-\newlabel{tabla_apE:2}{{A.2}{120}{Cotas de error en la medición de $G_{fn}\left (\theta _0\right )$.\relax }{table.caption.349}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {B}Incidencia de una onda plana sobre una interfaz}{121}{appendix.350}}
+\newlabel{grup_ec_apE:5}{{A\hspace  {0.2mm}-8}{127}{Analizador vectorial de redes}{equation.375}{}}
+\newlabel{ec_apE:12}{{A\hspace  {0.2mm}-8a}{127}{Analizador vectorial de redes}{equation.376}{}}
+\newlabel{ec_apE:13}{{A\hspace  {0.2mm}-8b}{127}{Analizador vectorial de redes}{equation.377}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.2}Analizador de espectros}{127}{section.378}}
+\@writefile{lot}{\contentsline {table}{\numberline {A.2}{\ignorespaces Cotas de error en la medici\IeC {\'o}n de $G_{fn}\left (\theta _0\right )$.\relax }}{128}{table.caption.379}}
+\newlabel{tabla_apE:2}{{A.2}{128}{Cotas de error en la medición de $G_{fn}\left (\theta _0\right )$.\relax }{table.caption.379}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}Incidencia de una onda plana sobre una interfaz}{129}{appendix.380}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{sec:incidencia-onda-plana-interfaz}{{B}{121}{Incidencia de una onda plana sobre una interfaz}{appendix.350}{}}
-\newlabel{fig:oblique_incidence_parallel}{{B.1(a)}{121}{Subfigure B B.1(a)}{subfigure.353}{}}
-\newlabel{sub@fig:oblique_incidence_parallel}{{(a)}{121}{Subfigure B B.1(a)\relax }{subfigure.353}{}}
-\newlabel{fig:oblique_incidence_perp}{{B.1(b)}{121}{Subfigure B B.1(b)}{subfigure.354}{}}
-\newlabel{sub@fig:oblique_incidence_perp}{{(b)}{121}{Subfigure B B.1(b)\relax }{subfigure.354}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {B.1}{\ignorespaces Incidencia oblicua para los dos casos de polarizaci\IeC {\'o}n analizados.\relax }}{121}{figure.caption.352}}
-\newlabel{fig:oblique_incidence}{{B.1}{121}{Incidencia oblicua para los dos casos de polarización analizados.\relax }{figure.caption.352}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {B.1}{\ignorespaces Campos incidentes, transmitidos y reflejados, y coeficientes de reflexi\IeC {\'o}n y transmisi\IeC {\'o}n para incidencia oblicua de una onda plana sobre una interfaz diel\IeC {\'e}ctrica.\relax }}{122}{table.caption.356}}
-\newlabel{table:incidencia_oblicua}{{B.1}{122}{Campos incidentes, transmitidos y reflejados, y coeficientes de reflexión y transmisión para incidencia oblicua de una onda plana sobre una interfaz dieléctrica.\relax }{table.caption.356}{}}
-\@writefile{lot}{\contentsline {subtable}{\numberline{(a)}{\ignorespaces {Polarizaci\IeC {\'o}n paralela (TM).}}}{122}{table.caption.356}}
-\@writefile{lot}{\contentsline {subtable}{\numberline{(b)}{\ignorespaces {Polarizaci\IeC {\'o}n perpendicular (TE).}}}{122}{table.caption.356}}
-\newlabel{eq:incident_fields}{{B\hspace  {0.2mm}-1}{122}{Incidencia de una onda plana sobre una interfaz}{equation.355}{}}
-\newlabel{eq:continuidad_campos_paralelo}{{B\hspace  {0.2mm}-2}{123}{Incidencia de una onda plana sobre una interfaz}{equation.357}{}}
-\newlabel{eq:continuidad_campos_perpendicular}{{B\hspace  {0.2mm}-3}{123}{Incidencia de una onda plana sobre una interfaz}{equation.358}{}}
-\newlabel{eq:snell_law}{{B\hspace  {0.2mm}-4}{123}{Incidencia de una onda plana sobre una interfaz}{equation.359}{}}
-\newlabel{eq:snell_law_second}{{B\hspace  {0.2mm}-4b}{123}{Incidencia de una onda plana sobre una interfaz}{equation.361}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {B.2}{\ignorespaces \IeC {\'A}ngulo de refracci\IeC {\'o}n en funci\IeC {\'o}n del \IeC {\'a}ngulo de incidencia, seg\IeC {\'u}n la ley de Snell.\relax }}{123}{figure.caption.362}}
-\newlabel{fig:ley_snell}{{B.2}{123}{Ángulo de refracción en función del ángulo de incidencia, según la ley de Snell.\relax }{figure.caption.362}{}}
-\newlabel{fig:coeficiente-reflexion-aire-fr4}{{B.3(a)}{124}{Subfigure B B.3(a)}{subfigure.364}{}}
-\newlabel{sub@fig:coeficiente-reflexion-aire-fr4}{{(a)}{124}{Subfigure B B.3(a)\relax }{subfigure.364}{}}
-\newlabel{fig:coeficiente-transmision-aire-fr4}{{B.3(b)}{124}{Subfigure B B.3(b)}{subfigure.365}{}}
-\newlabel{sub@fig:coeficiente-transmision-aire-fr4}{{(b)}{124}{Subfigure B B.3(b)\relax }{subfigure.365}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {B.3}{\ignorespaces Coeficientes de transmisi\IeC {\'o}n y reflexi\IeC {\'o}n para el caso en que el medio de incidencia es aire, y el medio de transmisi\IeC {\'o}n es FR4.\relax }}{124}{figure.caption.363}}
-\newlabel{fig:coeficientes-aire-fr4}{{B.3}{124}{Coeficientes de transmisión y reflexión para el caso en que el medio de incidencia es aire, y el medio de transmisión es FR4.\relax }{figure.caption.363}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {B.1}\IeC {\'A}ngulo de Brewster y \IeC {\'a}ngulo cr\IeC {\'\i }tico}{124}{section.367}}
-\@writefile{lof}{\contentsline {figure}{\numberline {B.4}{\ignorespaces Comportamiento de los coeficientes de reflexi\IeC {\'o}n y transmisi\IeC {\'o}n para el caso de incidencia FR4-aire.\relax }}{125}{figure.caption.366}}
-\newlabel{fig:coeficientes-fr4-aire}{{B.4}{125}{Comportamiento de los coeficientes de reflexión y transmisión para el caso de incidencia FR4-aire.\relax }{figure.caption.366}{}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Coeficiente de reflexi\IeC {\'o}n entre aire y FR4 en funci\IeC {\'o}n de $\theta _i$.}}}{125}{figure.caption.366}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Coeficiente de transmisi\IeC {\'o}n entre aire y FR4 en funci\IeC {\'o}n de $\theta _i$.}}}{125}{figure.caption.366}}
-\newlabel{eq:Brewster_angle}{{B\hspace  {0.2mm}-5}{125}{Ángulo de Brewster y ángulo crítico}{equation.370}{}}
-\newlabel{fig:Brewster-funcion-epsilon}{{B.5(a)}{126}{Subfigure B B.5(a)}{subfigure.372}{}}
-\newlabel{sub@fig:Brewster-funcion-epsilon}{{(a)}{126}{Subfigure B B.5(a)\relax }{subfigure.372}{}}
-\newlabel{fig:angulo-critico-funcion-epsilon}{{B.5(b)}{126}{Subfigure B B.5(b)}{subfigure.373}{}}
-\newlabel{sub@fig:angulo-critico-funcion-epsilon}{{(b)}{126}{Subfigure B B.5(b)\relax }{subfigure.373}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {B.5}{\ignorespaces \relax }}{126}{figure.caption.371}}
-\newlabel{fig:angulo-critico-epsilon}{{B.5}{126}{\relax }{figure.caption.371}{}}
-\newlabel{eq:angulo_critico}{{B\hspace  {0.2mm}-6}{126}{Ángulo de Brewster y ángulo crítico}{equation.374}{}}
+\newlabel{sec:incidencia-onda-plana-interfaz}{{B}{129}{Incidencia de una onda plana sobre una interfaz}{appendix.380}{}}
+\newlabel{fig:oblique_incidence_parallel}{{B.1(a)}{129}{Subfigure B B.1(a)}{subfigure.383}{}}
+\newlabel{sub@fig:oblique_incidence_parallel}{{(a)}{129}{Subfigure B B.1(a)\relax }{subfigure.383}{}}
+\newlabel{fig:oblique_incidence_perp}{{B.1(b)}{129}{Subfigure B B.1(b)}{subfigure.384}{}}
+\newlabel{sub@fig:oblique_incidence_perp}{{(b)}{129}{Subfigure B B.1(b)\relax }{subfigure.384}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {B.1}{\ignorespaces Incidencia oblicua para los dos casos de polarizaci\IeC {\'o}n analizados.\relax }}{129}{figure.caption.382}}
+\newlabel{fig:oblique_incidence}{{B.1}{129}{Incidencia oblicua para los dos casos de polarización analizados.\relax }{figure.caption.382}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {B.1}{\ignorespaces Campos incidentes, transmitidos y reflejados, y coeficientes de reflexi\IeC {\'o}n y transmisi\IeC {\'o}n para incidencia oblicua de una onda plana sobre una interfaz diel\IeC {\'e}ctrica.\relax }}{130}{table.caption.386}}
+\newlabel{table:incidencia_oblicua}{{B.1}{130}{Campos incidentes, transmitidos y reflejados, y coeficientes de reflexión y transmisión para incidencia oblicua de una onda plana sobre una interfaz dieléctrica.\relax }{table.caption.386}{}}
+\@writefile{lot}{\contentsline {subtable}{\numberline{(a)}{\ignorespaces {Polarizaci\IeC {\'o}n paralela (TM).}}}{130}{table.caption.386}}
+\@writefile{lot}{\contentsline {subtable}{\numberline{(b)}{\ignorespaces {Polarizaci\IeC {\'o}n perpendicular (TE).}}}{130}{table.caption.386}}
+\newlabel{eq:incident_fields}{{B\hspace  {0.2mm}-1}{130}{Incidencia de una onda plana sobre una interfaz}{equation.385}{}}
+\newlabel{eq:continuidad_campos_paralelo}{{B\hspace  {0.2mm}-2}{131}{Incidencia de una onda plana sobre una interfaz}{equation.387}{}}
+\newlabel{eq:continuidad_campos_perpendicular}{{B\hspace  {0.2mm}-3}{131}{Incidencia de una onda plana sobre una interfaz}{equation.388}{}}
+\newlabel{eq:snell_law}{{B\hspace  {0.2mm}-4}{131}{Incidencia de una onda plana sobre una interfaz}{equation.389}{}}
+\newlabel{eq:snell_law_second}{{B\hspace  {0.2mm}-4b}{131}{Incidencia de una onda plana sobre una interfaz}{equation.391}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {B.2}{\ignorespaces \IeC {\'A}ngulo de refracci\IeC {\'o}n en funci\IeC {\'o}n del \IeC {\'a}ngulo de incidencia, seg\IeC {\'u}n la ley de Snell.\relax }}{131}{figure.caption.392}}
+\newlabel{fig:ley_snell}{{B.2}{131}{Ángulo de refracción en función del ángulo de incidencia, según la ley de Snell.\relax }{figure.caption.392}{}}
+\newlabel{fig:coeficiente-reflexion-aire-fr4}{{B.3(a)}{132}{Subfigure B B.3(a)}{subfigure.394}{}}
+\newlabel{sub@fig:coeficiente-reflexion-aire-fr4}{{(a)}{132}{Subfigure B B.3(a)\relax }{subfigure.394}{}}
+\newlabel{fig:coeficiente-transmision-aire-fr4}{{B.3(b)}{132}{Subfigure B B.3(b)}{subfigure.395}{}}
+\newlabel{sub@fig:coeficiente-transmision-aire-fr4}{{(b)}{132}{Subfigure B B.3(b)\relax }{subfigure.395}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {B.3}{\ignorespaces Coeficientes de transmisi\IeC {\'o}n y reflexi\IeC {\'o}n para el caso en que el medio de incidencia es aire, y el medio de transmisi\IeC {\'o}n es FR4.\relax }}{132}{figure.caption.393}}
+\newlabel{fig:coeficientes-aire-fr4}{{B.3}{132}{Coeficientes de transmisión y reflexión para el caso en que el medio de incidencia es aire, y el medio de transmisión es FR4.\relax }{figure.caption.393}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B.1}\IeC {\'A}ngulo de Brewster y \IeC {\'a}ngulo cr\IeC {\'\i }tico}{132}{section.397}}
+\@writefile{lof}{\contentsline {figure}{\numberline {B.4}{\ignorespaces Comportamiento de los coeficientes de reflexi\IeC {\'o}n y transmisi\IeC {\'o}n para el caso de incidencia FR4-aire.\relax }}{133}{figure.caption.396}}
+\newlabel{fig:coeficientes-fr4-aire}{{B.4}{133}{Comportamiento de los coeficientes de reflexión y transmisión para el caso de incidencia FR4-aire.\relax }{figure.caption.396}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Coeficiente de reflexi\IeC {\'o}n entre aire y FR4 en funci\IeC {\'o}n de $\theta _i$.}}}{133}{figure.caption.396}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Coeficiente de transmisi\IeC {\'o}n entre aire y FR4 en funci\IeC {\'o}n de $\theta _i$.}}}{133}{figure.caption.396}}
+\newlabel{eq:Brewster_angle}{{B\hspace  {0.2mm}-5}{133}{Ángulo de Brewster y ángulo crítico}{equation.400}{}}
+\newlabel{fig:Brewster-funcion-epsilon}{{B.5(a)}{134}{Subfigure B B.5(a)}{subfigure.402}{}}
+\newlabel{sub@fig:Brewster-funcion-epsilon}{{(a)}{134}{Subfigure B B.5(a)\relax }{subfigure.402}{}}
+\newlabel{fig:angulo-critico-funcion-epsilon}{{B.5(b)}{134}{Subfigure B B.5(b)}{subfigure.403}{}}
+\newlabel{sub@fig:angulo-critico-funcion-epsilon}{{(b)}{134}{Subfigure B B.5(b)\relax }{subfigure.403}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {B.5}{\ignorespaces \relax }}{134}{figure.caption.401}}
+\newlabel{fig:angulo-critico-epsilon}{{B.5}{134}{\relax }{figure.caption.401}{}}
+\newlabel{eq:angulo_critico}{{B\hspace  {0.2mm}-6}{134}{Ángulo de Brewster y ángulo crítico}{equation.404}{}}
 \abx@aux@segm{0}{0}{Fernandez:Electromag}
-\@writefile{lof}{\contentsline {figure}{\numberline {B.6}{\ignorespaces Ilustraci\IeC {\'o}n del comportamiento de una onda plana durante la incidencia con \IeC {\'a}ngulo critico y con \IeC {\'a}ngulo mayor al $\theta _c$.\relax }}{127}{figure.caption.375}}
-\newlabel{fig:angulo_critico}{{B.6}{127}{Ilustración del comportamiento de una onda plana durante la incidencia con ángulo critico y con ángulo mayor al $\theta _c$.\relax }{figure.caption.375}{}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {\IeC {\'A}ngulo de Brewster en funci\IeC {\'o}n de $\epsilon _2/\epsilon _1$.}}}{127}{figure.caption.375}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {\IeC {\'A}ngulo cr\IeC {\'\i }tico y rango de reflexi\IeC {\'o}n total en funci\IeC {\'o}n de $\epsilon _2/\epsilon _1$.}}}{127}{figure.caption.375}}
+\@writefile{lof}{\contentsline {figure}{\numberline {B.6}{\ignorespaces Ilustraci\IeC {\'o}n del comportamiento de una onda plana durante la incidencia con \IeC {\'a}ngulo critico y con \IeC {\'a}ngulo mayor al $\theta _c$.\relax }}{135}{figure.caption.405}}
+\newlabel{fig:angulo_critico}{{B.6}{135}{Ilustración del comportamiento de una onda plana durante la incidencia con ángulo critico y con ángulo mayor al $\theta _c$.\relax }{figure.caption.405}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {\IeC {\'A}ngulo de Brewster en funci\IeC {\'o}n de $\epsilon _2/\epsilon _1$.}}}{135}{figure.caption.405}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {\IeC {\'A}ngulo cr\IeC {\'\i }tico y rango de reflexi\IeC {\'o}n total en funci\IeC {\'o}n de $\epsilon _2/\epsilon _1$.}}}{135}{figure.caption.405}}
 \abx@aux@segm{0}{0}{Yang:EBGAntennas}
-\@writefile{toc}{\contentsline {chapter}{\numberline {C}Estudio de la aplicaci\IeC {\'o}n de parches carga para el aumento del ancho de banda de una antena \textit  {microstrip}}{129}{appendix.380}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {C}Estudio de la aplicaci\IeC {\'o}n de parches carga para el aumento del ancho de banda de una antena \textit  {microstrip}}{137}{appendix.410}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{sec:parches-carga}{{C}{129}{Estudio de la aplicación de parches carga para el aumento del ancho de banda de una antena \textit {microstrip}}{appendix.380}{}}
+\newlabel{sec:parches-carga}{{C}{137}{Estudio de la aplicación de parches carga para el aumento del ancho de banda de una antena \textit {microstrip}}{appendix.410}{}}
 \abx@aux@cite{Kumar:radiating}
 \abx@aux@segm{0}{0}{Kumar:radiating}
 \abx@aux@cite{Kumar:Non-radiating}
 \abx@aux@segm{0}{0}{Kumar:Non-radiating}
 \abx@aux@segm{0}{0}{Kumar:Non-radiating}
 \abx@aux@segm{0}{0}{Kumar:Non-radiating}
-\@writefile{lof}{\contentsline {figure}{\numberline {C.1}{\ignorespaces Estructura propuesta para la caracterizaci\IeC {\'o}n del efecto de EBGs sobre antenas microstrip.\relax }}{131}{figure.caption.381}}
-\newlabel{fig:antena-propuesta-con-ebg}{{C.1}{131}{Estructura propuesta para la caracterización del efecto de EBGs sobre antenas microstrip.\relax }{figure.caption.381}{}}
-\newlabel{fig:unparche-concarga-sinebg-varAnchoLprima}{{C.2(a)}{133}{Subfigure C C.2(a)}{subfigure.383}{}}
-\newlabel{sub@fig:unparche-concarga-sinebg-varAnchoLprima}{{(a)}{133}{Subfigure C C.2(a)\relax }{subfigure.383}{}}
-\newlabel{fig:unparche-concarga-sinebg-varDistanciaCarga}{{C.2(b)}{133}{Subfigure C C.2(b)}{subfigure.384}{}}
-\newlabel{sub@fig:unparche-concarga-sinebg-varDistanciaCarga}{{(b)}{133}{Subfigure C C.2(b)\relax }{subfigure.384}{}}
-\newlabel{fig:unparche-concarga-sinebg-varAltoWprima}{{C.2(c)}{133}{Subfigure C C.2(c)}{subfigure.385}{}}
-\newlabel{sub@fig:unparche-concarga-sinebg-varAltoWprima}{{(c)}{133}{Subfigure C C.2(c)\relax }{subfigure.385}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {C.2}{\ignorespaces Variaci\IeC {\'o}n del par\IeC {\'a}metro $S_{11}$ del puerto en funci\IeC {\'o}n de distintos par\IeC {\'a}metros del parche \IeC {\'u}nico, y antena optimizada final.\relax }}{133}{figure.caption.382}}
-\newlabel{fig:simulaciones-microstrip-1parchecargado}{{C.2}{133}{Variación del parámetro $S_{11}$ del puerto en función de distintos parámetros del parche único, y antena optimizada final.\relax }{figure.caption.382}{}}
-\@writefile{toc}{\contentsline {chapter}{Bibliograf\'{\i }a}{135}{dummy.386}}
-\@writefile{toc}{\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{135}{appendix*.387}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.1}{\ignorespaces Estructura propuesta para la caracterizaci\IeC {\'o}n del efecto de EBGs sobre antenas microstrip.\relax }}{139}{figure.caption.411}}
+\newlabel{fig:antena-propuesta-con-ebg}{{C.1}{139}{Estructura propuesta para la caracterización del efecto de EBGs sobre antenas microstrip.\relax }{figure.caption.411}{}}
+\newlabel{fig:unparche-concarga-sinebg-varAnchoLprima}{{C.2(a)}{141}{Subfigure C C.2(a)}{subfigure.413}{}}
+\newlabel{sub@fig:unparche-concarga-sinebg-varAnchoLprima}{{(a)}{141}{Subfigure C C.2(a)\relax }{subfigure.413}{}}
+\newlabel{fig:unparche-concarga-sinebg-varDistanciaCarga}{{C.2(b)}{141}{Subfigure C C.2(b)}{subfigure.414}{}}
+\newlabel{sub@fig:unparche-concarga-sinebg-varDistanciaCarga}{{(b)}{141}{Subfigure C C.2(b)\relax }{subfigure.414}{}}
+\newlabel{fig:unparche-concarga-sinebg-varAltoWprima}{{C.2(c)}{141}{Subfigure C C.2(c)}{subfigure.415}{}}
+\newlabel{sub@fig:unparche-concarga-sinebg-varAltoWprima}{{(c)}{141}{Subfigure C C.2(c)\relax }{subfigure.415}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.2}{\ignorespaces Variaci\IeC {\'o}n del par\IeC {\'a}metro $S_{11}$ del puerto en funci\IeC {\'o}n de distintos par\IeC {\'a}metros del parche \IeC {\'u}nico, y antena optimizada final.\relax }}{141}{figure.caption.412}}
+\newlabel{fig:simulaciones-microstrip-1parchecargado}{{C.2}{141}{Variación del parámetro $S_{11}$ del puerto en función de distintos parámetros del parche único, y antena optimizada final.\relax }{figure.caption.412}{}}
+\@writefile{toc}{\contentsline {chapter}{Bibliograf\'{\i }a}{143}{dummy.416}}
+\@writefile{toc}{\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{143}{appendix*.417}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \abx@aux@refcontextdefaultsdone
@@ -770,6 +816,7 @@
 \abx@aux@defaultrefcontext{0}{Yang:EBGAntennas}{none/global//global/global}
 \abx@aux@defaultrefcontext{0}{Maci:Pole-zero-matching}{none/global//global/global}
 \abx@aux@defaultrefcontext{0}{Yang:UCPBG}{none/global//global/global}
+\abx@aux@defaultrefcontext{0}{CPaul:InductanceLoopAndPartial}{none/global//global/global}
 \abx@aux@defaultrefcontext{0}{JohnsBeurle:TLM}{none/global//global/global}
 \abx@aux@defaultrefcontext{0}{ThummWiesbeck:CharacteristicImpedance}{none/global//global/global}
 \abx@aux@defaultrefcontext{0}{Tesche:EMC}{none/global//global/global}
