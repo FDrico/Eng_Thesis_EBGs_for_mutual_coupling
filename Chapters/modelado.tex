@@ -660,7 +660,7 @@ Queda aún por explicar el comportamiento de la transferencia entre las dos frec
 	\label{fig:modelo-circuital-todojunto-sinR}
 \end{figure}
 
-Se puede observar que se agregaron las capacidades de las secciones de las esquinas ($C_w$), y se ubicaron en un nodo intermedio, entre la capacidad de gap $C_g$ y la capacidad del bloque central $C_c$, que ahora queda redefinida, dado que deja de representar a toda la superficie de la cara superior de la celda unitaria, para restringirse al cuadro central. Este cuadro, además, ahora presenta inductancia $L_c$. Además, se tuvo en cuenta la capacidad contra el plano de tierra del puente, $C_b$. Finalmente, se consideró el efecto de aquellas esquinas que no poseen una celda vecina, lo que aumenta la capacidad de la esquina (debido al efecto de \textit{fringe}) y la inductancia a considerar. Estos nuevos valores están representados por $C'_w$ y $L'_w$.
+Se puede observar que se agregaron las capacidades de las secciones de las esquinas ($C_w$), y se ubicaron en un nodo intermedio, entre la capacidad de gap $C_g$ y la capacidad del bloque central $C_c$, que ahora queda redefinida, dado que deja de representar a toda la superficie de la cara superior de la celda unitaria, para restringirse al cuadro central. Este cuadro, además, ahora presenta inductancia $L_c$. Además, se tuvo en cuenta la capacidad contra el plano de tierra del puente, $C_b$. Finalmente, se consideró el efecto de aquellas esquinas que no poseen una celda vecina, lo que aumenta la capacidad de la esquina (debido al efecto de \textit{fringe}) y la inductancia a considerar. Estos nuevos valores están representados por $C'_w$ y $L'_w$, y resultan importantes debido a que esta capacidad e inductancia resuenan a la frecuencia de interés, generando un camino de baja impedancia para la corriente y disminuyendo, por tanto, la transferencia.
 
 El comportamiento del parámetro S21 se puede observar en la figura \ref{fig:s21-total-sin-R}. En la misma, se destaca que la frecuencia de resonancia, asi como los efectos para frecuencias cercanas a $6\; GHz$, se predicen adecuadamente, aunque no así los efectos de orden superior para esas frecuencias.
 
@@ -688,13 +688,13 @@ Para el caso de las pérdidas dieléctricas, las pérdidas se representan como u
 Dicha conductancia puede ser calculada en base a la tangente de pérdidas del material, que es un parámetro ofrecido por el fabricante, y que fue definido en la ecuación \ref{eq:tan_perdidas}. El uso de una tangente de pérdidas asume la existencia de una impedancia imaginaria entre la capa superior y el plano de tierra en una celda unitaria, de manera que esta tangente representa la relación entre las partes real e imaginaria:
 
 \begin{align}
-	\tan(\delta) = X/R = \frac{1/\omega C}{R} = \frac{G}{\omega C}, \\
-	G = \omega C \tan(\delta) = \frac{1}{R_p}
+	\tan(\delta) &= X/R = \frac{1/\omega C}{R} = \frac{G}{\omega C}, \\
+	G &= \omega C \tan(\delta) = \frac{1}{R_p}
 \end{align}
 
 Para el caso de FR-4, la tangente de pérdidas posee el valor de 0.017.
 
-El circuito final, considerando resistencias, se puede observar en la figura \ref{fig:circuito-final-con-resistencias}.
+El circuito final, considerando resistencias, se puede observar en la figura \ref{fig:modelo-circuital-todojunto-conR}.
 
 \begin{figure}[h]
 	\centering
@@ -716,7 +716,7 @@ Los valores finales de los parámetros utilizados para modelar la celda unitaria
 
 \begin{table}
 	\centering
-	\begin{tabular}{|c c||c c|}
+	\begin{tabular}{| c c | c c |}
 		\hline 
 		$L_b$ & $6.9\; nH$ & $C_g$ & $155\; fF$\\
 		\hline
