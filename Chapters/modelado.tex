@@ -88,7 +88,7 @@ Reordenando e imponiendo la condición de Bloch-Floquet, que indica, expresado d
 \begin{align}
 	\begin{bmatrix}
 		1 & -j \omega C_p \\
-		-\frac{L_p}{2} + \frac{j \omega L_b}{1-\omega^2 L_b C_g} + \frac{L_p}{2} & 1
+		-\frac{L_p}{2} - \frac{j \omega L_b}{1-\omega^2 L_b C_g} - \frac{L_p}{2} & 1
 	\end{bmatrix}
 	\begin{bmatrix}
 		i_n \\
@@ -120,7 +120,7 @@ Lo que se reduce a:
 \begin{align}
 	\begin{bmatrix}
 		1-e^{-\gamma a} & -j \omega C_p \\
-		-\frac{L_p}{2} + \frac{j \omega L_b}{1-\omega^2 L_b C_g} + \frac{L_p}{2} & 1-e^{-\gamma a}
+		-\frac{L_p}{2} - \frac{j \omega L_b}{1-\omega^2 L_b C_g} - \frac{L_p}{2} & 1-e^{-\gamma a}
 	\end{bmatrix}
 	\begin{bmatrix}
 		i_n \\
@@ -132,7 +132,7 @@ Lo que se reduce a:
 Para obtener soluciones más allá de la trivial, el determinante de la matriz debe ser cero, por lo que resulta la ecuación de dispersión:
 
 \begin{align}
-	1+e^{-2\gamma a} - 2 e^{-\gamma a} - j \omega C_p L_p - \frac{\omega^2 C_p L_b}{1-\omega^2 L_b C_g} = 0
+	1+e^{-2\gamma a} - 2 e^{-\gamma a} + j \omega C_p L_p - \frac{\omega^2 C_p L_b}{1-\omega^2 L_b C_g} = 0
 \end{align}
 
 %POdría poner un gráfico.
@@ -549,8 +549,8 @@ Se observa que los valores son disimiles entre sí, por lo que, en el circuito, 
 Finalmente, la capacidad contra el plano de tierra, $C_p$ se calculó utilizando la noción de capacitor de placas planas paralelas, debido a la corta distancia entre las celdas unitarias y el plano de tierra (según la tabla \ref{table:CeldaUnitariaAnalisisiCircuital}, $h=1.6\;mm$). El área total resulta:
 
 \begin{align}
-	Sup = l^2+4 d_w^2+4 \frac{d-l}{2} w - 4 \left(\frac{l-w-2 d_l}{2}\right)^2 \\
-	C_{p} = \frac{Sup\; \epsilon_0 \epsilon_r}{h}
+	Sup &= l^2+4 d_w^2+4 \frac{d-l}{2} w - 4 \left(\frac{l-w-2 d_l}{2}\right)^2 \\
+	C_{p} &= \frac{Sup\; \epsilon_0 \epsilon_r}{h}
 \end{align}
 
 Además, se utilizó el software de simulación \textit{Q3D Extractor} para obtener un resultado comparativo. Los resultados se muestran en la tabla \ref{table:Cp-modelo1-circuital}, en donde se observa que la aproximación de placas planas paralelas ofrece un valor cercano al simulado utilizando BEM, incluso cuando no considera los efectos de \textit{fringing} en los bordes.
@@ -676,9 +676,9 @@ Por último, resta considerar las pérdidas por conductividad y las pérdidas di
 Las pérdidas por conductividad pueden ser representadas por una resistencia representando el comportamiento en corriente continua y otra en corriente alterna. Para la corriente continua, la resistencia que impone una cinta \textit{microstrip} depende de su largo $l$ y la superficie que es atravesada por el flujo, $S$. Para el caso de corriente alterna, debido al efecto \textit{skin} descripto en la ecuación \ref{eq:prof_penetacion}, se debe tener en cuenta la profundidad de penetración $\delta_s$, de manera que
 
 \begin{align}
-R_{dc} = \frac{l}{\sigma S}, \\
-R_{ac} = \frac{l}{\sigma(2 w \delta_s+2 t \delta_s)} = \frac{l}{2\sigma \delta_s(w +t)} = \frac{l \sqrt{2 \pi f \mu \sigma}}{2 \sqrt{2}\sigma \delta_s(w +t)}, \\
-R_s = R_{dc} + R_{ac} = \frac{l}{\sigma} (\frac{1}{\sigma} + \frac{\sqrt{\pi f \mu \sigma}}{2 (w+t)})
+R_{dc} &= \frac{l}{\sigma S}, \\
+R_{ac} &= \frac{l}{\sigma(2 w \delta_s+2 t \delta_s)} = \frac{l}{2\sigma \delta_s(w +t)} = \frac{l \sqrt{2 \pi f \mu \sigma}}{2 \sqrt{2}\sigma \delta_s(w +t)}, \\
+R_s &= R_{dc} + R_{ac} = \frac{l}{\sigma} (\frac{1}{\sigma} + \frac{\sqrt{\pi f \mu \sigma}}{2 (w+t)})
 \end{align}
 
 donde $w$ es el ancho de la cinta \textit{microstrip} considerada, $t$ es su ancho vertical, y $f$ es la frecuencia a la que se desea encontrar la resistencia que modela el efecto en corriente alterna. El valor de la conductividad del cobre, $\sigma$, es de $5.7\;10^{-7}$.
