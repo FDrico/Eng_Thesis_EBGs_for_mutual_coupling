@@ -125,7 +125,7 @@ lo que resulta en la matriz de transferencia
 	\right]
 \end{align}
 
-Aplicando los mismos pasos que en la sección \ref{sec:diag-de-dispersion}, considerando el teorema de Bloch-Floquet, se obtiene
+Aplicando los mismos pasos que en la sección \ref{sec:diag-de-dispersion}, considerando el teorema de Bloch-Floquet, que indica que $i_{n+1} = i_{n} e^{-\gamma a}$, y que $v_{n+1} = v_{n} e^{-\gamma a}$:
 
 \begin{align}
 	\left[
@@ -221,129 +221,18 @@ Una segunda forma de obtener el diagrama de radiación consiste en utilizar el a
 En base al modelo circuital de la figura \ref{fig:circuito-equivalente-kim-parches} se lo analiza como una única línea de transmisión formada por trozos infinitesimales que cumplen con el circuito equivalente propuesto, entonces la impedancia y admitancia por unidad de longitud se pueden expresar como:
 
 \begin{align}
-	Z' = j\omega L_p + \frac{\left(j\omega L_w + \frac{1}{j\omega C_g}\right)^2}{2\left( j\omega L_w + \frac{1}{j\omega C_g}\right)} \\
+	Z' = j\omega L_p + \frac{j\omega L_b}{1-\omega^2 L_b C_g} \\
 	Y' = j\omega C_p
 \end{align}
 
 Según la ecuación \ref{eq:gamma-tl}, es posible describir el valor de la constante compleja de propagación de una onda electromagnética sobre la línea en base a su impedancia y admitancia. De esta forma:
 
 \begin{align}
-	\gamma = \sqrt{-ZY} = \sqrt{\omega^2 L_c C_c - \frac{-j\omega^3 L_w^2 C_p}{den}}
+	\gamma = \sqrt{-ZY} = \omega \sqrt{C_p \left( L_p + \frac{L_b}{1-\omega^2 L_b C_g}\right)}
 \end{align}
 
-Para el caso unidimensional, si se intentara obtener una expresión de la ecuación de dispersión utilizando un acercamiento circuital de parámetros concentrados, , considerando el circuito de la figura \ref{fig:circuito-equivalente-kim-parches}, donde se demarcaron las tensiones y corrientes a considerar, alrededor de una celda unitaria determinada ($n$). A partir del planteo de las ecuaciones circuitales, y considerando que las tensiones y corrientes tienen un comportamiento armónico:
-
-\begin{align}
-	v_n - v_{n+1} = i_n \left( j \omega \frac{L_p}{2} + \frac{j \omega L_b}{1-\omega^2 L_b C_g} + j \omega \frac{L_p}{2} \right) \\
-	\frac{i_n - i_{n+1}}{j\omega C_p} = v_n
-\end{align}
-
-Reordenando e imponiendo la condición de Bloch-Floquet, que indica, expresado de forma conveniente, que $i_{n+1} = i_{n} e^{-\gamma a}$, y que $v_{n+1} = v_{n} e^{-\gamma a}$:
-
-\begin{align}
-	\begin{bmatrix}
-		1 & -j \omega C_p \\
-		-\frac{L_p}{2} - \frac{j \omega L_b}{1-\omega^2 L_b C_g} - \frac{L_p}{2} & 1
-	\end{bmatrix}
-	\begin{bmatrix}
-		i_n \\
-		v_n
-	\end{bmatrix}
-	=
-	\begin{bmatrix}
-		i_{n+1} \\
-		v_{n+1}
-	\end{bmatrix}
-	=
-	\begin{bmatrix}
-		i_n e^{-j\gamma a} \\
-		v_n e^{-j\gamma a}
-	\end{bmatrix}
-	=
-	\begin{bmatrix}
-		1 & 0 \\
-		0 & 1
-	\end{bmatrix}
-	\begin{bmatrix}
-		i_n e^{-j\gamma a} \\
-		v_n e^{-j\gamma a}
-	\end{bmatrix}
-\end{align}
-
-Lo que se reduce a:
-
-\begin{align}
-	\begin{bmatrix}
-		1-e^{-j\gamma a} & -j \omega C_p \\
-		-\frac{L_p}{2} - \frac{j \omega L_b}{1-\omega^2 L_b C_g} - \frac{L_p}{2} & 1-e^{-j\gamma a}
-	\end{bmatrix}
-	\begin{bmatrix}
-		i_n \\
-		v_n
-	\end{bmatrix}
-	=0
-\end{align}
-
-Para obtener soluciones más allá de la trivial, el determinante de la matriz debe ser cero, por lo que resulta la ecuación de dispersión:
-
-\begin{align}
-	\label{eq:dispersion-teorica}
-	1+e^{-2j\gamma a} - 2 e^{-j\gamma a} - j \omega C_p L_p + \frac{\omega^2 C_p L_b}{1-\omega^2 L_b C_g} = 0.
-\end{align}
-
-Cuando $\gamma$ es puramente imaginario (es decir, $\alpha = 0$, y por tanto, $\gamma=-j\beta$), la onda se propaga libremente. Cuando $\beta = 0$, $\gamma$ es puramente real y la onda no viaja sobre la superficie, sino que, por el contrario, manifiesta un comportamiento evanescente.
-
-La expresión \ref{eq:dispersion-teorica} se puede reformular, utilizando la fórmula de Euler, para obtener las ecuaciones para la parte real y la parte imaginaria por separado.
-
-Si se considera únicamente la parte imaginaria, resulta
-
-\begin{align}
-\label{eq:ec-dispersion-imag}
--e^{-2\alpha a} \sin(2j\beta a) + j 2e^{-\alpha a} \sin(j\beta a) = j \omega C_p L_p,
-\end{align}
-
-cuya gráfica se observa en la figura \ref{fig:ec-dispersion-imag}, para los valores circuitales y geométricos expresados en la tabla \ref{table:diag-disp-teorico}. En la misma se observa que, para las frecuencias de interés, no existen limitaciones: Cualquiera sea la frecuencia de trabajo, existirá algún $\beta$ que, según la expresión para la parte imaginaria analizada, permita la propagación de ondas sobre la superficie. Se debe tener en cuenta que ambas expresiones (la asociada a la parte real y la correspondiente a la parte imaginaria) deben cumplirse.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=1\textwidth]{Modelado/subplots-diagdisp-imag.pdf}
-	\caption{Gráficas de la expresión \ref{eq:ec-dispersion-imag}.}
-	\label{fig:ec-dispersion-imag}
-\end{figure}
-
-\begin{table}
-	\centering
-	\begin{tabular}{| c c | c c | c c | c c |} 
-		$g$ & $4\; mm$ & $ag$ & $20\; mm$ & $b$ & $17\; mm$ & $w$ & $1\; mm$\\
-		\hline
-		$C_p$ & $7\; pF$ & $L_p$ & $2\; nH$ & $C_g$ & $731\; fF$ & $L_b$ & $1.85\; nH$\\
-	\end{tabular}
-	\caption{Tabla de valores finales elegidos.}
-	\label{table:valoresFinalesModelo}
-\end{table}
-
-
-De la misma manera, la expresión para la parte imaginaria resulta
-
-\begin{align}
-	\label{eq:ec-dispersion-real}
-	1+e^{-2\alpha a} \cos(2j\beta a) - 2e^{-\alpha a} \cos(j\beta a) = -\frac{\omega^2 L_b C_p}{1-\omega^2 L_b C_g},
-\end{align}
-
-cuyas gráficas, para ambas expresiones a cada lado del igual, se muestran en la figura \ref{fig:ec-dispersion-real} para $\alpha = 0$. Resulta importante notar que, bajo la restricción de pérdidas nulas, valores de frecuencia por encima de aproximadamente $0.7\; GHz$ no son realizables, pues no existe valor de $\beta$ que permita que el lado izquierdo de la ecuación \ref{eq:ec-dispersion-real} resulte menor a -0.5. Para cualquier frecuencia de fuente menor a dicho valor, existirá al menos un $\beta$ que asegure su propagación.
-
-Por encima de dicha frecuencia, no existirá propagación pura. Si se consideraran pérdidas ($\alpha>0$), los cosenos graficados estarían afectados por el producto con exponenciales negativas, por lo que la amplitud de los cosenos de la gráfica izquierda de la figura \ref{fig:ec-dispersion-real} disminuiría, aumentando aún más la zona de frecuencias prohibidas, volviendo el valor umbral menor a $0.7\; GHz$.
 
 Resulta necesario aclarar, sin embargo, que en el circuito propuesto se puede observar únicamente el comportamiento de los modos cuasi-TEM sobre las celdas unitarias de la estructura periódica, pues es a partir de los mismos que se obtienen las expresiones y disposiciones de capacidades e inductancias utilizadas en el modelo. Esto significa que existirán modos superiores, pero que no pueden ser predichos por el modelo cuasiestático planteado.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=1\textwidth]{Modelado/subplots-diagdisp-real.pdf}
-	\caption{Gráficas de la expresión \ref{eq:ec-dispersion-real}.}
-	\label{fig:ec-dispersion-real}
-\end{figure}
-
-
 
 
 
