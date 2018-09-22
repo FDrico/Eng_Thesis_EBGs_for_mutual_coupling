@@ -83,6 +83,33 @@ Si bien existen múltiples procedimientos posibles para lograr una expresión de
 
 El primer método requiere que se divida a cada celda unitaria en trozos de línea de transmisión de impedancias diferentes, en función de su ancho, como se muestra en la figura \ref{fig:division_en_trozos_impedancia}.
 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Fundamentos/circuito-equivalente-celda-unitaria-divisionImpedancias.pdf}
+	\caption{Líneas de transmisión requeridas para el análisis de la ecuación de dispersión.}
+	\label{fig:division_en_trozos_impedancia}
+\end{figure}
+
+De esta manera, en función de los ángulos $\theta$ y $\phi$, que representan la fase entre la entrada y salida de cada una de las líneas, se puede plantear que:
+
+\begin{align}
+\left[
+\begin{matrix}\cos{\left (\frac{\theta}{2} \right )} & j \sin{\left (\frac{\theta}{2} \right )}\\
+j \sin{\left (\frac{\theta}{2} \right )} & \cos{\left (\frac{\theta}{2} \right )}
+\end{matrix}
+\right]
+\end{align}
+
+
+
+
+
+
+
+
+
+
 Para el caso unidimensional, si se intentara obtener una expresión de la ecuación de dispersión utilizando un acercamiento circuital de parámetros concentrados, , considerando el circuito de la figura \ref{fig:circuito-equivalente-kim-parches}, donde se demarcaron las tensiones y corrientes a considerar, alrededor de una celda unitaria determinada ($n$). A partir del planteo de las ecuaciones circuitales, y considerando que las tensiones y corrientes tienen un comportamiento armónico:
 
 \begin{align}

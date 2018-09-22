@@ -761,14 +761,64 @@ Z_{in} = \frac{V(-l)}{I(-l)} = Z_0 \frac{Z_L +Z_0 \tanh \gamma l}{Z_0 + Z_L \tan
 
 En la figura \ref{fig:Zin-Gamma-funcionDistancia-TL} se puede observar una gráfica de $\Gamma$ y $Z_{in}$ en función de la distancia a la carga, para una línea de impedancia característica $Z_0$ de $50 \; \Omega$, con una carga de $100 \; \Omega$, considerando pérdidas y constante de propagación arbitrarias.
 
-
-
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=0.8\textwidth]{intro_electro/Zin-Gamma-funcionDistancia-TL.pdf}
 	\caption{Impedancia de entrada y coeficiente de reflexión en función de la distancia a la carga, en una línea de transmisión de $50 \Omega$.}
 	\label{fig:Zin-Gamma-funcionDistancia-TL}
 \end{figure}
+
+En base a este análisis, resulta útil conocer la matriz de transferencia $ABCD$ que corresponde a una línea de transmisión ideal. La misma relaciona las tensiones y corrientes en un nodo con las de otro de forma que
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{intro_electro/lineaTransmision-d.pdf}
+	\caption{Línea de transmisión con carga.}
+	\label{fig:Zin-Gamma-funcionDistancia-TL}
+\end{figure}
+
+\begin{align}
+\begin{bmatrix}
+A & B \\
+C & D
+\end{bmatrix}
+\begin{bmatrix}
+i_n \\
+v_n
+\end{bmatrix}
+=
+\begin{bmatrix}
+i_{n+1} \\
+v_{n+1}
+\end{bmatrix}.
+\end{align}
+
+La deducción de los componentes de la matriz de transferencia requiere del análisis de las ondas incidentes y reflejadas que inciden sobre terminales ubicados a una distancia $d$ de la carga, que puede ser un cortocircuito (para obtener los valores de $B$ y $D$) o un abierto (de donde se pueden deducir los valores de $A$ y $C$).
+
+Dado que la tensión reflejada vista a distancia $d$ de la carga, $V^{-}(d)$, se calcula como $-Z_0 I^{-}$, y que la tensión total sobre dicho nodo resulta de la suma de ambas tensiones (la incidente y la reflejada), para el caso de una carga cortocircuito ($Z_L = 0$), donde la tensión sobre la carga es $V_{n+1} = 0$, resulta que:
+
+\begin{align}
+	\Gamma = -1 \implies V(d) = V_n e^{-j\gamma d} - V_n e^{j\gamma d} = 2 j V_n \sin(\gamma d) = B \\
+	I_n (d) = I_n e^{-j\gamma d} + I_n e^{j\gamma d} = 2 I_n \cos(\gamma d) = D.
+\end{align}
+
+De forma similar, para el caso de una carga de tipo circuito abierto, $Z_L \rightarrow \infty$, $\Gamma = 1$ y
+
+\begin{align}
+V(d) = V_n e^{-j\gamma d} + V_n e^{j\gamma d} = 2 V_n \cos(\gamma d) = A \\
+I_n (d) = I_n e^{-j\gamma d} - I_n e^{j\gamma d} = 2 j I_n \sin(\gamma d) = C.
+\end{align}
+
+En forma normalizada, la matriz resulta \cite{Pozar:MwEngineering}
+
+\begin{align}
+\begin{bmatrix}
+\cos(\gamma d) & \sin(\gamma d) \\
+\sin(\gamma d) & \cos(\gamma d)
+\end{bmatrix}
+\end{align}
+
+
 % Venkateswaran, cap 1.
 %%%%
 \subsection{Línea \textit{microstrip}}
