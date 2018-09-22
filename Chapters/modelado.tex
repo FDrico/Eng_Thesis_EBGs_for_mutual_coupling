@@ -76,10 +76,17 @@ donde $a$ es el tamaño de la celda unitaria, $h$ es el ancho del dieléctrico y
 %	\label{fig:linea-transm-cargada-periodica}
 %\end{figure}
 
-Para el caso unidimensional, resulta sencillo obtener una expresión de la ecuación de dispersión, utilizando un acercamiento circuital, considerando el circuito de la figura \ref{fig:circuito-equivalente-kim-parches}, donde se demarcaron las tensiones y corrientes a considerar, alrededor de una celda unitaria determinada ($n$). A partir del planteo de las ecuaciones circuitales, y considerando que las tensiones y corrientes tienen un comportamiento armónico:
+
+El análisis de la expresión de dispersión no se puede realizar utilizando el acercamiento circuital propuesto, debido a que cada nodo del circuito posee una fase establecida por los parámetros concentrados.
+
+Si bien existen múltiples procedimientos posibles para lograr una expresión de dispersión, en este trabajo se analizarán solo dos para la estructura de la figura \ref{fig:circuito-equivalente-kim-parches}: la explicada en la sección \ref{sec:diag-de-dispersion}, y una evaluación en base al planteo de líneas de transmisión generalizadas, utilizando los conceptos desarrollados en la sección \ref{sec_lineas_de_transmision}.
+
+El primer método requiere que se divida a cada celda unitaria en trozos de línea de transmisión de impedancias diferentes, en función de su ancho, como se muestra en la figura \ref{fig:division_en_trozos_impedancia}.
+
+Para el caso unidimensional, si se intentara obtener una expresión de la ecuación de dispersión utilizando un acercamiento circuital de parámetros concentrados, , considerando el circuito de la figura \ref{fig:circuito-equivalente-kim-parches}, donde se demarcaron las tensiones y corrientes a considerar, alrededor de una celda unitaria determinada ($n$). A partir del planteo de las ecuaciones circuitales, y considerando que las tensiones y corrientes tienen un comportamiento armónico:
 
 \begin{align}
-	v_n - v_{n+1} = i_n \left( \frac{L_p}{2} + \frac{j \omega L_b}{1-\omega^2 L_b C_g} + \frac{L_p}{2} \right) \\
+	v_n - v_{n+1} = i_n \left( j \omega \frac{L_p}{2} + \frac{j \omega L_b}{1-\omega^2 L_b C_g} + j \omega \frac{L_p}{2} \right) \\
 	\frac{i_n - i_{n+1}}{j\omega C_p} = v_n
 \end{align}
 
@@ -101,8 +108,8 @@ Reordenando e imponiendo la condición de Bloch-Floquet, que indica, expresado d
 	\end{bmatrix}
 	=
 	\begin{bmatrix}
-		i_n e^{-\gamma a} \\
-		v_n e^{-\gamma a}
+		i_n e^{-j\gamma a} \\
+		v_n e^{-j\gamma a}
 	\end{bmatrix}
 	=
 	\begin{bmatrix}
@@ -110,8 +117,8 @@ Reordenando e imponiendo la condición de Bloch-Floquet, que indica, expresado d
 		0 & 1
 	\end{bmatrix}
 	\begin{bmatrix}
-		i_n e^{-\gamma a} \\
-		v_n e^{-\gamma a}
+		i_n e^{-j\gamma a} \\
+		v_n e^{-j\gamma a}
 	\end{bmatrix}
 \end{align}
 
@@ -119,8 +126,8 @@ Lo que se reduce a:
 
 \begin{align}
 	\begin{bmatrix}
-		1-e^{-\gamma a} & -j \omega C_p \\
-		-\frac{L_p}{2} - \frac{j \omega L_b}{1-\omega^2 L_b C_g} - \frac{L_p}{2} & 1-e^{-\gamma a}
+		1-e^{-j\gamma a} & -j \omega C_p \\
+		-\frac{L_p}{2} - \frac{j \omega L_b}{1-\omega^2 L_b C_g} - \frac{L_p}{2} & 1-e^{-j\gamma a}
 	\end{bmatrix}
 	\begin{bmatrix}
 		i_n \\
@@ -132,10 +139,66 @@ Lo que se reduce a:
 Para obtener soluciones más allá de la trivial, el determinante de la matriz debe ser cero, por lo que resulta la ecuación de dispersión:
 
 \begin{align}
-	1+e^{-2\gamma a} - 2 e^{-\gamma a} + j \omega C_p L_p - \frac{\omega^2 C_p L_b}{1-\omega^2 L_b C_g} = 0
+	\label{eq:dispersion-teorica}
+	1+e^{-2j\gamma a} - 2 e^{-j\gamma a} - j \omega C_p L_p + \frac{\omega^2 C_p L_b}{1-\omega^2 L_b C_g} = 0.
 \end{align}
 
-%POdría poner un gráfico.
+Cuando $\gamma$ es puramente imaginario (es decir, $\alpha = 0$, y por tanto, $\gamma=-j\beta$), la onda se propaga libremente. Cuando $\beta = 0$, $\gamma$ es puramente real y la onda no viaja sobre la superficie, sino que, por el contrario, manifiesta un comportamiento evanescente.
+
+La expresión \ref{eq:dispersion-teorica} se puede reformular, utilizando la fórmula de Euler, para obtener las ecuaciones para la parte real y la parte imaginaria por separado.
+
+Si se considera únicamente la parte imaginaria, resulta
+
+\begin{align}
+\label{eq:ec-dispersion-imag}
+-e^{-2\alpha a} \sin(2j\beta a) + j 2e^{-\alpha a} \sin(j\beta a) = j \omega C_p L_p,
+\end{align}
+
+cuya gráfica se observa en la figura \ref{fig:ec-dispersion-imag}, para los valores circuitales y geométricos expresados en la tabla \ref{table:diag-disp-teorico}. En la misma se observa que, para las frecuencias de interés, no existen limitaciones: Cualquiera sea la frecuencia de trabajo, existirá algún $\beta$ que, según la expresión para la parte imaginaria analizada, permita la propagación de ondas sobre la superficie. Se debe tener en cuenta que ambas expresiones (la asociada a la parte real y la correspondiente a la parte imaginaria) deben cumplirse.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/subplots-diagdisp-imag.pdf}
+	\caption{Gráficas de la expresión \ref{eq:ec-dispersion-imag}.}
+	\label{fig:ec-dispersion-imag}
+\end{figure}
+
+\begin{table}
+	\centering
+	\begin{tabular}{| c c | c c | c c | c c |} 
+		$g$ & $4\; mm$ & $ag$ & $20\; mm$ & $b$ & $17\; mm$ & $w$ & $1\; mm$\\
+		\hline
+		$C_p$ & $7\; pF$ & $L_p$ & $2\; nH$ & $C_g$ & $731\; fF$ & $L_b$ & $1.85\; nH$\\
+	\end{tabular}
+	\caption{Tabla de valores finales elegidos.}
+	\label{table:valoresFinalesModelo}
+\end{table}
+
+
+De la misma manera, la expresión para la parte imaginaria resulta
+
+\begin{align}
+	\label{eq:ec-dispersion-real}
+	1+e^{-2\alpha a} \cos(2j\beta a) - 2e^{-\alpha a} \cos(j\beta a) = -\frac{\omega^2 L_b C_p}{1-\omega^2 L_b C_g},
+\end{align}
+
+cuyas gráficas, para ambas expresiones a cada lado del igual, se muestran en la figura \ref{fig:ec-dispersion-real} para $\alpha = 0$. Resulta importante notar que, bajo la restricción de pérdidas nulas, valores de frecuencia por encima de aproximadamente $0.7\; GHz$ no son realizables, pues no existe valor de $\beta$ que permita que el lado izquierdo de la ecuación \ref{eq:ec-dispersion-real} resulte menor a -0.5. Para cualquier frecuencia de fuente menor a dicho valor, existirá al menos un $\beta$ que asegure su propagación.
+
+Por encima de dicha frecuencia, no existirá propagación pura. Si se consideraran pérdidas ($\alpha>0$), los cosenos graficados estarían afectados por el producto con exponenciales negativas, por lo que la amplitud de los cosenos de la gráfica izquierda de la figura \ref{fig:ec-dispersion-real} disminuiría, aumentando aún más la zona de frecuencias prohibidas, volviendo el valor umbral menor a $0.7\; GHz$.
+
+Resulta necesario aclarar, sin embargo, que en el circuito propuesto se puede observar únicamente el comportamiento de los modos cuasi-TEM sobre las celdas unitarias de la estructura periódica, pues es a partir de los mismos que se obtienen las expresiones y disposiciones de capacidades e inductancias utilizadas en el modelo. Esto significa que existirán modos superiores, pero que no pueden ser predichos por el modelo cuasiestático planteado.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/subplots-diagdisp-real.pdf}
+	\caption{Gráficas de la expresión \ref{eq:ec-dispersion-real}.}
+	\label{fig:ec-dispersion-real}
+\end{figure}
+
+
+
+
+
 
 Para el caso de las superficies de alta impedancia sin vías de conexión entre la geometría superior y el plano de tierra inferior, Tretyakov y otros (\cite{Tretyakov:AnalyticalModeling}, \cite{Yakovlev:AnalyticalModelingHIS}) han propuesto un análisis centrado en la similitud con las FSS (\textit{Frequency Selective Surfaces}), considerando a las superficies EBG uniplanares como FSS con un plano de tierra. De esta manera es posible utilizar los modelos desarrollados durante el siglo \textsc{XX} para el análisis de las superficies selectoras de frecuencias, en el estudio de EBGs, dado que el comportamiento de banda prohibida se da por el mismo motivo que el comportamiento de filtro de las FSS \cite{Goussetis:TailoringAMCEBGCharacteristics}, relacionado a la frecuencia de resonancia del arreglo de elementos. Para ello, se considera el circuito equivalente de la figura \ref{fig:tretyankov-circuito-equivalente}, donde $Z_g$ es la impedancia que impone la FSS que se dispone sobre el plano dieléctrico, y $Z_d$ es la impedancia del conjunto formado por el dieléctrico y el plano conductor. De esta forma, la impedancia de superficie resulta del paralelo de ambas. La impedancia del conjunto dieléctrico-plano conductor fue analizada en el capítulo anterior, y depende de la polarización (TE o TM). La impedancia que impone el arreglo periódico bidimensional, la FSS, requiere de un análisis particular de cada caso, y los resultados analíticos en la literatura están limitados a arreglos de rectángulos, dipolos y cruces, y sus correspondientes estructuras complementarias.
 
