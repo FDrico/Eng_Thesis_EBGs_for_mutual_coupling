@@ -729,7 +729,7 @@ Considerando una línea de transmisión que representa un comportamiento puramen
 
 \begin{align}
 	\label{eq:gamma-tl}
-	\gamma = -j\alpha + \beta = \sqrt{-(R+j\omega L)(G+j\omega C)}	
+	\gamma = -j\alpha + \beta = \sqrt{-ZY} = \sqrt{-(R+j\omega L)(G+j\omega C)}	
 \end{align}
 
  Las ecuaciones de onda tienen como solución la superposición de una onda en dirección $+z$ y otra en dirección $-z$, tanto para la tensión como para la corriente, con velocidad de fase $\omega/\beta$. La relación entre las componentes de onda que viajan en dirección positiva se conoce como impedancia característica, $Z_0$, definida, según los parámetros de una línea de transmisión, en la ecuación \ref{eq:TL-impedancia-caracteristica}.
@@ -812,6 +812,7 @@ I_n (d) = I_n e^{-j\gamma d} - I_n e^{j\gamma d} = 2 j I_n \sin(\gamma d) = C.
 En forma normalizada, la matriz resulta \cite{Pozar:MwEngineering}
 
 \begin{align}
+\label{eq:matriz_transferencia_lineaideal}
 \begin{bmatrix}
 \cos(\gamma d) & \sin(\gamma d) \\
 \sin(\gamma d) & \cos(\gamma d)

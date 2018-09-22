@@ -86,29 +86,150 @@ El primer método requiere que se divida a cada celda unitaria en trozos de lín
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Fundamentos/circuito-equivalente-celda-unitaria-divisionImpedancias.pdf}
+	\includegraphics[width=0.5\textwidth]{Fundamentos/circuito-equivalente-celda-unitaria-divisionImpedancias.pdf}
 	\caption{Líneas de transmisión requeridas para el análisis de la ecuación de dispersión.}
 	\label{fig:division_en_trozos_impedancia}
 \end{figure}
 
-De esta manera, en función de los ángulos $\theta$ y $\phi$, que representan la fase entre la entrada y salida de cada una de las líneas, se puede plantear que:
+De esta manera, en función de los ángulos $\theta$ y $\phi$, que representan la fase entre la entrada y salida de cada una de las líneas, se puede plantear, en base a la expresión \ref{eq:matriz_transferencia_lineaideal} que:
 
 \begin{align}
-\left[
-\begin{matrix}\cos{\left (\frac{\theta}{2} \right )} & j \sin{\left (\frac{\theta}{2} \right )}\\
-j \sin{\left (\frac{\theta}{2} \right )} & \cos{\left (\frac{\theta}{2} \right )}
-\end{matrix}
-\right]
+	\left[
+		\begin{matrix}
+			\cos{\left (\frac{\theta}{2} \right )} & j \sin{\left (\frac{\theta}{2} \right )}\\
+			j \sin{\left (\frac{\theta}{2} \right )} & \cos{\left (\frac{\theta}{2} \right )}
+		\end{matrix}
+	\right]
+	\left[
+		\begin{matrix}
+			\cos{\left (\phi \right )} & j \sin{\left (\phi \right )}\\
+			j\sin{\left (\phi \right )} & \cos{\left (\phi \right )}
+		\end{matrix}
+	\right]
+	\left[
+		\begin{matrix}
+			\cos{\left (\frac{\theta}{2} \right )} & j \sin{\left (\frac{\theta}{2} \right )}\\
+			j \sin{\left (\frac{\theta}{2} \right )} & \cos{\left (\frac{\theta}{2} \right )}
+		\end{matrix}
+	\right],
 \end{align}
 
+lo que resulta en la matriz de transferencia
 
+\begin{align}
+	\left[
+		\begin{matrix}
+			- 2 \sin{\left (\phi \right )} \sin{\left (\phi + \frac{\theta}{2} \right )} + \cos{\left (\frac{\theta}{2} \right )} & j \left(2 \sin{\left (\phi \right )} \cos{\left (\phi + \frac{\theta}{2} \right )} + \sin{\left (\frac{\theta}{2} \right )}\right)\\
+			j \left(2 \sin{\left (\phi \right )} \cos{\left (\phi + \frac{\theta}{2} \right )} + \sin{\left (\frac{\theta}{2} \right )}\right) & - 2\sin{\left (\phi \right )} \sin{\left (\phi + \frac{\theta}{2} \right )} + \cos{\left (\frac{\theta}{2} \right )}
+		\end{matrix}
+	\right]
+\end{align}
 
+Aplicando los mismos pasos que en la sección \ref{sec:diag-de-dispersion}, considerando el teorema de Bloch-Floquet, se obtiene
 
+\begin{align}
+	\left[
+		\begin{matrix}
+			\cos{\left (2 \phi + \frac{\theta}{2} \right )} - e^{-j a \gamma} & j \left(2 \sin{\left (\phi \right )} \cos{\left (\phi + \frac{\theta}{2} \right )} + \sin{\left (\frac{\theta}{2} \right )}\right)\\
+			j \left(2 \sin{\left (\phi \right )} \cos{\left (\phi + \frac{\theta}{2} \right )} + \sin{\left (\frac{\theta}{2} \right )}\right) & \cos{\left (2 \phi + \frac{\theta}{2} \right )} - e^{- j a \gamma}
+		\end{matrix}
+	\right].
+\end{align}
 
+Esta matriz de transferencia es tal que 
 
+\begin{align}
+\begin{bmatrix}
+A & B \\
+C & D
+\end{bmatrix}
+\begin{bmatrix}
+i_n \\
+v_n
+\end{bmatrix}
+=
+\begin{bmatrix}
+i_{n+1} \\
+v_{n+1}
+\end{bmatrix}
+	=
+\begin{bmatrix}
+i_n e^{-j\gamma a} \\
+v_n e^{-j\gamma a}
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 & 0 \\
+0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+i_n e^{-j\gamma a} \\
+v_n e^{-j\gamma a}
+\end{bmatrix}.
+\end{align}
 
+Lo que se reduce a
 
+\begin{align}
+\begin{bmatrix}
+A & B \\
+C & D
+\end{bmatrix}
+\begin{bmatrix}
+i_n \\
+v_n
+\end{bmatrix}
+=0.
+\end{align}
 
+Para que la solución no sea la trivial, el determinante se debe anular, de forma que
+
+\begin{align}
+	\left(- e^{j a \gamma} \cos{\left (2 \phi + \frac{\theta}{2} \right )} + 1\right)^{2} e^{- 2 j a \gamma} + \sin^{2}{\left (2 \phi + \frac{\theta}{2} \right )} = 0.
+\end{align}
+
+Desarrollando el cuadrado, aplicando la identidad $\cos^2(x)+\sin^2(x)=1$ y despejando $\cos(2\phi+\theta/2)$, resulta
+
+\begin{align}
+	\cosh(\gamma a) = \cosh(\alpha d)\cos(\beta d) -j \sinh(\alpha d) \sin(\beta d) = \cos(2\phi+\theta/2)
+\end{align}
+
+Dado que la expresión de la derecha es real, también lo debe ser el coseno hiperbólico, expresado en la ecuación del centro. Esto sólo se puede dar si $\sinh(\alpha d) = 0$ o si $\sin(\beta d) = 0$, lo que significa que $\alpha$ o $\beta$ deben ser $0$ o múltiplos de $\pi$.
+
+En el caso en que $\alpha = 0$ y $\beta \neq 0,n\pi$, la onda existente es propagante sobre la estructura periódica. Esto se da si
+
+\begin{align}
+	\cos(\beta d) = \cos(2\phi + \theta/2) \implies \pm \beta d = 2\phi + \theta/2,
+\end{align}
+
+ecuación que es satisfecha para infinitos valores de $\beta$, exceptuando $\beta=0,n\pi$, dado que resultan valores prohibidos por la hipótesis.
+
+En el caso en que $\alpha \neq 0$ y $\beta = 0,n\pi$, la expresión resulta
+
+\begin{align}
+\cosh(\alpha d) = \cos(2\phi + \theta/2),
+\end{align}
+
+que tiene solución si $|\cos(2\phi + \theta/2)| \geq 1$, lo cual genera soluciones separadas cada $n\pi$, dado que es en esos valores en que el coseno obtiene módulo 1. Esto demuestra que los \textit{bandgaps} producidos se deben principalmente a un efecto de difracción de Bragg, dado que la suma de las fases en cada tramo de las líneas de transmisión que dan lugar a la celda unitaria debe ser múltiplo de $\pi$.
+
+Para finalmente obtener el diagrama de radiación resulta necesario vincular los valores de $\phi$ y $\theta$ con la frecuencia angular $\omega$, a través de la velocidad de propagación del medio, que será distinta para cada tramo de línea.
+
+%%%%%% HASCER UN gRÄFICO
+
+Una segunda forma de obtener el diagrama de radiación consiste en utilizar el análisis de líneas de transmisión generalizadas de la sección \ref{sec_lineas_de_transmision}.
+
+En base al modelo circuital de la figura \ref{fig:circuito-equivalente-kim-parches} se lo analiza como una única línea de transmisión formada por trozos infinitesimales que cumplen con el circuito equivalente propuesto, entonces la impedancia y admitancia por unidad de longitud se pueden expresar como:
+
+\begin{align}
+	Z' = j\omega L_p + \frac{\left(j\omega L_w + \frac{1}{j\omega C_g}\right)^2}{2\left( j\omega L_w + \frac{1}{j\omega C_g}\right)} \\
+	Y' = j\omega C_p
+\end{align}
+
+Según la ecuación \ref{eq:gamma-tl}, es posible describir el valor de la constante compleja de propagación de una onda electromagnética sobre la línea en base a su impedancia y admitancia. De esta forma:
+
+\begin{align}
+	\gamma = \sqrt{-ZY} = \sqrt{\omega^2 L_c C_c - \frac{-j\omega^3 L_w^2 C_p}{den}}
+\end{align}
 
 Para el caso unidimensional, si se intentara obtener una expresión de la ecuación de dispersión utilizando un acercamiento circuital de parámetros concentrados, , considerando el circuito de la figura \ref{fig:circuito-equivalente-kim-parches}, donde se demarcaron las tensiones y corrientes a considerar, alrededor de una celda unitaria determinada ($n$). A partir del planteo de las ecuaciones circuitales, y considerando que las tensiones y corrientes tienen un comportamiento armónico:
 
