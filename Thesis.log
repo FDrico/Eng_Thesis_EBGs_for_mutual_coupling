@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.18)  23 SEP 2018 19:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.18)  23 SEP 2018 19:51
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -4215,12 +4215,12 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 221.
  [62]
-<Figures/Modelado/diagDisp-coshcos.pdf, id=6433, 987.20822pt x 408.47723pt>
+<Figures/Modelado/diagDisp-coshcos.pdf, id=6433, 987.20822pt x 408.50851pt>
 File: Figures/Modelado/diagDisp-coshcos.pdf Graphic file (type pdf)
 <use Figures/Modelado/diagDisp-coshcos.pdf>
 Package pdftex.def Info: Figures/Modelado/diagDisp-coshcos.pdf  used on input l
 ine 232.
-(pdftex.def)             Requested size: 417.47307pt x 172.73727pt.
+(pdftex.def)             Requested size: 417.47307pt x 172.7505pt.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 245.
 Package babel Info: Redefining spanish shorthand >>
@@ -4234,12 +4234,12 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 245.
  [63 <./Figures/Modelado/diagDisp-coshcos.pdf>]
-<Figures/Modelado/diagDisp-calculado.pdf, id=6471, 987.1407pt x 405.03972pt>
+<Figures/Modelado/diagDisp-calculado.pdf, id=6471, 987.1407pt x 407.03857pt>
 File: Figures/Modelado/diagDisp-calculado.pdf Graphic file (type pdf)
 <use Figures/Modelado/diagDisp-calculado.pdf>
 Package pdftex.def Info: Figures/Modelado/diagDisp-calculado.pdf  used on input
  line 273.
-(pdftex.def)             Requested size: 417.47307pt x 171.29597pt.
+(pdftex.def)             Requested size: 417.47307pt x 172.14131pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -5098,14 +5098,6 @@ File: Figures/Modelado/diagDisp-vs-S21.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figures/Modelado/diagDisp-vs-S21.pdf  used on input li
 ne 838.
 (pdftex.def)             Requested size: 417.47307pt x 201.02838pt.
-
-LaTeX Warning: Reference `modelo-circuital-resonancia-serie-graficos' on page 9
-4 undefined on input line 839.
-
-
-LaTeX Warning: Reference `modelo-circuital-resonancia-serie-graficos' on page 9
-4 undefined on input line 839.
-
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 841.
 Package babel Info: Redefining spanish shorthand >>
@@ -5119,7 +5111,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 841.
 [94 <./Figures/Modelado/composicion.pdf>]
-<Figures/Fundamentos/circuito-equivalente-celda-YANG-5.pdf, id=18871, 213.96956
+<Figures/Fundamentos/circuito-equivalente-celda-YANG-5.pdf, id=18873, 213.96956
 pt x 104.0988pt>
 File: Figures/Fundamentos/circuito-equivalente-celda-YANG-5.pdf Graphic file (t
 ype pdf)
@@ -5149,7 +5141,7 @@ isp-vs-S21.pdf
 pdfTeX warning: pdflatex.exe (file ./Figures/Modelado/diagDisp-vs-S21.pdf): PDF
  inclusion: multiple pdfs with page group included in a single page
 >]
-<Figures/Modelado/69-70.pdf, id=18920, 625.85822pt x 403.39587pt>
+<Figures/Modelado/69-70.pdf, id=18922, 625.85822pt x 403.39587pt>
 File: Figures/Modelado/69-70.pdf Graphic file (type pdf)
 <use Figures/Modelado/69-70.pdf>
 Package pdftex.def Info: Figures/Modelado/69-70.pdf  used on input line 859.
@@ -5189,7 +5181,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 883.
  [97 <./Figures/Modelado/69-70.pdf>]
-<Figures/Fundamentos/circuito-equivalente-celda-YANG-4.pdf, id=18999, 214.11926
+<Figures/Fundamentos/circuito-equivalente-celda-YANG-4.pdf, id=19001, 214.11926
 pt x 104.0988pt>
 File: Figures/Fundamentos/circuito-equivalente-celda-YANG-4.pdf Graphic file (t
 ype pdf)
@@ -5197,7 +5189,7 @@ ype pdf)
 Package pdftex.def Info: Figures/Fundamentos/circuito-equivalente-celda-YANG-4.
 pdf  used on input line 891.
 (pdftex.def)             Requested size: 417.47307pt x 202.98703pt.
-<Figures/Modelado/con-sin-R.pdf, id=19001, 625.85822pt x 403.39587pt>
+<Figures/Modelado/con-sin-R.pdf, id=19003, 625.85822pt x 403.39587pt>
 File: Figures/Modelado/con-sin-R.pdf Graphic file (type pdf)
 <use Figures/Modelado/con-sin-R.pdf>
 Package pdftex.def Info: Figures/Modelado/con-sin-R.pdf  used on input line 900
@@ -5207,7 +5199,7 @@ Package pdftex.def Info: Figures/Modelado/con-sin-R.pdf  used on input line 900
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/Modelado/67-68.pdf, id=19004, 625.85822pt x 403.39587pt>
+<Figures/Modelado/67-68.pdf, id=19006, 625.85822pt x 403.39587pt>
 File: Figures/Modelado/67-68.pdf Graphic file (type pdf)
 <use Figures/Modelado/67-68.pdf>
 Package pdftex.def Info: Figures/Modelado/67-68.pdf  used on input line 934.
@@ -5284,7 +5276,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 955.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 955.
-<Figures/Modelado/ProcedimientoUsuario.pdf, id=19112, 462.45888pt x 230.88086pt
+<Figures/Modelado/ProcedimientoUsuario.pdf, id=19114, 462.45888pt x 230.88086pt
 >
 File: Figures/Modelado/ProcedimientoUsuario.pdf Graphic file (type pdf)
 <use Figures/Modelado/ProcedimientoUsuario.pdf>
@@ -5304,7 +5296,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 968.
  [101 <./Figures/Modelado/ProcedimientoUsuario.pdf>]
-<Figures/Modelado/TiposDePixel.pdf, id=19185, 583.81578pt x 506.87978pt>
+<Figures/Modelado/TiposDePixel.pdf, id=19187, 583.81578pt x 506.87978pt>
 File: Figures/Modelado/TiposDePixel.pdf Graphic file (type pdf)
 <use Figures/Modelado/TiposDePixel.pdf>
 Package pdftex.def Info: Figures/Modelado/TiposDePixel.pdf  used on input line 
@@ -5333,7 +5325,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 989.
 [102]
-<Figures/Modelado/Modelo-Pixeles.pdf, id=19201, 431.27585pt x 252.73499pt>
+<Figures/Modelado/Modelo-Pixeles.pdf, id=19203, 431.27585pt x 252.73499pt>
 File: Figures/Modelado/Modelo-Pixeles.pdf Graphic file (type pdf)
 <use Figures/Modelado/Modelo-Pixeles.pdf>
 Package pdftex.def Info: Figures/Modelado/Modelo-Pixeles.pdf  used on input lin
@@ -5356,7 +5348,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1007.
 [103 <./Figures/Modelado/TiposDePixel.pdf>]
-<Figures/Modelado/ProcesoCfringe.pdf, id=20626, 389.44366pt x 247.4369pt>
+<Figures/Modelado/ProcesoCfringe.pdf, id=20628, 389.44366pt x 247.4369pt>
 File: Figures/Modelado/ProcesoCfringe.pdf Graphic file (type pdf)
 <use Figures/Modelado/ProcesoCfringe.pdf>
 Package pdftex.def Info: Figures/Modelado/ProcesoCfringe.pdf  used on input lin
@@ -5380,7 +5372,7 @@ e.pdf
 pdfTeX warning: pdflatex.exe (file ./Figures/Modelado/ProcesoCfringe.pdf): PDF 
 inclusion: multiple pdfs with page group included in a single page
 >]
-<Figures/Modelado/ProcesoProfundidad.pdf, id=21039, 422.73576pt x 389.99297pt>
+<Figures/Modelado/ProcesoProfundidad.pdf, id=21041, 422.73576pt x 389.99297pt>
 File: Figures/Modelado/ProcesoProfundidad.pdf Graphic file (type pdf)
 <use Figures/Modelado/ProcesoProfundidad.pdf>
 Package pdftex.def Info: Figures/Modelado/ProcesoProfundidad.pdf  used on input
@@ -5399,7 +5391,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1038.
  [105 <./Figures/Modelado/ProcesoProfundidad.pdf>]
-<Figures/Modelado/esquema-matriz-s.pdf, id=21755, 82.70793pt x 39.89624pt>
+<Figures/Modelado/esquema-matriz-s.pdf, id=21757, 82.70793pt x 39.89624pt>
 File: Figures/Modelado/esquema-matriz-s.pdf Graphic file (type pdf)
 <use Figures/Modelado/esquema-matriz-s.pdf>
 Package pdftex.def Info: Figures/Modelado/esquema-matriz-s.pdf  used on input l
@@ -5422,7 +5414,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1092.
 [106]
-<Figures/Modelado/TLM-progresion.pdf, id=21770, 532.83705pt x 428.81349pt>
+<Figures/Modelado/TLM-progresion.pdf, id=21772, 532.83705pt x 428.81349pt>
 File: Figures/Modelado/TLM-progresion.pdf Graphic file (type pdf)
 <use Figures/Modelado/TLM-progresion.pdf>
 Package pdftex.def Info: Figures/Modelado/TLM-progresion.pdf  used on input lin
@@ -5445,7 +5437,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1108.
 [107 <./Figures/Modelado/esquema-matriz-s.pdf>]
-<Figures/Modelado/AcoplamientoCapacitivoGeneral.pdf, id=21788, 230.43076pt x 24
+<Figures/Modelado/AcoplamientoCapacitivoGeneral.pdf, id=21790, 230.43076pt x 24
 5.71483pt>
 File: Figures/Modelado/AcoplamientoCapacitivoGeneral.pdf Graphic file (type pdf
 )
@@ -5470,7 +5462,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1121.
 [108 <./Figures/Modelado/TLM-progresion.pdf>]
-<Figures/Modelado/AcoplamientoCapacitivoDebil.pdf, id=27104, 331.3592pt x 83.51
+<Figures/Modelado/AcoplamientoCapacitivoDebil.pdf, id=27106, 331.3592pt x 83.51
 035pt>
 File: Figures/Modelado/AcoplamientoCapacitivoDebil.pdf Graphic file (type pdf)
 <use Figures/Modelado/AcoplamientoCapacitivoDebil.pdf>
@@ -5496,7 +5488,7 @@ pdfTeX warning: pdflatex.exe (file ./Figures/Modelado/AcoplamientoCapacitivoDeb
 il.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 
 >]
-<Figures/Modelado/ConceptoMatrizProgresoTiempo.pdf, id=27167, 421.9907pt x 484.
+<Figures/Modelado/ConceptoMatrizProgresoTiempo.pdf, id=27169, 421.9907pt x 484.
 73424pt>
 File: Figures/Modelado/ConceptoMatrizProgresoTiempo.pdf Graphic file (type pdf)
 
@@ -5592,14 +5584,14 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 15.
  [113]
-<Figures/Aplicacion/foto-ebg-alrededor-antena.pdf, id=34104, 167.01897pt x 167.
+<Figures/Aplicacion/foto-ebg-alrededor-antena.pdf, id=34106, 167.01897pt x 167.
 91232pt>
 File: Figures/Aplicacion/foto-ebg-alrededor-antena.pdf Graphic file (type pdf)
 <use Figures/Aplicacion/foto-ebg-alrededor-antena.pdf>
 Package pdftex.def Info: Figures/Aplicacion/foto-ebg-alrededor-antena.pdf  used
  on input line 25.
 (pdftex.def)             Requested size: 166.98668pt x 167.88115pt.
-<Figures/Aplicacion/foto-escalon-alrededor-antena.pdf, id=34105, 167.2418pt x 1
+<Figures/Aplicacion/foto-escalon-alrededor-antena.pdf, id=34107, 167.2418pt x 1
 67.91232pt>
 File: Figures/Aplicacion/foto-escalon-alrededor-antena.pdf Graphic file (type p
 df)
@@ -5669,28 +5661,28 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 68.
  [116]
-<Figures/Aplicacion/VariacionLargo-UnParche.pdf, id=34160, 465.50279pt x 324.26
+<Figures/Aplicacion/VariacionLargo-UnParche.pdf, id=34162, 465.50279pt x 324.26
 173pt>
 File: Figures/Aplicacion/VariacionLargo-UnParche.pdf Graphic file (type pdf)
 <use Figures/Aplicacion/VariacionLargo-UnParche.pdf>
 Package pdftex.def Info: Figures/Aplicacion/VariacionLargo-UnParche.pdf  used o
 n input line 75.
 (pdftex.def)             Requested size: 200.38528pt x 139.58319pt.
-<Figures/Aplicacion/VariacionAncho-UnParche.pdf, id=34161, 465.44958pt x 320.23
+<Figures/Aplicacion/VariacionAncho-UnParche.pdf, id=34163, 465.44958pt x 320.23
 628pt>
 File: Figures/Aplicacion/VariacionAncho-UnParche.pdf Graphic file (type pdf)
 <use Figures/Aplicacion/VariacionAncho-UnParche.pdf>
 Package pdftex.def Info: Figures/Aplicacion/VariacionAncho-UnParche.pdf  used o
 n input line 78.
 (pdftex.def)             Requested size: 200.38528pt x 137.86993pt.
-<Figures/Aplicacion/VariacionInset-UnParche.pdf, id=34162, 465.42072pt x 320.21
+<Figures/Aplicacion/VariacionInset-UnParche.pdf, id=34164, 465.42072pt x 320.21
 338pt>
 File: Figures/Aplicacion/VariacionInset-UnParche.pdf Graphic file (type pdf)
 <use Figures/Aplicacion/VariacionInset-UnParche.pdf>
 Package pdftex.def Info: Figures/Aplicacion/VariacionInset-UnParche.pdf  used o
 n input line 81.
 (pdftex.def)             Requested size: 200.38528pt x 137.86984pt.
-<Figures/Aplicacion/antena-optimizada.PNG, id=34163, 390.70969pt x 362.85562pt>
+<Figures/Aplicacion/antena-optimizada.PNG, id=34165, 390.70969pt x 362.85562pt>
 
 File: Figures/Aplicacion/antena-optimizada.PNG Graphic file (type png)
 <use Figures/Aplicacion/antena-optimizada.PNG>
@@ -5719,7 +5711,7 @@ pdfTeX warning: pdflatex.exe (file ./Figures/Aplicacion/VariacionAncho-UnParche
 pdfTeX warning: pdflatex.exe (file ./Figures/Aplicacion/VariacionInset-UnParche
 .pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./Figures/Aplicacion/antena-optimizada.PNG>]
-<Figures/Aplicacion/FarfieldResults.pdf, id=34407, 1201.63786pt x 807.45427pt>
+<Figures/Aplicacion/FarfieldResults.pdf, id=34409, 1201.63786pt x 807.45427pt>
 File: Figures/Aplicacion/FarfieldResults.pdf Graphic file (type pdf)
 <use Figures/Aplicacion/FarfieldResults.pdf>
 Package pdftex.def Info: Figures/Aplicacion/FarfieldResults.pdf  used on input 
@@ -5797,43 +5789,43 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 163.
  [120]
-<Figures/Aplicacion/abidin1.png, id=34480, 393.72093pt x 386.19281pt>
+<Figures/Aplicacion/abidin1.png, id=34482, 393.72093pt x 386.19281pt>
 File: Figures/Aplicacion/abidin1.png Graphic file (type png)
 <use Figures/Aplicacion/abidin1.png>
 Package pdftex.def Info: Figures/Aplicacion/abidin1.png  used on input line 171
 .
 (pdftex.def)             Requested size: 125.24318pt x 122.84761pt.
-<Figures/Aplicacion/abidin2.png, id=34483, 399.74344pt x 397.485pt>
+<Figures/Aplicacion/abidin2.png, id=34485, 399.74344pt x 397.485pt>
 File: Figures/Aplicacion/abidin2.png Graphic file (type png)
 <use Figures/Aplicacion/abidin2.png>
 Package pdftex.def Info: Figures/Aplicacion/abidin2.png  used on input line 175
 .
 (pdftex.def)             Requested size: 125.24318pt x 124.5352pt.
-<Figures/Aplicacion/assimonis1.png, id=34486, 596.2275pt x 603.75563pt>
+<Figures/Aplicacion/assimonis1.png, id=34488, 596.2275pt x 603.75563pt>
 File: Figures/Aplicacion/assimonis1.png Graphic file (type png)
 <use Figures/Aplicacion/assimonis1.png>
 Package pdftex.def Info: Figures/Aplicacion/assimonis1.png  used on input line 
 178.
 (pdftex.def)             Requested size: 125.24318pt x 126.82005pt.
-<Figures/Aplicacion/assimonis2.png, id=34489, 599.23875pt x 603.75563pt>
+<Figures/Aplicacion/assimonis2.png, id=34491, 599.23875pt x 603.75563pt>
 File: Figures/Aplicacion/assimonis2.png Graphic file (type png)
 <use Figures/Aplicacion/assimonis2.png>
 Package pdftex.def Info: Figures/Aplicacion/assimonis2.png  used on input line 
 182.
 (pdftex.def)             Requested size: 125.24318pt x 126.18439pt.
-<Figures/Aplicacion/assimonis3.png, id=34492, 595.47469pt x 598.48593pt>
+<Figures/Aplicacion/assimonis3.png, id=34494, 595.47469pt x 598.48593pt>
 File: Figures/Aplicacion/assimonis3.png Graphic file (type png)
 <use Figures/Aplicacion/assimonis3.png>
 Package pdftex.def Info: Figures/Aplicacion/assimonis3.png  used on input line 
 185.
 (pdftex.def)             Requested size: 125.24318pt x 125.8684pt.
-<Figures/Aplicacion/islamalam.png, id=34495, 409.53pt x 411.03563pt>
+<Figures/Aplicacion/islamalam.png, id=34497, 409.53pt x 411.03563pt>
 File: Figures/Aplicacion/islamalam.png Graphic file (type png)
 <use Figures/Aplicacion/islamalam.png>
 Package pdftex.def Info: Figures/Aplicacion/islamalam.png  used on input line 1
 89.
 (pdftex.def)             Requested size: 125.24318pt x 125.70122pt.
-<Figures/Aplicacion/kovacs.png, id=34498, 477.28313pt x 478.03593pt>
+<Figures/Aplicacion/kovacs.png, id=34500, 477.28313pt x 478.03593pt>
 File: Figures/Aplicacion/kovacs.png Graphic file (type png)
 <use Figures/Aplicacion/kovacs.png>
 Package pdftex.def Info: Figures/Aplicacion/kovacs.png  used on input line 192.
@@ -5856,7 +5848,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 202.
 [121]
-<Figures/Aplicacion/UCPBG-D15-L4-DP04.pdf, id=34516, 1127.14986pt x 547.7345pt>
+<Figures/Aplicacion/UCPBG-D15-L4-DP04.pdf, id=34518, 1127.14986pt x 547.7345pt>
 
 File: Figures/Aplicacion/UCPBG-D15-L4-DP04.pdf Graphic file (type pdf)
 <use Figures/Aplicacion/UCPBG-D15-L4-DP04.pdf>
@@ -5867,25 +5859,25 @@ t line 207.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/Aplicacion/variacionD.pdf, id=34522, 415.31393pt x 342.06361pt>
+<Figures/Aplicacion/variacionD.pdf, id=34524, 415.31393pt x 342.06361pt>
 File: Figures/Aplicacion/variacionD.pdf Graphic file (type pdf)
 <use Figures/Aplicacion/variacionD.pdf>
 Package pdftex.def Info: Figures/Aplicacion/variacionD.pdf  used on input line 
 221.
 (pdftex.def)             Requested size: 166.98668pt x 137.53287pt.
-<Figures/Aplicacion/variacionL.pdf, id=34523, 405.62965pt x 340.1603pt>
+<Figures/Aplicacion/variacionL.pdf, id=34525, 405.62965pt x 340.1603pt>
 File: Figures/Aplicacion/variacionL.pdf Graphic file (type pdf)
 <use Figures/Aplicacion/variacionL.pdf>
 Package pdftex.def Info: Figures/Aplicacion/variacionL.pdf  used on input line 
 225.
 (pdftex.def)             Requested size: 166.98668pt x 140.03236pt.
-<Figures/Aplicacion/variaciondistancia.pdf, id=34524, 447.759pt x 342.51498pt>
+<Figures/Aplicacion/variaciondistancia.pdf, id=34526, 447.759pt x 342.51498pt>
 File: Figures/Aplicacion/variaciondistancia.pdf Graphic file (type pdf)
 <use Figures/Aplicacion/variaciondistancia.pdf>
 Package pdftex.def Info: Figures/Aplicacion/variaciondistancia.pdf  used on inp
 ut line 228.
 (pdftex.def)             Requested size: 166.98668pt x 127.73723pt.
-<Figures/Aplicacion/captura-estructura-completa-hfss.png, id=34525, 520.94624pt
+<Figures/Aplicacion/captura-estructura-completa-hfss.png, id=34527, 520.94624pt
  x 452.4403pt>
 File: Figures/Aplicacion/captura-estructura-completa-hfss.png Graphic file (typ
 e png)
@@ -6140,7 +6132,7 @@ Package babel Info: Redefining spanish shorthand "?
 LaTeX Warning: Citation 'Agilent_vna_cal' on page 131 undefined on input line 1
 2.
 
-<Figures/Apendice_E/ApendiceE_1.pdf, id=35910, 330.03299pt x 110.011pt>
+<Figures/Apendice_E/ApendiceE_1.pdf, id=35912, 330.03299pt x 110.011pt>
 File: Figures/Apendice_E/ApendiceE_1.pdf Graphic file (type pdf)
 <use Figures/Apendice_E/ApendiceE_1.pdf>
 Package pdftex.def Info: Figures/Apendice_E/ApendiceE_1.pdf  used on input line
@@ -6280,7 +6272,7 @@ Package babel Info: Redefining spanish shorthand "?
  B Incidencia de una onda plana sobre una interfaz
 ------------------------------------------------------------------------------
 (Appendices/AppendixA.tex
-<Figures/intro_electro/incidencia_oblicua_paralela-version2.pdf, id=35971, 163.
+<Figures/intro_electro/incidencia_oblicua_paralela-version2.pdf, id=35973, 163.
 04413pt x 152.00085pt>
 File: Figures/intro_electro/incidencia_oblicua_paralela-version2.pdf Graphic fi
 le (type pdf)
@@ -6288,7 +6280,7 @@ le (type pdf)
 Package pdftex.def Info: Figures/intro_electro/incidencia_oblicua_paralela-vers
 ion2.pdf  used on input line 7.
 (pdftex.def)             Requested size: 187.8616pt x 175.14983pt.
-<Figures/intro_electro/incidencia_oblicua_perpendicular-version2.pdf, id=35972,
+<Figures/intro_electro/incidencia_oblicua_perpendicular-version2.pdf, id=35974,
  163.04413pt x 152.00085pt>
 File: Figures/intro_electro/incidencia_oblicua_perpendicular-version2.pdf Graph
 ic file (type pdf)
@@ -6330,7 +6322,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 143.
  [138]
-<Figures/intro_electro/angulo-refraccion-snell.pdf, id=36336, 376.52638pt x 256
+<Figures/intro_electro/angulo-refraccion-snell.pdf, id=36338, 376.52638pt x 256
 .69771pt>
 File: Figures/intro_electro/angulo-refraccion-snell.pdf Graphic file (type pdf)
 
@@ -6351,7 +6343,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 171.
  [139 <./Figures/intro_electro/angulo-refraccion-snell.pdf>]
-<Figures/intro_electro/plot-comparacion-lossy-lossless-annotated.pdf, id=36393,
+<Figures/intro_electro/plot-comparacion-lossy-lossless-annotated.pdf, id=36395,
  505.89pt x 361.35pt>
 File: Figures/intro_electro/plot-comparacion-lossy-lossless-annotated.pdf Graph
 ic file (type pdf)
@@ -6359,7 +6351,7 @@ ic file (type pdf)
 Package pdftex.def Info: Figures/intro_electro/plot-comparacion-lossy-lossless-
 annotated.pdf  used on input line 180.
 (pdftex.def)             Requested size: 200.38528pt x 143.13142pt.
-<Figures/intro_electro/plot-comparacion-lossy-lossless-T.pdf, id=36394, 505.89p
+<Figures/intro_electro/plot-comparacion-lossy-lossless-T.pdf, id=36396, 505.89p
 t x 361.35pt>
 File: Figures/intro_electro/plot-comparacion-lossy-lossless-T.pdf Graphic file 
 (type pdf)
@@ -6367,7 +6359,7 @@ File: Figures/intro_electro/plot-comparacion-lossy-lossless-T.pdf Graphic file
 Package pdftex.def Info: Figures/intro_electro/plot-comparacion-lossy-lossless-
 T.pdf  used on input line 183.
 (pdftex.def)             Requested size: 200.38528pt x 143.13142pt.
-<Figures/intro_electro/plot-coeficientes-fresnel-dirInversa.pdf, id=36395, 505.
+<Figures/intro_electro/plot-coeficientes-fresnel-dirInversa.pdf, id=36397, 505.
 89pt x 361.35pt>
 File: Figures/intro_electro/plot-coeficientes-fresnel-dirInversa.pdf Graphic fi
 le (type pdf)
@@ -6419,13 +6411,13 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 212.
  [141 <./Figures/intro_electro/plot-coeficientes-fresnel-dirInversa.pdf>]
-<Figures/intro_electro/plot-brewster.pdf, id=36589, 505.89pt x 361.35pt>
+<Figures/intro_electro/plot-brewster.pdf, id=36591, 505.89pt x 361.35pt>
 File: Figures/intro_electro/plot-brewster.pdf Graphic file (type pdf)
 <use Figures/intro_electro/plot-brewster.pdf>
 Package pdftex.def Info: Figures/intro_electro/plot-brewster.pdf  used on input
  line 217.
 (pdftex.def)             Requested size: 200.38528pt x 143.13142pt.
-<Figures/intro_electro/plot-angulo-critico.pdf, id=36590, 505.89pt x 361.35pt>
+<Figures/intro_electro/plot-angulo-critico.pdf, id=36592, 505.89pt x 361.35pt>
 File: Figures/intro_electro/plot-angulo-critico.pdf Graphic file (type pdf)
 <use Figures/intro_electro/plot-angulo-critico.pdf>
 Package pdftex.def Info: Figures/intro_electro/plot-angulo-critico.pdf  used on
@@ -6450,7 +6442,7 @@ angulo-critico.pdf
 pdfTeX warning: pdflatex.exe (file ./Figures/intro_electro/plot-angulo-critico.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<Figures/intro_electro/angulo_critico.pdf, id=36680, 127.0346pt x 97.29156pt>
+<Figures/intro_electro/angulo_critico.pdf, id=36682, 127.0346pt x 97.29156pt>
 File: Figures/intro_electro/angulo_critico.pdf Graphic file (type pdf)
 <use Figures/intro_electro/angulo_critico.pdf>
 Package pdftex.def Info: Figures/intro_electro/angulo_critico.pdf  used on inpu
@@ -6515,7 +6507,7 @@ Package babel Info: Redefining spanish shorthand "?
  [145
 
 ]
-<Figures/Aplicacion/estructura-antenas-ebg.pdf, id=36762, 606.00261pt x 530.681
+<Figures/Aplicacion/estructura-antenas-ebg.pdf, id=36764, 606.00261pt x 530.681
 35pt>
 File: Figures/Aplicacion/estructura-antenas-ebg.pdf Graphic file (type pdf)
 <use Figures/Aplicacion/estructura-antenas-ebg.pdf>
@@ -6565,7 +6557,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 36.
  [148]
-<Figures/Aplicacion/VariacionAnchoLprima-UnParcheConCarga.pdf, id=36868, 465.47
+<Figures/Aplicacion/VariacionAnchoLprima-UnParcheConCarga.pdf, id=36870, 465.47
 513pt x 320.24965pt>
 File: Figures/Aplicacion/VariacionAnchoLprima-UnParcheConCarga.pdf Graphic file
  (type pdf)
@@ -6573,7 +6565,7 @@ File: Figures/Aplicacion/VariacionAnchoLprima-UnParcheConCarga.pdf Graphic file
 Package pdftex.def Info: Figures/Aplicacion/VariacionAnchoLprima-UnParcheConCar
 ga.pdf  used on input line 43.
 (pdftex.def)             Requested size: 196.21284pt x 134.99258pt.
-<Figures/Aplicacion/VariacionDistanciagprimera-UnParcheConCarga.pdf, id=36869, 
+<Figures/Aplicacion/VariacionDistanciagprimera-UnParcheConCarga.pdf, id=36871, 
 465.43515pt x 320.22482pt>
 File: Figures/Aplicacion/VariacionDistanciagprimera-UnParcheConCarga.pdf Graphi
 c file (type pdf)
@@ -6581,7 +6573,7 @@ c file (type pdf)
 Package pdftex.def Info: Figures/Aplicacion/VariacionDistanciagprimera-UnParche
 ConCarga.pdf  used on input line 46.
 (pdftex.def)             Requested size: 196.21284pt x 134.99678pt.
-<Figures/Aplicacion/VariacionAltowprima-UnParcheConCarga.pdf, id=36870, 465.435
+<Figures/Aplicacion/VariacionAltowprima-UnParcheConCarga.pdf, id=36872, 465.435
 15pt x 320.22482pt>
 File: Figures/Aplicacion/VariacionAltowprima-UnParcheConCarga.pdf Graphic file 
 (type pdf)
@@ -6753,7 +6745,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 289.
 Here is how much of TeX's memory you used:
  54553 strings out of 493305
  1140709 string characters out of 3130237
- 1657913 words of memory out of 3000000
+ 1657917 words of memory out of 3000000
  56558 multiletter control sequences out of 15000+200000
  557980 words of font info for 127 fonts, out of 3000000 for 9000
  1171 hyphenation exceptions out of 8191
@@ -6814,9 +6806,9 @@ blic/lm/lmri12.pfb><D:/Users/Fede/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/amsfonts/symbols/msam10.pfb><D:/Users/Fede/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/Users/Fede/AppData/Loc
 al/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb>
-Output written on Thesis.pdf (166 pages, 14141828 bytes).
+Output written on Thesis.pdf (166 pages, 14142314 bytes).
 PDF statistics:
- 37409 PDF objects out of 38293 (max. 8388607)
+ 37411 PDF objects out of 38293 (max. 8388607)
  672 named destinations out of 1000 (max. 500000)
  1142 words of extra memory for PDF output out of 10000 (max. 10000000)
 
