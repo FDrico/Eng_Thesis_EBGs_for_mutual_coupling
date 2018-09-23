@@ -732,7 +732,20 @@ Considerando una línea de transmisión que representa un comportamiento puramen
 	\gamma = -j\alpha + \beta = \sqrt{-ZY} = \sqrt{-(R+j\omega L)(G+j\omega C)}	
 \end{align}
 
- Las ecuaciones de onda tienen como solución la superposición de una onda en dirección $+z$ y otra en dirección $-z$, tanto para la tensión como para la corriente, con velocidad de fase $\omega/\beta$. La relación entre las componentes de onda que viajan en dirección positiva se conoce como impedancia característica, $Z_0$, definida, según los parámetros de una línea de transmisión, en la ecuación \ref{eq:TL-impedancia-caracteristica}.
+En base a esta constante de propagación, es posible definir la velocidad de fase $V_p$ como
+
+\begin{align}
+	V_p = \frac{\omega}{\beta},
+\end{align}
+
+que para el caso sin pérdidas resulta
+
+\begin{align}
+	\label{eq:vprop-linea-ideal}
+	V_p = \frac{\omega}{\omega \sqrt{LC}} = \frac{1}{\sqrt{LC}}
+\end{align}
+
+Las ecuaciones de onda tienen como solución la superposición de una onda en dirección $+z$ y otra en dirección $-z$, tanto para la tensión como para la corriente, con velocidad de fase $\omega/\beta$. La relación entre las componentes de onda que viajan en dirección positiva se conoce como impedancia característica, $Z_0$, definida, según los parámetros de una línea de transmisión, en la ecuación \ref{eq:TL-impedancia-caracteristica}.
  
 \begin{align}
 	\label{eq:TL-impedancia-caracteristica}

@@ -38,7 +38,22 @@ C_{g} = \frac{b \epsilon_0 (1+\epsilon_r)}{\pi} \cosh^{-1} (a / g) \\
 L_{b} = 0.2\; \text{nH/mm} \cdot \ln (2\pi \frac{h}{w})
 \end{align}
 
-donde $a$ es el tamaño de la celda unitaria, $h$ es el ancho del dieléctrico y $w$ es el ancho del puente. Estos parámetros permiten calcular los valores de $Y$ y $Z$ requeridos para el análisis con líneas de transmisión cargadas, utilizados para calcular los diagramas de dispersión en la sección \ref{sec:diag-de-dispersion}.
+donde $a$ es el tamaño de la celda unitaria, $h$ es el ancho del dieléctrico y $w$ es el ancho del puente. En la tabla \ref{table:CeldaUnitariaFacil-AnalisisiCircuital} se muestran los valores testigo elegidos arbitrariamente y utilizados en esta sección, según los nombres de la figura \ref{fig:circuito-equivalente-kim-parches}.
+
+\begin{table}
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		
+		\hline
+		$a = 20\;mm$ & $b = 18 \;mm$ & $g = 4 \;mm$ & $w = 1\;mm$ & $h = 1.6\;mm$ \\ 
+		\hline
+		$e_r = 4.4$ & $C_p = 7.9\;pF$ & $L_p = 2\;nH$ & $C_g = 790\; fF$ & $L_b = 0.46 nH$ \\ 
+		\hline 
+	\end{tabular}
+	\caption{Valores geométricos de la celda unitaria analizada.}
+	\label{table:CeldaUnitariaFacil-AnalisisiCircuital}
+\end{table}
+
 
 
 \begin{figure}[h]
@@ -79,9 +94,7 @@ donde $a$ es el tamaño de la celda unitaria, $h$ es el ancho del dieléctrico y
 
 El análisis de la expresión de dispersión no se puede realizar utilizando el acercamiento circuital propuesto, debido a que cada nodo del circuito posee una fase establecida por los parámetros concentrados.
 
-Si bien existen múltiples procedimientos posibles para lograr una expresión de dispersión, en este trabajo se analizarán solo dos para la estructura de la figura \ref{fig:circuito-equivalente-kim-parches}: la explicada en la sección \ref{sec:diag-de-dispersion}, y una evaluación en base al planteo de líneas de transmisión generalizadas, utilizando los conceptos desarrollados en la sección \ref{sec_lineas_de_transmision}.
-
-El primer método requiere que se divida a cada celda unitaria en trozos de línea de transmisión de impedancias diferentes, en función de su ancho, como se muestra en la figura \ref{fig:division_en_trozos_impedancia}.
+Si se procede de forma similar a la explicada en a sección \ref{sec:diag-de-dispersion}, se debe dividir a cada celda unitaria en trozos de línea de transmisión de impedancias diferentes, en función de su ancho, como se muestra en la figura \ref{fig:division_en_trozos_impedancia}.
 
 
 \begin{figure}[h]
@@ -199,6 +212,7 @@ Dado que la expresión de la derecha es real, también lo debe ser el coseno hip
 En el caso en que $\alpha = 0$ y $\beta \neq 0,n\pi$, la onda existente es propagante sobre la estructura periódica. Esto se da si
 
 \begin{align}
+	\label{eq:diagDisp-teorico-estructura-sencilla-b}
 	\cos(\beta d) = \cos(2\phi + \theta/2) \implies \pm \beta d = 2\phi + \theta/2,
 \end{align}
 
@@ -207,32 +221,76 @@ ecuación que es satisfecha para infinitos valores de $\beta$, exceptuando $\bet
 En el caso en que $\alpha \neq 0$ y $\beta = 0,n\pi$, la expresión resulta
 
 \begin{align}
+\label{eq:cos-cosh}
 \cosh(\alpha d) = \cos(2\phi + \theta/2),
 \end{align}
 
-que tiene solución si $|\cos(2\phi + \theta/2)| \geq 1$, lo cual genera soluciones separadas cada $n\pi$, dado que es en esos valores en que el coseno obtiene módulo 1. Esto demuestra que los \textit{bandgaps} producidos se deben principalmente a un efecto de difracción de Bragg, dado que la suma de las fases en cada tramo de las líneas de transmisión que dan lugar a la celda unitaria debe ser múltiplo de $\pi$.
+que tiene solución si $|\cos(2\phi + \theta/2)| \geq 1$, lo cual genera soluciones separadas cada $n\pi$, dado que es en esos valores en que el coseno obtiene módulo 1, como se muestra en la figura \ref{fig:solucion-cos-cosh}. Esto demuestra que los \textit{bandgaps} producidos se deben principalmente a un efecto de difracción de Bragg, dado que la suma de las fases en cada tramo de las líneas de transmisión que dan lugar a la celda unitaria debe ser múltiplo de $\pi$.
 
-Para finalmente obtener el diagrama de radiación resulta necesario vincular los valores de $\phi$ y $\theta$ con la frecuencia angular $\omega$, a través de la velocidad de propagación del medio, que será distinta para cada tramo de línea.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/diagDisp-coshcos.pdf}
+	\caption{Gráficas correspondientes a la ecuación \ref{eq:cos-cosh}.}
+	\label{fig:solucion-cos-cosh}
+\end{figure}
 
-%%%%%% HASCER UN gRÄFICO
-
-Una segunda forma de obtener el diagrama de radiación consiste en utilizar el análisis de líneas de transmisión generalizadas de la sección \ref{sec_lineas_de_transmision}.
-
-En base al modelo circuital de la figura \ref{fig:circuito-equivalente-kim-parches} se lo analiza como una única línea de transmisión formada por trozos infinitesimales que cumplen con el circuito equivalente propuesto, entonces la impedancia y admitancia por unidad de longitud se pueden expresar como:
+Es posible vincular los valores de $\phi$ y $\theta$ con la frecuencia angular $\omega$, a través de la velocidad de propagación del medio, que será distinta para cada tramo de línea, para una proporción de $\theta$ y $\omega$ determinada. Según los valores de longitud de los tramos de líneas mostrados en la figura \ref{fig:circuito-equivalente-kim-parches}, a partir de la ecuación \ref{eq:diagDisp-teorico-estructura-sencilla-b}, y asumiendo que las longitudes eléctricas $\theta$ y $\phi$ resultan, respectivamente, $\beta_1 (a-b)$ y $\beta_2 b$, se puede reescribir la expresión para los puntos en que $\alpha\neq 0$ como
 
 \begin{align}
-	Z' = j\omega L_p + \frac{j\omega L_b}{1-\omega^2 L_b C_g} \\
-	Y' = j\omega C_p
+	\beta_1 (a-b) + \beta_2 b = n\pi
+\end{align}
+
+La velocidad de propagación, como de mostró en la ecuación \ref{eq:vprop-linea-ideal}, resulta ${V_p}_i = \frac{\omega}{\beta} = \frac{1}{\sqrt{L_i C_i}}$, donde el subíndice $i=1,2$ indica la línea de transmisión que se está evaluando (el tramo más delgado y el más ancho, respectivamente). De esta forma, reemplazando $\beta_i$ por su valor en función de la frecuencia y los componentes circuitales, resulta
+
+\begin{align}
+	\omega_{(\alpha\neq 0)} \sqrt{L_1 C_1} (a-b) + \omega_{\alpha\neq 0} \sqrt{L_2 C_2} b = n\pi \\
+	\omega_{(\alpha\neq 0)} = \frac{n\pi}{(a-b) \sqrt{L_1 C_1} + b \sqrt{L_2 C_2}},
+\end{align}
+
+que representa, en forma aproximada, el conjunto de frecuencias para el que la estructura resuena, dificultando la propagación de ondas de superficie.
+
+
+Además del acercamiento a través del uso de circuitos equivalentes de primer orden, en general es posible expresar el problema a partir de su generalización como un conjunto de líneas de transmisión efectivas (en lugar de líneas de transmisión propiamente dichas), discretizando el espacio de forma que cada paso de discretización resulte mucho menor a $\lambda/4$ \cite{Caloz:ElectromagneticMetamaterials}, aproximadamente.
+
+En base al modelo circuital de la figura \ref{fig:circuito-equivalente-kim-parches}, y en base a la teoría desarrollada en la sección \ref{sec_lineas_de_transmision}, es posible analizar la estructura como una única línea de transmisión formada por trozos infinitesimales que cumplen con el circuito equivalente propuesto. La impedancia y admitancia por unidad de longitud, entonces, se pueden expresar como:
+
+\begin{align}
+	Z' a = j\omega L_p + \frac{j\omega L_b}{1-\omega^2 L_b C_g}, \\
+	Y' a = j\omega C_p.
 \end{align}
 
 Según la ecuación \ref{eq:gamma-tl}, es posible describir el valor de la constante compleja de propagación de una onda electromagnética sobre la línea en base a su impedancia y admitancia. De esta forma:
 
 \begin{align}
-	\gamma = \sqrt{-ZY} = \omega \sqrt{C_p \left( L_p + \frac{L_b}{1-\omega^2 L_b C_g}\right)}
+	\label{eq:diagDisp-teorico-estructurasencilla-tls}
+	\gamma = \sqrt{-Z'Y'} = \frac{\omega}{a} \sqrt{C_p \left( L_p + \frac{L_b}{1-\omega^2 L_b C_g}\right)}.
 \end{align}
 
+La solución se grafica en la figura \ref{fig:diagDisp-calculado-celdafacil}, donde se puede observar que se genera un \textbf{bandgap} cuando el valor de $\alpha$ crece mucho, para una frecuencia de aproximadamente $8\;GHz$.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/diagDisp-calculado.pdf}
+	\caption{Diagrama de dispersión calculado en base a la ecuación \ref{eq:diagDisp-teorico-estructurasencilla-tls}.}
+	\label{fig:diagDisp-calculado-celdafacil}
+\end{figure}
+
+Este análisis, al contrario que en el caso anterior, no tiene en cuenta el desarrollo espacial de la estructura: cada celda unitaria considerada, cada sección del circuito, representa a una sección pequeña del mismo, donde se pueden considerar condiciones cuasiestáticas. Dado que el circuito equivalente de cada sección de la línea de transmisión propuesta representa a una celda unitaria completa, se debe cumplir, al menos, la condición \cite{Caloz:ElectromagneticMetamaterials}
+
+\begin{align}
+	a < \frac{\lambda_g}{4},
+\end{align}
+
+que en base al análisis de la velocidad de propagación, y considerando que una longitud eléctrica de $\pi$ representa $\lambda_g / 2$, da lugar a que el dominio de validez se ubique en
+
+\begin{align}
+	\omega = \frac{n\pi}{2 (a-b) \sqrt{L_1 C_1} + 2 b \sqrt{L_2 C_2}} = \frac{\omega_{(\alpha\neq 0)}}{2},
+\end{align}
+
+es decir, por debajo de la frecuencia de resonancia. Esto significa que sólo es posible confiar en los valores de $\beta$ más bajos de la gráfica \ref{fig:diagDisp-calculado-celdafacil} para establecer la posición de los modos.
 
 Resulta necesario aclarar, sin embargo, que en el circuito propuesto se puede observar únicamente el comportamiento de los modos cuasi-TEM sobre las celdas unitarias de la estructura periódica, pues es a partir de los mismos que se obtienen las expresiones y disposiciones de capacidades e inductancias utilizadas en el modelo. Esto significa que existirán modos superiores, pero que no pueden ser predichos por el modelo cuasiestático planteado.
+
 
 
 
@@ -544,7 +602,7 @@ Para el segundo modo de propagación, el campo eléctrico, en promedio (figura \
 \end{figure}
 
 
-Se debe tener en cuenta que el uso de esta estructura presenta mayores dificultades, especialmente cuando su construcción se realiza por técnicas rudimentarias. Sin embargo, gracias a un mejor aprovechamiento del espacio, que permiten obtener una mayor capacidad e inductancia por celda unitaria, la geometría permite diseñar celdas unitarias más pequeñas para lograr zonas prohibidas para frecuencias de microondas que las que se pueden lograr utilizando la geometría analizada en la sección \ref{sec:celda-orlandi}.
+Se debe tener en cuenta que el uso de esta estructura presenta mayores dificultades, especialmente cuando su construcción se realiza por técnicas rudimentarias. Sin embargo, gracias a un mejor aprovechamiento del espacio, que permiten obtener una mayor capacidad e inductancia por celda unitaria, la geometría permite diseñar celdas unitarias más pequeñas para lograr zonas prohibidas para frecuencias de microondas que las que se pueden lograr utilizando la geometría analizada en la sección \ref{sec:celdas-orlandi}.
 
 \section{Modelado circuital}
 
@@ -750,6 +808,38 @@ En la figura \ref{fig:modelo-circuital-resonancia-serie-graficos} se pueden obse
 	\label{fig:modelo-circuital-resonancia-serie-graficos}
 \end{figure}
 
+En este punto, es posible obtener el diagrama de dispersión en base a un método similar al utilizado para obtener de la figura \ref{fig:diagDisp-calculado-celdafacil}, a efectos puramente ilustrativos, y utilizando el circuito de la figura \ref{fig:modelo-circuital-con-lw}. Para el mismo, los valores de impedancia y admitancia por unidad de longitud resultan
+
+\begin{align}
+	Z' a = j\omega L_c + j\omega \frac{L_b - \omega^2 L_w C_g}{1-\omega^2 C_g (L_w + 2 L_b)}, \\
+	Y' a = j \omega C_c,
+\end{align}
+
+por lo que el valor de la constante de propagación $\gamma$ resulta
+
+\begin{align}
+	\label{eq:eq-dispersion-teorica-yang}
+	\gamma = \sqrt{-Z' Y'} = \frac{\omega}{a} \sqrt{L_c C_c + C_c \frac{L_b - \omega^2 L_w C_g L_b}{1-\omega^2(L_w C_g + 2 L_b C_g)}},
+\end{align}
+
+cuya gráfica se puede observar en la figura \ref{fig:grafica-diagdisp-celdaYang-teorica}. Resulta importante recordar que, si bien la gráfica es obtenida en base a los valores circuitales, la misma pierde validez si no se cumple la hipótesis descripta antes, que indica que $a < \lambda_g/4$, por lo que sólo se puede confiar en los valores bajos de $\beta$.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/diagDisp-calculado-nuevo.pdf}
+	\caption{Diagrama de dispersión para la celda de Yang, en base a la ecuación \ref{eq:eq-dispersion-teorica-yang}.}
+	\label{fig:grafica-diagdisp-celdaYang-teorica}
+\end{figure}
+
+Resulta ilustrativo comparar el diagrama de dispersión obtenido con la gráfica del parámetro $S_{21}$ en función de la frecuencia de la figura \ref{modelo-circuital-resonancia-serie-graficos}, dado que si bien el análisis es diferente, la situación física es la misma. La comparación se observa en la figura \ref{fig:diagDisp-vs-S21}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/diagDisp-vs-S21.pdf}
+	\caption{Comparación del diagrama de dispersión obtenido de la ecuación \ref{eq:eq-dispersion-teorica-yang} y el obtenido mediante simulación del parámetro $S_{21}$ de la figura \ref{modelo-circuital-resonancia-serie-graficos}.}
+	\label{fig:diagDisp-vs-S21}
+\end{figure}
+
 
 Queda aún por explicar el comportamiento de la transferencia entre las dos frecuencias de resonancia, donde los efectos no pueden considerarse fruto de la relación entre los elementos de un subconjunto del circuito. Resulta necesario tener en cuenta la inductancia que impone el parche central, análoga a la que imponen las esquinas de la celda unitaria. Esto obliga a que la capacidad de la celda unitaria no sea única y centralizada, como hasta el momento, sino que debe estar correctamente distribuida en la geometría: parte de la capacidad se debe al aporte de las esquinas, y otra parte al parche central. El circuito, más complejo, se muestra en la figura \ref{fig:modelo-circuital-todojunto-sinR}.
 
@@ -848,8 +938,6 @@ El comportamiento del parámetro $S_{21}$ según del modelo circuital se puede c
 
 \section{Modelado por líneas de transmisión}
 %%%%
-
-Además del acercamiento a través del uso de circuitos equivalentes de primer orden, en general es posible expresar el problema a partir de su generalización como un conjunto de líneas de transmisión efectivas (en lugar de líneas de transmisión propiamente dichas), discretizando el espacio de forma que cada paso de discretización resulte mucho menor a $\lambda/4$ \cite{Caloz:ElectromagneticMetamaterials}, aproximadamente. Este acercamiento, y el uso de líneas de transmisión generalizadas (donde se pueden considerar capacidades en serie e inductancias en paralelo) resultan útiles para describir distintos tipos de metamateriales, incluyendo aquellos que son conocidos como ``de mano izquierda" \cite{Caloz:ElectromagneticMetamaterials}.
 
 Para el caso bidimensional, la discretización debe ser también bidimensional, lo que conlleva mayores esfuerzos numéricos. Un problema práctico cualquiera puede contener una enorme cantidad de celdas unitarias, con bordes complejos y medios inhomogéneos, lo que obliga a considerar las propiedades de las celdas unitarias de la forma lo más sencilla posible, y para aumentar la densidad de las mismas con el menor impacto posible en el tiempo de procesamiento.
 
