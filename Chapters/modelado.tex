@@ -289,7 +289,7 @@ que en base al análisis de la velocidad de propagación, y considerando que una
 
 es decir, por debajo de la frecuencia de resonancia. Esto significa que sólo es posible confiar en los valores de $\beta$ más bajos de la gráfica \ref{fig:diagDisp-calculado-celdafacil} para establecer la posición de los modos.
 
-Resulta necesario aclarar, sin embargo, que en el circuito propuesto se puede observar únicamente el comportamiento de los modos cuasi-TEM sobre las celdas unitarias de la estructura periódica, pues es a partir de los mismos que se obtienen las expresiones y disposiciones de capacidades e inductancias utilizadas en el modelo. Esto significa que existirán modos superiores, pero que no pueden ser predichos por el modelo cuasiestático planteado.
+Resulta necesario aclarar, además, que en el circuito propuesto se puede observar únicamente el comportamiento de los modos cuasi-TEM sobre las celdas unitarias de la estructura periódica, pues es a partir de los mismos que se obtienen las expresiones y disposiciones de capacidades e inductancias utilizadas en el modelo. Esto significa que existirán modos superiores, pero que no pueden ser predichos por el modelo cuasiestático planteado.
 
 
 
@@ -604,6 +604,8 @@ Para el segundo modo de propagación, el campo eléctrico, en promedio (figura \
 
 Se debe tener en cuenta que el uso de esta estructura presenta mayores dificultades, especialmente cuando su construcción se realiza por técnicas rudimentarias. Sin embargo, gracias a un mejor aprovechamiento del espacio, que permiten obtener una mayor capacidad e inductancia por celda unitaria, la geometría permite diseñar celdas unitarias más pequeñas para lograr zonas prohibidas para frecuencias de microondas que las que se pueden lograr utilizando la geometría analizada en la sección \ref{sec:celdas-orlandi}.
 
+
+
 \section{Modelado circuital}
 
 La forma más sencilla de modelar el comportamiento resonante es la representación circuital, como la discutida en la sección \ref{sec:modelo_analitico}. En la misma deben intervenir capacitores e inductores con valores seleccionados en función del comportamiento de la energía en la estructura. Si bien los efectos de altas frecuencias no podrán ser analizados bajo esta representación, sí debería ser posible observar, al menos en forma general, los fenómenos analizados para las frecuencias de trabajo, de manera que se pueda abordar el problema intuitivamente.
@@ -831,7 +833,7 @@ cuya gráfica se puede observar en la figura \ref{fig:grafica-diagdisp-celdaYang
 	\label{fig:grafica-diagdisp-celdaYang-teorica}
 \end{figure}
 
-Resulta ilustrativo comparar el diagrama de dispersión obtenido con la gráfica del parámetro $S_{21}$ en función de la frecuencia de la figura \ref{modelo-circuital-resonancia-serie-graficos}, dado que si bien el análisis es diferente, la situación física es la misma. La comparación se observa en la figura \ref{fig:diagDisp-vs-S21}.
+Resulta ilustrativo comparar el diagrama de dispersión obtenido con la gráfica del parámetro $S_{21}$ en función de la frecuencia de la figura \ref{fig:modelo-circuital-resonancia-serie-graficos}, dado que si bien el análisis es diferente, la situación física es la misma. La comparación se observa en la figura \ref{fig:diagDisp-vs-S21}, donde el \textit{bandgap} está marcado en un tono más oscuro. Se observa que el mismo comienza en la frecuencia de resonancia paralela, y continúa hasta las inmediaciones de la frecuencia de resonancia serie analizada antes.
 
 \begin{figure}[h]
 	\centering
@@ -906,22 +908,18 @@ Los valores finales de los parámetros utilizados para modelar la celda unitaria
 
 \begin{table}
 	\centering
-	\begin{tabular}{| c c | c c |}
+	\begin{tabular}{| c c | c c | c c |}
 		\hline 
-		$L_b$ & $6.9\; nH$ & $C_g$ & $155\; fF$\\
+		$L_b$ & $6.8\; nH$ & $C_g$ & $135\; fF$ & $L_w$ & $1.47\; nH$ \\
 		\hline
-		$L_w$ & $1.9\; nH$ & $C_c$ & $1.24\; pF$ \\
+		$C_c$ & $1.56\; pF$ & $C_b$ & $487 \;fF$ & $C_w$ & $2 \; pF$\\
 		\hline
-		$C_b$ & $378 \;fF$ & $C_w$ & $2 \; pF$\\
+		$C'_w$ & $2.53\; pF$ & $L'_w$ & $2.54\; nH$ & $L_c$ & $0.75\; nH$\\
 		\hline
-		$C'_w$ & $2.372\; pF$ & $L'_w$ & $1.9\; nH$ \\
+		$R_{wp}$ & $936\; \Omega$ & $R_{ws}$ & $0.01\; \Omega$ & $R_{cs}$ & $0.01\; \Omega$\\
 		\hline
-		$R_{wp}$ & $936\; \Omega$ & $R_{ws}$ & $0.01\; \Omega$\\
+		$R_{bp}$ & $0.15\; \Omega$ & $R_{bs}$ & $4953\; \Omega$ & $R_{cp}$ & $1509\; \Omega$\textbf{}\\
 		\hline
-		$R_{bp}$ & $0.15\; \Omega$ & $R_{bs}$ & $4953\; \Omega$\\
-		\hline
-		$R_{cp}$ & $1509\; \Omega$ & $R_{cs}$ & $0.01\; \Omega$ \\
-		\hline 
 	\end{tabular}
 	\caption{Tabla de valores finales elegidos.}
 	\label{table:valoresFinalesModelo}
@@ -936,6 +934,23 @@ El comportamiento del parámetro $S_{21}$ según del modelo circuital se puede c
 	\label{fig:s12_modelo_final}
 \end{figure}
 
+Resulta posible, además, comparar las simulaciones de parámetros $S_{21}$ con las simulaciones de celdas unitarias con condiciones de borde periódicas. Para el caso de la celda unitaria analizada, el diagrama de dispersión obtenido a partir de la simulación tridimensional se muestra en la figura \ref{fig:diag-disp-yang-cst}, donde se puede observar que se da un \textit{bandgap} completo entre los $2.5$ y $3.7\;;GHz$. En el análisis circuital sólo se consideró la dirección $\Gamma-X$, en la que el mismo comienza en $2\; GHz$. Una comparación de ambos análisis se puede observar en la figura \ref{fig:diag-disp-yang-vs-s21}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/dispersion-yang.pdf}
+	\caption{Diagrama de dispersión obtenido mediante el software \textit{CST Microwave Studio} para la celda de Yang, según los parámetros definidos en la tabla \ref{table:CeldaUnitariaAnalisisiCircuital}.}
+	\label{fig:diag-disp-yang-cst}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/dispersion-yang-vs-s21.pdf}
+	\caption{Comparación entre el diagrama de dispersión obtenido considerando condiciones de borde periódicas y resultado de la simulación de parámetros S.}
+	\label{fig:diag-disp-yang-vs-s21}
+\end{figure}
+
+
 \section{Modelado por líneas de transmisión}
 %%%%
 
@@ -945,9 +960,11 @@ Existen numerosos métodos que utilizan líneas de transmisión para simular met
 
 El método de matrices\footnote{Aquí el término matrices se refiere a un arreglo bidimensional, y no a un objeto matemático.} de líneas de transmisión consiste en la discretización espacial del problema físico en pequeñas subceldas. El comportamiento de los campos electromagnéticos en las mismas se concentra en un nodo o punto en el espacio, y las relaciones de adyacencia entre ellas se modelan utilizando líneas de transmisión que vinculan los nodos. Estas líneas son capaces de transmitir impulsos cortos sin distorsión, y de distribuirlos, en cada uno de los nodos, de acuerdo a un algoritmo local para cada subcelda \cite{Caloz:ElectromagneticMetamaterials}, hacia cada uno de los nodos adyacentes. Este algoritmo local no es más que la multiplicación del pulso incidente por los parámetros S de transmisión y reflexión en cada tiempo, que se pueden obtener a partir del análisis de la celda y sus vecinas. De esta manera, se discretiza un circuito equivalente al problema físico a resolver, y se simula la propagación de ondas electromagnéticas a partir del \textit{scattering} de impulsos en una red n-dimensional de nodos unidos por lineas de transmisión.
 
-El algoritmo fue propuesto inicialmente en 1971 por Johns y Beurle \cite{JohnsBeurle:TLM}, y provee soluciones en el dominio del tiempo, a partir del estudio de la propagación de impulsos electromagnéticos muy cortos en las estructuras. La información en el dominio de la frecuencia se obtiene realizando una transformada de Fourier\footnote{Numéricamente, se suele realizar una transformada discreta de Fourier, cuya implementación más conocida es la Fast Fourier Transform (FFT)} de la respuesta de la red al impulso, como en todo método numérico en el dominio del tiempo. Esta metodología lo vuelve útil especialmente para aplicaciones de gran ancho de banda, donde se desea obtener características en un amplio rango de frecuencias con una única simulación.
+El algoritmo fue propuesto inicialmente en 1971 por Johns y Beurle \cite{JohnsBeurle:TLM}, y provee soluciones en el dominio del tiempo, a partir del estudio de la propagación de impulsos electromagnéticos muy cortos en las estructuras. La información en el dominio de la frecuencia se obtiene realizando una transformada de Fourier\footnote{Numéricamente, se suele realizar una transformada discreta de Fourier, cuya implementación más conocida es la Fast Fourier Transform (FFT).} de la respuesta de la red al impulso, como en todo método numérico en el dominio del tiempo. Esta metodología lo vuelve útil especialmente para aplicaciones de gran ancho de banda, donde se desea obtener características en un amplio rango de frecuencias con una única simulación.
 
 El método fue generalizado, más tarde, al estudio de estructuras tridimensionales, donde se reemplazaron los conceptos de capacidad e inductancia de la línea de transmisión, por parámetros físicos del medio. En general, la capacidad e inductancia asociadas a las líneas de transmisión que unen los nodos que representan un medio en particular son elegidas de forma que la impedancia característica coincida con la impedancia intrínseca del mismo. En general, las pérdidas en el medio se tienen en cuenta a partir del uso de resistencias, o la aplicación de una constante de atenuación en cada cálculo de \textit{scattering} sobre los nodos.
+
+
 
 % Cuentas! Wu, Lin, Wang, Wang, Chen
 
