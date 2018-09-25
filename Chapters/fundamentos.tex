@@ -61,7 +61,7 @@ En el contexto de una línea de investigación, en principio, independiente de l
 
 Los trabajos de Yablonovitch, en estructuras de banda prohibida electromagnética, y Pendry, en metamateriales de índice de refracción negativo, se hicieron sobre estructuras con banda de interés en microondas, pero bajo modelos fotónicos, gracias a la linealidad de las ecuaciones de Maxwell. Esto permitió el uso de distintas técnicas conocidas y desarrolladas durante el siglo XX en microondas para el diseño de materiales fotónicos de estas características a partir de finales de la década de 1990, principalmente en ámbitos de investigación de ciencias básicas.
 
-Al mismo tiempo, comenzaron los estudios sobre las denominadas "superficies electromagnéticas" (\textit{electromagnetic surfaces}), que consisten en superficies texturadas, generalmente conductoras (en contraposición a los trabajos tridimensionales) que imponen condiciones de contorno particulares, capaces de lograr cambiar la polarización de una onda incidente, influir sobre las ondas de superficie y controlar la fase de reflexión, actuando como estructuras de banda electromagnética bidimensionales. La más simple consiste en una placa metálica coarrugada, como la mostrada en la figura \ref{fig:superficie-coarrugada}, de forma que las variaciones de altura sean de $\lambda/4$, que puede comportarse como una "superficie blanda" (\textit{soft surface}) o una "superficie dura" (\textit{hard surface}), en función de la polarización de la onda que se propaga \footnote{Si el campo eléctrico es perpendicular a las ranuras, la hendidura de profundidad $\lambda/4$ actúa como una línea de transmisión de cuarto de onda cortocircuitada, lo que, en la parte superior de las ranuras, se convierte en un circuito abierto, actuando como una superficie de alta impedancia. Si, en cambio, el campo eléctrico es paralelo a las ranuras, la impedancia que presenta es baja.}. Los primeros trabajos sobre estructuras bidimensionales con comportamiento de banda prohibida electromagnética dieron lugar a las denominadas FSS (\textit{Frequency Selective Surfaces}, superficies selectoras de frecuencias) \cite{Munk}. En 1999, Sievenpiper \cite{Sievenpiper:Thesis} propuso, en su tesis doctoral, estructuras superficiales compactas de alta impedancia, de manera que no fuera necesario el uso de una distancia de $\lambda/4$ entre la superficie superior y la inferior para lograr el efecto deseado, dado que se cargaba capacitivamente a la estructura \cite{Marcela:Tesis} \cite{Sievenpiper:HIESForbiddenBand}. Estas nuevas superficies periódicas consisten en un arreglo metalodieléctrico de subestructuras denominadas "hongos" (\textit{mushrooms}), como se muestra en la figura \ref{fig:sievenpiper}, y proveen condiciones de borde de alta impedancia para polarizaciones TE y TM al mismo tiempo.
+Al mismo tiempo, comenzaron los estudios sobre las denominadas "superficies electromagnéticas" (\textit{electromagnetic surfaces}), que consisten en superficies texturadas, generalmente conductoras (en contraposición a los trabajos tridimensionales) que imponen condiciones de contorno particulares, capaces de lograr cambiar la polarización de una onda incidente, influir sobre las ondas de superficie y controlar la fase de reflexión, actuando como estructuras de banda electromagnética bidimensionales. La más simple consiste en una placa metálica coarrugada, como la mostrada en la figura \ref{fig:superficie-coarrugada}, de forma que las variaciones de altura sean de $\lambda/4$, que puede comportarse como una "superficie blanda" (\textit{soft surface}) o una "superficie dura" (\textit{hard surface}), en función de la polarización de la onda que se propaga \footnote{Si el campo eléctrico es perpendicular a las ranuras, la hendidura de profundidad $\lambda/4$ actúa como una línea de transmisión de cuarto de onda cortocircuitada, lo que, en la parte superior de las ranuras, se convierte en un circuito abierto, actuando como una superficie de alta impedancia. Si, en cambio, el campo eléctrico es paralelo a las ranuras, la impedancia que presenta es baja.}. Los primeros trabajos sobre estructuras bidimensionales con comportamiento de banda prohibida electromagnética dieron lugar a las denominadas FSS (\textit{Frequency Selective Surfaces}, superficies selectoras de frecuencias) \cite{Munk:libro}. En 1999, Sievenpiper \cite{Sievenpiper:Thesis} propuso, en su tesis doctoral, estructuras superficiales compactas de alta impedancia, de manera que no fuera necesario el uso de una distancia de $\lambda/4$ entre la superficie superior y la inferior para lograr el efecto deseado, dado que se cargaba capacitivamente a la estructura \cite{Marcela:Tesis} \cite{Sievenpiper:HIESForbiddenBand}. Estas nuevas superficies periódicas consisten en un arreglo metalodieléctrico de subestructuras denominadas "hongos" (\textit{mushrooms}), como se muestra en la figura \ref{fig:sievenpiper}, y proveen condiciones de borde de alta impedancia para polarizaciones TE y TM al mismo tiempo.
 
 \begin{figure}[H]
 	\centering 
@@ -78,16 +78,53 @@ Al mismo tiempo, comenzaron los estudios sobre las denominadas "superficies elec
 
 El principal interés práctico de las estructuras propuestas por Sievenpiper radica en que actúan como conductores magnéticos artificiales, es decir, tienen una fase de reflexión nula para ondas incidentes, al mismo tiempo que presentan una banda prohibida electromagnética para las ondas de superficie. Esto se puede explicar a baja frecuencia considerando un modelo cuasiestático, dado que la distancia entre los parches conductores de la capa superior dan lugar, debido a la distancia que los separa, a una capacidad. La corriente que circula entre parches vecinos por efecto de una onda de superficie da lugar, análogamente, a una inductancia. Cuando el circuito resonante paralelo que forman resuena, la impedancia aumenta, dando lugar a una banda prohibida. Para frecuencias menores a la de resonancia, la superficie es inductiva y soporta ondas TM, mientras que para frecuencias mayores a la misma, la superficie es capacitiva, lo que permite la existencia de ondas TE. La explicación para las bandas prohibidas en mayores frecuencias requiere un análisis de redes y campos.
 
-En base a la propuesta de Sievenpiper, y en búsqueda de una mayor facilidad de fabricación, en 2001 Yang propuso la aplicación de los conceptos de superficies selectoras de frecuencias (FSS) con la intención de lograr un comportamiento similar, pero evitando el uso de vías entre el plano conductor inferior y las estructuras ubicadas en la capa superior. Estas nuevas estructuras uniplanares son de más fácil fabricación, reduciendo al mismo tiempo el costo, aunque los anchos de banda prohibida electromagnética para ondas de superficie se redujeron ampliamente. El bajo costo, el bajo peso y el bajo perfil de estas estructuras las volvieron de particulares interés en el diseño de antenas.
+En base a la propuesta de Sievenpiper, y en búsqueda de una mayor facilidad de fabricación, en 2001 Yang propuso la aplicación de los conceptos de superficies selectoras de frecuencias (FSS) con la intención de lograr un comportamiento similar, pero evitando el uso de vías entre el plano conductor inferior y las estructuras ubicadas en la capa superior. Estas nuevas estructuras uniplanares son de más fácil fabricación, reduciendo al mismo tiempo el costo, aunque los anchos de banda prohibida electromagnética para ondas de superficie se redujeron ampliamente. El bajo costo, el bajo peso y el bajo perfil de estas estructuras las volvieron de particular interés en el diseño de antenas.
 
 
-
-%\section{Difracción de Bragg}
-%\label{sec_bragg}
+\section{Difracción de Bragg}
+\label{sec_bragg}
 %%%%%
-%% Caloz, pag 19
-%% Kamgaing (tesis), pagina22
-%\lipsum
+
+Los primeros trabajos sobre cristales fotónicos y estructuras de banda prohibida electromagnética se basaron en el fenómeno de difracción de Bragg \cite{Caloz:ElectromagneticMetamaterials}. El mismo requiere que la periodicidad del material sea de $n\lambda_g/2$, con $\lambda_g$ la longitud de onda guiada de la misma, dado que las ondas que se propagan y son difractadas por los elementos de capas adyacentes interfieren destructivamente para ciertos ángulos de incidencia, dando lugar a un rechazo neto de la energía incidente y, por lo tanto, a velocidad de grupo $V_g$ nula.
+
+Como se muestra en la figura \ref{fig:bragg-dibujo} para incidencia normal, sin importar qué tan pequeñas son las reflexiones sobre cada uno de los elementos del sistema periódico, la reflexión completa de una estructura semi-infinita resulta:
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Fundamentos/bragg1.pdf}
+	\caption{Incidencia de una onda electromagnética y efecto de Bragg.}
+	\label{fig:bragg-dibujo}
+\end{figure}
+
+\begin{align}
+	\Gamma_t = \Gamma e^{-j\gamma x} + \Gamma e^{-2j\gamma a} e^{-j\gamma x} + \Gamma e^{-4j\gamma a} e^{-j\gamma x} + ... = \Gamma e^{-j\gamma x} \frac{1}{1-e^{-2j\gamma a}},
+\end{align}
+
+donde se consideró la progresión geométrica de parámetro $e^{-2j\gamma a}$.
+
+De la ecuación se deduce que si $e^{-2j\gamma a} = 1$, la expresión diverge, dando lugar, si se ignora la solución trivial, a la condición de Bragg, que establece que $\gamma = n\pi/a$. Este es el origen del \textit{bandgap} fotónico.
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Fundamentos/bragg2.pdf}
+	\caption{Incidencia de una onda electromagnética y efecto de Bragg, con un ángulo $\theta$ \cite{Caloz:ElectromagneticMetamaterials}.}
+	\label{fig:bragg2}
+\end{figure}
+
+Una expresión más general se puede obtener de la figura \ref{fig:bragg2}, en que la incidencia de la onda se da con un ángulo $\theta$, por lo que la condición de Bragg se convierte en
+
+\begin{align}
+	2 a \sin\theta = n \lambda_g, \;\; n=0, 1, 2, ...,
+\end{align}
+
+y sabiendo que $\beta = 2\pi/\lambda_g$, se obtiene la inversa de la relación de dispersión (definida como $\omega(\beta)$),
+
+\begin{align}
+	\beta(\omega) = \frac{n\pi}{a \sin(\theta(\omega)), \;\; n=0, 1, 2...,
+\end{align}
+
+de la que se puede deducir que la velocidad de grupo, $V_g = d\omega/d\beta$, es cero cuando se cumple la condición de Bragg.
+
 
 \section{Celdas unitarias de cristales bidimensionales}
 \label{sec:celdas-unitarias}
