@@ -3,7 +3,38 @@
 %%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%
+
 \section{Introducción}
+
+El análisis del capítulo 3 permite comprender de forma intuitiva el comportamiento de las estructuras EBG uniplanares dispuestas sobre un plano de tierra cubierto por sustrato dieléctrico. Sin embargo, el análisis sólo se propuso para energía conducida, debida al comportamiento de corrientes sobre el metamaterial que dan lugar a una modificación en la estructura y capacidad de propagación de ondas. Este análisis, si bien importante para la comprensión de los efectos ligados a las estructuras periódicas, no se centra en el análisis del comportamiento de las mismas en cercanías de radiadores electromagnéticos.
+
+En este capítulo se iniciará, aunque no se concluirá completamente, el estudio sobre el efecto de estas estructuras sobre las propiedades de radiación y de campo cercano de antenas ubicadas sobre el sustrato. El análisis comenzará con la revisión del comportamiento cuando las antenas en cuestión son monopolos eléctricos referenciados al plano conductor inferior, y una vez destacados los efectos más importantes que se dan para este tipo de antenas, se procederá a mostrar los efectos para el caso en que los radiadores son antenas microstrip, en que aparecen fenómenos más complejos.
+
+El motivo por el que se comienza el análisis para monopolos eléctricos verticales gira en torno a la capacidad que estos poseen para generar, sobre la capa dieléctrica, ondas de superficie TM en forma isotrópica, sin efectos de borde ni asimetrías que dificulten el análisis.
+
+\section{Monopolos}
+
+Las antenas monopolo consisten en un conductor dispuesto verticalmente sobre un plano de tierra u otra superficie conductora, alimentado o conectado a un receptor en su base a través de una línea de transmisión cuyos terminales están conectados al plano de tierra y al conductor vertical respectivamente, como se muestra en la figura \ref{fig:monopolos} b). A diferencia del dipolo, que consiste en dos conductores idénticos dispuestos de forma tal que comparten su eje principal, el monopolo suele ser más corto, posee un diagrama de radiación más elevado (como se observa en la figura \ref{fig:monopolos} a)), una resistencia de radiación menor, una mayor directividad, y da lugar a ondas de superficie considerables sobre el plano conductor.
+
+
+\begin{figure}[H]
+	\centering 
+	\subfigure[Diagrama de radiación de un monopolo de longitud $2\lambda/3$.]{
+		\label{fig:diag-rad-monopolo}
+		\includegraphics[width=0.40\textwidth]{Aplicacion/diagrad-monopolo-wikipedia.png}}
+	\hspace{30pt}
+	\subfigure[Diagrama de una antena monopolo.]{
+		\label{fig:monopolo}
+		\includegraphics[width=0.40\textwidth]{Aplicacion/Monopole_and_image_antenna.pdf}}
+	\caption{Imágenes extraídas de \textit{Wikipedia}.}
+	\label{fig:monopolos}
+\end{figure}
+
+
+El análisis de un monopolo suele derivar de la aplicación de teoría de imágenes sobre un dipolo dispuesto a cierta distancia del plano de tierra. Este método de análisis genera fuentes virtuales de radiación bajo el plano conductor que, combinadas con las fuentes reales (el conductor vertical del monopolo), dan lugar a un sistema equivalente para la zona del espacio que se ubica por encima del plano de tierra, dado que describe las reflexiones sobre el mismo. Las fuentes virtuales tienen, sobre un plano conductor, el comportamiento mostrado en la figura \ref{fig:fuentes-virtuales}.
+
+
+\section{Introducción a antenas microstrip}
 
 Como se describió en la sección \ref{subsec_antenas_microstrip}, las antenas \textit{microstrip} son utilizadas en un amplio rango de aplicaciones comerciales y militares, especialmente debido a que son livianas, de bajo perfil, suponen reducidos costos y resultan de fácil fabricación. Además, permiten diseños integrados con componentes activos, circuitos de microondas y elementos radiantes \cite{Yang:EBGAntennas}.
 
@@ -155,11 +186,11 @@ Existen numerosas posibles celdas unitarias uniplanares, que fueron creadas a pa
 
 Para este trabajo se seleccionó la celda de Yang, analizada en la sección \ref{sec:celda-yang}, debido a que fue la primer variante publicada, y posee optimizaciones sobre la celda de Orlandi, analizada en la sección \ref{sec:celdas-orlandi}.
 
-Sin embargo, existen numerosos diseños y geometrías, entre las que destacan la celda analizada por Goussetis \cite{Goussetis:TailoringAMCEBGCharacteristics}, que consiste en parches cuadrados sin interconexión entre sí, como el mostrado en la figura \ref{fig:rectangulo-cuadrado}. Si bien, debido a su geometría, estas celdas unitarias presentan capacidad con el plano de tierra y con otros parches aledaños, presentan una baja inductancia, lo que los vuelve subóptimos. Otros trabajos de interés son los de Abidin \cite{Abidin:Thesis}, quien propuso las estructuras mostradas en las figuras \ref{fig:abidin1} y \ref{fig:abidin2}, que poseen un ancho de banda mayor al de las celdas de Yang, aunque requieren más iteraciones de simulación, debido a la complejidad de las geometrías.
+Sin embargo, existen numerosos diseños y geometrías, entre las que destacan la celda analizada por Goussetis \cite{Goussetis:TailoringAMCEBGCharacteristics}, que consiste en parches cuadrados sin interconexión entre sí, como el mostrado en la figura \ref{fig:rectangulo-cuadrado}. Si bien, debido a su geometría, estas celdas unitarias presentan capacidad con el plano de tierra y con otros parches aledaños, presentan una baja inductancia, lo que los vuelve subóptimos, dado que resulta complejo obtener frecuencias de resonancia lo suficientemente bajas con un tamaño de celda viable. Otros trabajos de interés son los de Abidin \cite{Abidin:Thesis}, quien propuso las estructuras mostradas en las figuras \ref{fig:abidin1} y \ref{fig:abidin2}, que poseen un ancho de banda mayor al de las celdas de Yang, aunque requieren más iteraciones de simulación, debido a la complejidad de las geometrías.
 
 Estructuras más sencillas son propuestas en \cite{Asimonis:designoptimization}, mostradas en las figuras \ref{fig:assimonis1}, \ref{fig:assimonis2} y \ref{fig:assimonis3}, con resultados similares a la geometría elegida en este trabajo.
 
-Entre los esfuerzos más intuitivos para aumentar la inductancia, se destaca el propuesto por \cite{IslamAlam:CompactEBG}, mostrado en la figura \ref{fig:islamalam}. En ella se observa que se aumentó el largo y la capacidad de las cintas \textit{microstrip} que unen los parches, modificando las líneas para que ocuparan la mayor cantidad de espacio posible. Las simulaciones de esta estructura ofrecen mejores resultados que los de la celda elegida, aunque al costo de dificultar su diseño en programas \textsc{CAD}. Un modelo utilizando líneas de transmisión para caracterizar el comportamiento de estas celdas está presentado en \cite{Venkateswaran:Thesis}. 
+Entre los esfuerzos más intuitivos para aumentar la inductancia, disminuyendo así la frecuencia de resonancia y, por tanto, el tamaño de las celdas unitarias, se destaca el propuesto por \cite{IslamAlam:CompactEBG}, mostrado en la figura \ref{fig:islamalam}. En ella se observa que se aumentó el largo y la capacidad de las cintas \textit{microstrip} que unen los parches, modificando las líneas para que ocuparan la mayor cantidad de espacio posible. Las simulaciones de esta estructura ofrecen mejores resultados que los de la celda elegida, aunque al costo de dificultar su diseño en programas \textsc{CAD}. Un modelo utilizando líneas de transmisión para caracterizar el comportamiento de estas celdas está presentado en \cite{Venkateswaran:Thesis}. 
 
 En este sentido, \cite{Kovacs:DesignOptimization} propone, en su tesis doctoral, un algoritmo genético capaz de obtener un mayor ancho de banda prohibida mediante sucesivas simulaciones, sin la intervención de un diseñador, obteniendo celdas complejas pero muy efectivas, como la mostrada en la figura \ref{fig:kovacs}.
 
@@ -194,61 +225,13 @@ En este sentido, \cite{Kovacs:DesignOptimization} propone, en su tesis doctoral,
 	\label{fig:simulaciones-microstrip-1parche}
 \end{figure}
 
-La miniaturización cumple un papel importante debido a que es necesaria una cantidad (o profundidad) mínima de celdas unitarias entre los parches para que el efecto de disminución de acoplamiento resulte notorio. Si cada una de las celdas unitarias ocupara demasaiada superficie, obligaría a separar los parches aún más, consecuencia que resulta indeseable. Además, entre la estructura de celdas unitarias y los parches se debe mantener una distancia $g$ mínima, de modo que los efectos de acoplamiento de campo cercano entre la antena y la estructura EBG puedan considerarse despreciables.
+La miniaturización cumple un papel importante debido a que es necesaria una cantidad (o profundidad) mínima de celdas unitarias entre los parches para que el efecto de disminución de acoplamiento resulte notorio. Si cada una de las celdas unitarias ocupara demasiada superficie, obligaría a separar los parches aún más, consecuencia que resulta indeseable. Además, entre la estructura de celdas unitarias y los parches se debe mantener una distancia $g$ mínima, de modo que los efectos de acoplamiento de campo cercano entre la antena y la estructura EBG puedan considerarse despreciables. Estos efectos no son despreciables y, en muchos casos, generan un acoplamiento aún mayor al que se da si no se utilizan estructuras EBG.
 
-En base a las descripciones teóricas de la sencilla celda unitaria analizada en la sección \ref{sec:celdas-orlandi}, se deben realizar aproximaciones numéricas al comportamiento de la celda propuesta por Yang, descripta intuitivamente en la sección \ref{sec:celda-yang}. Considerando las limitaciones constructivas impuestas por la tecnología de fabricación de los circuitos \textit{microstrip}, el tamaño mínimo de celda unitaria ($d$, en la figura \ref{fig:celda-yang}) logrado es de 15 mm, con un tamaño de parche central $l$ de 4 mm, por lo que los puentes tendrán una longitud $l_m$ de 5.5 mm. Un parámetro que resulta importante es la distancia, entre celdas vecinas, de los parches ubicados en las esquinas de las celdas unitarias, $2 \cdot a_p$: Una menor distancia disminuye el valor de la frecuencia central del \textit{bandgap}.
+Para el caso de una distancia entre los parches de aproximadamente $3\lambda/2$, la cantidad de filas de celdas unitarias que se pueden ubicar entre los mismos para observar efectos de atenuación del acoplamiento mutuo varía entre 3 y 5. Las técnicas de modelado presentadas, y en particular las que requieren de simulación de una celda unitaria y la aplicación de condiciones de borde periódicas, describen el comportamiento de la estructura EBG cuando ésta se extiende infinitamente. Como, en general, este no es el caso, se procedió, utilizando como base la información brindada por los diagramas de dispersión (que en nuestro caso, debido a que la cantidad de celdas unitarias es finita, describen en forma aproximada las zonas frecuencia de atenuación), a obtener la relación del parámetro $S_{21}$ con la frecuencia para distintos valores geométricos, simulando la estructura completa.
 
-Para el caso de una distancia entre los parches de aproximadamente $3\lambda/2$, la cantidad de filas de celdas unitarias que se pueden ubicar entre los mismos para observar efectos de atenuación del acoplamiento mutuo varía entre 3 y 5. Las técnicas de modelado presentadas, y en particular las que requieren de simulación de una celda unitaria y la aplicación de condiciones de borde periódicas, describen el comportamiento de la estructura EBG cuando ésta se extiende infinitamente. Como, en general, este no es el caso, se procedió, utilizando como base la información brindada por los diagramas de dispersión (que en nuestro caso, debido a que la cantidad de celdas unitarias es finita, describen en forma aproximada las zonas frecuencia de atenuación), a obtener la relación del parámetro $S_{21}$ con la frecuencia para distintos valores geométricos, simulando la estructura completa, mostrada en la figura \ref{fig:estructura-completa-simulada-hfss}, con 4 puertos que permitieran analizar el efecto del agregado de más celdas unitarias.
+De los parámetros analizados que describen la geometría de las celdas unitarias de Yang, para ambos análisis (el que corresponde a la resolución de una única celda unitaria con condiciones de contorno periódicas, y el que simula una estructura finita completa), los más importantes resultaron: el tamaño de la celda unitaria, el tamaño del parche central y la distancia entre los parches de dos celdas unitarias aledañas.
 
-El diagrama de dispersión de mejores resultados en la dirección de interés ($\Gamma-X$) se muestra en la figura \ref{fig:diag-dispersion-ucbg}. En el mismo se observa que el primer \textit{bandgap}, ubicado entre los dos primeros modos de propagación, es incompleto. Sin embargo, para la aplicación buscada (en que las antenas \textit{microstrip} que se desea desacoplar son colineales), la dirección $M-\Gamma$ carece de importancia. Sí resultará importante para arreglos \textit{microstrip} bidimensionales, donde los radiadores podrían influenciarse mutuamente si están dispuestos de manera oblicua.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=1\textwidth]{Aplicacion/UCPBG-D15-L4-DP04.pdf}
-	\caption{Diagrama de dispersión para una celda unitaria con las características listadas en el cuadro \ref{table:valores-parametros-finales}. Se observa que no hay un \textit{bandgap} completo, aunque sí existe para la dirección de interés, $\Gamma-X$.}
-	\label{fig:diag-dispersion-ucbg}
-\end{figure}
-
-
-De los parámetros analizados que describen la geometría de las celdas unitarias de Yang, para ambos análisis (el que corresponde a la resolución de una única celda unitaria con condiciones de contorno periódicas, y el que simula una estructura finita completa), los más importantes resultaron: el tamaño de la celda unitaria, el tamaño del parche central y la distancia entre los parches de dos celdas unitarias aledañas. En las figuras \ref{fig:resultados-ucpbg-hfss} se muestra la variación del coeficiente $S_{21}$ con distintos parámetros (manteniendo los demás fijos), según simulaciones realizadas utilizando el software de simulación HFSS, que utiliza el método de elementos finitos para calcular estructuras electromagnéticas.
-
-En la figura \ref{fig:ucpbg-efecto-variacion-d} se observa que, en general, un mayor tamaño de celda da lugar a una banda de atenuación ubicada a frecuencias más bajas. Se debe tener en cuenta que resulta óptima una estructura que permita inexactitudes en el proceso de fabricación, por lo que un tamaño de celda de 15 mm (curva azul) no representaría una buena elección. La variación respecto del valor de $l$ permite deducir que un área de parche central más grande genera un corrimiento positivo en la frecuencia central, y por el mismo motivo que para el caso de la variación del parámetro $d$, la elección gira en torno a que la frecuencia de resonancia del sistema sobre el que se desea probar el comportamiento de la estructura se ubique en una zona segura ante problemas y tolerancias de fabricación. Finalmente, los efectos sobre $S_{21}$ de la variación de la distancia entre los parches esquina de distintas celdas unitarias se observa en la figura \ref{fig:estructura-completa-simulada-hfss}, donde se observa que para menores distancias (y por tanto, mayor acoplamiento capacitivo entre celdas cercanas) se logra que la frecuencia de $2.41$ GHz quede en el centro del rango de frecuencias atenuadas.
-
-\begin{figure}[H]
-	\centering 
-	\subfigure[Efecto de la variación de D.]{
-		\label{fig:ucpbg-efecto-variacion-d}
-		\includegraphics[width=0.40\textwidth]{Aplicacion/variacionD.pdf}}
-	\hspace{30pt}
-	\subfigure[Efecto de la variación de L.]{
-		\label{fig:ucpbg-efecto-variacion-l}
-		\includegraphics[width=0.40\textwidth]{Aplicacion/variacionL.pdf}}
-	\subfigure[Efecto de la variación de la distancia entre parches de esquinas.]{
-		\label{fig:ucpbg-efecto-variacion-distancia}
-		\includegraphics[width=0.40\textwidth]{Aplicacion/variaciondistancia.pdf}}
-	\hspace{30pt}
-	\subfigure[Estructura simulada en HFSS]{
-		\label{fig:estructura-completa-simulada-hfss}
-		\includegraphics[width=0.40\textwidth]{Aplicacion/captura-estructura-completa-hfss.png}}
-	\caption{Resultados de la variación de parámetros, según simulaciones de la estructura d) en Ansoft HFSS.}
-	\label{fig:resultados-ucpbg-hfss}
-\end{figure}
-
-En todos los casos, resulta claro que el rango de frecuencias de atenuación es mayor que el estimado mediante la simulación de una única celda unitaria con paredes periódicas. Esto es así debido a que la simulación de las estructuras infinitas sólo destaca zonas de frecuencia donde la propagación está impedida, y no donde las ondas son simplemente atenuadas sin que por ello su desarrollo físico resulte incompatible.
-
-En la tabla \ref{table:valores-parametros-finales} se lista el valor de los parámetros de diseño usados, según la nomenclatura definida en la figura \ref{fig:celda-yang}.
-
-
-\begin{table}
-	\centering
-	\begin{tabular}{c|c|c|c|c|c}
-		$d$ & $l$ & $a_m$ & $l_m$ & $w_m$ & $a_p$ \\
-		\hline
-		$16$ mm & $4$ mm & $0.4$ mm & $6$ mm & $3$ mm & $0.2$ mm
-	\end{tabular}
-\caption{Tabla de valores elegidos para la celda unitaria.}
-\label{table:valores-parametros-finales}
-\end{table}
+En general, un mayor tamaño de celda da lugar a una banda de atenuación ubicada a frecuencias más bajas. La elección gira en torno a que la frecuencia de resonancia del sistema sobre el que se desea probar el comportamiento de la estructura se ubique en una zona segura ante problemas y tolerancias de fabricación.
 
 \section{Estudio del efecto de la distancia sobre el ancho de banda}
 \label{sec_efecto_distancia}

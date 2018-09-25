@@ -950,6 +950,40 @@ Resulta posible, además, comparar las simulaciones de parámetros $S_{21}$ con 
 	\label{fig:diag-disp-yang-vs-s21}
 \end{figure}
 
+Finalmente, es posible analizar el comportamiento del parámetro $S_{11}$, en vistas de comprobar que el comportamiento de \textit{bandgap} se debe principalmente al fenómeno de Bragg descripto en la sección \ref{sec:bragg}, que está vinculado a la resonancia en la celda unitaria, ya que esta es la principal causante de la variación de la velocidad de propagación en la estructura. La comparación de las gráficas según el modelo y según la simulación de onda completa realizada con CST se puede observar en la figura \ref{fig:s11_comparacion}, de la que se puede deducir que la energía, en el \textit{bandgap}, es devuelta casi en su totalidad al puerto de entrada.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/s11-comparacion.pdf}
+	\caption{Comparación entre la magnitud del parámetro $S_{11}$ simulado con \textit{CST Microwave Studio} y el obtenido mediante el modelo propuesto.}
+	\label{fig:s11_comparacion}
+\end{figure}
+
+
+Bajo las mismas consideraciones, es posible analizar la fase de las señales que regresan al puerto de incidencia respecto de la señal original, para lo que resulta útil considerar la fase del parámetro $S_{11}$. Cuando la fase es de $180^{circle}$, la señal es reflejada en contrafase, efectivamente impidiendo o dificultando la propagación de la onda. Las gráficas, también para el caso simulado y el modelado circuitalmente, se muestran en la figura \ref{fig:s11-fase-compracion}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Modelado/s11-fase.pdf}
+	\caption{Comparación entre la fase del parémetro $S_{11}$ simulado con \textit{CST Microwave Studio} y el obtenido mediante el modelo propuesto.}
+	\label{fig:s11-fase-compracion}
+\end{figure}
+
+El comportamiento del parámetro $S_{21}$ de un conjunto de celdas unitarias dispuestas sobre una fila se muestra, para distintas posiciones dentro de dicha fila, en la figura \ref{fig:s12-variacion-pila-super}. A medida que se simula un punto más lejano a la fuente, de forma que energía atraviese una mayor cantidad de capas del metamaterial propuesto, el efecto es más notorio: Si bien la magnitud se mantiene aproximadamente constante, el ancho de banda del \textit{bandgap} aumenta considerablemente.
+
+
+\begin{figure}[h]
+	\centering 
+	\subfigure[Comportamiento, obtenido mediante simulación con CST Microwave Studio, del parámetro $S_{21}$, para distintas distancias a la fuente.]{
+		\label{fig:s12-variacion-pila}
+		\includegraphics[width=0.77\textwidth]{Modelado/s12-variacion-pila.pdf}}
+	\hspace{0pt}
+	\subfigure[Estructura simulada.]{
+		\label{fig:s12-variacion-pila-estructura}
+		\includegraphics[width=0.17\textwidth]{Modelado/apilamiento.PNG}}
+	\caption{Comportamiento de una fila de celdas unitarias.}
+	\label{fig:s12-variacion-pila-super}	
+\end{figure}
 
 \section{Modelado por líneas de transmisión}
 %%%%
