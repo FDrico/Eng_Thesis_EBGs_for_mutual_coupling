@@ -234,7 +234,7 @@ que tiene solución si $|\cos(2\phi + \theta/2)| \geq 1$, lo cual genera solucio
 	\label{fig:solucion-cos-cosh}
 \end{figure}
 
-Es posible vincular los valores de $\phi$ y $\theta$ con la frecuencia angular $\omega$, a través de la velocidad de propagación del medio, que será distinta para cada tramo de línea, para una proporción de $\theta$ y $\omega$ determinada. Según los valores de longitud de los tramos de líneas mostrados en la figura \ref{fig:circuito-equivalente-kim-parches}, a partir de la ecuación \ref{eq:diagDisp-teorico-estructura-sencilla-b}, y asumiendo que las longitudes eléctricas $\theta$ y $\phi$ resultan, respectivamente, $\beta_1 (a-b)$ y $\beta_2 b$, se puede reescribir la expresión para los puntos en que $\alpha\neq 0$ como
+Es posible vincular los valores de $\phi$ y $\theta$ con la frecuencia angular $\omega$, a través de la velocidropagaciónad de propagación del medio, que será distinta para cada tramo de línea, para una proporción de $\theta$ y $\omega$ determinada. Según los valores de longitud de los tramos de líneas mostrados en la figura \ref{fig:circuito-equivalente-kim-parches}, a partir de la ecuación \ref{eq:diagDisp-teorico-estructura-sencilla-b}, y asumiendo que las longitudes eléctricas $\theta$ y $\phi$ resultan, respectivamente, $\beta_1 (a-b)$ y $\beta_2 b$, se puede reescribir la expresión para los puntos en que $\alpha\neq 0$ como
 
 \begin{align}
 	\beta_1 (a-b) + \beta_2 b = n\pi
@@ -608,7 +608,7 @@ Se debe tener en cuenta que el uso de esta estructura presenta mayores dificulta
 
 \section{Modelado circuital}
 
-La forma más sencilla de modelar el comportamiento resonante es la representación circuital, como la discutida en la sección \ref{sec:modelo_analitico}. En la misma deben intervenir capacitores e inductores con valores seleccionados en función del comportamiento de la energía en la estructura. Si bien los efectos de altas frecuencias no podrán ser analizados bajo esta representación, sí debería ser posible observar, al menos en forma general, los fenómenos analizados para las frecuencias de trabajo, de manera que se pueda abordar el problema intuitivamente.
+La forma más sencilla de modelar el comportamiento resonante es la representación circuital, como la discutida en la sección \ref{sec:modelo_analitico}. En la misma deben intervenir capacitores e inductores con valores seleccionados en función del comportamiento de la energía en la estructura. Si bien los efectos de altas frecuencias no podrán ser analizados bajo esta representación, dado que no se consideran parámetros distribuidos ni se tiene en cuenta la variación de las capacidades e inductancias asociadas en función de la frecuencia, sí debería ser posible observar, al menos en forma general, los fenómenos analizados para las frecuencias de trabajo, de manera que se pueda abordar el problema intuitivamente.
 
 Para el caso particular de la celda de Yang presentada en la sección \ref{sec:celda-yang}, a raíz del análisis del comportamiento de los campos, resulta fácil comprender que, si bien los fenómenos que intervienen son numerosos, los más importantes están fuertemente vinculados a la circulación de corriente por el puente y al desarrollo del campo eléctrico entre las celdas.
 
@@ -637,7 +637,7 @@ Los valores geométricos de la celda unitaria utilizada como testigo son los que
 		$22.6\;mm$ & $6\;mm$ & $1.1\;mm$ & $0.8\;mm$ & $0.8\;mm$ & $1.6\;mm$ & $16.6\;mm$\\ 
 		\hline 
 	\end{tabular}
-	\caption{Valores geométricos de la celda unitaria analizada.}
+	\caption{Valores geométricos de la celda unitaria analizada., elegidos arbitrariamente.}
 	\label{table:CeldaUnitariaAnalisisiCircuital}
 \end{table}
 
@@ -983,7 +983,8 @@ El comportamiento del parámetro $S_{21}$ de un conjunto de celdas unitarias dis
 		\includegraphics[width=0.17\textwidth]{Modelado/apilamiento.PNG}}
 	\caption{Comportamiento de una fila de celdas unitarias.}
 	\label{fig:s12-variacion-pila-super}	
-\end{figure}
+\end{figure}  
+
 
 \section{Modelado por líneas de transmisión}
 %%%%

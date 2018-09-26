@@ -131,7 +131,7 @@ de la que se puede deducir que la velocidad de grupo, $V_g = d\omega/d\beta$, es
 En un material periódico se puede definir una red de Bravais, que indica la forma en que los elementos están físicamente dispuestos en la red cristalina. En la figura \ref{fig:direct-lattice}, $\vec{a_1}$ y $\vec{a_2}$ son la base de vectores que permite expresar la posición de cualquier elemento del arreglo como una combinación lineal de coeficientes enteros:
 
 \begin{equation}
-R_{n_1,n_2} = n_1 \vec{a_1} + n_2 \vec{a_2}, \quad n_i \in \textbf{Z}, i={1,2}
+R_{n_1,n_2} = n_1 \vec{a_1} + n_2 \vec{a_2}, \quad n_i \in \textbf{Z}, i={1,2}.
 \end{equation}
 
 La celda unitaria de la red de Bravais se denomina celda de Wigner-Seitz, y restringe la región del espacio más cercana a cada elemento de la red cristalina. Se puede observar, para el caso de una red triangular, en la figura \ref{fig:Wigner-Seitz}.
@@ -182,7 +182,7 @@ Para el caso en que las celdas unitarias son rectangulares, la red recíproca es
 
 El teorema Floquet fue presentado por Gaston Floquet en 1883, y explicita la forma canónica de las soluciones a ecuaciones diferenciales lineales ordinarias de coeficientes periódicos, de la forma $x' = A(t)x$, con $t \in \Re$, $X \in \Re^n$, donde $A(t)$ es una función periódica con periodo $p$. Si $x=\phi(t)$ es solución, entonces también lo es $x=\phi(x\pm np)$, con $n \in \mathbb{N}$. Esto significa que toda solución encontrada para el sistema con condiciones de contorno periódicas, es también periódica, con la misma periodicidad que las condiciones de borde, debiendo considerar, además, un factor de fase. Si bien el teorema aplica a ecuaciones de primer orden, toda ecuación de segundo orden puede ser transformada en un sistema de ecuaciones diferenciales de primer orden.
 
-Para en análisis de ondas electromagnéticas en un material periódico, se puede considerar el caso particular en que, dado que varían las condiciones de propagación periódicamente, como se describió en la sección \ref{sec:celdas-unitarias}, existe una periodicidad en el espacio de los número de onda $\gamma$. En el mismo sentido, una variación de los valores de permitividad eléctrica y permitividad magnética generan una variación en la constante de propagación, sin necesidad de considerar el análisis de estructuras cristalinas de la sección anterior. Dado que el vector de onda de la ecuación de Helmboltz (\ref{eq:Helmholtz}) varía periódicamente ($\gamma = \gamma(x)$), se puede plantear el sistema:
+Para en análisis de ondas electromagnéticas en un material periódico, se puede considerar el caso particular en que, dado que varían las condiciones de propagación periódicamente, como se describió en la sección \ref{sec:celdas-unitarias}, existe una periodicidad en el espacio de los número de onda $\gamma$. En el mismo sentido, una variación de los valores de permitividad eléctrica y permitividad magnética generan una variación en la constante de propagación, sin necesidad de considerar el análisis de estructuras cristalinas de la sección anterior. Dado que el vector de onda de la ecuación de Helmboltz (\ref{eq:Helmholtz}) varía periódicamente ($\gamma = \gamma(x)$), se puede plantear el sistema
 
 \begin{equation}
 	\begin{bmatrix}
@@ -197,7 +197,7 @@ Para en análisis de ondas electromagnéticas en un material periódico, se pued
 	\begin{bmatrix}
 		\phi_1(x) \\
 		\phi_2(x)
-	\end{bmatrix}
+	\end{bmatrix},
 \end{equation}
 
 donde $\gamma(x)$ es el vector de onda, variable en el espacio, de modo que en la estructura periódica, $\gamma(x) = \gamma(x+n p)$, $\phi_1(x) = E(x)$ y $\phi_2(x) = \frac{\partial E(x)}{\partial x} = \phi'_1(x)$. La matriz del sistema es periódica, por lo que cumple las condiciones del teorema de Floquet, de manera que la solución es de la forma
