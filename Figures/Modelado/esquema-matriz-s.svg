@@ -14,7 +14,7 @@
    viewBox="0 0 29.068514 14.021924"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="esquema-matriz-s.svg">
   <defs
      id="defs2">
@@ -221,8 +221,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6568543"
-     inkscape:cx="58.459489"
-     inkscape:cy="29.717753"
+     inkscape:cx="29.910053"
+     inkscape:cy="29.3642"
      inkscape:document-units="mm"
      inkscape:current-layer="g2267"
      showgrid="false"
@@ -232,9 +232,9 @@
      inkscape:snap-center="false"
      inkscape:snap-bbox="true"
      inkscape:window-width="1600"
-     inkscape:window-height="878"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-height="851"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="1">
     <sodipodi:guide
        position="6.4027668,8.0069222"
@@ -265,7 +265,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -735,7 +735,7 @@
              x="46.325092"
              y="36.624039"
              style="stroke-width:0.26458332"
-             id="tspan2827">la matríz S</tspan></text>
+             id="tspan2827">la matriz S</tspan></text>
         <path
            style="fill:none;stroke:#000000;stroke-width:0.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
            d="m 41.346595,35.33311 h 9.635066"

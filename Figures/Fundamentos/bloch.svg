@@ -14,7 +14,7 @@
    version="1.2"
    id="svg808"
    sodipodi:docname="bloch.svg"
-   inkscape:version="0.92.2 (unknown)">
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
      id="metadata812">
     <rdf:RDF>
@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -37,16 +37,24 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1600"
-     inkscape:window-height="876"
+     inkscape:window-height="851"
      id="namedview810"
      showgrid="false"
-     inkscape:zoom="0.3247869"
-     inkscape:cx="158.416"
-     inkscape:cy="71.963008"
+     inkscape:zoom="0.6495738"
+     inkscape:cx="247.49521"
+     inkscape:cy="115.73414"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
-     inkscape:current-layer="surface299" />
+     inkscape:current-layer="surface299"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="50.22524,35.215398"
+       orientation="1,0"
+       id="guide1277"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
   <defs
      id="defs331">
     <g
@@ -771,13 +779,6 @@
   </defs>
   <g
      id="surface299">
-    <rect
-       x="0"
-       y="0"
-       width="720"
-       height="504"
-       style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"
-       id="rect333" />
     <path
        style=" stroke:none;fill-rule:nonzero;fill:rgb(91.763306%,91.763306%,94.900513%);fill-opacity:1;"
        d="M 84.910156 151.542969 L 687.601562 151.542969 L 687.601562 32.398438 L 84.910156 32.398438 Z M 84.910156 151.542969 "
@@ -1654,67 +1655,88 @@
          id="use689" />
     </g>
     <g
-       style="fill:rgb(14.99939%,14.99939%,14.99939%);fill-opacity:1;"
-       id="g695">
+       style="fill:#232323;fill-opacity:1"
+       id="g695"
+       transform="translate(3.4638096,-22.514763)">
       <use
          xlink:href="#glyph1-1"
-         x="55.660262"
-         y="458.417091"
-         id="use693" />
+         x="55.660263"
+         y="458.41708"
+         id="use693"
+         width="100%"
+         height="100%" />
     </g>
     <g
-       style="fill:rgb(14.99939%,14.99939%,14.99939%);fill-opacity:1;"
-       id="g699">
+       style="fill:#232323;fill-opacity:1"
+       id="g699"
+       transform="translate(3.4638096,-22.514763)">
       <use
          xlink:href="#glyph2-1"
-         x="45.718023"
-         y="445.983796"
-         id="use697" />
+         x="45.718021"
+         y="445.9838"
+         id="use697"
+         width="100%"
+         height="100%" />
     </g>
     <g
-       style="fill:rgb(14.99939%,14.99939%,14.99939%);fill-opacity:1;"
-       id="g707">
+       style="fill:#232323;fill-opacity:1"
+       id="g707"
+       transform="translate(3.4638096,-22.514763)">
       <use
          xlink:href="#glyph2-3"
-         x="45.718023"
-         y="426.732492"
-         id="use705" />
+         x="45.718021"
+         y="426.73248"
+         id="use705"
+         width="100%"
+         height="100%" />
     </g>
     <g
-       style="fill:rgb(14.99939%,14.99939%,14.99939%);fill-opacity:1;"
-       id="g711">
+       style="fill:#232323;fill-opacity:1"
+       id="g711"
+       transform="translate(3.4638096,-22.514763)">
       <use
          xlink:href="#glyph1-2"
-         x="55.660262"
+         x="55.660263"
          y="415.55676"
-         id="use709" />
+         id="use709"
+         width="100%"
+         height="100%" />
     </g>
     <g
-       style="fill:rgb(14.99939%,14.99939%,14.99939%);fill-opacity:1;"
-       id="g715">
+       style="fill:#232323;fill-opacity:1"
+       id="g715"
+       transform="translate(3.4638096,-22.514763)">
       <use
          xlink:href="#glyph3-1"
-         x="55.660262"
-         y="400.288683"
-         id="use713" />
+         x="55.660263"
+         y="400.2887"
+         id="use713"
+         width="100%"
+         height="100%" />
     </g>
     <g
-       style="fill:rgb(14.99939%,14.99939%,14.99939%);fill-opacity:1;"
-       id="g719">
+       style="fill:#232323;fill-opacity:1"
+       id="g719"
+       transform="translate(3.4638096,-22.514763)">
       <use
          xlink:href="#glyph1-3"
-         x="55.660262"
-         y="390.58648"
-         id="use717" />
+         x="55.660263"
+         y="390.58649"
+         id="use717"
+         width="100%"
+         height="100%" />
     </g>
     <g
-       style="fill:rgb(14.99939%,14.99939%,14.99939%);fill-opacity:1;"
-       id="g723">
+       style="fill:#232323;fill-opacity:1"
+       id="g723"
+       transform="translate(3.4638096,-22.514763)">
       <use
          xlink:href="#glyph3-2"
-         x="55.660262"
-         y="375.342117"
-         id="use721" />
+         x="55.660263"
+         y="375.3421"
+         id="use721"
+         width="100%"
+         height="100%" />
     </g>
     <g
        clip-path="url(#clip78)"
@@ -1930,16 +1952,40 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.71353912px;line-height:125%;font-family:MathJax_SansSerif;-inkscape-font-specification:MathJax_SansSerif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.74999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-433.53091"
-       y="-66.740448"
+       x="-412.67984"
+       y="-57.567417"
        id="text1621-5"
        transform="rotate(-105)"
        inkscape:transform-center-x="-1.3194755"
        inkscape:transform-center-y="3.0361618e-06"><tspan
          sodipodi:role="line"
          id="tspan1623-8"
-         x="-433.53091"
-         y="-66.740448"
+         x="-412.67984"
+         y="-57.567417"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;stroke-width:0.74999994px">β</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30px;line-height:1.25;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:0.75"
+       x="-479.29227"
+       y="62.146683"
+       id="text1271"
+       transform="rotate(-89.710203)"><tspan
+         sodipodi:role="line"
+         id="tspan1269"
+         x="-479.29227"
+         y="62.146683"
+         style="fill:#1a1a1a;stroke-width:0.75">Re(</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30px;line-height:1.25;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';letter-spacing:0px;word-spacing:0px;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:0.75"
+       x="336.71115"
+       y="-41.37603"
+       id="text1275"
+       transform="rotate(89.420297)"><tspan
+         sodipodi:role="line"
+         id="tspan1273"
+         x="336.71115"
+         y="-41.37603"
+         style="fill:#1a1a1a;stroke-width:0.75">(</tspan></text>
   </g>
 </svg>
