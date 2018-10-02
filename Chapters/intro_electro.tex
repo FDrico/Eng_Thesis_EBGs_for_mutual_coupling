@@ -1,4 +1,4 @@
-% !TeX spellcheck = es_ANY
+% !TeX spellcheck = es_ES
 %%%%  Las secciones de texto con fórmulas se separan con %%%%
 %% Las fórmulas presentes entre 2 secciones de texto se separan con %%
 
@@ -307,18 +307,18 @@ La longitud de onda, $\lambda$, es la distancia espacial entre dos máximos suce
 %Pozar, pag 171
 %%%%
 
-Suponiendo una guía de ondas de forma arbitraria en la que la energía electromagnética se propaga en la dirección $z$, los campos eléctrico y magnético se pueden expresar como la suma de sus componentes longitudinales (en la dirección $z$) y sus componentes transversales (en el plano $xy$), con constantes $\gamma_z$ y $\gamma_t$, respectivamente, de modo que $\gamma_z + \gamma_t = \gamma$, y dependientes sólo de la posición en el plano transversal, de manera que:
+Suponiendo una guía de ondas de forma arbitraria en la que la energía electromagnética se propaga en la dirección $z$, los campos eléctrico y magnético se pueden expresar como la suma de sus componentes longitudinales (en la dirección $z$) y sus componentes transversales (en el plano $xy$), con constantes $\gamma_z$ y $\gamma_t$, respectivamente, de modo que $\gamma_z + \gamma_t = \gamma$, y dependientes sólo de la posición en el plano transversal, de manera que
 
 \begin{align}
-	\vec{E}(x,y,z) = \left[ \vec{e}_{xy}(x,y) + \hat{z} e_z(x,y) \right] e^{-j\gamma z}
+	\vec{E}(x,y,z) = \left[ \vec{e}_{xy}(x,y) + \hat{z} e_z(x,y) \right] e^{-j\gamma z}.
 \end{align}
 
-Aplicando las ecuaciones rotacionales de Maxwell (Faraday y Ampère en la ecuación \ref{eq:Maxwell}), considerando una región libre de cargas y un comportamiento armónico de los campos, así como un comportamiento sin pérdidas ($\gamma_z = \beta_z$), se puede deducir que las componentes transversales quedan en términos de las componentes longitudinales \cite{Fernandez:Electromag}:
+Aplicando las ecuaciones rotacionales de Maxwell (Faraday y Ampère en la ecuación \ref{eq:Maxwell}), considerando una región libre de cargas y un comportamiento armónico de los campos, así como un comportamiento sin pérdidas ($\gamma_z = \beta_z$), se puede deducir que las componentes transversales quedan en términos de las componentes longitudinales \cite{Fernandez:Electromag}
 
 \begin{equation}
 	\begin{aligned}
-		H_x &= \frac{j}{\gamma_t^2} \left(\omega \epsilon \frac{\partial E_z}{\partial y} - \beta_z \frac{\partial H_z}{\partial x} \right) & H_y &= \frac{-j}{\gamma_t^2} \left(\omega \epsilon \frac{\partial E_z}{\partial x} + \beta_z \frac{\partial H_z}{\partial y} \right)\\
-		E_x &= \frac{-j}{\gamma_t^2} \left(\omega \mu \frac{\partial H_z}{\partial y} + \beta_z \frac{\partial H_z}{\partial x} \right) & E_y &= \frac{j}{\gamma_t^2} \left(\omega \mu \frac{\partial H_z}{\partial x} - \beta_z \frac{\partial E_z}{\partial y} \right)
+		H_x &= \frac{j}{\gamma_t^2} \left(\omega \epsilon \frac{\partial E_z}{\partial y} - \beta_z \frac{\partial H_z}{\partial x} \right), & H_y &= \frac{-j}{\gamma_t^2} \left(\omega \epsilon \frac{\partial E_z}{\partial x} + \beta_z \frac{\partial H_z}{\partial y} \right),\\
+		E_x &= \frac{-j}{\gamma_t^2} \left(\omega \mu \frac{\partial H_z}{\partial y} + \beta_z \frac{\partial H_z}{\partial x} \right), & E_y &= \frac{j}{\gamma_t^2} \left(\omega \mu \frac{\partial H_z}{\partial x} - \beta_z \frac{\partial E_z}{\partial y} \right),
 	\end{aligned}
 	\label{eq:campos_guia_de_ondas}
 \end{equation}
@@ -360,8 +360,8 @@ Si se considera que una onda plana incide con ángulo de Brewster (concepto desa
 \begin{subequations}
 	\label{eq:ondas-superficie-campos}
 	\begin{align}
-	{H_1}_y &= A e^{-j\ (z\; \overbrace{\gamma_1\;\sin \theta_i}^{\gamma_z} - x\; \overbrace{\gamma_1\;\cos \theta_i}^{\gamma_{x_2}})},\;\; x>0 & j\omega\epsilon E_x &= -\frac{\partial H_y}{\partial z} \\
-	{H_2}_y &= A T e^{-j\; (z\; \overbrace{\gamma_2\; \sin \theta_t}^{\gamma_z} - x\; \overbrace{\gamma_2\; \cos \theta_t}^{\gamma_{x_2}})},\;\; x<0   & j\omega\epsilon E_z &= -\frac{\partial H_y}{\partial x} 
+	{H_1}_y &= A e^{-j\ (z\; \overbrace{\gamma_1\;\sin \theta_i}^{\gamma_z} - x\; \overbrace{\gamma_1\;\cos \theta_i}^{\gamma_{x_1}})},\;\; x>0 & j\omega\epsilon E_x &= -\frac{\partial H_y}{\partial z}, \\
+	{H_2}_y &= A T e^{-j\; (z\; \overbrace{\gamma_2\; \sin \theta_t}^{\gamma_z} - x\; \overbrace{\gamma_2\; \cos \theta_t}^{\gamma_{x_2}})},\;\; x<0   & j\omega\epsilon E_z &= -\frac{\partial H_y}{\partial x} .
 	\end{align}
 \end{subequations}
 
@@ -378,13 +378,13 @@ Las componentes normales a la interfaz, que llamaremos $\gamma_{x_i}$, $i=1,2$, 
 	& \gamma_{x_1}^2 + \gamma_z^2 = \gamma_1^2 &\text{y} &&\gamma_{x_2}^2 + \gamma_z^2 = \gamma_2^2.
 \end{align}
 
-Las impedancias de onda en ambas regiones se obtienen como la relación entre los campos tangenciales a la interfaz sobre la que se incide, de modo que:
+Las impedancias de onda en ambas regiones se obtienen como la relación entre los campos tangenciales a la interfaz sobre la que se incide, de modo que
 
 \begin{subequations}
 \label{eq:impedancia-onda-superficie}
 \begin{align}
-	Z_1 = \frac{{E_z}_1}{{H_y}_1} = \eta_0 \; \cos\; \theta_i &\implies Z_1 = \frac{\gamma_{x_1}}{\gamma_1} \eta_0 \label{eq:impedancia-onda-incidente-onda-sup}\\
-	Z_2 = \frac{{E_z}_2}{{H_y}_2} = \eta \; \cos \; \theta_t &\implies Z_2 = \frac{\gamma_{x_2}}{\gamma_2} \eta \label{eq:impedancia-onda-transmitida-onda-sup}
+	Z_1 = \frac{{E_z}_1}{{H_y}_1} = \eta_0 \; \cos\; \theta_i &\implies Z_1 = \frac{\gamma_{x_1}}{\gamma_1} \eta_0, \label{eq:impedancia-onda-incidente-onda-sup}\\
+	Z_2 = \frac{{E_z}_2}{{H_y}_2} = \eta \; \cos \; \theta_t &\implies Z_2 = \frac{\gamma_{x_2}}{\gamma_2} \eta. \label{eq:impedancia-onda-transmitida-onda-sup}
 \end{align}
 \end{subequations}
 
@@ -396,8 +396,8 @@ El campo magnético queda, entonces, expresado como:
 	H_y =
 	\left\lbrace
 	\begin{aligned}
-		A e^{-j\beta_z z -\alpha_{z_1} z + j\beta_{x_1}x - \alpha_{x_1}x}, \quad x>0 \\
-		A e^{-j\beta_z z -\alpha_{z_2} z + j\beta_{x_1}x + \alpha_{x_2}x}, \quad x<0 \\
+		A e^{-j\beta_z z -\alpha_{z_1} z + j\beta_{x_1}x - \alpha_{x_1}x}, \quad x>0, \\
+		A e^{-j\beta_z z -\alpha_{z_2} z + j\beta_{x_1}x + \alpha_{x_2}x}, \quad x<0. \\
 	\end{aligned}
 	\right.
 \end{equation}
@@ -408,11 +408,11 @@ Para bajas pérdidas, $\alpha_{z_i}$, $i=1,2$, será pequeño, por lo que habrá
 
 
 
-Si se considera una superficie con una impedancia de onda para polarización TM normalizada respecto de $\eta_0$, $Z_s = R_s + j X_s$, independiente del ángulo de incidencia, entonces, al igualar la impedancia de onda a la impedancia de superficie, y teniendo en cuenta las igualdades de la ecuación \ref{eq:impedancia-onda-superficie}, resulta, en el caso TM:
+Si se considera una superficie con una impedancia de onda para polarización TM normalizada respecto de $\eta_0$, $Z_s = R_s + j X_s$, independiente del ángulo de incidencia, entonces, al igualar la impedancia de onda a la impedancia de superficie, y teniendo en cuenta las igualdades de la ecuación \ref{eq:impedancia-onda-superficie}, resulta, en el caso TM,
 
 \begin{align}
-	\gamma_{x_1} & = \gamma_1 \frac{Z_1}{\eta_0} = \gamma_1 Z_s = \gamma_1 R_s + j \gamma_1 X_s \label{eq:h1-onda-superficie}\\
-	\gamma_z &= \beta_z - j\alpha_z =\sqrt{(\gamma_1^2 - \gamma_{x_1}^2)} = \gamma_1 \sqrt{1+X_s^2 - R_s^2 - 2jR_s X_s} \label{eq:beta-onda-superficie}
+	\gamma_{x_1} & = \gamma_1 \frac{Z_1}{\eta_0} = \gamma_1 Z_s = \gamma_1 R_s + j \gamma_1 X_s, \label{eq:h1-onda-superficie}\\
+	\gamma_z &= \beta_z - j\alpha_z =\sqrt{(\gamma_1^2 - \gamma_{x_1}^2)} = \gamma_1 \sqrt{1+X_s^2 - R_s^2 - 2jR_s X_s}. \label{eq:beta-onda-superficie}
 \end{align}
 
 La gráfica de las componentes real e imaginaria de $\gamma_z$ se muestra en la figura \ref{fig:beta-reactancia-TM}. Se puede observar que, cuando la reactancia es inductiva (valores positivos de $X_s$), $\alpha_z$ presenta valores positivos, por lo que habrá atenuación en la dirección de propagación $z$ ([a] en la figura) \footnote{Esto se debe a que si el campo eléctrico en la dirección $y$ se escribe como se indica en la ecuación \ref{eq:ondas-superficie-campos}, $\gamma_z=\beta_z-j\alpha_{z_i}, i=1,2$ y $\gamma_{x_1} = \beta{x_1}+j\alpha_{x_1}$, el exponente se expresa como $-j(\beta_z-j\alpha_{z_1})z + j(\beta_{x_1}+j\alpha_{x_1})x$. Para dirección de propagación $z$, con $z>0$, la componente de atenuación del exponente de la expresión dada resulta en $-\alpha_{z_i} z, i=1,2$. Para que el comportamiento resulte decreciente, $\alpha_{z_i}$ debe ser mayor a $0$.}. Esto significa que, a mayor reactancia, habrá una mayor disminución de la amplitud del campo a medida que la onda se desplace por la interfaz (aumenta el valor de $z$). Sin embargo, la mayor variación en el coeficiente de atenuación se observa con el cambio de valor de la resistencia, $R_s$ ([b] en la figura).
@@ -431,27 +431,27 @@ Analizando la ecuación \ref{eq:beta-onda-superficie}, se deduce que un producto
 	\label{fig:beta-reactancia-TM}
 \end{figure}
 
-La velocidad de propagación se obtiene directamente de la componente real de $\gamma_z$ que, si $R_s$ es pequeño y $X_s$ es grande, resulta, a partir de la expresión \ref{eq:beta-onda-superficie}, $\beta_z \approx \beta_1 \sqrt{1+X_s^2}$, de forma que la velocidad de fase es:
+La velocidad de propagación se obtiene directamente de la componente real de $\gamma_z$ que, si $R_s$ es pequeño y $X_s$ es grande, resulta, a partir de la expresión \ref{eq:beta-onda-superficie}, $\beta_z \approx \beta_1 \sqrt{1+X_s^2}$, de forma que la velocidad de fase es
 
 \begin{align}
-	v_p = \frac{\omega}{\beta_z} = \frac{c}{\sqrt{1+X_s^2}}
+	v_p = \frac{\omega}{\beta_z} = \frac{c}{\sqrt{1+X_s^2}}.
 \end{align}
 
 En los casos en que la componente reactiva de la impedancia de superficie es grande, el valor de la velocidad de propagación es menor al de la luz (denotado como [f] en la figura).
 
 %%%%%%%%%%%%%%%%%
 
-Cuando la interfaz es de tipo aire-conductor, la componente inductiva de la impedancia de superficie (relacionada a la profundidad de penetración) resulta igual a la componente resistiva, de forma que \cite{Fernandez:Electromag}:
+Cuando la interfaz es de tipo aire-conductor, la componente inductiva de la impedancia de superficie (relacionada a la profundidad de penetración) resulta igual a la componente resistiva, de forma que \cite{Fernandez:Electromag}
 
 \begin{align}
-	\eta &= \frac{1+j}{\sigma \delta}
+	\eta &= \frac{1+j}{\sigma \delta}.
 \end{align}
  
 Aplicando las ecuaciones \ref{eq:beta-onda-superficie}, se obtiene que\footnote{Considerando que $\gamma=\omega\sqrt{\epsilon \mu}$, $\eta_0=\sqrt{\epsilon_0}/\sqrt{\mu_0}$ y que $\delta=\sqrt{\frac{2}{\omega \mu_0 \sigma}}$, se observa que $\gamma/\eta_0=\frac{\omega \sqrt{\epsilon_0 \mu_0}}{\frac{\sqrt{\epsilon_0}}{\mu_0}}=\omega \mu_0$, por lo que se puede expresar a $\delta$ como $\frac{2 \eta_0}{\gamma \sigma}$.}
 
 \begin{align}
-	\gamma_x &= \gamma_1 (1+j) \sqrt{\frac{\gamma_1}{2 \sigma Z_0}} \\
-	\gamma_z &= \gamma_1 \sqrt{1-\frac{j \gamma_1}{\sigma Z_0}} \approx \gamma_1 - \frac{j  \gamma_1^2}{2 \sigma Z_0}
+	\gamma_x &= \gamma_1 (1+j) \sqrt{\frac{\gamma_1}{2 \sigma Z_0}}, \\
+	\gamma_z &= \gamma_1 \sqrt{1-\frac{j \gamma_1}{\sigma Z_0}} \approx \gamma_1 - \frac{j  \gamma_1^2}{2 \sigma Z_0}.
 \end{align}
 
 En general, un plano conductor soporta ondas de superficie, y la atenuación en la dirección de propagación es muy baja (ver figura \ref{fig:beta-reactancia-TM}), pero no es capaz de lograr una atenuación en la dirección normal al mismo tal que la energía se mantenga concentrada en la superficie para poder ser utilizada como guía de ondas, debido a que la conductividad es muy alta (lo que disminuye el valor de ${\alpha_x}_1$). Para lograr que la energía de la onda decaiga rápidamente lejos de la interfaz es necesario aumentar notoriamente la reactancia de la superficie, para lo que se suele agregar al conductor una capa dieléctrica, que además no aumenta considerablemente la resistividad.
@@ -461,26 +461,26 @@ Para el caso de ondas de superficie en modo TE, los campos están dados por la e
 \begin{equation}
 	\label{eq:campo-electrico-superficie-TE}
 	\begin{aligned}
-		E_y = A e^{j\gamma_x x-j\gamma_z z} \qquad j\omega \mu_0 H_z = -\frac{\partial E_y}{\partial x} \qquad j\omega \mu_0 H_x = \frac{\partial E_y}{\partial z}
+		E_y = A e^{j\gamma_x x-j\gamma_z z}, \qquad j\omega \mu_0 H_z = -\frac{\partial E_y}{\partial x}, \qquad j\omega \mu_0 H_x = \frac{\partial E_y}{\partial z}.
 	\end{aligned}
 \end{equation}
 
 \begin{align}
 	\label{eq:impedancia-onda-superficie-TE}
-	Z_1 = \frac{E_y}{H_z} = -\frac{\omega \mu_0}{\gamma_{x_1}} = -\frac{\eta \gamma_1}{\gamma_{x_1}}
+	Z_1 = \frac{E_y}{H_z} = -\frac{\omega \mu_0}{\gamma_{x_1}} = -\frac{\eta \gamma_1}{\gamma_{x_1}}.
 \end{align}
 
 \begin{align}
 	\label{eq:h1-onda-superficie-TE}
-	\gamma_{x_1} = -\frac{\gamma_1}{Z_s} = -\gamma_1 \frac{R_s}{{R_s^2 + X_s^2}}-j\frac{X_s}{R_s^2 + X_s^2}
+	\gamma_{x_1} = -\frac{\gamma_1}{Z_s} = -\gamma_1 \frac{R_s}{{R_s^2 + X_s^2}}-j\frac{X_s}{R_s^2 + X_s^2}.
 \end{align}
 
 Se observa que para que el valor de $\alpha_{x_1}$ resulte positivo, de manera que se de un decrecimiento exponencial desde la superficie, el valor de $X_s$ tiene que ser negativo, por lo que el comportamiento de la superficie tiene que ser capacitivo.
 
-La segunda condición para la existencia de ondas de superficie, la propagación de los campos, está asegurada si $\gamma_z$ es positivo, y si la atenuación en la dirección de propagación, parametrizada por $\alpha_z$, es baja. La expresión de $\gamma_z$ para el caso TE resulta, a partir de \ref{eq:h1-onda-superficie-TE}:
+La segunda condición para la existencia de ondas de superficie, la propagación de los campos, está asegurada si $\gamma_z$ es positivo, y si la atenuación en la dirección de propagación, parametrizada por $\alpha_z$, es baja. La expresión de $\gamma_z$ para el caso TE resulta, a partir de \ref{eq:h1-onda-superficie-TE},
 
 \begin{align}
-	\gamma_z = \beta_z-j\alpha_z= \sqrt{(\gamma_1^2 - \gamma_{x_1}^2)} = \frac{\gamma_1}{R_s^2+X_s^2} \sqrt{1+X_s^2 - R_s^2 + 2jR_s X_s} \label{eq:beta-onda-superficie-TE}
+	\gamma_z = \beta_z-j\alpha_z= \sqrt{(\gamma_1^2 - \gamma_{x_1}^2)} = \frac{\gamma_1}{R_s^2+X_s^2} \sqrt{1+X_s^2 - R_s^2 + 2jR_s X_s}. \label{eq:beta-onda-superficie-TE}
 \end{align}
 
 Gráficas de la expresión anterior se muestran en la figura \ref{fig:beta-reactancia-TE}, donde se pueden observar valores de $\beta_z$ y $\alpha_{z_1}$ en función de la reactancia $X_s$, para algunos valores de resistencia de superficie $R_s$. Resulta importante destacar que para valores en que $X_s$ es negativa (reactancia capacitiva), el valor de $\alpha_z$ es físicamente realizable, ya que da lugar a un decrecimiento exponencial, y no a un incremento. Por otro lado, al contrario que en el caso de las ondas TM, a medida que la reactancia capacitiva aumenta en módulo, la constante de propagación tiende a estabilizarse en lugar de crecer linealmente, aunque sí decrece la constante de atenuación $\alpha_z$. Cuando la resistencia de superficie es muy baja, los valores de $\beta_z$ para reactancia $X_s$ nula tienden a ser muy altos. Cuando los valores de resistencia aumentan ligeramente, al igual que en el caso TM, el valor de $\beta_z$ se vuelve nulo, lo que obliga a presentar un comportamiento capacitivo para la propagación de ondas de superficie en modo TE.
@@ -507,12 +507,12 @@ Para el caso TM, si se considera que el campo magnético tiene la forma de la ec
 
 \begin{align}
 	\label{eq:campo-magnetico-TM}
-	H_{1_y} = A e^{j\gamma_{x_1} x - j \gamma_z z},\quad x>t
+	H_{1_y} = A e^{j\gamma_{x_1} x - j \gamma_z z},\quad x>t.
 \end{align}
 
 \begin{align}
 	\label{eq:campo-magnetico-interior-diel-TM}
-	H_{2_y} = [B e^{j\gamma_{x_2} x} + C e^{-j\gamma_{x_2} x}] e^{-j\gamma_z z},\quad  0\leq x \leq t
+	H_{2_y} = [B e^{j\gamma_{x_2} x} + C e^{-j\gamma_{x_2} x}] e^{-j\gamma_z z},\quad  0\leq x \leq t.
 \end{align}
 
 Dado que en toda interfaz las componentes tangenciales de los campos se conservan, y a que las componentes tangenciales del campo eléctrico sobre el conductor se anulan, se deduce que $H_{2_y}$ es un coseno, y se obtienen\footnote{De la ecuación \ref{eq:campo-magnetico-TM} se deriva el campo eléctrico, utilizando la ecuación de Ampère. Al establecer la condición que indica que sobre la interfaz con el conductor no existe campo eléctrico paralelo a la superficie del mismo (se asume un conductor perfecto), se concluye que el valor de B y de C en la ecuación \ref{eq:campo-magnetico-interior-diel-TM} coinciden. Aplicando la condición de continuidad de las componentes tangenciales de los campos sobre la interfaz aire-dieléctrico, se obtiene una relación entre los valores de A y B. Queda expresado el siguiente sistema de ecuaciones:
@@ -538,8 +538,8 @@ Para que la solución no sea trivial, el determinante de la matriz del sistema t
 
 \begin{align}
 	\label{eq:solucion-ondas-sup-tm-tan}
-	\gamma_{x_2} \tan (\gamma_{x_2} t) = -j \gamma_{x_1} \epsilon_{r_2} \\
-	\gamma_1^2 (\epsilon_{r_2}-1) = \gamma_{x_2}^2 - \gamma_{x_1}^2
+	\gamma_{x_2} \tan (\gamma_{x_2} t) = -j \gamma_{x_1} \epsilon_{r_2}, \\
+	\gamma_1^2 (\epsilon_{r_2}-1) = \gamma_{x_2}^2 - \gamma_{x_1}^2.
 	\label{eq:solucion-ondas-sup-tm-h}
 \end{align}
 
@@ -549,7 +549,7 @@ Considerando que $\gamma_{x_1}$ es puramente imaginario positivo\footnote{Un an�
 	\label{eq:sistema-ondas-superficiales-TM}
 	\begin{cases}
 		(\gamma_{x_2} t)^2 + (\alpha_{x_1} t)^2 = (\epsilon_{r_2} - 1) (\gamma_1 t)^2\\
-		\gamma_{x_2} t \tan (\gamma_{x_2} t) = |\alpha_{x_1}| \epsilon_{r_2} t
+		\gamma_{x_2} t \tan (\gamma_{x_2} t) = |\alpha_{x_1}| \epsilon_{r_2} t.
 	\end{cases}
 \end{equation}
 
@@ -559,7 +559,7 @@ Para el caso TE, la solución es similar, y en este caso las expresiones resulta
 	\label{eq:sistema-ondas-superficiales-TE}
 	\begin{cases}
 		(\gamma_{x_2} t)^2 + (\alpha_{x_1} t)^2 = (\epsilon_{r_2} - 1) (\gamma_1 t)^2 \\
-		\gamma_{x_2} t \cot (\gamma_{x_2} t) = -|\alpha_{x_1}| \epsilon_{r_2} t
+		\gamma_{x_2} t \cot (\gamma_{x_2} t) = -|\alpha_{x_1}| \epsilon_{r_2} t.
 	\end{cases}
 \end{equation}
 
@@ -594,23 +594,23 @@ Obtenidos los valores de $\gamma_{x_1}$ ($\alpha_{x_1}$)y $\gamma_{x_2}$, se obt
 
 \begin{subequations}
 	\begin{align}
-		H_{y_1} &= A e^{j\gamma_{x_1}(x-t)-j\gamma_{z} z}, &E_{z_1} &= \frac{A \gamma_{x_1}}{\omega \epsilon_0} e^{j\gamma_{x_1}(x-t)-j\gamma_{z} z} &\implies& Z_1 = \frac{\gamma_{x_1}}{\omega \epsilon_0} = j\frac{\alpha_{x_1}}{\omega \epsilon_0} \label{eq:impedancia-no-normalizada-aire}\\
-		H_{y_2} &= 2 B \cos(\gamma_{x_2} x) e^{j\gamma_{z} z}, &E_{z_2} &=  \frac{-2 B \gamma_{x_2} \sin(\gamma_{x_2} x)e^{-j\gamma_{z} z}}{j \omega \epsilon_0 \epsilon_{r_2}} &\implies& Z_2 = \frac{j\gamma_{x_2} \tan(\gamma_{x_2} x)}{\omega \epsilon_0 \epsilon_{r_2}} \label{eq:impedancia-no-normalizada-FR4}
+		H_{y_1} &= A e^{j\gamma_{x_1}(x-t)-j\gamma_{z} z}, &E_{z_1} &= \frac{A \gamma_{x_1}}{\omega \epsilon_0} e^{j\gamma_{x_1}(x-t)-j\gamma_{z} z} &\implies& Z_1 = \frac{\gamma_{x_1}}{\omega \epsilon_0} = j\frac{\alpha_{x_1}}{\omega \epsilon_0}, \label{eq:impedancia-no-normalizada-aire}\\
+		H_{y_2} &= 2 B \cos(\gamma_{x_2} x) e^{j\gamma_{z} z}, &E_{z_2} &=  \frac{-2 B \gamma_{x_2} \sin(\gamma_{x_2} x)e^{-j\gamma_{z} z}}{j \omega \epsilon_0 \epsilon_{r_2}} &\implies& Z_2 = \frac{j\gamma_{x_2} \tan(\gamma_{x_2} x)}{\omega \epsilon_0 \epsilon_{r_2}}. \label{eq:impedancia-no-normalizada-FR4}
 	\end{align}
 \end{subequations}
 
-Normalizando respecto de la impedancia intrínseca del vacío, $\eta_0$, se obtiene, considerando $\theta_t$ el ángulo de transmisión desde el aire al dieléctrico que recubre el plano conductor,:
+Normalizando respecto de la impedancia intrínseca del vacío, $\eta_0$, se obtiene, considerando $\theta_t$ el ángulo de transmisión desde el aire al dieléctrico que recubre el plano conductor,
 
 \begin{align}
-	\frac{Z_{1}}{\eta_0} &= j\frac{\alpha_{x_1}}{\omega \epsilon_0 \eta_0} = j\frac{\gamma_1 \cos\theta_i}{\omega \epsilon_0 \eta_0} = j\cos \theta_i \\
-	\frac{Z_{2}}{\eta_0} &= j\frac{\gamma_{x_2} \tan \gamma_{x_2} x}{\omega \epsilon_0 \epsilon_{r_2} \eta_0} = j\frac{\gamma_2 \cos\theta_t \tan(\gamma_2 x \cos\theta_t)}{\omega \epsilon_0 \epsilon_{r_2} \eta_0} = j \frac{\cos \theta_t}{\sqrt{\epsilon_{r_2}}}\tan(\gamma_2 x \cos\theta_t)
+	\frac{Z_{1}}{\eta_0} &= j\frac{\alpha_{x_1}}{\omega \epsilon_0 \eta_0} = j\frac{\gamma_1 \cos\theta_i}{\omega \epsilon_0 \eta_0} = j\cos \theta_i, \\
+	\frac{Z_{2}}{\eta_0} &= j\frac{\gamma_{x_2} \tan \gamma_{x_2} x}{\omega \epsilon_0 \epsilon_{r_2} \eta_0} = j\frac{\gamma_2 \cos\theta_t \tan(\gamma_2 x \cos\theta_t)}{\omega \epsilon_0 \epsilon_{r_2} \eta_0} = j \frac{\cos \theta_t}{\sqrt{\epsilon_{r_2}}}\tan(\gamma_2 x \cos\theta_t).
 \end{align}
 
-Una onda incidente desde el aire, para evitar reflexiones y, por lo tanto, radiación desde la superficie que soporta una onda de superficie, debe estar adaptada a la impedancia de superficie que presenta el dieléctrico, que resulta de evaluar $Z_2/\eta_0$ en la superficie:
+Una onda incidente desde el aire, para evitar reflexiones y, por lo tanto, radiación desde la superficie que soporta una onda de superficie, debe estar adaptada a la impedancia de superficie que presenta el dieléctrico, que resulta de evaluar $Z_2/\eta_0$ en la superficie, por lo que
 
 \begin{align}
 	\label{eq:impedancia-superficie-tm-teorica}
-	Z_s^{TM} = j \frac{\cos \theta_t}{\sqrt{\epsilon_{r_2}}}\tan(\gamma_2 t \cos\theta_t)
+	Z_s^{TM} = j \frac{\cos \theta_t}{\sqrt{\epsilon_{r_2}}}\tan(\gamma_2 t \cos\theta_t).
 \end{align}
 
 
@@ -641,16 +641,16 @@ Esta impedancia es puramente imaginaria positiva\footnote{Si el dieléctrico pre
 Para el caso TE, los campos paralelos a la superficie son:
 
 \begin{align}
-	E_{y_1} &= A e^{-j\gamma_{x_1}(x-t)-j\gamma_z z}, &H_z &= -\frac{A \gamma_{x_1}}{\omega \mu_0} e^{-j\gamma_{x_1}(x-t)-j\gamma_z z} \notag \\
-	&\implies Z_{1} = -\frac{\gamma_{x_1}}{\omega \mu_0} \\
-	E_{y_2} &= A \sec{(\gamma_{x_2} t)} \cos{(\gamma_{x_2} x)} e^{-j \gamma_z z}, &H_{z_2} &= -\frac{A \gamma_{x_2} e^{j\gamma_z z}}{j\omega \mu_0} \sec{(\gamma_{x_2} t)} \sin(\gamma_{x_2} x) \notag \\
-	&\implies Z_{2} = \frac{j\cot(\gamma_{x_2} x)}{\gamma_{x_2} \omega \mu_0}
+	E_{y_1} &= A e^{-j\gamma_{x_1}(x-t)-j\gamma_z z}, &H_z &= -\frac{A \gamma_{x_1}}{\omega \mu_0} e^{-j\gamma_{x_1}(x-t)-j\gamma_z z}. \notag \\
+	&\implies Z_{1} = -\frac{\gamma_{x_1}}{\omega \mu_0}, \\
+	E_{y_2} &= A \sec{(\gamma_{x_2} t)} \cos{(\gamma_{x_2} x)} e^{-j \gamma_z z}, &H_{z_2} &= -\frac{A \gamma_{x_2} e^{j\gamma_z z}}{j\omega \mu_0} \sec{(\gamma_{x_2} t)} \sin(\gamma_{x_2} x), \notag \\
+	&\implies Z_{2} = \frac{j\cot(\gamma_{x_2} x)}{\gamma_{x_2} \omega \mu_0}.
 \end{align}
 
-Siguiendo la misma metodología que en el caso TM, igualando ambas impedancias, se obtiene:
+Siguiendo la misma metodología que en el caso TM, igualando ambas impedancias, se obtiene
 
 \begin{align}
-	Z_s^{TE} = j\frac{\cot(\gamma_2 \cos \theta_t)}{\gamma_2 \cos\theta_t \;\omega \mu_0}
+	Z_s^{TE} = j\frac{\cot(\gamma_2 \cos \theta_t)}{\gamma_2 \cos\theta_t \;\omega \mu_0}.
 \end{align}
 % Queda explicar qué pasa con el coating -> ubicar también los puntos en el dibujito, para saber por dónde es que nos movimos.
 
@@ -700,7 +700,7 @@ La impedancia y la admitancia por unidad de longitud se pueden expresar como ind
 
 \begin{align}
 \label{eq:impedancia-admitancia-TL}
-Z' &= j \left(\omega L'_r - \frac{1}{\omega C'_L} \right) & Y' =j \left(\omega C'_R - \frac{1}{\omega L'_L} \right)
+Z' &= j \left(\omega L'_r - \frac{1}{\omega C'_L} \right), & Y' =j \left(\omega C'_R - \frac{1}{\omega L'_L} \right).
 \end{align}
 
 Una descripción completa del análisis del caso general, que describe el comportamiento de numerosos metamateriales, se puede consultar en \cite{Caloz:ElectromagneticMetamaterials}. En adelante se analizará únicamente el caso tradicional, de mano derecha, ya que es el que se aplica al tipo de estructura analizado en este trabajo.
@@ -714,22 +714,22 @@ Considerando una línea de transmisión que representa un comportamiento puramen
 	\frac{\partial i(z,t)}{\partial z} & = -G v(z,t) - C \frac{\partial v(z,t)}{\partial t}
 	\end{array}\right\} \quad \implies \quad \left\{\begin{array}{r@{\mskip\thickmuskip}l}
 	\frac{dV(z)}{dz} & = -(R+j\omega L)I(z) \\
-	\frac{dI(z)}{dz} & = -(G+j\omega C)V(z) 
+	\frac{dI(z)}{dz} & = -(G+j\omega C)V(z).
 	\end{array}\right.
 \end{align}
 
 
 \begin{equation}
 \begin{aligned}
-	\frac{d^2 V(z)}{dz^2} + \gamma^2 V(z) = 0 \\
-	\frac{d^2 I(z)}{dz^2} + \gamma^2 I(z) = 0
+	\frac{d^2 V(z)}{dz^2} + \gamma^2 V(z) = 0, \\
+	\frac{d^2 I(z)}{dz^2} + \gamma^2 I(z) = 0.
 \end{aligned}
 \label{eq:ec-onda-TL}
 \end{equation}
 
 \begin{align}
 	\label{eq:gamma-tl}
-	\gamma = -j\alpha + \beta = \sqrt{-ZY} = \sqrt{-(R+j\omega L)(G+j\omega C)}	
+	\gamma = -j\alpha + \beta = \sqrt{-ZY} = \sqrt{-(R+j\omega L)(G+j\omega C)}.
 \end{align}
 
 En base a esta constante de propagación, es posible definir la velocidad de fase $V_p$ como
@@ -742,34 +742,34 @@ que para el caso sin pérdidas resulta
 
 \begin{align}
 	\label{eq:vprop-linea-ideal}
-	V_p = \frac{\omega}{\omega \sqrt{LC}} = \frac{1}{\sqrt{LC}}
+	V_p = \frac{\omega}{\omega \sqrt{LC}} = \frac{1}{\sqrt{LC}}.
 \end{align}
 
 Las ecuaciones de onda tienen como solución la superposición de una onda en dirección $+z$ y otra en dirección $-z$, tanto para la tensión como para la corriente, con velocidad de fase $\omega/\beta$. La relación entre las componentes de onda que viajan en dirección positiva se conoce como impedancia característica, $Z_0$, definida, según los parámetros de una línea de transmisión, en la ecuación \ref{eq:TL-impedancia-caracteristica}.
  
 \begin{align}
 	\label{eq:TL-impedancia-caracteristica}
-	Z_0 = \frac{V_0^+}{I_0^+} = \sqrt{\frac{R+j\omega L}{G+j\omega C}} \qquad \text{Impedancia característica}
+	Z_0 = \frac{V_0^+}{I_0^+} = \sqrt{\frac{R+j\omega L}{G+j\omega C}}.
 \end{align}
 
 Cuando una línea de transmisión es terminada en una impedancia arbitraria $Z_L$, se producen fenómenos de transmisión y reflexión de potencia, de manera análoga al caso de incidencia de campos electromagnéticos sobre interfaces entre medios de impedancias intrínsecas diferentes, analizado en la sección \ref{sec:incidencia-onda-plana-interfaz}. Existe, también en este caso, un coeficiente de reflexión $\Gamma$, definido como la relación entre la tensión reflejada y la tensión incidente, como indica la ecuación \ref{eq:coef-reflexion-tl}. Cuando el coeficiente de transmisión es nulo, se dice que la carga está adaptada, de modo que $Z_L = Z_0$.
 
 \begin{align}
 	\label{eq:coef-reflexion-tl}
-	\Gamma = \frac{V_0^-}{V_0^+} = \frac{Z_L-Z_0}{Z_L+Z_0}
+	\Gamma = \frac{V_0^-}{V_0^+} = \frac{Z_L-Z_0}{Z_L+Z_0}.
 \end{align}
 
 Si se generaliza el concepto de coeficiente de transmisión a cualquier punto de la línea, y no únicamente al nodo donde se coloca la carga $Z_L$, se obtiene el coeficiente de reflexión para cualquier punto $l$ de la línea a partir del que corresponde al nodo de carga, ubicado en la posición 0, como se indica en la ecuación \ref{eq:coef-reflexion-tl-generalizado}.
 
 \begin{align}
 \label{eq:coef-reflexion-tl-generalizado}
-\Gamma(l) = \Gamma e^{-2j\gamma l} = \Gamma e^{-2j\beta l} e^{-2\alpha l}
+\Gamma(l) = \Gamma e^{-2j\gamma l} = \Gamma e^{-2j\beta l} e^{-2\alpha l}.
 \end{align}
 
 La impedancia de entrada también varía con la distancia a la carga, de forma que:
 
 \begin{align}
-Z_{in} = \frac{V(-l)}{I(-l)} = Z_0 \frac{Z_L +Z_0 \tanh \gamma l}{Z_0 + Z_L \tanh \gamma l}
+Z_{in} = \frac{V(-l)}{I(-l)} = Z_0 \frac{Z_L +Z_0 \tanh \gamma l}{Z_0 + Z_L \tanh \gamma l}.
 \end{align}
 
 En la figura \ref{fig:Zin-Gamma-funcionDistancia-TL} se puede observar una gráfica de $\Gamma$ y $Z_{in}$ en función de la distancia a la carga, para una línea de impedancia característica $Z_0$ de $50 \; \Omega$, con una carga de $100 \; \Omega$, considerando pérdidas y constante de propagación arbitrarias.
@@ -811,14 +811,14 @@ La deducción de los componentes de la matriz de transferencia requiere del aná
 Dado que la tensión reflejada vista a distancia $d$ de la carga, $V^{-}(d)$, se calcula como $-Z_0 I^{-}$, y que la tensión total sobre dicho nodo resulta de la suma de ambas tensiones (la incidente y la reflejada), para el caso de una carga cortocircuito ($Z_L = 0$), donde la tensión sobre la carga es $V_{n+1} = 0$, resulta que:
 
 \begin{align}
-	\Gamma = -1 \implies V(d) = V_n e^{-j\gamma d} - V_n e^{j\gamma d} = 2 j V_n \sin(\gamma d) = B \\
+	\Gamma = -1 \implies V(d) = V_n e^{-j\gamma d} - V_n e^{j\gamma d} = 2 j V_n \sin(\gamma d) = B, \\
 	I_n (d) = I_n e^{-j\gamma d} + I_n e^{j\gamma d} = 2 I_n \cos(\gamma d) = D.
 \end{align}
 
 De forma similar, para el caso de una carga de tipo circuito abierto, $Z_L \rightarrow \infty$, $\Gamma = 1$ y
 
 \begin{align}
-V(d) = V_n e^{-j\gamma d} + V_n e^{j\gamma d} = 2 V_n \cos(\gamma d) = A \\
+V(d) = V_n e^{-j\gamma d} + V_n e^{j\gamma d} = 2 V_n \cos(\gamma d) = A, \\
 I_n (d) = I_n e^{-j\gamma d} - I_n e^{j\gamma d} = 2 j I_n \sin(\gamma d) = C.
 \end{align}
 
@@ -829,7 +829,7 @@ En forma normalizada, la matriz resulta \cite{Pozar:MwEngineering}
 \begin{bmatrix}
 \cos(\gamma d) & \sin(\gamma d) \\
 \sin(\gamma d) & \cos(\gamma d)
-\end{bmatrix}
+\end{bmatrix}.
 \end{align}
 
 
@@ -857,10 +857,10 @@ Las \textit{striplines}, debido a la homogeneidad del dieléctrico, soportan mod
 	\label{fig:microstrip-campos}
 \end{figure}
 
-En general, para simplificar el análisis, se considera que la cinta \textit{microstrip} es una \textit{stripline}, donde el dieléctrico tiene una constante dieléctrica efectiva, menor a la constante dieléctrica del sustrato, pero mayor a la del aire, dependiente del ancho del sustrato, el ancho del conductor y la frecuencia de trabajo. La expresión de esta constante es la siguiente:
+En general, para simplificar el análisis, se considera que la cinta \textit{microstrip} es una \textit{stripline}, donde el dieléctrico tiene una constante dieléctrica efectiva, menor a la constante dieléctrica del sustrato, pero mayor a la del aire, dependiente del ancho del sustrato, el ancho del conductor y la frecuencia de trabajo. La expresión de esta constante es
 
 \begin{align}
-	\epsilon_{eff} = \epsilon_0 \left(\frac{\epsilon_r+1}{2} + \frac{\epsilon_r-1}{2} \left( 1+12 \frac{h}{W} \right)^{-1/2} \right)
+	\epsilon_{eff} = \epsilon_0 \left(\frac{\epsilon_r+1}{2} + \frac{\epsilon_r-1}{2} \left( 1+12 \frac{h}{W} \right)^{-1/2} \right).
 	\label{eq:cte-diel-efectiva-microstrip}
 \end{align}
 
@@ -907,16 +907,16 @@ El análisis más sencillo del comportamiento de conjuntos de antenas se present
 	\label{fig:rayosincidentes-array}
 \end{figure}
 
-El factor de \textit{array}, reemplazando cada elemento por radiadores isotrópicos, se obtiene considerando que una onda plana incide con ángulo $\theta$ sobre el conjunto, como se muestra en la figura \ref{fig:rayosincidentes-array}. Cada elemento es excitado con una fase $\xi_i$, debida a la diferencia de caminos y a las diferencias entre las líneas de transmisión de cada antena, de modo que:
+El factor de \textit{array}, reemplazando cada elemento por radiadores isotrópicos, se obtiene considerando que una onda plana incide con ángulo $\theta$ sobre el conjunto, como se muestra en la figura \ref{fig:rayosincidentes-array}. Cada elemento es excitado con una fase $\xi_i$, debida a la diferencia de caminos y a las diferencias entre las líneas de transmisión de cada antena, de modo que
 
 \begin{equation}
-AF=I_0e^{j\xi_0} + I_1e^{j\xi_1} + ... = \sum_{n=0}^{N-1} I_n e^{j\beta n d cos(\theta)}=\sum_{n=0}^{N-1} I_n e^{jn\Phi}
+AF=I_0e^{j\xi_0} + I_1e^{j\xi_1} + ... = \sum_{n=0}^{N-1} I_n e^{j\beta n d cos(\theta)}=\sum_{n=0}^{N-1} I_n e^{jn\Phi}.
 \end{equation}
 
-Normalizando y simplificando la expresión, la misma queda:
+Normalizando y simplificando la expresión, la misma queda
 
 \begin{equation}
-	f(\Phi) = \frac{sin(N\Phi/2)}{N sin(\Phi/2)} \qquad (2\pi-\text{periódica})
+	f(\Phi) = \frac{sin(N\Phi/2)}{N sin(\Phi/2)} \qquad (2\pi-\text{periódica}),
 \end{equation}
 
 con N la cantidad de elementos radiantes. Se observa que si hay una mayor cantidad de elementos radiantes, los lóbulos, tanto secundarios como primarios, tiende a aumentar. Además, al mismo tiempo, la cantidad de lóbulos secundarios también crece (hay N-1 lóbulos secundarios), al mismo tiempo que disminuye la altura de los mismos \cite{Stutzman:AntennaTheory}.
@@ -951,13 +951,13 @@ V_1 \\ V_2 \\ \vdots \\ V_N
 	\end{bmatrix}}_{Z}
 \begin{bmatrix}
 I_1 \\ I_2 \\ \vdots \\ I_N
-\end{bmatrix}
+\end{bmatrix}.
 \end{equation}
 
-Si suponemos que la antena no excitada tiene una impedancia de carga $Z^g_j$ sobre sus terminales (y que el generador de esa antena está apagado, $V^g_j=0$), la corriente generada sobre el elemento $j$ debido a la radiación del elemento $i$ será tal que $V_j=-Z^g_j I_j$, por lo que:
+Si suponemos que la antena no excitada tiene una impedancia de carga $Z^g_j$ sobre sus terminales (y que el generador de esa antena está apagado, $V^g_j=0$), la corriente generada sobre el elemento $j$ debido a la radiación del elemento $i$ será tal que $V_j=-Z^g_j I_j$, por lo que
 
 \begin{equation} \label{eq:impmutua}
-V_j = -Z^g_j I_j = Z_{jj}I_j + \sum_{i=1, i \neq j}^{N} Z_{ji}I_i 
+V_j = -Z^g_j I_j = Z_{jj}I_j + \sum_{i=1, i \neq j}^{N} Z_{ji}I_i.
 \end{equation}
 
 En el caso en que se consideren sólo dos antenas, de la ecuación \ref{eq:impmutua} para dos elementos, podemos obtener la expresión de la corriente en el segundo elemento, que da lugar a la expresión de la impedancia total vista por el primer elemento, por efecto propio y de la radiación del segundo, como muestra la ecuación \ref{eq:impedanciamutua}, donde se asumió que la matriz Z es simétrica, y que permite deducir la ecuación \ref{eq:impedanciaAntenaEnArray}, que es la impedancia de entrada de cada elemento, en función de impedancias mensurables.
@@ -967,7 +967,7 @@ En el caso en que se consideren sólo dos antenas, de la ecuación \ref{eq:impmu
 	\left\{
 	\begin{aligned}
 		V_1 &= Z_{11} I_1 + Z_{12} I_2 \\
-		V_2 = -Z^g_2 I_2 &= Z_{22} I_2 + Z_{21}I_1
+		V_2 = -Z^g_2 I_2 &= Z_{22} I_2 + Z_{21}I_1.
 	\end{aligned}
 	\right.
 \end{equation}
@@ -975,7 +975,7 @@ En el caso en que se consideren sólo dos antenas, de la ecuación \ref{eq:impmu
 \begin{align}
 	\label{eq:impedanciaAntenaEnArray}
 	I_2 = \frac{-Z_{21}I_1}{Z_{22}+Z^g_{2}} = \frac{-Z_{12}I_1}{Z_{22}+Z^g_{2}}  \quad \implies \quad
-	\frac{V_1}{I_1} = Z_1 = Z_{11} - \frac{(Z_{12})^2}{Z_{22}+Z^g_2}
+	\frac{V_1}{I_1} = Z_1 = Z_{11} - \frac{(Z_{12})^2}{Z_{22}+Z^g_2}.
 \end{align}
 
 %Paper de fano y el cordobeés.
@@ -1021,12 +1021,12 @@ Al igual que en el caso de las líneas \textit{microstrip}, se debe considerar u
 El efecto de \textit{fringing} en los bordes del parche, que da lugar a un aumento del tamaño eléctrico, se modelan mediante la consideración de una extensión en la línea de transmisión que une a las aperturas radiantes, en función de la altura del sustrato. El cambio en la extensión de la línea de transmisión sugiere un cambio en la frecuencia de resonancia de la antena, al mismo tiempo que un mayor ancho de banda, sin una modificación del tamaño físico. En la ecuación \ref{eq:deltaL-antena-microstrip} se muestra una expresión aproximada de la variación del tamaño eléctrico, de forma que la longitud efectiva de la línea de transmisión resulta $L_{eff} = L + 2 \Delta L$. Esta expresión se utiliza para la obtención de la frecuencia de resonancia, como indica la expresión \ref{eq:frec-resonancia-modelo-linea-microstrip} para el modo dominante, $TM_{010}$.
 
 \begin{align}
-	\Delta L = h\; 0.412 \frac{(\epsilon_{eff}+0.3)(W/h + 0.264)}{(\epsilon_{eff}-0.258)(W/h +0.8)}
+	\Delta L = h\; 0.412 \frac{(\epsilon_{eff}+0.3)(W/h + 0.264)}{(\epsilon_{eff}-0.258)(W/h +0.8)}.
 	\label{eq:deltaL-antena-microstrip}
 \end{align}
 
 \begin{align}
-	f_{{r}_{010}} = \frac{v_p}{\lambda} = \frac{c/\sqrt{\epsilon_{r_{eff}}}{2*L_{eff}}} = \frac{1}{2 L_{eff} \sqrt{\epsilon_{eff}} \sqrt{\mu_0 \epsilon_0}} = \frac{1}{2 (L+2 \Delta L) \sqrt{\epsilon_{eff}} \sqrt{\mu_0 \epsilon_0}}
+	f_{{r}_{010}} = \frac{v_p}{\lambda} = \frac{c/\sqrt{\epsilon_{r_{eff}}}{2*L_{eff}}} = \frac{1}{2 L_{eff} \sqrt{\epsilon_{eff}} \sqrt{\mu_0 \epsilon_0}} = \frac{1}{2 (L+2 \Delta L) \sqrt{\epsilon_{eff}} \sqrt{\mu_0 \epsilon_0}}.
 	\label{eq:frec-resonancia-modelo-linea-microstrip}
 \end{align}
 
@@ -1065,7 +1065,7 @@ La consideración de paredes laterales como conductores magnéticos deviene de l
 La obtención de los campos se detalla en \cite{Balanis:Advanced}, donde, considerando las hipótesis descriptas antes, asumiendo que el vector de potencial $\vec{A}$ tiene que cumplir la ecuación de Helmholtz (\ref{eq:Helmholtz}), y utilizando separación de variables, se obtienen soluciones para distintos modos, todos transversales magnéticos, con frecuencias de resonancia dadas por \ref{eq:frecRes-modosSup-microstripAntenna}, donde $n$, $m$ y $p$ son los índices del modo. El modo dominante, dado que $h < L$ y $h < W$, es el $TM_{010}$, cuya distribución de campos se muestra en la figura \ref{fig:distribucion-campos-microstrip}.
  
 \begin{align}
-	(f_r)_{nmp} = \frac{1}{2 \pi \sqrt{\mu \epsilon}} \sqrt{\left(\frac{m\pi}{h}\right)^2 + \left(\frac{n\pi}{L}\right)^2 + \left(\frac{p\pi}{W}\right)^2}
+	(f_r)_{nmp} = \frac{1}{2 \pi \sqrt{\mu \epsilon}} \sqrt{\left(\frac{m\pi}{h}\right)^2 + \left(\frac{n\pi}{L}\right)^2 + \left(\frac{p\pi}{W}\right)^2}.
 	\label{eq:frecRes-modosSup-microstripAntenna}
 \end{align}
 
@@ -1078,17 +1078,17 @@ La obtención de los campos se detalla en \cite{Balanis:Advanced}, donde, consid
 
 A pesar de que hay 4 aperturas en una antena \textit{microstrip} rectangular, sólo 2, las radiantes, aportan significativamente a la radiación, dado que lo radiado por las otras dos se cancelan sobre los planos principales. Las paredes separadas aproximadamente $\lambda/2$ tienen campos en direcciones opuestas en el mismo momento, por lo que se suman en la dirección normal al parche, dando lugar a un comportamiento \textit{broadside}.
 
-Un aspecto importante del análisis por el modelo de cavidad radica en las densidades de corriente equivalentes. Según lo descripto antes, existe una corriente, $\vec{J}$, sobre la superficie del parche. Debido a que la polarización es TM, sobre las aperturas radiantes laterales debe existir también una densidad de corriente eléctrica, $\vec{J}_s$, y una densidad de corriente magnética, $\vec{M}_s$, de modo que, en función de los campos en las aperturas:
+Un aspecto importante del análisis por el modelo de cavidad radica en las densidades de corriente equivalentes. Según lo descripto antes, existe una corriente, $\vec{J}$, sobre la superficie del parche. Debido a que la polarización es TM, sobre las aperturas radiantes laterales debe existir también una densidad de corriente eléctrica, $\vec{J}_s$, y una densidad de corriente magnética, $\vec{M}_s$, de modo que, en función de los campos en las aperturas,
 
 \begin{align}
-	\vec{J}_s &= \hat{n} \times \vec{H}_a & \vec{M}_s = - \hat{n} \times \vec{E}_a
+	\vec{J}_s &= \hat{n} \times \vec{H}_a, & \vec{M}_s = - \hat{n} \times \vec{E}_a
 \end{align}
 
 Según las hipótesis dadas antes, y como se muestra en la figura \ref{fig:distribucion-campos-microstrip}, la magnitud del campo magnético tangencial a las paredes es despreciable, de modo que la corriente sobre las paredes, $\vec{J}_s$, también lo es. La corriente sobre el parche, debido a la baja distancia con el plano de tierra, es baja, por lo que también puede considerarse despreciable. De esta forma, la única densidad de corriente apreciable es $\vec{M}_s$. El efecto del plano de tierra se puede tener en cuenta considerando teoría de imágenes. Según la misma, dado que se trata de un conductor eléctrico, las corrientes magnéticas imagen tienen el mismo sentido que las originales, de modo que la densidad de corriente magnética equivalente resulta el doble que la original, como se expresa en la ecuación \ref{eq:densidad-de-corriente-caras-laterales-microstrip}, y se observa en la figura \ref{fig:densidad-corriente-microstrip}.
 
 \begin{align}
 	\label{eq:densidad-de-corriente-caras-laterales-microstrip}
-	\vec{M}_s = -2 \hat{n} \times \vec{E}_a
+	\vec{M}_s = -2 \hat{n} \times \vec{E}_a.
 \end{align}
 
 \begin{figure}[htp]

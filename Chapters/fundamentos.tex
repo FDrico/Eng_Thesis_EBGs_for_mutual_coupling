@@ -131,7 +131,7 @@ de la que se puede deducir que la velocidad de grupo, $V_g = d\omega/d\beta$, es
 En un material periódico se puede definir una red de Bravais, que indica la forma en que los elementos están físicamente dispuestos en la red cristalina. En la figura \ref{fig:direct-lattice}, $\vec{a_1}$ y $\vec{a_2}$ son la base de vectores que permite expresar la posición de cualquier elemento del arreglo como una combinación lineal de coeficientes enteros:
 
 \begin{equation}
-R_{n_1,n_2} = n_1 \vec{a_1} + n_2 \vec{a_2}, \quad n_i \in \textbf{Z}, i={1,2}
+R_{n_1,n_2} = n_1 \vec{a_1} + n_2 \vec{a_2}, \quad n_i \in \textbf{Z}, i={1,2}.
 \end{equation}
 
 La celda unitaria de la red de Bravais se denomina celda de Wigner-Seitz, y restringe la región del espacio más cercana a cada elemento de la red cristalina. Se puede observar, para el caso de una red triangular, en la figura \ref{fig:Wigner-Seitz}.
@@ -180,9 +180,70 @@ Para el caso en que las celdas unitarias son rectangulares, la red recíproca es
 
 % Floquet es como fourier en el espacio. Taylor and francis, pag 30-5.
 
-El teorema Floquet fue presentado por Gaston Floquet en 1883, y explicita la forma canónica de las soluciones a ecuaciones diferenciales lineales ordinarias de coeficientes periódicos, de la forma $x' = A(t)x$, con $t \in \Re$, $X \in \Re^n$, donde $A(t)$ es una función periódica con periodo $p$. Si $x=\phi(t)$ es solución, entonces también lo es $x=\phi(x\pm np)$, con $n \in \mathbb{N}$. Esto significa que toda solución encontrada para el sistema con condiciones de contorno periódicas, es también periódica, con la misma periodicidad que las condiciones de borde, debiendo considerar, además, un factor de fase. Si bien el teorema aplica a ecuaciones de primer orden, toda ecuación de segundo orden puede ser transformada en un sistema de ecuaciones diferenciales de primer orden.
+En condiciones de uniformidad, para un dado modo de propagación, a una frecuencia conocida y con el sistema en estado estacionario, los campos sobre una sección transversal a la de propagación de una onda electromagnética difieren de otros, ubicados a una distancia arbitraria en la dirección de propagación, sólo por una constante compleja que depende únicamente de dicha distancia. Esto significa que, si la dirección de propagación es \textit{x},
 
-Para en análisis de ondas electromagnéticas en un material periódico, se puede considerar el caso particular en que, dado que varían las condiciones de propagación periódicamente, como se describió en la sección \ref{sec:celdas-unitarias}, existe una periodicidad en el espacio de los número de onda $\gamma$. En el mismo sentido, una variación de los valores de permitividad eléctrica y permitividad magnética generan una variación en la constante de propagación, sin necesidad de considerar el análisis de estructuras cristalinas de la sección anterior. Dado que el vector de onda de la ecuación de Helmboltz (\ref{eq:Helmholtz}) varía periódicamente ($\gamma = \gamma(x)$), se puede plantear el sistema:
+\begin{align}
+	E(x_1,y,z,t) = E(x_2,y,z,t)e^{-\gamma (x_2 - x_1)}.
+\end{align}
+
+Dado que $y,z$ y $t$ se mantienen constantes en la igualdad, y que consideramos condiciones de uniformidad infinita (de modo que no exista diferencia entre dos puntos ubicados sobre el eje $x$), la única posible dependencia de $x$ tiene que estar dada por la constante compleja descripta antes, y los campos transversales sólo pueden depender de $y$ y $z$, que no varían. De esta forma,
+
+\begin{align}
+	\label{eq:campo-uniforme}
+	E(x,y,z,t) = F(y,z) e^{-\gamma x} e^{j\omega t},
+\end{align}
+
+lo que da como resultado el comportamiento senoidal del campo eléctrico de una onda plana, como es conocido.
+
+
+Para el análisis de ondas electromagnéticas en un material periódico, se puede considerar el caso particular en que, dado que varían las condiciones de propagación periódicamente, como se describió en la sección \ref{sec:celdas-unitarias}, existe una periodicidad en el espacio de los número de onda $\gamma$. En el mismo sentido, una variación de los valores de permitividad eléctrica y permitividad magnética generan una variación en la constante de propagación, sin necesidad de considerar el análisis de estructuras cristalinas de la sección anterior. Entonces, en el caso en que se desea describir el comportamiento de una onda en un sistema periódico, donde la forma, el tamaño y el material pueden variar a lo largo del eje de propagación $x$, no se puede considerar que la variación del campo a lo largo de ese eje $x$, con $y$ y $z$ constantes, dependa únicamente de la constante compleja presentada antes. De esta forma, en contraposición a la ecuación \ref{eq:campo-uniforme},
+
+\begin{align}
+	\label{eq:campo-periodico}
+	E(x,y,z,t) = F(x,y,z) e^{-\gamma x} e^{j\omega t}
+\end{align}
+
+Sin embargo, si la función $F(x,y,z)$ es $p$-periódica en dirección $x$, se puede expresar
+
+\begin{align}
+E(x+np,y,z,t) = F(x+np,y,z) e^{-\gamma (x+np)} e^{j\omega t} = F(x,y,z)  e^{-\gamma x}e^{-\gamma np} e^{j\omega t},
+\end{align}
+
+donde, según la expresión \ref{eq:campo-periodico}, $F(x,y,z)  e^{-\gamma x} e^{j\omega t} = E(x,y,z,t)$, de modo que
+
+\begin{align}
+	E(x+np,y,z,t) = E(x,y,z,t) e^{-\gamma np},
+\end{align}
+
+lo que significa que, en un sistema periódico, para un dado modo de propagación, a una frecuencia conocida y con el sistema en estado estacionario, los campos sobre una sección transversal a la de propagación de una onda electromagnética difieren de otros, ubicados a una distancia equivalente a un múltiplo de un periodo, sólo por una constante compleja,  $e^{-\gamma np}$, que depende únicamente de dicha distancia y del periodo del sistema.
+
+La idea intuitiva detrás del resultado radica en que si la estructura es infinitamente periódica, con celdas unitarias idénticas, las mismas deberían ser indistinguibles, por lo que los campos electromagnéticos presentarían también un comportamiento periódico, a excepción de un corrimiento de fase. Por lo tanto, se puede escribir:
+
+\begin{equation}
+\label{eq:comportamiento-periodico-campo-bloch}
+E(x,y,z+d) = e^{-j \beta d} E(x,y,z)
+\end{equation}
+
+donde $\beta$ es la constante de propagación en el medio periódico, considerando que no hay pérdidas ($\gamma = -j\beta$) \cite{Capolino:TheoryPhenomenaMetamaterials}. El valor de la diferencia entre los campos en dos bordes de una celda unitaria, entonces, es $\beta d$, que puede reducirse al rango $[-\pi,\pi]$, de modo que los posibles valores de $\beta$ son $[-\pi/d,\pi/d]$, que son los límites de la celda de Brillouin descripta antes. La generalización para el comportamiento en dos dimensiones está íntimamente ligado a la definición de la zona de Brillouin del material analizado.
+
+Estas consideraciones pueden ser generalizadas para cualquier ecuación diferencial de segundo orden de la forma
+
+\begin{align}
+\Phi'' (x) + \gamma(x)^2 \Phi(x) = 0,
+\end{align}
+
+donde se asume que $\gamma(x) = \gamma(x+np)$. Si $\phi(x)$ es solución, se puede probar que también $\phi(x+np)$ es también solución, ya que, al reemplazar,
+
+\begin{align}
+\phi'' (x+np) + \gamma(x+np)^2 \phi(x+np) = 0 \\
+\phi'' (x+np) + \gamma(x)^2 \phi(x+np) = 0,
+\end{align}
+
+se observa que $\phi(x+np)$ cumple con la ecuación.
+
+Este resultado fue obtenido por el matemático Gaston Floquet en 1883, y se conoce como Teorema de Floquet. El mismo explicita la forma canónica de las soluciones a ecuaciones diferenciales lineales ordinarias de coeficientes periódicos, de la forma $x' = A(t)x$, con $t \in \Re$, $X \in \Re^n$, donde $A(t)$ es una función periódica con periodo $p$. Si $x=\phi(t)$ es solución, entonces también lo es $x=\phi(x\pm np)$, con $n \in \mathbb{N}$. Esto significa que toda solución encontrada para el sistema con condiciones de contorno periódicas, es también periódica, con la misma periodicidad que las condiciones de borde, debiendo considerar, además, un factor de fase. Si bien el teorema aplica a ecuaciones de primer orden, toda ecuación de segundo orden puede ser transformada en un sistema de ecuaciones diferenciales de primer orden.
+
+Dado que el vector de onda de la ecuación de Helmboltz (\ref{eq:Helmholtz}) varía periódicamente ($\gamma = \gamma(x)$), se puede plantear el sistema
 
 \begin{equation}
 	\begin{bmatrix}
@@ -192,21 +253,19 @@ Para en análisis de ondas electromagnéticas en un material periódico, se pued
 	=
 	\begin{bmatrix}
 		0 & 1 \\
-		\gamma(x) & 0
+		\gamma(x)^2 & 0
 	\end{bmatrix}
 	\begin{bmatrix}
 		\phi_1(x) \\
 		\phi_2(x)
-	\end{bmatrix}
+	\end{bmatrix},
 \end{equation}
 
-donde $\gamma(x)$ es el vector de onda, variable en el espacio, de modo que en la estructura periódica, $\gamma(x) = \gamma(x+n p)$, $\phi_1(x) = E(x)$ y $\phi_2(x) = \frac{\partial E(x)}{\partial x} = \phi'_1(x)$. La matriz del sistema es periódica, por lo que cumple las condiciones del teorema de Floquet, de manera que la solución es de la forma
+donde $\gamma(x)$ es el vector de onda, variable en el espacio, de modo que en la estructura periódica, $\gamma(x) = \gamma(x+n p)$, $\phi_1(x) = E(x)$ y $\phi_2(x) = \frac{\partial E(x)}{\partial x} = \phi'_1(x)$. 
 
-\begin{equation}
-	\phi(x) = P(x) e^{xB}
-\end{equation}
+Si se resuelve el sistema utilizando el método de la exponencial matricial, como se desarrolla en el apéndice \ref{sec:solucion-periodico} utilizando la generalización de la serie de Maclaurin para matrices, se obtiene una expresión que presenta una periodicidad en $x$.
 
-donde $P(x)$ es una función periódica del espacio, con la misma periodicidad que la matriz del sistema, y $B$ es una matriz cuadrada de rango 2.
+
 
 La aplicación del teorema de Floquet a la física del estado sólido se denomina teorema de Bloch, e indica que las soluciones a la función de onda de un electrón en un cristal tiene la forma:
 
@@ -222,15 +281,6 @@ donde $\vec{\gamma}$ es el vector de onda cristalino, $\vec{r}$ es la posición 
 	\caption{Comportamiento de una onda monocromática sobre un medio periódico. La función $u(\vec{r})$ tiene un comportamiento de igual periodicidad que el medio.}
 	\label{fig:bloch-periodico-1d}
 \end{figure}
-
-La idea intuitiva detrás del resultado radica en que si la estructura es infinitamente periódica, con celdas unitarias idénticas, las mismas deberían ser indistinguibles, por lo que los campos electromagnéticos presentarían también un comportamiento periódico, a excepción de un corrimiento de fase. Por lo tanto, se puede escribir:
-
-\begin{equation}
-	\label{eq:comportamiento-periodico-campo-bloch}
-	E(x,y,z+d) = e^{-j \beta d} E(x,y,z)
-\end{equation}
-
-donde $\beta$ es la constante de propagación en el medio periódico, considerando que no hay pérdidas ($\gamma = -j\beta$) \cite{Capolino:TheoryPhenomenaMetamaterials}. El valor de la diferencia entre los campos en dos bordes de una celda unitaria, entonces, es $\beta d$, que puede reducirse al rango $[-\pi,\pi]$, de modo que los posibles valores de $\beta$ son $[-\pi/d,\pi/d]$, que son los límites de la celda de Brillouin descripta antes. La generalización para el comportamiento en dos dimensiones está íntimamente ligado a la definición de la zona de Brillouin del material analizado.
 
 Si una onda plana incide sobre un medio periódico dispuesto en la dirección ortogonal al vector de propagación, el efecto es intuitivo, como se puede ver en la figura \ref{fig:bloch-ortogonal}. En este caso, la periodicidad se da sobre el eje $z$, y la constante de propagación en esa coordenada es nula, por lo que no hay diferencia de fase entre los elementos dispuestos periódicamente (la diferencia de fase se da, para la onda incidente dibujada, en la dirección $y$).
 

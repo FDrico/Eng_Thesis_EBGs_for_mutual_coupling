@@ -629,12 +629,36 @@
       \strng{authorbibnamehash}{6c01efb2bd87635a22edd2b75b92af22}
       \strng{authornamehash}{6c01efb2bd87635a22edd2b75b92af22}
       \strng{authorfullhash}{6c01efb2bd87635a22edd2b75b92af22}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Wave Propagation in Periodic Structures: Electric Filters adn Crystal Lattices}
       \field{year}{1953}
+    \endentry
+    \entry{Munk:libro}{book}{}
+      \name{author}{1}{}{%
+        {{hash=0a82d1f0145c6d46abb23d1ccc2fbb20}{%
+           family={Munk},
+           familyi={M\bibinitperiod},
+           given={Ben\bibnamedelima A.},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{0a82d1f0145c6d46abb23d1ccc2fbb20}
+      \strng{fullhash}{0a82d1f0145c6d46abb23d1ccc2fbb20}
+      \strng{bibnamehash}{0a82d1f0145c6d46abb23d1ccc2fbb20}
+      \strng{authorbibnamehash}{0a82d1f0145c6d46abb23d1ccc2fbb20}
+      \strng{authornamehash}{0a82d1f0145c6d46abb23d1ccc2fbb20}
+      \strng{authorfullhash}{0a82d1f0145c6d46abb23d1ccc2fbb20}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Frequency Selective Surfaces}
+      \field{year}{2000}
     \endentry
     \entry{Sievenpiper:Thesis}{article}{}
       \name{author}{1}{}{%
@@ -900,8 +924,8 @@
       \strng{authorbibnamehash}{d3ea6c402c8205136ff4633408de799a}
       \strng{authornamehash}{d3ea6c402c8205136ff4633408de799a}
       \strng{authorfullhash}{d3ea6c402c8205136ff4633408de799a}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Hindawi Publishing Corporation: International Journal of Antennas and Propagation}
@@ -930,8 +954,8 @@
       \strng{authorbibnamehash}{02fddd1d2c86bd7cb0217ff535a4506a}
       \strng{authornamehash}{02fddd1d2c86bd7cb0217ff535a4506a}
       \strng{authorfullhash}{02fddd1d2c86bd7cb0217ff535a4506a}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Electromagnetic Band Gap Structures in Antenna Engineering}
@@ -1003,8 +1027,8 @@
       \strng{authorbibnamehash}{214d91a1563855119c6a63353c4eb5be}
       \strng{authornamehash}{a36af85bda4669f392ba2924d7d71d71}
       \strng{authorfullhash}{214d91a1563855119c6a63353c4eb5be}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Microwave Theory and Techniques}
@@ -1028,8 +1052,8 @@
       \strng{authorbibnamehash}{68903a10a3d7955fe24f6c029bfcd1d4}
       \strng{authornamehash}{68903a10a3d7955fe24f6c029bfcd1d4}
       \strng{authorfullhash}{68903a10a3d7955fe24f6c029bfcd1d4}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Inductance: Loop and Partial}
