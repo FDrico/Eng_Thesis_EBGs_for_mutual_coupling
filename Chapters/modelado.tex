@@ -965,7 +965,7 @@ Bajo las mismas consideraciones, es posible analizar la fase de las señales que
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{Modelado/s11-fase.pdf}
-	\caption{Comparación entre la fase del parémetro $S_{11}$ simulado con \textit{CST Microwave Studio} y el obtenido mediante el modelo propuesto.}
+	\caption{Comparación entre la fase del parámetro $S_{11}$ simulado con \textit{CST Microwave Studio} y el obtenido mediante el modelo propuesto. Se marcan con líneas punteadas las fases que son múltiplo impar de $180^{\circ}$.}
 	\label{fig:s11-fase-compracion}
 \end{figure}
 
@@ -984,6 +984,23 @@ El comportamiento del parámetro $S_{21}$ de un conjunto de celdas unitarias dis
 	\caption{Comportamiento de una fila de celdas unitarias.}
 	\label{fig:s12-variacion-pila-super}	
 \end{figure}  
+
+Similar comportamiento, aunque con mayores pendientes, se observa en el caso en que se simula una estructura bidimensional con las mismas celdas unitarias. Para dos puertos separados por seis celdas unitarias, como se muestra en la figura \ref{fig:s12-estructura2d-super} b), el resultado es el mostrado en la figura a). Al igual que en análisis de la fila de celdas unitarias, para el caso de esta estructura bidimensional el ancho de banda del \textit{bandgap} es grande, y la pendiente inicial es muy notoria. Vale aclarar que los efectos alrededor de $1\; GHz$ se deben a resonancias intermedias de la estructura completa.
+
+
+\begin{figure}[h]
+	\centering 
+	\subfigure[Comportamiento, obtenido mediante simulación con CST Microwave Studio.]{
+		\label{fig:s12-estructura2d-resultados}
+		\includegraphics[width=0.77\textwidth]{Modelado/params-estructura-bidimensional.pdf}}
+	\hspace{0pt}
+	\subfigure[Estructura simulada.]{
+		\label{fig:s12-estructura2d-super-estructura}
+		\includegraphics[width=0.17\textwidth]{Modelado/EstructuraMuchasCeldas2d.png}}
+	\caption{Comportamiento de una estructura bidimensional de celdas unitarias.}
+	\label{fig:s12-estructura2d-super}	
+\end{figure}  
+
 
 
 \section{Modelado por líneas de transmisión}
