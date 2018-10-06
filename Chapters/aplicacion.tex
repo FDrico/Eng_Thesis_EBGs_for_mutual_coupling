@@ -12,6 +12,60 @@ En este capítulo se iniciará, aunque no se concluirá completamente, el estudi
 
 El motivo por el que se comienza el análisis para monopolos eléctricos verticales gira en torno a la capacidad que estos poseen para generar, sobre la capa dieléctrica, ondas de superficie TM en forma isotrópica, sin efectos de borde ni asimetrías que dificulten el análisis.
 
+\section{Elección del metamaterial}
+\label{sec_eleccion}
+
+Existen numerosas posibles celdas unitarias uniplanares, que fueron creadas a partir de la propuesta inicial de Yang y otros \cite{Yang:UCPBG}, y que procuran aumentar el ancho de banda prohibida y el valor de atenuación, muchas veces utilizando técnicas de miniaturización, que buscan lograr geometrías que presenten una mayor o menor inductancia, y una mayor o menor capacidad con el plano de tierra y con celdas vecinas, en función de las necesidades. La búsqueda, en el contexto de la disminución del acoplamiento mutuo entre antenas \textit{microstrip}, de celdas unitarias óptimas, gira alrededor de la búsqueda de anchos de banda prohibidos lo suficientemente amplios para cubrir el ancho de banda de las antenas \textit{microstrip} en cuestión.
+
+Para este trabajo se seleccionó la celda de Yang, analizada en la sección \ref{sec:celda-yang}, debido a que fue la primer variante publicada, y posee optimizaciones sobre la celda de Orlandi, analizada en la sección \ref{sec:celdas-orlandi}.
+
+Sin embargo, existen numerosos diseños y geometrías, entre las que destacan la celda analizada por Goussetis \cite{Goussetis:TailoringAMCEBGCharacteristics}, que consiste en parches cuadrados sin interconexión entre sí, como el mostrado en la figura \ref{fig:rectangulo-cuadrado}. Si bien, debido a su geometría, estas celdas unitarias presentan capacidad con el plano de tierra y con otros parches aledaños, presentan una baja inductancia, lo que los vuelve subóptimos, dado que resulta complejo obtener frecuencias de resonancia lo suficientemente bajas con un tamaño de celda viable. Otros trabajos de interés son los de Abidin \cite{Abidin:Thesis}, quien propuso las estructuras mostradas en las figuras \ref{fig:abidin1} y \ref{fig:abidin2}, que poseen un ancho de banda mayor al de las celdas de Yang, aunque requieren más iteraciones de simulación, debido a la complejidad de las geometrías.
+
+Estructuras más sencillas son propuestas en \cite{Asimonis:designoptimization}, mostradas en las figuras \ref{fig:assimonis1}, \ref{fig:assimonis2} y \ref{fig:assimonis3}, con resultados similares a la geometría elegida en este trabajo.
+
+Entre los esfuerzos más intuitivos para aumentar la inductancia, disminuyendo así la frecuencia de resonancia y, por tanto, el tamaño de las celdas unitarias, se destaca el propuesto por \cite{IslamAlam:CompactEBG}, mostrado en la figura \ref{fig:islamalam}. En ella se observa que se aumentó el largo y la capacidad de las cintas \textit{microstrip} que unen los parches, modificando las líneas para que ocuparan la mayor cantidad de espacio posible. Las simulaciones de esta estructura ofrecen mejores resultados que los de la celda elegida, aunque al costo de dificultar su diseño en programas \textsc{CAD}. Un modelo utilizando líneas de transmisión para caracterizar el comportamiento de estas celdas está presentado en \cite{Venkateswaran:Thesis}. 
+
+En este sentido, \cite{Kovacs:DesignOptimization} propone, en su tesis doctoral, un algoritmo genético capaz de obtener un mayor ancho de banda prohibida mediante sucesivas simulaciones, sin la intervención de un diseñador, obteniendo celdas complejas pero muy efectivas, como la mostrada en la figura \ref{fig:kovacs}.
+
+
+\begin{figure}[h]
+	\centering 
+	\subfigure[Celda unitaria propuesta por \cite{Abidin:Thesis}.]{
+		\label{fig:abidin1}
+		\includegraphics[width=0.30\textwidth]{Aplicacion/abidin1.png}}
+	\hspace{30pt}
+	\subfigure[Celda unitaria propuesta por \cite{Abidin:Thesis}.]{
+		\label{fig:abidin2}
+		\includegraphics[width=0.30\textwidth]{Aplicacion/abidin2.png}}
+	\subfigure[Celda unitaria propuesta por \cite{Asimonis:designoptimization}.]{
+		\label{fig:assimonis1}
+		\includegraphics[width=0.30\textwidth]{Aplicacion/assimonis1.png}}
+	\hspace{30pt}
+	\subfigure[Celda unitaria propuesta por \cite{Asimonis:designoptimization}.]{
+		\label{fig:assimonis2}
+		\includegraphics[width=0.30\textwidth]{Aplicacion/assimonis2.png}}
+	\subfigure[Celda unitaria propuesta por \cite{Asimonis:designoptimization}.]{
+		\label{fig:assimonis3}
+		\includegraphics[width=0.30\textwidth]{Aplicacion/assimonis3.png}}
+	\hspace{30pt}
+	\subfigure[Celda unitaria propuesta por \cite{IslamAlam:CompactEBG}.]{
+		\label{fig:islamalam}
+		\includegraphics[width=0.30\textwidth]{Aplicacion/islamalam.png}}
+	\subfigure[Celda unitaria propuesta por \cite{Kovacs:DesignOptimization}.]{
+		\label{fig:kovacs}
+		\includegraphics[width=0.30\textwidth]{Aplicacion/kovacs.png}}
+	\caption{Variación del parámetro $S_{11}$ del puerto en función de distintos parámetros del parche único, y antena optimizada final.}
+	\label{fig:simulaciones-microstrip-1parche}
+\end{figure}
+
+La miniaturización cumple un papel importante debido a que es necesaria una cantidad (o profundidad) mínima de celdas unitarias entre los parches para que el efecto de disminución de acoplamiento resulte notorio. Si cada una de las celdas unitarias ocupara demasiada superficie, obligaría a separar los parches aún más, consecuencia que resulta indeseable. Además, entre la estructura de celdas unitarias y los parches se debe mantener una distancia $g$ mínima, de modo que los efectos de acoplamiento de campo cercano entre la antena y la estructura EBG puedan considerarse despreciables. Estos efectos no son despreciables y, en muchos casos, generan un acoplamiento aún mayor al que se da si no se utilizan estructuras EBG.
+
+Para el caso de una distancia entre los parches de aproximadamente $3\lambda/2$, la cantidad de filas de celdas unitarias que se pueden ubicar entre los mismos para observar efectos de atenuación del acoplamiento mutuo varía entre 3 y 5. Las técnicas de modelado presentadas, y en particular las que requieren de simulación de una celda unitaria y la aplicación de condiciones de borde periódicas, describen el comportamiento de la estructura EBG cuando ésta se extiende infinitamente. Como, en general, este no es el caso, se procedió, utilizando como base la información brindada por los diagramas de dispersión (que en nuestro caso, debido a que la cantidad de celdas unitarias es finita, describen en forma aproximada las zonas frecuencia de atenuación), a obtener la relación del parámetro $S_{21}$ con la frecuencia para distintos valores geométricos, simulando la estructura completa.
+
+De los parámetros analizados que describen la geometría de las celdas unitarias de Yang, para ambos análisis (el que corresponde a la resolución de una única celda unitaria con condiciones de contorno periódicas, y el que simula una estructura finita completa), los más importantes resultaron: el tamaño de la celda unitaria, el tamaño del parche central y la distancia entre los parches de dos celdas unitarias aledañas.
+
+En general, un mayor tamaño de celda da lugar a una banda de atenuación ubicada a frecuencias más bajas. La elección gira en torno a que la frecuencia de resonancia del sistema sobre el que se desea probar el comportamiento de la estructura se ubique en una zona segura ante problemas y tolerancias de fabricación.
+
 \section{Monopolos}
 
 Las antenas monopolo consisten en un conductor dispuesto verticalmente sobre un plano de tierra u otra superficie conductora, alimentado o conectado a un receptor en su base a través de una línea de transmisión cuyos terminales están conectados al plano de tierra y al conductor vertical respectivamente, como se muestra en la figura \ref{fig:monopolos} b). A diferencia del dipolo, que consiste en dos conductores idénticos dispuestos de forma tal que comparten su eje principal, el monopolo suele ser más corto, posee un diagrama de radiación más elevado (como se observa en la figura \ref{fig:monopolos} a)), una resistencia de radiación menor, una mayor directividad, y da lugar a ondas de superficie considerables sobre el plano conductor.
@@ -104,8 +158,84 @@ Se puede observar que los valores de distancia para los que los monopolos quedan
 	\subfigure[Parámetro $S_{12}$.]{
 		\label{fig:comparacion-dipolos-s12-variasDistancias-sinGND}
 		\includegraphics[width=0.45\textwidth]{Aplicacion/comparacion-dipolos-s12-variasDistancias-sinGND.pdf}}
-	\caption{Comparación del comportameinto entre un par de monopolos que comparten plano conductor y un par de dipolos que no, para dos distancias entre antenas elegidas arbitrariamente.}
+	\caption{Comparación del comportamiento entre un par de monopolos que comparten plano conductor y un par de dipolos que no, para dos distancias entre antenas elegidas arbitrariamente.}
 	\label{fig:comparacion-monopolos-s-sinGND}
+\end{figure} 
+
+
+La aplicación de estructuras EBG modifica sustancialmente las características de las antenas. En la figura \ref{fig:parametros-s-2ebg} se puede observar el comportamiento de los parámetros $S$ para el caso en que entre las dos antenas se ubican dos filas de EBG, como se muestra en la figura \ref{fig:estructuras2-y-3-ebg} a). Se observa que a una menor distancia entre los dipolos y, por lo tanto, entre cada dipolo y la estructura EBG, el comportamiento es más errático, aunque la adaptación es más profunda. En el mismo sentido, el acoplamiento entre las antenas disminuye con la distancia, y una menor distancia al EBG de cada dipolo genera un acoplamiento mayor al original.
+
+\begin{figure}[h]
+	\centering 
+	\subfigure[Parámetro $S_{11}$.]{
+		\label{fig:parametros-s-2ebg-s11}
+		\includegraphics[width=0.45\textwidth]{Aplicacion/dipolos-s11-variasDistancias-conEBG.pdf}}
+	\hspace{0pt}
+	\subfigure[Parámetro $S_{12}$.]{
+		\label{fig:parametros-s-2ebg-s21}
+		\includegraphics[width=0.45\textwidth]{Aplicacion/dipolos-s12-variasDistancias-conEBG.pdf}}
+	\caption{Comportamiento de los parámetros $S$ para monopolos separados por dos filas del EBG propuesto.}
+	\label{fig:parametros-s-2ebg}
+\end{figure}
+
+\begin{figure}[h]
+	\centering 
+	\subfigure[Dos filas de EBG.]{
+		\label{fig:estructuras2-ebg-monopolos}
+		\includegraphics[width=0.45\textwidth]{Aplicacion/dos-monopolos-2EBG.png}}
+	\hspace{0pt}
+	\subfigure[Tres filas de EBG.]{
+		\label{fig:estructuras3-ebg-monopolos}
+		\includegraphics[width=0.45\textwidth]{Aplicacion/dos-monopolos-3EBG.png}}
+	\caption{Estructuras simuladas de dos monopolos separados por 2 y 3 filas de celdas de EBG.}
+	\label{fig:estructuras2-y-3-ebg-monopolos}
+\end{figure} 
+
+Una comparación entre los parámetros $S$ para el caso con y sin 2 filas de celdas de EBG se puede observar en la figura \ref{fig:comparacion-2filas-ebg-mo}. La misma revela que, cuando se ubican los EBG, incluso para el caso en que están separados una distancia considerable de los monopolos, la frecuencia de resonancia disminuye considerablemente. Esto obliga a considerar a la estructura EBG al momento del diseño de las antenas.
+
+Como se explicitó antes, en ocasiones el uso de EBG con la intención de disminuir el acoplamiento mutuo entre antenas monopolo genera un acoplamiento aún mayor entre las mismas, efectivamente generando el efecto contrario al buscado. Esto se observa en la figura \ref{fig:comparacion-2filas-ebg-mo} b). Para la mayor parte de la banda del espectro de interés, el parámetro $S_{12}$ de las antenas es mayor cuando se utilizan dos filas de EBG dispuestas entre las antenas que cuando no. Sin embargo, en una banda angosta cercana a la frecuencia de resonancia de los EBG, el parámetro $S_{12}$ disminuye fuertemente, a valores unos $15\; dB$ por debajo del caso en que no se interpone la estructura. Vale aclarar que, en base al análisis y modelado previo, se esperaba un ancho de banda de rechazo mucho mayor. Cuando la estructura está lo suficientemente lejos, el aumento del acoplamiento en la banda de interés es menos notorio, aunque no despreciable, y la disminución del valor de $S_{21}$ en la frecuencia de resonancia del EBG resulta de alrededor de $10\; dB$.
+
+\begin{figure}[h]
+	\centering 
+	\subfigure[Parámetro $S_{11}$.]{
+		\label{fig:comparacion-2filas-ebg-mo-s11}
+		\includegraphics[width=0.45\textwidth]{Aplicacion/comparacion-dipolos-s11-variasDistancias-sinConEBG.pdf}}
+	\hspace{0pt}
+	\subfigure[Parámetro $S_{12}$.]{
+		\label{fig:comparacion-2filas-ebg-mo-s12}
+		\includegraphics[width=0.45\textwidth]{Aplicacion/comparacion-dipolos-s12-variasDistancias-sinConEBG.pdf}}
+	\caption{Comparación del comportamiento de los parámetros $S$ para el caso en que no hay EBG y el caso en que se ubican dos filas de celdas.}
+	\label{fig:comparacion-2filas-ebg-mo}
+\end{figure} 
+
+El caso en que se ubican 3 EBG, los resultados, que se muestran en la figura \ref{parametros-s-3ebg}, son más complejos. La frecuencia de resonancia disminuye fuertemente, y aparecen resonancias cercanas que dificultan la adaptación. Este comportamiento patológico es mucho menos notorio a medida que la distancia entre los monopolos y la estructura disminuye. En el caso del parámetro $S_{12}$, aparecen también frecuencias de resonancia cercanas a la que corresponde al comportamiento de las celdas EBG, aunque, de igual manera que para el caso del parámeteo $S_{11}$, los efectos desaparecen al alejar los monopolos de la estructura.
+
+\begin{figure}[h]
+	\centering 
+	\subfigure[Parámetro $S_{11}$.]{
+		\label{fig:comparacion-3filas-ebg-mo-s11}
+		\includegraphics[width=0.45\textwidth]{Aplicacion/dipolos-s11-variasDistancias-con3EBG.pdf}}
+	\hspace{0pt}
+	\subfigure[Parámetro $S_{12}$.]{
+		\label{fig:comparacion-3filas-ebg-mo-s12}
+		\includegraphics[width=0.45\textwidth]{Aplicacion/dipolos-s12-variasDistancias-con3EBG.pdf}}
+	\caption{Comportamiento de los parámetros $S$ para monopolos separados por tres filas del EBG propuesto.}
+	\label{fig:comparacion-3filas-ebg-mo}
+\end{figure}
+
+La comparación entre el comportamiento para 2 y 3 filas de celdas EBG se puede observar en la figura \ref{fig:comparacion-23filas-ebg-mo}, para dos distancias. Para el caso $S_{11}$, se puede observar fácilmente que la frecuencia de resonancia es menor y el comportamiento en frecuencia es mucho más errático, con múltiples resonancias que afectan a la adaptación. Cuando la distancia es mayor, esas resonancias disminuyen y la diferencia entre el uso de 2 y 3 filas de celdas EBG disminuye. Los valores de adaptación mejoran ligeramente para el caso de 3 filas, pero a costa de una disminución en la frecuencia. El parámetro $S_{12}$ para el caso de monopolos a $7.6\; cm$ de distancia entre sí presenta picos que generan que el valor alcance los $-10\;dB$, aunque cuando los mismos se alejan a $10.6\;cm$, a pesar de que resuena a menores frecuencias, se observa una disminución del parámetro en $20\; dB$ en una banda angosta centrada por debajo de la frecuencia en que se queria disminuir el acoplamiento.
+
+\begin{figure}[h]
+	\centering 
+	\subfigure[Parámetro $S_{11}$.]{
+		\label{fig:comparacion-23filas-ebg-mo11}
+		\includegraphics[width=0.45\textwidth]{Aplicacion/comparacion-dipolos-s11-variasDistancias-conEBG2-3.pdf}}
+	\hspace{0pt}
+	\subfigure[Parámetro $S_{12}$.]{
+		\label{fig:comparacion-23filas-ebg-mo12}
+		\includegraphics[width=0.45\textwidth]{Aplicacion/comparacion-dipolos-s12-variasDistancias-conEBG2-3.pdf}}
+	\caption{Comparación del comportamiento de los parámetros $S$ para el caso en que no hay EBG y el caso en que se ubican dos filas de celdas.}
+	\label{fig:comparacion-23filas-ebg-mo}
 \end{figure} 
 
 	
@@ -149,13 +279,13 @@ Para el presente trabajo, estas estructuras se ubicarán entre dos antenas micro
 Para el diseño de una antena microstrip, se deben utilizar los modelos teoricos analizados en la sección \ref{sec:modelo_analitico}. Se debe calcular, en primer lugar, un valor tentativo del ancho W de la antena (con W según la figura \ref{fig:antema-microstrip-inset} a)), teniendo en cuenta que un mayor ancho W da lugar a una menor resistencia de entrada $R_{in}$. Una fórmula empírica está dada por \cite{Barthia:Handbook}, y para una frecuencia de resonancia de unos 2.42 GHz y sustrato FR-4 de 1.6 mm de espesor, resulta:
 
 \begin{align}
-	W = \frac{c_0}{2 f_r} \sqrt{\frac{2}{\epsilon_r+1}} = 37.35\; mm
+	W = \frac{c_0}{2 f_r} \sqrt{\frac{2}{\epsilon_r+1}} = 37.35\; mm.
 \end{align}
 
 Obtenido el ancho aproximado, se puede calcular la permitividad eléctrica eficaz, $\epsilon_{eff}$, de la ecuación \ref{eq:cte-diel-efectiva-microstrip}, que resulta 4.17. Esto permite, conociendo la frecuencia de resonancia buscada, calcular la longitud efectiva de la línea de transmisión, como:
 
 \begin{align}
-	L_{eff} = \frac{c_0}{2 f_r \sqrt{\epsilon_{r_{eff}}}} = 30.32\; mm
+	L_{eff} = \frac{c_0}{2 f_r \sqrt{\epsilon_{r_{eff}}}} = 30.32\; mm.
 \end{align}
 
 Dado que $L_{eff} = L + 2 \Delta L$, a partir del cálculo de $\Delta L$, que cuantiza el efecto del \textit{fringing} sobre la frecuencia de resonancia, usando la expresión \ref{eq:deltaL-antena-microstrip}, que resulta en 0.74 mm, se puede saber el valor de L a utilizar ($L = L_{eff} - 2 \Delta L$), que es de 28.85 mm.
@@ -166,8 +296,8 @@ Conocidos estos valores, resta determinar el \textit{inset} que debe aplicarse p
 
 \begin{align}
 	\label{eq:conductancia-microstrip-balanis}
-	G_1 &= \frac{1}{\pi \eta_0} \int_0^\pi \left[ \frac{\sin \left( \frac{k_0 W}{2} \cos \theta \right) }{\cos \theta}\right]^2 \sin^3 \theta d\theta \\
-	G_{12} &= \frac{1}{120 \pi^2} \int_0^{\pi} \left[ \frac{\sin \left( \frac{k_0 W}{2} \cos \theta \right) }{\cos \theta}\right]^2 J_o(k_0 L \sin \theta) \sin^3 \theta d\theta
+	G_1 &= \frac{1}{\pi \eta_0} \int_0^\pi \left[ \frac{\sin \left( \frac{k_0 W}{2} \cos \theta \right) }{\cos \theta}\right]^2 \sin^3 \theta d\theta, \\
+	G_{12} &= \frac{1}{120 \pi^2} \int_0^{\pi} \left[ \frac{\sin \left( \frac{k_0 W}{2} \cos \theta \right) }{\cos \theta}\right]^2 J_o(k_0 L \sin \theta) \sin^3 \theta d\theta.
 \end{align}
 
 El siguiente paso consiste en describir geométricamente la estructura calculada para el uso de un software de simulación que permita optimizar los parámetros, en vistas de que la frecuencia de resonancia sea 2.41 GHz, y que el parámetro $S_{11}$, correspondiente al puerto de alimentación, sea tan pequeño como sea posible. Es importante aclarar que el agregado de los parches de carga y de la estructura EBG modificará la frecuencia de resonancia, y que este análisis se realiza en miras de comprender los cambios que se producen sobre la antena original, y confirmar el aumento de ancho de banda mediante la técnica mencionada antes.
@@ -213,7 +343,7 @@ Para poder estudiar este problema, será necesario comprender cómo se comporta 
 
 \begin{align}
 	\label{eq:lambdag}
-	\lambda_g = \frac{v_p}{f_r} = \frac{c}{\sqrt{\epsilon_{eff} f_r}} \approx 60.9\; mm
+	\lambda_g = \frac{v_p}{f_r} = \frac{c}{\sqrt{\epsilon_{eff} f_r}} \approx 60.9\; mm.
 \end{align}
 
 Considerando que se debe dejar espacio entre las antenas para que se pueda ubicar una estructura EBG entre ellas, se decidió que la distancia entre las mismas resulte de $\frac{3}{2} \lambda_g = 91.35\;mm$.
@@ -254,59 +384,7 @@ FarField2D-phifijo-DosParches-SinEBG
 
 
 
-\section{Elección del metamaterial}
-\label{sec_eleccion}
 
-Existen numerosas posibles celdas unitarias uniplanares, que fueron creadas a partir de la propuesta inicial de Yang y otros \cite{Yang:UCPBG}, y que procuran aumentar el ancho de banda prohibida y el valor de atenuación, muchas veces utilizando técnicas de miniaturización, que buscan lograr geometrías que presenten una mayor o menor inductancia, y una mayor o menor capacidad con el plano de tierra y con celdas vecinas, en función de las necesidades. La búsqueda, en el contexto de la disminución del acoplamiento mutuo entre antenas \textit{microstrip}, de celdas unitarias óptimas, gira alrededor de la búsqueda de anchos de banda prohibidos lo suficientemente amplios para cubrir el ancho de banda de las antenas \textit{microstrip} en cuestión.
-
-Para este trabajo se seleccionó la celda de Yang, analizada en la sección \ref{sec:celda-yang}, debido a que fue la primer variante publicada, y posee optimizaciones sobre la celda de Orlandi, analizada en la sección \ref{sec:celdas-orlandi}.
-
-Sin embargo, existen numerosos diseños y geometrías, entre las que destacan la celda analizada por Goussetis \cite{Goussetis:TailoringAMCEBGCharacteristics}, que consiste en parches cuadrados sin interconexión entre sí, como el mostrado en la figura \ref{fig:rectangulo-cuadrado}. Si bien, debido a su geometría, estas celdas unitarias presentan capacidad con el plano de tierra y con otros parches aledaños, presentan una baja inductancia, lo que los vuelve subóptimos, dado que resulta complejo obtener frecuencias de resonancia lo suficientemente bajas con un tamaño de celda viable. Otros trabajos de interés son los de Abidin \cite{Abidin:Thesis}, quien propuso las estructuras mostradas en las figuras \ref{fig:abidin1} y \ref{fig:abidin2}, que poseen un ancho de banda mayor al de las celdas de Yang, aunque requieren más iteraciones de simulación, debido a la complejidad de las geometrías.
-
-Estructuras más sencillas son propuestas en \cite{Asimonis:designoptimization}, mostradas en las figuras \ref{fig:assimonis1}, \ref{fig:assimonis2} y \ref{fig:assimonis3}, con resultados similares a la geometría elegida en este trabajo.
-
-Entre los esfuerzos más intuitivos para aumentar la inductancia, disminuyendo así la frecuencia de resonancia y, por tanto, el tamaño de las celdas unitarias, se destaca el propuesto por \cite{IslamAlam:CompactEBG}, mostrado en la figura \ref{fig:islamalam}. En ella se observa que se aumentó el largo y la capacidad de las cintas \textit{microstrip} que unen los parches, modificando las líneas para que ocuparan la mayor cantidad de espacio posible. Las simulaciones de esta estructura ofrecen mejores resultados que los de la celda elegida, aunque al costo de dificultar su diseño en programas \textsc{CAD}. Un modelo utilizando líneas de transmisión para caracterizar el comportamiento de estas celdas está presentado en \cite{Venkateswaran:Thesis}. 
-
-En este sentido, \cite{Kovacs:DesignOptimization} propone, en su tesis doctoral, un algoritmo genético capaz de obtener un mayor ancho de banda prohibida mediante sucesivas simulaciones, sin la intervención de un diseñador, obteniendo celdas complejas pero muy efectivas, como la mostrada en la figura \ref{fig:kovacs}.
-
-
-\begin{figure}[h]
-	\centering 
-	\subfigure[Celda unitaria propuesta por \cite{Abidin:Thesis}.]{
-		\label{fig:abidin1}
-		\includegraphics[width=0.30\textwidth]{Aplicacion/abidin1.png}}
-	\hspace{30pt}
-	\subfigure[Celda unitaria propuesta por \cite{Abidin:Thesis}.]{
-		\label{fig:abidin2}
-		\includegraphics[width=0.30\textwidth]{Aplicacion/abidin2.png}}
-	\subfigure[Celda unitaria propuesta por \cite{Asimonis:designoptimization}.]{
-		\label{fig:assimonis1}
-		\includegraphics[width=0.30\textwidth]{Aplicacion/assimonis1.png}}
-	\hspace{30pt}
-	\subfigure[Celda unitaria propuesta por \cite{Asimonis:designoptimization}.]{
-		\label{fig:assimonis2}
-		\includegraphics[width=0.30\textwidth]{Aplicacion/assimonis2.png}}
-	\subfigure[Celda unitaria propuesta por \cite{Asimonis:designoptimization}.]{
-		\label{fig:assimonis3}
-		\includegraphics[width=0.30\textwidth]{Aplicacion/assimonis3.png}}
-	\hspace{30pt}
-	\subfigure[Celda unitaria propuesta por \cite{IslamAlam:CompactEBG}.]{
-		\label{fig:islamalam}
-		\includegraphics[width=0.30\textwidth]{Aplicacion/islamalam.png}}
-	\subfigure[Celda unitaria propuesta por \cite{Kovacs:DesignOptimization}.]{
-		\label{fig:kovacs}
-		\includegraphics[width=0.30\textwidth]{Aplicacion/kovacs.png}}
-	\caption{Variación del parámetro $S_{11}$ del puerto en función de distintos parámetros del parche único, y antena optimizada final.}
-	\label{fig:simulaciones-microstrip-1parche}
-\end{figure}
-
-La miniaturización cumple un papel importante debido a que es necesaria una cantidad (o profundidad) mínima de celdas unitarias entre los parches para que el efecto de disminución de acoplamiento resulte notorio. Si cada una de las celdas unitarias ocupara demasiada superficie, obligaría a separar los parches aún más, consecuencia que resulta indeseable. Además, entre la estructura de celdas unitarias y los parches se debe mantener una distancia $g$ mínima, de modo que los efectos de acoplamiento de campo cercano entre la antena y la estructura EBG puedan considerarse despreciables. Estos efectos no son despreciables y, en muchos casos, generan un acoplamiento aún mayor al que se da si no se utilizan estructuras EBG.
-
-Para el caso de una distancia entre los parches de aproximadamente $3\lambda/2$, la cantidad de filas de celdas unitarias que se pueden ubicar entre los mismos para observar efectos de atenuación del acoplamiento mutuo varía entre 3 y 5. Las técnicas de modelado presentadas, y en particular las que requieren de simulación de una celda unitaria y la aplicación de condiciones de borde periódicas, describen el comportamiento de la estructura EBG cuando ésta se extiende infinitamente. Como, en general, este no es el caso, se procedió, utilizando como base la información brindada por los diagramas de dispersión (que en nuestro caso, debido a que la cantidad de celdas unitarias es finita, describen en forma aproximada las zonas frecuencia de atenuación), a obtener la relación del parámetro $S_{21}$ con la frecuencia para distintos valores geométricos, simulando la estructura completa.
-
-De los parámetros analizados que describen la geometría de las celdas unitarias de Yang, para ambos análisis (el que corresponde a la resolución de una única celda unitaria con condiciones de contorno periódicas, y el que simula una estructura finita completa), los más importantes resultaron: el tamaño de la celda unitaria, el tamaño del parche central y la distancia entre los parches de dos celdas unitarias aledañas.
-
-En general, un mayor tamaño de celda da lugar a una banda de atenuación ubicada a frecuencias más bajas. La elección gira en torno a que la frecuencia de resonancia del sistema sobre el que se desea probar el comportamiento de la estructura se ubique en una zona segura ante problemas y tolerancias de fabricación.
 
 \section{Estudio del efecto de la distancia sobre el ancho de banda}
 \label{sec_efecto_distancia}
