@@ -91,7 +91,7 @@ Como se muestra en la figura \ref{fig:bragg-dibujo} para incidencia normal, sin 
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Fundamentos/bragg1.pdf}
+	\includegraphics[width=0.6\textwidth]{Fundamentos/bragg1.pdf}
 	\caption{Incidencia de una onda electromagnética y efecto de Bragg.}
 	\label{fig:bragg-dibujo}
 \end{figure}
@@ -123,99 +123,61 @@ y sabiendo que $\beta = 2\pi/\lambda_g$, se obtiene la inversa de la relación d
 	\beta(\omega) = \frac{n\pi}{a \sin(\theta(\omega))}, \;\; n=0, 1, 2...,
 \end{align}
 
-de la que se puede deducir que la velocidad de grupo, $V_g = d\omega/d\beta$, es cero cuando se cumple la condición de Bragg.
-
-
-\section{Celdas unitarias de cristales bidimensionales}
-\label{sec:celdas-unitarias}
-En un material periódico se puede definir una red de Bravais, que indica la forma en que los elementos están físicamente dispuestos en la red cristalina. En la figura \ref{fig:direct-lattice}, $\vec{a_1}$ y $\vec{a_2}$ son la base de vectores que permite expresar la posición de cualquier elemento del arreglo como una combinación lineal de coeficientes enteros:
-
-\begin{equation}
-R_{n_1,n_2} = n_1 \vec{a_1} + n_2 \vec{a_2}, \quad n_i \in \textbf{Z}, i={1,2}.
-\end{equation}
-
-La celda unitaria de la red de Bravais se denomina celda de Wigner-Seitz, y restringe la región del espacio más cercana a cada elemento de la red cristalina. Se puede observar, para el caso de una red triangular, en la figura \ref{fig:Wigner-Seitz}.
-
-\begin{figure}[H]
-	\centering 
-	\subfigure[Red de Bravais correspondiente a una estructura periódica con disposición triangular de los elementos]{
-		\label{fig:direct-lattice}
-		\includegraphics[width=0.45\textwidth]{Fundamentos/direct-and-reciprocal-triangle-lattice.pdf}}
-	\hspace{0pt}
-	\subfigure[Superposición de la red recíproca y la red directa de Bravais correspondiente a una estructura periódica con disposición triangular de los elementos]{
-		\label{fig:reciprocal-lattice}
-		\includegraphics[width=0.45\textwidth]{Fundamentos/direct-and-reciprocal-triangle-lattice-zoom4}}
-	\caption{Red de Bravais y red recíproca correspondiente a una estructura periódica. Los vectores $\vec{a_i}$ son los que corresponden a la red directa o red de Bravais, y unen a los elementos físicos del sistema periódico. Los vectores $\vec{b_j}$ son los correspondientes a la red recíproca. Las respectivas redes no están dibujadas a escala y, de hecho, se suelen conceptualizar en espacios diferentes.}
-	\label{fig:direct-and-reciprocal-lattice}
-\end{figure}
-
-Se puede definir, además, una red dual o recíproca, compuesta de vectores $\vec{b_j}$ tales que cada uno de ellos resulte ortonormal a uno de los vectores $\vec{a_i}$ de la red de Bravais, como se muestra en la figura \ref{fig:reciprocal-lattice}. Esto da lugar a que $a_i$ y $b_j$ sean inversamente proporcionales. El uso de un factor de $2\pi$ permite considerar a la red recíproca como una representación de la red en el espacio de los números de onda $\beta$, de manera que la distancia entre los elementos de la red resulte $2\pi/a$, con $a$ la separación entre los elementos de la red física o de Bravais. Dicho de otra manera, mientras la red de Bravais representa la periodicidad de los elementos que conforman la red física en $(x,y,z)$, la red recíproca es la representación de la misma estructura, pero en el espacio de los vectores de onda, $(\beta_x, \beta_y, \beta_z)$. La red recíproca es también periódica, y sobre ella se pueden buscar, también, celdas unitarias, denominadas regiones de Brillouin o celdas de Wigner-Seitz de la red recíproca, como se muestra en la figura \ref{fig:Celda-unitaria-de-Brillouin}.
-
-Si, además, la celda de Brillouin es lo suficientemente simétrica, se puede definir la denominada zona irreducible de Brillouin, que forma parte de la primer zona de Brillouin, pero está limitada por sus líneas de simetría. Para el análisis de una estructura periódica cualquiera, sólo es necesario analizar esta zona irreducible, dado que el resto son simplemente sus reflexiones espejadas.
-
-\begin{figure}[H]
-	\centering 
-	\subfigure[Celda unitaria de Wigner-Seitz de la red de Bravais.]{
-		\label{fig:Wigner-Seitz}
-		\includegraphics[width=0.45\textwidth]{Fundamentos/direct-and-reciprocal-triangle-lattice-zoom2.pdf}}
-	\hspace{0pt}
-	\subfigure[Celda unitaria de Brillouin, de la red recíproca, y zona irreducible de Brillouin.]{
-		\label{fig:Celda-unitaria-de-Brillouin}
-		\includegraphics[width=0.45\textwidth]{Fundamentos/direct-and-reciprocal-triangle-lattice-zoom5.pdf}}
-	\caption{Celdas unitarias de las redes de Bravais y recíproca.}
-	\label{fig:celdas-unitarias}
-\end{figure}
-
-Para el caso en que las celdas unitarias son rectangulares, la red recíproca está también dada por una disposición rectangular de elementos, y la zona de Brillouin resulta también cuadrada. La zona irreducible de Brillouin depende de las líneas de simetría, por lo que puede resultar rectangular, a excepción del caso de celdas unitarias cuadradas, donde la mínima unidad que se repite resulta triangular, como se muestra en la figura \ref{fig:rectangulo-cuadrado}.
-
-\begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{Fundamentos/rectangulo-cuadradado.pdf}
-	\caption{Celda unitaria en el espacio recíproco, y zona irreducible de Brillouin, para celdas unitarias en el espacio de Bravaís rectangulares y cuadradas. Notar que la celda rectangular tiene dos ejes de simetría ortogonales, mientras que la celda cuadrada tiene los mismos ejes, y además con el que corresponde a una recta de $45^{\circ}$.}
-	\label{fig:rectangulo-cuadrado}
-\end{figure}
+de la que se puede deducir que la velocidad de grupo, $v_g = d\omega/d\beta$, es cero cuando se cumple la condición de Bragg.
 
 \section{Teorema de Bloch-Floquet}
 \label{sec:bloch-floquet}
 
 % Floquet es como fourier en el espacio. Taylor and francis, pag 30-5.
+\begin{figure}[H]
+	\centering 
+	\subfigure[Sistema uniforme.]{
+		\label{fig:sistema-uniforme-geometria}
+		\includegraphics[width=0.45\textwidth]{Fundamentos/uniforme-geometria.pdf}}
+	\hspace{10pt}
+	\subfigure[Sistema periódico.]{
+		\label{fig:sistema-periodico-geometria}
+		\includegraphics[width=0.45\textwidth]{Fundamentos/periodico-geometria.pdf}}
+	\caption{Figura de análisis de sistema uniforme y periódico.}
+	\label{fig:sistema-periodico-uniforme-geometria}
+\end{figure}
 
-En condiciones de uniformidad, para un dado modo de propagación, a una frecuencia conocida y con el sistema en estado estacionario, los campos sobre una sección transversal a la de propagación de una onda electromagnética difieren de otros, ubicados a una distancia arbitraria en la dirección de propagación, sólo por una constante compleja que depende únicamente de dicha distancia. Esto significa que, si la dirección de propagación es \textit{x},
+En condiciones de uniformidad, como en la figura \ref{fig:sistema-periodico-uniforme-geometria} a), para un dado modo de propagación, a una frecuencia conocida y con el sistema en estado estacionario, los campos sobre una sección transversal a la de propagación de una onda electromagnética difieren de otros, ubicados a una distancia arbitraria en la dirección de propagación, sólo por una constante compleja que depende únicamente de dicha distancia. Esto significa que, si la dirección de propagación es \textit{x},
 
 \begin{align}
-	E(x_1,y,z,t) = E(x_2,y,z,t)e^{-\gamma (x_2 - x_1)}.
+	E(x_1,y,z,t) = E(x_2,y,z,t)e^{-j\gamma (x_2 - x_1)}.
 \end{align}
 
 Dado que $y,z$ y $t$ se mantienen constantes en la igualdad, y que consideramos condiciones de uniformidad infinita (de modo que no exista diferencia entre dos puntos ubicados sobre el eje $x$), la única posible dependencia de $x$ tiene que estar dada por la constante compleja descripta antes, y los campos transversales sólo pueden depender de $y$ y $z$, que no varían. De esta forma,
 
 \begin{align}
 	\label{eq:campo-uniforme}
-	E(x,y,z,t) = F(y,z) e^{-\gamma x} e^{j\omega t},
+	E(x,y,z,t) = F(y,z) e^{-j\gamma x} e^{j\omega t},
 \end{align}
 
-lo que da como resultado el comportamiento senoidal del campo eléctrico de una onda plana, como es conocido.
+lo que da como resultado el comportamiento senoidal del campo eléctrico de una onda plana, como es conocido, con comportamiento senoidal puro.
 
 
-Para el análisis de ondas electromagnéticas en un material periódico, se puede considerar el caso particular en que, dado que varían las condiciones de propagación periódicamente, como se describió en la sección \ref{sec:celdas-unitarias}, existe una periodicidad en el espacio de los número de onda $\gamma$. En el mismo sentido, una variación de los valores de permitividad eléctrica y permitividad magnética generan una variación en la constante de propagación, sin necesidad de considerar el análisis de estructuras cristalinas de la sección anterior. Entonces, en el caso en que se desea describir el comportamiento de una onda en un sistema periódico, donde la forma, el tamaño y el material pueden variar a lo largo del eje de propagación $x$, no se puede considerar que la variación del campo a lo largo de ese eje $x$, con $y$ y $z$ constantes, dependa únicamente de la constante compleja presentada antes. De esta forma, en contraposición a la ecuación \ref{eq:campo-uniforme},
+Para el análisis de ondas electromagnéticas en un material periódico como el mostrado en la figura \ref{fig:sistema-periodico-uniforme-geometria} b), se puede considerar el caso particular en que, dado que varían las condiciones de propagación periódicamente, como se describió en la sección \ref{sec:celdas-unitarias}, existe una periodicidad en el espacio de los número de onda $\gamma$. En el mismo sentido, una variación de los valores de permitividad eléctrica y permitividad magnética generan una variación en la constante de propagación, sin necesidad de considerar el análisis de estructuras cristalinas de la sección anterior. Entonces, en el caso en que se desea describir el comportamiento de una onda en un sistema periódico, donde la forma, el tamaño y el material pueden variar a lo largo del eje de propagación $x$, no se puede considerar que la variación del campo a lo largo de ese eje $x$, con $y$ y $z$ constantes, dependa únicamente de la constante compleja presentada antes. De esta forma, en contraposición a la ecuación \ref{eq:campo-uniforme}, la amplitud $F$ del campo depende de $x$,
 
 \begin{align}
 	\label{eq:campo-periodico}
-	E(x,y,z,t) = F(x,y,z) e^{-\gamma x} e^{j\omega t}
+	E(x,y,z,t) = F(x,y,z) e^{-j\gamma x} e^{j\omega t}
 \end{align}
 
 Sin embargo, si la función $F(x,y,z)$ es $p$-periódica en dirección $x$, se puede expresar
 
 \begin{align}
-E(x+np,y,z,t) = F(x+np,y,z) e^{-\gamma (x+np)} e^{j\omega t} = F(x,y,z)  e^{-\gamma x}e^{-\gamma np} e^{j\omega t},
+E(x+np,y,z,t) = F(x+np,y,z) e^{-j\gamma (x+np)} e^{j\omega t} = F(x,y,z)  e^{-\gamma x}e^{-j\gamma np} e^{j\omega t},
 \end{align}
 
-donde, según la expresión \ref{eq:campo-periodico}, $F(x,y,z)  e^{-\gamma x} e^{j\omega t} = E(x,y,z,t)$, de modo que
+donde, según la expresión \ref{eq:campo-periodico}, $F(x,y,z)  e^{-j\gamma x} e^{j\omega t} = E(x,y,z,t)$, de modo que
 
 \begin{align}
-	E(x+np,y,z,t) = E(x,y,z,t) e^{-\gamma np},
+	E(x+np,y,z,t) = E(x,y,z,t) e^{-j\gamma np},
 \end{align}
 
-lo que significa que, en un sistema periódico, para un dado modo de propagación, a una frecuencia conocida y con el sistema en estado estacionario, los campos sobre una sección transversal a la de propagación de una onda electromagnética difieren de otros, ubicados a una distancia equivalente a un múltiplo de un periodo, sólo por una constante compleja,  $e^{-\gamma np}$, que depende únicamente de dicha distancia y del periodo del sistema.
+lo que significa que, en un sistema periódico, para un dado modo de propagación, a una frecuencia conocida y con el sistema en estado estacionario, los campos sobre una sección transversal a la de propagación de una onda electromagnética difieren de otros, ubicados a una distancia equivalente a un múltiplo de un periodo, sólo por una constante compleja,  $e^{-j\gamma np}$, que depende únicamente de dicha distancia y del periodo del sistema.
 
 La idea intuitiva detrás del resultado radica en que si la estructura es infinitamente periódica, con celdas unitarias idénticas, las mismas deberían ser indistinguibles, por lo que los campos electromagnéticos presentarían también un comportamiento periódico, a excepción de un corrimiento de fase. Por lo tanto, se puede escribir:
 
@@ -224,7 +186,7 @@ La idea intuitiva detrás del resultado radica en que si la estructura es infini
 E(x,y,z+d) = e^{-j \beta d} E(x,y,z)
 \end{equation}
 
-donde $\beta$ es la constante de propagación en el medio periódico, considerando que no hay pérdidas ($\gamma = -j\beta$) \cite{Capolino:TheoryPhenomenaMetamaterials}. El valor de la diferencia entre los campos en dos bordes de una celda unitaria, entonces, es $\beta d$, que puede reducirse al rango $[-\pi,\pi]$, de modo que los posibles valores de $\beta$ son $[-\pi/d,\pi/d]$, que son los límites de la celda de Brillouin descripta antes. La generalización para el comportamiento en dos dimensiones está íntimamente ligado a la definición de la zona de Brillouin del material analizado.
+donde $\beta$ es la constante de propagación en el medio periódico, considerando que no hay pérdidas ($\gamma = \beta$) \cite{Capolino:TheoryPhenomenaMetamaterials}. El valor de la diferencia entre los campos en dos bordes de una celda unitaria, entonces, es $\beta d$.
 
 Estas consideraciones pueden ser generalizadas para cualquier ecuación diferencial de segundo orden de la forma
 
@@ -290,6 +252,122 @@ Si una onda plana incide sobre un medio periódico dispuesto en la dirección or
 	\caption{Comportamiento de una onda monocromática que incide en forma perpendicular a un medio periódico unidimensional.}
 	\label{fig:bloch-ortogonal}
 \end{figure}
+
+\section{Armónicos espaciales}
+
+Dado la función $F(x,y,z)$ de la expresión \ref{eq:campo-periodico} es periódica, se puede obtener su serie de Fourier en $x$, de la forma
+
+\begin{align}
+F(x,y,z) = \sum_{n=-\infty}^{\infty} E_{n}(y,z) e^{-j n \frac{2\pi}{p} x},
+\end{align}
+
+donde los coeficientes de Fourier se expresan como $E_n(y,z)$ por comodidad, pues representan la amplitud del campo eléctrico según las componentes transversales de propagación para cada modo, dado que la dependencia de $x$ es la única que se desarrolló por Fourier. 
+
+La expresión \ref{eq:campo-periodico} del campo, entonces, resulta
+
+\begin{align}
+E(x,y,z,t) = \sum_{n=-\infty}^{\infty} E_{n}(y,z) e^{-j \left(\gamma + n \frac{2\pi}{p}\right) x} e^{j\omega t}.
+\end{align}
+
+Resta encontrar los coeficientes de Fourier, que se calculan como
+
+\begin{align}
+\int_{x_0-p/2}^{x_0+p/2} F(x,y,z,t) e^{j\omega t} e^{j \left(m \frac{2\pi}{p}\right) x} dx = e^{j\omega t} \sum_{n=-\infty}^{\infty} \int_{x_0-p/2}^{x_0+p/2} E_{n}(y,z) e^{j (m-n) \frac{2\pi}{p} x} dx.
+\end{align}
+
+Las funciones $e^{jn\frac{2\pi}{p}x}$ son ortogonales, y la integral de las mismas sobre el intervalo $[x_0-p/2, x_0+p/2]$ cuando $n = 0$ resulta $p$, de modo que los coeficientes de Fourier se expresan como
+
+\begin{align}
+E(y,z) &= \frac{1}{p} \int_{x_0-p/2}^{x_0+p/2} F(x,y,z,t) e^{j\omega t} e^{j n \frac{2\pi}{p} x} dx \\
+&= \frac{e^{j\omega t}}{p} \int_{x_0-p/2}^{x_0+p/2} F(x,y,z,t) e^{-j\gamma x} e^{j \left(\gamma + n \frac{2\pi}{p}\right) x} dx \\
+&= \frac{1}{p} \int_{x_0-p/2}^{x_0+p/2} E(x,y,z,t) e^{j \gamma_n x} dx,
+\end{align}
+
+donde
+
+\begin{align}
+	\label{eq:relacion_gamma-n-gamma-0}
+	\gamma_n = \gamma_0 + n \frac{2\pi}{p}.
+\end{align}
+
+Finalmente, entonces, el campo queda expresado como
+
+\begin{align}
+E(x,y,z,t) = e^{j\omega t} \sum_{-\infty}^{\infty} E_n(y,z) e^{-j\gamma_n x},
+\end{align}
+
+donde cada término de la serie es una armónica espacial asociada a una constante de propagación $\gamma_n$ o, en el caso sin pérdidas, a una constante de fase $\beta_n$. La armónica fundamental se da en $n=0$.
+
+Entonces, el campo desarrollado en un medio periódico es periódico en sí mismo y no es una armónica pura, sino que su comportamiento tiene que ser expresado como la suma de infinitas armónicas.
+
+La velocidad de fase de cada armónica resulta %DONDE LA DEFINI?
+
+\begin{align}
+v_p^n = \frac{\omega}{\beta_n} = \frac{\omega}{\beta_0 + 2\pi n/p},
+\end{align}
+
+diferente para cada modo.
+
+La velocidad de grupo, en cambio, presenta el mismo valor para todas las armónicas, dado que
+
+\begin{align}
+v_g^n = \frac{d\omega}{d\beta_n} = \frac{d\omega}{d(\beta_0 +2\pi n/p)} = \frac{d\omega}{d\beta_0} = v_g^0.
+\end{align}
+
+Dado que la velocidad de fase no es constante, la forma de onda no será constante durante la propagación, por lo que la forma de onda variará con el avance de la misma.
+
+Considerando que, en base a la ecuación \ref{eq:relacion_gamma-n-gamma-0}, para el caso sin pérdidas, para un dado sistema con un $\beta_0$ determinado, un $\beta_n$ se puede obtener con sólo sumarle $2\pi n/p$, se deduce que, si se graficar a la curva $\omega-\beta_n$, la misma consistiría en la curva $\omega-\beta_0$ desplazada un valor $2\pi n /p$, lo que indica que $\omega$ es una función periódica de $\beta$ cuando se analiza un sistema periódico. En general, entonces, el análisis se realiza sólo sobre la relación $\omega-\beta_0$, a lo que se conoce como celda de Brillouin.
+
+\section{Celdas unitarias de cristales bidimensionales}
+\label{sec:celdas-unitarias}
+
+En base a lo descripto antes, en un material periódico se puede definir una red de Bravais, que indica la forma en que los elementos están físicamente dispuestos en la red cristalina. En la figura \ref{fig:direct-lattice}, $\vec{a_1}$ y $\vec{a_2}$ son la base de vectores que permite expresar la posición de cualquier elemento del arreglo como una combinación lineal de coeficientes enteros:
+
+\begin{equation}
+R_{n_1,n_2} = n_1 \vec{a_1} + n_2 \vec{a_2}, \quad n_i \in \textbf{Z}, i={1,2}.
+\end{equation}
+
+La celda unitaria de la red de Bravais se denomina celda de Wigner-Seitz, y restringe la región del espacio más cercana a cada elemento de la red cristalina. Se puede observar, para el caso de una red triangular, en la figura \ref{fig:Wigner-Seitz}.
+
+\begin{figure}[H]
+	\centering 
+	\subfigure[Red de Bravais correspondiente a una estructura periódica con disposición triangular de los elementos]{
+		\label{fig:direct-lattice}
+		\includegraphics[width=0.45\textwidth]{Fundamentos/direct-and-reciprocal-triangle-lattice.pdf}}
+	\hspace{0pt}
+	\subfigure[Superposición de la red recíproca y la red directa de Bravais correspondiente a una estructura periódica con disposición triangular de los elementos]{
+		\label{fig:reciprocal-lattice}
+		\includegraphics[width=0.45\textwidth]{Fundamentos/direct-and-reciprocal-triangle-lattice-zoom4}}
+	\caption{Red de Bravais y red recíproca correspondiente a una estructura periódica. Los vectores $\vec{a_i}$ son los que corresponden a la red directa o red de Bravais, y unen a los elementos físicos del sistema periódico. Los vectores $\vec{b_j}$ son los correspondientes a la red recíproca. Las respectivas redes no están dibujadas a escala y, de hecho, se suelen conceptualizar en espacios diferentes.}
+	\label{fig:direct-and-reciprocal-lattice}
+\end{figure}
+
+Se puede definir, además, una red dual o recíproca, compuesta de vectores $\vec{b_j}$ tales que cada uno de ellos resulte ortonormal a uno de los vectores $\vec{a_i}$ de la red de Bravais, como se muestra en la figura \ref{fig:reciprocal-lattice}. Esto da lugar a que $a_i$ y $b_j$ sean inversamente proporcionales. El uso de un factor de $2\pi$ permite considerar a la red recíproca como una representación de la red en el espacio de los números de onda $\beta$, de manera que la distancia entre los elementos de la red resulte $2\pi/a$, con $a$ la separación entre los elementos de la red física o de Bravais. Dicho de otra manera, mientras la red de Bravais representa la periodicidad de los elementos que conforman la red física en $(x,y,z)$, la red recíproca es la representación de la misma estructura, pero en el espacio de los vectores de onda, $(\beta_x, \beta_y, \beta_z)$. La red recíproca es también periódica, y sobre ella se pueden buscar, también, celdas unitarias, denominadas regiones de Brillouin o celdas de Wigner-Seitz de la red recíproca, como se muestra en la figura \ref{fig:Celda-unitaria-de-Brillouin}.
+
+Si, además, la celda de Brillouin es lo suficientemente simétrica, se puede definir la denominada zona irreducible de Brillouin, que forma parte de la primer zona de Brillouin, pero está limitada por sus líneas de simetría. Para el análisis de una estructura periódica cualquiera, sólo es necesario analizar esta zona irreducible, dado que el resto son simplemente sus reflexiones espejadas.
+
+\begin{figure}[H]
+	\centering 
+	\subfigure[Celda unitaria de Wigner-Seitz de la red de Bravais.]{
+		\label{fig:Wigner-Seitz}
+		\includegraphics[width=0.45\textwidth]{Fundamentos/direct-and-reciprocal-triangle-lattice-zoom2.pdf}}
+	\hspace{0pt}
+	\subfigure[Celda unitaria de Brillouin, de la red recíproca, y zona irreducible de Brillouin.]{
+		\label{fig:Celda-unitaria-de-Brillouin}
+		\includegraphics[width=0.45\textwidth]{Fundamentos/direct-and-reciprocal-triangle-lattice-zoom5.pdf}}
+	\caption{Celdas unitarias de las redes de Bravais y recíproca.}
+	\label{fig:celdas-unitarias}
+\end{figure}
+
+Para el caso en que las celdas unitarias son rectangulares, la red recíproca está también dada por una disposición rectangular de elementos, y la zona de Brillouin resulta también cuadrada. La zona irreducible de Brillouin depende de las líneas de simetría, por lo que puede resultar rectangular, a excepción del caso de celdas unitarias cuadradas, donde la mínima unidad que se repite resulta triangular, como se muestra en la figura \ref{fig:rectangulo-cuadrado}.
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Fundamentos/rectangulo-cuadradado.pdf}
+	\caption{Celda unitaria en el espacio recíproco, y zona irreducible de Brillouin, para celdas unitarias en el espacio de Bravaís rectangulares y cuadradas. Notar que la celda rectangular tiene dos ejes de simetría ortogonales, mientras que la celda cuadrada tiene los mismos ejes, y además con el que corresponde a una recta de $45^{\circ}$.}
+	\label{fig:rectangulo-cuadrado}
+\end{figure}
+
 
 
 \section{Relación y diagrama de dispersión}

@@ -29,40 +29,41 @@
 \contentsline {chapter}{\numberline {2}Fundamentos de estructuras de EBG}{43}{chapter.167}
 \contentsline {section}{\numberline {2.1}Introducci\IeC {\'o}n: Metamateriales, materiales peri\IeC {\'o}dicos y EBGs}{43}{section.168}
 \contentsline {section}{\numberline {2.2}Difracci\IeC {\'o}n de Bragg}{48}{section.176}
-\contentsline {section}{\numberline {2.3}Celdas unitarias de cristales bidimensionales}{49}{section.182}
-\contentsline {section}{\numberline {2.4}Teorema de Bloch-Floquet}{52}{section.191}
-\contentsline {section}{\numberline {2.5}Relaci\IeC {\'o}n y diagrama de dispersi\IeC {\'o}n}{56}{section.205}
-\contentsline {chapter}{\numberline {3}Estudio y dise\IeC {\~n}o de estructuras de banda prohibida electromagn\IeC {\'e}tica}{63}{chapter.225}
-\contentsline {section}{\numberline {3.1}Modelos anal\IeC {\'\i }ticos de estructuras uniplanares de banda prohibida electromagn\IeC {\'e}tica}{63}{section.226}
-\contentsline {section}{\numberline {3.2}T\IeC {\'e}cnicas num\IeC {\'e}ricas de onda completa}{71}{section.254}
-\contentsline {section}{\numberline {3.3}An\IeC {\'a}lisis de campos y modos para distintas estructuras}{74}{section.256}
-\contentsline {subsection}{\numberline {3.3.1}Metamaterial formado por parches cuadrados unidos por finas trazas \textit {microstrip}}{74}{subsection.257}
-\contentsline {subsubsection}{\numberline {3.3.1.1}An\IeC {\'a}lisis de un diagrama de dispersi\IeC {\'o}n t\IeC {\'\i }pico}{77}{subsubsection.263}
-\contentsline {subsubsection}{\numberline {3.3.1.2}Efecto de la variaci\IeC {\'o}n del ancho del puente \textit {microstrip}}{79}{subsubsection.265}
-\contentsline {subsubsection}{\numberline {3.3.1.3}Efecto del escalamiento de la celda unitaria}{82}{subsubsection.268}
-\contentsline {subsubsection}{\numberline {3.3.1.4}Efecto de la variaci\IeC {\'o}n del tama\IeC {\~n}o del parche met\IeC {\'a}lico}{84}{subsubsection.271}
-\contentsline {subsubsection}{\numberline {3.3.1.5}Variaci\IeC {\'o}n de la longitud de los puentes}{85}{subsubsection.274}
-\contentsline {subsubsection}{\numberline {3.3.1.6}Efecto de la variaci\IeC {\'o}n del ancho del sustrato diel\IeC {\'e}ctrico}{85}{subsubsection.277}
-\contentsline {subsection}{\numberline {3.3.2}Celda de Yang}{89}{subsection.280}
-\contentsline {section}{\numberline {3.4}Modelado circuital}{91}{section.284}
-\contentsline {section}{\numberline {3.5}Modelado por l\IeC {\'\i }neas de transmisi\IeC {\'o}n}{107}{section.333}
-\contentsline {subsection}{\numberline {3.5.1}Algoritmo utilizando programaci\IeC {\'o}n orientada a objetos}{108}{subsection.336}
-\contentsline {chapter}{\numberline {4}Aplicaci\IeC {\'o}n de EBGs en antenas}{121}{chapter.369}
-\contentsline {section}{\numberline {4.1}Introducci\IeC {\'o}n}{121}{section.370}
-\contentsline {section}{\numberline {4.2}Elecci\IeC {\'o}n del metamaterial}{122}{section.371}
-\contentsline {section}{\numberline {4.3}Monopolos}{123}{section.380}
-\contentsline {subsection}{\numberline {4.3.1}Comportamiento de un arreglo de dos monopolos}{124}{subsection.385}
-\contentsline {section}{\numberline {4.4}Introducci\IeC {\'o}n a antenas \textit {microstrip}}{127}{section.412}
-\contentsline {section}{\numberline {4.5}Dise\IeC {\~n}o de una antena \textit {microstrip}}{129}{section.416}
-\contentsline {section}{\numberline {4.6}Dise\IeC {\~n}o de un conjunto de dos antenas \textit {microstrip}}{132}{section.428}
-\contentsline {section}{\numberline {4.7}Estudio del efecto de la distancia sobre el ancho de banda}{133}{section.430}
-\contentsline {section}{\numberline {4.8}Estudio del efecto sobre el acoplamiento mutuo}{133}{section.431}
-\contentsline {chapter}{\numberline {5}Conclusiones}{141}{chapter.432}
-\contentsline {section}{\numberline {5.1}Propuestas de trabajos futuros}{141}{section.433}
-\contentsline {chapter}{Ap\IeC {\'e}ndices}{143}{section*.434}
-\contentsline {chapter}{\numberline {A}Incidencia de una onda plana sobre una interfaz}{145}{appendix.435}
-\contentsline {section}{\numberline {A.1}\IeC {\'A}ngulo de Brewster y \IeC {\'a}ngulo cr\IeC {\'\i }tico}{148}{section.452}
-\contentsline {chapter}{\numberline {B}Estudio de la aplicaci\IeC {\'o}n de parches carga para el aumento del ancho de banda de una antena \textit {microstrip}}{153}{appendix.465}
-\contentsline {chapter}{\numberline {C}Soluci\IeC {\'o}n general mediante el m\IeC {\'e}todo de matriz exponencial de la ecuaci\IeC {\'o}n diferencial de segundo orden de una onda}{159}{appendix.471}
-\contentsline {chapter}{Bibliograf\'{\i }a}{163}{dummy.490}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{163}{appendix*.491}
+\contentsline {section}{\numberline {2.3}Teorema de Bloch-Floquet}{49}{section.182}
+\contentsline {section}{\numberline {2.4}Arm\IeC {\'o}nicos espaciales}{53}{section.199}
+\contentsline {section}{\numberline {2.5}Celdas unitarias de cristales bidimensionales}{55}{section.210}
+\contentsline {section}{\numberline {2.6}Relaci\IeC {\'o}n y diagrama de dispersi\IeC {\'o}n}{57}{section.219}
+\contentsline {chapter}{\numberline {3}Estudio y dise\IeC {\~n}o de estructuras de banda prohibida electromagn\IeC {\'e}tica}{65}{chapter.239}
+\contentsline {section}{\numberline {3.1}Modelos anal\IeC {\'\i }ticos de estructuras uniplanares de banda prohibida electromagn\IeC {\'e}tica}{65}{section.240}
+\contentsline {section}{\numberline {3.2}T\IeC {\'e}cnicas num\IeC {\'e}ricas de onda completa}{73}{section.268}
+\contentsline {section}{\numberline {3.3}An\IeC {\'a}lisis de campos y modos para distintas estructuras}{76}{section.270}
+\contentsline {subsection}{\numberline {3.3.1}Metamaterial formado por parches cuadrados unidos por finas trazas \textit {microstrip}}{76}{subsection.271}
+\contentsline {subsubsection}{\numberline {3.3.1.1}An\IeC {\'a}lisis de un diagrama de dispersi\IeC {\'o}n t\IeC {\'\i }pico}{79}{subsubsection.277}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Efecto de la variaci\IeC {\'o}n del ancho del puente \textit {microstrip}}{81}{subsubsection.279}
+\contentsline {subsubsection}{\numberline {3.3.1.3}Efecto del escalamiento de la celda unitaria}{84}{subsubsection.282}
+\contentsline {subsubsection}{\numberline {3.3.1.4}Efecto de la variaci\IeC {\'o}n del tama\IeC {\~n}o del parche met\IeC {\'a}lico}{86}{subsubsection.285}
+\contentsline {subsubsection}{\numberline {3.3.1.5}Variaci\IeC {\'o}n de la longitud de los puentes}{87}{subsubsection.288}
+\contentsline {subsubsection}{\numberline {3.3.1.6}Efecto de la variaci\IeC {\'o}n del ancho del sustrato diel\IeC {\'e}ctrico}{87}{subsubsection.291}
+\contentsline {subsection}{\numberline {3.3.2}Celda de Yang}{91}{subsection.294}
+\contentsline {section}{\numberline {3.4}Modelado circuital}{93}{section.298}
+\contentsline {section}{\numberline {3.5}Modelado por l\IeC {\'\i }neas de transmisi\IeC {\'o}n}{109}{section.347}
+\contentsline {subsection}{\numberline {3.5.1}Algoritmo utilizando programaci\IeC {\'o}n orientada a objetos}{110}{subsection.350}
+\contentsline {chapter}{\numberline {4}Aplicaci\IeC {\'o}n de EBGs en antenas}{123}{chapter.383}
+\contentsline {section}{\numberline {4.1}Introducci\IeC {\'o}n}{123}{section.384}
+\contentsline {section}{\numberline {4.2}Elecci\IeC {\'o}n del metamaterial}{124}{section.385}
+\contentsline {section}{\numberline {4.3}Monopolos}{125}{section.394}
+\contentsline {subsection}{\numberline {4.3.1}Comportamiento de un arreglo de dos monopolos}{126}{subsection.399}
+\contentsline {section}{\numberline {4.4}Introducci\IeC {\'o}n a antenas \textit {microstrip}}{129}{section.426}
+\contentsline {section}{\numberline {4.5}Dise\IeC {\~n}o de una antena \textit {microstrip}}{131}{section.430}
+\contentsline {section}{\numberline {4.6}Dise\IeC {\~n}o de un conjunto de dos antenas \textit {microstrip}}{134}{section.442}
+\contentsline {section}{\numberline {4.7}Estudio del efecto de la distancia sobre el ancho de banda}{135}{section.444}
+\contentsline {section}{\numberline {4.8}Estudio del efecto sobre el acoplamiento mutuo}{135}{section.445}
+\contentsline {chapter}{\numberline {5}Conclusiones}{143}{chapter.446}
+\contentsline {section}{\numberline {5.1}Propuestas de trabajos futuros}{143}{section.447}
+\contentsline {chapter}{Ap\IeC {\'e}ndices}{145}{section*.448}
+\contentsline {chapter}{\numberline {A}Incidencia de una onda plana sobre una interfaz}{147}{appendix.449}
+\contentsline {section}{\numberline {A.1}\IeC {\'A}ngulo de Brewster y \IeC {\'a}ngulo cr\IeC {\'\i }tico}{150}{section.466}
+\contentsline {chapter}{\numberline {B}Estudio de la aplicaci\IeC {\'o}n de parches carga para el aumento del ancho de banda de una antena \textit {microstrip}}{155}{appendix.479}
+\contentsline {chapter}{\numberline {C}Soluci\IeC {\'o}n general mediante el m\IeC {\'e}todo de matriz exponencial de la ecuaci\IeC {\'o}n diferencial de segundo orden de una onda}{161}{appendix.485}
+\contentsline {chapter}{Bibliograf\'{\i }a}{165}{dummy.504}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{165}{appendix*.505}
