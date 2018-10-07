@@ -162,7 +162,7 @@ Para el análisis de ondas electromagnéticas en un material periódico como el 
 
 \begin{align}
 	\label{eq:campo-periodico}
-	E(x,y,z,t) = F(x,y,z) e^{-j\gamma x} e^{j\omega t}
+	E(x,y,z,t) = F(x,y,z) e^{-j\gamma x} e^{j\omega t}.
 \end{align}
 
 Sin embargo, si la función $F(x,y,z)$ es $p$-periódica en dirección $x$, se puede expresar
@@ -179,11 +179,11 @@ donde, según la expresión \ref{eq:campo-periodico}, $F(x,y,z)  e^{-j\gamma x} 
 
 lo que significa que, en un sistema periódico, para un dado modo de propagación, a una frecuencia conocida y con el sistema en estado estacionario, los campos sobre una sección transversal a la de propagación de una onda electromagnética difieren de otros, ubicados a una distancia equivalente a un múltiplo de un periodo, sólo por una constante compleja,  $e^{-j\gamma np}$, que depende únicamente de dicha distancia y del periodo del sistema.
 
-La idea intuitiva detrás del resultado radica en que si la estructura es infinitamente periódica, con celdas unitarias idénticas, las mismas deberían ser indistinguibles, por lo que los campos electromagnéticos presentarían también un comportamiento periódico, a excepción de un corrimiento de fase. Por lo tanto, se puede escribir:
+La idea intuitiva detrás del resultado radica en que si la estructura es infinitamente periódica, con celdas unitarias idénticas, las mismas deberían ser indistinguibles, por lo que los campos electromagnéticos presentarían también un comportamiento periódico, a excepción de un corrimiento de fase. Por lo tanto, se puede escribir
 
 \begin{equation}
 \label{eq:comportamiento-periodico-campo-bloch}
-E(x,y,z+d) = e^{-j \beta d} E(x,y,z)
+E(x,y,z+d) = e^{-j \beta d} E(x,y,z),
 \end{equation}
 
 donde $\beta$ es la constante de propagación en el medio periódico, considerando que no hay pérdidas ($\gamma = \beta$) \cite{Capolino:TheoryPhenomenaMetamaterials}. El valor de la diferencia entre los campos en dos bordes de una celda unitaria, entonces, es $\beta d$.
@@ -229,10 +229,10 @@ Si se resuelve el sistema utilizando el método de la exponencial matricial, com
 
 
 
-La aplicación del teorema de Floquet a la física del estado sólido se denomina teorema de Bloch, e indica que las soluciones a la función de onda de un electrón en un cristal tiene la forma:
+La aplicación del teorema de Floquet a la física del estado sólido se denomina teorema de Bloch, e indica que las soluciones a la función de onda de un electrón en un cristal tiene la forma
 
 \begin{equation}
-\phi(\vec{r}) = e^{j\vec{\gamma} \cdot \vec{r}} u(\vec{r})
+\phi(\vec{r}) = e^{j\vec{\gamma} \cdot \vec{r}} u(\vec{r}),
 \end{equation}
 
 donde $\vec{\gamma}$ es el vector de onda cristalino, $\vec{r}$ es la posición y $u(\vec{r})$ es una función periódica con igual periodicidad que el cristal. El factor exponencial se corresponde con el comportamiento de una onda plana incidente en un espacio sin obstáculos, mientras que el factor periódico, $u(\vec{r})$, deviene del efecto del sistema. El efecto se puede observar gráficamente en la figura \ref{fig:bloch-periodico-1d}.
@@ -444,9 +444,9 @@ Si se considera que la línea está cargada con una impedancia y una admitancia,
 		\begin{bmatrix}
 			\cos(\beta_{TL} d/2) & j Z_0 \sin(\beta_{TL} d/2) \\
 			j Y_0 \sin(\beta_{TL} d/2) & \cos(\beta_{TL} d/2)
-		\end{bmatrix}
+		\end{bmatrix}.
 	\end{equation}
-	\item La carga, que comprende a la impedancia $Z$ y la admitancia $Y$ asociada a la línea de transmisión. La matriz resulta:
+	\item La carga, que comprende a la impedancia $Z$ y la admitancia $Y$ asociada a la línea de transmisión. La matriz resulta
 	\begin{equation}
 		\begin{bmatrix}
 			A & B \\
@@ -456,12 +456,12 @@ Si se considera que la línea está cargada con una impedancia y una admitancia,
 		\begin{bmatrix}
 			1+ZY & Z \\
 			Y & 1
-		\end{bmatrix}
+		\end{bmatrix}.
 	\end{equation}
 	\item La segunda mitad de la línea de transmisión, de largo $d/2$, de igual expresión que la primera mitad.
 \end{enumerate}
 
-Si se considera que la relación entre las tensiones y corrientes de entrada y salida, respectivamente, están relacionadas por el factor de propagación $e^{-\gamma d}$, donde $\gamma$ es el módulo del vector de onda en el medio metamaterial que se quiere obtener, entonces:
+Si se considera que la relación entre las tensiones y corrientes de entrada y salida, respectivamente, están relacionadas por el factor de propagación $e^{-j\gamma d}$, donde $\gamma$ es el módulo del vector de onda en el medio metamaterial que se quiere obtener, entonces:
 
 \begin{equation}
 	\begin{bmatrix}
@@ -478,13 +478,13 @@ Si se considera que la relación entre las tensiones y corrientes de entrada y s
 	\end{bmatrix}
 	=
 	\begin{bmatrix}
-	V_{n+1}e^{\gamma d} \\ 
-	I_{n+1}e^{\gamma d}
+	V_{n+1}e^{j\gamma d} \\ 
+	I_{n+1}e^{j\gamma d}
 	\end{bmatrix}
 	\implies
 	\begin{bmatrix}
 	A-e^{\gamma d} & B \\
-	C & D-e^{\gamma d}
+	C & D-e^{j\gamma d}
 	\end{bmatrix}
 	\begin{bmatrix}
 	V_{n+1} \\ I_{n+1}
@@ -496,8 +496,8 @@ La existencia de una solución no trivial del sistema de ecuaciones planteado re
 
 \begin{subequations}
 	\begin{align}
-		AD + e^{2 \gamma d} - (A+D)e^{\gamma d}-BC = 0 \implies &1+e^{2\gamma d}-(A+D)e^{\gamma d} = 0 \\
-		&\cosh (\gamma d) = \frac{A+D}{2}
+		AD + e^{2j \gamma d} - (A+D)e^{j\gamma d}-BC = 0 \implies &1+e^{2j\gamma d}-(A+D)e^{j\gamma d} = 0 \\
+		&\cosh (j\gamma d) = \frac{A+D}{2}
 	\end{align}
 \end{subequations}
 

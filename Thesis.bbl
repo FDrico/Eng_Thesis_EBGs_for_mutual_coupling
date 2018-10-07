@@ -897,8 +897,8 @@
       \strng{authorbibnamehash}{fcc18e585bde4c6d82d2e13ab0af98ea}
       \strng{authornamehash}{fcc18e585bde4c6d82d2e13ab0af98ea}
       \strng{authorfullhash}{fcc18e585bde4c6d82d2e13ab0af98ea}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
@@ -1248,6 +1248,80 @@
       \field{journaltitle}{Brno University of Technology}
       \field{title}{Design and optimization of electromagnetic bandgap structures (PhD Thesis)}
       \field{year}{2010}
+    \endentry
+    \entry{Kern:multiband}{article}{}
+      \name{author}{5}{}{%
+        {{hash=554b117437518efcb96ca38c83bf64e3}{%
+           family={Kern},
+           familyi={K\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7586301886aa93e5cbc6c572d7a269c7}{%
+           family={Werner},
+           familyi={W\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod}}}%
+        {{hash=38d9ff791cf14eb83d42f2deb4b12dde}{%
+           family={Monorchio},
+           familyi={M\bibinitperiod},
+           given={Agostino},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c1637e572e27ec7761cf728d120e8456}{%
+           family={Lanuzza},
+           familyi={L\bibinitperiod},
+           given={Luigi},
+           giveni={L\bibinitperiod}}}%
+        {{hash=46162d8323e29fd57fbee4a9152ddb7a}{%
+           family={Wilhelmc},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b0e1d5aa5da8fdee9e11fe80240ad99a}
+      \strng{fullhash}{cd49749dc9064a42efb0faa23918d11b}
+      \strng{bibnamehash}{cd49749dc9064a42efb0faa23918d11b}
+      \strng{authorbibnamehash}{cd49749dc9064a42efb0faa23918d11b}
+      \strng{authornamehash}{b0e1d5aa5da8fdee9e11fe80240ad99a}
+      \strng{authorfullhash}{cd49749dc9064a42efb0faa23918d11b}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Antennas and Propagation (Vol. 53, Nº 1)}
+      \field{title}{The Design Synthesis of Multiband Artificial Magnetic Conductors Using High Impedance Frequency Selective Surfaces	Enhanced Patch-Antenna Performance by Suppressing Surface Waves Using Photonic-Bandgap Substrates}
+      \field{year}{2005}
+    \endentry
+    \entry{McVay:Peano}{article}{}
+      \name{author}{3}{}{%
+        {{hash=89a3da8bd825ed1e73d34c0abf90b7d1}{%
+           family={McVay},
+           familyi={M\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b15e5c196dda33191acfbdc5ddbf9e5a}{%
+           family={Hoorfar},
+           familyi={H\bibinitperiod},
+           given={Ahmad},
+           giveni={A\bibinitperiod}}}%
+        {{hash=033ea15741f9ed720bedcff49b15f49f}{%
+           family={Engheta},
+           familyi={E\bibinitperiod},
+           given={Nader},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{32205a891bbc76a66bf9c5de7ba16f4c}
+      \strng{fullhash}{32205a891bbc76a66bf9c5de7ba16f4c}
+      \strng{bibnamehash}{32205a891bbc76a66bf9c5de7ba16f4c}
+      \strng{authorbibnamehash}{32205a891bbc76a66bf9c5de7ba16f4c}
+      \strng{authornamehash}{32205a891bbc76a66bf9c5de7ba16f4c}
+      \strng{authorfullhash}{32205a891bbc76a66bf9c5de7ba16f4c}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Radio Science (Vol. 40, Nº 6)}
+      \field{title}{Peano High Impedace Surfaces}
+      \field{year}{2005}
     \endentry
     \entry{Kumar:radiating}{article}{}
       \name{author}{2}{}{%

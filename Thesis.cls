@@ -218,7 +218,7 @@
       \texttt{gustavo.gf2005@gmail.com} \par
       \bigskip
       {\large Co-directora: \par}
-      {\LARGE Ing. Silvina Boggi\par}
+      {\LARGE Mg. Ing. Silvina Boggi\par}
       %\textit{IEEE Life Senior Member} \par
       %	  IEEE Senior Member \par
       \texttt{silvinaboggi@gmail.com} \par
