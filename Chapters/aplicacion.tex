@@ -367,80 +367,87 @@ Al igual que para el caso de las antenas monopolo descriptas antes, para el caso
 
 Para ambos casos, en la figura \ref{fig:sinebg-s11-microstrip} se observa el comportamiento del parámetro $S_{11}$, y en la figura \ref{fig:sinebg-s12-microstrip} el de $S_{12}$.
 
-%%%%%%%%%%%%%%%% reemplazar!
+
 \begin{figure}[H]
 	\centering 
 	\subfigure[Alineadas en plano E.]{
 		\label{fig:sinebg-s11-microstrip-E}
-		\includegraphics[width=0.45\textwidth]{Aplicacion/ms-E-35-4-5-sinEBG-S11.pdf}}
+		\includegraphics[width=0.35\textwidth]{Aplicacion/ms-E-35-4-5-sinEBG-S11.pdf}}
 	\subfigure[Alineadas en plano H.]{
 		\label{fig:sinebg-s11-microstrip-H}
-		\includegraphics[width=0.45\textwidth]{Aplicacion/ms-H-3-4-45-5-sinEBG-S11.pdf}}
+		\includegraphics[width=0.35\textwidth]{Aplicacion/ms-H-3-4-45-5-sinEBG-S11.pdf}}
 	\caption{Parámetro $S_{11}$ de las antenas \textit{microstrip} usadas como referencia.}
 	\label{fig:sinebg-s11-microstrip}
 \end{figure}
 
 
-%%%%%%%%%%%%%%%% reemplazar!
+
 \begin{figure}[H]
 	\centering 
 	\subfigure[Alineadas en plano E.]{
 		\label{fig:sinebg-s12-microstrip-E}
-		\includegraphics[width=0.42\textwidth]{Aplicacion/ms-E-35-4-5-sinEBG-S12.pdf}}
+		\includegraphics[width=0.45\textwidth]{Aplicacion/ms-E-35-4-5-sinEBG-S12.pdf}}
 	\subfigure[Alineadas en plano H.]{
 		\label{fig:sinebg-s12-microstrip-H}
-		\includegraphics[width=0.48\textwidth]{Aplicacion/ms-H-3-4-45-5-sinEBG-S12.pdf}}
+		\includegraphics[width=0.45\textwidth]{Aplicacion/ms-H-3-4-45-5-sinEBG-S12.pdf}}
 	\caption{Parámetro $S_{12}$ de las antenas \textit{microstrip} usadas como referencia.}
 	\label{fig:sinebg-s12-microstrip}
 \end{figure}
 
+Para ambos casos, al contrario que al usar monopolos, la estabilidad del acoplamiento con las variaciones de distancia es notoria, así como la baja variación del valor del parámetro $S_{11}$, incluso en la frecuencia de resonancia. Para el caso de las antenas alineadas en el plano H, además, se amplió el ancho de banda de simulación a fin de observar que el acoplamiento se da, en su mayor parte, para el modo secundario del parche, que requiere de una longitud de onda menor. Por lo tanto, es de esperar que la estructura EBG, diseñada para frecuencias menores, no tendrá efectos notorios sobre esta alineación.
 
 
-Considerando que se debe dejar espacio entre las antenas para que se pueda ubicar una estructura EBG entre ellas, se decidió que la distancia entre las mismas resulte de $\frac{3}{2} \lambda_g = 91.35\;mm$.
+A modo de ilustración, para el caso de las antenas ubicadas en plano E, se realizaron simulaciones utilizando dos filas de celdas de EBG. La comparación con los resultados mostrados antes para dos antenas \textit{microstrip} sin EBG se muestra en la figura \ref{fig:planoh-2ebg-comparacion}. Se observa que el parámetro $S_{11}$ no varía notablemente, mientras que ubicar dos filas de EBG parece empeorar la situación de acoplamiento entre las antenas en $2\; dB$.
 
-% Simulaciones en el trabajo.
+\begin{figure}[H]
+	\centering 
+	\subfigure[Parámetros $S_{11}$.]{
+		\label{fig:planoh-2ebg-comparacion-s11}
+		\includegraphics[width=0.45\textwidth]{Aplicacion/comparacion-ms-E-35-4-2EBG.pdf}}
+	\subfigure[Parámetros $S_{12}$.]{
+		\label{fig:planoh-2ebg-comparacion-s21}
+		\includegraphics[width=0.45\textwidth]{Aplicacion/comparacion-ms-E-35-4-2EBG-s12.pdf}}
+	\caption{Comparación de los parámetros $S$ obtenidos con dos filas de EBG, y sin ellas, para dos antenas \textit{microstrip} dispuestas en el plano E.}
+	\label{fig:planoh-2ebg-comparacion}
+\end{figure}
 
-%% COMO ES ESA DISTANCIA??
+El uso de tres filas de celdas unitarias con antenas en el plano E ofrece similares resultados. El comportamiento y la comparación con el caso en que no se usa EBG se muestran en la figura \ref{fig:planoe-3ebg-comparacion}.
 
-% Simular, incluyendo farfield.
-
-% PONER FOTO
-% Poner resultados finales
-
-% Condiciones de borde: LIbroSinNombre, pagina 398.
-%%%%
-
-
-FarField3D-DosParches-SinEBG
-FarField2D-phifijo-DosParches-SinEBG
-
-
-
-
-
-\section{Estudio del efecto de la distancia sobre el ancho de banda}
-\label{sec_efecto_distancia}
-%%%%
-%Coccioli, Yang, Itoh, pag 2127 -> básicamente dice que afecta, que disminuye la frecuencia de resonancia del parche si están demasiado cerca.
-% Iluz, Shavit, pag 1448
-
-% Creo que va a pasar esto
-Como se puede observar, una mayor cercanía entre la estructura EBG y la antena radiante disminuye la frecuencia de resonancia de la misma, debido a los efectos de acoplamiento mutuo.
-% PUede ir esto
-% De las gráficas de la figura, se puede concluir que, si se buscan disminuir el acoplamiento mutuo entre antenas que están cerca mediante la reducción de ondas de superficie, resulta importante considerar, en el diseño de las antenas, a la estructura EBG utilizada, debido que la misma modifica parámetros importantes de la antena.
-% O puede ir esto
-% De las gráficas de la figura, se puede concluir que, si se buscan disminuir el acoplamiento mutuo entre antenas que están cerca mediante la reducción de ondas de superficie, se debe ubicar a la estructura EBG a una distancia tal que los efectos de acoplamiento mutuo sean despreciables para cada antena y para el diagrama de radiación.
-
-\section{Estudio del efecto sobre el acoplamiento mutuo}
-\label{sec_estudio_acoplam_mutuo}
-%%%
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Aplicacion/ms-H-3-35-4-45-3EBG-S12-sinEBG-comp.pdf}
+	\caption{Comportamiento del parámetro $S_{12}$ con tres filas de celdas unitarias para antenas \textit{microstrip} dispuestas sobre el plano E.}
+	\label{fig:planoe-3ebg-comparacion}
+\end{figure}
 
 
-% Ondas de superficie se proparagan por plano E? Pagina 132. Rahmat, lbro,.
-% Pagina 138. Rahmat.
-% Efecto según la orientacion de parches. ABidin, Tesis, Pagina 37.
-% Algo se puede ver en Assimonis, Yioultsis, Antonopoulos
-%%%%
+Para el caso del uso de tres filas de celdas unitarias con antenas en el plano H, la modificación del tamaño de las celdas unitarias de $22.6\;mm$ a $22.33 \;mm$ ofreció los resultados que se observan en la figura \ref{fig:2233-2ebg-h}. Resulta clara la aparición de una resonancia de tipo \textit{notch} en la frecuencia de resonancia de la antena, incluso a corta distancia, aunque el aumento general del acoplamiento en todo el espectro genera que este \textit{notch} resulte insuficiente. La comparación se puede observar en la figura \ref{fig:comparacion2233-ebg-noebg-s12}, donde resulta notorio que para distancias de $12.2 \;cm$, el acoplamiento mutuo disminuye en valores cercanos a $5\; dB$ en algunas zonas de la banda de interés.
 
 
-% Ver que overall las conclusiones son similares a Islam,Alam.
+\begin{figure}[H]
+	\centering 
+	\subfigure[Según distancia.]{
+		\label{fig:2233-3ebg-h-s12}
+		\includegraphics[width=0.45\textwidth]{Aplicacion/ms-H-3-35-4-45-3EBG-S12.pdf}}
+	\subfigure[Comparación.]{
+		\label{fig:comparacion2233-ebg-noebg-s12}
+		\includegraphics[width=0.45\textwidth]{Aplicacion/ms-H-3-35-4-45-3EBG-S12-sinEBG.pdf}}
+	\caption{Comportamiento del parámetro $S_{12}$ con tres filas de celdas unitarias para antenas \textit{microstrip} dispuestas sobre el plano H.}
+	\label{fig:2233-2ebg-h}
+\end{figure}
+
+Sin embargo, es importante remarcar que el tamaño de las celdas unitarias cumple un papel preponderante en el comportamiento del parámetro $S_{21}$ a distancias tan cortas, como se muestra en la figura \ref{fig:ms-H-4-variosD-3EBG-S12}. En la misma se observa que el efecto \textit{notch} sólo afecta a la frecuencia de resonancia más baja, que corresponde a aproximadamente 2.4 GHz, que es la frecuencia para la que está diseñado el EBG. Si la distancia entre parches se mantiene igual, el acoplamiento mutuo entre antenas para la frecuencia de resonancia correspondiente al segundo modo no se ve afectado. Lo mismo sucede para antenas \textit{microstrip} dispuestas sobre el plano E, como se puede observar en la figura \ref{fig:ms-E-celdas-s21}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Aplicacion/ms-H-4-variosD-3EBG-S12.pdf}
+	\caption{Comportamiento del parámetro $S_{12}$ para varios tamaños de celda unitaria, con antenas \textit{microstrip} en plano H dispuestas a $12.2\; cm$ de distancia.}
+	\label{fig:ms-H-4-variosD-3EBG-S12}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Aplicacion/ms-E-celdas-s21.pdf}
+	\caption{Comportamiento del parámetro $S_{12}$ para varios tamaños de celda unitaria, con antenas \textit{microstrip} en plano E dispuestas a $12.2\; cm$ de distancia.}
+	\label{fig:ms-E-celdas-s21}
+\end{figure}

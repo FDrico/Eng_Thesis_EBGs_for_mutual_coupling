@@ -1225,7 +1225,7 @@ El resultado arrojado por la simulación será un archivo, de formato \textsc{.n
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Modelado/ConceptoMatrizProgresoTiempo.pdf}
+	\includegraphics[width=0.8\textwidth]{Modelado/ConceptoMatrizProgresoTiempo.pdf}
 	\caption{Estructura de la matriz que se guarda y se lee del disco rígido. La estructura posee todas las tensiones calculadas para cada tiempo y para cada pixel en particular.}
 	\label{fig:EstructuraTiemposMatrizNumpy}
 \end{figure}
@@ -1266,10 +1266,10 @@ Como se puede observar, si bien en términos generales el método propuesto perm
 
 \begin{itemize}
 	\item El proceso de simulación requiere conocer el valor de la impedancia en cada momento. Dado que la impedancia es un concepto definido en el dominio de la frecuencia, se debió elegir una frecuencia a la que obtener cada valor de impedancia. Esta decisión conlleva a que se deba acotar el análisis a un espectro acotado alrededor de la frecuencia elegida como referencia. Existen métodos propuestos para subsanar este problema en TLM \cite{Saguet:NumericalAnalysisInElectromagnetics}.
-	\item El mallado propuesto resulta insuficiente. Mallas más finas requieren un mayor tiempo de simulación, especialmente cuando son utilizadas utilizando el algoritmo propuesto, implementado en Python.
-	\item El algoritmo sólo admite mallado rectangular y equiespaciado. En muchos casos resulta conveniente utilizar mallas más densas cerca de los bordes de la estructura, donde los campos presentan comportamientos más complejos.
+	\item El mallado propuesto resulta insuficiente. Mallas más finas requieren un mayor tiempo de simulación, especialmente cuando son utilizadas utilizando el algoritmo propuesto, implementado en Python. El algoritmo sólo admite mallado rectangular y equiespaciado. En muchos casos resulta conveniente utilizar mallas más densas cerca de los bordes de la estructura, donde los campos presentan comportamientos más complejos.
 	\item Resulta evidente que la frecuencia de resonancia no coincide con la esperada, posiblemente debido al error inherente de las fórmulas utilizadas para calcular la capacidad e inductancia de cada \textit{pixel} analíticamente.
 	\item Si bien se tuvo en cuenta la amplitud $\rho$, debido a que la fase no se consideró en la simulación, el comportamiento de las capacidades de \textit{fringe} está modelado de forma incompleta.
+	\item El frente de ondas es plano, y no cilíndrico o radial. Esto viene aparejado a la limitación del mallado equiespaciado: cualquier pulso que parta de un nodo, sólo puede llegar a los nodos que son vecinos directos no diagonales en un único tiempo de simulación.
 \end{itemize}
 
 En las figuras que componen al mosaico de figuras \ref{fig:progresion_tiempo_tlm} se puede observar cómo se comporta el algoritmo frente a la celda propuesta.
