@@ -897,8 +897,8 @@
       \strng{authorbibnamehash}{fcc18e585bde4c6d82d2e13ab0af98ea}
       \strng{authornamehash}{fcc18e585bde4c6d82d2e13ab0af98ea}
       \strng{authorfullhash}{fcc18e585bde4c6d82d2e13ab0af98ea}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
@@ -1086,31 +1086,27 @@
       \field{title}{Numerical Solution of a 2-dimensional scattering problems using a transmission line matrix}
       \field{year}{1971}
     \endentry
-    \entry{ThummWiesbeck:CharacteristicImpedance}{article}{}
-      \name{author}{2}{}{%
-        {{hash=fe298ec663bb2b23033123946835044e}{%
-           family={Thumm},
-           familyi={T\bibinitperiod},
-           given={Manfred},
-           giveni={M\bibinitperiod}}}%
-        {{hash=20b7cc0dd72eb348e8a0da4d4162c281}{%
-           family={Wiesbeck},
-           familyi={W\bibinitperiod},
-           given={Werner},
-           giveni={W\bibinitperiod}}}%
+    \entry{Hammerstad:discont}{article}{}
+      \name{author}{1}{}{%
+        {{hash=abf04893ef54f9ac6bc905e538371894}{%
+           family={Hammerstad},
+           familyi={H\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
       }
-      \strng{namehash}{a7a29412e801e32df69c77bc1b098971}
-      \strng{fullhash}{a7a29412e801e32df69c77bc1b098971}
-      \strng{bibnamehash}{a7a29412e801e32df69c77bc1b098971}
-      \strng{authorbibnamehash}{a7a29412e801e32df69c77bc1b098971}
-      \strng{authornamehash}{a7a29412e801e32df69c77bc1b098971}
-      \strng{authorfullhash}{a7a29412e801e32df69c77bc1b098971}
+      \strng{namehash}{abf04893ef54f9ac6bc905e538371894}
+      \strng{fullhash}{abf04893ef54f9ac6bc905e538371894}
+      \strng{bibnamehash}{abf04893ef54f9ac6bc905e538371894}
+      \strng{authorbibnamehash}{abf04893ef54f9ac6bc905e538371894}
+      \strng{authornamehash}{abf04893ef54f9ac6bc905e538371894}
+      \strng{authorfullhash}{abf04893ef54f9ac6bc905e538371894}
       \field{sortinit}{1}
       \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Karlsruhe Institute of Technology}
-      \field{title}{Characteristic Impedance and Permittivity (diapositivas)}
+      \field{journaltitle}{Symposium on Microwave Theory and Techniques}
+      \field{title}{Computer-Aided Design of Microstrip Couplers with Accurate Discontinuity Models}
+      \field{year}{1981}
     \endentry
     \entry{Tesche:EMC}{book}{}
       \name{author}{3}{}{%
@@ -1145,6 +1141,30 @@
       \field{labeltitlesource}{title}
       \field{title}{EMC Analysis Methods and Computational Models}
       \field{year}{1997}
+    \endentry
+    \entry{Saguet:NumericalAnalysisInElectromagnetics}{book}{}
+      \name{author}{1}{}{%
+        {{hash=f40bf2ee746be7ce19da9f0cc47da598}{%
+           family={Saguet},
+           familyi={S\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ISTE - Wiley}%
+      }
+      \strng{namehash}{f40bf2ee746be7ce19da9f0cc47da598}
+      \strng{fullhash}{f40bf2ee746be7ce19da9f0cc47da598}
+      \strng{bibnamehash}{f40bf2ee746be7ce19da9f0cc47da598}
+      \strng{authorbibnamehash}{f40bf2ee746be7ce19da9f0cc47da598}
+      \strng{authornamehash}{f40bf2ee746be7ce19da9f0cc47da598}
+      \strng{authorfullhash}{f40bf2ee746be7ce19da9f0cc47da598}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Numerical Analysis in Electromagnetics}
+      \field{year}{2012}
     \endentry
     \entry{Abidin:Thesis}{article}{}
       \name{author}{1}{}{%
@@ -1527,30 +1547,6 @@
       \field{title}{Confined Electrons and Photons: Photonic Bloch Waves and Photonic Band Gaps}
       \field{year}{1995}
     \endentry
-    \entry{Saguet:NumericalAnalysisInElectromagnetics}{book}{}
-      \name{author}{1}{}{%
-        {{hash=f40bf2ee746be7ce19da9f0cc47da598}{%
-           family={Saguet},
-           familyi={S\bibinitperiod},
-           given={Pierre},
-           giveni={P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {ISTE - Wiley}%
-      }
-      \strng{namehash}{f40bf2ee746be7ce19da9f0cc47da598}
-      \strng{fullhash}{f40bf2ee746be7ce19da9f0cc47da598}
-      \strng{bibnamehash}{f40bf2ee746be7ce19da9f0cc47da598}
-      \strng{authorbibnamehash}{f40bf2ee746be7ce19da9f0cc47da598}
-      \strng{authornamehash}{f40bf2ee746be7ce19da9f0cc47da598}
-      \strng{authorfullhash}{f40bf2ee746be7ce19da9f0cc47da598}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Numerical Analysis in Electromagnetics}
-      \field{year}{2012}
-    \endentry
     \entry{Allen:SurfaceWaveCoupling}{article}{}
       \name{author}{1}{}{%
         {{hash=89d449670130f3e755ec17509e9f09e7}{%
@@ -1739,6 +1735,32 @@
       \field{journaltitle}{Roke Manor Research}
       \field{title}{Surface Waves: What are they? Why are they interesting?}
       \field{year}{2009}
+    \endentry
+    \entry{ThummWiesbeck:CharacteristicImpedance}{article}{}
+      \name{author}{2}{}{%
+        {{hash=fe298ec663bb2b23033123946835044e}{%
+           family={Thumm},
+           familyi={T\bibinitperiod},
+           given={Manfred},
+           giveni={M\bibinitperiod}}}%
+        {{hash=20b7cc0dd72eb348e8a0da4d4162c281}{%
+           family={Wiesbeck},
+           familyi={W\bibinitperiod},
+           given={Werner},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{a7a29412e801e32df69c77bc1b098971}
+      \strng{fullhash}{a7a29412e801e32df69c77bc1b098971}
+      \strng{bibnamehash}{a7a29412e801e32df69c77bc1b098971}
+      \strng{authorbibnamehash}{a7a29412e801e32df69c77bc1b098971}
+      \strng{authornamehash}{a7a29412e801e32df69c77bc1b098971}
+      \strng{authorfullhash}{a7a29412e801e32df69c77bc1b098971}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Karlsruhe Institute of Technology}
+      \field{title}{Characteristic Impedance and Permittivity (diapositivas)}
     \endentry
   \enddatalist
 \endrefsection

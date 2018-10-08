@@ -145,7 +145,9 @@ En vistas de comprender la incidencia del acoplamiento por ondas de superficie s
 	\label{fig:monopolos-sin-plano-de-tierra-resultados}	
 \end{figure}  
 
-Se puede observar que los valores de distancia para los que los monopolos quedan cerca del borde de su respectivo plano conductor y del radiador opuesto, la adaptación del sistema mejora considerablemente. A medida que las antenas se alejan, el parámetro $S_{11}$ recupera los valores que poseía cuando la estructura tenía un único de plano de tierra. Una comparación para dos distancias elegidas arbitrariamente se puede observar en la figura \ref{fig:comparacion-monopolos-s-sinGND} a). De la misma manera, el comportamiento en función de la frecuencia de las geometrías en que la distancia entre los monopolos, y entre cada uno de los radiadores y el borde del plano conductor, disminuye, el acoplamiento aumenta para las bajas frecuencias, y surgen efectos indeseados. Una comparación, también para dos distancias elegidas arbitrariamente, se observa en la figura \ref{fig:comparacion-monopolos-s-sinGND} b), donde se puede observar una disminución en el parámetro $S_{12}$ de unos $8\ dB$ para las frecuencias de interés, incluso cuando las antenas están lejos del borde que las enfrenta (curva naranja). Esto permite deducir, entonces, que el efecto de acoplamiento por ondas de superficie no es despreciable, aunque no representa, como se esperaba, la causa única del mismo.
+Se puede observar que los valores de distancia para los que los monopolos quedan cerca del borde de su respectivo plano conductor y del radiador opuesto, la adaptación del sistema mejora considerablemente. A medida que las antenas se alejan, el parámetro $S_{11}$ recupera los valores que poseía cuando la estructura tenía un único de plano de tierra. El parámetro $S_{21}$ se ubica siempre por debajo de los $-20\;dB$, y cuando las antenas están lo suficientemente alejadas entre sí, se puede observar el efecto de eliminación del acoplamiento por ondas de superficie para la frecuencia en que la energía que éstas poseen es mayor.
+
+Una comparación para dos distancias elegidas arbitrariamente se puede observar en las figuras \ref{fig:comparacion-monopolos-s-sinGND} a) y b), donde se puede observar una disminución en el parámetro $S_{12}$ de unos $8\ dB$ para las frecuencias de interés, incluso cuando las antenas están lejos del borde que las enfrenta (curva naranja). Esto permite deducir, entonces, que el efecto de acoplamiento por ondas de superficie no es despreciable, aunque no representa, como se esperaba, la causa única del mismo.
 
 
 \begin{figure}[H]
@@ -162,7 +164,7 @@ Se puede observar que los valores de distancia para los que los monopolos quedan
 \end{figure} 
 
 
-La aplicación de estructuras EBG modifica sustancialmente las características de las antenas. En la figura \ref{fig:parametros-s-2ebg} se puede observar el comportamiento de los parámetros $S$ para el caso en que entre las dos antenas se ubican dos filas de EBG, como se muestra en la figura \ref{fig:estructuras2-y-3-ebg-monopolos} a). Se observa que a una menor distancia entre los dipolos y, por lo tanto, entre cada dipolo y la estructura EBG, el comportamiento es más errático, aunque la adaptación es más profunda. En el mismo sentido, el acoplamiento entre las antenas disminuye con la distancia, y una menor distancia al EBG de cada dipolo genera un acoplamiento mayor al original.
+La aplicación de estructuras EBG modifica sustancialmente las características de las antenas. En la figura \ref{fig:parametros-s-2ebg} se puede observar el comportamiento de los parámetros $S$ para el caso en que entre las dos antenas se ubican dos filas de EBG, como se muestra en la figura \ref{fig:estructuras2-y-3-ebg-monopolos} a). Se observa que a una menor distancia entre los dipolos y, por lo tanto, entre cada dipolo y la estructura EBG, el comportamiento es más errático, aunque la adaptación es más profunda. En el mismo sentido, el acoplamiento entre las antenas disminuye con la distancia, y una menor distancia al EBG de cada dipolo genera un acoplamiento incluso mayor al original. Sólo cuando las antenas están lo suficientemente alejadas de la estructura como para que la distancia permita la formación de ondas de superficie, es posible observar una disminución del acoplamiento sin efectos adversos.
 
 \begin{figure}[H]
 	\centering 
@@ -207,7 +209,7 @@ Como se explicitó antes, en ocasiones el uso de EBG con la intención de dismin
 	\label{fig:comparacion-2filas-ebg-mo}
 \end{figure} 
 
-El caso en que se ubican 3 EBG, los resultados, que se muestran en la figura \ref{fig:comparacion-3filas-ebg-mo}, son más complejos. La frecuencia de resonancia disminuye fuertemente, y aparecen resonancias cercanas que dificultan la adaptación. Este comportamiento patológico es mucho menos notorio a medida que la distancia entre los monopolos y la estructura disminuye. En el caso del parámetro $S_{12}$, aparecen también frecuencias de resonancia cercanas a la que corresponde al comportamiento de las celdas EBG, aunque, de igual manera que para el caso del parámeteo $S_{11}$, los efectos desaparecen al alejar los monopolos de la estructura.
+El caso en que se ubican 3 EBG, los resultados, que se muestran en la figura \ref{fig:comparacion-3filas-ebg-mo}, son más complejos. La frecuencia de resonancia disminuye fuertemente, y aparecen resonancias cercanas que dificultan la adaptación. Este comportamiento patológico es mucho menos notorio a medida que la distancia entre los monopolos y la estructura disminuye. En el caso del parámetro $S_{12}$, aparecen también frecuencias de resonancia cercanas a la que corresponde al comportamiento de las celdas EBG.
 
 \begin{figure}[H]
 	\centering 
@@ -222,7 +224,7 @@ El caso en que se ubican 3 EBG, los resultados, que se muestran en la figura \re
 	\label{fig:comparacion-3filas-ebg-mo}
 \end{figure}
 
-La comparación entre el comportamiento para 2 y 3 filas de celdas EBG se puede observar en la figura \ref{fig:comparacion-23filas-ebg-mo}, para dos distancias. Para el caso $S_{11}$, se puede observar fácilmente que la frecuencia de resonancia es menor y el comportamiento en frecuencia es mucho más errático, con múltiples resonancias que afectan a la adaptación. Cuando la distancia es mayor, esas resonancias disminuyen y la diferencia entre el uso de 2 y 3 filas de celdas EBG disminuye. Los valores de adaptación mejoran ligeramente para el caso de 3 filas, pero a costa de una disminución en la frecuencia. El parámetro $S_{12}$ para el caso de monopolos a $7.6\; cm$ de distancia entre sí presenta picos que generan que el valor alcance los $-10\;dB$, aunque cuando los mismos se alejan a $10.6\;cm$, a pesar de que resuena a menores frecuencias, se observa una disminución del parámetro en $20\; dB$ en una banda angosta centrada por debajo de la frecuencia en que se deseaba disminuir el acoplamiento.
+La comparación entre el comportamiento para 2 y 3 filas de celdas EBG se puede observar en la figura \ref{fig:comparacion-23filas-ebg-mo}, para dos distancias. Para el caso $S_{11}$, se puede observar fácilmente que la frecuencia de resonancia es menor y el comportamiento en frecuencia es mucho más errático, con múltiples resonancias que afectan a la adaptación. Cuando la distancia es mayor, esas resonancias disminuyen y la diferencia entre el uso de 2 y 3 filas de celdas EBG disminuye. Los valores de adaptación mejoran ligeramente para el caso de 3 filas, pero a costa de una disminución en la frecuencia. El parámetro $S_{12}$ para el caso de monopolos a $9.14\; cm$ de distancia entre sí presenta picos que generan que el valor alcance los $-10\;dB$, aunque cuando los mismos se alejan a $15.2\;cm$, a pesar de que resuena a menores frecuencias, se observa una disminución del parámetro en $20\; dB$ en una banda angosta centrada por debajo de la frecuencia en que se deseaba disminuir el acoplamiento.
 
 \begin{figure}[H]
 	\centering 
@@ -235,7 +237,9 @@ La comparación entre el comportamiento para 2 y 3 filas de celdas EBG se puede 
 		\includegraphics[width=0.45\textwidth]{Aplicacion/comparacion-dipolos-s12-variasDistancias-conEBG2-3.pdf}}
 	\caption{Comparación del comportamiento de los parámetros $S$ para el caso en que no hay EBG y el caso en que se ubican dos filas de celdas.}
 	\label{fig:comparacion-23filas-ebg-mo}
-\end{figure} 
+\end{figure}
+
+En resumen, si bien el efecto de la aplicación de dos filas de EBG podría considerarse, para algunos casos, beneficioso, el uso de tres filas de EBG modifica de manera tal el comportamiento de los parámetros $S$ que, a excepción de aquellos casos en que la distancia entre las antenas permita ubicar la estructura EBG a una distancia prudente de los radiadores, no podrá ser utilizado.
 
 	
 \section{Introducción a antenas \textit{microstrip}}
@@ -346,6 +350,52 @@ Para poder estudiar este problema, será necesario comprender cómo se comporta 
 	\lambda_g = \frac{v_p}{f_r} = \frac{c}{\sqrt{\epsilon_{eff} f_r}} \approx 60.9\; mm.
 \end{align}
 
+
+Al igual que para el caso de las antenas monopolo descriptas antes, para el caso de las antenas \textit{microstrip} también se procedió a simular su comportamiento sin estructuras EBG de por medio, de forma que se pudieran comparar los efectos que generan las celdas unitarias sobre el comportamiento de los parámetros S. Las geometrías simuladas se pueden observar en la figura \ref{fig:geometrias-sinebg-microstrip-EyH}, donde en a) se muestran las antenas ubicadas alienadas en el plano E, y en b) se las puede ver alineadas en el plano H.
+
+\begin{figure}[H]
+	\centering 
+	\subfigure[Alineadas en plano E.]{
+		\label{fig:geometrias-sinebg-microstrip-E}
+		\includegraphics[width=0.42\textwidth]{Aplicacion/microstripSINEBG-planoE.PNG}}
+	\subfigure[Alineadas en plano H.]{
+		\label{fig:geometrias-sinebg-microstrip-H}
+		\includegraphics[width=0.48\textwidth]{Aplicacion/microstripSINEBG-planoH.PNG}}
+	\caption{Antenas \textit{microstrip} sin estructura EBG utilizadas como referencia.}
+	\label{fig:geometrias-sinebg-microstrip-EyH}
+\end{figure}
+
+Para ambos casos, en la figura \ref{fig:sinebg-s11-microstrip} se observa el comportamiento del parámetro $S_{11}$, y en la figura \ref{fig:sinebg-s12-microstrip} el de $S_{12}$.
+
+%%%%%%%%%%%%%%%% reemplazar!
+\begin{figure}[H]
+	\centering 
+	\subfigure[Alineadas en plano E.]{
+		\label{fig:sinebg-s11-microstrip-E}
+		\includegraphics[width=0.45\textwidth]{Aplicacion/ms-E-35-4-5-sinEBG-S11.pdf}}
+	\subfigure[Alineadas en plano H.]{
+		\label{fig:sinebg-s11-microstrip-H}
+		\includegraphics[width=0.45\textwidth]{Aplicacion/ms-H-3-4-45-5-sinEBG-S11.pdf}}
+	\caption{Parámetro $S_{11}$ de las antenas \textit{microstrip} usadas como referencia.}
+	\label{fig:sinebg-s11-microstrip}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%% reemplazar!
+\begin{figure}[H]
+	\centering 
+	\subfigure[Alineadas en plano E.]{
+		\label{fig:sinebg-s12-microstrip-E}
+		\includegraphics[width=0.42\textwidth]{Aplicacion/ms-E-35-4-5-sinEBG-S12.pdf}}
+	\subfigure[Alineadas en plano H.]{
+		\label{fig:sinebg-s12-microstrip-H}
+		\includegraphics[width=0.48\textwidth]{Aplicacion/ms-H-3-4-45-5-sinEBG-S12.pdf}}
+	\caption{Parámetro $S_{12}$ de las antenas \textit{microstrip} usadas como referencia.}
+	\label{fig:sinebg-s12-microstrip}
+\end{figure}
+
+
+
 Considerando que se debe dejar espacio entre las antenas para que se pueda ubicar una estructura EBG entre ellas, se decidió que la distancia entre las mismas resulte de $\frac{3}{2} \lambda_g = 91.35\;mm$.
 
 % Simulaciones en el trabajo.
@@ -360,24 +410,6 @@ Considerando que se debe dejar espacio entre las antenas para que se pueda ubica
 % Condiciones de borde: LIbroSinNombre, pagina 398.
 %%%%
 
-\section{Diseño de un conjunto de dos antenas \textit{microstrip}}
-\label{sec_conjunto}
-El diseño de una única antena microstrip representa el primer paso en la obtención de un conjunto capaz de aumentar la directividad, y por tanto la ganancia, de la estructura. Lamentablemente, la simple utilización de los valores calculados en la sección \ref{sec_disenio_microstrip} no ofrece, en general, buenos resultados. Esto se debe a que las antenas que conforman el conjunto se deben disponer a distancias tales que modifican el espacio circundante a cada una de ellas, generando acoplamiento indeseados y variaciones en la frecuencia de resonancia y los parámetros de adaptación. Es por esto que la sección precedente sólo ofrece valores aproximados a los que se utilizan en el diseño final.
-
-En miras de la obtención de resultados simulados que contemplen las posibilidades de fabricación de un conjunto de dos antenas \textit{microstrip} separadas una distancia de $3/2 \lambda$, se simularon las mismas considerando un sustrato de 135 mm $\times$ 190 mm, de forma que las mismas se ubican a corta distancia del borde de la placa de sustrato utilizada, como se muestra en la figura \ref{fig:conjunto-sin-ebg}. En la misma, los valores de alto, ancho y valor de \textit{inset} de las antenas son iguales, y fueron elegidos tras la simulación a valores cercanos a los obtenidos en la sección anterior. Estos valores, mostrados en la tabla \ref{table:valores-dosparches-geometria}, serán los utilizados para la comparación con las geometrias radiantes con estructuras de banda prohibida electromagnética. En la figura \ref{fig:farfield-2parches-sinebg} se puede observar el diagrama de radiación tridimensional para la estructura propuesta, con las dimensiones elegidas.
-
-\begin{table}
-	\centering
-	\begin{tabular}{c|c|c|c|c}
-		$L$ & $W$ & $y_0$ & $w_{linea}$ & $s$ \\
-		\hline
-		$31$ mm & $38$ mm & $11$ mm & $3$ mm & $91.35$ mm
-	\end{tabular}
-	\caption{Tabla de valores elegidos para los parches que conforman al arreglo de dos antenas \textit{microstrip}.}
-	\label{table:valores-dosparches-geometria}
-\end{table}
-
-GeometriaconjuntoSinEBG.png
 
 FarField3D-DosParches-SinEBG
 FarField2D-phifijo-DosParches-SinEBG
@@ -392,8 +424,6 @@ FarField2D-phifijo-DosParches-SinEBG
 %Coccioli, Yang, Itoh, pag 2127 -> básicamente dice que afecta, que disminuye la frecuencia de resonancia del parche si están demasiado cerca.
 % Iluz, Shavit, pag 1448
 
-Finalmente, es necesario agregar las estructuras EBG para observar el efecto que producen en el arreglo de antenas. Para ello, en primer lugar se debe reducir el efecto que las estructuras ejercen sobre cada uno de los parches por separado, para lo cual también se realizó un conjunto de simulaciones, donde las estructuras se ubicaron a distintas distancias de la antena ($g$ en la figura \ref{fig:antena-propuesta-con-ebg}).
-
 % Creo que va a pasar esto
 Como se puede observar, una mayor cercanía entre la estructura EBG y la antena radiante disminuye la frecuencia de resonancia de la misma, debido a los efectos de acoplamiento mutuo.
 % PUede ir esto
@@ -403,8 +433,7 @@ Como se puede observar, una mayor cercanía entre la estructura EBG y la antena 
 
 \section{Estudio del efecto sobre el acoplamiento mutuo}
 \label{sec_estudio_acoplam_mutuo}
-%%%%
-Establecida la distancia adecuada, es posible ahora incorporar a la simulación las estructuras EBG para observar el efecto sobre el acoplamiento mutuo. Se debe tener en cuenta que la cantidad de celdas unitarias debe ser suficiente para lograr el efecto de reducción del acoplamiento mutuo.
+%%%
 
 
 % Ondas de superficie se proparagan por plano E? Pagina 132. Rahmat, lbro,.

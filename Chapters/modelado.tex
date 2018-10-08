@@ -1008,13 +1008,13 @@ Similar comportamiento, aunque con mayores pendientes, se observa en el caso en 
 
 Para el caso bidimensional, la discretización debe ser también bidimensional, lo que conlleva mayores esfuerzos numéricos. Un problema práctico cualquiera puede contener una enorme cantidad de celdas unitarias, con bordes complejos y medios inhomogéneos, lo que obliga a considerar las propiedades de las celdas unitarias de la forma lo más sencilla posible, y para aumentar la densidad de las mismas con el menor impacto posible en el tiempo de procesamiento.
 
-Existen numerosos métodos que utilizan líneas de transmisión para simular metamateriales, entre los que destacan el método de TMM (\textit{Transmission-Matrix Method}) y de TLM (\textit{Transmission-Line Matrix Method}). Si bien los nombres son similares, la resolución del problema varía fundamentalmente \cite{Caloz:ElectromagneticMetamaterials}. En este trabajo se desarrollará brevemente el método de TLM, que luego será implementado y explicado en detalle en la sección \ref{subsec_estudio_tlm}.
+Existen numerosos métodos que utilizan líneas de transmisión para simular metamateriales, entre los que destacan el método de TMM (\textit{Transmission-Matrix Method}) y de TLM (\textit{Transmission-Line Matrix Method}). Si bien los nombres son similares, la resolución del problema varía fundamentalmente \cite{Caloz:ElectromagneticMetamaterials}. En este trabajo se desarrollará brevemente una variante del método TLM, que luego será implementado y explicado en detalle en la sección \ref{subsec_estudio_tlm}.
 
 El método de matrices\footnote{Aquí el término matrices se refiere a un arreglo bidimensional, y no a un objeto matemático.} de líneas de transmisión consiste en la discretización espacial del problema físico en pequeñas subceldas. El comportamiento de los campos electromagnéticos en las mismas se concentra en un nodo o punto en el espacio, y las relaciones de adyacencia entre ellas se modelan utilizando líneas de transmisión que vinculan los nodos. Estas líneas son capaces de transmitir impulsos cortos sin distorsión, y de distribuirlos, en cada uno de los nodos, de acuerdo a un algoritmo local para cada subcelda \cite{Caloz:ElectromagneticMetamaterials}, hacia cada uno de los nodos adyacentes. Este algoritmo local no es más que la multiplicación del pulso incidente por los parámetros S de transmisión y reflexión en cada tiempo, que se pueden obtener a partir del análisis de la celda y sus vecinas. De esta manera, se discretiza un circuito equivalente al problema físico a resolver, y se simula la propagación de ondas electromagnéticas a partir del \textit{scattering} de impulsos en una red n-dimensional de nodos unidos por lineas de transmisión.
 
 El algoritmo fue propuesto inicialmente en 1971 por Johns y Beurle \cite{JohnsBeurle:TLM}, y provee soluciones en el dominio del tiempo, a partir del estudio de la propagación de impulsos electromagnéticos muy cortos en las estructuras. La información en el dominio de la frecuencia se obtiene realizando una transformada de Fourier\footnote{Numéricamente, se suele realizar una transformada discreta de Fourier, cuya implementación más conocida es la Fast Fourier Transform (FFT).} de la respuesta de la red al impulso, como en todo método numérico en el dominio del tiempo. Esta metodología lo vuelve útil especialmente para aplicaciones de gran ancho de banda, donde se desea obtener características en un amplio rango de frecuencias con una única simulación.
 
-El método fue generalizado, más tarde, al estudio de estructuras tridimensionales, donde se reemplazaron los conceptos de capacidad e inductancia de la línea de transmisión, por parámetros físicos del medio. En general, la capacidad e inductancia asociadas a las líneas de transmisión que unen los nodos que representan un medio en particular son elegidas de forma que la impedancia característica coincida con la impedancia intrínseca del mismo. En general, las pérdidas en el medio se tienen en cuenta a partir del uso de resistencias, o la aplicación de una constante de atenuación en cada cálculo de \textit{scattering} sobre los nodos.
+El método fue generalizado, más tarde, al estudio de estructuras tridimensionales, donde se reemplazaron los conceptos de capacidad e inductancia de la línea de transmisión, por parámetros físicos del medio. En general, la capacidad e inductancia asociadas a las líneas de transmisión que unen los nodos que representan un medio en particular son elegidas de forma que la impedancia característica coincida con la impedancia intrínseca del mismo. Las pérdidas en el medio se suelen tener en cuenta a partir del uso de resistencias, o la aplicación de una constante de atenuación en cada cálculo de \textit{scattering} sobre los nodos.
 
 
 
@@ -1072,10 +1072,10 @@ Como se observa en la figura \ref{fig:tiposdepixeles}, los pixeles metálicos (i
 	\label{fig:modelo-con-lineas-de-transmision}
 \end{figure}
 
-Los pixeles interfaz poseen, además, una capacidad de \textit{fringe}, que se relaciona al comportamiento no-TEM de las líneas de campo cerca de los bordes de las estructuras \textit{microstrip}, mostrado en la figura \ref{fig:microstrip-campos}. La expresión de la capacidad de \textit{fringe} para cada borde es la siguiente \cite{ThummWiesbeck:CharacteristicImpedance}, donde $u$ es la profundidad de metal para ese borde en cuestión, como se muestra en la figura \ref{fig:profundidad-para-cfringe}:
+Los pixeles interfaz poseen, además, una capacidad de \textit{fringe}, que se relaciona al comportamiento no-TEM de las líneas de campo cerca de los bordes de las estructuras \textit{microstrip}, mostrado en la figura \ref{fig:microstrip-campos}. La expresión de la capacidad de \textit{fringe} para cada borde es la siguiente \cite{Hammerstad:discont}, donde $s$ es la longitud de \textit{microstrip} sobre la que se desea calcular la capacidad de \textit{fringe} y $C'$ es la capacidad por unidad de longitud de las ecuaciones \ref{capacidad-inductancia-impedancia-modelado}:
 
 \begin{equation}
-	C_{fr} = \frac{\epsilon_0 \epsilon_r} {\pi} \ln (2 \pi e^{\frac{u}{2 h} + 0.92})
+	C_{fr} = C' h 0.102 \frac{s/h+0.106}{s/h+0.264} \left(1.166 + \frac{\epsilon_r+1}{\epsilon_r} (0.9+\ln(s/h+2.475)) \right)
 \end{equation}
 
 \begin{figure}[h]
@@ -1207,7 +1207,7 @@ Para adaptar este circuito al modo de funcionamiento de TLM, es posible consider
 
 \begin{align}
 	v_{th} & = i' \frac{1}{j\omega C_{f-v}} = \frac{j\omega C_g v_f}{j\omega C_{f-v}} = \frac{C_g v_f}{C_{f-v}} \\
-	v_v & = v_{th} \times \frac{Z_0}{Z_0 + \frac{1}{j\omega C_{f-v}}} = v_f \frac{C_g}{C_{f-v}} \frac{Z_0}{Z_0 + \frac{1}{j\omega C_{f-v}}}
+	v_v & = v_{th} \frac{Z_0}{Z_0 + \frac{1}{j\omega C_{f-v}}} = v_f \frac{C_g}{C_{f-v}} \frac{Z_0}{Z_0 + \frac{1}{j\omega C_{f-v}}}
 \end{align}
 
 
@@ -1230,4 +1230,83 @@ El resultado arrojado por la simulación será un archivo, de formato \textsc{.n
 	\label{fig:EstructuraTiemposMatrizNumpy}
 \end{figure}
 
-El análisis de la tensión del nodo de salida, teniendo en cuenta la tensión del nodo de entrada aplicada, da lugar a una transferencia de tensión.
+Los valores en tiempo discreto de la tensión en el nodo de entrada y en el nodo de salida se pueden observar en la figura \ref{fig:tlm_tiempo}. Aunque se excitó con un único pulso de amplitud 1 V, las sucesivas reflexiones sobre los nodos adyacentes modifican la tensión del nodo de entrada mientras dura la simulación. Como se puede observar, los valores de tensión en los nodos decrecen rápidamente, y el \textit{pixel} de salida tiene un retardo hasta recibir la onda de tensión, como es esperable.
+
+
+\begin{figure}[htp]
+	\centering 
+	\subfigure[Nodo de entrada.]{
+		\label{fig:tlm_tiempo_entrada}
+		\includegraphics[width=0.45\textwidth]{Modelado/tensionEntrada-Tiempo.pdf}}
+	\hspace{0pt}
+	\subfigure[Nodo de salida.]{
+		\label{fig:tlm_tiempo_salida}
+		\includegraphics[width=0.45\textwidth]{Modelado/tensionSalida-Tiempo.pdf}}
+	\caption{Comportamiento en el tiempo de los nodos de entrada y salida.}
+	\label{fig:tlm_tiempo}
+\end{figure}
+
+
+El análisis de la tensión del nodo de salida, teniendo en cuenta la tensión del nodo de entrada aplicada, da lugar a una transferencia de tensión que, al aplicar la transformada de Fourier, y considerando impedancias de $50 \; \Omega$ permite obtener el parámetro $S_{12}$. En la figura \ref{fig:resultado_s12_tlm} se puede observar el resultado para el mismo caso analizado mediante elementos circuitales discretos. La comparación en la banda de frecuencia de interés se muestra en la figura b).
+
+\begin{figure}[htp]
+	\centering 
+	\subfigure[.]{
+		\label{fig:resultado_s12_tlm_sinComp}
+		\includegraphics[width=0.45\textwidth]{Modelado/TensionSalida-FrecAbs.pdf}}
+	\hspace{0pt}
+	\subfigure[Comparación con CST.]{
+		\label{fig:resultado_s12_tlm_comp}
+		\includegraphics[width=0.45\textwidth]{Modelado/TensionSalida-FrecAbsCOMP.pdf}}
+	\caption{Resultado al obtener $S_{12}$ mediante Fourier, y comparación con el resultado esperado.}
+	\label{fig:resultado_s12_tlm}
+\end{figure}
+
+Como se puede observar, si bien en términos generales el método propuesto permite conocer de forma aproximada el ancho de banda, así como el comportamiento general, no predice correctamente la frecuencia de resonancia ni es capaz de predecir los picos que se observan al simular con CST. Esto puede deberse a múltiples factores, entre los que se destacan:
+
+\begin{itemize}
+	\item El proceso de simulación requiere conocer el valor de la impedancia en cada momento. Dado que la impedancia es un concepto definido en el dominio de la frecuencia, se debió elegir una frecuencia a la que obtener cada valor de impedancia. Esta decisión conlleva a que se deba acotar el análisis a un espectro acotado alrededor de la frecuencia elegida como referencia. Existen métodos propuestos para subsanar este problema en TLM \cite{Saguet:NumericalAnalysisInElectromagnetics}.
+	\item El mallado propuesto resulta insuficiente. Mallas más finas requieren un mayor tiempo de simulación, especialmente cuando son utilizadas utilizando el algoritmo propuesto, implementado en Python.
+	\item El algoritmo sólo admite mallado rectangular y equiespaciado. En muchos casos resulta conveniente utilizar mallas más densas cerca de los bordes de la estructura, donde los campos presentan comportamientos más complejos.
+	\item Resulta evidente que la frecuencia de resonancia no coincide con la esperada, posiblemente debido al error inherente de las fórmulas utilizadas para calcular la capacidad e inductancia de cada \textit{pixel} analíticamente.
+	\item Si bien se tuvo en cuenta la amplitud $\rho$, debido a que la fase no se consideró en la simulación, el comportamiento de las capacidades de \textit{fringe} está modelado de forma incompleta.
+\end{itemize}
+
+En las figuras que componen al mosaico de figuras \ref{fig:progresion_tiempo_tlm} se puede observar cómo se comporta el algoritmo frente a la celda propuesta.
+
+\begin{figure}[htp]
+	\centering 
+	\subfigure[1.]{
+		\label{fig:1}
+		\includegraphics[width=0.45\textwidth]{Modelado/1.png}}
+	\subfigure[3.]{
+		\label{fig:3}
+		\includegraphics[width=0.45\textwidth]{Modelado/3.png}}
+	\subfigure[4.]{
+		\label{fig:4}
+		\includegraphics[width=0.45\textwidth]{Modelado/4.png}}
+	\subfigure[5.]{
+		\label{fig:5}
+		\includegraphics[width=0.45\textwidth]{Modelado/5.png}}
+	\subfigure[6.]{
+		\label{fig:6}
+		\includegraphics[width=0.45\textwidth]{Modelado/6.png}}
+	\subfigure[10.]{
+		\label{fig:10}
+		\includegraphics[width=0.45\textwidth]{Modelado/10.png}}
+	\subfigure[12.]{
+		\label{fig:12}
+		\includegraphics[width=0.45\textwidth]{Modelado/12.png}}
+	\subfigure[28.]{
+		\label{fig:28}
+		\includegraphics[width=0.45\textwidth]{Modelado/28.png}}
+	\subfigure[89.]{
+		\label{fig:89}
+		\includegraphics[width=0.45\textwidth]{Modelado/89.png}}
+	\subfigure[115.]{
+		\label{fig:115}
+		\includegraphics[width=0.45\textwidth]{Modelado/115.png}}
+	\caption{Comportamiento del algoritmo frente a al celda propuesta, en distintos tiempos discretos..}
+	\label{fig:progresion_tiempo_tlm}
+\end{figure}
+
