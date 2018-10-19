@@ -84,6 +84,8 @@
 \hyphenation{dia-gra-ma co-rres-pon-de a-gra-de-ci-mien-to reali-zan-do-se vec-to-rial res-pec-ti-va-men-te elec-tro-mag-ne-tis-mo ver-ti-cal-men-te prin-ci-pio equian-gu-lar me-dian-te es-ta-cio-na-ria pro-pia-men-te con-si-de-ra-cio-nes re-que-ri-mien-to pro-pues-to si-mu-la-cio-nes an-te-na trans-for-ma-dor cons-tru-ir-se fre-cuen-cias fre-cuen-cia exce-len-tes exce-len-te trans-mi-so-ra re-flexio-nes se-miane-coi-ca e-qui-va-len-te li-te-ra-tu-ra de-sa-rro-llo}
 
 \definecolor{Gray}{gray}{0.9}
+\renewcommand{\vec}[1]{\boldsymbol{#1}}
+
 %%  ------------------------------  %%
 %%  Comienzo del documento  %%
 %%  ------------------------------  %%
@@ -124,7 +126,7 @@
 
 \pagestyle{empty}
 \null\vfill
-\textit{``Study hard what interests you the most in the most undisciplined, irreverent and original manner possible.''}
+\textit{\enquote{Study hard what interests you the most in the most undisciplined, irreverent and original manner possible.}}
 \begin{flushright}
 Richard Feynman
 \end{flushright}
@@ -144,17 +146,17 @@ Richard Feynman
 
 \abstract
 
-El objetivo de este trabajo es el estudio teórico y numérico del funcionamiento de las estructuras EBG (\textit{Electromagnetic Bandgap}), un subgrupo de metamateriales con capacidad de bloquear la propagación de ondas de superficie sobre sustratos \textit{microstrip}, a fin de aplicarlas a la disminución del acoplamiento mutuo entre antenas que comparten sustrato.
+El objetivo de este trabajo es el estudio teórico y numérico del funcionamiento de las estructuras EBG (\textit{Electromagnetic Bandgap}), un subgrupo de metamateriales con capacidad de bloquear la propagación de ondas de superficie, a fin de aplicarlas a la disminución del acoplamiento mutuo entre antenas que comparten sustrato.
 
-En primer lugar se estudia el fenómeno de generación de ondas de superficie en sustratos recubiertos por un plano de tierra, a fin de comprender el fenómeno a contrarrestar. Se desarrollan los conceptos provenientes de la óptica para la explicación del funcionamiento de las estructuras, y se utilizan las técnicas desarrolladas para cristales fotónicos a fin de lograr un acercamiento teórico al problema en microondas utilizando herramientas del electromagnetismo clásico, a través del análisis de estructuras periódicas infinitas. Para ello se utilizan distintos métodos de simulación, y se analizan los diagramas de dispersión de estructuras sencillas mediante un análisis paramétrico.
+En primer lugar se estudia el fenómeno de aparición de ondas de superficie en sustratos recubiertos por un plano de tierra, a fin de conocer los parámetros que gobiernan su comportamiento. Se desarrollan conceptos provenientes de la óptica para la explicación del funcionamiento de las estructuras, y se utilizan las técnicas desarrolladas para cristales fotónicos para lograr un acercamiento teórico al problema en microondas. Además, se utilizan también herramientas propias del electromagnetismo clásico para la descripción de estructuras periódicas infinitas, así como para la obtención de diagramas de dispersión. Debido a la dificultad del problema analítico, se hace uso de numerosos métodos de simulación en el dominio del tiempo y la frecuencia, provistos por el software de simulación elegido.
 
-Se propone un modelo circuital de parámetros concentrados, con respuesta similar a una estructura simulada utilizando técnicas de onda completa, que permite un análisis rápido y conceptual del comportamiento de las estructuras. Además, se propone un método de simulación de la estructura bidimensional en el dominio del tiempo.
+Considerando que el tiempo de simulación no resulta despreciable, se propone un modelo circuital de parámetros concentrados, con respuesta similar a una estructura simulada utilizando técnicas de onda completa, que permite un análisis rápido y conceptual del comportamiento. Además, se propone, implementa y evalúa un método de simulación bidimensional en el dominio del tiempo, basado en la geometría de las estructuras periódicas propuestas.
 
-Finalmente se observa el comportamiento, frente a la inserción de geometrías EBG, de conjuntos de antenas monopolo y \textit{microstrip} que comparten sustrato.
+Finalmente, se observa el comportamiento de conjuntos de antenas monopolo y \textit{microstrip} que comparten sustrato frente a la inserción de geometrías EBG.
 
 \clearpage
 
-\addtotoc{Abstract}  % Agrega "Abstract" al índice.
+%\addtotoc{Abstract}  % Agrega "Abstract" al índice.
 
 %\begin{center}
 %\bigskip{\huge{\textit{Abstract}} \par}\bigskip
@@ -232,7 +234,7 @@ A mis padres, Marta y Miguel, sin cuyo apoyo, confianza, ánimo y esfuerzo no hu
 
 \chapter{Aplicación de EBGs en antenas}
 \label{cap_aplicacion}
-\lhead{Capítulo \ref{cap_aplicacion}. \emph{Aplicación de EBGs en estructuras microstrip}}
+\lhead{Capítulo \ref{cap_aplicacion}. \emph{Aplicación de EBGs en estructuras \textit{microstrip}}}
 \input{./Chapters/aplicacion}
 
 

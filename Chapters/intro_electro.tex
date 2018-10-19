@@ -70,7 +70,7 @@ Un campo eléctrico aplicado sobre cualquier material dieléctrico genera una po
 	\end{align}
 \end{subequations}
 
-Si, además, el material posee una conductividad $\sigma$, la aplicación de un campo eléctrico da lugar a la aparición de una densidad de corriente $\vec{J}$, que en algunos casos, cuando $\sigma$ es independiente del campo eléctrico aplicado, se puede expresar, según la ley de Ohm,
+Si, además, el material posee una conductividad $\sigma$, la aplicación de un campo eléctrico da lugar a la aparición de una densidad de corriente $\vec{J}$, que en algunos casos, cuando $\sigma$ es independiente del campo eléctrico aplicado, se puede expresar, según la ley de Ohm, como
 
 \begin{align}
 	\label{eq:ohms_law}
@@ -213,7 +213,7 @@ Al considerar una región del espacio lineal, isotrópica y homogénea, se puede
 
 \begin{subequations}
 	\begin{align}
-		\nabla^2 \vec{E} + \omega^2 \mu \epsilon \vec{E} & = j \omega \mu \vec{J} + \frac{\nabla \rho}{\epsilon} + \nabla \times \vec{M} \label{eq:eq_ondas_completa_E} \\
+		\nabla^2 \vec{E} + \omega^2 \epsilon \mu  \vec{E} & = j \omega \mu \vec{J} + \frac{\nabla \rho}{\epsilon} + \nabla \times \vec{M} \label{eq:eq_ondas_completa_E} \\
 		\nabla^2 \vec{H} + \omega^2 \epsilon \mu \vec{H} & =  j \omega \epsilon \vec{M} - \nabla \times \vec{J}. \label{eq:eq_ondas_completa_H}
 	\end{align}
 	\label{eq:eq_ondas_completa_E_H}
@@ -299,6 +299,8 @@ Si el medio es el vacío, la impedancia intrínseca se denota $\eta_0$ y tiene u
 
 La velocidad de fase se define como $v_p=\omega/\beta$, que de no haber pérdidas queda como $1/\sqrt{\mu \epsilon}$, y que para el caso particular del vacío, se expresa como $1/\sqrt{\mu_0 \epsilon_0} = c$, donde $c$ es la velocidad de la luz en el vacío. Así, la velocidad de fase en cualquier medio material sin pérdidas resulta $c/\sqrt{\epsilon_r \mu_r}$.
 
+La velocidad de grupo, en tanto, se define como $v_g = d\omega/d\beta$, y representa la velocidad a la que una envolvente de onda se propaga en el espacio. Para el caso en que no existe dispersión, la velocidad de fase y la velocidad de grupo coinciden, pues la derivada que define a la velocidad de grupo es constante.
+
 La longitud de onda, $\lambda$, es la distancia espacial entre dos máximos sucesivos, por lo que se expresa como $\lambda = 2\pi / \beta = v_p/f$.
 
 \section{Guias de ondas}
@@ -307,10 +309,10 @@ La longitud de onda, $\lambda$, es la distancia espacial entre dos máximos suce
 %Pozar, pag 171
 %%%%
 
-Suponiendo una guía de ondas de forma arbitraria en la que la energía electromagnética se propaga en la dirección $z$, los campos eléctrico y magnético se pueden expresar como la suma de sus componentes longitudinales (en la dirección $z$) y sus componentes transversales (en el plano $xy$), con constantes $\gamma_z$ y $\gamma_t$, respectivamente, de modo que $\gamma_z + \gamma_t = \gamma$, y dependientes sólo de la posición en el plano transversal, de manera que
+Suponiendo una guía de ondas de forma arbitraria en la que la energía electromagnética se propaga en la dirección $z$, los campos eléctrico y magnético se pueden expresar como la suma de sus componentes longitudinales (en la dirección $z$) y sus componentes transversales (en el plano $xy$), con constantes $\gamma_z$ y $\gamma_t$, respectivamente, de modo que $\vec{\gamma_z} + \vec{\gamma_t} = \vec{\gamma}$, y dependientes sólo de la posición en el plano transversal, de manera que
 
 \begin{align}
-	\vec{E}(x,y,z) = \left[ \vec{e}_{xy}(x,y) + \hat{z} e_z(x,y) \right] e^{-j\gamma z}.
+	\vec{E}(x,y,z) = \left[ \vec{e}_{xy}(x,y) + \hat{z} e_z(x,y) \right] e^{-j\gamma_z z}.
 \end{align}
 
 Aplicando las ecuaciones rotacionales de Maxwell (Faraday y Ampère en la ecuación \ref{eq:Maxwell}), considerando una región libre de cargas y un comportamiento armónico de los campos, así como un comportamiento sin pérdidas ($\gamma_z = \beta_z$), se puede deducir que las componentes transversales quedan en términos de las componentes longitudinales \cite{Fernandez:Electromag}
@@ -325,7 +327,8 @@ Aplicando las ecuaciones rotacionales de Maxwell (Faraday y Ampère en la ecuaci
 
 donde se definió $\gamma_t^2 = \gamma^2 - \beta_z^2$ como el número de onda de corte, siendo $\gamma = \omega \sqrt{\mu \epsilon}$, que para el caso sin pérdidas es, además, $\gamma = \beta = 2\pi/\lambda$, el número de onda  en el material que rellena la línea de transmisión.
 
-Cuando no existen componentes de campo en la dirección de propagación, $z$, según las ecuaciones \ref{eq:campos_guia_de_ondas}, no existen campos en las direcciones transversales si $\gamma_t \neq 0$. La indeterminación generada por el hecho de que $\gamma_t$ se anula da como resultado que $\beta_z = \omega \sqrt{\mu \epsilon} = \beta$, de modo que no existe número de onda de corte, y haciendo que la impedancia de onda sea $\eta$.  A este modo de propagación sobre una guía de ondas se lo llama TEM (transversal electromagnético). Los campos transversales satisfacen que el Laplaciano es 0, de modo que se comportan como un campo electrostático, y este es el motivo por el cual no pueden existir ondas TEM en guías de ondas de un único conductor.
+Cuando no existen componentes de campo en la dirección de propagación, $z$, según las ecuaciones \ref{eq:campos_guia_de_ondas}, no existen campos en las direcciones transversales si $\gamma_t \neq 0$. La indeterminación generada por el hecho de que $\gamma_t$ se anula da como resultado que $\beta_z = \omega \sqrt{\mu \epsilon} = \beta$, de modo que no existe número de onda de corte, y haciendo que la impedancia de onda sea $\eta$.  A este modo de propagación sobre una guía de ondas se lo llama TEM (transversal electromagnético). Los campos transversales satisfacen que el Laplaciano es 0, de modo que se comportan como un campo electrostático.
+%, y este es el motivo por el cual no pueden existir ondas TEM en guías de ondas de un único conductor.
 
 Cuando la componente $z$ del campo eléctrico se anula, el modo de propagación se denomina TE (transversal eléctrico), y pueden utilizarse las relaciones descriptas en la ecuación \ref{eq:campos_guia_de_ondas} para obtener el resto de los campos. La impedancia de onda, en este caso, resulta $Z_{TE} = \gamma\eta/\beta_z$, dependiente de la frecuencia.
 
@@ -333,7 +336,7 @@ Cuando la componente $z$ del campo magnético se anula, el modo de propagación 
 
 \section{Ondas de superficie}
 \label{sec:ondas-de-superficie}
-Existen estructuras abiertas que son capaces de mantener el campo electromagnético íntimamente ligadas a ellas, de forma que el mismo decaiga exponencialmente con la distancia a las mismas (comportamiento evanescente), y simultáneamente permiten propagación de energía en una dirección $z$ paralela a la superficie (con un decrecimiento inverso a la raíz cuadrada de la distancia, debido a la expansión del frente de onda), dando lugar a lo que se conoce como ondas de superficie \cite{Barlow:SurfaceWaves}. Estas estructuras se denominan guías de ondas superficiales, y pueden consistir en planos conductores recubiertos de dieléctrico, en planos corrugados o en simples interfaces entre dos medios distintos. Uller inauguró el campo en 1903, y luego Zenneck y Sommerfeld, entre 1907 y 1909, las utilizaron para explicar la propagación de ondas en la superficie terrestre, aunque este último utilizó la expresión ``ondas de superficie" para referirse al efecto conjunto de ondas espaciales y ondas de superficie \cite{Barlow:SurfaceWaves}, que no se corresponde completamente con la definición actual. Recién en la década de 1950 se realizaron estudios teóricos de importancia, que permitieron hallar aplicaciones y nuevas estructuras que permiten la propagación de este tipo de ondas.
+Existen estructuras abiertas que son capaces de mantener el campo electromagnético íntimamente ligadas a ellas, de forma que el mismo decaiga exponencialmente con la distancia a las mismas (comportamiento evanescente), y simultáneamente permiten propagación de energía en una dirección $z$ paralela a la superficie (con un decrecimiento inverso a la raíz cuadrada de la distancia, debido a la expansión del frente de onda), dando lugar a lo que se conoce como ondas de superficie \cite{Barlow:SurfaceWaves}. Estas estructuras se denominan guías de ondas superficiales, y pueden consistir en planos conductores recubiertos de dieléctrico, en planos corrugados o en simples interfaces entre dos medios distintos. Uller inauguró el campo en 1903, y luego Zenneck y Sommerfeld, entre 1907 y 1909, las utilizaron para explicar la propagación de ondas en la superficie terrestre, aunque este último utilizó la expresión \enquote{ondas de superficie} para referirse al efecto conjunto de ondas espaciales y ondas de superficie \cite{Barlow:SurfaceWaves}, que no se corresponde completamente con la definición actual. Recién en la década de 1950 se realizaron estudios teóricos de importancia, que permitieron hallar aplicaciones y nuevas estructuras que permiten la propagación de este tipo de ondas.
 
 En la actualidad, las ondas de superficie se clasifican en ondas Zenneck (utilizadas en bajas frecuencias, cuando los medios intervinientes poseen altas pérdidas), ondas de tipo resonante (que surgen cuando una onda plana incide sobre un material periódico), ondas de superficie no lineales (que se generan en medios no lineales), plasmones (utilizados en altas frecuencias, cuando los medios tienen bajas pérdidas) y ondas de Dyakonov (donde al menos uno de los materiales es anisotrópico), entre otras.
 
@@ -368,7 +371,7 @@ Si se considera que una onda plana incide con ángulo de Brewster (concepto desa
 La componente longitudinal de los vectores de onda, $\gamma_z$, es igual a ambos lados de la interfaz, como se muestra en la figura \ref{fig:onda-superficie-brewster} (en términos de $\beta_z$, ya que no se consideran pérdidas), de modo que
 
 \begin{equation}
-	\gamma_{1} \; \sin \; \theta_t = \gamma_{z} = \gamma_2 \; \sin \; \theta_i.
+	\gamma_{1} \; \sin \; \theta_i = \gamma_{z} = \gamma_2 \; \sin \; \theta_t.
 \end{equation}
 
 Las componentes normales a la interfaz, que llamaremos $\gamma_{x_i}$, $i=1,2$, mostradas también en la figura \ref{fig:onda-superficie-brewster}, deben cumplir que
@@ -507,19 +510,19 @@ Para el caso TM, si se considera que el campo magnético tiene la forma de la ec
 
 \begin{align}
 	\label{eq:campo-magnetico-TM}
-	H_{1_y} = A e^{j\gamma_{x_1} x - j \gamma_z z},\quad x>t.
+	H_{1_y} = A e^{j\gamma_{x_1} x - j \gamma_z z},\quad x>h.
 \end{align}
 
 \begin{align}
 	\label{eq:campo-magnetico-interior-diel-TM}
-	H_{2_y} = [B e^{j\gamma_{x_2} x} + C e^{-j\gamma_{x_2} x}] e^{-j\gamma_z z},\quad  0\leq x \leq t.
+	H_{2_y} = [B e^{j\gamma_{x_2} x} + C e^{-j\gamma_{x_2} x}] e^{-j\gamma_z z},\quad  0\leq x \leq h.
 \end{align}
 
 Dado que en toda interfaz las componentes tangenciales de los campos se conservan, y a que las componentes tangenciales del campo eléctrico sobre el conductor se anulan, se deduce que $H_{2_y}$ es un coseno, y se obtienen\footnote{De la ecuación \ref{eq:campo-magnetico-TM} se deriva el campo eléctrico, utilizando la ecuación de Ampère. Al establecer la condición que indica que sobre la interfaz con el conductor no existe campo eléctrico paralelo a la superficie del mismo (se asume un conductor perfecto), se concluye que el valor de B y de C en la ecuación \ref{eq:campo-magnetico-interior-diel-TM} coinciden. Aplicando la condición de continuidad de las componentes tangenciales de los campos sobre la interfaz aire-dieléctrico, se obtiene una relación entre los valores de A y B. Queda expresado el siguiente sistema de ecuaciones:
 \begin{equation*}
 	\begin{bmatrix}
-		-j \gamma_{x_1} e^{-j \gamma_{x_1} t} & -2 \gamma_{x_2}/\epsilon_{r_2} \sin(\gamma_{x_2} t) &  \\
-		 -e^{-j \gamma_{x_1} t} & 2 \cos (\gamma_{x_2} t)
+		-j \gamma_{x_1} e^{-j \gamma_{x_1} h} & -2 \gamma_{x_2}/\epsilon_{r_2} \sin(\gamma_{x_2} h) &  \\
+		 -e^{-j \gamma_{x_1} h} & 2 \cos (\gamma_{x_2} h)
 	\end{bmatrix}
 	\begin{bmatrix}
 		A \\
@@ -532,24 +535,24 @@ Dado que en toda interfaz las componentes tangenciales de los campos se conserva
 	\end{bmatrix}
 \end{equation*}
 
-Para que la solución no sea trivial, el determinante de la matriz del sistema tiene que ser nula, lo que da como resultado $\gamma_{x_2} \tan (\gamma_{x_2} t) = -j \gamma_{x_1} \epsilon_{r_2}$.
+Para que la solución no sea trivial, el determinante de la matriz del sistema tiene que ser nula, lo que da como resultado $\gamma_{x_2} \tan (\gamma_{x_2} h) = -j \gamma_{x_1} \epsilon_{r_2}$.
 } las expresiones \ref{eq:solucion-ondas-sup-tm-tan} y \ref{eq:solucion-ondas-sup-tm-h}.
 
 
 \begin{align}
 	\label{eq:solucion-ondas-sup-tm-tan}
-	\gamma_{x_2} \tan (\gamma_{x_2} t) = -j \gamma_{x_1} \epsilon_{r_2}, \\
+	\gamma_{x_2} \tan (\gamma_{x_2} h) = -j \gamma_{x_1} \epsilon_{r_2}, \\
 	\gamma_1^2 (\epsilon_{r_2}-1) = \gamma_{x_2}^2 - \gamma_{x_1}^2.
 	\label{eq:solucion-ondas-sup-tm-h}
 \end{align}
 
-Considerando que $\gamma_{x_1}$ es puramente imaginario positivo\footnote{Un análisis general requiere considerar $\gamma_{x_1}$, $\gamma_{x_2}$ y $\epsilon_2$ como complejos, de manera que se puedan tener en cuenta las pérdidas. Para simplificar el desarrollo, se puede asumir que, dado que se trata de ondas de superficie, la parte imaginaria de $\gamma_{x_1}$ deberá ser negativa, de manera que a mayor distancia de la interfaz, la intensidad de los campos decrezca exponencialmente. La parte real de $\gamma_{x_1}$, si bien puede existir, a efectos del estudio del comportamiento de la onda de superficie en la dirección de propagación, puede obviarse. Por otro lado, si se considera que el ancho del dieléctrico, $t$, es muy pequeño, de forma que se pueda considerar que $\tan(\gamma_{x_2} t) \approx \gamma_{x_2} t$, entonces la expresión \ref{eq:solucion-ondas-sup-tm-tan} resulta aproximadamente $\gamma_{x_2}^2 t = -j \gamma_{x_1} \epsilon_{r_2}$. Asumiendo, por lo explicado antes, que $\gamma_{x_1}$ es valor puramente imaginario positivo, el valor de $\gamma_{x_2}$, obtenido de $\gamma_{x_2}^2 t = \gamma_{x_1} \epsilon_{r_2}$, deberá ser real. Al argumento no descarta la existencia de valores complejos de $\gamma_{x_1}$ y $\gamma_{x_2}$, sino que permite una validación intuitiva del desarrollo posterior.}, la ecuación \ref{eq:solucion-ondas-sup-tm-h} se puede expresar como $\gamma_1^2 (\epsilon_{r_2}-1) = \gamma_{x_2}^2 + |\alpha_{x_1}|^2$. Si se multiplica esta nueva expresión por $t^2$ y a la expresión \ref{eq:solucion-ondas-sup-tm-tan} por $t$, se obtienen dos expresiones que dan lugar a un sistema de ecuaciones trascendentales que se pueden resolver gráficamente, dado que representan una esfera de radio $\gamma_1 t \sqrt{\epsilon_{r_2}-1}$ y una tangente:
+Considerando que $\gamma_{x_1}$ es puramente imaginario positivo\footnote{Un análisis general requiere considerar $\gamma_{x_1}$, $\gamma_{x_2}$ y $\epsilon_2$ como complejos, de manera que se puedan tener en cuenta las pérdidas. Para simplificar el desarrollo, se puede asumir que, dado que se trata de ondas de superficie, la parte imaginaria de $\gamma_{x_1}$ deberá ser negativa, de manera que a mayor distancia de la interfaz, la intensidad de los campos decrezca exponencialmente. La parte real de $\gamma_{x_1}$, si bien puede existir, a efectos del estudio del comportamiento de la onda de superficie en la dirección de propagación, puede obviarse. Por otro lado, si se considera que el ancho del dieléctrico, $h$, es muy pequeño, de forma que se pueda considerar que $\tan(\gamma_{x_2} h) \approx \gamma_{x_2} h$, entonces la expresión \ref{eq:solucion-ondas-sup-tm-tan} resulta aproximadamente $\gamma_{x_2}^2 h = -j \gamma_{x_1} \epsilon_{r_2}$. Asumiendo, por lo explicado antes, que $\gamma_{x_1}$ es valor puramente imaginario positivo, el valor de $\gamma_{x_2}$, obtenido de $\gamma_{x_2}^2 h = \gamma_{x_1} \epsilon_{r_2}$, deberá ser real. Al argumento no descarta la existencia de valores complejos de $\gamma_{x_1}$ y $\gamma_{x_2}$, sino que permite una validación intuitiva del desarrollo posterior.}, la ecuación \ref{eq:solucion-ondas-sup-tm-h} se puede expresar como $\gamma_1^2 (\epsilon_{r_2}-1) = \gamma_{x_2}^2 + |\alpha_{x_1}|^2$. Si se multiplica esta nueva expresión por $h^2$ y a la expresión \ref{eq:solucion-ondas-sup-tm-tan} por $h$, se obtienen dos expresiones que dan lugar a un sistema de ecuaciones trascendentales que se pueden resolver gráficamente, dado que representan una esfera de radio $\gamma_1 h \sqrt{\epsilon_{r_2}-1}$ y una tangente:
 
 \begin{equation}
 	\label{eq:sistema-ondas-superficiales-TM}
 	\begin{cases}
-		(\gamma_{x_2} t)^2 + (\alpha_{x_1} t)^2 = (\epsilon_{r_2} - 1) (\gamma_1 t)^2\\
-		\gamma_{x_2} t \tan (\gamma_{x_2} t) = |\alpha_{x_1}| \epsilon_{r_2} t.
+		(\gamma_{x_2} h)^2 + (\alpha_{x_1} h)^2 = (\epsilon_{r_2} - 1) (\gamma_1 h)^2\\
+		\gamma_{x_2} h \tan (\gamma_{x_2} h) = |\alpha_{x_1}| \epsilon_{r_2} h.
 	\end{cases}
 \end{equation}
 
@@ -558,16 +561,16 @@ Para el caso TE, la solución es similar, y en este caso las expresiones resulta
 \begin{equation}
 	\label{eq:sistema-ondas-superficiales-TE}
 	\begin{cases}
-		(\gamma_{x_2} t)^2 + (\alpha_{x_1} t)^2 = (\epsilon_{r_2} - 1) (\gamma_1 t)^2 \\
-		\gamma_{x_2} t \cot (\gamma_{x_2} t) = -|\alpha_{x_1}| \epsilon_{r_2} t.
+		(\gamma_{x_2} h)^2 + (\alpha_{x_1} h)^2 = (\epsilon_{r_2} - 1) (\gamma_1 h)^2 \\
+		\gamma_{x_2} h \cot (\gamma_{x_2} h) = -|\alpha_{x_1}| \epsilon_{r_2} h.
 	\end{cases}
 \end{equation}
 
-Las soluciones se pueden obtener gráficamente para ambos casos, mediante la intersección de las curvas correspondientes a las ecuaciones del sistema. Las gráficas, para distintas frecuencias, se muestran en la figura \ref{fig:intersecciones-tm-te}. Se puede observar que, dado que $|\alpha_{x_1}|t$ no puede tomar valores negativos, las intersecciones que se dan en esas condiciones no son válidas como soluciones del sistema planteado, bajo las hipótesis consideradas.
+Las soluciones se pueden obtener gráficamente para ambos casos, mediante la intersección de las curvas correspondientes a las ecuaciones del sistema. Las gráficas, para distintas frecuencias, se muestran en la figura \ref{fig:intersecciones-tm-te}. Se puede observar que, dado que $|\alpha_{x_1}|h$ no puede tomar valores negativos, las intersecciones que se dan en esas condiciones no son válidas como soluciones del sistema planteado, bajo las hipótesis consideradas.
 
-A medida que aumenta la frecuencia, el valor del radio de los círculos aumenta. Se observa que siempre existe, al menos, un modo TM de propagación sobre el plano de tierra, dado que todas las intersecciones entre las curvas ocurren para valores de $|\alpha_{x_1}| t$ mayores a 0, como se muestra en la figura \ref{fig:soluciones-TM-tan-implicita-zoom}. Para frecuencias en que el radio del círculo genera que el mismo intersecte a más secciones de la curva tangente, aparecerían modos de propagación superiores.
+A medida que aumenta la frecuencia, el valor del radio de los círculos aumenta. Se observa que siempre existe, al menos, un modo TM de propagación sobre el plano de tierra, dado que todas las intersecciones entre las curvas ocurren para valores de $|\alpha_{x_1}| h$ mayores a 0, como se muestra en la figura \ref{fig:soluciones-TM-tan-implicita-zoom}. Para frecuencias en que el radio del círculo genera que el mismo intersecte a más secciones de la curva tangente, aparecerían modos de propagación superiores.
 
-Para el caso TE, se observa que para frecuencias bajas no existe solución válida, como se muestra en la figura \ref{fig:soluciones-TE-tan-implicita-zoom}, por lo que no hay un modo fundamental TE por debajo de la frecuencia de corte, que se da para $f_c = c/(4 t  \sqrt{\epsilon_{r_2}}-1)$, que en el caso graficado es de aproximadamente 25 GHz.
+Para el caso TE, se observa que para frecuencias bajas no existe solución válida, como se muestra en la figura \ref{fig:soluciones-TE-tan-implicita-zoom}, por lo que no hay un modo fundamental TE por debajo de la frecuencia de corte, que se da para $f_c = c/(4 h  \sqrt{\epsilon_{r_2}}-1)$, que en el caso graficado es de aproximadamente 25 GHz.
 
 Para el caso de FR4, en el rango de frecuencias de interés para este trabajo, no existe, entonces, propagación de ondas de superficie de polarización TE, por lo que el análisis del modo TM reviste mayor importancia.
 
@@ -590,11 +593,11 @@ Para el caso de FR4, en el rango de frecuencias de interés para este trabajo, n
 	\label{fig:intersecciones-tm-te}
 \end{figure}
 
-Obtenidos los valores de $\gamma_{x_1}$ ($\alpha_{x_1}$)y $\gamma_{x_2}$, se obtienen los campos del modo correspondiente de la onda de superficie \cite{Pozar:MwEngineering}. En particular, para el análisis del comportamiento de la impedancia, las expresiones de los campos tangenciales a la interfaz resultan de mayor interés, dado que permiten obtener las impedancias de onda en el aire y el dieléctrico, como se indica en las expresiones \ref{eq:impedancia-no-normalizada-aire} y \ref{eq:impedancia-no-normalizada-FR4}.
+Obtenidos los valores de $\gamma_{x_1}$ ($\alpha_{x_1}$) y $\gamma_{x_2}$, se obtienen los campos del modo correspondiente de la onda de superficie \cite{Pozar:MwEngineering}. En particular, para el análisis del comportamiento de la impedancia, las expresiones de los campos tangenciales a la interfaz resultan de mayor interés, dado que permiten obtener las impedancias de onda en el aire y el dieléctrico, como se indica en las expresiones \ref{eq:impedancia-no-normalizada-aire} y \ref{eq:impedancia-no-normalizada-FR4}.
 
 \begin{subequations}
 	\begin{align}
-		H_{y_1} &= A e^{j\gamma_{x_1}(x-t)-j\gamma_{z} z}, &E_{z_1} &= \frac{A \gamma_{x_1}}{\omega \epsilon_0} e^{j\gamma_{x_1}(x-t)-j\gamma_{z} z} &\implies& Z_1 = \frac{\gamma_{x_1}}{\omega \epsilon_0} = j\frac{\alpha_{x_1}}{\omega \epsilon_0}, \label{eq:impedancia-no-normalizada-aire}\\
+		H_{y_1} &= A e^{j\gamma_{x_1}(x-h)-j\gamma_{z} z}, &E_{z_1} &= \frac{A \gamma_{x_1}}{\omega \epsilon_0} e^{j\gamma_{x_1}(x-h)-j\gamma_{z} z} &\implies& Z_1 = \frac{\gamma_{x_1}}{\omega \epsilon_0} = j\frac{\alpha_{x_1}}{\omega \epsilon_0}, \label{eq:impedancia-no-normalizada-aire}\\
 		H_{y_2} &= 2 B \cos(\gamma_{x_2} x) e^{j\gamma_{z} z}, &E_{z_2} &=  \frac{-2 B \gamma_{x_2} \sin(\gamma_{x_2} x)e^{-j\gamma_{z} z}}{j \omega \epsilon_0 \epsilon_{r_2}} &\implies& Z_2 = \frac{j\gamma_{x_2} \tan(\gamma_{x_2} x)}{\omega \epsilon_0 \epsilon_{r_2}}. \label{eq:impedancia-no-normalizada-FR4}
 	\end{align}
 \end{subequations}
@@ -610,7 +613,7 @@ Una onda incidente desde el aire, para evitar reflexiones y, por lo tanto, radia
 
 \begin{align}
 	\label{eq:impedancia-superficie-tm-teorica}
-	Z_s^{TM} = j \frac{\cos \theta_t}{\sqrt{\epsilon_{r_2}}}\tan(\gamma_2 t \cos\theta_t).
+	Z_s^{TM} = j \frac{\cos \theta_t}{\sqrt{\epsilon_{r_2}}}\tan(\gamma_2 h \cos\theta_t).
 \end{align}
 
 
@@ -641,9 +644,9 @@ Esta impedancia es puramente imaginaria positiva\footnote{Si el dieléctrico pre
 Para el caso TE, los campos paralelos a la superficie son:
 
 \begin{align}
-	E_{y_1} &= A e^{-j\gamma_{x_1}(x-t)-j\gamma_z z}, &H_z &= -\frac{A \gamma_{x_1}}{\omega \mu_0} e^{-j\gamma_{x_1}(x-t)-j\gamma_z z}. \notag \\
+	E_{y_1} &= A e^{-j\gamma_{x_1}(x-h)-j\gamma_z z}, &H_z &= -\frac{A \gamma_{x_1}}{\omega \mu_0} e^{-j\gamma_{x_1}(x-h)-j\gamma_z z}. \notag \\
 	&\implies Z_{1} = -\frac{\gamma_{x_1}}{\omega \mu_0}, \\
-	E_{y_2} &= A \sec{(\gamma_{x_2} t)} \cos{(\gamma_{x_2} x)} e^{-j \gamma_z z}, &H_{z_2} &= -\frac{A \gamma_{x_2} e^{j\gamma_z z}}{j\omega \mu_0} \sec{(\gamma_{x_2} t)} \sin(\gamma_{x_2} x), \notag \\
+	E_{y_2} &= A \sec{(\gamma_{x_2} h)} \cos{(\gamma_{x_2} x)} e^{-j \gamma_z z}, &H_{z_2} &= -\frac{A \gamma_{x_2} e^{j\gamma_z z}}{j\omega \mu_0} \sec{(\gamma_{x_2} h)} \sin(\gamma_{x_2} x), \notag \\
 	&\implies Z_{2} = \frac{j\cot(\gamma_{x_2} x)}{\gamma_{x_2} \omega \mu_0}.
 \end{align}
 
@@ -695,7 +698,7 @@ Las líneas de transmisión son redes de parámetros distribuidos, donde las cor
 	\label{fig:TL-equivalente}
 \end{figure}
 
-La impedancia y la admitancia por unidad de longitud se pueden expresar como indican las expresiones de la ecuación \ref{eq:impedancia-admitancia-TL}. Se debe tener en cuenta que los subíndices R y L se deben al comportamiento de "mano izquierda"\footnote{La expresión "material de mano izquierda´´ fue utilizada por primera vez por físico ruso Viktor Velesago en 1967, cuando propuso la posibilidad de la existencia de materiales en que la propagación de ondas se daría de forma que el campo eléctrico, el campo magnético y el vector de propagación formaran una triada de mano izquierda \cite{Caloz:ElectromagneticMetamaterials}.} o ``mano derecha`` asociado a cada componente. Si $L'_R$ y $C'_R$ son nulos, existe sólo un comportamiento "de mano izquierda", donde las velocidades de fase y de grupo son antiparalelas, y donde tanto la permitividad eléctrica $\epsilon$ como la permeabilidad magnética $\mu$ son negativas, de forma que el índice de refracción también lo sea, dando lugar a una propagación de ondas en sentido inverso. Cuando $L'_L$ y $C'_L$ son nulos, el comportamiento es denominado "de mano derecha", y es el que corresponde a propagación de onda comúnmente analizada. Las componentes que corresponden al comportamiento de mano izquierda son, por sí solas, de existencia física imposibles, dado que las que generan comportamiento de mano derecha aparecen naturalmente por efectos constructivos. Las resistencias del circuito, por otro lado, representan las pérdidas dieléctricas y conductoras.
+La impedancia y la admitancia por unidad de longitud se pueden expresar como indican las expresiones de la ecuación \ref{eq:impedancia-admitancia-TL}. Se debe tener en cuenta que los subíndices R y L se deben al comportamiento de \enquote{mano izquierda}\footnote{La expresión \enquote{material de mano izquierda} fue utilizada por primera vez por físico ruso Viktor Velesago en 1967, cuando propuso la posibilidad de la existencia de materiales en que la propagación de ondas se daría de forma que el campo eléctrico, el campo magnético y el vector de propagación formaran una triada de mano izquierda \cite{Caloz:ElectromagneticMetamaterials}.} o \enquote{mano derecha} asociado a cada componente. Si $L'_R$ y $C'_R$ son nulos, existe sólo un comportamiento \enquote{de mano izquierda}, donde las velocidades de fase y de grupo son antiparalelas, y donde tanto la permitividad eléctrica $\epsilon$ como la permeabilidad magnética $\mu$ son negativas, de forma que el índice de refracción también lo sea, dando lugar a una propagación de ondas en sentido inverso. Cuando $L'_L$ y $C'_L$ son nulos, el comportamiento es denominado \enquote{de mano derecha}, y es el que corresponde a propagación de onda comúnmente analizada. Las componentes que corresponden al comportamiento de mano izquierda son, por sí solas, de existencia física imposibles, dado que las que generan comportamiento de mano derecha aparecen naturalmente por efectos constructivos. Las resistencias del circuito, por otro lado, representan las pérdidas dieléctricas y conductoras.
 
 
 \begin{align}
@@ -926,7 +929,7 @@ con N la cantidad de elementos radiantes. Se observa que si hay una mayor cantid
 %%%%
 Cuando se considera acoplamiento mutuo entre los elementos del \textit{array}, la multiplicación del patrón de radiación por el patrón del arreglo ya no es válida. Los elementos interaccionan entre sí y alteran sus corrientes, y por lo tanto sus impedancias. La radiación de una antena induce corrientes sobre las antenas cercanas, que también radian e influyen sobre la corriente de la primer antena. Es un efecto de campo cercano.
 
-La impedancia de entrada de un elemento aislado en el espacio se denomina ``Impedancia de elemento aislado", o simplemente impedancia de antena. La impedancia de entrada de una antena que está dispuesta en un ambiente con elementos activos se denomina ``impedancia activa", y varía según las excitaciones a las que se someta al arreglo de antena. En general, la caracterización de los elementos radiantes sometidos a efectos de acoplamiento mutuo consisten en la obtención de la ``impedancia pasiva", que se logra excitando un elemento y conectando a cargas adaptadas los demás.
+La impedancia de entrada de un elemento aislado en el espacio se denomina \enquote{Impedancia de elemento aislado}, o simplemente impedancia de antena. La impedancia de entrada de una antena que está dispuesta en un ambiente con elementos activos se denomina \enquote{impedancia activa}, y varía según las excitaciones a las que se someta al arreglo de antena. En general, la caracterización de los elementos radiantes sometidos a efectos de acoplamiento mutuo consisten en la obtención de la \enquote{impedancia pasiva}, que se logra excitando un elemento y conectando a cargas adaptadas los demás.
 
 Hay 3 efectos responsables del acoplamiento mutuo en arreglos de antenas:
 
@@ -1030,7 +1033,7 @@ El efecto de \textit{fringing} en los bordes del parche, que da lugar a un aumen
 	\label{eq:frec-resonancia-modelo-linea-microstrip}
 \end{align}
 
-La impedancia de entrada de una antena \textit{microstrip} depende fuertemente de la posición de la alimentación, además de los valores de $G$ y $B$ de los \textit{slots} radiantes \cite{Balanis:Advanced}. Cuando la alimentación se realiza mediante una cinta \textit{microstrip}, se suele terminar la misma en el interior del parche, a una distancia $y_0$ del borde, como se indica en la figura \ref{fig:antema-microstrip-inset}, permitiendo una mejor adaptación, aunque introduciendo una capacidad de juntura que afecta a la frecuencia de resonancia. La distancia del punto de alimentación al borde del parche será menor a la mitad de la longitud total del parche, en lo que se identificó como "zona de adaptación'' en la misma figura.
+La impedancia de entrada de una antena \textit{microstrip} depende fuertemente de la posición de la alimentación, además de los valores de $G$ y $B$ de los \textit{slots} radiantes \cite{Balanis:Advanced}. Cuando la alimentación se realiza mediante una cinta \textit{microstrip}, se suele terminar la misma en el interior del parche, a una distancia $y_0$ del borde, como se indica en la figura \ref{fig:antema-microstrip-inset}, permitiendo una mejor adaptación, aunque introduciendo una capacidad de juntura que afecta a la frecuencia de resonancia. La distancia del punto de alimentación al borde del parche será menor a la mitad de la longitud total del parche, en lo que se identificó como \enquote{zona de adaptación} en la misma figura.
 
 \begin{figure} [H]
 	\centering
@@ -1113,7 +1116,7 @@ En un \textit{array} planar de antenas se deben considerar la amplitud y la fase
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=0.8\textwidth]{intro_electro/pozar-acoplamiento.pdf}
-	\caption{Acoplamiento mutuo entre antenas \textit{microstrip}, para posición colineal en plano E y plano H. Parámetros: W: 10.57 cm, L: 6.55 cm, h: 0.1588 cm, $\epsilon_r$: 2.55, $f_r$: 1.410 MHz. Fuente: D. M. Pozar, " Input impedance and mutual coupling of rectangular microstrip antennas", IEEE Trans. Antennas Propagat. Vol AP-30, No. 6. Noviembre, 1982.}
+	\caption{Acoplamiento mutuo entre antenas \textit{microstrip}, para posición colineal en plano E y plano H. Parámetros: W: 10.57 cm, L: 6.55 cm, h: 0.1588 cm, $\epsilon_r$: 2.55, $f_r$: 1.410 MHz. Fuente: D. M. Pozar, \enquote{Input impedance and mutual coupling of rectangular microstrip antennas}, IEEE Trans. Antennas Propagat. Vol AP-30, No. 6. Noviembre, 1982.}
 	\label{fig:acomplamientoEyH}
 \end{figure}
 

@@ -397,7 +397,7 @@ El campo eléctrico en la dirección tangencial, también para el primer modo de
 
 El análisis para el primer modo de propagación continúa en la figura \ref{fig:orlandi-analisis-campos-fases}. En las figuras \ref{fig:orlandi-analisis-campos-fases} a) y b) se muestra el comportamiento del campo eléctrico para dos momentos de tiempo diferentes. Se observa que el parche almacena cargas durante un breve tiempo, y las expele inmediatamente después. Esto se ve corroborado por el comportamiento del campo magnético normal a la superficie, mostrado en escala lineal en las figuras \ref{fig:orlandi-analisis-campos-fases} c) y d), para dos tiempos distintos, y donde se ven colores cuando el campo es positivo en la dirección perpendicular saliente a la superficie del parche. A través del uso de la regla de la mano derecha, se pueden deducir las direcciones de las corrientes sobre los puentes, que son las especificadas por flechas, y donde se observa que son opuestas en el primer modo. Es decir, de forma intuitiva, las corrientes son entrantes al parche de todas direcciones al mismo tiempo, y son salientes del mismo hacia todas direcciones en un tiempo subsiguiente. De esta forma, el parche posee cargas positivas completamente en un tiempo, y luego cargas negativas en el tiempo siguiente, lo cual coincide con la intuición del concepto de un primer modo de propagación, y con el análisis intuitivo detallado.
 
-El segundo modo de propagación, para la misma dirección y posición sobre el diagrama de dispersión (punto "M"), posee un comportamiento más complejo. Como se observa en la figura \ref{fig:orlandi-analisis-campos} e), el campo eléctrico presenta un cero en el centro de la celda unidad, en la figura f) es coherente con esta observación, dado que cerca del centro y de los puentes verticales no hay campo de \textit{fringing}. El campo magnético, por otro lado, mostrado en las figuras g) y h), nuevamente no parece permitir concebir corrientes sobre los puentes verticales, aunque sí en el interior del parche metálico propiamente dicho.
+El segundo modo de propagación, para la misma dirección y posición sobre el diagrama de dispersión (punto \enquote{M}), posee un comportamiento más complejo. Como se observa en la figura \ref{fig:orlandi-analisis-campos} e), el campo eléctrico presenta un cero en el centro de la celda unidad, en la figura f) es coherente con esta observación, dado que cerca del centro y de los puentes verticales no hay campo de \textit{fringing}. El campo magnético, por otro lado, mostrado en las figuras g) y h), nuevamente no parece permitir concebir corrientes sobre los puentes verticales, aunque sí en el interior del parche metálico propiamente dicho.
 
 El análisis de dos tiempos diferentes dentro del ciclo para el segundo modo de propagación, mostrado en las figuras \ref{fig:orlandi-analisis-campos-fases} e)-h), permite comprender más intuitivamente el comportamiento. Se observa que el parche central es excitado (posee campo eléctrico vertical) en dos tiempos diferentes, y sólo una de sus mitades lo es cada vez. Hay un desfasaje de $180^\circ$ entre ambos lados del parche. Observando el campo magnético, resula también intuitivo considerar que cuando la mitad izquierda del parche está excitada, es decir, cuando posee cargas almacenadas, formando un capacitor con el plano de tierra, se genera una corriente hacia la celda vecina, que posee un parche con tensión opuesta. En el lado derecho, el efecto es análogo. Es importante notar que, al contrario que en el caso del primer modo, en el segundo modo de propagación las corrientes de los puentes tienen el mismo sentido en cada tiempo.
 
@@ -870,10 +870,10 @@ Las pérdidas por conductividad pueden ser representadas por una resistencia rep
 \begin{align}
 R_{dc} &= \frac{l}{\sigma S}, \\
 R_{ac} &= \frac{l}{\sigma(2 w \delta_s+2 t \delta_s)} = \frac{l}{2\sigma \delta_s(w +t)} = \frac{l \sqrt{2 \pi f \mu \sigma}}{2 \sqrt{2}\sigma \delta_s(w +t)}, \\
-R_s &= R_{dc} + R_{ac} = \frac{l}{\sigma} (\frac{1}{\sigma} + \frac{\sqrt{\pi f \mu \sigma}}{2 (w+t)})
+R_s &= R_{dc} + R_{ac} = \frac{l}{\sigma}  \left(\frac{1}{\sigma} + \frac{\sqrt{\pi f \mu \sigma}}{2 (w+t)}\right)
 \end{align}
 
-donde $w$ es el ancho de la cinta \textit{microstrip} considerada, $t$ es su ancho vertical, y $f$ es la frecuencia a la que se desea encontrar la resistencia que modela el efecto en corriente alterna. El valor de la conductividad del cobre, $\sigma$, es de $5.7\;10^{-7}$.
+donde $w$ es el ancho de la cinta \textit{microstrip} considerada, $t$ es su ancho vertical, y $f$ es la frecuencia a la que se desea encontrar la resistencia que modela el efecto en corriente alterna. El valor de la conductividad del cobre, $\sigma$, es de $5.7\;10^{-7}$ S.
 
 Para el caso de las pérdidas dieléctricas, las pérdidas se representan como una conductancia $G$ dispuesta en paralelo a los capacitores que vinculan la capa superior de la celda unitaria con el plano de tierra.
 
@@ -934,7 +934,7 @@ El comportamiento del parámetro $S_{21}$ según del modelo circuital se puede c
 	\label{fig:s12_modelo_final}
 \end{figure}
 
-Resulta posible, además, comparar las simulaciones de parámetros $S_{21}$ con las simulaciones de celdas unitarias con condiciones de borde periódicas. Para el caso de la celda unitaria analizada, el diagrama de dispersión obtenido a partir de la simulación tridimensional se muestra en la figura \ref{fig:diag-disp-yang-cst}, donde se puede observar que se da un \textit{bandgap} completo entre los $2.5$ y $3.7\;;GHz$. En el análisis circuital sólo se consideró la dirección $\Gamma-X$, en la que el mismo comienza en $2\; GHz$. Una comparación de ambos análisis se puede observar en la figura \ref{fig:diag-disp-yang-vs-s21}.
+Resulta posible, además, comparar las simulaciones de parámetros $S_{21}$ con las simulaciones de celdas unitarias con condiciones de borde periódicas. Para el caso de la celda unitaria analizada, el diagrama de dispersión obtenido a partir de la simulación tridimensional se muestra en la figura \ref{fig:diag-disp-yang-cst}, donde se puede observar que se da un \textit{bandgap} completo entre los $2.5$ y $3.7\;GHz$. En el análisis circuital sólo se consideró la dirección $\Gamma-X$, en la que el mismo comienza en $2\; GHz$. Una comparación de ambos análisis se puede observar en la figura \ref{fig:diag-disp-yang-vs-s21}.
 
 \begin{figure}[h]
 	\centering
@@ -950,7 +950,7 @@ Resulta posible, además, comparar las simulaciones de parámetros $S_{21}$ con 
 	\label{fig:diag-disp-yang-vs-s21}
 \end{figure}
 
-Finalmente, es posible analizar el comportamiento del parámetro $S_{11}$, en vistas de comprobar que el comportamiento de \textit{bandgap} se debe principalmente al fenómeno de Bragg descripto en la sección \ref{sec:bragg}, que está vinculado a la resonancia en la celda unitaria, ya que esta es la principal causante de la variación de la velocidad de propagación en la estructura. La comparación de las gráficas según el modelo y según la simulación de onda completa realizada con CST se puede observar en la figura \ref{fig:s11_comparacion}, de la que se puede deducir que la energía, en el \textit{bandgap}, es devuelta casi en su totalidad al puerto de entrada.
+Finalmente, es posible analizar el comportamiento del parámetro $S_{11}$, en vistas de comprobar que el comportamiento de \textit{bandgap} se debe principalmente al fenómeno de Bragg descripto en la sección \ref{sec_bragg}, que está vinculado a la resonancia en la celda unitaria, ya que esta es la principal causante de la variación de la velocidad de propagación en la estructura. La comparación de las gráficas según el modelo y según la simulación de onda completa realizada con CST se puede observar en la figura \ref{fig:s11_comparacion}, de la que se puede deducir que la energía, en el \textit{bandgap}, es devuelta casi en su totalidad al puerto de entrada.
 
 \begin{figure}[h]
 	\centering
@@ -960,7 +960,7 @@ Finalmente, es posible analizar el comportamiento del parámetro $S_{11}$, en vi
 \end{figure}
 
 
-Bajo las mismas consideraciones, es posible analizar la fase de las señales que regresan al puerto de incidencia respecto de la señal original, para lo que resulta útil considerar la fase del parámetro $S_{11}$. Cuando la fase es de $180^{circle}$, la señal es reflejada en contrafase, efectivamente impidiendo o dificultando la propagación de la onda. Las gráficas, también para el caso simulado y el modelado circuitalmente, se muestran en la figura \ref{fig:s11-fase-compracion}.
+Bajo las mismas consideraciones, es posible analizar la fase de las señales que regresan al puerto de incidencia respecto de la señal original, para lo que resulta útil considerar la fase del parámetro $S_{11}$. Cuando la fase es de $180^{\circ}$, la señal es reflejada en contrafase, efectivamente impidiendo o dificultando la propagación de la onda. Las gráficas, también para el caso simulado y el modelado circuitalmente, se muestran en la figura \ref{fig:s11-fase-compracion}.
 
 \begin{figure}[h]
 	\centering
@@ -1072,7 +1072,7 @@ Como se observa en la figura \ref{fig:tiposdepixeles}, los pixeles metálicos (i
 	\label{fig:modelo-con-lineas-de-transmision}
 \end{figure}
 
-Los pixeles interfaz poseen, además, una capacidad de \textit{fringe}, que se relaciona al comportamiento no-TEM de las líneas de campo cerca de los bordes de las estructuras \textit{microstrip}, mostrado en la figura \ref{fig:microstrip-campos}. La expresión de la capacidad de \textit{fringe} para cada borde es la siguiente \cite{Hammerstad:discont}, donde $s$ es la longitud de \textit{microstrip} sobre la que se desea calcular la capacidad de \textit{fringe} y $C'$ es la capacidad por unidad de longitud de las ecuaciones \ref{capacidad-inductancia-impedancia-modelado}:
+Los pixeles interfaz poseen, además, una capacidad de \textit{fringe}, que se relaciona al comportamiento no-TEM de las líneas de campo cerca de los bordes de las estructuras \textit{microstrip}, mostrado en la figura \ref{fig:microstrip-campos}. La expresión de la capacidad de \textit{fringe} para cada borde es la siguiente \cite{Hammerstad:discont}, donde $s$ es la longitud de \textit{microstrip} sobre la que se desea calcular la capacidad de \textit{fringe} y $C'$ es la capacidad por unidad de longitud de las ecuaciones \ref{eq:capacidad-inductancia-impedancia-modelado}:
 
 \begin{equation}
 	C_{fr} = C' h 0.102 \frac{s/h+0.106}{s/h+0.264} \left(1.166 + \frac{\epsilon_r+1}{\epsilon_r} (0.9+\ln(s/h+2.475)) \right)
@@ -1103,7 +1103,7 @@ Al momento de crear la superficie, además, se realizan dos acciones previas a l
 		C_{gt} = \frac{b \epsilon_0 (1+\epsilon_r)}{\pi} \cosh^{-1} (a / g) \\
 	\end{align*}
 	
-	En esta expresión, $a$ es el tamaño de las islas metálicas y $g$ representa la distancia entre las islas conductoras. El valor de $s$, en tanto, representa la longitud del $gap$, que se obtiene calculando la cantidad de \textit{pixeles} enfrentado a distancia constante que existen (paso 1 en la figura). Hecho esto, considerando todos los pixeles a uno y otro lado del \textit{gap}, se busca la "profundidad" de la celda, $u$, que no es más que la cantidad de pixeles metálicos detrás de los pixeles frontera que pueden hallarse simultáneamente a ambos lados del \textit{gap}, manteniendo al cantidad longitudinal de pixeles metálicos del borde (paso 2 en la figura). Así, el valor de $a$ queda representado por, aproximadamente, $2*u+g$, con $u$ en unidades de metro.
+	En esta expresión, $a$ es el tamaño de las islas metálicas y $g$ representa la distancia entre las islas conductoras. El valor de $s$, en tanto, representa la longitud del $gap$, que se obtiene calculando la cantidad de \textit{pixeles} enfrentado a distancia constante que existen (paso 1 en la figura). Hecho esto, considerando todos los pixeles a uno y otro lado del \textit{gap}, se busca la \enquote{profundidad} de la celda, $u$, que no es más que la cantidad de pixeles metálicos detrás de los pixeles frontera que pueden hallarse simultáneamente a ambos lados del \textit{gap}, manteniendo al cantidad longitudinal de pixeles metálicos del borde (paso 2 en la figura). Así, el valor de $a$ queda representado por, aproximadamente, $2\cdot u+g$, con $u$ en unidades de metro.
 	
 	El valor de la capacidad total de acople se divide entre la cantidad de pares de pixeles que participan del cálculo, de manera que a cada par se le asigna una capacidad $C_g$, como se indica en la figura para los pixeles de color rojo.
 	
