@@ -24,7 +24,7 @@
 % Importancia de EBGs. Venkateswaran tesis, pag 1.
 % Algo de intro: Pagina 4, tesis Zheng.
 
-La definición de metamaterial aún está en discusión aunque, en términos generales, la más aceptada indica que son estructuras electromagnéticas artificiales efectivamente homogéneas que presentan propiedades que no se encuentran en la naturaleza \cite{Caloz:ElectromagneticMetamaterials}. Los materiales EBG (de banda prohibida electromagnética, \textit{Electromagnetic Bandgap}), PBG (de banda prohibida fotónica, \textit{Photonic Bandgap}) o cristales fotónicos son un tipo de estructura artificial, dieléctrica o metalodieléctrica, en algunos casos clasificadas como metamateriales, con capacidades para controlar ondas electromagnéticas \cite{Engheta:Metamaterials} a partir de una variación periódica en el espacio de la constante dieléctrica $\epsilon$. Tienen la capacidad de permitir la propagación en direcciones determinadas, o de impedirla completamente, debido que presentan una banda prohibida electromagnética, concepto análogo al de banda prohibida electrónica, que controla el movimiento de ondas de electrones que viajan en un potencial periódico cristalino.
+La definición de metamaterial aún está en discusión aunque, en términos generales, la más aceptada indica que son estructuras electromagnéticas artificiales efectivamente homogéneas que presentan propiedades que no se encuentran en la naturaleza \cite{Caloz:ElectromagneticMetamaterials}. Los materiales EBG (de banda prohibida electromagnética, \textit{Electromagnetic Bandgap}), PBG (de banda prohibida fotónica, \textit{Photonic Bandgap}) o cristales fotónicos son un tipo de estructura artificial, dieléctrica o metalodieléctrica, en algunos casos clasificadas como metamateriales, con capacidades para controlar ondas electromagnéticas \cite{Engheta:Metamaterials} a partir de una variación periódica en el espacio de la constante dieléctrica $\epsilon$ o, en términos más generales, de las propiedades de propagación electromagnética del medio. Tienen la capacidad de permitir la propagación en direcciones determinadas, o de impedirla completamente, debido que presentan una banda prohibida electromagnética, concepto análogo al de banda prohibida electrónica que controla el movimiento de ondas de electrones que viajan en un potencial periódico cristalino.
 
 La condición de homogeneidad efectiva de los metamateriales se cumple si las estructuras que forman al EBG están a distancias mucho menores a la longitud de onda guiada incidente, $\lambda_g$ \cite{Caloz:ElectromagneticMetamaterials}, de forma que la naturaleza de la estructura básica que se periodiza, denominada celda unitaria, determine parámetros constitutivos ($\epsilon$ y $\mu$) electromagnéticamente uniformes en la dirección de propagación, para la frecuencia de interés. En función de la relación entre estos parámetros constitutivos, las ondas electromagnéticas que lo atraviesan tienen comportamientos diferentes, como se muestra en la figura \ref{fig:tablamuepsilon}. El estudio de estructuras periódicas permitió, entonces, la fabricación de materiales con características en los cuatro cuadrantes del plano $\mu$-$\epsilon$.
 
@@ -57,7 +57,7 @@ En 1968, el físico ruso Viktor Veselago describió por primera vez, de forma te
 	\label{fig:metamaterial-de-smith}
 \end{figure}
 
-En el contexto de una línea de investigación, en principio, independiente de los trabajos previos de Veselago, la primera descripción de estructuras dieléctricas periódicas con una banda prohibida completa fue dada, en 1990, por Ho, Chan y Soukoulis, en Iowa, Estados Unidos, quienes propusieron un arreglo periódico de esferas dieléctricas, dispuestas en forma de capas. Para un rango amplio de radios de esferas, el efecto de banda prohibida se daba en todas direcciones. Posteriormente, Yablonovitch divisó una estructura cristalina simétrica de más fácil fabricación, que consistía en la producción de tres agujeros cilíndricos en un prisma dieléctrico, repetido periódicamente. Demostró, además, usando dichas estructuras, que la existencia de una banda prohibida electromagnética podía ser predicha teóricamente, en base, principalmente, a la constante de periodicidad del dieléctrico artificial.
+En el contexto de una línea de investigación, en principio independiente de los trabajos previos de Veselago, la primera descripción de estructuras dieléctricas periódicas con una banda prohibida completa fue dada, en 1990, por Ho, Chan y Soukoulis, en Iowa, Estados Unidos, quienes propusieron un arreglo periódico de esferas dieléctricas, dispuestas en forma de capas. Para un rango amplio de radios de esferas, el efecto de banda prohibida se daba en todas direcciones. Posteriormente, Yablonovitch divisó una estructura cristalina simétrica de más fácil fabricación, que consistía en la producción de tres agujeros cilíndricos en un prisma dieléctrico, repetido periódicamente. Demostró, además, usando dichas estructuras, que la existencia de una banda prohibida electromagnética podía ser predicha teóricamente, en base, principalmente, a la constante de periodicidad del dieléctrico artificial.
 
 Los trabajos de Yablonovitch, en estructuras de banda prohibida electromagnética, y Pendry, en metamateriales de índice de refracción negativo, se hicieron sobre estructuras con banda de interés en microondas, pero bajo modelos fotónicos, gracias a la linealidad de las ecuaciones de Maxwell. Esto permitió el uso de distintas técnicas conocidas y desarrolladas durante el siglo XX en microondas para el diseño de materiales fotónicos de estas características a partir de finales de la década de 1990, principalmente en ámbitos de investigación de ciencias básicas.
 
@@ -246,16 +246,16 @@ donde $\vec{\gamma}$ es el vector de onda cristalino, $\vec{r}$ es la posición 
 
 Si una onda plana incide sobre un medio periódico dispuesto en la dirección ortogonal al vector de propagación, el efecto es intuitivo, como se puede ver en la figura \ref{fig:bloch-ortogonal}. En este caso, la periodicidad se da sobre el eje $z$, y la constante de propagación en esa coordenada es nula, por lo que no hay diferencia de fase entre los elementos dispuestos periódicamente (la diferencia de fase se da, para la onda incidente dibujada, en la dirección $y$).
 
-\begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.8\textwidth]{Fundamentos/bloch-ortogonal.pdf}
-	\caption{Comportamiento de una onda monocromática que incide en forma perpendicular a un medio periódico unidimensional.}
-	\label{fig:bloch-ortogonal}
-\end{figure}
+%\begin{figure}[htp]
+%	\centering
+%	\includegraphics[width=0.8\textwidth]{Fundamentos/bloch-ortogonal.pdf}
+%	\caption{Comportamiento de una onda monocromática que incide en forma perpendicular a un medio periódico unidimensional.}
+%	\label{fig:bloch-ortogonal}
+%\end{figure}
 
 \section{Armónicos espaciales}
 
-Dado la función $F(x,y,z)$ de la expresión \ref{eq:campo-periodico} es periódica, se puede obtener su serie de Fourier en $x$, de la forma
+Dado la función $F(x,y,z)$ de la expresión \ref{eq:campo-periodico} es $p$-periódica, se puede obtener su serie de Fourier en $x$, de la forma
 
 \begin{align}
 F(x,y,z) = \sum_{n=-\infty}^{\infty} E_{n}(y,z) e^{-j n \frac{2\pi}{p} x},
@@ -338,7 +338,7 @@ La celda unitaria de la red de Bravais se denomina celda de Wigner-Seitz, y rest
 	\subfigure[Superposición de la red recíproca y la red directa de Bravais correspondiente a una estructura periódica con disposición triangular de los elementos]{
 		\label{fig:reciprocal-lattice}
 		\includegraphics[width=0.45\textwidth]{Fundamentos/direct-and-reciprocal-triangle-lattice-zoom4}}
-	\caption{Red de Bravais y red recíproca correspondiente a una estructura periódica. Los vectores $\vec{a_i}$ son los que corresponden a la red directa o red de Bravais, y unen a los elementos físicos del sistema periódico. Los vectores $\vec{b_j}$ son los correspondientes a la red recíproca. Las respectivas redes no están dibujadas a escala y, de hecho, se suelen conceptualizar en espacios diferentes.}
+	\caption{Red de Bravais y red recíproca correspondiente a una estructura periódica. Los vectores $\vec{a_i}$ son los que corresponden a la red directa o red de Bravais, y unen a los elementos físicos del sistema periódico. Los vectores $\vec{b_j}$ son los correspondientes a la red recíproca. Las respectivas redes no están dibujadas a escala y, de hecho, pertenecen a espacios diferentes.}
 	\label{fig:direct-and-reciprocal-lattice}
 \end{figure}
 
