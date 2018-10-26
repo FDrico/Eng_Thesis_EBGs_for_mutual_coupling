@@ -613,7 +613,7 @@ Una onda incidente desde el aire, para evitar reflexiones y, por lo tanto, radia
 
 \begin{align}
 	\label{eq:impedancia-superficie-tm-teorica}
-	Z_s^{TM} = \frac{Z_2}{\eta_0}\Biggr\rvert_{x=h} = j \frac{\cos \theta_t}{\sqrt{\epsilon_{r_2}}}\tan(\gamma_2 h \cos\theta_t).
+	Z_s^{TM} = \frac{Z_2}{\eta_0}\Biggr\rvert_{x=h} = j \frac{\cos \theta_t}{\sqrt{\epsilon_{r_2}}}\tan(\gamma_2 h \cos\theta_t) = j \frac{\cos \theta_t}{\sqrt{\epsilon_{r_2}}}\tan(	\omega\sqrt{\epsilon_{r_2} \mu_0 \epsilon_0} h \cos\theta_t).
 \end{align}
 
 
@@ -647,13 +647,13 @@ Para el caso TE, los campos paralelos a la superficie son:
 	E_{y_1} &= A e^{-j\gamma_{x_1}(x-h)-j\gamma_z z}, &H_z &= -\frac{A \gamma_{x_1}}{\omega \mu_0} e^{-j\gamma_{x_1}(x-h)-j\gamma_z z}. \notag \\
 	&\implies Z_{1} = -\frac{\gamma_{x_1}}{\omega \mu_0}, \\
 	E_{y_2} &= A \sec{(\gamma_{x_2} h)} \cos{(\gamma_{x_2} x)} e^{-j \gamma_z z}, &H_{z_2} &= -\frac{A \gamma_{x_2} e^{j\gamma_z z}}{j\omega \mu_0} \sec{(\gamma_{x_2} h)} \sin(\gamma_{x_2} x), \notag \\
-	&\implies Z_{2} = \frac{j\cot(\gamma_{x_2} x)}{\gamma_{x_2} \omega \mu_0}.
+	&\implies Z_{2} = \frac{j\omega \mu_0 \cot(\gamma_{x_2} x)}{\gamma_{x_2}}.
 \end{align}
 
-Siguiendo la misma metodología que en el caso TM, igualando ambas impedancias, se obtiene
+Siguiendo la misma metodología que en el caso TM, la impedancia para $x=h$ resulta:
 
 \begin{align}
-	Z_s^{TE} = j\frac{\cot(\gamma_2 \cos \theta_t)}{\gamma_2 \cos\theta_t \;\omega \mu_0}.
+	Z_s^{TE} = j\frac{\omega \mu_0 \cot(\gamma_2 h \cos \theta_t)}{\gamma_2 \cos\theta_t}.
 \end{align}
 % Queda explicar qué pasa con el coating -> ubicar también los puntos en el dibujito, para saber por dónde es que nos movimos.
 
@@ -735,7 +735,7 @@ Considerando una línea de transmisión que representa un comportamiento puramen
 	\gamma = -j\alpha + \beta = \sqrt{-ZY} = \sqrt{-(R+j\omega L)(G+j\omega C)}.
 \end{align}
 
-En base a esta constante de propagación, es posible definir la velocidad de fase $Vv_p$ como
+En base a esta constante de propagación, es posible definir la velocidad de fase $v_p$ como
 
 \begin{align}
 	v_p = \frac{\omega}{\beta},
@@ -872,7 +872,7 @@ En general, para simplificar el análisis, se considera que la cinta \textit{mic
 \label{subsec_antenas}
 %%%%
 
-Una antena es un dispositivo que actúa como fuente de ondas electromagnéticas. Es una interfaz entre el espacio libre y un dispositivo de guiado (como una guía de ondas o una línea de transmisión), y puede ser puede ser modelada como una carga que, en general, está adaptada. Su función es recibir o transmitir energía, usualmente optimizando algunas direcciones, y suprimiendo o disminuyendo su valor en otras, para lo que se utilizan distintas tecnologías, entre las que se destacan las antenas de hilo, de apertura y \textit{microstrip}, muchas veces dispuestas en arreglos y con componentes reflectores \cite{Balanis:Theory}. En este trabajo resultarán de mayor importancia las regiones más cercanas al radiador, y el control del comportamiento de los campos en las mismas modificará el comportamiento en la región de Fraunhoffer.
+Una antena es un dispositivo que actúa como fuente de ondas electromagnéticas. Es una interfaz entre el espacio libre y un dispositivo de guiado (como una guía de ondas o una línea de transmisión), y puede ser puede ser modelada como una carga que, en general, está adaptada. Su función es recibir o transmitir energía, usualmente optimizando algunas direcciones, y suprimiendo o disminuyendo su valor en otras, para lo que se utilizan distintas tecnologías, entre las que se destacan las antenas de hilo, de apertura y \textit{microstrip}, muchas veces dispuestas en arreglos geométricos y con componentes reflectores \cite{Balanis:Theory}. En este trabajo resultarán de mayor importancia las regiones más cercanas al radiador, y el control del comportamiento de los campos en las mismas modificará el comportamiento en la región de Fraunhoffer.
 
 %%%%
 \subsection{Regiones de campo}
@@ -897,10 +897,10 @@ Sobre el patrón se distinguen lóbulos, clasificados como principal (en la dire
 La impedancia de entrada de una antena es la que presenta a la línea de transmisión o guía de ondas que la alimenta. En general tiene una componente resistiva y una componente reactiva, de manera que $Z_A = R_A + j X_A$. En general, $R_A$ tiene dos componentes: $R_r$, la resistencia de radiación, y $R_L$, la resistencia de pérdidas. Como en general no coincide con la impedancia característica de la línea de transmisión que la alimenta, se aplican métodos de adaptación de impedancias.
 %%%%
 
-\subsection{Arreglos de antenas}
+\subsection{Conjuntos de antenas}
 % Ver apunte tesis overleaf
 
-Un arreglo de antenas es un conjunto de antenas dispuestas geométricamente, y alimentadas de manera tal que conformen un único sistema radiante. El primer conjunto de antenas usado extensivamente fue la antena Yagui-Uda, inventada en 1926, cuya fase no puede variarse electrónicamente. Recién durante la Segunda Guerra Mundial se inventaron los conjuntos de antena de fase variable, y a partir de 1950, con la invención de los defasadores de ferrita, la modificación de fase completa fue posible \cite{Stutzman:AntennaTheory}.
+Un grupo de antenas dispuestas geométricamente, y alimentadas de manera tal que conformen un único sistema radiante, conforman un conjunto de antenas. El primer conjunto de antenas usado extensivamente fue la antena Yagui-Uda, inventada en 1926, cuya fase no puede variarse electrónicamente. Recién durante la Segunda Guerra Mundial se inventaron los conjuntos de antena de fase variable, y a partir de 1950, con la invención de los defasadores de ferrita, la modificación de fase completa fue posible \cite{Stutzman:AntennaTheory}.
 
 El análisis más sencillo del comportamiento de conjuntos de antenas se presenta al analizar uno formado por antenas de iguales propiedades, cuyas amplitudes y fases pueden ser modificados, tanto en transmisión (a través de mecanismos de desfasaje) como en recepción (debido a diferencias e camino y circuitos de desfasaje). En general, el diagrama de radiación se puede calcular en base a la multiplicación del patrón de uno de los elementos y el patrón del arreglo, para el cual se asumen puntos de radiación isotrópicos en la posición de las antenas \cite{Balanis:Theory}.
 
@@ -932,7 +932,7 @@ Cuando se considera acoplamiento mutuo entre los elementos del \textit{array}, l
 
 La impedancia de entrada de un elemento aislado en el espacio se denomina \enquote{Impedancia de elemento aislado}, o simplemente impedancia de antena. La impedancia de entrada de una antena que está dispuesta en un ambiente con elementos activos se denomina \enquote{impedancia activa}, y varía según las excitaciones a las que se someta al arreglo de antena. En general, la caracterización de los elementos radiantes sometidos a efectos de acoplamiento mutuo consisten en la obtención de la \enquote{impedancia pasiva}, que se logra excitando un elemento y conectando a cargas adaptadas los demás.
 
-Hay 3 efectos responsables del acoplamiento mutuo en arreglos de antenas:
+Hay 3 efectos responsables del acoplamiento mutuo en conjuntos de antenas:
 
 \begin{itemize}
 	\item Acoplamiento espacial entre elementos.
@@ -958,7 +958,7 @@ I_1 \\ I_2 \\ \vdots \\ I_N
 \end{bmatrix}.
 \end{equation}
 
-Si suponemos que la antena no excitada tiene una impedancia de carga $Z^g_j$ sobre sus terminales (y que el generador de esa antena está apagado, $V^g_j=0$), la corriente generada sobre el elemento $j$ debido a la radiación del elemento $i$ será tal que $V_j=-Z^g_j I_j$, por lo que
+Si suponemos que la antena no excitada tiene una impedancia de carga $Z^g_j$ sobre sus terminales (y que el generador de esa antena está apagado, $V^g_j=0$), la corriente entrante generada sobre el elemento $j$ debido a la radiación del elemento $i$ será tal que $V_j=-Z^g_j I_j$, por lo que
 
 \begin{equation} \label{eq:impmutua}
 V_j = -Z^g_j I_j = Z_{jj}I_j + \sum_{i=1, i \neq j}^{N} Z_{ji}I_i.
@@ -1020,7 +1020,7 @@ El modelo de líneas de transmisión es el más sencillo y el que ofrece una may
 
 
 
-Al igual que en el caso de las líneas \textit{microstrip}, se debe considerar una constante dieléctrica efectivo $\epsilon_{r_{eff}}$, que depende no sólo del ancho del sustrato, sino también de la frecuencia, debido a que a mayor frecuencia hay una mayor concentración de campo sobre el dieléctrico, otorgando mayor prevalencia a la constante dieléctrica del sustrato que a la del aire circundante en el cálculo de la constante efectiva. La expresión es la misma utilizada para líneas \textit{microstrip} (ecuación \ref{eq:cte-diel-efectiva-microstrip}), siempre y cuando $W>h$.
+Al igual que en el caso de las líneas \textit{microstrip}, se debe considerar una constante dieléctrica efectivo $\epsilon_{r_{eff}}$, que depende no sólo del ancho del sustrato, sino también de la frecuencia, debido a que a mayor frecuencia hay una mayor concentración de campo sobre el dieléctrico, otorgando mayor prevalencia, en el cálculo de la constante dieléctrica efectiva, a la constante dieléctrica del sustrato que a la del aire circundante. La expresión es la misma utilizada para líneas \textit{microstrip} (ecuación \ref{eq:cte-diel-efectiva-microstrip}), siempre y cuando $W>h$.
 
 El efecto de \textit{fringing} en los bordes del parche, que da lugar a un aumento del tamaño eléctrico, se modelan mediante la consideración de una extensión en la línea de transmisión que une a las aperturas radiantes, en función de la altura del sustrato. El cambio en la extensión de la línea de transmisión sugiere un cambio en la frecuencia de resonancia de la antena sin una modificación del tamaño físico. En la ecuación \ref{eq:deltaL-antena-microstrip} se muestra una expresión aproximada de la variación del tamaño eléctrico, de forma que la longitud efectiva de la línea de transmisión resulta $L_{eff} = L + 2 \Delta L$. Esta expresión se utiliza para la obtención de la frecuencia de resonancia, como indica la expresión \ref{eq:frec-resonancia-modelo-linea-microstrip} para el modo dominante, $TM_{010}$.
 
@@ -1030,7 +1030,7 @@ El efecto de \textit{fringing} en los bordes del parche, que da lugar a un aumen
 \end{align}
 
 \begin{align}
-	f_{{r}_{010}} = \frac{v_p}{\lambda} = \frac{c/\sqrt{\epsilon_{r_{eff}}}{2*L_{eff}}} = \frac{1}{2 L_{eff} \sqrt{\epsilon_{eff}} \sqrt{\mu_0 \epsilon_0}} = \frac{1}{2 (L+2 \Delta L) \sqrt{\epsilon_{eff}} \sqrt{\mu_0 \epsilon_0}}.
+	f_{{r}_{010}} = \frac{v_p}{\lambda} = \frac{c/\sqrt{\epsilon_{r_{eff}}}}{2 L_{eff}} = \frac{1}{2 L_{eff} \sqrt{\epsilon_{eff}} \sqrt{\mu_0 \epsilon_0}} = \frac{1}{2 (L+2 \Delta L) \sqrt{\epsilon_{eff}} \sqrt{\mu_0 \epsilon_0}}.
 	\label{eq:frec-resonancia-modelo-linea-microstrip}
 \end{align}
 
@@ -1062,7 +1062,7 @@ La consideración de paredes laterales como conductores magnéticos deviene de l
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=0.4\textwidth]{intro_electro/corrientes-microstrip.pdf}
-	\caption{Corrientes sobre el parche en una antena \textit{microstrip}, según el modelo de cavidad.}
+	\caption{Corrientes sobre el parche en una antena \textit{microstrip}, según el modelo de cavidad, basado en la representación en \cite{Balanis:Theory}.}
 	\label{fig:corrientes-microstrip}
 \end{figure}
 
@@ -1117,7 +1117,7 @@ En un \textit{array} planar de antenas se deben considerar la amplitud y la fase
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=0.8\textwidth]{intro_electro/pozar-acoplamiento.pdf}
-	\caption{Acoplamiento mutuo entre antenas \textit{microstrip}, para posición colineal en plano E y plano H. Parámetros: W: 10.57 cm, L: 6.55 cm, h: 0.1588 cm, $\epsilon_r$: 2.55, $f_r$: 1.410 MHz. Fuente: D. M. Pozar, \enquote{Input impedance and mutual coupling of rectangular microstrip antennas}, IEEE Trans. Antennas Propagat. Vol AP-30, No. 6. Noviembre, 1982.}
+	\caption{Acoplamiento mutuo entre antenas \textit{microstrip}, para posición colineal en plano E y plano H. Parámetros: W: 10.57 cm, L: 6.55 cm, h: 0.1588 cm, $\epsilon_r$: 2.55, $f_r$: 1.410 MHz \cite{Pozar:InputImpedanceMutualCoupling}.}
 	\label{fig:acomplamientoEyH}
 \end{figure}
 

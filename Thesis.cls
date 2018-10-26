@@ -208,14 +208,14 @@
       \smallskip
       {\huge \authornames \par}
 %      IEEE Student Member \par
-      \texttt{federicoluna@protonmail.com} \par
+      \texttt{fluna@fi.uba.ar} \par
       \bigskip
       \bigskip
       {\large Director: \par}
       {\LARGE Dr. Ing. Walter Gustavo Fano\par}
 	  %\textit{IEEE Life Senior Member} \par
 %	  IEEE Senior Member \par
-      \texttt{gustavo.gf2005@gmail.com} \par
+      \texttt{gfano@fi.uba.ar} \par
       \bigskip
       {\large Co-directora: \par}
       {\LARGE Mg. Ing. Silvina Boggi\par}
