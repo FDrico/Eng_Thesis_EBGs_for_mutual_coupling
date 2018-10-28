@@ -22,7 +22,7 @@
 
 El análisis de estructuras de banda prohibida electromagnética, así como de superficies selectoras de frecuencia (FSS), se suele realizar a través de simulaciones numéricas de onda completa, utilizando el método de elementos finitos (FEM) o métodos en el dominio del tiempo, como FDTD, dado que permiten la resolución de los problemas de forma tridimensional, lo que habilita al diseñador a conocer el comportamiento de configuraciones de una o más capas, así como los efectos de curvaturas y discontinuidades en la periodicidad. Estos métodos, si bien son flexibles, no otorgan intuición física y resultan computacionalmente demandantes. Análisis de tipo numérico en dos dimensiones han sido propuestos, principalmente utilizando el método de momentos (MOM), a partir de los cuales han surgido otras técnicas de estudio de las estructuras bidimensionales, basadas en la búsqueda de capacidades e inductancias equivalentes, dispuestas de forma tal que la respuesta en frecuencia tenga un comportamiento similar al observado en las simulaciones. Estos métodos, que en ocasiones derivan en aproximaciones de primer orden a elementos circuitales, se denominan semi-analíticos, y se usan especialmente cuando la periodicidad es mucho menor a la longitud de onda incidente. Este tipo de análisis ha permitido la aplicación de otros métodos numéricos, como TMM (\textit{Transmission Matrix Method}) y TLM (\textit{Transmission-Line Matrix Method}), de mayor simplicidad y con suficiente acercamiento al problema físico para que el resultado resulte intuitivo para el diseño preliminar.
 
-Los métodos de modelado orientados a la descripción del comportamiento en el primer modo (en bajas frecuencias) de estructuras de banda prohibida electromagnética bidimensionales no requieren de una simulación numérica de onda completa previa \cite{KimSchuttAine:AnalysisHybrid}. En ellos, como se muestra en la figura \ref{fig:circuito-equivalente-kim-parches}, las inductancias y capacidades surgen del análisis intuitivo y cuasiestático del efecto de cada aspecto de la geometría de la estructura metalodieléctrica de las celdas unitarias. Así, para las celdas de dicha figura, formadas por parches rectangulares unidos por puentes \textit{microstrip}, se debe considerar que cada parche presenta una capacidad contra el plano conductor ($C_p$), dada simplemente como la expresión de capacidad entre placas planas paralelas, y una inductancia $L_p$, dada por:
+Los métodos de modelado orientados a la descripción del comportamiento en el primer modo (en bajas frecuencias) de estructuras de banda prohibida electromagnética bidimensionales no requieren de una simulación numérica de onda completa previa \cite{KimSchuttAine:AnalysisHybrid}. En ellos, como se muestra en la Figura \ref{fig:circuito-equivalente-kim-parches}, las inductancias y capacidades surgen del análisis intuitivo y cuasiestático del efecto de cada aspecto de la geometría de la estructura metalodieléctrica de las celdas unitarias. Así, para las celdas de dicha figura, formadas por parches rectangulares unidos por puentes \textit{microstrip}, se debe considerar que cada parche presenta una capacidad contra el plano conductor ($C_p$), dada simplemente como la expresión de capacidad entre placas planas paralelas, y una inductancia $L_p$, dada por:
 
 \begin{align}
 \label{eq:Cp_Lp}
@@ -38,7 +38,7 @@ C_{g} = \frac{b \epsilon_0 (1+\epsilon_r)}{\pi} \cosh^{-1} (a / g) \\
 L_{b} = 0.2\; \text{nH/mm} \cdot \ln (2\pi \frac{h}{w})
 \end{align}
 
-donde $a$ es el tamaño de la celda unitaria, $h$ es el ancho del dieléctrico y $w$ es el ancho del puente. En la tabla \ref{table:CeldaUnitariaFacil-AnalisisiCircuital} se muestran los valores testigo elegidos arbitrariamente y utilizados en esta sección, según los nombres de la figura \ref{fig:circuito-equivalente-kim-parches}.
+donde $a$ es el tamaño de la celda unitaria, $h$ es el ancho del dieléctrico y $w$ es el ancho del puente. En la tabla \ref{table:CeldaUnitariaFacil-AnalisisiCircuital} se muestran los valores testigo elegidos arbitrariamente y utilizados en esta sección, según los nombres de la Figura \ref{fig:circuito-equivalente-kim-parches}.
 
 \begin{table}
 	\centering
@@ -94,7 +94,7 @@ donde $a$ es el tamaño de la celda unitaria, $h$ es el ancho del dieléctrico y
 
 El análisis de la expresión de dispersión no se puede realizar utilizando el acercamiento circuital propuesto, debido a que cada nodo del circuito posee una fase establecida por los parámetros concentrados.
 
-Si se procede de forma similar a la explicada en a sección \ref{sec:diag-de-dispersion}, se debe dividir a cada celda unitaria en trozos de línea de transmisión de impedancias diferentes, en función de su ancho, como se muestra en la figura \ref{fig:division_en_trozos_impedancia}.
+Si se procede de forma similar a la explicada en a Sección \ref{sec:diag-de-dispersion}, se debe dividir a cada celda unitaria en trozos de línea de transmisión de impedancias diferentes, en función de su ancho, como se muestra en la Figura \ref{fig:division_en_trozos_impedancia}.
 
 
 \begin{figure}[h]
@@ -138,7 +138,7 @@ lo que resulta en la matriz de transferencia
 	\right]
 \end{align}
 
-Aplicando los mismos pasos que en la sección \ref{sec:diag-de-dispersion}, considerando el teorema de Bloch-Floquet, que indica que $i_{n+1} = i_{n} e^{-\gamma a}$, y que $v_{n+1} = v_{n} e^{-\gamma a}$:
+Aplicando los mismos pasos que en la Sección \ref{sec:diag-de-dispersion}, considerando el teorema de Bloch-Floquet, que indica que $i_{n+1} = i_{n} e^{-\gamma a}$, y que $v_{n+1} = v_{n} e^{-\gamma a}$:
 
 \begin{align}
 	\left[
@@ -225,7 +225,7 @@ En el caso en que $\alpha \neq 0$ y $\beta = 0,n\pi$, la expresión resulta
 \cosh(\alpha d) = \cos(2\phi + \theta/2),
 \end{align}
 
-que tiene solución si $|\cos(2\phi + \theta/2)| \geq 1$, lo cual genera soluciones separadas cada $n\pi$, dado que es en esos valores en que el coseno obtiene módulo 1, como se muestra en la figura \ref{fig:solucion-cos-cosh}. Esto demuestra que los \textit{bandgaps} producidos se deben principalmente a un efecto de difracción de Bragg, dado que la suma de las fases en cada tramo de las líneas de transmisión que dan lugar a la celda unitaria debe ser múltiplo de $\pi$.
+que tiene solución si $|\cos(2\phi + \theta/2)| \geq 1$, lo cual genera soluciones separadas cada $n\pi$, dado que es en esos valores en que el coseno obtiene módulo 1, como se muestra en la Figura \ref{fig:solucion-cos-cosh}. Esto demuestra que los \textit{bandgaps} producidos se deben principalmente a un efecto de difracción de Bragg, dado que la suma de las fases en cada tramo de las líneas de transmisión que dan lugar a la celda unitaria debe ser múltiplo de $\pi$.
 
 \begin{figure}[h]
 	\centering
@@ -234,7 +234,7 @@ que tiene solución si $|\cos(2\phi + \theta/2)| \geq 1$, lo cual genera solucio
 	\label{fig:solucion-cos-cosh}
 \end{figure}
 
-Es posible vincular los valores de $\phi$ y $\theta$ con la frecuencia angular $\omega$, a través de la velocidad de propagación del medio, que será distinta para cada tramo de línea, para una proporción de $\theta$ y $\omega$ determinada. Según los valores de longitud de los tramos de líneas mostrados en la figura \ref{fig:circuito-equivalente-kim-parches}, a partir de la ecuación \ref{eq:diagDisp-teorico-estructura-sencilla-b}, y asumiendo que las longitudes eléctricas $\theta$ y $\phi$ resultan, respectivamente, $\beta_1 (a-b)$ y $\beta_2 b$, se puede reescribir la expresión para los puntos en que $\alpha\neq 0$ como
+Es posible vincular los valores de $\phi$ y $\theta$ con la frecuencia angular $\omega$, a través de la velocidad de propagación del medio, que será distinta para cada tramo de línea, para una proporción de $\theta$ y $\omega$ determinada. Según los valores de longitud de los tramos de líneas mostrados en la Figura \ref{fig:circuito-equivalente-kim-parches}, a partir de la ecuación \ref{eq:diagDisp-teorico-estructura-sencilla-b}, y asumiendo que las longitudes eléctricas $\theta$ y $\phi$ resultan, respectivamente, $\beta_1 (a-b)$ y $\beta_2 b$, se puede reescribir la expresión para los puntos en que $\alpha\neq 0$ como
 
 \begin{align}
 	\beta_1 (a-b) + \beta_2 b = n\pi .
@@ -252,7 +252,7 @@ que representa, en forma aproximada, el conjunto de frecuencias para el que la e
 
 Además del acercamiento a través del uso de circuitos equivalentes de primer orden, en general es posible expresar el problema a partir de su generalización como un conjunto de líneas de transmisión efectivas (en lugar de líneas de transmisión propiamente dichas), discretizando el espacio de forma que cada paso de discretización resulte mucho menor a $\lambda/4$ \cite{Caloz:ElectromagneticMetamaterials}, aproximadamente.
 
-En base al modelo circuital de la figura \ref{fig:circuito-equivalente-kim-parches}, y en base a la teoría desarrollada en la sección \ref{sec_lineas_de_transmision}, es posible analizar la estructura como una única línea de transmisión formada por trozos infinitesimales que cumplen con el circuito equivalente propuesto. La impedancia y admitancia por unidad de longitud, entonces, se pueden expresar como:
+En base al modelo circuital de la Figura \ref{fig:circuito-equivalente-kim-parches}, y en base a la teoría desarrollada en la Sección \ref{sec_lineas_de_transmision}, es posible analizar la estructura como una única línea de transmisión formada por trozos infinitesimales que cumplen con el circuito equivalente propuesto. La impedancia y admitancia por unidad de longitud, entonces, se pueden expresar como:
 
 \begin{align}
 	Z' a = j\omega L_p + \frac{j\omega L_b}{1-\omega^2 L_b C_g}, \\
@@ -266,7 +266,7 @@ Según la ecuación \ref{eq:gamma-tl}, es posible describir el valor de la const
 	\gamma = \sqrt{-Z'Y'} = \frac{\omega}{a} \sqrt{C_p \left( L_p + \frac{L_b}{1-\omega^2 L_b C_g}\right)}.
 \end{align}
 
-La solución se grafica en la figura \ref{fig:diagDisp-calculado-celdafacil}, donde se puede observar que se genera un \textit{bandgap} cuando el valor de $\alpha$ crece mucho, para una frecuencia de aproximadamente $8\;GHz$.
+La solución se grafica en la Figura \ref{fig:diagDisp-calculado-celdafacil}, donde se puede observar que se genera un \textit{bandgap} cuando el valor de $\alpha$ crece mucho, para una frecuencia de aproximadamente $8\;GHz$.
 
 \begin{figure}[h]
 	\centering
@@ -292,7 +292,7 @@ es decir, por debajo de la frecuencia de resonancia. Esto significa que sólo es
 Resulta necesario aclarar, además, que en el circuito propuesto se puede observar únicamente el comportamiento de los modos cuasi-TEM sobre las celdas unitarias de la estructura periódica, pues es a partir de los mismos que se obtienen las expresiones y disposiciones de capacidades e inductancias utilizadas en el modelo. Esto significa que existirán modos superiores con distintas polarizaciones, pero que no pueden ser predichos por el modelo cuasiestático planteado.
 
 
-Para el caso de las superficies de alta impedancia sin vías de conexión entre la geometría superior y el plano de tierra inferior, Tretyakov y otros \cite{Tretyakov:AnalyticalModeling}, \cite{Yakovlev:AnalyticalModelingHIS} han propuesto un análisis centrado en la similitud con las FSS (\textit{Frequency Selective Surfaces}), considerando a las superficies EBG uniplanares como FSS con un plano de tierra. De esta manera es posible utilizar los modelos desarrollados durante el siglo \textsc{XX} para el análisis de las superficies selectoras de frecuencias, en el estudio de EBGs, dado que el comportamiento de banda prohibida se da por el mismo motivo que el comportamiento de filtro de las FSS \cite{Goussetis:TailoringAMCEBGCharacteristics}, relacionado a la frecuencia de resonancia del conjunto de elementos. Para ello, se considera el circuito equivalente de la figura \ref{fig:tretyankov-circuito-equivalente}, donde $Z_g$ es la impedancia que impone la FSS que se dispone sobre el plano dieléctrico, y $Z_d$ es la impedancia del conjunto formado por el dieléctrico y el plano conductor. De esta forma, la impedancia de superficie resulta del paralelo de ambas. La impedancia del conjunto dieléctrico-plano conductor fue analizada en el capítulo anterior, y depende de la polarización (TE o TM). La impedancia que impone el arreglo periódico bidimensional, la FSS, requiere de un análisis particular de cada caso, y los resultados analíticos en la literatura están limitados a conjuntos de rectángulos, dipolos y cruces, y sus correspondientes estructuras complementarias.
+Para el caso de las superficies de alta impedancia sin vías de conexión entre la geometría superior y el plano de tierra inferior, Tretyakov y otros \cite{Tretyakov:AnalyticalModeling}, \cite{Yakovlev:AnalyticalModelingHIS} han propuesto un análisis centrado en la similitud con las FSS (\textit{Frequency Selective Surfaces}), considerando a las superficies EBG uniplanares como FSS con un plano de tierra. De esta manera es posible utilizar los modelos desarrollados durante el siglo \textsc{XX} para el análisis de las superficies selectoras de frecuencias, en el estudio de EBGs, dado que el comportamiento de banda prohibida se da por el mismo motivo que el comportamiento de filtro de las FSS \cite{Goussetis:TailoringAMCEBGCharacteristics}, relacionado a la frecuencia de resonancia del conjunto de elementos. Para ello, se considera el circuito equivalente de la Figura \ref{fig:tretyankov-circuito-equivalente}, donde $Z_g$ es la impedancia que impone la FSS que se dispone sobre el plano dieléctrico, y $Z_d$ es la impedancia del conjunto formado por el dieléctrico y el plano conductor. De esta forma, la impedancia de superficie resulta del paralelo de ambas. La impedancia del conjunto dieléctrico-plano conductor fue analizada en el capítulo anterior, y depende de la polarización (TE o TM). La impedancia que impone el arreglo periódico bidimensional, la FSS, requiere de un análisis particular de cada caso, y los resultados analíticos en la literatura están limitados a conjuntos de rectángulos, dipolos y cruces, y sus correspondientes estructuras complementarias.
 
 \begin{figure}
 	\centering
@@ -308,9 +308,9 @@ Para el caso de las superficies de alta impedancia sin vías de conexión entre 
 	\label{fig:tretyankov-circuito-equivalente}
 \end{figure}
 
-Un planteo intuitivo de los resultados de Tretyankov requiere comenzar el análisis a partir del conocimiento de que, como se demostró en la sección \ref{sec:ondas-de-superficie}, y como se muestra en la figura \ref{fig:beta-reactancia-TM}, una superficie con impedancia inductiva es capaz de soportar ondas TM. La impedancia de un plano de tierra recubierto por un material dieléctrico, $Z_d$, como se muestra en la ecuación \ref{eq:impedancia-superficie-tm-teorica}, resulta inductiva. Para lograr una impedancia superficial $Z_s$ menos inductiva, en vistas de disminuir el comportamiento de guía de ondas de la estructura, se debe imponer una impedancia $Z_g$ acorde.
+Un planteo intuitivo de los resultados de Tretyankov requiere comenzar el análisis a partir del conocimiento de que, como se demostró en la Sección \ref{sec:ondas-de-superficie}, y como se muestra en la Figura \ref{fig:beta-reactancia-TM}, una superficie con impedancia inductiva es capaz de soportar ondas TM. La impedancia de un plano de tierra recubierto por un material dieléctrico, $Z_d$, como se muestra en la ecuación \ref{eq:impedancia-superficie-tm-teorica}, resulta inductiva. Para lograr una impedancia superficial $Z_s$ menos inductiva, en vistas de disminuir el comportamiento de guía de ondas de la estructura, se debe imponer una impedancia $Z_g$ acorde.
 
-El metamaterial basado en FSS más usual, el conjunto o \textit{array} de parches, da lugar a una impedancia $Z_g$ capacitiva, tanto por la capacidad impuesta entre los parches y el plano de tierra, como por la capacidad entre los parches adyacentes. Para frecuencias bajas, el comportamiento del circuito equivalente es inductivo, pero para frecuencias por encima de la de resonancia, el comportamiento es capacitivo. Por otro lado, es posible considerar, si los parches son lo suficientemente grandes, que los mismos presentan una inductancia, en serie con las capacidades parásitas descriptas antes. Un inductor en paralelo con el inductor correspondiente al plano conductor de la cara inferior del dieléctrico disminuye la inductancia total, por lo que se logra el efecto deseado. Finalmente, si los parches son conectados, como se mostró en la figura \ref{fig:circuito-equivalente-kim-parches}, la inductancia en paralelo con la capacidad entre parches acrecentará este efecto. Los efectos que se presentan por encima de la frecuencia de resonancia impiden que el análisis intuitivo describa la existencia de modos superiores, por lo que estas consideraciones no son completas, lo que obliga a que la frecuencia de resonancia no esté muy por debajo de la frecuencia de ondas de superficie que se desea bloquear con la estructura EBG.
+El metamaterial basado en FSS más usual, el conjunto o \textit{array} de parches, da lugar a una impedancia $Z_g$ capacitiva, tanto por la capacidad impuesta entre los parches y el plano de tierra, como por la capacidad entre los parches adyacentes. Para frecuencias bajas, el comportamiento del circuito equivalente es inductivo, pero para frecuencias por encima de la de resonancia, el comportamiento es capacitivo. Por otro lado, es posible considerar, si los parches son lo suficientemente grandes, que los mismos presentan una inductancia, en serie con las capacidades parásitas descriptas antes. Un inductor en paralelo con el inductor correspondiente al plano conductor de la cara inferior del dieléctrico disminuye la inductancia total, por lo que se logra el efecto deseado. Finalmente, si los parches son conectados, como se mostró en la Figura \ref{fig:circuito-equivalente-kim-parches}, la inductancia en paralelo con la capacidad entre parches acrecentará este efecto. Los efectos que se presentan por encima de la frecuencia de resonancia impiden que el análisis intuitivo describa la existencia de modos superiores, por lo que estas consideraciones no son completas, lo que obliga a que la frecuencia de resonancia no esté muy por debajo de la frecuencia de ondas de superficie que se desea bloquear con la estructura EBG.
 
 \section{Técnicas numéricas de onda completa}
 \label{sec_estructuras_periodicas}
@@ -330,9 +330,9 @@ La solución de las ecuaciones diferenciales vectoriales en el espacio y el tiem
 	\item Método de diferencias finitas en el dominio del tiempo (FDTD): Consiste en la discretización en el espacio y el tiempo, mediante las denominadas celdas de Yee, que permiten el uso de la técnica numérica de salto de rana: Dado que las derivadas temporales de cada uno de los campos dependen del rotor del otro, los campos eléctrico y magnético se evalúan en puntos alternados (en la mitad de los puntos se evalúa únicamente el campo eléctrico, y en la otra mitad, campo magnético), de forma que cada punto donde se evalúa campo eléctrico quede rodeado de cuatro componentes donde se calcula campo magnético, y viceversa. La evaluación en el tiempo es también alternada: los campos magnéticos se obtienen $\Delta t/2$ más tarde que los campos eléctricos, de forma que resulte fácil calcular las derivadas en el tiempo y el espacio mediante diferencias finitas. Dado que la solución se obtiene en el dominio del tiempo, este método resulta útil para aplicaciones de banda ancha. El software comercial más conocido que aplica está técnica es \textit{CST Microwave Studio}.
 \end{itemize}
 
-Para el caso particular del FDTD, es posible resolver problemas de autovalores (particularmente, el analizado en la sección \ref{sec:automodos}), útiles en la descripción de guías de onda y metamateriales periódicos. Una vez impuesta una excitación en el tiempo $t=0$, los valores de campos se actualizan tiempo a tiempo para todos los puntos del dominio de cálculo de forma iterativa, hasta que se logra una señal resonante estable.
+Para el caso particular del FDTD, es posible resolver problemas de autovalores (particularmente, el analizado en la Sección \ref{sec:automodos}), útiles en la descripción de guías de onda y metamateriales periódicos. Una vez impuesta una excitación en el tiempo $t=0$, los valores de campos se actualizan tiempo a tiempo para todos los puntos del dominio de cálculo de forma iterativa, hasta que se logra una señal resonante estable.
 
-Para el caso del estudio de cavidades y guías de ondas, las condiciones de borde para el análisis de autovalores suelen ser conductores eléctricos, con o sin pérdidas. Cuando se analizan estructuras periódicas, es común utilizar condiciones de borde periódicas (PBC, \textit{periodic boundary conditions}), que modelan el efecto de replicación periódica, de manera que es posible simular una única celda unitaria para obtener el efecto del metamaterial completo en base a su diagrama de dispersión \cite{Yang:EBGAntennas}, utilizando la disposición mostrada en la figura \ref{fig:esquema-simulacion-periodica}.
+Para el caso del estudio de cavidades y guías de ondas, las condiciones de borde para el análisis de autovalores suelen ser conductores eléctricos, con o sin pérdidas. Cuando se analizan estructuras periódicas, es común utilizar condiciones de borde periódicas (PBC, \textit{periodic boundary conditions}), que modelan el efecto de replicación periódica, de manera que es posible simular una única celda unitaria para obtener el efecto del metamaterial completo en base a su diagrama de dispersión \cite{Yang:EBGAntennas}, utilizando la disposición mostrada en la Figura \ref{fig:esquema-simulacion-periodica}.
 
 \begin{figure}[h]
 	\centering
@@ -341,11 +341,11 @@ Para el caso del estudio de cavidades y guías de ondas, las condiciones de bord
 	\label{fig:esquema-simulacion-periodica}
 \end{figure}
 
-El fundamento del uso de estas condiciones de borde periódicas deriva del teorema de Bloch-Floquet, tratado en la sección \ref{sec:bloch-floquet}. Como se muestra en la ecuación \ref{eq:comportamiento-periodico-campo-bloch}, el campo eléctrico (o magnético) resulta periódico, con la misma periodicidad que el material, a excepción de una variación de fase, dada por el valor de la constante de propagación $\beta$ del medio.
+El fundamento del uso de estas condiciones de borde periódicas deriva del teorema de Bloch-Floquet, tratado en la Sección \ref{sec:bloch-floquet}. Como se muestra en la ecuación \ref{eq:comportamiento-periodico-campo-bloch}, el campo eléctrico (o magnético) resulta periódico, con la misma periodicidad que el material, a excepción de una variación de fase, dada por el valor de la constante de propagación $\beta$ del medio.
 
 Para obtener el diagrama de dispersión, cada frecuencia $\omega$ debe estar asociada a una o más constantes de propagación de onda $\beta$. O, dicho de otra forma, dada una constante de propagación $\beta$, es necesario encontrar las autofrecuencias asociadas. Fijar el valor de la constante de propagación $\beta$, según la ecuación \ref{eq:comportamiento-periodico-campo-bloch}, equivale a establecer la diferencia de fase entre las paredes opuestas de la celda unitaria ($e^{-j\beta d}$). Una simulación del comportamiento en el tiempo, y una posterior transformada de Fourier para obtener el comportamiento en frecuencia, permite observar picos de amplitud de campo para algunas frecuencias en particular, que son las que autofrecuencias del problema. Dado que la misma diferencia de fase se puede obtener para frecuencias mayores (un ciclo más tarde), se presentará más de un modo.
 
-Como se observó en la sección \ref{sec:diag-de-dispersion}, para la descripción del comportamiento de la relación de dispersión sólo es necesario el cálculo en la denominada zona irreducible de Brillouin, dado que a partir de reflexiones y transposiciones de la misma es posible reconstruir la celda unitaria en el espacio recíproco. Para el caso de celdas unitarias en que hay simetría sobre los ejes $x$ e $y$, y además hay simetría diagonal, la zona irreducible es un triángulo, como se mostró en la figura \ref{fig:rectangulo-cuadrado}.
+Como se observó en la Sección \ref{sec:diag-de-dispersion}, para la descripción del comportamiento de la relación de dispersión sólo es necesario el cálculo en la denominada zona irreducible de Brillouin, dado que a partir de reflexiones y transposiciones de la misma es posible reconstruir la celda unitaria en el espacio recíproco. Para el caso de celdas unitarias en que hay simetría sobre los ejes $x$ e $y$, y además hay simetría diagonal, la zona irreducible es un triángulo, como se mostró en la Figura \ref{fig:rectangulo-cuadrado}.
 
 De esta forma, únicamente hay que fijar, como condiciones de borde, diferencias de fase que se correspondan, entre los distintos puntos que forman una celda de Wignet-Seitz y que se corresponden a la zona irreducible de Brillouin.
 
@@ -359,7 +359,7 @@ De esta forma, únicamente hay que fijar, como condiciones de borde, diferencias
 \subsection{Metamaterial formado por parches cuadrados unidos por finas trazas \textit{microstrip}}
 \label{sec:celdas-orlandi}
 
-Uno de los metamateriales más fáciles de construir, y que en general presenta buenos resultados al mismo tiempo que mantiene una geometría sencilla es el que posee celdas como las que se observan en la figura \ref{fig:celda-orlandi}. En la misma, $d$ es el lado de la celda unitaria (cuadrada), $l$ es el tamaño del lado del cuadrado metálico (de cobre), y $l_m$ y $w_m$ son el largo y el ancho de los puentes que comunican a los parches, respectivamente.
+Uno de los metamateriales más fáciles de construir, y que en general presenta buenos resultados al mismo tiempo que mantiene una geometría sencilla es el que posee celdas como las que se observan en la Figura \ref{fig:celda-orlandi}. En la misma, $d$ es el lado de la celda unitaria (cuadrada), $l$ es el tamaño del lado del cuadrado metálico (de cobre), y $l_m$ y $w_m$ son el largo y el ancho de los puentes que comunican a los parches, respectivamente.
 
 \begin{figure}[h]
 	\centering
@@ -368,9 +368,9 @@ Uno de los metamateriales más fáciles de construir, y que en general presenta 
 	\label{fig:celda-orlandi}
 \end{figure}
 
-Esta geometría resulta sencilla de analizar, debido principalmente a que, como se estudió en la sección \ref{sec:modelo_analitico}, cada aspecto de la misma tiene un equivalente circuital, al menos para las frecuencias más bajas, que varía en función de los parámetros constructivos. La celda unitaria propuesta posee una simetría tal que permite realizar un análisis en una zona de Brillouin triangular, como la que se mostró, teóricamente, en la figura \ref{fig:explicacion-zona-brillouin}.
+Esta geometría resulta sencilla de analizar, debido principalmente a que, como se estudió en la Sección \ref{sec:modelo_analitico}, cada aspecto de la misma tiene un equivalente circuital, al menos para las frecuencias más bajas, que varía en función de los parámetros constructivos. La celda unitaria propuesta posee una simetría tal que permite realizar un análisis en una zona de Brillouin triangular, como la que se mostró, teóricamente, en la Figura \ref{fig:explicacion-zona-brillouin}.
 
-Aplicando el análisis de autovalores explicado en la sección precedente, es posible obtener, para cada condición de borde periódica en que va variando la fase de las paredes opuestas que conforman el contorno condicionado, un conjunto de frecuencias que representan los modos de propagación en cada dirección analizada, lo que permite crear un diagrama de dispersión, similar al mostrado en la figura \ref{fig:diagrama-dispersion-vacio-2d}, aunque con modos superiores.
+Aplicando el análisis de autovalores explicado en la sección precedente, es posible obtener, para cada condición de borde periódica en que va variando la fase de las paredes opuestas que conforman el contorno condicionado, un conjunto de frecuencias que representan los modos de propagación en cada dirección analizada, lo que permite crear un diagrama de dispersión, similar al mostrado en la Figura \ref{fig:diagrama-dispersion-vacio-2d}, aunque con modos superiores.
 
 \begin{figure}[h]
 	\centering
@@ -379,11 +379,11 @@ Aplicando el análisis de autovalores explicado en la sección precedente, es po
 	\label{fig:orlandi-analisis-campos}
 \end{figure}
 
-En la figura \ref{fig:orlandi-analisis-campos} se ilustran\footnote{Debido a la naturaleza de la simuación con autovalores, que no impone una tensión inicial, los valores obtenidos de los campos no son representativos de la situación física (aunque sí la morfología espacial). Estos valores obtenidos, no mostrados en la figura, suelen ser altos debido al mecanismo de simulación. El análisis que se pretende realizar aquí del comportamiento de los campos es puramente conceptual.}, para los dos primeros modos de propagación, los campos eléctrico y magnético en dirección normal y tangencial a la superficie, considerando una dirección de propagación horizontal (equivalente al punto $M$ en la figura \ref{fig:explicacion-zona-brillouin}).
+En la Figura \ref{fig:orlandi-analisis-campos} se ilustran\footnote{Debido a la naturaleza de la simuación con autovalores, que no impone una tensión inicial, los valores obtenidos de los campos no son representativos de la situación física (aunque sí la morfología espacial). Estos valores obtenidos, no mostrados en la figura, suelen ser altos debido al mecanismo de simulación. El análisis que se pretende realizar aquí del comportamiento de los campos es puramente conceptual.}, para los dos primeros modos de propagación, los campos eléctrico y magnético en dirección normal y tangencial a la superficie, considerando una dirección de propagación horizontal (equivalente al punto $M$ en la Figura \ref{fig:explicacion-zona-brillouin}).
 
-En la figura \ref{fig:orlandi-analisis-campos} a) se muestra el comportamiento del campo eléctrico promedio perpendicular a la superficie para el primer modo de propagación. Resulta claro que el mismo se concentra debajo del parche metálico que conforma a la celda unitaria, debido a que la presencia de un plano de tierra genera un comportamiento de placas planas paralelas, conformando efectivamente un capacitor. Es también notoria la presencia de campo eléctrico en dirección normal a la superficie en los puentes \textit{microstrip} superior e inferior, debido principalmente a que no hay movimiento de cargas en dirección longitudinal a los mismos, sino que actúan como extensiones al parche central, aumentando ligeramente la capacidad del dispositivo.
+En la Figura \ref{fig:orlandi-analisis-campos} a) se muestra el comportamiento del campo eléctrico promedio perpendicular a la superficie para el primer modo de propagación. Resulta claro que el mismo se concentra debajo del parche metálico que conforma a la celda unitaria, debido a que la presencia de un plano de tierra genera un comportamiento de placas planas paralelas, conformando efectivamente un capacitor. Es también notoria la presencia de campo eléctrico en dirección normal a la superficie en los puentes \textit{microstrip} superior e inferior, debido principalmente a que no hay movimiento de cargas en dirección longitudinal a los mismos, sino que actúan como extensiones al parche central, aumentando ligeramente la capacidad del dispositivo.
 
-El campo eléctrico en la dirección tangencial, también para el primer modo de propagación, es ilustrado en la figura \ref{fig:orlandi-analisis-campos} b), y permite observar la existencia de notorios efectos de \textit{fringing} alrededor de todo el parche, que deben ser considerados en el análisis. Estos efectos son mayores sobre los puentes superior e inferior, nuevamente, mientras que sobre los puentes ubicados horizontalmente parece no haber concentración de cargas. Esto se confirma al analizar las figuras \ref{fig:orlandi-analisis-campos} c) y d), que ilustran el campo magnético en dirección normal y tangencial a la superficie, respectivamente. Se puede observar que no existen campos magnéticos normales a la superficie debajo del parche metálico, sino que, como muestra la figura d), son puramente tangenciales. Debajo del parche, entonces, para el primer modo de propagación, los campos son cuasi-TEM. La presencia de campo magnético sobre los puentes horizontales corrobora la hipótesis de que sobre los mismos se genera corriente, que ingresa al parche metálico para ser conducida.
+El campo eléctrico en la dirección tangencial, también para el primer modo de propagación, es ilustrado en la Figura \ref{fig:orlandi-analisis-campos} b), y permite observar la existencia de notorios efectos de \textit{fringing} alrededor de todo el parche, que deben ser considerados en el análisis. Estos efectos son mayores sobre los puentes superior e inferior, nuevamente, mientras que sobre los puentes ubicados horizontalmente parece no haber concentración de cargas. Esto se confirma al analizar las figuras \ref{fig:orlandi-analisis-campos} c) y d), que ilustran el campo magnético en dirección normal y tangencial a la superficie, respectivamente. Se puede observar que no existen campos magnéticos normales a la superficie debajo del parche metálico, sino que, como muestra la figura d), son puramente tangenciales. Debajo del parche, entonces, para el primer modo de propagación, los campos son cuasi-TEM. La presencia de campo magnético sobre los puentes horizontales corrobora la hipótesis de que sobre los mismos se genera corriente, que ingresa al parche metálico para ser conducida.
 
 \begin{figure}[h]
 	\centering
@@ -392,13 +392,13 @@ El campo eléctrico en la dirección tangencial, también para el primer modo de
 	\label{fig:orlandi-analisis-campos-fases}
 \end{figure}
 
-El análisis para el primer modo de propagación continúa en la figura \ref{fig:orlandi-analisis-campos-fases}. En las figuras \ref{fig:orlandi-analisis-campos-fases} a) y b) se muestra el comportamiento del campo eléctrico para dos tiempos diferentes. Se observa que el parche almacena cargas durante un breve tiempo, y las expele inmediatamente después. Esto se ve corroborado por el comportamiento del campo magnético normal a la superficie, mostrado en escala lineal en las figuras \ref{fig:orlandi-analisis-campos-fases} c) y d), para dos tiempos distintos, y donde se ven colores cuando el campo es positivo en la dirección perpendicular saliente a la superficie del parche. A través del uso de la regla de la mano derecha, se pueden deducir las direcciones de las corrientes sobre los puentes, que son las especificadas por flechas, y donde se observa que son opuestas en el primer modo. Es decir, de forma intuitiva, las corrientes son entrantes al parche de todas direcciones al mismo tiempo, y son salientes del mismo hacia todas direcciones en un tiempo subsiguiente. De esta forma, el parche posee cargas positivas completamente en un tiempo, y luego cargas negativas en el tiempo siguiente, lo cual coincide con la intuición del concepto de un primer modo de propagación, y con el análisis intuitivo detallado.
+El análisis para el primer modo de propagación continúa en la Figura \ref{fig:orlandi-analisis-campos-fases}. En las figuras \ref{fig:orlandi-analisis-campos-fases} a) y b) se muestra el comportamiento del campo eléctrico para dos tiempos diferentes. Se observa que el parche almacena cargas durante un breve tiempo, y las expele inmediatamente después. Esto se ve corroborado por el comportamiento del campo magnético normal a la superficie, mostrado en escala lineal en las figuras \ref{fig:orlandi-analisis-campos-fases} c) y d), para dos tiempos distintos, y donde se ven colores cuando el campo es positivo en la dirección perpendicular saliente a la superficie del parche. A través del uso de la regla de la mano derecha, se pueden deducir las direcciones de las corrientes sobre los puentes, que son las especificadas por flechas, y donde se observa que son opuestas en el primer modo. Es decir, de forma intuitiva, las corrientes son entrantes al parche de todas direcciones al mismo tiempo, y son salientes del mismo hacia todas direcciones en un tiempo subsiguiente. De esta forma, el parche posee cargas positivas completamente en un tiempo, y luego cargas negativas en el tiempo siguiente, lo cual coincide con la intuición del concepto de un primer modo de propagación, y con el análisis intuitivo detallado.
 
-El segundo modo de propagación, para la misma dirección y posición sobre el diagrama de dispersión (punto \enquote{M}), posee un comportamiento más complejo. Como se observa en la figura \ref{fig:orlandi-analisis-campos} e), el campo eléctrico presenta un cero en el centro de la celda unitaria, en la figura f) es coherente con esta observación, dado que cerca del centro y de los puentes verticales no hay campo de \textit{fringing}. El campo magnético, por otro lado, mostrado en las figuras g) y h), nuevamente no parece permitir concebir corrientes sobre los puentes verticales, aunque sí en el interior del parche metálico propiamente dicho.
+El segundo modo de propagación, para la misma dirección y posición sobre el diagrama de dispersión (punto \enquote{M}), posee un comportamiento más complejo. Como se observa en la Figura \ref{fig:orlandi-analisis-campos} e), el campo eléctrico presenta un cero en el centro de la celda unitaria, en la figura f) es coherente con esta observación, dado que cerca del centro y de los puentes verticales no hay campo de \textit{fringing}. El campo magnético, por otro lado, mostrado en las figuras g) y h), nuevamente no parece permitir concebir corrientes sobre los puentes verticales, aunque sí en el interior del parche metálico propiamente dicho.
 
 El análisis de dos tiempos diferentes dentro del ciclo para el segundo modo de propagación, mostrado en las figuras \ref{fig:orlandi-analisis-campos-fases} e)-h), permite comprender más intuitivamente el comportamiento. Se observa que el parche central es excitado (posee campo eléctrico vertical) en dos tiempos diferentes, y sólo una de sus mitades lo es cada vez. Hay un desfasaje de $180^\circ$ entre ambos lados del parche. Observando el campo magnético, resulta también intuitivo considerar que cuando la mitad izquierda del parche está excitada, es decir, cuando posee cargas almacenadas, formando un capacitor con el plano de tierra, se genera una corriente hacia la celda vecina, que posee un parche con tensión opuesta. En el lado derecho, el efecto es análogo. Es importante notar que, al contrario que en el caso del primer modo, en el segundo modo de propagación las corrientes de los puentes tienen el mismo sentido en cada tiempo.
 
-La figura \ref{fig:dibujito-modos} ilustra, de forma esquemática e informal, sin considerar los mencionados comportamientos de los campos en un material periódico, el comportamiento de la fase del campo eléctrico para ambos modos de propagación, de manera que se pueda apreciar el requerido aumento de frecuencia para la concreción del segundo modo.
+La Figura \ref{fig:dibujito-modos} ilustra, de forma esquemática e informal, sin considerar los mencionados comportamientos de los campos en un material periódico, el comportamiento de la fase del campo eléctrico para ambos modos de propagación, de manera que se pueda apreciar el requerido aumento de frecuencia para la concreción del segundo modo.
 
 \begin{figure}[h]
 	\centering
@@ -412,7 +412,7 @@ Para comprender el efecto de la variación de distintos parámetros geométricos
 
 \subsubsection{Análisis de un diagrama de dispersión típico}
 
-En la figura \ref{fig:diag-dispersion-tipico} se puede observar un diagrama de dispersión típico.
+En la Figura \ref{fig:diag-dispersion-tipico} se puede observar un diagrama de dispersión típico.
 
 \begin{figure}[h]
 	\centering
@@ -421,7 +421,7 @@ En la figura \ref{fig:diag-dispersion-tipico} se puede observar un diagrama de d
 	\label{fig:diag-dispersion-tipico}
 \end{figure}
 
-La línea azul corresponde al primer modo de propagación, la marrón al segundo, la verde al tercero, la roja al cuarto y la violeta al quinto. Además, se dibujaron las líneas de vista (\textit{light-lines}) para vacío y para FR-4, que indican el comportamiento de una onda plana que circula por esos materiales, cuando son homogéneos y libres de obstáculos. Representan el corte del diagrama de dispersión tridimensional mostrado en la figura \ref{fig:diagrama-dispersion-vacio-3d} sobre los bordes de la celda de Brillouin, como se ve en la figura \ref{fig:diagrama-dispersion-vacio-2d}, para los dos materiales. La línea de vista del FR-4 presenta, naturalmente, una pendiente menor a la del vacío, pues la velocidad de propagación sobre ese medio es menor.
+La línea azul corresponde al primer modo de propagación, la marrón al segundo, la verde al tercero, la roja al cuarto y la violeta al quinto. Además, se dibujaron las líneas de vista (\textit{light-lines}) para vacío y para FR-4, que indican el comportamiento de una onda plana que circula por esos materiales, cuando son homogéneos y libres de obstáculos. Representan el corte del diagrama de dispersión tridimensional mostrado en la Figura \ref{fig:diagrama-dispersion-vacio-3d} sobre los bordes de la celda de Brillouin, como se ve en la Figura \ref{fig:diagrama-dispersion-vacio-2d}, para los dos materiales. La línea de vista del FR-4 presenta, naturalmente, una pendiente menor a la del vacío, pues la velocidad de propagación sobre ese medio es menor.
 
 La línea de vista del vacío separa las llamadas ondas lentas (\textit{slow waves}), que poseen una velocidad de fase menor a la del vacío ($c$), de las ondas rápidas (\textit{fast waves}), con velocidad de fase superior a $c$. Dado que, para el vacío, $\beta=\omega/c$, si se extiende a definición a dos dimensiones, se obtiene que $\beta_x^2 + \beta_y^2 = \omega^2/c^2$. Cuando el valor de $|\beta|$ supera al correspondiente a la propagación en el vacío para la misma frecuencia, necesariamente la velocidad de fase es menor ($\beta = \omega / v_p$). Cuando la velocidad es mayor, es decir, cuando se analizan resultados para pares $(\omega,\beta)$ que están por encima de la línea de vista, el estudio no se da sobre ondas de superficie, sino sobre ondas incidentes o reflejadas con ángulo determinado. En algunos casos \cite{Maci:Pole-zero-matching}, para algunos usos de metamateriales (especialmente cuando se los diseña de forma que actúen como paredes conductoras magnéticas), esa zona del diagrama de dispersión resulta de gran utilidad \cite{Yang:EBGAntennas}.
 
@@ -439,7 +439,7 @@ El diagrama de dispersión, además, da una idea de las velocidades de fase ($v_
 
 \subsubsection{Efecto de la variación del ancho del puente \textit{microstrip}}
 
-La primera variación analizada es la del ancho de los puentes \textit{microstrip} que unen a los parches metálicos que conforman la estructura. Estableciendo una celda de $2\;\text{cm}$ de lado, y un parche de $1.8\;\text{cm}$, para el caso de sustrato FR4 de $1.6\;\text{mm}$ de espesor, se obtuvieron los diagramas de dispersión sobre el borde de la celda de Brillouin que se muestran en la figura \ref{fig:diagdisp-orlandi-variacion-ancho-puente}.
+La primera variación analizada es la del ancho de los puentes \textit{microstrip} que unen a los parches metálicos que conforman la estructura. Estableciendo una celda de $2\;\text{cm}$ de lado, y un parche de $1.8\;\text{cm}$, para el caso de sustrato FR4 de $1.6\;\text{mm}$ de espesor, se obtuvieron los diagramas de dispersión sobre el borde de la celda de Brillouin que se muestran en la Figura \ref{fig:diagdisp-orlandi-variacion-ancho-puente}.
 
 \begin{figure}[h]
 	\centering
@@ -458,7 +458,7 @@ En la misma se observa que la formación de una zona prohibida completa entre lo
 	\label{fig:comparacion-diagdisp-orlandi-variacion-ancho-puente}
 \end{figure}
 
-La principal causa se puede deducir de la figura \ref{fig:comparacion-diagdisp-orlandi-variacion-ancho-puente}, donde es notorio el crecimiento generalizado de las frecuencias necesarias para obtener el primer modo de propagación (la curva azul de la figura \ref{fig:diagdisp-orlandi-variacion-ancho-puente} se eleva), lo que se condice con una aumento en la velocidad de propagación en el metamaterial. Una explicación intuitiva, válida únicamente para las frecuencias en que se puede aplicar el modelo cuasiestático y considerar corrientes y tensiones sobre los conductores que conforman la estructura, se basa en la posible disminución de la resistencia al paso de corriente, lo que permite una carga y descarga del capacitor de placas planas paralelas (formado por el parche y el plano de tierra) más rápida.
+La principal causa se puede deducir de la Figura \ref{fig:comparacion-diagdisp-orlandi-variacion-ancho-puente}, donde es notorio el crecimiento generalizado de las frecuencias necesarias para obtener el primer modo de propagación (la curva azul de la Figura \ref{fig:diagdisp-orlandi-variacion-ancho-puente} se eleva), lo que se condice con una aumento en la velocidad de propagación en el metamaterial. Una explicación intuitiva, válida únicamente para las frecuencias en que se puede aplicar el modelo cuasiestático y considerar corrientes y tensiones sobre los conductores que conforman la estructura, se basa en la posible disminución de la resistencia al paso de corriente, lo que permite una carga y descarga del capacitor de placas planas paralelas (formado por el parche y el plano de tierra) más rápida.
 
 Para modos superiores, especialmente para el rango de frecuencias entre el cuarto y el quinto modo, existe una zona prohibida que se extiende en todas direcciones, pero se da para frecuencias mucho más altas, de escaso valor práctico.
 
@@ -479,13 +479,13 @@ Para modos superiores, especialmente para el rango de frecuencias entre el cuart
 	\label{fig:comparacion-diagdisp-orlandi-variacion-tam-celda-unitaria}
 \end{figure}
 
-Un escalamiento de la celda unitaria, debido a la linealidad de las ecuaciones de Maxwell, debería únicamente generar un cambio en las frecuencias centrales de los \textit{band-gaps}. Para celdas unitarias pequeñas, las frecuencias centrales de las zonas prohibidas son altas, y resulta más difícil obtener un \textit{bandgap} completo, como se observa en la figura \ref{fig:diagdisp-orlandi-variacion-tam-celda-unitaria}.
+Un escalamiento de la celda unitaria, debido a la linealidad de las ecuaciones de Maxwell, debería únicamente generar un cambio en las frecuencias centrales de los \textit{band-gaps}. Para celdas unitarias pequeñas, las frecuencias centrales de las zonas prohibidas son altas, y resulta más difícil obtener un \textit{bandgap} completo, como se observa en la Figura \ref{fig:diagdisp-orlandi-variacion-tam-celda-unitaria}.
 
-En la figura \ref{fig:comparacion-diagdisp-orlandi-variacion-tam-celda-unitaria} se puede observar el comportamiento del primer \textit{bandgap} (ubicado entre el primer y el segundo modo de propagación), en función del tamaño de la celda unitaria analizada. A medida que la misma disminuye, las frecuencias centrales decaen. La variación del tamaño de la celda unitaria, por sí solo, facilita la superposición de zonas prohibidas en todas las direcciones sólo para frecuencias bajas, y cuando la celda unitaria es grande. La superposición de las tres direcciones de propagación analizadas se puede observar en la gráfica inferior de la figura \ref{fig:comparacion-diagdisp-orlandi-variacion-tam-celda-unitaria}.
+En la Figura \ref{fig:comparacion-diagdisp-orlandi-variacion-tam-celda-unitaria} se puede observar el comportamiento del primer \textit{bandgap} (ubicado entre el primer y el segundo modo de propagación), en función del tamaño de la celda unitaria analizada. A medida que la misma disminuye, las frecuencias centrales decaen. La variación del tamaño de la celda unitaria, por sí solo, facilita la superposición de zonas prohibidas en todas las direcciones sólo para frecuencias bajas, y cuando la celda unitaria es grande. La superposición de las tres direcciones de propagación analizadas se puede observar en la gráfica inferior de la Figura \ref{fig:comparacion-diagdisp-orlandi-variacion-tam-celda-unitaria}.
 
 El comportamiento de la primer zona prohibida se puede explicar intuitivamente considerando que, de no variar la velocidad de propagación en el medio, y dado que $\omega =k*v_p$, entonces al variar el número de onda requerido por aumentar el tamaño de la celda unitaria (disminuye, permitiendo que el primer modo se corresponda con una longitud de onda mayor), el valor de $\omega$ debe disminuir en consecuencia.
 
-A este efecto se debe añadir el correspondiente al aumento del efecto capacitivo por el aumento del tamaño del parche. Si se considera, como se explicó antes, que un análisis a bajas frecuencias, utilizando razonamientos cuasiestáticos, nos conduce a un filtro LC equivalente. La frecuencia de resonancia de ese tipo de filtro es, en general, y sin considerar pérdidas, $f_r \approx 1/\sqrt{LC}$. Dado que se está escalonando la celda unitaria, y que por tanto también está creciendo el tamaño del parche, el valor de la capacidad aumenta. La relación entre la capacidad y el tamaño del parche es cuadrática, como se puede ver en la ecuación \ref{eq:Cp_Lp}, y la inductancia no aumentará apreciablemente en comparación. De esta forma: $f_r \propto 1/\sqrt{l^2} = 1/l$, con $l$ el tamaño del parche, según la figura \ref{fig:celda-orlandi}.
+A este efecto se debe añadir el correspondiente al aumento del efecto capacitivo por el aumento del tamaño del parche. Si se considera, como se explicó antes, que un análisis a bajas frecuencias, utilizando razonamientos cuasiestáticos, nos conduce a un filtro LC equivalente. La frecuencia de resonancia de ese tipo de filtro es, en general, y sin considerar pérdidas, $f_r \approx 1/\sqrt{LC}$. Dado que se está escalonando la celda unitaria, y que por tanto también está creciendo el tamaño del parche, el valor de la capacidad aumenta. La relación entre la capacidad y el tamaño del parche es cuadrática, como se puede ver en la ecuación \ref{eq:Cp_Lp}, y la inductancia no aumentará apreciablemente en comparación. De esta forma: $f_r \propto 1/\sqrt{l^2} = 1/l$, con $l$ el tamaño del parche, según la Figura \ref{fig:celda-orlandi}.
 
 Resulta importante destacar que la variación del tamaño de la celda unitaria en su conjunto es la forma más fácil (aunque en general, la menos conveniente) de modificar la frecuencia de trabajo del EBG.
 
@@ -508,11 +508,11 @@ Resulta importante destacar que la variación del tamaño de la celda unitaria e
 	\label{fig:comparacion-diagdisp-orlandi-variacion-tam-parche}
 \end{figure}
 
-La figura \ref{fig:diagdisp-orlandi-variacion-tam-parche} muestra que, al contrario que en el caso anterior, la mera variación del tamaño del parche metálico, sin la modificación del tamaño de la celda unitaria, no genera los mismos efectos. La variación de la capacidad, como antes, da lugar a una disminución en la frecuencia central del primer \textit{bandgap}.
+La Figura \ref{fig:diagdisp-orlandi-variacion-tam-parche} muestra que, al contrario que en el caso anterior, la mera variación del tamaño del parche metálico, sin la modificación del tamaño de la celda unitaria, no genera los mismos efectos. La variación de la capacidad, como antes, da lugar a una disminución en la frecuencia central del primer \textit{bandgap}.
 
 Por otro lado, la inductancia impuesta por los puentes disminuye considerablemente cuando el tamaño del parche aumenta sin que lo haya la celda unitaria en general. En este sentido, manteniendo la analogía con el filtro LC presentado antes, dado que el ancho de banda de resonancia de un filtro LC es aproxidamente $BW_r \approx \sqrt{L/C}$, si disminuye el valor de la inductancia (por puentes más cortos) y, al mismo tiempo, aumenta el valor de la capacidad (por el aumento del efecto de capacitor de placas planas paralelas y las capacidades mutuas entre celdas vecinas) , el ancho de banda disminuirá notablemente.
 
-Como se puede ver en la figura \ref{fig:comparacion-diagdisp-orlandi-variacion-tam-parche}, un mayor ancho de banda prohibida se obtiene con parches de tamaño moderado, con los que además es posible obtener bandas prohibidas completas.
+Como se puede ver en la Figura \ref{fig:comparacion-diagdisp-orlandi-variacion-tam-parche}, un mayor ancho de banda prohibida se obtiene con parches de tamaño moderado, con los que además es posible obtener bandas prohibidas completas.
 
 
 \subsubsection{Variación de la longitud de los puentes}
@@ -537,7 +537,7 @@ Como se puede ver en la figura \ref{fig:comparacion-diagdisp-orlandi-variacion-t
 
 Para la variación de la longitud de los puentes es necesario, nuevamente, modificar el tamaño de la celda unitaria, por lo que, necesariamente, a medida que exista una mayor separación entre los parches (y por tanto una mayor longitud de puentes), la frecuencia central de la banda prohibida disminuirá.
 
-Por otro lado, dado que la capacidad no cambiará (excepto aquella correspondiente al efecto de capacidad entre parches cercanos, que estarán cada vez más alejados), los efectos más notorios, bajo un análisis cuasiestático, se darán por el aumento de la inductancia. El alejamiento de los parches metálicos entre sí disminuirá la capacidad total de cada celda unitaria, pero los efectos no son lo suficientemente notorios. Si los puentes no exisitieran, el efecto sería el opuesto al que se da en esta geometría \cite{Yang:EBGAntennas}. Este aumento en la inductancia generará un mayor ancho de banda, que se ve reflejado en la figura \ref{fig:comparacion-diagdisp-orlandi-long-puentes}.
+Por otro lado, dado que la capacidad no cambiará (excepto aquella correspondiente al efecto de capacidad entre parches cercanos, que estarán cada vez más alejados), los efectos más notorios, bajo un análisis cuasiestático, se darán por el aumento de la inductancia. El alejamiento de los parches metálicos entre sí disminuirá la capacidad total de cada celda unitaria, pero los efectos no son lo suficientemente notorios. Si los puentes no exisitieran, el efecto sería el opuesto al que se da en esta geometría \cite{Yang:EBGAntennas}. Este aumento en la inductancia generará un mayor ancho de banda, que se ve reflejado en la Figura \ref{fig:comparacion-diagdisp-orlandi-long-puentes}.
 
 \subsubsection{Efecto de la variación del ancho del sustrato dieléctrico}
 
@@ -556,9 +556,9 @@ Por otro lado, dado que la capacidad no cambiará (excepto aquella correspondien
 	\label{fig:comparacion-diagdisp-orlandi-variacion-ancho-diel}
 \end{figure}
 
-La variación del ancho del sustrato tiene importantes consecuencias en el EBG. Por un lado, es importante notar que el comportamiento del ancho de banda es opuesto al que se obtiene considerando el modelo cuasiestático: Un aumento en la capacidad (debido al acercamiento de los planos paralelos que forman los parches y el plano conductor inferior, cuando disminuye el ancho del sustrato), debería dar lugar a una disminución notoria en el ancho de banda. Sin embargo, como se observa en la figura \ref{fig:comparacion-diagdisp-orlandi-variacion-ancho-diel}, se da el efecto contrario.
+La variación del ancho del sustrato tiene importantes consecuencias en el EBG. Por un lado, es importante notar que el comportamiento del ancho de banda es opuesto al que se obtiene considerando el modelo cuasiestático: Un aumento en la capacidad (debido al acercamiento de los planos paralelos que forman los parches y el plano conductor inferior, cuando disminuye el ancho del sustrato), debería dar lugar a una disminución notoria en el ancho de banda. Sin embargo, como se observa en la Figura \ref{fig:comparacion-diagdisp-orlandi-variacion-ancho-diel}, se da el efecto contrario.
 
-El comportamiento resulta más intuitivo si se recuerda que, como se explicó en la sección \ref{cap_intro_electro}, un sustrato delgado dificulta la aparición de ondas de superficie, volviendo a las zonas prohibidas de propagación más notorias.
+El comportamiento resulta más intuitivo si se recuerda que, como se explicó en la Sección \ref{cap_intro_electro}, un sustrato delgado dificulta la aparición de ondas de superficie, volviendo a las zonas prohibidas de propagación más notorias.
 
 A medida que aumenta el tamaño del mismo, disminuye el ancho de banda de la zona prohibida, y resulta más dificultoso obtener un \textit{bandgap} completo.
 
@@ -567,7 +567,7 @@ A medida que aumenta el tamaño del mismo, disminuye el ancho de banda de la zon
 \subsection{Celda de Yang}
 \label{sec:celda-yang}
 
-La búsqueda de estructuras que requirieran un menor tamaño de celda unitaria para lograr zonas prohibidas en frecuencias bajas, impulsó a Fei-Ran Yang, Kuang-Ping Ma, Yongxi Qian y Tatsuo Itoh, en 1991, a presentar \cite{Yang:UCPBG} la geometría mostrada en la figura \ref{fig:celda-yang}. En la misma, como se puede observar, se intentó maximizar la longitud de los puentes, estableciendo lo que se conoce como un \textit{inset} en el parche \textit{microstrip}. De esta forma, el parche puede crecer, y por tanto aumentar la capacidad, sin que por ello la inductancia deba disminuir. Esto permite, además, que los parches de las distintas celdas unitarias se ubiquen a corta distancia unos de otros, aumentando entonces el acoplamiento capacitivo entre ellos, y por tanto la capacidad del sistema completo. A pesar de las modificaciones, la simetría se mantuvo, por lo que las rectas de análisis de la zona irreducible de Brillouin son las mismas que para el caso de la celda analizada en la sección \ref{sec:celdas-orlandi}.
+La búsqueda de estructuras que requirieran un menor tamaño de celda unitaria para lograr zonas prohibidas en frecuencias bajas, impulsó a Fei-Ran Yang, Kuang-Ping Ma, Yongxi Qian y Tatsuo Itoh, en 1991, a presentar \cite{Yang:UCPBG} la geometría mostrada en la Figura \ref{fig:celda-yang}. En la misma, como se puede observar, se intentó maximizar la longitud de los puentes, estableciendo lo que se conoce como un \textit{inset} en el parche \textit{microstrip}. De esta forma, el parche puede crecer, y por tanto aumentar la capacidad, sin que por ello la inductancia deba disminuir. Esto permite, además, que los parches de las distintas celdas unitarias se ubiquen a corta distancia unos de otros, aumentando entonces el acoplamiento capacitivo entre ellos, y por tanto la capacidad del sistema completo. A pesar de las modificaciones, la simetría se mantuvo, por lo que las rectas de análisis de la zona irreducible de Brillouin son las mismas que para el caso de la celda analizada en la Sección \ref{sec:celdas-orlandi}.
 
 \begin{figure}[h]
 	\centering
@@ -576,9 +576,9 @@ La búsqueda de estructuras que requirieran un menor tamaño de celda unitaria p
 	\label{fig:celda-yang}
 \end{figure}
 
-Aplicando, nuevamente el análisis de autovalores con condiciones de borde periódicas, se puede observar el comportamiento de los campos, más complejo que en la celda unitaria analizada antes. El mismo se muestra en la figura \ref{fig:yang-analisis-campos}.
+Aplicando, nuevamente el análisis de autovalores con condiciones de borde periódicas, se puede observar el comportamiento de los campos, más complejo que en la celda unitaria analizada antes. El mismo se muestra en la Figura \ref{fig:yang-analisis-campos}.
 
-Para el primer modo de propagación, resuelta evidente que, como en la estructura de parches cuadrados unidos por puentes analizada antes, el campo eléctrico es principalmente normal al plano sobre el que se ubica la estructura, y se ubica mayormente bajo el parche, donde se presenta el efecto de placas planas paralelas. Sin embargo, debido  a que ahora los puentes parten desde el interior del parche, existen también componentes tangenciales a la superficie. Estas componentes, como se puede observar en la figura \ref{fig:yang-analisis-campos} b) (para el primer modo) y f) (para el segundo modo), son muy notorias en los bordes de la celda unitaria, por lo que los efectos de acoplamiento capacitivo mutuo entre celdas son mucho más notorios que en la celda analizada antes.
+Para el primer modo de propagación, resuelta evidente que, como en la estructura de parches cuadrados unidos por puentes analizada antes, el campo eléctrico es principalmente normal al plano sobre el que se ubica la estructura, y se ubica mayormente bajo el parche, donde se presenta el efecto de placas planas paralelas. Sin embargo, debido  a que ahora los puentes parten desde el interior del parche, existen también componentes tangenciales a la superficie. Estas componentes, como se puede observar en la Figura \ref{fig:yang-analisis-campos} b) (para el primer modo) y f) (para el segundo modo), son muy notorias en los bordes de la celda unitaria, por lo que los efectos de acoplamiento capacitivo mutuo entre celdas son mucho más notorios que en la celda analizada antes.
 
 \begin{figure}[h]
 	\centering
@@ -589,7 +589,7 @@ Para el primer modo de propagación, resuelta evidente que, como en la estructur
 
 Los campos magnéticos, por otro lado, para el primer modo de propagación son muy similares a los que presenta la celda analizada antes, incluyendo su variación temporal, que puede verse en las figuras \ref{fig:yang-analisis-campos-fases} c) y d) para dos tiempos distintos dentro del periodo. En el primero de ellos, cuando el campo eléctrico tiene amplitud máxima sobre el parche (figura a)), la corriente saliente al parche a través de los puentes horizontales crece. De la misma forma, cuando la tensión en el parche decrece a su mínimo, la corriente entrante al parche es máxima.
 
-Para el segundo modo de propagación, el campo eléctrico, en promedio (figura \ref{fig:yang-analisis-campos} e) y f)) tiene un comportamiento muy similar al primer modo de propagación, pero como se puede observar en las figuras correspondientes de la figura \ref{fig:yang-analisis-campos-fases}, para tiempos distintos, el campo es mayor, alternadamente, en la parte superior e inferior de los parches. El campo magnético normal a superficie, en promedio, se puede observar, para este modo de propagación, presente en todas las aperturas metálicas de la celda unitaria, indicando que sobre los parches y los bordes del parche circula una corriente notoria. En las figuras \ref{fig:yang-analisis-campos-fases} g) y h) se puede observar el campo magnético para dos momentos de tiempo distinto. Este campo magnético sugiere que en los puentes horizontales hay corrientes en ambas direcciones en todo momento (debido a que las dos aperturas que lo rodean presentan un campo magnético normal saliente), mientras que los puentes verticales poseen corrientes en un único sentido y, al contrario que para el caso de los puentes horizontales del primer modo, en este caso el sentido es el mismo.
+Para el segundo modo de propagación, el campo eléctrico, en promedio (Figura \ref{fig:yang-analisis-campos} e) y f)) tiene un comportamiento muy similar al primer modo de propagación, pero como se puede observar en las figuras correspondientes de la Figura \ref{fig:yang-analisis-campos-fases}, para tiempos distintos, el campo es mayor, alternadamente, en la parte superior e inferior de los parches. El campo magnético normal a superficie, en promedio, se puede observar, para este modo de propagación, presente en todas las aperturas metálicas de la celda unitaria, indicando que sobre los parches y los bordes del parche circula una corriente notoria. En las figuras \ref{fig:yang-analisis-campos-fases} g) y h) se puede observar el campo magnético para dos momentos de tiempo distinto. Este campo magnético sugiere que en los puentes horizontales hay corrientes en ambas direcciones en todo momento (debido a que las dos aperturas que lo rodean presentan un campo magnético normal saliente), mientras que los puentes verticales poseen corrientes en un único sentido y, al contrario que para el caso de los puentes horizontales del primer modo, en este caso el sentido es el mismo.
 
 \begin{figure}[h]
 	\centering
@@ -599,17 +599,17 @@ Para el segundo modo de propagación, el campo eléctrico, en promedio (figura \
 \end{figure}
 
 
-Se debe tener en cuenta que el uso de esta estructura presenta mayores dificultades, especialmente cuando su construcción se realiza por técnicas rudimentarias. Sin embargo, gracias a un mejor aprovechamiento del espacio, que permiten obtener una mayor capacidad e inductancia por celda unitaria, la geometría permite diseñar celdas unitarias más pequeñas para lograr zonas prohibidas para frecuencias de microondas que las que se pueden lograr utilizando la geometría analizada en la sección \ref{sec:celdas-orlandi}.
+Se debe tener en cuenta que el uso de esta estructura presenta mayores dificultades, especialmente cuando su construcción se realiza por técnicas rudimentarias. Sin embargo, gracias a un mejor aprovechamiento del espacio, que permiten obtener una mayor capacidad e inductancia por celda unitaria, la geometría permite diseñar celdas unitarias más pequeñas para lograr zonas prohibidas para frecuencias de microondas que las que se pueden lograr utilizando la geometría analizada en la Sección \ref{sec:celdas-orlandi}.
 
 
 
 \section{Modelado circuital}
 
-La forma más sencilla de modelar el comportamiento resonante es la representación circuital, como la discutida en la sección \ref{sec:modelo_analitico}. En la misma deben intervenir capacitores e inductores con valores seleccionados en función del comportamiento de la energía en la estructura. Si bien los efectos de altas frecuencias no podrán ser analizados bajo esta representación, dado que no se consideran parámetros distribuidos ni se tiene en cuenta la variación de las capacidades e inductancias asociadas en función de la frecuencia, sí debería ser posible observar, al menos en forma general, los fenómenos analizados para las frecuencias de trabajo, de manera que se pueda abordar el problema intuitivamente.
+La forma más sencilla de modelar el comportamiento resonante es la representación circuital, como la discutida en la Sección \ref{sec:modelo_analitico}. En la misma deben intervenir capacitores e inductores con valores seleccionados en función del comportamiento de la energía en la estructura. Si bien los efectos de altas frecuencias no podrán ser analizados bajo esta representación, dado que no se consideran parámetros distribuidos ni se tiene en cuenta la variación de las capacidades e inductancias asociadas en función de la frecuencia, sí debería ser posible observar, al menos en forma general, los fenómenos analizados para las frecuencias de trabajo, de manera que se pueda abordar el problema intuitivamente.
 
-Para el caso particular de la celda de Yang presentada en la sección \ref{sec:celda-yang}, a raíz del análisis del comportamiento de los campos, resulta fácil comprender que, si bien los fenómenos que intervienen son numerosos, los más importantes están fuertemente vinculados a la circulación de corriente por el puente y al desarrollo del campo eléctrico entre las celdas.
+Para el caso particular de la celda de Yang presentada en la Sección \ref{sec:celda-yang}, a raíz del análisis del comportamiento de los campos, resulta fácil comprender que, si bien los fenómenos que intervienen son numerosos, los más importantes están fuertemente vinculados a la circulación de corriente por el puente y al desarrollo del campo eléctrico entre las celdas.
 
-Se propusieron distintos circuitos, de diversa complejidad, para representar a cada celda unitaria propuesta por Yang, basados principalmente en el circuito mostrado en la figura \ref{fig:circuito-equivalente-kim-parches} y se analizaron los parámetros $S_{21}$ de cada uno, en vistas de lograr un comportamiento similar al obtenido cuando se utiliza el software \textit{CST Microwave Studio} para simular la estructura. El primero de los circuitos propuestos se puede observar en la figura \ref{fig:primerCircuitoPropuesto}, junto con los parámetros geométricos que dan lugar a los valores de los componentes circuitales. En el mismo se intentó utilizar la estructura LC paralela resonante para obtener un \textit{bandgap} para el rango de frecuencias estudiado.
+Se propusieron distintos circuitos, de diversa complejidad, para representar a cada celda unitaria propuesta por Yang, basados principalmente en el circuito mostrado en la Figura \ref{fig:circuito-equivalente-kim-parches} y se analizaron los parámetros $S_{21}$ de cada uno, en vistas de lograr un comportamiento similar al obtenido cuando se utiliza el software \textit{CST Microwave Studio} para simular la estructura. El primero de los circuitos propuestos se puede observar en la Figura \ref{fig:primerCircuitoPropuesto}, junto con los parámetros geométricos que dan lugar a los valores de los componentes circuitales. En el mismo se intentó utilizar la estructura LC paralela resonante para obtener un \textit{bandgap} para el rango de frecuencias estudiado.
 
 \begin{figure}[h]
 	\centering
@@ -622,7 +622,7 @@ La estructura LC paralela posee una frecuencia de resonancia en $f=1/(2 \pi \sqr
 
 Por otro lado, la existencia de una capacidad de las celdas contra el plano de tierra da lugar, al menos para las bajas frecuencias, a un comportamiento pasabajos, debido a la relación entre los componentes $L_b$ y $C_p$.
 
-Los valores geométricos de la celda unitaria utilizada como testigo son los que se muestran en la tabla \ref{table:CeldaUnitariaAnalisisiCircuital}, en función de los valores descriptos en la figura \ref{fig:primerCircuitoPropuesto}. Se consideró la permitividad relativa del FR-4, de $4.4$.
+Los valores geométricos de la celda unitaria utilizada como testigo son los que se muestran en la tabla \ref{table:CeldaUnitariaAnalisisiCircuital}, en función de los valores descriptos en la Figura \ref{fig:primerCircuitoPropuesto}. Se consideró la permitividad relativa del FR-4, de $4.4$.
 
 \begin{table}
 	\centering
@@ -679,7 +679,7 @@ El valor de la capacidad entre las protuberancias de las celdas unitarias, $C_g$
 C_{g} = \frac{d_w\epsilon_0(1+\epsilon_r)}{\pi}\cosh^{-1}\left(\frac{2 d_w + g}{g}\right).
 \end{equation}
 
-Además, se utilizó también \textit{Q3D Extractor} para obtener un valor aproximado de capacidad entre dos celdas unitarias, utilizando la geometría mostrada en la figura \ref{fig:capacidad-cg-Q3D}. Se consideró, tanto en la ecuación \ref{eq:cgap1-circuital} como en la simulación, que la principal responsabilidad por la capacidad entre celdas vecinas recae sobre las esquinas más próximas de las celdas unitarias. Además, para la simulación fue necesario eliminar el puente \textit{microstrip} que las conectaba, debido a que, dado que la simulación es cuasiestática, si el conductor es el mismo, la capacidad resulta nula.
+Además, se utilizó también \textit{Q3D Extractor} para obtener un valor aproximado de capacidad entre dos celdas unitarias, utilizando la geometría mostrada en la Figura \ref{fig:capacidad-cg-Q3D}. Se consideró, tanto en la ecuación \ref{eq:cgap1-circuital} como en la simulación, que la principal responsabilidad por la capacidad entre celdas vecinas recae sobre las esquinas más próximas de las celdas unitarias. Además, para la simulación fue necesario eliminar el puente \textit{microstrip} que las conectaba, debido a que, dado que la simulación es cuasiestática, si el conductor es el mismo, la capacidad resulta nula.
 
 \begin{figure}[h]
 	\centering
@@ -725,7 +725,7 @@ Además, se utilizó el software de simulación \textit{Q3D Extractor} para obte
 	\label{table:Cp-modelo1-circuital}
 \end{table}
 
-Tras la estimación de los valores circuitales correspondientes, se debe analizar el comportamiento del parámetro $S_{21}$ de la estructura, para estudiar el efecto de atenuación. El mismo se muestra en la figura \ref{fig:s21-modelo1}, donde se grafica, además, el comportamiento de este parámetro según simulaciones de onda completa realizadas con \textit{CST Microwave Studio}, utilizando FEM (\textit{Finite Elements Method}), que es un método numérico en el dominio de la frecuencia. Como resultaba previsible, la frecuencia de resonancia cumple, al menos en forma aproximada (sin considerar más efectos que los expuestos hasta el momento) que $1.8\;GHz \approx 1/(2\pi\sqrt{L_{b} 2C_{g}}) \leq 3.75 \;GHz $, según los máximos y mínimos valores posibles de $L_b$ y $C_g$ mostrados en las tablas \ref{table:Lb} y \ref{table:Cg} respectivamente.
+Tras la estimación de los valores circuitales correspondientes, se debe analizar el comportamiento del parámetro $S_{21}$ de la estructura, para estudiar el efecto de atenuación. El mismo se muestra en la Figura \ref{fig:s21-modelo1}, donde se grafica, además, el comportamiento de este parámetro según simulaciones de onda completa realizadas con \textit{CST Microwave Studio}, utilizando FEM (\textit{Finite Elements Method}), que es un método numérico en el dominio de la frecuencia. Como resultaba previsible, la frecuencia de resonancia cumple, al menos en forma aproximada (sin considerar más efectos que los expuestos hasta el momento) que $1.8\;GHz \approx 1/(2\pi\sqrt{L_{b} 2C_{g}}) \leq 3.75 \;GHz $, según los máximos y mínimos valores posibles de $L_b$ y $C_g$ mostrados en las tablas \ref{table:Lb} y \ref{table:Cg} respectivamente.
 
 \begin{figure}[h]
 	\centering
@@ -736,7 +736,7 @@ Tras la estimación de los valores circuitales correspondientes, se debe analiza
 
 Como se puede observar, el comportamiento del modelo circuital difiere del obtenido mediante la simulación de onda completa, en particular en lo que respecta a la posición de la frecuencia de resonancia y al comportamiento en altas frecuencias, donde resulta esperable que el \textit{bandgap} ya no sea observable.
 
-Bajo estas consideraciones, resulta menester considerar más condiciones que las seleccionadas inicialmente, nuevamente en base al circuito \ref{fig:circuito-equivalente-kim-parches}. Si se asume que las esquinas presentan una inductancia que no resulta despreciable, la misma resonará en serie con el capacitor $C_g$, imponiendo una menor impedancia para un rango de frecuencias, habilitando un camino de corriente, y mejorando la transferencia a través de la celda unitaria, lo que efectivamente limitaría el ancho de banda del \textit{bandgap}. El circuito propuesto se muestra en la figura \ref{fig:modelo-circuital-con-lw}. 
+Bajo estas consideraciones, resulta menester considerar más condiciones que las seleccionadas inicialmente, nuevamente en base al circuito \ref{fig:circuito-equivalente-kim-parches}. Si se asume que las esquinas presentan una inductancia que no resulta despreciable, la misma resonará en serie con el capacitor $C_g$, imponiendo una menor impedancia para un rango de frecuencias, habilitando un camino de corriente, y mejorando la transferencia a través de la celda unitaria, lo que efectivamente limitaría el ancho de banda del \textit{bandgap}. El circuito propuesto se muestra en la Figura \ref{fig:modelo-circuital-con-lw}. 
 
 \begin{figure}[h]
 	\centering
@@ -745,7 +745,7 @@ Bajo estas consideraciones, resulta menester considerar más condiciones que las
 	\label{fig:modelo-circuital-con-lw}
 \end{figure}
 
-Si de esta estructura sólo se analiza intuitivamente el fenómeno de resonancia serie, se puede trabajar sobre el circuito mostrado en la figura \ref{fig:p13-p14-sdf} a), cuya gráfica de parámetro S12 se observa en la figura \ref{fig:p13-p14-sdf} b). Para el caso graficado, la frecuencia de resonancia serie se ubica en aproximadamente $6.7\; GHz$, donde se manifiesta el efecto descripto.
+Si de esta estructura sólo se analiza intuitivamente el fenómeno de resonancia serie, se puede trabajar sobre el circuito mostrado en la Figura \ref{fig:p13-p14-sdf} a), cuya gráfica de parámetro S12 se observa en la Figura \ref{fig:p13-p14-sdf} b). Para el caso graficado, la frecuencia de resonancia serie se ubica en aproximadamente $6.7\; GHz$, donde se manifiesta el efecto descripto.
 
 \begin{figure}[H]
 	\centering 
@@ -783,7 +783,7 @@ La frecuencia de resonancia serie resulta, entonces, de
 
 que, para los parámetros geométricos establecidos, varía entre $3.6\;GHz$ y $8\;GHz$. La amplitud del rango de valores posibles se debe a la propia incertidumbre del valor la capacidad $C_g$.
 
-Sin embargo, la aparición de estas nuevas inductancias $L_{w}$ modificará fuertemente la frecuencia de resonancia del circuito LC paralelo analizado antes. Para este nuevo circuito, la inductancia vista por sus terminales está dada por $L_{b}+2 L_{w}/2$, debido a que por los componentes circuitales correspondientes a las esquinas sólo circula la mitad de la corriente que lo hace por la inductancia central. El valor de la frecuencia de resonancia, entonces, debido al aumento de la inductancia equivalente, disminuye, para adoptar valores entre $1.4\;GHz$ y $2.6\;GHz$. Este mismo cambio de resonancia se observaría si las inductancias $L_w$ estuvieran dispuestas sobre la rama central, como se muestra en la figura \ref{fig:res-serie-p21p22}, lo cual valida el análisis, debido a que el hecho de que no estén en serie con los capacitores elimina el efecto de resonancia LC.
+Sin embargo, la aparición de estas nuevas inductancias $L_{w}$ modificará fuertemente la frecuencia de resonancia del circuito LC paralelo analizado antes. Para este nuevo circuito, la inductancia vista por sus terminales está dada por $L_{b}+2 L_{w}/2$, debido a que por los componentes circuitales correspondientes a las esquinas sólo circula la mitad de la corriente que lo hace por la inductancia central. El valor de la frecuencia de resonancia, entonces, debido al aumento de la inductancia equivalente, disminuye, para adoptar valores entre $1.4\;GHz$ y $2.6\;GHz$. Este mismo cambio de resonancia se observaría si las inductancias $L_w$ estuvieran dispuestas sobre la rama central, como se muestra en la Figura \ref{fig:res-serie-p21p22}, lo cual valida el análisis, debido a que el hecho de que no estén en serie con los capacitores elimina el efecto de resonancia LC.
 
 \begin{figure}[H]
 	\centering 
@@ -791,14 +791,14 @@ Sin embargo, la aparición de estas nuevas inductancias $L_{w}$ modificará fuer
 		\label{fig:modelo-circuital-resonancia-paralela-p13-p14}
 		\includegraphics[width=0.45\textwidth]{Fundamentos/circuito-equivalente-celda-YANG-7.pdf}}
 	\hspace{0pt}
-	\subfigure[Parámetro $S_{21}$ del circuito, comparado con el comportamiento mostrado en la figura \ref{fig:s21-modelo1}.]{
+	\subfigure[Parámetro $S_{21}$ del circuito, comparado con el comportamiento mostrado en la Figura \ref{fig:s21-modelo1}.]{
 		\label{fig:modelo-circuital-resonancia-paralela-p13-p14-s12}
 		\includegraphics[width=0.45\textwidth]{Modelado/3-4-21-22.pdf}}
 	\caption{Análisis del efecto sobre la resonancia LC paralelo de las inductancias de ala consideradas.}
 	\label{fig:res-serie-p21p22}
 \end{figure}
 
-En la figura \ref{fig:modelo-circuital-resonancia-serie-graficos} se pueden observar que la composición de los dos efectos más importantes analizados hasta el momento (las resonancias serie y paralela) da lugar a un comportamiento similar a transferencia del circuito analizado.
+En la Figura \ref{fig:modelo-circuital-resonancia-serie-graficos} se pueden observar que la composición de los dos efectos más importantes analizados hasta el momento (las resonancias serie y paralela) da lugar a un comportamiento similar a transferencia del circuito analizado.
 
 \begin{figure}[h]
 	\centering
@@ -807,7 +807,7 @@ En la figura \ref{fig:modelo-circuital-resonancia-serie-graficos} se pueden obse
 	\label{fig:modelo-circuital-resonancia-serie-graficos}
 \end{figure}
 
-En este punto, es posible obtener el diagrama de dispersión en base a un método similar al utilizado para obtener de la figura \ref{fig:diagDisp-calculado-celdafacil}, a efectos puramente ilustrativos, y utilizando el circuito de la figura \ref{fig:modelo-circuital-con-lw}. Para el mismo, los valores de impedancia y admitancia por unidad de longitud resultan
+En este punto, es posible obtener el diagrama de dispersión en base a un método similar al utilizado para obtener de la Figura \ref{fig:diagDisp-calculado-celdafacil}, a efectos puramente ilustrativos, y utilizando el circuito de la Figura \ref{fig:modelo-circuital-con-lw}. Para el mismo, los valores de impedancia y admitancia por unidad de longitud resultan
 
 \begin{align}
 	Z' a &= j\omega L_c + j\omega \frac{L_b - \omega^2 L_w C_g}{1-\omega^2 C_g (L_w + 2 L_b)}, \\
@@ -821,7 +821,7 @@ por lo que el valor de la constante de propagación $\gamma$ resulta
 	\gamma = \sqrt{-Z' Y'} = \frac{\omega}{a} \sqrt{L_c C_c + C_c \frac{L_b - \omega^2 L_w C_g L_b}{1-\omega^2(L_w C_g + 2 L_b C_g)}},
 \end{align}
 
-cuya gráfica se puede observar en la figura \ref{fig:grafica-diagdisp-celdaYang-teorica}. Resulta importante recordar que, si bien la gráfica es obtenida en base a los valores circuitales, la misma pierde validez si no se cumple la hipótesis descripta antes, que indica que $a < \lambda_g/4$, por lo que sólo se puede confiar en los valores bajos de $\beta$.
+cuya gráfica se puede observar en la Figura \ref{fig:grafica-diagdisp-celdaYang-teorica}. Resulta importante recordar que, si bien la gráfica es obtenida en base a los valores circuitales, la misma pierde validez si no se cumple la hipótesis descripta antes, que indica que $a < \lambda_g/4$, por lo que sólo se puede confiar en los valores bajos de $\beta$.
 
 \begin{figure}[h]
 	\centering
@@ -830,17 +830,17 @@ cuya gráfica se puede observar en la figura \ref{fig:grafica-diagdisp-celdaYang
 	\label{fig:grafica-diagdisp-celdaYang-teorica}
 \end{figure}
 
-Resulta ilustrativo comparar el diagrama de dispersión obtenido con la gráfica del parámetro $S_{21}$ en función de la frecuencia de la figura \ref{fig:modelo-circuital-resonancia-serie-graficos}, dado que si bien el análisis es diferente, la situación física es la misma. La comparación se observa en la figura \ref{fig:diagDisp-vs-S21}, donde el \textit{bandgap} está marcado en un tono más oscuro. Se observa que el mismo comienza en la frecuencia de resonancia paralela, y continúa hasta las inmediaciones de la frecuencia de resonancia serie analizada antes.
+Resulta ilustrativo comparar el diagrama de dispersión obtenido con la gráfica del parámetro $S_{21}$ en función de la frecuencia de la Figura \ref{fig:modelo-circuital-resonancia-serie-graficos}, dado que si bien el análisis es diferente, la situación física es la misma. La comparación se observa en la Figura \ref{fig:diagDisp-vs-S21}, donde el \textit{bandgap} está marcado en un tono más oscuro. Se observa que el mismo comienza en la frecuencia de resonancia paralela, y continúa hasta las inmediaciones de la frecuencia de resonancia serie analizada antes.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{Modelado/diagDisp-vs-S21.pdf}
-	\caption{Comparación del diagrama de dispersión obtenido de la ecuación \ref{eq:eq-dispersion-teorica-yang} y el obtenido mediante simulación del parámetro $S_{21}$ de la figura \ref{fig:modelo-circuital-resonancia-serie-graficos}.}
+	\caption{Comparación del diagrama de dispersión obtenido de la ecuación \ref{eq:eq-dispersion-teorica-yang} y el obtenido mediante simulación del parámetro $S_{21}$ de la Figura \ref{fig:modelo-circuital-resonancia-serie-graficos}.}
 	\label{fig:diagDisp-vs-S21}
 \end{figure}
 
 
-Queda aún por explicar el comportamiento de la transferencia en la banda ubicada entre las dos frecuencias de resonancia, donde los efectos no pueden considerarse fruto de la relación entre los elementos de un subconjunto del circuito. Resulta necesario tener en cuenta la inductancia que impone el parche central, análoga a la que imponen las esquinas de la celda unitaria. Esto obliga a que la capacidad de la celda unitaria no sea única y centralizada, como hasta el momento, sino que debe estar correctamente distribuida en la geometría: parte de la capacidad se debe al aporte de las esquinas, y otra parte al parche central. El circuito, más complejo, se muestra en la figura \ref{fig:modelo-circuital-todojunto-sinR}.
+Queda aún por explicar el comportamiento de la transferencia en la banda ubicada entre las dos frecuencias de resonancia, donde los efectos no pueden considerarse fruto de la relación entre los elementos de un subconjunto del circuito. Resulta necesario tener en cuenta la inductancia que impone el parche central, análoga a la que imponen las esquinas de la celda unitaria. Esto obliga a que la capacidad de la celda unitaria no sea única y centralizada, como hasta el momento, sino que debe estar correctamente distribuida en la geometría: parte de la capacidad se debe al aporte de las esquinas, y otra parte al parche central. El circuito, más complejo, se muestra en la Figura \ref{fig:modelo-circuital-todojunto-sinR}.
 
 \begin{figure}[h]
 	\centering
@@ -851,7 +851,7 @@ Queda aún por explicar el comportamiento de la transferencia en la banda ubicad
 
 Se puede observar que se agregaron las capacidades de las secciones de las esquinas ($C_w$), y se ubicaron en un nodo intermedio, entre la capacidad de gap $C_g$ y la capacidad del bloque central $C_c$, que ahora queda redefinida, dado que deja de representar a toda la superficie de la cara superior de la celda unitaria, para restringirse al cuadro central. Este cuadro, además, ahora presenta inductancia $L_c$. Además, se tuvo en cuenta la capacidad contra el plano de tierra del puente, $C_b$. Finalmente, se consideró el efecto de aquellas esquinas que no poseen una celda vecina, lo que aumenta la capacidad de la esquina (debido al efecto de \textit{fringe}) y la inductancia a considerar. Estos nuevos valores están representados por $C'_w$ y $L'_w$, y resultan importantes debido a que esta capacidad e inductancia resuenan a la frecuencia de interés, generando un camino de baja impedancia para la corriente y disminuyendo, por tanto, la transferencia.
 
-El comportamiento del parámetro S21 se puede observar en la figura \ref{fig:s21-total-sin-R}. En la misma, se destaca que la frecuencia de resonancia, asi como los efectos para frecuencias cercanas a $6\; GHz$, se predicen adecuadamente, aunque no así los efectos de orden superior para esas frecuencias.
+El comportamiento del parámetro S21 se puede observar en la Figura \ref{fig:s21-total-sin-R}. En la misma, se destaca que la frecuencia de resonancia, asi como los efectos para frecuencias cercanas a $6\; GHz$, se predicen adecuadamente, aunque no así los efectos de orden superior para esas frecuencias.
 
 \begin{figure}[h]
 	\centering
@@ -883,7 +883,7 @@ Dicha conductancia puede ser calculada en base a la tangente de pérdidas del ma
 
 Para el caso de FR-4, la tangente de pérdidas posee el valor de 0.017.
 
-El circuito final, considerando resistencias, se puede observar en la figura \ref{fig:modelo-circuital-todojunto-conR}.
+El circuito final, considerando resistencias, se puede observar en la Figura \ref{fig:modelo-circuital-todojunto-conR}.
 
 \begin{figure}[h]
 	\centering
@@ -892,7 +892,7 @@ El circuito final, considerando resistencias, se puede observar en la figura \re
 	\label{fig:modelo-circuital-todojunto-conR}
 \end{figure}
 
-Una comparación entre el comportamiento del parámetro $S_{21}$ considerando y sin considerar resistencias se puede observar en la figura \ref{fig:con-sin-R}.
+Una comparación entre el comportamiento del parámetro $S_{21}$ considerando y sin considerar resistencias se puede observar en la Figura \ref{fig:con-sin-R}.
 
 \begin{figure}[h]
 	\centering
@@ -922,7 +922,7 @@ Los valores finales de los parámetros utilizados para modelar la celda unitaria
 	\label{table:valoresFinalesModelo}
 \end{table}
 
-El comportamiento del parámetro $S_{21}$ según del modelo circuital se puede comparar al simulado utilizando \textit{CST Microwave Studio} en la figura \ref{fig:s12_modelo_final}.
+El comportamiento del parámetro $S_{21}$ según del modelo circuital se puede comparar al simulado utilizando \textit{CST Microwave Studio} en la Figura \ref{fig:s12_modelo_final}.
 
 \begin{figure}[h]
 	\centering
@@ -931,7 +931,7 @@ El comportamiento del parámetro $S_{21}$ según del modelo circuital se puede c
 	\label{fig:s12_modelo_final}
 \end{figure}
 
-Resulta posible, además, comparar las simulaciones de parámetros $S_{21}$ con las simulaciones de celdas unitarias con condiciones de borde periódicas. Para el caso de la celda unitaria analizada, el diagrama de dispersión obtenido a partir de la simulación tridimensional se muestra en la figura \ref{fig:diag-disp-yang-cst}, donde se puede observar que se da un \textit{bandgap} completo entre los $2.5$ y $3.7\;GHz$. En el análisis circuital sólo se consideró la dirección $\Gamma-X$, en la que el mismo comienza en $2\; GHz$. Una comparación de ambos análisis se puede observar en la figura \ref{fig:diag-disp-yang-vs-s21}.
+Resulta posible, además, comparar las simulaciones de parámetros $S_{21}$ con las simulaciones de celdas unitarias con condiciones de borde periódicas. Para el caso de la celda unitaria analizada, el diagrama de dispersión obtenido a partir de la simulación tridimensional se muestra en la Figura \ref{fig:diag-disp-yang-cst}, donde se puede observar que se da un \textit{bandgap} completo entre los $2.5$ y $3.7\;GHz$. En el análisis circuital sólo se consideró la dirección $\Gamma-X$, en la que el mismo comienza en $2\; GHz$. Una comparación de ambos análisis se puede observar en la Figura \ref{fig:diag-disp-yang-vs-s21}.
 
 \begin{figure}[h]
 	\centering
@@ -947,7 +947,7 @@ Resulta posible, además, comparar las simulaciones de parámetros $S_{21}$ con 
 	\label{fig:diag-disp-yang-vs-s21}
 \end{figure}
 
-Finalmente, es posible analizar el comportamiento del parámetro $S_{11}$, en vistas de comprobar que el comportamiento de \textit{bandgap} se debe principalmente al fenómeno de Bragg descripto en la sección \ref{sec_bragg}, que está vinculado a la resonancia en la celda unitaria, ya que esta es la principal causante de la variación de la velocidad de propagación en la estructura. La comparación de las gráficas según el modelo y según la simulación de onda completa realizada con CST se puede observar en la figura \ref{fig:s11_comparacion}, de la que se puede deducir que la energía, en el \textit{bandgap}, es devuelta casi en su totalidad al puerto de entrada.
+Finalmente, es posible analizar el comportamiento del parámetro $S_{11}$, en vistas de comprobar que el comportamiento de \textit{bandgap} se debe principalmente al fenómeno de Bragg descripto en la Sección \ref{sec_bragg}, que está vinculado a la resonancia en la celda unitaria, ya que esta es la principal causante de la variación de la velocidad de propagación en la estructura. La comparación de las gráficas según el modelo y según la simulación de onda completa realizada con CST se puede observar en la Figura \ref{fig:s11_comparacion}, de la que se puede deducir que la energía, en el \textit{bandgap}, es devuelta casi en su totalidad al puerto de entrada.
 
 \begin{figure}[h]
 	\centering
@@ -957,7 +957,7 @@ Finalmente, es posible analizar el comportamiento del parámetro $S_{11}$, en vi
 \end{figure}
 
 
-Bajo las mismas consideraciones, es posible analizar la fase de las señales que regresan al puerto de incidencia respecto de la señal original, para lo que resulta útil considerar la fase del parámetro $S_{11}$. Cuando la fase es de $180^{\circ}$, la señal es reflejada en contrafase, efectivamente impidiendo o dificultando la propagación de la onda. Las gráficas, también para el caso simulado y el modelado circuitalmente, se muestran en la figura \ref{fig:s11-fase-compracion}.
+Bajo las mismas consideraciones, es posible analizar la fase de las señales que regresan al puerto de incidencia respecto de la señal original, para lo que resulta útil considerar la fase del parámetro $S_{11}$. Cuando la fase es de $180^{\circ}$, la señal es reflejada en contrafase, efectivamente impidiendo o dificultando la propagación de la onda. Las gráficas, también para el caso simulado y el modelado circuitalmente, se muestran en la Figura \ref{fig:s11-fase-compracion}.
 
 \begin{figure}[h]
 	\centering
@@ -966,7 +966,7 @@ Bajo las mismas consideraciones, es posible analizar la fase de las señales que
 	\label{fig:s11-fase-compracion}
 \end{figure}
 
-El comportamiento del parámetro $S_{21}$ de un conjunto de celdas unitarias dispuestas sobre una fila se muestra, para distintas posiciones dentro de dicha fila, en la figura \ref{fig:s12-variacion-pila-super}. A medida que se simula un punto más lejano a la fuente, de forma que energía atraviese una mayor cantidad de capas del metamaterial propuesto, el efecto es más notorio: Si bien la magnitud se mantiene aproximadamente constante, el ancho de banda del \textit{bandgap} aumenta considerablemente.
+El comportamiento del parámetro $S_{21}$ de un conjunto de celdas unitarias dispuestas sobre una fila se muestra, para distintas posiciones dentro de dicha fila, en la Figura \ref{fig:s12-variacion-pila-super}. A medida que se simula un punto más lejano a la fuente, de forma que energía atraviese una mayor cantidad de capas del metamaterial propuesto, el efecto es más notorio: Si bien la magnitud se mantiene aproximadamente constante, el ancho de banda del \textit{bandgap} aumenta considerablemente.
 
 
 \begin{figure}[h]
@@ -982,7 +982,7 @@ El comportamiento del parámetro $S_{21}$ de un conjunto de celdas unitarias dis
 	\label{fig:s12-variacion-pila-super}	
 \end{figure}  
 
-Similar comportamiento, aunque con mayores pendientes, se observa en el caso en que se simula una estructura bidimensional con las mismas celdas unitarias. Para dos puertos separados por seis celdas unitarias, como se muestra en la figura \ref{fig:s12-estructura2d-super} b), el resultado es el mostrado en la figura a). Al igual que en análisis de la fila de celdas unitarias, para el caso de esta estructura bidimensional el ancho de banda del \textit{bandgap} es grande, y la pendiente inicial es muy notoria. Vale aclarar que los efectos alrededor de $1\; GHz$ se deben a resonancias intermedias de la estructura completa.
+Similar comportamiento, aunque con mayores pendientes, se observa en el caso en que se simula una estructura bidimensional con las mismas celdas unitarias. Para dos puertos separados por seis celdas unitarias, como se muestra en la Figura \ref{fig:s12-estructura2d-super} b), el resultado es el mostrado en la figura a). Al igual que en análisis de la fila de celdas unitarias, para el caso de esta estructura bidimensional el ancho de banda del \textit{bandgap} es grande, y la pendiente inicial es muy notoria. Vale aclarar que los efectos alrededor de $1\; GHz$ se deben a resonancias intermedias de la estructura completa.
 
 
 \begin{figure}[h]
@@ -1005,7 +1005,7 @@ Similar comportamiento, aunque con mayores pendientes, se observa en el caso en 
 
 Para el caso bidimensional, la discretización debe ser también bidimensional, lo que conlleva mayores esfuerzos numéricos. Un problema práctico cualquiera puede contener una enorme cantidad de celdas unitarias, con bordes complejos y medios inhomogéneos, lo que obliga a considerar las propiedades de las celdas unitarias de la forma lo más sencilla posible, y para aumentar la densidad de las mismas con el menor impacto posible en el tiempo de procesamiento.
 
-Existen numerosos métodos que utilizan líneas de transmisión para simular metamateriales, entre los que destacan el método de TMM (\textit{Transmission-Matrix Method}) y de TLM (\textit{Transmission-Line Matrix Method}). Si bien los nombres son similares, la resolución del problema varía fundamentalmente \cite{Caloz:ElectromagneticMetamaterials}. En este trabajo se desarrollará brevemente una variante del método TLM, implementada y explicada en detalle en la sección \ref{subsec_estudio_tlm}.
+Existen numerosos métodos que utilizan líneas de transmisión para simular metamateriales, entre los que destacan el método de TMM (\textit{Transmission-Matrix Method}) y de TLM (\textit{Transmission-Line Matrix Method}). Si bien los nombres son similares, la resolución del problema varía fundamentalmente \cite{Caloz:ElectromagneticMetamaterials}. En este trabajo se desarrollará brevemente una variante del método TLM, implementada y explicada en detalle en la Sección \ref{subsec_estudio_tlm}.
 
 El método de matrices\footnote{Aquí el término matrices se refiere a un conjunto bidimensional, y no a un objeto matemático.} de líneas de transmisión consiste en la discretización espacial del problema físico en pequeñas subceldas. El comportamiento de los campos electromagnéticos en las mismas se concentra en un nodo o punto en el espacio, y las relaciones de adyacencia entre ellas se modelan utilizando líneas de transmisión que vinculan los nodos. Estas líneas son capaces de transmitir impulsos cortos sin distorsión, y de distribuirlos, en cada uno de los nodos, de acuerdo a un algoritmo local para cada subcelda \cite{Caloz:ElectromagneticMetamaterials}, hacia cada uno de los nodos adyacentes. Este algoritmo local no es más que la multiplicación del pulso incidente por los parámetros S de transmisión y reflexión en cada tiempo, que se pueden obtener a partir del análisis de la celda y sus vecinas. De esta manera, se discretiza un circuito equivalente al problema físico a resolver, y se simula la propagación de ondas electromagnéticas a partir del \textit{scattering} de impulsos en una red $n$-dimensional de nodos unidos por lineas de transmisión.
 
@@ -1030,9 +1030,9 @@ La simulación se corre a través de un \textit{script} editable de Python, dond
 	\label{fig:esquema-ingreso-datos}
 \end{figure}
 
-Como se esquematiza en la figura \ref{fig:esquema-ingreso-datos}, la entrada de datos se realiza a través de un archivo con formato \textsc{.PGM} ASCII\footnote{El formato PGM es un antiguo formato de almacenamiento de imágenes en escala de grises. Estos archivos pueden ser modificados por programas de edición de imágenes, como Microsoft Paint y Kolourpaint, y además por editores de texto plano. Cuando se utiliza uno de estos últimos, se observa que las primeras líneas indican la cantidad de filas ($n$) y columnas ($m$) en que se disponen los pixeles de la imagen, y luego la lista de valores entre 1 y 255 que indican la opacidad/claridad del pixel. Los primeros $m$ valores corresponden a los pixeles, de izquierda a derecha, que corresponden a la primer fila; los siguientes $m$ valores corresponden a la segunda fila, etc.}, que establece una matriz de \textit{pixeles}, cada uno con un valor, entre 1 y 255, donde 1 representa el negro, 255 el blanco, y los valores intermedios corresponden a una escala de grises. El archivo se puede generar a partir de un programa de edición de imágenes, lo que facilita la creación de estructuras a simular, ya que la misma sólo debe ser dibujada con la resolución requerida. Si la imagen creada ocupa una mayor cantidad de \textit{pixeles} (tiene una mayor resolución), la granularidad espacial utilizada en la simulación será mayor, dado que existe una relación 1 a 1 entre la densidad de \textit{pixeles} gráficos y la discretización utilizada, lo que significa que la discretización temporal es realizada por el usuario en el momento de crear la imagen, y el mallado es rectangular y estático.
+Como se esquematiza en la Figura \ref{fig:esquema-ingreso-datos}, la entrada de datos se realiza a través de un archivo con formato \textsc{.PGM} ASCII\footnote{El formato PGM es un antiguo formato de almacenamiento de imágenes en escala de grises. Estos archivos pueden ser modificados por programas de edición de imágenes, como Microsoft Paint y Kolourpaint, y además por editores de texto plano. Cuando se utiliza uno de estos últimos, se observa que las primeras líneas indican la cantidad de filas ($n$) y columnas ($m$) en que se disponen los pixeles de la imagen, y luego la lista de valores entre 1 y 255 que indican la opacidad/claridad del pixel. Los primeros $m$ valores corresponden a los pixeles, de izquierda a derecha, que corresponden a la primer fila; los siguientes $m$ valores corresponden a la segunda fila, etc.}, que establece una matriz de \textit{pixeles}, cada uno con un valor, entre 1 y 255, donde 1 representa el negro, 255 el blanco, y los valores intermedios corresponden a una escala de grises. El archivo se puede generar a partir de un programa de edición de imágenes, lo que facilita la creación de estructuras a simular, ya que la misma sólo debe ser dibujada con la resolución requerida. Si la imagen creada ocupa una mayor cantidad de \textit{pixeles} (tiene una mayor resolución), la granularidad espacial utilizada en la simulación será mayor, dado que existe una relación 1 a 1 entre la densidad de \textit{pixeles} gráficos y la discretización utilizada, lo que significa que la discretización temporal es realizada por el usuario en el momento de crear la imagen, y el mallado es rectangular y estático.
 
-La lectura de la imagen del disco genera un objeto \textit{Superficie}, que almacena, en forma ordenada, los \textit{Pixeles} dibujados, que son objetos con características eléctricas variables, en función de su color en la imagen, como se muestra en la figura \ref{fig:tiposdepixeles}. En la misma se pueden observar 4 tipos de \textit{pixeles}:
+La lectura de la imagen del disco genera un objeto \textit{Superficie}, que almacena, en forma ordenada, los \textit{Pixeles} dibujados, que son objetos con características eléctricas variables, en función de su color en la imagen, como se muestra en la Figura \ref{fig:tiposdepixeles}. En la misma se pueden observar 4 tipos de \textit{pixeles}:
 
 \begin{figure}[h]
 	\centering
@@ -1051,7 +1051,7 @@ La lectura de la imagen del disco genera un objeto \textit{Superficie}, que alma
 
 Una vez cargada la imagen en memoria, creado el objeto \textit{Superficie} y los objetos \textit{Pixeles}, se los vincula.
 
-Como se observa en la figura \ref{fig:tiposdepixeles}, los pixeles metálicos (internos y de interfaz) tienen una capacidad y varias inductancias asociadas (una para cada dirección). Las mismas quedan descriptas en base a las ecuaciones \ref{eq:Cp_Lp}, y a partir de ellas es posible obtener una impedancia característica, como se muestra en la figura \ref{fig:modelo-con-lineas-de-transmision}, en base a las ecuaciones \ref{eq:capacidad-inductancia-impedancia-modelado}:
+Como se observa en la Figura \ref{fig:tiposdepixeles}, los pixeles metálicos (internos y de interfaz) tienen una capacidad y varias inductancias asociadas (una para cada dirección). Las mismas quedan descriptas en base a las ecuaciones \ref{eq:Cp_Lp}, y a partir de ellas es posible obtener una impedancia característica, como se muestra en la Figura \ref{fig:modelo-con-lineas-de-transmision}, en base a las ecuaciones \ref{eq:capacidad-inductancia-impedancia-modelado}:
 
 \begin{subequations}
 	\label{eq:capacidad-inductancia-impedancia-modelado}
@@ -1069,7 +1069,7 @@ Como se observa en la figura \ref{fig:tiposdepixeles}, los pixeles metálicos (i
 	\label{fig:modelo-con-lineas-de-transmision}
 \end{figure}
 
-Los pixeles interfaz poseen, además, una capacidad de \textit{fringe}, que se relaciona al comportamiento no-TEM de las líneas de campo cerca de los bordes de las estructuras \textit{microstrip}, mostrado en la figura \ref{fig:microstrip-campos}. La expresión de la capacidad de \textit{fringe} para cada borde es la siguiente \cite{Hammerstad:discont}, donde $s$ es la longitud de \textit{microstrip} sobre la que se desea calcular la capacidad de \textit{fringe} y $C'$ es la capacidad por unidad de longitud de las ecuaciones \ref{eq:capacidad-inductancia-impedancia-modelado}:
+Los pixeles interfaz poseen, además, una capacidad de \textit{fringe}, que se relaciona al comportamiento no-TEM de las líneas de campo cerca de los bordes de las estructuras \textit{microstrip}, mostrado en la Figura \ref{fig:microstrip-campos}. La expresión de la capacidad de \textit{fringe} para cada borde es la siguiente \cite{Hammerstad:discont}, donde $s$ es la longitud de \textit{microstrip} sobre la que se desea calcular la capacidad de \textit{fringe} y $C'$ es la capacidad por unidad de longitud de las ecuaciones \ref{eq:capacidad-inductancia-impedancia-modelado}:
 
 \begin{equation}
 	C_{fr} = C' h 0.102 \frac{s/h+0.106}{s/h+0.264} \left(1.166 + \frac{\epsilon_r+1}{\epsilon_r} (0.9+\ln(s/h+2.475)) \right)
@@ -1085,7 +1085,7 @@ Los pixeles interfaz poseen, además, una capacidad de \textit{fringe}, que se r
 Al momento de crear la superficie, además, se realizan dos acciones previas a la simulación:
 
 \begin{enumerate}
-	\item \textbf{Vincular capacitivamente los bordes de las estructuras metálicas}, como se indica en la figura \ref{fig:calculoCapacidadTLM}. Para esto se toman todos los bordes de las estructuras metálicas (los pixeles de tipo \textit{Interfaz}), y se recorre horizontal y verticalmente la matriz, una vez por dirección, vinculando los bordes interfaz de a pares, teniendo en cuenta que aquellos \textit{pixeles} de interfaz que corresponden a la misma estructura (a la misma isla metálica) no deben ser vinculados.
+	\item \textbf{Vincular capacitivamente los bordes de las estructuras metálicas}, como se indica en la Figura \ref{fig:calculoCapacidadTLM}. Para esto se toman todos los bordes de las estructuras metálicas (los pixeles de tipo \textit{Interfaz}), y se recorre horizontal y verticalmente la matriz, una vez por dirección, vinculando los bordes interfaz de a pares, teniendo en cuenta que aquellos \textit{pixeles} de interfaz que corresponden a la misma estructura (a la misma isla metálica) no deben ser vinculados.
 	
 	\begin{figure}[h]
 		\centering
@@ -1104,7 +1104,7 @@ Al momento de crear la superficie, además, se realizan dos acciones previas a l
 	
 	El valor de la capacidad total de acople se divide entre la cantidad de pares de pixeles que participan del cálculo, de manera que a cada par se le asigna una capacidad $C_g$, como se indica en la figura para los pixeles de color rojo.
 	
-	\item \textbf{Calcular las matrices S asociadas a cada pixel metálico.} Las matrices S son las matrices que, multiplicadas por un vector de tensiones incidentes, $V_i$ a cada pixel, devuelven un vector de igual cantidad de componentes de tensiones reflejadas, $V_r$, en los mismos, como se muestra en la ecuación \ref{eq:multiplicacion-matriz-s} y en la figura \ref{fig:esquema-matriz-s}. Cada uno de los elementos de estos vectores representan una dirección (izquierda, derecha, arriba y abajo) de la celda unitaria. Las expresiones de la matriz S son las mostradas en la ecuación \ref{eq:matriz-s-expresiones}:
+	\item \textbf{Calcular las matrices S asociadas a cada pixel metálico.} Las matrices S son las matrices que, multiplicadas por un vector de tensiones incidentes, $V_i$ a cada pixel, devuelven un vector de igual cantidad de componentes de tensiones reflejadas, $V_r$, en los mismos, como se muestra en la ecuación \ref{eq:multiplicacion-matriz-s} y en la Figura \ref{fig:esquema-matriz-s}. Cada uno de los elementos de estos vectores representan una dirección (izquierda, derecha, arriba y abajo) de la celda unitaria. Las expresiones de la matriz S son las mostradas en la ecuación \ref{eq:matriz-s-expresiones}:
 	
 	\begin{align}
 		\label{eq:multiplicacion-matriz-s}
@@ -1144,7 +1144,7 @@ Al momento de crear la superficie, además, se realizan dos acciones previas a l
 		\label{fig:esquema-matriz-s}
 	\end{figure}
 	
-	Se debe tener en cuenta que, para el caso de las líneas de transmisión que unen \textit{pixeles} metálicos (\textit{internos} y de \textit{interfaz}), como se muestra en la figura \ref{fig:modelo-con-lineas-de-transmision}, cada una de las 4 líneas de transmisión que confluyen en un nodo representante de un pixel son iguales, por lo que el valor de los elementos de la diagonal de la matriz S será $-0.5$, mientras que los elementos no diagonales valdrán $0.5$.
+	Se debe tener en cuenta que, para el caso de las líneas de transmisión que unen \textit{pixeles} metálicos (\textit{internos} y de \textit{interfaz}), como se muestra en la Figura \ref{fig:modelo-con-lineas-de-transmision}, cada una de las 4 líneas de transmisión que confluyen en un nodo representante de un pixel son iguales, por lo que el valor de los elementos de la diagonal de la matriz S será $-0.5$, mientras que los elementos no diagonales valdrán $0.5$.
 	
 	Además, se pueden establecer pérdidas para el transporte de tensión de un \textit{pixel} a otro, de manera que se puedan simular, de forma simplificada, las pérdidas por conductividad.
 	
@@ -1160,7 +1160,7 @@ Una vez creada la matriz a partir de la información obtenida de la imagen, se d
 
 La simulación es de tipo TLM, donde existe una tensión inicial impuesta para $t=0$, y elegida previamente al cálculo. A partir de la tensión ubicada en uno de los nodos, se calcula, en cada tiempo discreto, el valor de las tensiones incidentes a cada nodo, y a partir de las mismas, se calculan las tensiones reflejadas en todas las direcciones (\textit{scattering}), sumándose los efectos en todas ellas.
 
-Así, como se muestra en la figura \ref{fig:procedimiento-tlm}, si se inicia el cálculo en el nodo denominado $a$, se impondrá una tensión inicial en el mismo, que será la que se transmita a los nodos adyecentes ($t_{1_b}$), denominados $b_i$. Esta tensión será recibida por los nodos $b_i$, quienes multiplicarán las tensiones incidentes en todas las direcciones (en el tiempo $t_{2_a}$, los nodos $b$ sólo tienen una dirección de incidencia) por su matríz $S$ asociada, para obtener las tensiones reflejadas y transmitidas. Estas tensiones, en el tiempo siguiente ($t_{2_b}$) son las que se transmiten a los respectivos nodos adyacentes, $c_j$, quienes repetirán la operación. El cálculo proseguirá hasta que se interrumpa la simulación.
+Así, como se muestra en la Figura \ref{fig:procedimiento-tlm}, si se inicia el cálculo en el nodo denominado $a$, se impondrá una tensión inicial en el mismo, que será la que se transmita a los nodos adyecentes ($t_{1_b}$), denominados $b_i$. Esta tensión será recibida por los nodos $b_i$, quienes multiplicarán las tensiones incidentes en todas las direcciones (en el tiempo $t_{2_a}$, los nodos $b$ sólo tienen una dirección de incidencia) por su matríz $S$ asociada, para obtener las tensiones reflejadas y transmitidas. Estas tensiones, en el tiempo siguiente ($t_{2_b}$) son las que se transmiten a los respectivos nodos adyacentes, $c_j$, quienes repetirán la operación. El cálculo proseguirá hasta que se interrumpa la simulación.
 
 \begin{figure}[h]
 	\centering
@@ -1173,7 +1173,7 @@ Para el caso particular de los \textit{pixeles} de tipo \textit{interfaz}, exist
 
 Dado que el análisis es cuasiestático, debido a las dimensiones pequeñas de los \textit{gaps} y los Pixeles en comparación con la longitud de onda, se puede utilizar un modelo de bajas frecuencias de acoplamiento mutuo para describir el fenómeno de acoplamiento entre islas metálicas distintas. Este acoplamiento, en términos generales, se da por fenómenos inductivos y capacitivos al mismo tiempo. Si se considera que existe un elemento fuente y un elemento víctima del acoplamiento, se puede afirmar que cada uno de ellos expone una capacidad y una inductancia al ambiente, que son excitadas por los circuitos cercanos. El acoplamiento inductivo se debe a la inductancia mutua $M$ entre las inductancias expuestas de ambos, relacionada al campo magnético presente, mientras que el acoplamiento inductivo se debe a la capacidad de acople entre los circuitos ($C_{g}$).
 
-En términos generales, dado que los \textit{pixeles} y las estructuras son pequeñas y no están conectadas al plano de tierra, en general no existirá un acoplamiento inductivo notorio. Sí se presentará, debido a la cercanía entre las islas metálicas, un acoplamiento capacitivo de mayor magnitud. En vistas de simplificar los cálculos, y bajo estas consideraciones prácticas, será este el tipo de acoplamiento que se analizará, mostrado en la figura \ref{fig:acoplamiento-capacitivo-modelo}.
+En términos generales, dado que los \textit{pixeles} y las estructuras son pequeñas y no están conectadas al plano de tierra, en general no existirá un acoplamiento inductivo notorio. Sí se presentará, debido a la cercanía entre las islas metálicas, un acoplamiento capacitivo de mayor magnitud. En vistas de simplificar los cálculos, y bajo estas consideraciones prácticas, será este el tipo de acoplamiento que se analizará, mostrado en la Figura \ref{fig:acoplamiento-capacitivo-modelo}.
 
 \begin{figure}[h]
 	\centering
@@ -1183,7 +1183,7 @@ En términos generales, dado que los \textit{pixeles} y las estructuras son pequ
 \end{figure}
 
 
-En el mismo sentido, debido a que el efecto capacitivo de placas planas paralelas enfrentadas (relacionado a la capacidad de \textit{fringe}) es mucho mayor al de placas planas paralelas coplanares (relacionada a la capacidad entre islas metálicas cercanas), se puede considerar que el acoplamiento es de tipo capacitivo débil \cite{Tesche:EMC} (donde no se considerarán efectos de re-acoplamiento y acoplamiento inverso), lo que permite utilizar un modelo simplificado de acoplamiento, considerando fuentes controladas de corriente, mostrado en la figura \ref{fig:circuito-equivalente-acoplamiento-capacitivo-debil}. Los valores de las fuentes controladas se muestran en la ecuación \ref{eq:expresiones-fuentes-controladas}, aunque en términos prácticos el valor de $M$, la inductancia mutua, se despreciará, por lo que no existirá una fuente controlada de tensión.
+En el mismo sentido, debido a que el efecto capacitivo de placas planas paralelas enfrentadas (relacionado a la capacidad de \textit{fringe}) es mucho mayor al de placas planas paralelas coplanares (relacionada a la capacidad entre islas metálicas cercanas), se puede considerar que el acoplamiento es de tipo capacitivo débil \cite{Tesche:EMC} (donde no se considerarán efectos de re-acoplamiento y acoplamiento inverso), lo que permite utilizar un modelo simplificado de acoplamiento, considerando fuentes controladas de corriente, mostrado en la Figura \ref{fig:circuito-equivalente-acoplamiento-capacitivo-debil}. Los valores de las fuentes controladas se muestran en la ecuación \ref{eq:expresiones-fuentes-controladas}, aunque en términos prácticos el valor de $M$, la inductancia mutua, se despreciará, por lo que no existirá una fuente controlada de tensión.
 
 \begin{subequations}
 	\label{eq:expresiones-fuentes-controladas}
@@ -1216,9 +1216,9 @@ La tensión $v_f$ es la que desarrolla el capacitor de \textit{fringe} del \text
 	\rho =   \frac{|1/(j\omega C_{f-f})| - Z_0}{|1/(j\omega C_{f-f})| + Z_0}
 \end{align}
 
-Se debe tener en cuenta que, dado que la señal recorre un camino de $\Delta l / 2$ desde el nodo hasta el capacitor de \textit{fringe}, el cálculo de la tensión reflejada se debe realizar en $n\Delta t/2$. Esto es porque en el tiempo siguiente, exactamente un $\Delta t$ luego de enviada la señal, la tensión reflejada debe impactar en el nodo original, como se esquematizó sobre el \textit{pixel} metálico de la figura \ref{fig:modelo-con-lineas-de-transmision}.
+Se debe tener en cuenta que, dado que la señal recorre un camino de $\Delta l / 2$ desde el nodo hasta el capacitor de \textit{fringe}, el cálculo de la tensión reflejada se debe realizar en $n\Delta t/2$. Esto es porque en el tiempo siguiente, exactamente un $\Delta t$ luego de enviada la señal, la tensión reflejada debe impactar en el nodo original, como se esquematizó sobre el \textit{pixel} metálico de la Figura \ref{fig:modelo-con-lineas-de-transmision}.
 
-El resultado arrojado por la simulación será un archivo, de formato \textsc{.npy}, que es una matriz tridimensional, que puede ser considerada como un apilamiento, de altura igual a la cantidad de tiempos simulados, de matrices bidimensionales con largo y ancho iguales a los de la estructura, como se muestra en la figura \ref{fig:EstructuraTiemposMatrizNumpy}. En cada una de estas matrices bidimensionales, cada elemento posee un valor, que no es más que la tensión vista en ese nodo en el tiempo $t_k$ al que corresponde la altura $k$ en que se evalúa la matriz bidimensional. De ser necesario, se pueden establecer los parámetros de una ventana de Hanning para disminuir el comportamiento espúreo de alta frecuencia debido a la limitación en tiempo de la señal de salida.
+El resultado arrojado por la simulación será un archivo, de formato \textsc{.npy}, que es una matriz tridimensional, que puede ser considerada como un apilamiento, de altura igual a la cantidad de tiempos simulados, de matrices bidimensionales con largo y ancho iguales a los de la estructura, como se muestra en la Figura \ref{fig:EstructuraTiemposMatrizNumpy}. En cada una de estas matrices bidimensionales, cada elemento posee un valor, que no es más que la tensión vista en ese nodo en el tiempo $t_k$ al que corresponde la altura $k$ en que se evalúa la matriz bidimensional. De ser necesario, se pueden establecer los parámetros de una ventana de Hanning para disminuir el comportamiento espúreo de alta frecuencia debido a la limitación en tiempo de la señal de salida.
 
 \begin{figure}[h]
 	\centering
@@ -1227,7 +1227,7 @@ El resultado arrojado por la simulación será un archivo, de formato \textsc{.n
 	\label{fig:EstructuraTiemposMatrizNumpy}
 \end{figure}
 
-Los valores en tiempo discreto de la tensión en el nodo de entrada y en el nodo de salida se pueden observar en la figura \ref{fig:tlm_tiempo}. Aunque se excitó con un único pulso de amplitud 1 V, las sucesivas reflexiones sobre los nodos adyacentes modifican la tensión del nodo de entrada mientras dura la simulación. Como se puede observar, los valores de tensión en los nodos decrecen rápidamente, y el \textit{pixel} de salida tiene un retardo hasta recibir la onda de tensión, como es esperable.
+Los valores en tiempo discreto de la tensión en el nodo de entrada y en el nodo de salida se pueden observar en la Figura \ref{fig:tlm_tiempo}. Aunque se excitó con un único pulso de amplitud 1 V, las sucesivas reflexiones sobre los nodos adyacentes modifican la tensión del nodo de entrada mientras dura la simulación. Como se puede observar, los valores de tensión en los nodos decrecen rápidamente, y el \textit{pixel} de salida tiene un retardo hasta recibir la onda de tensión, como es esperable.
 
 
 \begin{figure}[htp]
@@ -1244,7 +1244,7 @@ Los valores en tiempo discreto de la tensión en el nodo de entrada y en el nodo
 \end{figure}
 
 
-El análisis de la tensión del nodo de salida, teniendo en cuenta la tensión del nodo de entrada aplicada, da lugar a una transferencia de tensión que, al aplicar la transformada de Fourier, y considerando impedancias de $50 \; \Omega$ permite obtener el parámetro $S_{12}$. En la figura \ref{fig:resultado_s12_tlm} se puede observar el resultado para el mismo caso analizado mediante elementos circuitales discretos. La comparación en la banda de frecuencia de interés se muestra en la figura b).
+El análisis de la tensión del nodo de salida, teniendo en cuenta la tensión del nodo de entrada aplicada, da lugar a una transferencia de tensión que, al aplicar la transformada de Fourier, y considerando impedancias de $50 \; \Omega$ permite obtener el parámetro $S_{12}$. En la Figura \ref{fig:resultado_s12_tlm} se puede observar el resultado para el mismo caso analizado mediante elementos circuitales discretos. La comparación en la banda de frecuencia de interés se muestra en la figura b).
 
 \begin{figure}[htp]
 	\centering 
