@@ -92,7 +92,7 @@ La relación entre la parte imaginaria y la parte real de la corriente total de 
 	\tan \; \delta &= \frac{\omega \epsilon'' + \sigma}{\omega \epsilon'}.
 \end{align}
 
-Cuando el material no es homogéneo, los coeficientes $\epsilon$ y $\mu$ dependen de la posición. Si, además, el material es anisotrópico, como en el caso de los cristales y gases ionizados, la relaciones expresadas antes entre los vectores de polarización ($\vec{P}_e$ y $\vec{P}_m$) y los campos no se cumplen, sino que deben ser expresadas como tensores de rango 2 (diadas), como se muestra en la ecuación \ref{eq:diadas}, explicitando así su dependencia de la dirección \cite{Collin:GuidedWaves}. Si, además, el material no es lineal, los coeficientes $\epsilon_{ij}$ y $\mu_{ij}$ pueden ser funciones de $\vec{E}$ y $\vec{H}$ respectivamente.
+Cuando el material no es homogéneo, los coeficientes $\epsilon$ y $\mu$ dependen de la posición. Si posee un comportamiento dispersivo, los mismos dependen de la frecuencia $\omega$. Si, además, el material es anisotrópico, como en el caso de los cristales y gases ionizados, la relaciones expresadas antes entre los vectores de polarización ($\vec{P}_e$ y $\vec{P}_m$) y los campos no se cumplen, sino que deben ser expresadas como tensores de rango 2 (diadas), como se muestra en la ecuación \ref{eq:diadas}, explicitando así su dependencia de la dirección \cite{Collin:GuidedWaves}. Si, además, el material no es lineal, los coeficientes $\epsilon_{ij}$ y $\mu_{ij}$ pueden ser funciones de $\vec{E}$ y $\vec{H}$ respectivamente.
 
 \begin{equation} \label{eq:diadas}
 \begin{bmatrix}
@@ -171,7 +171,7 @@ donde los autovectores son los valores que toma $\vec{H}(\vec{r})$, es decir, lo
 	\label{fig:condiciones_borde}
 \end{figure}
 
-Si se considera una interfaz entre dos medios, como la que se muestra en la figura \ref{fig:condiciones_borde}, a partir de las ecuaciones de Maxwell y los teoremas integrales, se pueden deducir las siguientes condiciones de borde:
+Si se considera una interfaz entre dos medios, como la que se muestra en la Figura \ref{fig:condiciones_borde}, a partir de las ecuaciones de Maxwell y los teoremas integrales, se pueden deducir las siguientes condiciones de borde:
 \begin{subequations}
 	\label{eq:condiciones_borde}
 	\begin{align}
@@ -340,7 +340,7 @@ Existen estructuras abiertas que son capaces de mantener el campo electromagnét
 
 En la actualidad, las ondas de superficie se clasifican en ondas Zenneck (utilizadas en bajas frecuencias, cuando los medios intervinientes poseen altas pérdidas), ondas de tipo resonante (que surgen cuando una onda plana incide sobre un material periódico), ondas de superficie no lineales (que se generan en medios no lineales), plasmones (utilizados en altas frecuencias, cuando los medios tienen bajas pérdidas) y ondas de Dyakonov (donde al menos uno de los materiales es anisotrópico), entre otras.
 
-Para este trabajo, resultan de importancia las ondas de Zenneck, ya que permiten explicar el comportamiento de las ondas sobre una placa dieléctrica fina que posee un plano conductor en una de sus caras. Una representación tridimensional de las mismas se puede observar en la figura \ref{fig:onda-superficie-3d}.
+Para este trabajo, resultan de importancia las ondas de Zenneck, ya que permiten explicar el comportamiento de las ondas sobre una placa dieléctrica fina que posee un plano conductor en una de sus caras. Una representación tridimensional de las mismas se puede observar en la Figura \ref{fig:onda-superficie-3d}.
 
 \begin{figure}[htp]
 	\centering
@@ -350,7 +350,7 @@ Para este trabajo, resultan de importancia las ondas de Zenneck, ya que permiten
 	\label{fig:onda-superficie-3d}
 \end{figure}
 
-Si se considera que una onda plana incide con ángulo de Brewster (concepto desarrollado en el anexo \ref{sec:incidencia-onda-plana-interfaz}) en modo TM sobre una interfaz entre dos medios de bajas pérdidas ($\epsilon'' \ll \epsilon'$), cada uno con una permitividad eléctrica $\epsilon_i$ y una permeabilidad magnética $\mu_i$, $i=1,2$, como indica la figura \ref{fig:onda-superficie-brewster}, no existirá energía reflejada. De esta forma, toda la energía incidente es entregada a la interfaz, y se obtienen las expresiones \ref{eq:ondas-superficie-campos}, donde no existen componentes reflejadas y donde T es el factor de transmisión. Con el fin de simplificar dichas ecuaciones, se considera que el medio 1 es aire, de modo que $\epsilon_1 = \epsilon_0$, $\mu_1 = \mu_0$ y, en consecuencia, $\eta_1 = \eta_0$.
+Si se considera que una onda plana incide con ángulo de Brewster (concepto desarrollado en el anexo \ref{sec:incidencia-onda-plana-interfaz}) en modo TM sobre una interfaz entre dos medios de bajas pérdidas ($\epsilon'' \ll \epsilon'$), cada uno con una permitividad eléctrica $\epsilon_i$ y una permeabilidad magnética $\mu_i$, $i=1,2$, como indica la Figura \ref{fig:onda-superficie-brewster}, no existirá energía reflejada. De esta forma, toda la energía incidente es entregada a la interfaz, y se obtienen las expresiones \ref{eq:ondas-superficie-campos}, donde no existen componentes reflejadas y donde T es el factor de transmisión. Con el fin de simplificar dichas ecuaciones, se considera que el medio 1 es aire, de modo que $\epsilon_1 = \epsilon_0$, $\mu_1 = \mu_0$ y, en consecuencia, $\eta_1 = \eta_0$.
 
 \begin{figure}[htp]
 	\centering
@@ -368,13 +368,13 @@ Si se considera que una onda plana incide con ángulo de Brewster (concepto desa
 	\end{align}
 \end{subequations}
 
-La componente longitudinal de los vectores de onda, $\gamma_z$, es igual a ambos lados de la interfaz, como se muestra en la figura \ref{fig:onda-superficie-brewster} (en términos de $\beta_z$, ya que no se consideran pérdidas), de modo que
+La componente longitudinal de los vectores de onda, $\gamma_z$, es igual a ambos lados de la interfaz, como se muestra en la Figura \ref{fig:onda-superficie-brewster} (en términos de $\beta_z$, ya que no se consideran pérdidas), de modo que
 
 \begin{equation}
 	\gamma_{1} \; \sin \; \theta_i = \gamma_{z} = \gamma_2 \; \sin \; \theta_t.
 \end{equation}
 
-Las componentes normales a la interfaz, que llamaremos $\gamma_{x_i}$, $i=1,2$, mostradas también en la figura \ref{fig:onda-superficie-brewster}, deben cumplir que
+Las componentes normales a la interfaz, que llamaremos $\gamma_{x_i}$, $i=1,2$, mostradas también en la Figura \ref{fig:onda-superficie-brewster}, deben cumplir que
 
 \begin{align}
 	\label{eq:condicion-componentes-normales-ondas-superficie}
@@ -405,7 +405,7 @@ El campo magnético queda, entonces, expresado como:
 	\right.
 \end{equation}
 
-Se observa que los planos de fase constante, en el aire, son los correspondientes a las exponenciales imaginarias de la ecuación anterior, $\beta_z z - \beta_{x_1}x = cte$, y se muestran en la figura \ref{fig:onda-superficie-brewster}. Los planos de amplitud constante se obtienen considerando las exponenciales decrecientes de las expresiones, de forma que $\alpha_{z_1}z + \alpha_{x_1}x = cte$, que para el caso analizado en la figura \ref{fig:onda-superficie-brewster}, son rectas con pendiente negativa (no mostradas en la figura). Esto es así porque en la expresión se considera que existen pérdidas en la dirección $z$ paralela a la interfaz. De no haber pérdidas, los planos de amplitud constante resultan paralelos a la misma.
+Se observa que los planos de fase constante, en el aire, son los correspondientes a las exponenciales imaginarias de la ecuación anterior, $\beta_z z - \beta_{x_1}x = cte$, y se muestran en la Figura \ref{fig:onda-superficie-brewster}. Los planos de amplitud constante se obtienen considerando las exponenciales decrecientes de las expresiones, de forma que $\alpha_{z_1}z + \alpha_{x_1}x = cte$, que para el caso analizado en la Figura \ref{fig:onda-superficie-brewster}, son rectas con pendiente negativa (no mostradas en la figura). Esto es así porque en la expresión se considera que existen pérdidas en la dirección $z$ paralela a la interfaz. De no haber pérdidas, los planos de amplitud constante resultan paralelos a la misma.
 
 Para bajas pérdidas, $\alpha_{z_i}$, $i=1,2$, será pequeño, por lo que habrá baja atenuación para la onda que se desplaza en dirección $z$, pero debido a que $\alpha_{x_1}$ y/o $\alpha_{x_2}$ también serán bajas, la energía no estará concentrada cerca de la interfaz.
 
@@ -418,9 +418,9 @@ Si se considera una superficie con una impedancia de onda para polarización TM 
 	\gamma_z &= \beta_z - j\alpha_z =\sqrt{(\gamma_1^2 - \gamma_{x_1}^2)} = \gamma_1 \sqrt{1+X_s^2 - R_s^2 - 2jR_s X_s}. \label{eq:beta-onda-superficie}
 \end{align}
 
-La gráfica de las componentes real e imaginaria de $\gamma_z$ se muestra en la figura \ref{fig:beta-reactancia-TM}. Se puede observar que, cuando la reactancia es inductiva (valores positivos de $X_s$), $\alpha_z$ presenta valores positivos, por lo que habrá atenuación en la dirección de propagación $z$ ([a] en la figura) \footnote{Esto se debe a que si el campo eléctrico en la dirección $y$ se escribe como se indica en la ecuación \ref{eq:ondas-superficie-campos}, $\gamma_z=\beta_z-j\alpha_{z_i}, i=1,2$ y $\gamma_{x_1} = \beta{x_1}+j\alpha_{x_1}$, el exponente se expresa como $-j(\beta_z-j\alpha_{z_1})z + j(\beta_{x_1}+j\alpha_{x_1})x$. Para dirección de propagación $z$, con $z>0$, la componente de atenuación del exponente de la expresión dada resulta en $-\alpha_{z_i} z, i=1,2$. Para que el comportamiento resulte decreciente, $\alpha_{z_i}$ debe ser mayor a $0$.}. Esto significa que, a mayor reactancia, habrá una mayor disminución de la amplitud del campo a medida que la onda se desplace por la interfaz (aumenta el valor de $z$). Sin embargo, la mayor variación en el coeficiente de atenuación se observa con el cambio de valor de la resistencia, $R_s$ ([b] en la figura).
+La gráfica de las componentes real e imaginaria de $\gamma_z$ se muestra en la Figura \ref{fig:beta-reactancia-TM}. Se puede observar que, cuando la reactancia es inductiva (valores positivos de $X_s$), $\alpha_z$ presenta valores positivos, por lo que habrá atenuación en la dirección de propagación $z$ ([a] en la figura) \footnote{Esto se debe a que si el campo eléctrico en la dirección $y$ se escribe como se indica en la ecuación \ref{eq:ondas-superficie-campos}, $\gamma_z=\beta_z-j\alpha_{z_i}, i=1,2$ y $\gamma_{x_1} = \beta{x_1}+j\alpha_{x_1}$, el exponente se expresa como $-j(\beta_z-j\alpha_{z_1})z + j(\beta_{x_1}+j\alpha_{x_1})x$. Para dirección de propagación $z$, con $z>0$, la componente de atenuación del exponente de la expresión dada resulta en $-\alpha_{z_i} z, i=1,2$. Para que el comportamiento resulte decreciente, $\alpha_{z_i}$ debe ser mayor a $0$.}. Esto significa que, a mayor reactancia, habrá una mayor disminución de la amplitud del campo a medida que la onda se desplace por la interfaz (aumenta el valor de $z$). Sin embargo, la mayor variación en el coeficiente de atenuación se observa con el cambio de valor de la resistencia, $R_s$ ([b] en la figura).
 
-Si la reactancia es nula, un valor de $\beta_z$ se obtiene sólo si la resistencia es muy baja o nula ([c] en la figura). Esto significa que sobre una superficie puramente resistiva, sólo habrá propagación de ondas de superficie cuando la resistencia sea inferior a un umbral dependiende de los medios materiales ($\beta_z=0$, [d] en la figura). Cuando ese umbral de resistencia es superado, el valor de la constante de propagación paralela a la interfaz se anula.
+Si la reactancia es nula, un valor de $\beta_z$ se obtiene sólo si la resistencia es muy baja o nula ([c] en la figura). Esto significa que sobre una superficie puramente resistiva, sólo habrá propagación de ondas de superficie cuando la resistencia sea inferior a un umbral dependiente de los medios materiales ($\beta_z=0$, [d] en la figura). Cuando ese umbral de resistencia es superado, el valor de la constante de propagación paralela a la interfaz se anula.
 
 El comportamiento de $\gamma_{x_1}$ (la componente ortogonal a la superficie), descripto en la ecuación \ref{eq:h1-onda-superficie} también regula el comportamiento de la onda de superficie, dado que si la magnitud de la parte imaginaria de $\gamma_{x_1}$, $\alpha_{x_1}$, es muy pequeña, la onda no estará lo suficientemente cerca de la interfaz para ser guiada por ella. Un valor alto de $\alpha_{x_1}$ se da cuando la reactancia, $X_s$ es inductiva ($X_s>0$), lo cual coincide con el requisito para $\alpha_{z_i}, i=1,2$. Dicho de otra forma, la reactancia de superficie es la responsable del decrecimiento exponencial de la onda al aumentar la distancia con la interfaz que funciona como guía.
 
@@ -457,7 +457,7 @@ Aplicando las ecuaciones \ref{eq:beta-onda-superficie}, se obtiene que\footnote{
 	\gamma_z &= \gamma_1 \sqrt{1-\frac{j \gamma_1}{\sigma Z_0}} \approx \gamma_1 - \frac{j  \gamma_1^2}{2 \sigma Z_0}.
 \end{align}
 
-En general, un plano conductor soporta ondas de superficie, y la atenuación en la dirección de propagación es muy baja (ver figura \ref{fig:beta-reactancia-TM}), pero no es capaz de lograr una atenuación en la dirección normal al mismo tal que la energía se mantenga concentrada en la superficie para poder ser utilizada como guía de ondas, debido a que la conductividad es muy alta (lo que disminuye el valor de ${\alpha_x}_1$). Para lograr que la energía de la onda decaiga rápidamente lejos de la interfaz es necesario aumentar notoriamente la reactancia de la superficie, para lo que se suele agregar al conductor una capa dieléctrica, que además no aumenta considerablemente la resistividad.
+En general, un plano conductor soporta ondas de superficie, y la atenuación en la dirección de propagación es muy baja (ver Figura \ref{fig:beta-reactancia-TM}), pero no es capaz de lograr una atenuación en la dirección normal al mismo tal que la energía se mantenga concentrada en la superficie para poder ser utilizada como guía de ondas, debido a que la conductividad es muy alta (lo que disminuye el valor de ${\alpha_x}_1$). Para lograr que la energía de la onda decaiga rápidamente lejos de la interfaz es necesario aumentar notoriamente la reactancia de la superficie, para lo que se suele agregar al conductor una capa dieléctrica, que además no aumenta considerablemente la resistividad.
 
 Para el caso de ondas de superficie en modo TE, los campos están dados por la ecuación \ref{eq:campo-electrico-superficie-TE}. La impedancia de onda, en tanto, queda expresada como indica la ecuación \ref{eq:impedancia-onda-superficie-TE}. Considerando que, para evitar reflexiones, la impedancia de superficie tiene que ser igual a la impedancia de onda, se obtiene la expresión para la constante de propagación en el sentido perpendicular a la interfaz mostrada en la ecuación \ref{eq:h1-onda-superficie-TE}, donde nuevamente la impedancia de superficie del conductor es $Z_s = R_s +jX_s$.
 
@@ -486,7 +486,7 @@ La segunda condición para la existencia de ondas de superficie, la propagación
 	\gamma_z = \beta_z-j\alpha_z= \sqrt{(\gamma_1^2 - \gamma_{x_1}^2)} = \frac{\gamma_1}{R_s^2+X_s^2} \sqrt{1+X_s^2 - R_s^2 + 2jR_s X_s}. \label{eq:beta-onda-superficie-TE}
 \end{align}
 
-Gráficas de la expresión anterior se muestran en la figura \ref{fig:beta-reactancia-TE}, donde se pueden observar valores de $\beta_z$ y $\alpha_{z_1}$ en función de la reactancia $X_s$, para algunos valores de resistencia de superficie $R_s$. Resulta importante destacar que para valores en que $X_s$ es negativa (reactancia capacitiva), el valor de $\alpha_z$ es físicamente realizable, ya que da lugar a un decrecimiento exponencial, y no a un incremento. Por otro lado, al contrario que en el caso de las ondas TM, a medida que la reactancia capacitiva aumenta en módulo, la constante de propagación tiende a estabilizarse en lugar de crecer linealmente, aunque sí decrece la constante de atenuación $\alpha_z$. Cuando la resistencia de superficie es muy baja, los valores de $\beta_z$ para reactancia $X_s$ nula tienden a ser muy altos. Cuando los valores de resistencia aumentan ligeramente, al igual que en el caso TM, el valor de $\beta_z$ se vuelve nulo, lo que obliga a presentar un comportamiento capacitivo para la propagación de ondas de superficie en modo TE.
+Gráficas de la expresión anterior se muestran en la Figura \ref{fig:beta-reactancia-TE}, donde se pueden observar valores de $\beta_z$ y $\alpha_{z_1}$ en función de la reactancia $X_s$, para algunos valores de resistencia de superficie $R_s$. Resulta importante destacar que para valores en que $X_s$ es negativa (reactancia capacitiva), el valor de $\alpha_z$ es físicamente realizable, ya que da lugar a un decrecimiento exponencial, y no a un incremento. Por otro lado, al contrario que en el caso de las ondas TM, a medida que la reactancia capacitiva aumenta en módulo, la constante de propagación tiende a estabilizarse en lugar de crecer linealmente, aunque sí decrece la constante de atenuación $\alpha_z$. Cuando la resistencia de superficie es muy baja, los valores de $\beta_z$ para reactancia $X_s$ nula tienden a ser muy altos. Cuando los valores de resistencia aumentan ligeramente, al igual que en el caso TM, el valor de $\beta_z$ se vuelve nulo, lo que obliga a presentar un comportamiento capacitivo para la propagación de ondas de superficie en modo TE.
 
 
 \begin{figure}[htp]
@@ -497,7 +497,7 @@ Gráficas de la expresión anterior se muestran en la figura \ref{fig:beta-react
 	\label{fig:beta-reactancia-TE}
 \end{figure}
 
-Entre las distintas formas de lograr que una interfaz conductor-aire permita el guiado de ondas de superficie, una de las más efectivas consiste en el recubrimiento de la superficie metálica por una capa dieléctrica fina, como se muestra en la figura \ref{fig:thin-dielectric-coating}.
+Entre las distintas formas de lograr que una interfaz conductor-aire permita el guiado de ondas de superficie, una de las más efectivas consiste en el recubrimiento de la superficie metálica por una capa dieléctrica fina, como se muestra en la Figura \ref{fig:thin-dielectric-coating}.
 
 \begin{figure}[htp]
 	\centering
@@ -506,7 +506,7 @@ Entre las distintas formas de lograr que una interfaz conductor-aire permita el 
 	\label{fig:thin-dielectric-coating}
 \end{figure}
 
-Para el caso TM, si se considera que el campo magnético tiene la forma de la ecuación \ref{eq:campo-magnetico-TM} en el espacio libre circundante a la estructura, entonces el campo magnético en el interior del dieléctrico resultará de la forma expresada en la ecuación \ref{eq:campo-magnetico-interior-diel-TM}, donde se cumple que $\gamma_{x_1}^2 + \gamma_z^2 = \gamma_1^2$ y $\gamma_{x_2}^2 + \gamma_z^2 = \gamma_2^2 = \epsilon_r \gamma_1^2$.
+Para el caso TM, si se considera que el campo magnético tiene la forma de la ecuación \ref{eq:campo-magnetico-TM} en el espacio libre circundante a la estructura, entonces el campo magnético en el interior del dieléctrico resultará de la forma expresada en la ecuación \ref{eq:campo-magnetico-interior-diel-TM}, donde, si el medio incidente es aire, se cumple que $\gamma_{x_1}^2 + \gamma_z^2 = \gamma_1^2$ y $\gamma_{x_2}^2 + \gamma_z^2 = \gamma_2^2 = \epsilon_r \gamma_1^2$.
 
 \begin{align}
 	\label{eq:campo-magnetico-TM}
@@ -566,11 +566,11 @@ Para el caso TE, la solución es similar, y en este caso las expresiones resulta
 	\end{cases}
 \end{equation}
 
-Las soluciones se pueden obtener gráficamente para ambos casos, mediante la intersección de las curvas correspondientes a las ecuaciones del sistema. Las gráficas, para distintas frecuencias, se muestran en la figura \ref{fig:intersecciones-tm-te}. Se puede observar que, dado que $|\alpha_{x_1}|h$ no puede tomar valores negativos, las intersecciones que se dan en esas condiciones no son válidas como soluciones del sistema planteado, bajo las hipótesis consideradas.
+Las soluciones se pueden obtener gráficamente para ambos casos, mediante la intersección de las curvas correspondientes a las ecuaciones del sistema. Las gráficas, para distintas frecuencias, se muestran en la Figura \ref{fig:intersecciones-tm-te}. Se puede observar que, dado que $|\alpha_{x_1}|h$ no puede tomar valores negativos, las intersecciones que se dan en esas condiciones no son válidas como soluciones del sistema planteado, bajo las hipótesis consideradas.
 
-A medida que aumenta la frecuencia, el valor del radio de los círculos aumenta. Se observa que siempre existe, al menos, un modo TM de propagación sobre el plano de tierra, dado que todas las intersecciones entre las curvas ocurren para valores de $|\alpha_{x_1}| h$ mayores a 0, como se muestra en la figura \ref{fig:soluciones-TM-tan-implicita-zoom}. Para frecuencias en que el radio del círculo genera que el mismo intersecte a más secciones de la curva tangente, aparecerían modos de propagación superiores.
+A medida que aumenta la frecuencia, el valor del radio de los círculos aumenta. Se observa que siempre existe, al menos, un modo TM de propagación sobre el plano de tierra, dado que todas las intersecciones entre las curvas ocurren para valores de $|\alpha_{x_1}| h$ mayores a 0, como se muestra en la Figura \ref{fig:soluciones-TM-tan-implicita-zoom}. Para frecuencias en que el radio del círculo genera que el mismo intersecte a más secciones de la curva tangente, aparecerían modos de propagación superiores.
 
-Para el caso TE, se observa que para frecuencias bajas no existe solución válida, como se muestra en la figura \ref{fig:soluciones-TE-tan-implicita-zoom}, por lo que no hay un modo fundamental TE por debajo de la frecuencia de corte, que se da para $f_c = c/(4 h  \sqrt{\epsilon_{r_2}}-1)$, que en el caso graficado es de aproximadamente 25 GHz.
+Para el caso TE, se observa que para frecuencias bajas no existe solución válida, como se muestra en la Figura \ref{fig:soluciones-TE-tan-implicita-zoom}, por lo que no hay un modo fundamental TE por debajo de la frecuencia de corte, que se da para $f_c = c/(4 h  \sqrt{\epsilon_{r_2}}-1)$, que en el caso graficado es de aproximadamente 25 GHz.
 
 Para el caso de FR4, en el rango de frecuencias de interés para este trabajo, no existe, entonces, propagación de ondas de superficie de polarización TE, por lo que el análisis del modo TM reviste mayor importancia.
 
@@ -613,7 +613,7 @@ Una onda incidente desde el aire, para evitar reflexiones y, por lo tanto, radia
 
 \begin{align}
 	\label{eq:impedancia-superficie-tm-teorica}
-	Z_s^{TM} = j \frac{\cos \theta_t}{\sqrt{\epsilon_{r_2}}}\tan(\gamma_2 h \cos\theta_t).
+	Z_s^{TM} = \frac{Z_2}{\eta_0}\Biggr\rvert_{x=h} = j \frac{\cos \theta_t}{\sqrt{\epsilon_{r_2}}}\tan(\gamma_2 h \cos\theta_t) = j \frac{\cos \theta_t}{\sqrt{\epsilon_{r_2}}}\tan(	\omega\sqrt{\epsilon_{r_2} \mu_0 \epsilon_0} h \cos\theta_t).
 \end{align}
 
 
@@ -639,7 +639,7 @@ Una onda incidente desde el aire, para evitar reflexiones y, por lo tanto, radia
 
 % Barlow parece contar cosas sobr la velocidad de fase, y más dealnte sobre el lauching y el angulo de brewster complejo. LEER para completar.
 
-Esta impedancia es puramente imaginaria positiva\footnote{Si el dieléctrico presentara pérdidas, existiría también un término real \cite{Barlow:SurfaceWaves}, por lo que, además de facilitar la propagación de ondas de superficie, si el dieléctrico tiene bajas pérdidas, no aumenta la resistencia de superficie. Además, esta componente inductiva se debe sumar al efecto producido por la componente inductiva de la impedancia de superficie del conductor, debida a la existencia de una profundidad de penetración.}, por lo que tiene un comportamiento inductivo, permitiendo la formación de ondas de superficie en modo TM, dado que la constante de atenuación $\alpha_{x_i}, i=1,2$ logra que el campo se concentre cerca de la superficie. Los valores de $\beta_z$ y $\alpha_z$ no se ven modificados, pues el aporte del dieléctrico a la reactancia no es lo suficientemente alto. El ángulo $\theta_t$ se obtiene de las relaciones de Snell (\ref{eq:snell_law_second}), por lo que se deduce que, al contrario que en el caso del conductor sin recubrimiento dieléctrico, el comportamiento es dependiente del ángulo de incidencia, como se muestra en la figura \ref{fig:zstm-angulo-incidencia}. Por otro lado, en la figura \ref{fig:zstm-ancho-diel} se puede observar que el valor de la impedancia crece a medida que aumenta el ancho del dieléctrico, volviéndose más inductiva, de forma similar a la que se da cuando aumenta la permitividad (figura \ref{fig:zstm-permit-diel}).
+Esta impedancia es puramente imaginaria positiva\footnote{Si el dieléctrico presentara pérdidas, existiría también un término real \cite{Barlow:SurfaceWaves}, por lo que, además de facilitar la propagación de ondas de superficie, si el dieléctrico tiene bajas pérdidas, no aumenta la resistencia de superficie. Además, esta componente inductiva se debe sumar al efecto producido por la componente inductiva de la impedancia de superficie del conductor, debida a la existencia de una profundidad de penetración.}, por lo que tiene un comportamiento inductivo, permitiendo la formación de ondas de superficie en modo TM, dado que la constante de atenuación $\alpha_{x_i}, i=1,2$ logra que el campo se concentre cerca de la superficie. Los valores de $\beta_z$ y $\alpha_z$ no se ven modificados, pues el aporte del dieléctrico a la reactancia no es lo suficientemente alto. El ángulo $\theta_t$ se obtiene de las relaciones de Snell (\ref{eq:snell_law_second}), por lo que se deduce que el comportamiento es dependiente del ángulo de incidencia, como se muestra en la Figura \ref{fig:zstm-angulo-incidencia}. Por otro lado, en la Figura \ref{fig:zstm-ancho-diel} se puede observar que el valor de la impedancia crece a medida que aumenta el ancho del dieléctrico, volviéndose más inductiva, de forma similar a la que se da cuando aumenta la permitividad (Figura \ref{fig:zstm-permit-diel}).
 
 Para el caso TE, los campos paralelos a la superficie son:
 
@@ -647,14 +647,16 @@ Para el caso TE, los campos paralelos a la superficie son:
 	E_{y_1} &= A e^{-j\gamma_{x_1}(x-h)-j\gamma_z z}, &H_z &= -\frac{A \gamma_{x_1}}{\omega \mu_0} e^{-j\gamma_{x_1}(x-h)-j\gamma_z z}. \notag \\
 	&\implies Z_{1} = -\frac{\gamma_{x_1}}{\omega \mu_0}, \\
 	E_{y_2} &= A \sec{(\gamma_{x_2} h)} \cos{(\gamma_{x_2} x)} e^{-j \gamma_z z}, &H_{z_2} &= -\frac{A \gamma_{x_2} e^{j\gamma_z z}}{j\omega \mu_0} \sec{(\gamma_{x_2} h)} \sin(\gamma_{x_2} x), \notag \\
-	&\implies Z_{2} = \frac{j\cot(\gamma_{x_2} x)}{\gamma_{x_2} \omega \mu_0}.
+	&\implies Z_{2} = \frac{j\omega \mu_0 \cot(\gamma_{x_2} x)}{\gamma_{x_2}}.
 \end{align}
 
-Siguiendo la misma metodología que en el caso TM, igualando ambas impedancias, se obtiene
+Siguiendo la misma metodología que en el caso TM, la impedancia para $x=h$ resulta:
 
 \begin{align}
-	Z_s^{TE} = j\frac{\cot(\gamma_2 \cos \theta_t)}{\gamma_2 \cos\theta_t \;\omega \mu_0}.
+	Z_s^{TE} = j\frac{\omega \mu_0 \cot(\gamma_2 h \cos \theta_t)}{\gamma_2 \cos\theta_t}.
 \end{align}
+
+Vale aclarar, sin embargo, que para las frecuencias de trabajo de esta tesis, esta expresión resulta meramente ilustrativa, dado que no es posible contar con ondas de superficie para frecuencias menores a 25 GHz en FR-4 de 1.6 mm de espesor dispuesto sobre un plano de tierra, como se explicó para la Figura \ref{fig:intersecciones-tm-te}.
 % Queda explicar qué pasa con el coating -> ubicar también los puntos en el dibujito, para saber por dónde es que nos movimos.
 
 
@@ -673,9 +675,9 @@ Siguiendo la misma metodología que en el caso TM, igualando ambas impedancias, 
 
 %  Cuando los metamateriales son homogéneos, pueden ser representados por líneas de transmisión unidimensionales, donde la dirección representa cualquier dirección en el material (Caloz, Itoh).
 
-La teoría de líneas de transmisión representa el paso intermedio entre el estudio de campos electromagnéticos y de circuitos de parámetros concentrados, permitiendo considerar el fenómeno de propagación de ondas como una extensión de la teoría de circuitos (aplicable cuando la longitud eléctrica del circuito es mayor a la longitud de onda de operación), o como una solución particular de las ecuaciones de Maxwell \cite{Pozar:MwEngineering}.
+La teoría de líneas de transmisión representa el paso intermedio entre el estudio de campos electromagnéticos y de circuitos de parámetros concentrados, permitiendo considerar el fenómeno de propagación de ondas como una extensión de la teoría de circuitos (aplicable cuando la longitud eléctrica del circuito es mucho menor a la longitud de onda de operación), o como una solución particular de las ecuaciones de Maxwell \cite{Pozar:MwEngineering}.
 
-Las líneas de transmisión son redes de parámetros distribuidos, donde las corrientes y las tensiones, en contraposición a los circuitos de parámetros concentrados, pueden variar en magnitud y fase, debido a la dimensión física del circuito. El análisis de una línea se puede llevar a cabo estableciendo el comportamiento de los trozos infinitesimales que la componen, dispuestos en cascada para formar la estructura final, de forma que cada uno de ellos se pueda modelar utilizando circuitos de parámetros concentrados independientes de la frecuencia, estableciendo, entonces, impedancias $Z'$ ($\Omega/m$) y admitancias $Y'$ ($S/m$) por unidad de longitud, como se muestra, de forma general, en la figura \ref{fig:TL-equivalente}.
+Las líneas de transmisión son redes de parámetros distribuidos, donde las corrientes y las tensiones, en contraposición a los circuitos de parámetros concentrados, pueden variar en magnitud y fase, debido a la dimensión física del circuito. El análisis de una línea se puede llevar a cabo estableciendo el comportamiento de los trozos infinitesimales que la componen, dispuestos en cascada para formar la estructura final, de forma que cada uno de ellos se pueda modelar utilizando circuitos de parámetros concentrados independientes de la frecuencia, estableciendo, entonces, impedancias $Z'$ ($\Omega/m$) y admitancias $Y'$ ($S/m$) por unidad de longitud, como se muestra, de forma general, en la Figura \ref{fig:TL-equivalente}.
 
 \begin{figure}[htp]
 	\centering
@@ -698,7 +700,7 @@ Las líneas de transmisión son redes de parámetros distribuidos, donde las cor
 	\label{fig:TL-equivalente}
 \end{figure}
 
-La impedancia y la admitancia por unidad de longitud se pueden expresar como indican las expresiones de la ecuación \ref{eq:impedancia-admitancia-TL}. Se debe tener en cuenta que los subíndices R y L se deben al comportamiento de \enquote{mano izquierda}\footnote{La expresión \enquote{material de mano izquierda} fue utilizada por primera vez por físico ruso Viktor Velesago en 1967, cuando propuso la posibilidad de la existencia de materiales en que la propagación de ondas se daría de forma que el campo eléctrico, el campo magnético y el vector de propagación formaran una triada de mano izquierda \cite{Caloz:ElectromagneticMetamaterials}.} o \enquote{mano derecha} asociado a cada componente. Si $L'_R$ y $C'_R$ son nulos, existe sólo un comportamiento \enquote{de mano izquierda}, donde las velocidades de fase y de grupo son antiparalelas, y donde tanto la permitividad eléctrica $\epsilon$ como la permeabilidad magnética $\mu$ son negativas, de forma que el índice de refracción también lo sea, dando lugar a una propagación de ondas en sentido inverso. Cuando $L'_L$ y $C'_L$ son nulos, el comportamiento es denominado \enquote{de mano derecha}, y es el que corresponde a propagación de onda comúnmente analizada. Las componentes que corresponden al comportamiento de mano izquierda son, por sí solas, de existencia física imposibles, dado que las que generan comportamiento de mano derecha aparecen naturalmente por efectos constructivos. Las resistencias del circuito, por otro lado, representan las pérdidas dieléctricas y conductoras.
+La impedancia y la admitancia por unidad de longitud se pueden expresar como indican las expresiones de la ecuación \ref{eq:impedancia-admitancia-TL}. Se debe tener en cuenta que los subíndices R y L se deben al comportamiento de \enquote{mano izquierda}\footnote{La expresión \enquote{material de mano izquierda} fue utilizada por primera vez por físico ruso Viktor Velesago en 1967, cuando propuso la posibilidad de la existencia de materiales en que la propagación de ondas se daría de forma que el campo eléctrico, el campo magnético y el vector de propagación formaran una triada de mano izquierda \cite{Caloz:ElectromagneticMetamaterials}.} o \enquote{mano derecha} asociado a cada componente. Si $L'_R$ y $C'_R$ son nulos, existe sólo un comportamiento \enquote{de mano izquierda}, donde las velocidades de fase y de grupo son antiparalelas, y donde tanto la permitividad eléctrica $\epsilon$ como la permeabilidad magnética $\mu$ son negativas, de forma que el índice de refracción también lo sea, dando lugar a una propagación de ondas en sentido inverso. Cuando $L'_L$ y $C'_L$ son nulos, el comportamiento es denominado \enquote{de mano derecha}, y es el que corresponde a propagación de onda comúnmente analizada. Las componentes que corresponden al comportamiento de mano izquierda no existen de manera independiente, dado que las que generan comportamiento de mano derecha aparecen naturalmente por efectos constructivos. Las resistencias del circuito, por otro lado, representan las pérdidas dieléctricas y conductoras.
 
 
 \begin{align}
@@ -708,7 +710,7 @@ Z' &= j \left(\omega L'_r - \frac{1}{\omega C'_L} \right), & Y' =j \left(\omega 
 
 Una descripción completa del análisis del caso general, que describe el comportamiento de numerosos metamateriales, se puede consultar en \cite{Caloz:ElectromagneticMetamaterials}. En adelante se analizará únicamente el caso tradicional, de mano derecha, ya que es el que se aplica al tipo de estructura analizado en este trabajo.
 
-Considerando una línea de transmisión que representa un comportamiento puramente de mano derecha, obteniendo el circuito equivalente de un infinitesimal de línea de la figura \ref{fig:TL-equivalente}, aplicando las leyes de Kirchhoff, dividiendo por $\Delta z$ y aplicando el límite para $\Delta z \rightarrow 0$, para obtener expresiones diferenciales, se obtienen las ecuaciones del telegrafista, expresadas en la ecuación \ref{eq:Telegrafista}, tanto en el dominio del tiempo como de la frecuencia \cite{Fernandez:Electromag}. La solución simultánea de ambas ecuaciones tiene un comportamiento de onda, expresado en \ref{eq:ec-onda-TL}, donde $\gamma$ es la constante de propagación, cuyo valor se expresa en \ref{eq:gamma-tl}.
+Considerando una línea de transmisión que representa un comportamiento puramente de mano derecha, obteniendo el circuito equivalente de un infinitesimal de línea de la Figura \ref{fig:TL-equivalente}, aplicando las leyes de Kirchhoff, dividiendo por $\Delta z$ y aplicando el límite para $\Delta z \rightarrow 0$, para obtener expresiones diferenciales, se obtienen las ecuaciones del telegrafista, expresadas en la ecuación \ref{eq:Telegrafista}, tanto en el dominio del tiempo como de la frecuencia \cite{Fernandez:Electromag}. La solución simultánea de ambas ecuaciones tiene un comportamiento de onda, expresado en \ref{eq:ec-onda-TL}, donde $\gamma$ es la constante de propagación, cuyo valor se expresa en \ref{eq:gamma-tl}.
 
 \begin{align}
 	\label{eq:Telegrafista}
@@ -735,17 +737,17 @@ Considerando una línea de transmisión que representa un comportamiento puramen
 	\gamma = -j\alpha + \beta = \sqrt{-ZY} = \sqrt{-(R+j\omega L)(G+j\omega C)}.
 \end{align}
 
-En base a esta constante de propagación, es posible definir la velocidad de fase $V_p$ como
+En base a esta constante de propagación, es posible definir la velocidad de fase $v_p$ como
 
 \begin{align}
-	V_p = \frac{\omega}{\beta},
+	v_p = \frac{\omega}{\beta},
 \end{align}
 
 que para el caso sin pérdidas resulta
 
 \begin{align}
 	\label{eq:vprop-linea-ideal}
-	V_p = \frac{\omega}{\omega \sqrt{LC}} = \frac{1}{\sqrt{LC}}.
+	v_p = \frac{\omega}{\omega \sqrt{LC}} = \frac{1}{\sqrt{LC}}.
 \end{align}
 
 Las ecuaciones de onda tienen como solución la superposición de una onda en dirección $+z$ y otra en dirección $-z$, tanto para la tensión como para la corriente, con velocidad de fase $\omega/\beta$. La relación entre las componentes de onda que viajan en dirección positiva se conoce como impedancia característica, $Z_0$, definida, según los parámetros de una línea de transmisión, en la ecuación \ref{eq:TL-impedancia-caracteristica}.
@@ -755,14 +757,14 @@ Las ecuaciones de onda tienen como solución la superposición de una onda en di
 	Z_0 = \frac{V_0^+}{I_0^+} = \sqrt{\frac{R+j\omega L}{G+j\omega C}}.
 \end{align}
 
-Cuando una línea de transmisión es terminada en una impedancia arbitraria $Z_L$, se producen fenómenos de transmisión y reflexión de potencia, de manera análoga al caso de incidencia de campos electromagnéticos sobre interfaces entre medios de impedancias intrínsecas diferentes, analizado en el apéndice \ref{sec:incidencia-onda-plana-interfaz}. Existe, también en este caso, un coeficiente de reflexión $\Gamma$, definido como la relación entre la tensión reflejada y la tensión incidente, como indica la ecuación \ref{eq:coef-reflexion-tl}. Cuando el coeficiente de transmisión es nulo, se dice que la carga está adaptada, de modo que $Z_L = Z_0$.
+Cuando una línea de transmisión es terminada en una impedancia arbitraria $Z_L$, se producen fenómenos de transmisión y reflexión de potencia, de manera análoga al caso de incidencia de campos electromagnéticos sobre interfaces entre medios de impedancias intrínsecas diferentes analizado en el Apéndice \ref{sec:incidencia-onda-plana-interfaz}. Existe, también en este caso, un coeficiente de reflexión $\Gamma$, definido como la relación entre la tensión reflejada y la tensión incidente, como indica la ecuación \ref{eq:coef-reflexion-tl}. Cuando el coeficiente de transmisión es nulo, se dice que la carga está adaptada, de modo que $Z_L = Z_0$.
 
 \begin{align}
 	\label{eq:coef-reflexion-tl}
 	\Gamma = \frac{V_0^-}{V_0^+} = \frac{Z_L-Z_0}{Z_L+Z_0}.
 \end{align}
 
-Si se generaliza el concepto de coeficiente de transmisión a cualquier punto de la línea, y no únicamente al nodo donde se coloca la carga $Z_L$, se obtiene el coeficiente de reflexión para cualquier punto $l$ de la línea a partir del que corresponde al nodo de carga, ubicado en la posición 0, como se indica en la ecuación \ref{eq:coef-reflexion-tl-generalizado}.
+Si se generaliza el concepto de coeficiente de transmisión a cualquier punto de la línea, y no únicamente al nodo donde se coloca la carga $Z_L$, se obtiene el coeficiente de reflexión para cualquier punto $l$ de la línea a partir del que corresponde al nodo de carga, ubicado en la posición 0, como se indica en la ecuación \ref{eq:coef-reflexion-tl-generalizado} y en la Figura \ref{fig:TL-con-carga}.
 
 \begin{align}
 \label{eq:coef-reflexion-tl-generalizado}
@@ -775,7 +777,7 @@ La impedancia de entrada también varía con la distancia a la carga, de forma q
 Z_{in} = \frac{V(-l)}{I(-l)} = Z_0 \frac{Z_L +Z_0 \tanh \gamma l}{Z_0 + Z_L \tanh \gamma l}.
 \end{align}
 
-En la figura \ref{fig:Zin-Gamma-funcionDistancia-TL} se puede observar una gráfica de $\Gamma$ y $Z_{in}$ en función de la distancia a la carga, para una línea de impedancia característica $Z_0$ de $50 \; \Omega$, con una carga de $100 \; \Omega$, considerando pérdidas y constante de propagación arbitrarias.
+En la Figura \ref{fig:Zin-Gamma-funcionDistancia-TL} se puede observar una gráfica de $\Gamma$ y $Z_{in}$ en función de la distancia a la carga, para una línea de impedancia característica $Z_0$ de $50 \; \Omega$, con una carga de $100 \; \Omega$, considerando pérdidas y constante de propagación arbitrarias.
 
 \begin{figure}[htp]
 	\centering
@@ -839,8 +841,9 @@ En forma normalizada, la matriz resulta \cite{Pozar:MwEngineering}
 % Venkateswaran, cap 1.
 %%%%
 \subsection{Línea \textit{microstrip}}
+\label{sec:lineaMicrostrip}
 
-Algunas de las líneas de transmisión más comunes están basadas en tecnologías de circuitos impresos, entre las que se destacan las \textit{striplines} (donde el dieléctrico circundante al conductor es homogéneo), las líneas \textit{microstrip} (donde el dieléctrico circundante es aire en la mitad superior, y un dieléctrico de mayor permitividad en la mitad inferior), y las guías de ondas coplanares (donde el plano de tierra y la línea de señal comparten la misma cara del sustrato). Algunas de ellas son esquematizadas en la figura \ref{fig:strip-line-technology}. Los costos de fabricación de las mismas suelen ser muy bajos, y ofrecen comodidades para la implantación de componentes discretos, aunque en muchos casos se generan modos indeseados, que pueden ser disminuidos manteniendo el espesor del sustrato en valores despreciables respecto de la longitud de onda, lo que los vuelve frágiles. Además, los sustratos dieléctricos suelen presentar pérdidas que modifican el comportamiento de la señal. Las principales aplicaciones se relacionan con el diseño de filtros microondas, acopladores direccionales, transformadores de impedancia, planos de tierra y redes de distribución de energía de circuitos impresos e integrados \cite{Venkateswaran:Thesis}.
+Algunas de las líneas de transmisión más comunes están basadas en tecnologías de circuitos impresos, entre las que se destacan las \textit{striplines} (donde el dieléctrico circundante al conductor es homogéneo), las líneas \textit{microstrip} (donde el dieléctrico circundante es aire en la mitad superior, y otro dieléctrico en la mitad inferior), y las guías de ondas coplanares (donde el plano de tierra y la línea de señal comparten la misma cara del sustrato). Algunas de ellas son esquematizadas en la Figura \ref{fig:strip-line-technology}. Los costos de fabricación de las mismas suelen ser muy bajos, y ofrecen comodidades para la implantación de componentes discretos, aunque en muchos casos se generan modos indeseados, que pueden ser disminuidos manteniendo el espesor del sustrato en valores despreciables respecto de la longitud de onda, lo que los vuelve frágiles. Además, los sustratos dieléctricos suelen presentar pérdidas que modifican el comportamiento de la señal. Las principales aplicaciones se relacionan con el diseño de filtros microondas, acopladores direccionales, transformadores de impedancia, planos de tierra y redes de distribución de energía de circuitos impresos e integrados \cite{Venkateswaran:Thesis}.
 
 
 \begin{figure}[htp]
@@ -850,7 +853,7 @@ Algunas de las líneas de transmisión más comunes están basadas en tecnologí
 	\label{fig:strip-line-technology}
 \end{figure}
 
-Las \textit{striplines}, debido a la homogeneidad del dieléctrico, soportan modos TEM. Las líneas \textit{microstrip}, en cambio, sólo pueden presentar modos TE y TM, aunque en frecuencias bajas tienen un comportamiento que puede denominarse cuasi-TEM, dado que la mayor parte del campo se concentra en el dieléctrico \footnote{Un comportamiento puramente TEM impediría el cumplimiento de la condición de fase en la interfaz, dado que las velocidades de propagación en ambos medios es distinta \cite{Pozar:MwEngineering}}. Un diagrama simplificado de los campos y los parámetros de una línea \textit{microstrip} se muestran en la figura \ref{fig:microstrip-campos}
+Las \textit{striplines}, debido a la homogeneidad del dieléctrico, soportan modos TEM. Las líneas \textit{microstrip}, en cambio, sólo pueden presentar modos TE y TM, aunque en frecuencias bajas tienen un comportamiento que puede denominarse cuasi-TEM, dado que la mayor parte del campo se concentra en el dieléctrico \footnote{Un comportamiento puramente TEM impediría el cumplimiento de la condición de fase en la interfaz, dado que las velocidades de propagación en ambos medios es distinta \cite{Pozar:MwEngineering}}. Un diagrama simplificado de los campos y los parámetros de una línea \textit{microstrip} se muestran en la Figura \ref{fig:microstrip-campos}
 
 
 \begin{figure}[htp]
@@ -871,7 +874,7 @@ En general, para simplificar el análisis, se considera que la cinta \textit{mic
 \label{subsec_antenas}
 %%%%
 
-Una antena es un dispositivo que actúa como fuente de ondas electromagnéticas. Es una interfaz entre el espacio libre y un dispositivo de guiado (como una guía de ondas o una línea de transmisión), y puede ser puede ser modelada como una carga que, en general, está adaptada. Su función es recibir o transmitir energía, usualmente optimizando algunas direcciones, y suprimiendo o disminuyendo su valor en otras, para lo que se utilizan distintas tecnologías, entre las que se destacan las antenas de hilo, de apertura y \textit{microstrip}, muchas veces dispuestas en arreglos y con componentes reflectores \cite{Balanis:Theory}. En este trabajo resultarán de mayor importancia las regiones más cercanas al radiador, y el control del comportamiento de los campos en las mismas modificará el comportamiento en la región de Fraunhoffer.
+Una antena es un dispositivo que actúa como fuente de ondas electromagnéticas. Es una interfaz entre el espacio libre y un dispositivo de guiado (como una guía de ondas o una línea de transmisión), y puede ser puede ser modelada como una carga que, en general, está adaptada. Su función es recibir o transmitir energía, usualmente optimizando algunas direcciones, y suprimiendo o disminuyendo su valor en otras, para lo que se utilizan distintas tecnologías, entre las que se destacan las antenas de hilo, de apertura y \textit{microstrip}, muchas veces dispuestas en arreglos geométricos y con componentes reflectores \cite{Balanis:Theory}. En este trabajo resultarán de mayor importancia las regiones más cercanas al radiador, y el control del comportamiento de los campos en las mismas modificará el comportamiento en la región de Fraunhoffer.
 
 %%%%
 \subsection{Regiones de campo}
@@ -896,10 +899,10 @@ Sobre el patrón se distinguen lóbulos, clasificados como principal (en la dire
 La impedancia de entrada de una antena es la que presenta a la línea de transmisión o guía de ondas que la alimenta. En general tiene una componente resistiva y una componente reactiva, de manera que $Z_A = R_A + j X_A$. En general, $R_A$ tiene dos componentes: $R_r$, la resistencia de radiación, y $R_L$, la resistencia de pérdidas. Como en general no coincide con la impedancia característica de la línea de transmisión que la alimenta, se aplican métodos de adaptación de impedancias.
 %%%%
 
-\subsection{Arreglos de antenas}
+\subsection{Conjuntos de antenas}
 % Ver apunte tesis overleaf
 
-Un arreglo de antenas es un conjunto de antenas dispuestas geométricamente, y alimentadas de manera tal que conformen un único sistema radiante. El primer conjunto de antenas usado extensivamente fue la antena Yagui-Uda, inventada en 1926, cuya fase no puede variarse electrónicamente. Recién durante la Segunda Guerra Mundial se inventaron los conjuntos de antena de fase variable, y a partir de 1950, con la invención de los defasadores de ferrita, la modificación de fase completa fue posible \cite{Stutzman:AntennaTheory}.
+Un grupo de antenas dispuestas geométricamente, y alimentadas de manera tal que conformen un único sistema radiante, conforman un conjunto de antenas. El primer conjunto de antenas usado extensivamente fue la antena Yagui-Uda, inventada en 1926, cuya fase no puede variarse electrónicamente. Recién durante la Segunda Guerra Mundial se inventaron los conjuntos de antena de fase variable, y a partir de 1950, con la invención de los defasadores de ferrita, la modificación de fase completa fue posible \cite{Stutzman:AntennaTheory}.
 
 El análisis más sencillo del comportamiento de conjuntos de antenas se presenta al analizar uno formado por antenas de iguales propiedades, cuyas amplitudes y fases pueden ser modificados, tanto en transmisión (a través de mecanismos de desfasaje) como en recepción (debido a diferencias e camino y circuitos de desfasaje). En general, el diagrama de radiación se puede calcular en base a la multiplicación del patrón de uno de los elementos y el patrón del arreglo, para el cual se asumen puntos de radiación isotrópicos en la posición de las antenas \cite{Balanis:Theory}.
 
@@ -910,7 +913,7 @@ El análisis más sencillo del comportamiento de conjuntos de antenas se present
 	\label{fig:rayosincidentes-array}
 \end{figure}
 
-El factor de \textit{array}, reemplazando cada elemento por radiadores isotrópicos, se obtiene considerando que una onda plana incide con ángulo $\theta$ sobre el conjunto, como se muestra en la figura \ref{fig:rayosincidentes-array}. Cada elemento es excitado con una fase $\xi_i$, debida a la diferencia de caminos y a las diferencias entre las líneas de transmisión de cada antena, de modo que
+El factor de \textit{array}, reemplazando cada elemento por radiadores isotrópicos, se obtiene considerando que una onda plana incide con ángulo $\theta$ sobre el conjunto, como se muestra en la Figura \ref{fig:rayosincidentes-array}. Cada elemento es excitado con una fase $\xi_i$, debida a la diferencia de caminos y a las diferencias entre las líneas de transmisión de cada antena, de modo que
 
 \begin{equation}
 AF=I_0e^{j\xi_0} + I_1e^{j\xi_1} + ... = \sum_{n=0}^{N-1} I_n e^{j\beta n d cos(\theta)}=\sum_{n=0}^{N-1} I_n e^{jn\Phi}.
@@ -931,7 +934,7 @@ Cuando se considera acoplamiento mutuo entre los elementos del \textit{array}, l
 
 La impedancia de entrada de un elemento aislado en el espacio se denomina \enquote{Impedancia de elemento aislado}, o simplemente impedancia de antena. La impedancia de entrada de una antena que está dispuesta en un ambiente con elementos activos se denomina \enquote{impedancia activa}, y varía según las excitaciones a las que se someta al arreglo de antena. En general, la caracterización de los elementos radiantes sometidos a efectos de acoplamiento mutuo consisten en la obtención de la \enquote{impedancia pasiva}, que se logra excitando un elemento y conectando a cargas adaptadas los demás.
 
-Hay 3 efectos responsables del acoplamiento mutuo en arreglos de antenas:
+Hay 3 efectos responsables del acoplamiento mutuo en conjuntos de antenas:
 
 \begin{itemize}
 	\item Acoplamiento espacial entre elementos.
@@ -957,7 +960,7 @@ I_1 \\ I_2 \\ \vdots \\ I_N
 \end{bmatrix}.
 \end{equation}
 
-Si suponemos que la antena no excitada tiene una impedancia de carga $Z^g_j$ sobre sus terminales (y que el generador de esa antena está apagado, $V^g_j=0$), la corriente generada sobre el elemento $j$ debido a la radiación del elemento $i$ será tal que $V_j=-Z^g_j I_j$, por lo que
+Si suponemos que la antena no excitada tiene una impedancia de carga $Z^g_j$ sobre sus terminales (y que el generador de esa antena está apagado, $V^g_j=0$), la corriente entrante generada sobre el elemento $j$ debido a la radiación del elemento $i$ será tal que $V_j=-Z^g_j I_j$, por lo que
 
 \begin{equation} \label{eq:impmutua}
 V_j = -Z^g_j I_j = Z_{jj}I_j + \sum_{i=1, i \neq j}^{N} Z_{ji}I_i.
@@ -999,7 +1002,7 @@ En el caso en que se consideren sólo dos antenas, de la ecuación \ref{eq:impmu
 %%%%
 Las antenas \textit{microstrip} cumplen varias de las especificaciones más importantes que imponen las diversas aplicaciones de antenas: Pueden ser pequeñas, tienen bajo peso, son económicas y fáciles de fabricar, y tienen bajo perfil, lo que permite adaptarlas a numerosos diseños. Suelen, sin embargo, tener un alto Q, ya que funcionan debido a sus propiedades resonantes, suelen tener baja eficiencia, son de baja potencia, y presentan polarización impura.
 
-En general, el diseño de una antena \textit{microstrip} se realiza de forma tal que el máximo de radiación se concentre en la dirección normal al parche (\textit{broadside}), aunque también es posible lograr radiación en dirección paralela al mismo (\textit{end-fire}), dependiendo de la geometría elegida. El sustrato elegido para la fabricación suele influir en el ancho de banda y la eficiencia: Una mayor permitividad dieléctrica genera una menor eficiencia, un menor ancho de banda y un menor acoplamiento con elementos cercanos, debido a que los campos se encuentran contenidos en el sustrato.
+En general, el diseño de una antena \textit{microstrip} se realiza de forma tal que el máximo de radiación se concentre en la dirección normal al parche, aunque también es posible lograr radiación en dirección paralela al mismo, dependiendo de la geometría elegida. El sustrato elegido para la fabricación suele influir en el ancho de banda y la eficiencia: Una mayor permitividad dieléctrica genera una menor eficiencia, un menor ancho de banda y, si se ignora el efecto de ondas de superficie, un menor acoplamiento con elementos cercanos, debido a que los campos se encuentran contenidos en el sustrato.
 
 Existen múltiples formas de alimentación de una antena \textit{microstrip}, entre las que se destacan la línea microstrip de alimentación, que suele dar lugar a radiación espuria y a polarización cruzada, debido a la asimetría que impone; y la conexión directa de cable coaxil, donde el conductor central del mismo se conecta en un punto del parche, y la malla se conecta al plano de tierra que funciona como reflector, ubicado en la cara opuesta del sustrato.
 
@@ -1008,7 +1011,7 @@ Existen varios métodos de análisis de antenas \textit{microstrip}, entre los q
 \subsubsection{Modelo de líneas de transmisión}
 \label{subsubsec_microstrip_modeloLineas}
 %%%%
-El modelo de líneas de transmisión es el más sencillo y el que ofrece una mayor intuición física, ya que usa los conceptos fundamentales de líneas \textit{microstrip}. Consiste en considerar a la antena como dos aperturas radiantes de ancho $W$ y altura $h$ separadas una distancia $L$ por una línea de transmisión de impedancia característica conocida $Z_0$, cada una de las cuales puede ser representada, en el modelo, como una conductancia $G$ y una susceptancia $B$, como se indica en la figura \ref{fig:circuito-equivalente-antena-ms}, donde la admitancia y la susceptancia se obtienen del modelo de apertura radiante, que puede consultarse en \cite{Balanis:Theory}.
+El modelo de líneas de transmisión es el más sencillo y el que ofrece una mayor intuición física, ya que usa los conceptos fundamentales de líneas \textit{microstrip}, analizados en la Sección \ref{sec:lineaMicrostrip}. Consiste en considerar a la antena como dos aperturas radiantes de ancho $W$ y altura $h$ separadas una distancia $L$ por una línea de transmisión de impedancia característica conocida $Z_0$, cada una de las cuales puede ser representada, en el modelo, como una conductancia $G$ y una susceptancia $B$, como se indica en la Figura \ref{fig:circuito-equivalente-antena-ms}, que se obtienen del modelo de apertura radiante, que puede consultarse en \cite{Balanis:Theory}.
 
 \begin{figure}[htp]
 	\centering
@@ -1019,9 +1022,9 @@ El modelo de líneas de transmisión es el más sencillo y el que ofrece una may
 
 
 
-Al igual que en el caso de las líneas \textit{microstrip}, se debe considerar una constante dieléctrica efectivo $\epsilon_{r_{eff}}$, que depende no sólo del ancho del sustrato, sino también de la frecuencia, debido a que a mayor frecuencia hay una mayor concentración de campo sobre el dieléctrico, otorgando mayor prevalencia a la constante dieléctrica del sustrato que a la del aire circundante en el cálculo de la constante efectiva. La expresión es la misma utilizada para líneas \textit{microstrip} (ecuación \ref{eq:cte-diel-efectiva-microstrip}), siempre y cuando $W>h$.
+Al igual que en el caso de las líneas \textit{microstrip}, se debe considerar una constante dieléctrica efectivo $\epsilon_{r_{eff}}$, que depende no sólo del ancho del sustrato, sino también de la frecuencia, debido a que a mayor frecuencia hay una mayor concentración de campo sobre el dieléctrico, otorgando mayor prevalencia, en el cálculo de la constante dieléctrica efectiva, a la constante dieléctrica del sustrato que a la del aire circundante. La expresión es la misma utilizada para líneas \textit{microstrip} (ecuación \ref{eq:cte-diel-efectiva-microstrip}), siempre y cuando $W>h$.
 
-El efecto de \textit{fringing} en los bordes del parche, que da lugar a un aumento del tamaño eléctrico, se modelan mediante la consideración de una extensión en la línea de transmisión que une a las aperturas radiantes, en función de la altura del sustrato. El cambio en la extensión de la línea de transmisión sugiere un cambio en la frecuencia de resonancia de la antena, al mismo tiempo que un mayor ancho de banda, sin una modificación del tamaño físico. En la ecuación \ref{eq:deltaL-antena-microstrip} se muestra una expresión aproximada de la variación del tamaño eléctrico, de forma que la longitud efectiva de la línea de transmisión resulta $L_{eff} = L + 2 \Delta L$. Esta expresión se utiliza para la obtención de la frecuencia de resonancia, como indica la expresión \ref{eq:frec-resonancia-modelo-linea-microstrip} para el modo dominante, $TM_{010}$.
+El efecto de \textit{fringing} en los bordes del parche, que da lugar a un aumento del tamaño eléctrico, se modelan mediante la consideración de una extensión en la línea de transmisión que une a las aperturas radiantes, en función de la altura del sustrato. El cambio en la extensión de la línea de transmisión sugiere un cambio en la frecuencia de resonancia de la antena sin una modificación del tamaño físico. En la ecuación \ref{eq:deltaL-antena-microstrip} se muestra una expresión aproximada de la variación del tamaño eléctrico, de forma que la longitud efectiva de la línea de transmisión resulta $L_{eff} = L + 2 \Delta L$. Esta expresión se utiliza para la obtención de la frecuencia de resonancia, como indica la expresión \ref{eq:frec-resonancia-modelo-linea-microstrip} para el modo dominante, $TM_{010}$.
 
 \begin{align}
 	\Delta L = h\; 0.412 \frac{(\epsilon_{eff}+0.3)(W/h + 0.264)}{(\epsilon_{eff}-0.258)(W/h +0.8)}.
@@ -1029,11 +1032,11 @@ El efecto de \textit{fringing} en los bordes del parche, que da lugar a un aumen
 \end{align}
 
 \begin{align}
-	f_{{r}_{010}} = \frac{v_p}{\lambda} = \frac{c/\sqrt{\epsilon_{r_{eff}}}{2*L_{eff}}} = \frac{1}{2 L_{eff} \sqrt{\epsilon_{eff}} \sqrt{\mu_0 \epsilon_0}} = \frac{1}{2 (L+2 \Delta L) \sqrt{\epsilon_{eff}} \sqrt{\mu_0 \epsilon_0}}.
+	f_{{r}_{010}} = \frac{v_p}{\lambda} = \frac{c/\sqrt{\epsilon_{r_{eff}}}}{2 L_{eff}} = \frac{1}{2 L_{eff} \sqrt{\epsilon_{eff}} \sqrt{\mu_0 \epsilon_0}} = \frac{1}{2 (L+2 \Delta L) \sqrt{\epsilon_{eff}} \sqrt{\mu_0 \epsilon_0}}.
 	\label{eq:frec-resonancia-modelo-linea-microstrip}
 \end{align}
 
-La impedancia de entrada de una antena \textit{microstrip} depende fuertemente de la posición de la alimentación, además de los valores de $G$ y $B$ de los \textit{slots} radiantes \cite{Balanis:Advanced}. Cuando la alimentación se realiza mediante una cinta \textit{microstrip}, se suele terminar la misma en el interior del parche, a una distancia $y_0$ del borde, como se indica en la figura \ref{fig:antema-microstrip-inset}, permitiendo una mejor adaptación, aunque introduciendo una capacidad de juntura que afecta a la frecuencia de resonancia. La distancia del punto de alimentación al borde del parche será menor a la mitad de la longitud total del parche, en lo que se identificó como \enquote{zona de adaptación} en la misma figura.
+La impedancia de entrada de una antena \textit{microstrip} depende fuertemente de la posición de la alimentación, además de los valores de $G$ y $B$ de los \textit{slots} radiantes \cite{Balanis:Advanced}. Cuando la alimentación se realiza mediante una cinta \textit{microstrip}, se suele terminar la misma en el interior del parche, a una distancia $y_0$ del borde, como se indica en la Figura \ref{fig:antema-microstrip-inset}, permitiendo una mejor adaptación, aunque introduciendo una capacidad de juntura que afecta a la frecuencia de resonancia. La distancia del punto de alimentación al borde del parche será menor a la mitad de la longitud total del parche, en lo que se identificó como \enquote{zona de adaptación} en la misma figura.
 
 \begin{figure} [H]
 	\centering
@@ -1056,16 +1059,16 @@ El factor de antena, el ancho de banda y la eficiencia son valores interdependie
 
 El modelo de cavidad resonante se utiliza principalmente para predecir el comportamiento en modos superiores de la antena. Para ello se considera que la región dieléctrica bajo el parche consiste en una cavidad cargada dieléctricamente, limitada por conductores eléctricos en las caras superior e inferior, y por conductores magnéticos en las caras laterales. Esta configuración conlleva a una impedancia de entrada puramente reactiva, incompatible con el comportamiento radiante del sistema, pero consistente con el comportamiento de otros parámetros. Para considerar las pérdidas por radiación, se añaden efectos de pérdidas dentro de la cavidad, relacionados con el factor de antena correspondiente.
 
-La consideración de paredes laterales como conductores magnéticos deviene de la consideración de la disposición de las cargas sobre el parche conductor y sobre el plano de tierra, donde se asume que el espesor del dieléctrico es lo suficientemente pequeño como para que no se presenten modos superiores sobre el eje vertical. Las cargas sobre la cara inferior del parche son atraídas por las cargas opuestas correspondientes en el plano de tierra, y su concentración genera una repulsión, hacia la cara superior, a otras cargas de la misma polarización, generando una corriente superficial en cada cara, como se indica en la figura \ref{fig:corrientes-microstrip}. Al disminuir el ancho del sustrato, el efecto de atracción del plano del tierra supera, en magnitud, al efecto de repulsión por la concentración de cargas en la cara inferior del parche, por lo que el flujo decrece, pudiendo considerarse nulo. Dado que el flujo de cargas, a través de los bordes, entre la cara superior y la inferior del parche metálico dispuesto sobre el sustrato, es el responsable del campo magnético tangencial a los bordes, la desaparición de dicho flujo disminuiría considerablemente este campo, permitiendo asumir que las paredes se comportan como conductores magnéticos. La baja altura del sustrato, además, permite considerar sólo las configuraciones TM para las frecuencias de interés, dado que, como se explicó antes, $h<<\lambda$.
+La consideración de paredes laterales como conductores magnéticos deviene de la consideración de la disposición de las cargas sobre el parche conductor y sobre el plano de tierra, donde se asume que el espesor del dieléctrico es lo suficientemente pequeño como para que no se presenten modos superiores sobre el eje vertical. Las cargas sobre la cara inferior del parche son atraídas por las cargas opuestas correspondientes en el plano de tierra, y su concentración genera una repulsión, hacia la cara superior, a otras cargas de la misma polarización, generando una corriente superficial en cada cara, como se indica en la Figura \ref{fig:corrientes-microstrip}. Al disminuir el ancho del sustrato, el efecto de atracción del plano del tierra supera, en magnitud, al efecto de repulsión por la concentración de cargas en la cara inferior del parche, por lo que el flujo decrece, pudiendo considerarse nulo. Dado que el flujo de cargas, a través de los bordes, entre la cara superior y la inferior del parche metálico dispuesto sobre el sustrato, es el responsable del campo magnético tangencial a los bordes, la desaparición de dicho flujo disminuiría considerablemente este campo, permitiendo asumir que las paredes se comportan como conductores magnéticos. La baja altura del sustrato, además, permite considerar sólo las configuraciones TM para las frecuencias de interés, dado que, como se explicó antes, $h<<\lambda$.
 
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=0.4\textwidth]{intro_electro/corrientes-microstrip.pdf}
-	\caption{Corrientes sobre el parche en una antena \textit{microstrip}, según el modelo de cavidad.}
+	\caption{Corrientes sobre el parche en una antena \textit{microstrip}, según el modelo de cavidad, basado en la representación en \cite{Balanis:Theory}.}
 	\label{fig:corrientes-microstrip}
 \end{figure}
 
-La obtención de los campos se detalla en \cite{Balanis:Advanced}, donde, considerando las hipótesis descriptas antes, asumiendo que el vector de potencial $\vec{A}$ tiene que cumplir la ecuación de Helmholtz (\ref{eq:Helmholtz}), y utilizando separación de variables, se obtienen soluciones para distintos modos, todos transversales magnéticos, con frecuencias de resonancia dadas por \ref{eq:frecRes-modosSup-microstripAntenna}, donde $n$, $m$ y $p$ son los índices del modo. El modo dominante, dado que $h < L$ y $h < W$, es el $TM_{010}$, cuya distribución de campos se muestra en la figura \ref{fig:distribucion-campos-microstrip}.
+La obtención de los campos se detalla en \cite{Balanis:Advanced}, donde, considerando las hipótesis descriptas antes, asumiendo que el vector de potencial $\vec{A}$ tiene que cumplir la ecuación de Helmholtz (\ref{eq:Helmholtz}), y utilizando separación de variables, se obtienen soluciones para distintos modos, todos transversales magnéticos, con frecuencias de resonancia dadas por \ref{eq:frecRes-modosSup-microstripAntenna}, donde $n$, $m$ y $p$ son los índices del modo, uno por coordenada. El modo dominante, dado que $h < L$ y $h < W$, es el $TM_{010}$, cuya distribución de campos se muestra en la Figura \ref{fig:distribucion-campos-microstrip}.
  
 \begin{align}
 	(f_r)_{nmp} = \frac{1}{2 \pi \sqrt{\mu \epsilon}} \sqrt{\left(\frac{m\pi}{h}\right)^2 + \left(\frac{n\pi}{L}\right)^2 + \left(\frac{p\pi}{W}\right)^2}.
@@ -1079,7 +1082,7 @@ La obtención de los campos se detalla en \cite{Balanis:Advanced}, donde, consid
 	\label{fig:distribucion-campos-microstrip}
 \end{figure}
 
-A pesar de que hay 4 aperturas en una antena \textit{microstrip} rectangular, sólo 2, las radiantes, aportan significativamente a la radiación, dado que lo radiado por las otras dos se cancelan sobre los planos principales. Las paredes separadas aproximadamente $\lambda/2$ tienen campos en direcciones opuestas en el mismo momento, por lo que se suman en la dirección normal al parche, dando lugar a un comportamiento \textit{broadside}.
+A pesar de que hay cuatro aperturas en una antena \textit{microstrip} rectangular, sólo dos, las radiantes, aportan significativamente a la radiación en el modo principal, dado que lo radiado por las otras dos se cancelan sobre los planos principales. Las paredes separadas aproximadamente $\lambda/2$ tienen campos en direcciones opuestas en el mismo momento, por lo que se suman en la dirección normal al parche, dando lugar a un comportamiento \textit{broadside}.
 
 Un aspecto importante del análisis por el modelo de cavidad radica en las densidades de corriente equivalentes. Según lo descripto antes, existe una corriente, $\vec{J}$, sobre la superficie del parche. Debido a que la polarización es TM, sobre las aperturas radiantes laterales debe existir también una densidad de corriente eléctrica, $\vec{J}_s$, y una densidad de corriente magnética, $\vec{M}_s$, de modo que, en función de los campos en las aperturas,
 
@@ -1087,7 +1090,7 @@ Un aspecto importante del análisis por el modelo de cavidad radica en las densi
 	\vec{J}_s &= \hat{n} \times \vec{H}_a, & \vec{M}_s = - \hat{n} \times \vec{E}_a
 \end{align}
 
-Según las hipótesis dadas antes, y como se muestra en la figura \ref{fig:distribucion-campos-microstrip}, la magnitud del campo magnético tangencial a las paredes es despreciable, de modo que la corriente sobre las paredes, $\vec{J}_s$, también lo es. La corriente sobre el parche, debido a la baja distancia con el plano de tierra, es baja, por lo que también puede considerarse despreciable. De esta forma, la única densidad de corriente apreciable es $\vec{M}_s$. El efecto del plano de tierra se puede tener en cuenta considerando teoría de imágenes. Según la misma, dado que se trata de un conductor eléctrico, las corrientes magnéticas imagen tienen el mismo sentido que las originales, de modo que la densidad de corriente magnética equivalente resulta el doble que la original, como se expresa en la ecuación \ref{eq:densidad-de-corriente-caras-laterales-microstrip}, y se observa en la figura \ref{fig:densidad-corriente-microstrip}.
+Según las hipótesis dadas antes, y como se muestra en la Figura \ref{fig:distribucion-campos-microstrip}, la magnitud del campo magnético tangencial a las paredes es despreciable, de modo que la corriente sobre las paredes, $\vec{J}_s$, también lo es. La corriente sobre el parche, debido a la baja distancia con el plano de tierra, es baja, por lo que también puede considerarse despreciable. De esta forma, la única densidad de corriente apreciable es $\vec{M}_s$. El efecto del plano de tierra se puede tener en cuenta considerando teoría de imágenes. Según la misma, dado que se trata de un conductor eléctrico, las corrientes magnéticas imagen tienen el mismo sentido que las originales, de modo que la densidad de corriente magnética equivalente resulta el doble que la original, como se expresa en la ecuación \ref{eq:densidad-de-corriente-caras-laterales-microstrip}, y se observa en la Figura \ref{fig:densidad-corriente-microstrip}.
 
 \begin{align}
 	\label{eq:densidad-de-corriente-caras-laterales-microstrip}
@@ -1109,14 +1112,14 @@ Se puede considerar, entonces, que cada apertura actúa como un dipolo magnétic
 \subsection{Acoplamiento mutuo en antenas \textit{microstrip}}
 \label{subsec_acoplamiento_microstrip}
 %%%%
-El acoplamiento mutuo está determinado principalmente por los campos que existen sobre la interfaz dieléctrico-aire: la onda espacial (decrece como $1/\rho$), los campos cercanos de superior (decreciendo como $1/\rho^2$), la onda de superficie (con dependencia de tipo $1/\rho^{1/2}$) y las ondas de tipo \textit{leaky} (con dependencia del tipo $e^{-Q}/e^{1/2}$) \cite{Balanis:Advanced}. A mayor distancia del elemento radiante fuente, las ondas de superficie son las que tienen carácter dominante, siempre que en esa dirección existan \cite{Alexopoulos:PrintedDipoles}. En general, si la distancia entre los elementos radiantes es grande (mayor a $0.8 \lambda$), la influencia de las ondas de superficie es baja y el acoplamiento es por tanto bajo. Aún así, si el conjunto es grande, la suma de los efectos de los distintos parches puede dar lugar a efectos de acoplamiento significativos, incluso entre elementos no adyacentes \cite{Dodov:SurfaceWavesImpact}. Como en todo conjunto de antenas, el acoplamiento mutuo es función, además de la distancia, de la posición entre los elementos radiantes.
+El acoplamiento mutuo está determinado principalmente por los campos que existen sobre la interfaz dieléctrico-aire: la onda espacial (decrece como $1/\rho$), los campos cercanos de superior (decreciendo como $1/\rho^2$), la onda de superficie (con dependencia de tipo $1/\rho^{1/2}$) y las ondas de tipo \textit{leaky} (con dependencia exponencial decreciente) \cite{Balanis:Advanced}. A mayor distancia del elemento radiante fuente, las ondas de superficie son las que tienen carácter dominante, siempre que en esa dirección existan \cite{Alexopoulos:PrintedDipoles}. En general, si la distancia entre los elementos radiantes es grande (mayor a $0.8 \lambda$), la influencia de las ondas de superficie es baja y el acoplamiento es por tanto bajo. Aún así, si el conjunto es grande, la suma de los efectos de los distintos parches puede dar lugar a efectos de acoplamiento significativos, incluso entre elementos no adyacentes \cite{Dodov:SurfaceWavesImpact}. Como en todo conjunto de antenas, el acoplamiento mutuo es función, además de la distancia, de la posición entre los elementos radiantes.
 
-En un \textit{array} planar de antenas se deben considerar la amplitud y la fase de la onda incidente. Si se ubican en forma colineal sobre el plano anche, el acoplamiento mutuo entre las antenas es menor al que se observa si se ubican de forma colineal sobre el plano E (figura \ref{fig:acomplamientoEyH}, \cite{VanLil:TLModelCoupling}, \cite{Pozar:InputImpedanceMutualCoupling}), y el aumento de la distancia entre los parches reduce el acoplamiento \cite{Dodov:SurfaceWavesImpact}. Si los elementos se ubican en forma colineal sobre el plano E, el decrecimiento del parámetro $S_{12}$ es mucho más lento, debido a la presencia de ondas de superficie, comenzando a partir del modo TM, que no posee frecuencia de corte inferior, y aumentando con la aparición de modos TE y TM de orden superior, fruto del aumento de espesor del sustrato y el crecimiento de la constante dieléctrica \cite{Alexopoulos:PrintedDipoles}. La ubicación sobre el plano H genera que las ondas responsables del acoplamiento sean de polarización TE, mientras que la ubicación sobre el plano E genera que las mismas sean de polarización TM, que es la polarización dominante en las antenas \textit{microstrip}. Un aumento en el ancho del sustrato permitiría la aparición de modos TE, generando un mayor acoplamiento en el arreglo sobre el plano H.
+En un \textit{array} planar de antenas se deben considerar la amplitud y la fase de la onda incidente. Si se ubican en forma colineal sobre el plano anche, el acoplamiento mutuo entre las antenas es menor al que se observa si se ubican de forma colineal sobre el plano E (Figura \ref{fig:acomplamientoEyH}), \cite{VanLil:TLModelCoupling}, \cite{Pozar:InputImpedanceMutualCoupling}, y el aumento de la distancia entre los parches reduce el acoplamiento \cite{Dodov:SurfaceWavesImpact}. Si los elementos se ubican en forma colineal sobre el plano E, el decrecimiento del parámetro $S_{12}$ es mucho más lento, debido a la presencia de ondas de superficie, comenzando a partir del modo TM, que no posee frecuencia de corte inferior, y aumentando con la aparición de modos TE y TM de orden superior, fruto del aumento de espesor del sustrato y el crecimiento de la constante dieléctrica \cite{Alexopoulos:PrintedDipoles}. La ubicación sobre el plano H genera que las ondas responsables del acoplamiento sean de polarización TE, mientras que la ubicación sobre el plano E genera que las mismas sean de polarización TM, que es la polarización dominante en las antenas \textit{microstrip}. Un aumento en el ancho del sustrato permitiría la aparición de modos TE, generando un mayor acoplamiento en el arreglo sobre el plano H.
 
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=0.8\textwidth]{intro_electro/pozar-acoplamiento.pdf}
-	\caption{Acoplamiento mutuo entre antenas \textit{microstrip}, para posición colineal en plano E y plano H. Parámetros: W: 10.57 cm, L: 6.55 cm, h: 0.1588 cm, $\epsilon_r$: 2.55, $f_r$: 1.410 MHz. Fuente: D. M. Pozar, \enquote{Input impedance and mutual coupling of rectangular microstrip antennas}, IEEE Trans. Antennas Propagat. Vol AP-30, No. 6. Noviembre, 1982.}
+	\caption{Acoplamiento mutuo entre antenas \textit{microstrip}, para posición colineal en plano E y plano H. Parámetros: W: 10.57 cm, L: 6.55 cm, h: 0.1588 cm, $\epsilon_r$: 2.55, $f_r$: 1.410 MHz \cite{Pozar:InputImpedanceMutualCoupling}.}
 	\label{fig:acomplamientoEyH}
 \end{figure}
 
