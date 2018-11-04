@@ -19,6 +19,10 @@
 \graphicspath{{Figures/}}
 \usepackage[utf8]{inputenc}  % Para codificación de texto UTF8.
 \usepackage[spanish]{babel}  % Para escritura en castellano.
+\usepackage{xcolor}
+\usepackage{subfigure}  % Para manejo de subfiguras.
+\usefonttheme[onlymath]{serif}  
+
 \mode<presentation> {
 
 % The Beamer class comes with a number of default slide themes
@@ -75,12 +79,12 @@
 %\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
 %\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
 
-%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
 }
 
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
-
+\renewcommand{\vec}[1]{\boldsymbol{#1}}
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
@@ -107,7 +111,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 
 \begin{frame}
 \frametitle{Resumen} % Table of contents slide, comment this block out to remove it
-\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\tableofcontents[hideallsubsections] % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
 \end{frame}
 
 %----------------------------------------------------------------------------------------
@@ -115,41 +119,228 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 %----------------------------------------------------------------------------------------
 
 %------------------------------------------------
-\section{Introducción} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+\section{Presentación del problema} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
 %------------------------------------------------
-
-	\subsection{Presentación del problema} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+		\begin{frame}
+			\frametitle{Objetivo}
+			
+			\begin{itemize}
+				\item Propagación de ondas de superficie.
+				\item Estructuras periódicas.
+				\item Comportamiento de EBGs uniplanares.
+				\item Modelo circuital equivalente de una celda unitaria.
+				\item Programa de simulación en el dominio del tiempo.
+				\item Introducción al uso de EBGs en antenas.
+			\end{itemize}
+		\end{frame}
 	
 		\begin{frame}
 		\frametitle{Reseña histórica}
-		% Faraday, Maxwell, Hertz
-		% Guías de ondas (Rayleigh), guías dieléctricas
-		% Conjuntos de antenas: Yagui-Uda. WWII.
-		% Circuitos microstrip. Deschamps: 1953.
+		\begin{itemize}
+			\item 1873: \textit{Maxwell}. Bases de teoría electromagnética clásica.\\
+			\item 1885-1887: \textit{Heaviside}. Simplificación de expresiones: Notación vectorial. \\
+			\item 1886-1891: \textit{Hertz}. Validación de teoría de ondas electromagnéticas. Primer antena dipolo y parabólica.
+			\item 1897: \textit{Rayleigh}. Propagación de ondas en guías metálicas.
+			\item 1926: \textit{Yagi-Uda}. Conjunto de antenas, fase fija.
+			\item 1938-1945: Antenas de fase variable.
+			\item 1953: \textit{Deschamps}. Antenas \textit{microstrip}.
+			\item 1970': Uso en aplicaciones prácticas. Solución a problemas de dispersión y modos indeseados.
+			% Sustratos con bajas tangentes de pérdida. Mejora en fotolitografía. Optimización de modelos teóricos, simulaciones numéricas. Simplificación constructiva, más barato.
+		\end{itemize}
 		\end{frame}
+	
+		\begin{frame}
+		\frametitle{Ventajas de las estructuras \textit{microstrip}}
+		
+		\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+			
+			\column{.50\textwidth} % Left column and width
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=1\textwidth]{Presentacion/microstrip_general.pdf}
+			\end{figure}
+			
+			\column{.45\textwidth} % Right column and width
+			\begin{itemize}
+				\item Bajo costo.
+				\item Bajo peso.
+				\item Construcción sencilla (fotolitografía).
+				\item Cómodas para implantación de componentes discretos.
+				\item Alto Q (resonantes).
+			\end{itemize}
+		
+		\end{columns}
+	
+	\vspace{25pt}
+	
+	Aplicaciones: filtros microondas, acopladores direccionales, transformadores de impedancia, planos de tierra y redes de distribución de circuitos impresos.
+		
+	\end{frame}
 		
 		\begin{frame}
 		\frametitle{Problemas de las estructuras \textit{microstrip}}
+			El tamaño de las antenas y estructuras \textit{microstrip} depende de la permitividad dieléctrica del sustrato y de la longitud de onda de trabajo. \\
+			\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+				
+				\column{.38\textwidth} % Left column and width
+				
+				\begin{itemize}
+					\item $\downarrow D \Rightarrow \uparrow \epsilon_r,$ {\color{red}$\uparrow$ SW}.
+					\item $\uparrow \epsilon_r \Rightarrow \uparrow Q, \downarrow$ BW.
+					\item $\downarrow Q \Rightarrow \uparrow h$.
+					\item $\uparrow h \Rightarrow ${\color{red}$\uparrow$ SW}, $\uparrow$ modos.
+				\end{itemize}
+				\vspace{5pt}
+				Las ondas de superficie:
+				\begin{itemize}
+					\item $\downarrow$ potencia radiada.
+					\item {\color{red}$\uparrow$ acoplamiento.}
+					\item Diagrama de radiación: \\$\uparrow$ lóbulos secundarios. %Por discontinuidades
+				\end{itemize}
+				
+				
+				\column{.60\textwidth} % Right column and width
+				\begin{figure}[h]
+					\centering
+					\includegraphics[width=1\textwidth]{Presentacion/problema_microstrip.pdf}
+				\end{figure}
+				
+			\end{columns}
+			\vspace{9pt}
+			{\footnotesize SW: Ondas de superficie. BW: Ancho de banda. $D$: Tamaño de la estructura. $h$: Ancho del sustrato.}
 		\end{frame}
 		
+		
+		% Acá la idea es comentar que en general uno busca disminuir el tamaño. Eempezando de la esquina inferior derecha, uno tiene una estructura grande y fuerte. La quiere achicar, sale de la zona verde, hay mas ondas de superficie, y para bajar esas ondas no queda otra que bajar el ancho del sustrato, generando mayor fragilidad estructural. Modos indeseados.
 		\begin{frame}
-		\frametitle{Soluciones propuestas}
+		\frametitle{Soluciones propuestas en la literatura}
+		
+		\begin{itemize}
+			\item Separación del plano de tierra de las estructuras.
+			\item Modificar la altura o la permitividad del sustrato a corta distancia.
+			\item Estructuras periódicas: EBG, DGS.
+		\end{itemize}
+		
+		\begin{figure}[H]
+			\centering 
+			\subfigure{
+				\label{fig:sustrato-antena-ebg}
+				\includegraphics[width=0.40\textwidth]{Aplicacion/foto-ebg-alrededor-antena.pdf}}
+			\hspace{10pt}
+			\subfigure{
+				\label{fig:escalon-sustrato}
+				\includegraphics[width=0.40\textwidth]{Aplicacion/foto-escalon-alrededor-antena.pdf}}
+		\end{figure}
+		\tiny{F. Yang e Y. Rahmat-Samii, Electromagnetic Band Gap Structures in Antenna Engineering, Cambridge University Press, 2009.}
 		\end{frame}
 
-\section{Electromagnetismo básico}
+\section{Conceptos básicos de electromagnetismo}
 
 	\subsection{Ecuaciones de Maxwell} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 	
 		\begin{frame}
 		\frametitle{Ecuaciones de Maxwell}
+		
+		\begin{align*}
+		\left.\begin{array}{rr@{\mskip\thickmuskip}l}
+		\text{Faraday} &\nabla \times \vec{E} & = -\frac{\partial \vec{B}}{\partial t} - \vec{M}\\
+		\text{Ampère} &\nabla \times \vec{H} & = \frac{\partial \vec{D}}{\partial t} + \vec{J} \\
+		\text{Gauss} &\nabla \cdot \vec{D} & = \rho \\
+		\text{Gauss} & \nabla \cdot \vec{B} & = 0
+		\end{array} \right\}
+		\quad \implies \quad
+		\left\{\begin{array}{r@{\mskip\thickmuskip}l}
+		\nabla \times \vec{E} & = -j \omega \vec{B} - \vec{M} \\
+		\nabla \times \vec{H} & = j \omega \vec{D} + \vec{J} \\
+		\nabla \cdot \vec{D} & = \rho\\
+		\nabla \cdot \vec{B} & = 0
+		\end{array}\right.
+		\end{align*}
+		
+		\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+			
+			\column{.62\textwidth} % Left column and width
+			
+			Si:
+			\begin{itemize}
+				\item No hay dispersión. ($\epsilon$ y $\mu$ independientes de $\omega$).
+				\item Material isotrópico.
+				\item Estudio macroscópico.
+				\item Comportamiento armónico.
+				\item Régimen permanente.
+			\end{itemize}
+			
+			\column{.35\textwidth} % Right column and width
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=1\textwidth]{Presentacion/James_Clerk_Maxwell.png}
+			\end{figure}
+			
+		\end{columns}
+				
+		
+		
 		\end{frame}
 		
 		\begin{frame}
-		\frametitle{Campos en medios materiales y condiciones de borde}
+		\frametitle{Campos en medios materiales}
+		Si el medio es lineal, isotrópico y homogéneo: %Si anisotrópico, Xe variaría con la dir. Si inhomogéneo, Xe variaría con la posición. Si no lineal, P debería calcularse como una serie de potencias.
+		
+		\begin{align*}
+		\vec{D} = \epsilon_0 \vec{E} + \vec{P}_e = \epsilon_0 (1+\chi_e)\vec{E} = \epsilon \vec{E} &= (\epsilon' - j \epsilon'') \vec{E} y\\
+		\vec{B} = \mu_0 (\vec{H} + \vec{P}_m) = \mu_0 (1+\chi_m)\vec{H} = \mu \vec{H} &= (\mu' - j \mu'') \vec{H}.
+		\end{align*}
+		
+		Si el material posee una conductividad $\sigma$ independiente del campo eléctrico aplicado, se cumple la Ley de Ohm:
+		
+		\begin{align*}
+		\vec{J} &= \sigma \vec{E} \Rightarrow \vec{D} = \left( \epsilon' - j\epsilon'' - j \frac{\sigma}{\omega} \right) \vec{E}.
+		\end{align*}
+		
+		La tangente de pérdidas queda definida como:
+		
+		\begin{align*}
+		\tan \; \delta &= \frac{\omega \epsilon'' + \sigma}{\omega \epsilon'}.
+		\end{align*}
+		
+		
 		\end{frame}
 		
 		\begin{frame}
-		\frametitle{Ondas electromagnéticas}
+		\frametitle{Ondas electromagnéticas (I)}
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=1\textwidth]{Presentacion/onda_em.pdf}
+		\end{figure}
+		
+		En una región libre de fuentes, se pueden deducir las ecuaciones de Helmholtz para ondas monocromáticas, a partir de las ecuaciones de Maxwell.
+				
+		\begin{align*}
+		\left.\begin{array}{rr@{\mskip\thickmuskip}l}
+		\nabla^2  \vec{E} + \gamma^2 \vec{E} &= 0\\
+		\nabla^2 \vec{H} + \gamma^2 \vec{H}& = 0
+		\end{array} \right\}
+		\quad \implies \quad
+		\left\{\begin{array}{r@{\mskip\thickmuskip}l}
+		\vec{E}(x,y,z) &= \vec{E}_0 e^{\pm j \vec{\gamma}\cdot \vec{r}}. \\
+		\vec{H}(x,y,z) &= \vec{H}_0 e^{\pm j \vec{\gamma}\cdot \vec{r}}.
+		\end{array}\right.
+		\end{align*}
+			
+		\begin{align*}
+		\gamma &= -j\alpha + \beta = j\omega \sqrt{\mu (\epsilon'-j\epsilon'') - j \sigma \epsilon/\omega}.\\
+		\vec{\gamma} &= \vec{\gamma}_x + \vec{\gamma}_y +\vec{\gamma}_z
+		\end{align*}
+
+		\end{frame}
+	
+		\begin{frame}
+		\frametitle{Ondas electromagnéticas (II)}
+		
+		
+		
+		
 		\end{frame}
 		
 		% Comparar Masters Eq con Shrodinger. Modos.
