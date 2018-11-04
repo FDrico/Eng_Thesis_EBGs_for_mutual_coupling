@@ -51,16 +51,23 @@ De las ecuaciones \ref{eq:Maxwell} se deduce que las fuentes de campo electromag
 \end{align}
 
 
-A partir de las ecuaciones de Maxwell (\ref{eq:Maxwell}), y considerando relaciones constitutivas que no varían en el tiempo ni en función de la frecuencia (es decir, no hay dispersión), y donde no hay cargas libres ni corrientes ($\rho=0$ y $\vec{J}=0$), donde el material es isótropo y macroscópico, y donde no se consideran pérdidas, es posible, utilizando la linealidad de dichas ecuaciones, separar el comportamiento en el tiempo y en el espacio, expandiendo los campos en modos armónicos y expresándolos como combinaciones lineales de los mismos. Los modos, entonces, resultan de un patrón espacial ($\vec{H}(\vec{r})$ o $\vec{E}(\vec{r})$) multiplicado por un patrón temporal.
+A partir de las ecuaciones de Maxwell (\ref{eq:Maxwell}), y considerando relaciones constitutivas que no varían en el tiempo ni en función de la frecuencia (es decir, no hay dispersión), y donde no hay cargas libres ni corrientes ($\rho=0$ y $\vec{J}=0$), donde el material es isótropo, su estudio es macroscópico, y donde no se consideran pérdidas, es posible, utilizando la linealidad de dichas ecuaciones, separar el comportamiento en el tiempo y en el espacio, expandiendo los campos en modos armónicos y expresándolos como combinaciones lineales de los mismos. Los modos, entonces, resultan de un patrón espacial ($\vec{H}(\vec{r})$ o $\vec{E}(\vec{r})$) multiplicado por un patrón temporal.
 
 Dado que la mayor parte del análisis se realiza sobre campos de comportamiento armónico y en régimen permanente, la dependencia del tiempo de la ecuaciones de Maxwell se suele simplificar, de manera que la dependencia temporal, $e^{j \omega t}$, suele quedar implícita, dado que resulta común para todos los términos. Así, las derivadas respecto del tiempo resultan más sencillas, y los vectores de campos se vuelven funciones vectoriales complejas dependientes sólo de coordenadas espaciales \cite{Collin:GuidedWaves}. El resultado de esta simplificación se observa en el lado derecho de la ecuación \ref{eq:Maxwell}.
 
-Bajo estas consideraciones, resulta claro que las configuraciones posibles de campo son transversales: Para cualquier campo magnético $\vec{H}(\vec{r}) = \vec{a} \exp(j \vec{\beta} \cdot \vec{r})$, la ecuación de la divergencia del mismo obliga a que $\vec{a} \cdot \vec{\beta} = 0$.
+Bajo estas consideraciones, resulta claro que las configuraciones posibles de campo son transversales: Para cualquier campo magnético $\vec{H}(\vec{r}) = \vec{a}e^{j \vec{\beta} \cdot \vec{r}}$, la ecuación de la divergencia del mismo obliga a que $\vec{a} \cdot \vec{\beta} = 0$.
 
 \subsection{Campos en medios materiales}
 \label{subsec_campos_en_dielectricos}
 
-Un campo eléctrico aplicado sobre cualquier material dieléctrico genera una polarización de sus átomos y/o moléculas, creando momentos dipolares eléctricos (o alineándolos, si en el material existían previamente), y dando lugar a un vector de polarización adicional, $\vec{P}_e$, que genera un decrecimiento en el campo eléctrico total presente en el material. En el mismo sentido, un campo magnético aplicado sobre un medio material podría ser capaz de alinear los momentos dipolares magnéticos en un material magnético, produciendo un vector de polarización magnética $P_m$. Si el medio es, además, lineal e isotrópico, dichas polarizaciones son proporcionales al campo aplicado, de forma que $\vec{P}_e = \epsilon_0 \chi_e \vec{E}$ y $\vec{P}_m = \chi_m \vec{H}$, con $\chi_e$ y $\chi_m$ las susceptibilidades eléctrica y magnética, respectivamente. Dado que las mismas toman valores complejos, los medios materiales poseen permitividades eléctricas y permeabilidades magnéticas también complejas, asociadas a las pérdidas debidas al amortiguamiento causado por los momentos dipolares respectivos \cite{Fernandez:Electromag}. Las relaciones constitutivas resultan, entonces,
+Un campo eléctrico aplicado sobre cualquier material dieléctrico genera una polarización de sus átomos y/o moléculas, creando momentos dipolares eléctricos (o alineándolos, si en el material existían previamente), y dando lugar a un vector de polarización adicional, $\vec{P}_e$, que genera un decrecimiento en el campo eléctrico total presente en el material. En el mismo sentido, un campo magnético aplicado sobre un medio material podría ser capaz de alinear los momentos dipolares magnéticos en un material magnético, produciendo un vector de polarización magnética $P_m$. Si el medio es, además, lineal e isotrópico, dichas polarizaciones son proporcionales al campo aplicado, de forma que 
+
+\begin{align}
+\vec{P}_e = \epsilon_0 \chi_e \vec{E}\\
+\vec{P}_m=\chi_m\vec{H},
+\end{align}
+
+con $\chi_e$ y $\chi_m$ las susceptibilidades eléctrica y magnética, respectivamente. Dado que las mismas toman valores complejos, los medios materiales poseen permitividades eléctricas y permeabilidades magnéticas también complejas, asociadas a las pérdidas debidas al amortiguamiento causado por los momentos dipolares respectivos \cite{Fernandez:Electromag}. Las relaciones constitutivas resultan, entonces,
 
 \begin{subequations}
 	\label{eq:polarization_vector}
@@ -175,12 +182,14 @@ Si se considera una interfaz entre dos medios, como la que se muestra en la Figu
 \begin{subequations}
 	\label{eq:condiciones_borde}
 	\begin{align}
-		\hat{n} \cdot (\vec{D}_{2} - \vec{D}_{1}) & = \rho_s \\
-		\hat{n} \cdot (\vec{B}_{2} - \vec{B}_{2}) & = 0 \\
-		\hat{n} \times (\vec{E}_2 - \vec{E}_1)  & = - \vec{M}_s \\
-		\hat{n} \times (\vec{H}_2 - \vec{H}_1) & = \vec{J}_s
+		\hat{n} \cdot (\vec{D}_{2} - \vec{D}_{1}) & = \rho_s, \\
+		\hat{n} \cdot (\vec{B}_{2} - \vec{B}_{2}) & = 0, \\
+		\hat{n} \times (\vec{E}_2 - \vec{E}_1)  & = - \vec{M}_s, \\
+		\hat{n} \times (\vec{H}_2 - \vec{H}_1) & = \vec{J}_s,
 	\end{align}
 \end{subequations}
+
+donde $\rho_s$ representa la densidad de carga superficial, $\vec{M}_s$ la densidad de corriente magnética en la superficie, $\vec{J}_s$ la densidad de corriente eléctrica, y los campos a uno y otro lado de la interfaz entre los medios se denotan con los subíndices $1$ y $2$.
 
 %\paragraph{Campos sobre una superficie dieléctrica}
 %Dado que en una interfaz entre dos dieléctricos no hay carga eléctrica ni densidades de corriente, las ecuaciones \ref{eq:condiciones_borde} establecen que las componentes normales de los vectores $\vec{D}$ y $\vec{B}$ se conservan, y que las componentes tangenciales de $\vec{E}$ y $\vec{H}$ también lo hacen.

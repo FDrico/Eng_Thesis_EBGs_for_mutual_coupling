@@ -72,7 +72,8 @@
 \newcommand{\versor}[1]{\bm{\mathbf{\hat{#1}}}}  % Versor.
 \renewcommand{\labelitemi}{$\bullet$}  % Redefine el indicador de ítem en listas no numeradas (1º orden).
 \renewcommand{\labelitemii}{\fontsize{4}{4}\selectfont $\blacksquare$}  % Redefine el indicador de ítem en listas no numeradas (2º orden).
-\renewcommand{\theequation}{\thechapter\hspace{0.2mm}-\arabic{equation}}  % Coloca un guión entre el cápitulo y el número de ecuación.
+%\renewcommand{\theequation}{\thechapter\hspace{0.2mm}-\arabic{equation}}  % Coloca un guión entre el cápitulo y el número de ecuación.
+\renewcommand{\theequation}{\thechapter.\arabic{equation}}
 \renewcommand{\floatpagefraction}{0.75}
 \renewcommand{\appendixname}{Apéndices}
 \renewcommand{\appendixtocname}{Apéndices}
@@ -107,7 +108,7 @@
             {Federico Luna}  % Nombre del tesista.
             }
 \addresses  {\groupname\\\deptname\\\univname}  % Editar este campo en el archivo "Thesis.cls".
-\date{30 de Octubre de 2018}  % Incluye la fecha al momento de compliar el documento.
+\date{5 de Noviembre de 2018}  % Incluye la fecha al momento de compliar el documento.
 \subject{}
 \keywords{}
 \maketitle
@@ -148,11 +149,11 @@ Richard Feynman
 
 El objetivo de este trabajo es el estudio teórico y numérico del funcionamiento de las estructuras EBG (\textit{Electromagnetic Bandgap}), un subgrupo de metamateriales con capacidad de bloquear la propagación de ondas de superficie, a fin de aplicarlas a la disminución del acoplamiento mutuo entre antenas que comparten sustrato.
 
-En primer lugar se estudia el fenómeno de aparición de ondas de superficie en sustratos recubiertos por un plano de tierra, a fin de conocer los parámetros que gobiernan su comportamiento. Se desarrollan conceptos provenientes de la óptica para la explicación del funcionamiento de las estructuras, y se utilizan las técnicas desarrolladas para cristales fotónicos para lograr un acercamiento teórico al problema en microondas. Además, se utilizan también herramientas propias del electromagnetismo clásico para la descripción de estructuras periódicas infinitas, así como para la obtención de diagramas de dispersión. Debido a la dificultad del problema analítico, se hace uso de numerosos métodos de simulación en el dominio del tiempo y la frecuencia, provistos por el software de simulación elegido.
+En primer lugar se estudia el fenómeno de aparición de ondas de superficie en sustratos recubiertos por un plano de tierra, a fin de conocer los parámetros que gobiernan su comportamiento. Se desarrollan conceptos provenientes de la óptica para la explicación del funcionamiento de las estructuras, y se utilizan las técnicas desarrolladas para cristales fotónicos para lograr un acercamiento teórico al problema en microondas. Además, se utilizan también herramientas propias del electromagnetismo clásico para la descripción de estructuras periódicas infinitas, así como para la obtención de diagramas de dispersión. Debido a la dificultad del problema analítico, se hace uso de numerosos métodos de simulación en el dominio del tiempo y la frecuencia.
 
-Considerando que el tiempo de simulación no resulta despreciable, se propone un modelo circuital de parámetros concentrados, con respuesta similar a una estructura simulada utilizando técnicas de onda completa, que permite un análisis rápido y conceptual del comportamiento. Además, se propone, implementa y evalúa un método de simulación bidimensional en el dominio del tiempo, basado en la geometría de las estructuras periódicas propuestas.
+Considerando que el tiempo de simulación no resulta despreciable, se propone un modelo circuital de parámetros concentrados, basado en observaciones físicas y experimentales publicadas en la literatura. El circuito propuesto ofrece una respuesta similar a la obtenida mediante la simulación utilizando métodos numéricos de onda completa de la estructura, por lo que resulta una herramienta de interés para el análisis rápido y conceptual del comportamiento de la misma. Además, se propone, implementa y evalúa un método de simulación bidimensional en el dominio del tiempo, basado en la geometría de las estructuras periódicas propuestas.
 
-Finalmente, se observa el comportamiento de conjuntos de antenas monopolo y \textit{microstrip} que comparten sustrato frente a la inserción de geometrías EBG.
+Finalmente, y a modo introductorio para trabajos futuros, se observa el comportamiento de conjuntos de antenas monopolo y \textit{microstrip} que comparten sustrato, frente a la inserción de geometrías EBG. El breve análisis realizado permite concluir que, si bien la disminución del acoplamiento es notoria, la aparición de desadaptaciones y acoplamientos de campo cercano entre las antenas y la estructura dificulta su uso, en especial si la disposición de celdas unitarias no fue considerada en el diseño original.
 
 \clearpage
 
