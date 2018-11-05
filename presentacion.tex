@@ -235,7 +235,13 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		\end{frame}
 
 \section{Conceptos básicos de electromagnetismo}
-
+	
+	
+	\begin{frame}
+		\frametitle{Conceptos básicos de electromagnetismo}
+		\tableofcontents[currentsection,hideothersubsections]
+	\end{frame}
+	
 	\subsection{Ecuaciones de Maxwell} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 	
 		\begin{frame}
@@ -277,7 +283,8 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			\end{figure}
 			
 		\end{columns}
-				
+		
+		
 		
 		
 		\end{frame}
@@ -287,7 +294,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		Si el medio es lineal, isotrópico y homogéneo: %Si anisotrópico, Xe variaría con la dir. Si inhomogéneo, Xe variaría con la posición. Si no lineal, P debería calcularse como una serie de potencias.
 		
 		\begin{align*}
-		\vec{D} = \epsilon_0 \vec{E} + \vec{P}_e = \epsilon_0 (1+\chi_e)\vec{E} = \epsilon \vec{E} &= (\epsilon' - j \epsilon'') \vec{E} y\\
+		\vec{D} = \epsilon_0 \vec{E} + \vec{P}_e = \epsilon_0 (1+\chi_e)\vec{E} = \epsilon \vec{E} &= (\epsilon' - j \epsilon'') \vec{E}\\
 		\vec{B} = \mu_0 (\vec{H} + \vec{P}_m) = \mu_0 (1+\chi_m)\vec{H} = \mu \vec{H} &= (\mu' - j \mu'') \vec{H}.
 		\end{align*}
 		
@@ -297,15 +304,17 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		\vec{J} &= \sigma \vec{E} \Rightarrow \vec{D} = \left( \epsilon' - j\epsilon'' - j \frac{\sigma}{\omega} \right) \vec{E}.
 		\end{align*}
 		
-		La tangente de pérdidas queda definida como:
-		
-		\begin{align*}
-		\tan \; \delta &= \frac{\omega \epsilon'' + \sigma}{\omega \epsilon'}.
-		\end{align*}
+		\begin{block}{Tangente de pérdidas}
+			\setlength\abovedisplayskip{0pt}
+			\begin{align*}
+			\tan \; \delta &= \frac{\omega \epsilon'' + \sigma}{\omega \epsilon'}.
+			\end{align*}
+		\end{block}
 		
 		
 		\end{frame}
 		
+		\subsection{Ondas electromagnéticas}
 		\begin{frame}
 		\frametitle{Ondas electromagnéticas (I)}
 		
@@ -327,17 +336,81 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		\vec{H}(x,y,z) &= \vec{H}_0 e^{\pm j \vec{\gamma}\cdot \vec{r}}.
 		\end{array}\right.
 		\end{align*}
-			
-		\begin{align*}
-		\gamma &= -j\alpha + \beta = j\omega \sqrt{\mu (\epsilon'-j\epsilon'') - j \sigma \epsilon/\omega}.\\
-		\vec{\gamma} &= \vec{\gamma}_x + \vec{\gamma}_y +\vec{\gamma}_z
-		\end{align*}
+		
+		\begin{block}{}
+			\setlength\abovedisplayskip{0pt}	
+			\begin{align*}
+			\gamma &= -j\alpha + \beta = j\omega \sqrt{\mu (\epsilon'-j\epsilon'') - j \sigma \epsilon/\omega}.\\
+			\vec{\gamma} &= \vec{\gamma}_x + \vec{\gamma}_y +\vec{\gamma}_z.
+			\end{align*}
+		\end{block}
 
 		\end{frame}
 	
 		\begin{frame}
 		\frametitle{Ondas electromagnéticas (II)}
 		
+		Para las ondas planas,
+		
+		\begin{block}{}
+			\setlength\abovedisplayskip{0pt}
+			\begin{align*}
+			\vec{H}(\vec{r},t) &= \pm \frac{\hat{\beta} \times \vec{E}(\vec{r},t)}{\eta}.
+			\end{align*}
+		\end{block}
+	
+	
+	
+		\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+			
+			\column{.45\textwidth} % Left column and width
+			
+			\begin{block}{Impedancia de onda}
+				\setlength\abovedisplayskip{0pt}
+				\begin{align*}
+				\eta &= \frac{j \omega \mu}{\gamma }.
+				\end{align*}
+			\end{block}
+		
+			\begin{block}{Velocidad de fase}
+				\setlength\abovedisplayskip{0pt}
+				\begin{align*}
+				v_p &= \omega/\beta = c/\sqrt{\mu_r \epsilon_r}.
+				\end{align*}
+			\end{block}
+		
+			
+			
+			\column{.45\textwidth} % Right column and width
+			
+			\begin{block}{Prof. penetración}
+				\setlength\abovedisplayskip{0pt}
+				\begin{align*}
+				\label{eq:prof_penetacion}
+				\delta_s = -1/\alpha &= \sqrt{\frac{2}{\omega \mu \sigma}}.
+				\end{align*}
+			\end{block}
+		
+			\begin{block}{Velocidad de grupo}
+				\setlength\abovedisplayskip{0pt}
+				\begin{align*}
+				v_g &= d\omega/d\beta.
+				\end{align*}
+			\end{block}
+		
+		\end{columns}
+		
+		\begin{block}{Componentes del campo eléctrico que se desplaza en dirección $z$}
+			\setlength\abovedisplayskip{0pt}
+			\begin{align*}
+			E_i(z) = E_i \; e^{-j\gamma z} = E_i \; e^{-\alpha z} \; e^{-j \beta z}, \quad i=x,y.
+			\end{align*}
+		\end{block}
+		
+		
+		
+		
+	
 		
 		
 		

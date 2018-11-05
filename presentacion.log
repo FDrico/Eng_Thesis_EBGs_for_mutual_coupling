@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  4 NOV 2018 20:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  4 NOV 2018 21:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1179,7 +1179,7 @@ LaTeX Info: Redefining \% on input line 1.
 ] [4
 
 ]
-<Figures/Presentacion/microstrip_general.pdf, id=127, 90.67467pt x 46.65253pt>
+<Figures/Presentacion/microstrip_general.pdf, id=131, 90.67467pt x 46.65253pt>
 File: Figures/Presentacion/microstrip_general.pdf Graphic file (type pdf)
 <use Figures/Presentacion/microstrip_general.pdf>
 Package pdftex.def Info: Figures/Presentacion/microstrip_general.pdf  used on i
@@ -1197,7 +1197,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [5
 
  <./Figures/Presentacion/microstrip_general.pdf>]
-<Figures/Presentacion/problema_microstrip.pdf, id=161, 196.77971pt x 151.08748p
+<Figures/Presentacion/problema_microstrip.pdf, id=165, 196.77971pt x 151.08748p
 t>
 File: Figures/Presentacion/problema_microstrip.pdf Graphic file (type pdf)
 <use Figures/Presentacion/problema_microstrip.pdf>
@@ -1211,14 +1211,14 @@ Overfull \vbox (0.80759pt too high) detected at line 211
 [6
 
  <./Figures/Presentacion/problema_microstrip.pdf>]
-<Figures/Aplicacion/foto-ebg-alrededor-antena.pdf, id=229, 167.01897pt x 167.91
+<Figures/Aplicacion/foto-ebg-alrededor-antena.pdf, id=233, 167.01897pt x 167.91
 232pt>
 File: Figures/Aplicacion/foto-ebg-alrededor-antena.pdf Graphic file (type pdf)
 <use Figures/Aplicacion/foto-ebg-alrededor-antena.pdf>
 Package pdftex.def Info: Figures/Aplicacion/foto-ebg-alrededor-antena.pdf  used
  on input line 235.
 (pdftex.def)             Requested size: 136.91603pt x 137.65054pt.
-<Figures/Aplicacion/foto-escalon-alrededor-antena.pdf, id=230, 167.2418pt x 167
+<Figures/Aplicacion/foto-escalon-alrededor-antena.pdf, id=234, 167.2418pt x 167
 .91232pt>
 File: Figures/Aplicacion/foto-escalon-alrededor-antena.pdf Graphic file (type p
 df)
@@ -1234,38 +1234,41 @@ o-escalon-alrededor-antena.pdf
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Aplicacion/foto-escalon-alred
 edor-antena.pdf): PDF inclusion: multiple pdfs with page group included in a si
 ngle page
->]
-Overfull \hbox (3.10312pt too wide) detected at line 283
+>] (./presentacion.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [8
+
+]
+Overfull \hbox (3.10312pt too wide) detected at line 290
 []
  []
 
-<Figures/Presentacion/James_Clerk_Maxwell.png, id=253, 332.24126pt x 399.4925pt
+<Figures/Presentacion/James_Clerk_Maxwell.png, id=276, 332.24126pt x 399.4925pt
 >
 File: Figures/Presentacion/James_Clerk_Maxwell.png Graphic file (type png)
 <use Figures/Presentacion/James_Clerk_Maxwell.png>
 Package pdftex.def Info: Figures/Presentacion/James_Clerk_Maxwell.png  used on 
-input line 283.
+input line 290.
 (pdftex.def)             Requested size: 119.80544pt x 144.05492pt.
 
-Overfull \vbox (7.6782pt too high) detected at line 283
+Overfull \vbox (7.6782pt too high) detected at line 290
  []
 
-[8
+[9
 
- <./Figures/Presentacion/James_Clerk_Maxwell.png>] [9
+ <./Figures/Presentacion/James_Clerk_Maxwell.png>] [10
 
 ]
-<Figures/Presentacion/onda_em.pdf, id=273, 491.36346pt x 83.5893pt>
+<Figures/Presentacion/onda_em.pdf, id=298, 491.36346pt x 83.5893pt>
 File: Figures/Presentacion/onda_em.pdf Graphic file (type pdf)
 <use Figures/Presentacion/onda_em.pdf>
 Package pdftex.def Info: Figures/Presentacion/onda_em.pdf  used on input line 3
-36.
+48.
 (pdftex.def)             Requested size: 342.2953pt x 58.23149pt.
- [10
+ [11
 
- <./Figures/Presentacion/onda_em.pdf>] [11
-
-] [12
+ <./Figures/Presentacion/onda_em.pdf>] [12
 
 ] [13
 
@@ -1285,10 +1288,10 @@ Package pdftex.def Info: Figures/Presentacion/onda_em.pdf  used on input line 3
 
 ] [21
 
-]
-[22
+] [22
 
-] [23
+]
+[23
 
 ] [24
 
@@ -1316,33 +1319,33 @@ Package pdftex.def Info: Figures/Presentacion/onda_em.pdf  used on input line 3
 
 ] [36
 
-]
-[37
+] [37
 
 ]
-\openout4 = `presentacion.vrb'.
-
- (./presentacion.vrb) [38
-
-] [39
+[38
 
 ]
 \openout4 = `presentacion.vrb'.
 
- (./presentacion.vrb) [40
+ (./presentacion.vrb) [39
 
-] [41
+] [40
 
- </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [42
+]
+\openout4 = `presentacion.vrb'.
 
-] [43
+ (./presentacion.vrb) [41
+
+] [42
+
+ </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [43
 
 ] [44
 
-]
-[45
+] [45
 
-] [46
+]
+[46
 
 ] [47
 
@@ -1370,10 +1373,10 @@ Package pdftex.def Info: Figures/Presentacion/onda_em.pdf  used on input line 3
 
 ] [59
 
-]
-[60
+] [60
 
-] [61
+]
+[61
 
 ] [62
 
@@ -1382,6 +1385,8 @@ Package pdftex.def Info: Figures/Presentacion/onda_em.pdf  used on input line 3
 ] [64
 
 ] [65
+
+] [66
 
 ]
 \tf@nav=\write6
@@ -1393,49 +1398,50 @@ Package pdftex.def Info: Figures/Presentacion/onda_em.pdf  used on input line 3
 \tf@snm=\write8
 \openout8 = `presentacion.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 690.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 690.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 763.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 763.
  (./presentacion.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 690.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 690.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 763.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 763.
 Package rerunfilecheck Info: File `presentacion.out' has not changed.
-(rerunfilecheck)             Checksum: A5DD1045A287F730ED2FC7B5C6190C81;1122.
+(rerunfilecheck)             Checksum: 0E5BD6526155CFA9DCFABE5387641F7C;1199.
  ) 
 Here is how much of TeX's memory you used:
- 18909 strings out of 492982
- 350779 string characters out of 6134895
- 431617 words of memory out of 5000000
- 21857 multiletter control sequences out of 15000+600000
- 17869 words of font info for 65 fonts, out of 8000000 for 9000
+ 18962 strings out of 492982
+ 352156 string characters out of 6134895
+ 447482 words of memory out of 5000000
+ 21902 multiletter control sequences out of 15000+600000
+ 19414 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,20n,69p,804b,837s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,20n,69p,804b,881s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on presentacion.pdf (65 pages, 536501 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmtt10.pfb>
+Output written on presentacion.pdf (66 pages, 553181 bytes).
 PDF statistics:
- 750 PDF objects out of 1000 (max. 8388607)
- 605 compressed objects within 7 object streams
- 153 named destinations out of 1000 (max. 500000)
- 235 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 777 PDF objects out of 1000 (max. 8388607)
+ 629 compressed objects within 7 object streams
+ 157 named destinations out of 1000 (max. 500000)
+ 249 words of extra memory for PDF output out of 10000 (max. 10000000)
 
