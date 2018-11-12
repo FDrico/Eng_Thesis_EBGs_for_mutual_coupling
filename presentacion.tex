@@ -21,8 +21,8 @@
 \usepackage[spanish]{babel}  % Para escritura en castellano.
 \usepackage{xcolor}
 \usepackage{subfigure}  % Para manejo de subfiguras.
+\usepackage{graphicx}
 \usefonttheme[onlymath]{serif}  
-
 \mode<presentation> {
 
 % The Beamer class comes with a number of default slide themes
@@ -105,9 +105,9 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 
 \begin{document}
 
-\begin{frame}
-\titlepage % Print the title page as the first slide
-\end{frame}
+	\begin{frame}
+		\titlepage % Print the title page as the first slide
+	\end{frame}
 
 \begin{frame}
 \frametitle{Resumen} % Table of contents slide, comment this block out to remove it
@@ -406,14 +406,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			E_i(z) = E_i \; e^{-j\gamma z} = E_i \; e^{-\alpha z} \; e^{-j \beta z}, \quad i=x,y.
 			\end{align*}
 		\end{block}
-		
-		
-		
-		
-	
-		
-		
-		
+
 		\end{frame}
 		
 		% Comparar Masters Eq con Shrodinger. Modos.
@@ -428,18 +421,20 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 				
 				Comportamiento evanescente en la dirección normal.
 			\end{block}
+			
+			\begin{figure}[]
+				\includegraphics[width=0.65\textwidth]{intro_electro/ondas-superficie-3d.pdf}
+			\end{figure}
 		
 			\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
 				\column{.55\textwidth}
-				\begin{figure}[]
-					\includegraphics[width=\textwidth]{intro_electro/ondas-superficie-3d.pdf}
-				\end{figure}
-				
-				\column{.4\textwidth}
-				Guías de ondas superficiales:
 				\begin{itemize}
 					\item Planos conductores.
 					\item Planos conductores recubiertos de dieléctrico.
+				\end{itemize}
+				\column{.51\textwidth}
+
+				\begin{itemize}
 					\item Planos corrugados.
 					\item Interfaz entre dos medios distintos.
 				\end{itemize}
@@ -460,8 +455,8 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			
 				
 				\begin{align*}
-				Z_1 = \frac{{E_z}_1}{{H_y}_1} = \eta_0 \; \cos\; \theta_i = \frac{\gamma_{x_1}}{\gamma_1} \eta_0\\
-				Z_2 = \frac{{E_z}_2}{{H_y}_2} = \eta_2 \; \cos \; \theta_t = \frac{\gamma_{x_2}}{\gamma_2} \eta_2
+				Z_1 = \frac{{E_z}_1}{{H_y}_1} = \eta_0 \cos\; \theta_i = \frac{\gamma_{x_1}}{\gamma_1} \eta_0\\
+				Z_2 = \frac{{E_z}_2}{{H_y}_2} = \eta_2 \cos \; \theta_t = \frac{\gamma_{x_2}}{\gamma_2} \eta_2
 				\end{align*}
 				
 				\begin{block}{}
@@ -487,152 +482,263 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			\setlength\abovedisplayskip{0pt}
 			\begin{align*}
 				\gamma_{x_1} & = \gamma_1 \frac{Z_1}{\eta_0} = \gamma_1 Z_s = \gamma_1 R_s + j \gamma_1 X_s,\\
-				\gamma_z &= \beta_z - j\alpha_z =\sqrt{(\gamma_1^2 - \gamma_{x_1}^2)} = \gamma_1 \sqrt{1+X_s^2 - R_s^2 - 2jR_s X_s}
+				\gamma_z &= \beta_z - j\alpha_z =\sqrt{(\gamma_1^2 - \gamma_{x_1}^2)} = \gamma_1 \sqrt{1+X_s^2 - R_s^2 {\color{red}-} 2jR_s X_s}.
 			\end{align*}
 			\end{block}
 		
-			\begin{block}{TE}
-			\setlength\abovedisplayskip{0pt}
-			\begin{align*}
-			\gamma_{x_1} = -\frac{\gamma_1}{Z_s} = -\gamma_1 \frac{R_s}{{R_s^2 + X_s^2}}-j\frac{X_s}{R_s^2 + X_s^2},\\
-			\gamma_z = \beta_z-j\alpha_z= \sqrt{(\gamma_1^2 - \gamma_{x_1}^2)} = \frac{\gamma_1}{R_s^2+X_s^2} \sqrt{1+X_s^2 - R_s^2 + 2jR_s X_s}.
-			\end{align*}
-			\end{block}
+			\only<1>{
+			\begin{columns}[c]
+				\column{.48\textwidth}
+				\begin{itemize}
+					\item $X_s > 0$: Reactancia inductiva:
+					\begin{itemize}
+						\item $\uparrow \alpha_x$: Decrecimiento exponencial en $x$.\\
+						\item $\alpha_z > 0$: Decrecimiento exponencial en $z$.
+						\item Menor $v_p$.
+					\end{itemize}
+				\end{itemize}
+			
+				\column{.44\textwidth}
+				\begin{itemize}
+					\item Si $R_s X_s$ es pequeño: Baja atenuación en $z$.
+				\end{itemize}
+				
+				\begin{block}{}
+					Para ondas de superficie TM:
+					\begin{itemize}
+						\item $\uparrow X_s$ \\
+						\item $\downarrow R_s$.
+					\end{itemize}
+				\end{block}
+			\end{columns}
+			}
 		
-		
+			\only<2>{\begin{block}{TE}
+				\setlength\abovedisplayskip{0pt}
+				\begin{align*}
+				\gamma_{x_1} &= -\frac{\gamma_1}{Z_s} = -\gamma_1 \frac{R_s}{{\color{red}R_s^2+X_s^2}}-j\frac{X_s}{{\color{red}R_s^2+X_s^2}},\\
+				\gamma_z &= \beta_z-j\alpha_z= \sqrt{(\gamma_1^2 - \gamma_{x_1}^2)} = \frac{\gamma_1}{{\color{red}R_s^2+X_s^2}} \sqrt{1+X_s^2 - R_s^2 {\color{red}+} 2jR_s X_s}.
+				\end{align*}
+			\end{block}}
+	
 			\end{frame}
 		
 			\begin{frame}
-				\begin{figure}[htp]
+				\only<1>{\begin{figure}[htp]
 					\centering
 					\includegraphics[width=\textwidth]{intro_electro/plot-beta-reactancia-TM.pdf}
-				\end{figure}
-			\end{frame}
-		
-		
-			\begin{frame}
-				\begin{figure}[htp]
+				\end{figure}}
+			
+				\only<2>{\begin{figure}[htp]
 					\centering
 					\includegraphics[width=\textwidth]{intro_electro/plot-beta-reactancia-TE.pdf}
-				\end{figure}
-			\end{frame}
-	
-		
-		
-		\subsubsection{Antenas}
-		
-			\begin{frame}
-			\frametitle{Regiones de campo y diagrama de radiación}
+				\end{figure}}
 			\end{frame}
 		
-			\begin{frame}
-			\frametitle{Conjuntos de antenas y acoplamiento mutuo}
-			\end{frame}
-		
-			\begin{frame}
-			\frametitle{Antenas \textit{microstrip}}
-			\end{frame}
-		
-			\begin{frame}
-			\frametitle{Acoplamiento mutuo entre antenas \textit{microstrip}}
-			\end{frame}
-	
-	
-	\subsection{Ondas de superficie}
 		\begin{frame}
-		\frametitle{Reseña histórica y tipos de ondas de superficie}
+		\frametitle{Condiciones para la propagación sobre un plano conductor}
+		
+			\begin{block}{Polarización TM}
+				\begin{itemize}
+					\item Comportamiento {\color{red} inductivo}.
+					\item Resistividad baja.
+				\end{itemize}
+			\end{block}
+			\begin{block}{Polarización TE}
+				\begin{itemize}
+					\item Comportamiento {\color{red} capacitivo}.
+					\item Resistividad baja.
+				\end{itemize}
+			\end{block}
+		
+			Para volver más inductiva a la superficie, se puede recubrir al plano conductor con un dieléctrico.
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Comportamiento para plano de tierra cubierto por un dieléctrico fino}
+			\begin{figure}[h]
+				\includegraphics[width=\textwidth]{intro_electro/incidencia-coated-conductor.pdf}
+			\end{figure}
+		
+			\begin{columns}[c]
+				\column{.54\textwidth}
+				\centering Caso TM:
+				
+				\begin{align*}
+					\begin{cases}
+						(\gamma_{x_2} h)^2 + (\alpha_{x_1} h)^2 = (\epsilon_{r_2} - 1) (\gamma_1 h)^2\\
+						\gamma_{x_2} h \tan (\gamma_{x_2} h) = |\alpha_{x_1}| \epsilon_{r_2} h.
+					\end{cases}
+				\end{align*}
+				
+				\column{.45\textwidth}
+				\centering Caso TE:
+				
+				\begin{align*}
+					\begin{cases}
+						(\gamma_{x_2} h)^2 + (\alpha_{x_1} h)^2 = (\epsilon_{r_2} - 1) (\gamma_1 h)^2 \\
+						\gamma_{x_2} h \cot (\gamma_{x_2} h) = -|\alpha_{x_1}| \epsilon_{r_2} h.
+					\end{cases}
+				\end{align*}
+	
+			\end{columns}
 		\end{frame}
 		
-		\subsubsection{Ondas de Zenneck}
+		\begin{frame}
+			\begin{columns}[c]
+				\column{.52\textwidth}
+				\begin{figure}[h]
+					\includegraphics[width=\textwidth]{intro_electro/TM-tan-implicito}
+				\end{figure}
+				\begin{figure}[h]
+					\includegraphics[width=\textwidth]{intro_electro/TM-tan-implicito-zoom}
+				\end{figure}
+				
+				\column{.52\textwidth}
+				\begin{figure}[h]
+					\includegraphics[width=\textwidth]{intro_electro/TE-tan-implicito}
+				\end{figure}
+				\begin{figure}[h]
+					\includegraphics[width=\textwidth]{intro_electro/TE-tan-implicito-zoom}
+				\end{figure}
+			\end{columns}
+		\end{frame}
+	
+	
+		\begin{frame}
+			\frametitle{Impedancia de superficie: GND+FR4}
+			\begin{align*}
+				Z_s^{TM} = j \frac{\cos \theta_t}{\sqrt{\epsilon_{r_2}}}\tan(\gamma_2 h \cos\theta_t) = j \frac{\cos \theta_t}{\sqrt{\epsilon_{r_2}}}\tan(	\omega\sqrt{\epsilon_{r_2} \mu_0 \epsilon_0} h \cos\theta_t)
+			\end{align*}
+		
+			\begin{columns}[c]
+				\column{.51\textwidth}
+				\begin{figure} [H]
+					\includegraphics[width=\textwidth]{intro_electro/plot-zstm-funciont2.pdf}
+				\end{figure}
+				\column{.51\textwidth}
+				\begin{figure} [H]
+					\includegraphics[width=\textwidth]{intro_electro/plot-zstm-funcioner2.pdf}
+				\end{figure}
+				
+			\end{columns}
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{En resúmen}
+			\begin{block}{}
+				\centering
+				No existirán ondas de superficie de polarización TE en el plano de tierra recubierto por 1.6 mm de espesor de FR4, hasta los 25 GHz.
+			\end{block}
+		
+			\begin{block}{}
+				\centering
+				$\uparrow \text{ancho del sustrato} \Rightarrow\; \uparrow$ ondas de superficie (TM)
+			\end{block}
 			
-			\begin{frame}
-			\frametitle{Planteo matemático}
-			\end{frame}
+			\begin{block}{}
+				\centering
+				$\uparrow \text{permitividad eléctrica del sustrato} \Rightarrow\; \uparrow$ ondas de superficie (TM)
+			\end{block}
+		\end{frame}
 		
-			\begin{frame}
-			\frametitle{Constantes de propagación y atenuación: TM}
-			\end{frame}	
-		
-			\begin{frame}
-			\frametitle{Constantes de propagación y atenuación: TE}
-			\end{frame}
-		
-		\subsubsection{Recubrimiento dieléctrico}
-			
-			\begin{frame}
-			\frametitle{Planteo matemático}
-			\end{frame}
-			
-			\begin{frame}
-			\frametitle{Impedancia de superficie}
-			\end{frame}
-		
-
-\begin{frame}
-\frametitle{Paragraphs of Text}
-El objetivo del trabajo es el estudio teórico y numérico del funcionamiento de estructuras EBG (\textit{Electromagnetic Bandgap}).\\~\\
-
-Sed diam enim, sagittis nec condimentum sit amet, ullamcorper sit amet libero. Aliquam vel dui orci, a porta odio. Nullam id suscipit ipsum. Aenean lobortis commodo sem, ut commodo leo gravida vitae. Pellentesque vehicula ante iaculis arcu pretium rutrum eget sit amet purus. Integer ornare nulla quis neque ultrices lobortis. Vestibulum ultrices tincidunt libero, quis commodo erat ullamcorper id.
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Bullet Points}
-\begin{itemize}
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit
-\item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
-\item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
-\item Nam cursus est eget velit posuere pellentesque
-\item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
-\end{itemize}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Blocks of Highlighted Text}
-\begin{block}{Block 1}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-\end{block}
-
-\begin{block}{Block 2}
-Pellentesque sed tellus purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum quis magna at risus dictum tempor eu vitae velit.
-\end{block}
-
-\begin{block}{Block 3}
-Suspendisse tincidunt sagittis gravida. Curabitur condimentum, enim sed venenatis rutrum, ipsum neque consectetur orci, sed blandit justo nisi ac lacus.
-\end{block}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Multiple Columns}
-\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-
-\column{.45\textwidth} % Left column and width
-\textbf{Heading}
-\begin{enumerate}
-\item Statement
-\item Explanation
-\item Example
-\end{enumerate}
-
-\column{.5\textwidth} % Right column and width
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-
-\end{columns}
-\end{frame}
 
 %------------------------------------------------
 
 
 
 \section{Fundamentos de EBGs}
+	
+	\begin{frame}
+	\frametitle{Fundamentos básicos de EBGs}
+	\tableofcontents[currentsection,hideothersubsections]
+	\end{frame}
 
 	\begin{frame}
-	\frametitle{Reseña histórica}
+		\frametitle{Metamateriales y EBGs}
+		\begin{columns}[c]
+			\column{.51\textwidth}
+			\begin{block}{Metamateriales}
+				Estructuras artificiales \textbf{efectivamente homogéneas} para la longitud de onda de interés, que presentan propiedades electromagnéticas que no se encuentran en la naturaleza.
+			\end{block}
+		
+			\begin{block}{EBGs, PBGs, cristales fotónicos}
+				Estructuras articiales con capacidades para controlar (en general, atenuar) ondas electromagnéticas a partir de la \textbf{variación periódica} en el espacio de las propiedades del medio respecto de la propagación electromagnética.
+			\end{block}
+		
+			\column{.46\textwidth}
+			\begin{figure} [H]
+				\includegraphics[width=0.9\textwidth]{Presentacion/ebg-metamateriales.pdf}
+			\end{figure}
+		\end{columns}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Reseña histórica}
+		\only<1>{
+			\begin{columns}[c]
+				\column{0.55\textwidth}
+				\begin{figure} [H]
+					\includegraphics[width=1.2\textwidth]{Presentacion/patenteMarconi.pdf}
+				\end{figure}
+			
+				\column{0.46\textwidth}
+				\begin{itemize}
+					\item Fines del siglo XVIII: \textbf{Rittenhouse} observó que algunos colores desaparecían cuando se veía luz a través de un pañuelo.
+					\item 1919: Guglielmo \textbf{Marconi}, Charles Samuel \textbf{Franklin}: Conductores horizontales como superficie reflectiva para cierta frecuencia (¿Primer FSS?)
+				\end{itemize}
+			\end{columns}
+		}
+	
+		
+		\only<2>{
+			\begin{itemize}
+				\item 1946: Louis \textbf{Brillouin}: \textit{Wave propagacion in periodic structures: Electric filters and crystal lattices}. Restricciones a los vectores de onda $\gamma$ en un medio periódico.
+				\item 1968: Viktor \textbf{Veselago}: Descripción teórica de LHS, velocidad de grupo antiparalela a la velocidad de fase.
+			\end{itemize}
+		
+			\begin{figure}[h]
+				\includegraphics[width=0.8\textwidth]{Fundamentos/OndasSegunEyU.pdf}
+			\end{figure}
+		}
+		
+		\only<3>{
+			\begin{figure}[htp]
+				\includegraphics[width=0.8\textwidth]{Fundamentos/pendry.pdf}
+			\end{figure}
+			
+			\begin{itemize}
+				\item 1990: \textbf{Smith}: Split Ring Resonators en base a los trabajos de Pendry. Se construyó en 2000.
+				\item 1990: \textbf{Ho, Chan, Soukulis}: Conjunto periódico de esferas dieléctricas. Banda prohibida.
+				\item 1990: \textbf{Yablonovitch}. Estructura cristalina. Agujeros cilíndricos.
+			\end{itemize}
+		}
+		
+		\only<4>{
+			\begin{figure}[htp]
+				\includegraphics[width=\textwidth]{Fundamentos/metamateriales-smith.pdf}
+			\end{figure}
+		}
+	
+
+		\only<5>{
+		\begin{itemize}
+			\item 1999: \textbf{Sievenpiper}: HIS. Mushrooms. AMC + EBG.
+			\item 2001: \textbf{Yang}: Uniplanar EBG (¿FSS o EBG?)
+		\end{itemize}
+		
+		\begin{columns}[c]
+			\column{.51\textwidth}
+			\begin{figure}
+				\includegraphics[width=0.8\textwidth]{Fundamentos/superficie-coarrugada.png}
+			\end{figure}
+		
+			\column{.51\textwidth}
+			\begin{figure}
+				\includegraphics[width=\textwidth]{Fundamentos/sievenpiper.png}
+			\end{figure}
+		\end{columns}
+		}
 	\end{frame}
 	
 	\subsection{Bragg, Bloch-Floquet y espacio recíproco}

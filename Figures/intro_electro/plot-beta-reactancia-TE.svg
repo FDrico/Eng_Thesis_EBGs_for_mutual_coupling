@@ -14,7 +14,7 @@
    version="1.2"
    id="svg721"
    sodipodi:docname="plot-beta-reactancia-TE.svg"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
      id="metadata725">
     <rdf:RDF>
@@ -36,17 +36,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1600"
-     inkscape:window-height="878"
+     inkscape:window-width="1920"
+     inkscape:window-height="1031"
      id="namedview723"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:zoom="1.0863279"
-     inkscape:cx="201.4012"
-     inkscape:cy="231.86562"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:zoom="1.5362996"
+     inkscape:cx="470.40597"
+     inkscape:cy="159.077"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      inkscape:current-layer="surface376">
     <sodipodi:guide
@@ -57,6 +57,18 @@
   </sodipodi:namedview>
   <defs
      id="defs232">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1202">
+      <stop
+         style="stop-color:#b3b3b3;stop-opacity:1;"
+         offset="0"
+         id="stop1198" />
+      <stop
+         style="stop-color:#b3b3b3;stop-opacity:0;"
+         offset="1"
+         id="stop1200" />
+    </linearGradient>
     <g
        id="g173">
       <symbol
@@ -891,6 +903,15 @@
          style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
          transform="matrix(-0.8,0,0,-0.8,-10,0)" />
     </marker>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1202"
+       id="linearGradient1204"
+       x1="73.132812"
+       y1="216.11328"
+       x2="241.9745"
+       y2="217.09666"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <g
      id="surface376"
@@ -1630,7 +1651,7 @@
          height="100%" />
     </g>
     <path
-       style="opacity:0.56000001;fill:#b3b3b3;fill-rule:evenodd;stroke:none;stroke-width:0.75000006px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="opacity:0.56000001;fill:url(#linearGradient1204);fill-rule:evenodd;stroke:none;stroke-width:0.75000006px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
        d="m 132.48348,166.57648 c 17.86458,0.61162 32.2456,2.92301 45.98091,8.35269 12.12518,4.79318 21.47217,10.07635 26.17375,17.20654 4.42611,6.71239 4.79731,8.0398 3.62955,15.33531 -2.36973,14.80462 1.38853,16.64771 -9.36415,23.29061 -8.37658,5.17498 -9.02498,3.84107 -14.77996,3.63868 -30.283,-1.06499 -23.83253,0.91119 -52.70121,-1e-5 -12.59746,-0.39761 -33.676767,-0.7158 -38.306177,-0.92089 -13.179976,-0.58392 -18.425514,0.8303 -19.746186,-3.15778 -1.847495,-5.57893 -2.017063,-15.25508 -1.851576,-16.72826 1.4346,-12.77077 -1.183101,-0.9431 1.543546,-20.45533 2.284855,-16.35069 2.226701,-17.65525 13.794267,-22.05111 19.478406,-7.4021 20.692066,-5.36415 45.627236,-4.51045 z"
        id="path4203"
        inkscape:connector-curvature="0"
@@ -1699,7 +1720,7 @@
          id="tspan1640"
          x="355.3732"
          y="354.19006"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:cmr10;-inkscape-font-specification:cmr10;stroke-width:0.75px">Inductivo</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:MathJax_Main;-inkscape-font-specification:MathJax_Main;stroke-width:0.75px">Inductivo</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -1712,7 +1733,7 @@
          id="tspan1640-3"
          x="143.03828"
          y="353.92514"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:cmr10;-inkscape-font-specification:cmr10;stroke-width:0.75px">Capacitivo</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:MathJax_Main;-inkscape-font-specification:MathJax_Main;stroke-width:0.75px">Capacitivo</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart);marker-end:url(#marker1950)"
        d="M 76.753524,343.09848 H 277.28874"
@@ -1826,7 +1847,7 @@
          id="tspan1484"
          x="-219.68449"
          y="31.100273"
-         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:21.26324081px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75000006px;stroke-opacity:1">α</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.26324081px;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75000006px;stroke-opacity:1">α</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 30.635788,206.90181 1.336617,1.11401"
@@ -1843,11 +1864,17 @@
          x="274.62589"
          y="29.965857"
          style="stroke-width:0.75">Valor de <tspan
-   style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:16.16900063px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle"
-   id="tspan3971">γ=β-jα</tspan> en función de la reactancia de superficie</tspan><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.16900063px;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle"
+   id="tspan3971">γ<tspan
+   style="font-size:64.99999762%;baseline-shift:sub"
+   id="tspan1250">z</tspan>=β<tspan
+   style="font-size:64.99999762%;baseline-shift:sub"
+   id="tspan1252">z</tspan>-jα<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan1254">z</tspan></tspan> en función de la reactancia de superficie</tspan><tspan
          sodipodi:role="line"
          x="274.62589"
-         y="50.274097"
+         y="50.924648"
          id="tspan3969"
          style="stroke-width:0.75">para distintas resistencias de superficie, en TE</tspan></text>
   </g>

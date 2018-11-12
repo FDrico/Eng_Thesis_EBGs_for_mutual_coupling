@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  8 NOV 2018 23:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  12 NOV 2018 00:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1179,7 +1179,7 @@ LaTeX Info: Redefining \% on input line 1.
 ] [4
 
 ]
-<Figures/Presentacion/microstrip_general.pdf, id=131, 90.67467pt x 46.65253pt>
+<Figures/Presentacion/microstrip_general.pdf, id=127, 90.67467pt x 46.65253pt>
 File: Figures/Presentacion/microstrip_general.pdf Graphic file (type pdf)
 <use Figures/Presentacion/microstrip_general.pdf>
 Package pdftex.def Info: Figures/Presentacion/microstrip_general.pdf  used on i
@@ -1197,7 +1197,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [5
 
  <./Figures/Presentacion/microstrip_general.pdf>]
-<Figures/Presentacion/problema_microstrip.pdf, id=165, 196.77971pt x 151.08748p
+<Figures/Presentacion/problema_microstrip.pdf, id=161, 196.77971pt x 151.08748p
 t>
 File: Figures/Presentacion/problema_microstrip.pdf Graphic file (type pdf)
 <use Figures/Presentacion/problema_microstrip.pdf>
@@ -1211,14 +1211,14 @@ Overfull \vbox (0.80759pt too high) detected at line 211
 [6
 
  <./Figures/Presentacion/problema_microstrip.pdf>]
-<Figures/Aplicacion/foto-ebg-alrededor-antena.pdf, id=233, 167.01897pt x 167.91
+<Figures/Aplicacion/foto-ebg-alrededor-antena.pdf, id=229, 167.01897pt x 167.91
 232pt>
 File: Figures/Aplicacion/foto-ebg-alrededor-antena.pdf Graphic file (type pdf)
 <use Figures/Aplicacion/foto-ebg-alrededor-antena.pdf>
 Package pdftex.def Info: Figures/Aplicacion/foto-ebg-alrededor-antena.pdf  used
  on input line 235.
 (pdftex.def)             Requested size: 136.91603pt x 137.65054pt.
-<Figures/Aplicacion/foto-escalon-alrededor-antena.pdf, id=234, 167.2418pt x 167
+<Figures/Aplicacion/foto-escalon-alrededor-antena.pdf, id=230, 167.2418pt x 167
 .91232pt>
 File: Figures/Aplicacion/foto-escalon-alrededor-antena.pdf Graphic file (type p
 df)
@@ -1244,7 +1244,7 @@ Overfull \hbox (3.10312pt too wide) detected at line 290
 []
  []
 
-<Figures/Presentacion/James_Clerk_Maxwell.png, id=276, 332.24126pt x 399.4925pt
+<Figures/Presentacion/James_Clerk_Maxwell.png, id=270, 332.24126pt x 399.4925pt
 >
 File: Figures/Presentacion/James_Clerk_Maxwell.png Graphic file (type png)
 <use Figures/Presentacion/James_Clerk_Maxwell.png>
@@ -1260,7 +1260,7 @@ Overfull \vbox (7.6782pt too high) detected at line 290
  <./Figures/Presentacion/James_Clerk_Maxwell.png>] [10
 
 ]
-<Figures/Presentacion/onda_em.pdf, id=298, 491.36346pt x 83.5893pt>
+<Figures/Presentacion/onda_em.pdf, id=292, 491.36346pt x 83.5893pt>
 File: Figures/Presentacion/onda_em.pdf Graphic file (type pdf)
 <use Figures/Presentacion/onda_em.pdf>
 Package pdftex.def Info: Figures/Presentacion/onda_em.pdf  used on input line 3
@@ -1271,87 +1271,239 @@ Package pdftex.def Info: Figures/Presentacion/onda_em.pdf  used on input line 3
  <./Figures/Presentacion/onda_em.pdf>] [12
 
 ]
-<Figures/intro_electro/ondas-superficie-3d.pdf, id=321, 359.48975pt x 196.65477
+<Figures/intro_electro/ondas-superficie-3d.pdf, id=314, 359.48975pt x 196.65477
 pt>
 File: Figures/intro_electro/ondas-superficie-3d.pdf Graphic file (type pdf)
 <use Figures/intro_electro/ondas-superficie-3d.pdf>
 Package pdftex.def Info: Figures/intro_electro/ondas-superficie-3d.pdf  used on
- input line 448.
-(pdftex.def)             Requested size: 188.26346pt x 102.98723pt.
+ input line 443.
+(pdftex.def)             Requested size: 222.48985pt x 121.71164pt.
  [13
 
  <./Figures/intro_electro/ondas-superficie-3d.pdf>]
-Overfull \hbox (4.5006pt too wide) detected at line 479
+Overfull \hbox (1.45898pt too wide) detected at line 474
 []
  []
 
-<Figures/intro_electro/onda-superficie-incidencia-brewster.pdf, id=476, 135.153
+<Figures/intro_electro/onda-superficie-incidencia-brewster.pdf, id=470, 135.153
 12pt x 130.0762pt>
 File: Figures/intro_electro/onda-superficie-incidencia-brewster.pdf Graphic fil
 e (type pdf)
 <use Figures/intro_electro/onda-superficie-incidencia-brewster.pdf>
 Package pdftex.def Info: Figures/intro_electro/onda-superficie-incidencia-brews
-ter.pdf  used on input line 479.
+ter.pdf  used on input line 474.
 (pdftex.def)             Requested size: 205.37926pt x 197.68016pt.
 [14
 
  <./Figures/intro_electro/onda-superficie-incidencia-brewster.pdf>] [15
 
 ]
-<Figures/intro_electro/plot-beta-reactancia-TM.pdf, id=626, 496.63524pt x 345.0
+[16
+
+]
+<Figures/intro_electro/plot-beta-reactancia-TM.pdf, id=631, 496.63524pt x 345.0
 6262pt>
 File: Figures/intro_electro/plot-beta-reactancia-TM.pdf Graphic file (type pdf)
 
 <use Figures/intro_electro/plot-beta-reactancia-TM.pdf>
 Package pdftex.def Info: Figures/intro_electro/plot-beta-reactancia-TM.pdf  use
-d on input line 510.
+d on input line 536.
 (pdftex.def)             Requested size: 342.2953pt x 237.8302pt.
-
-[16
+ [17
 
  <./Figures/intro_electro/plot-beta-reactancia-TM.pdf>]
-<Figures/intro_electro/plot-beta-reactancia-TE.pdf, id=793, 466.23247pt x 338.7
+<Figures/intro_electro/plot-beta-reactancia-TE.pdf, id=798, 466.23247pt x 338.7
 039pt>
 File: Figures/intro_electro/plot-beta-reactancia-TE.pdf Graphic file (type pdf)
 
 <use Figures/intro_electro/plot-beta-reactancia-TE.pdf>
 Package pdftex.def Info: Figures/intro_electro/plot-beta-reactancia-TE.pdf  use
-d on input line 518.
+d on input line 536.
 (pdftex.def)             Requested size: 342.2953pt x 248.67303pt.
 
-Overfull \vbox (1.19304pt too high) detected at line 518
+Overfull \vbox (1.19304pt too high) detected at line 536
  []
 
-[17
+[18
 
- <./Figures/intro_electro/plot-beta-reactancia-TE.pdf>] [18
-
-] [19
-
-] [20
+ <./Figures/intro_electro/plot-beta-reactancia-TE.pdf>] [19
 
 ]
+<Figures/intro_electro/incidencia-coated-conductor.pdf, id=935, 202.10393pt x 5
+5.99739pt>
+File: Figures/intro_electro/incidencia-coated-conductor.pdf Graphic file (type 
+pdf)
+<use Figures/intro_electro/incidencia-coated-conductor.pdf>
+Package pdftex.def Info: Figures/intro_electro/incidencia-coated-conductor.pdf 
+ used on input line 585.
+(pdftex.def)             Requested size: 342.2953pt x 94.8448pt.
+
+Overfull \hbox (5.16174pt too wide) detected at line 585
+[]
+ []
+
+
+Overfull \hbox (35.96707pt too wide) detected at line 585
+[]
+ []
+
+
+Overfull \hbox (15.80244pt too wide) detected at line 585
+[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
+ []
+
+[20
+
+ <./Figures/intro_electro/incidencia-coated-conductor.pdf>]
+<Figures/intro_electro/TM-tan-implicito.pdf, id=982, 404.89871pt x 190.95416pt>
+
+File: Figures/intro_electro/TM-tan-implicito.pdf Graphic file (type pdf)
+<use Figures/intro_electro/TM-tan-implicito.pdf>
+Package pdftex.def Info: Figures/intro_electro/TM-tan-implicito.pdf  used on in
+put line 605.
+(pdftex.def)             Requested size: 177.99501pt x 83.94432pt.
+<Figures/intro_electro/TM-tan-implicito-zoom.pdf, id=983, 420.26315pt x 329.874
+71pt>
+File: Figures/intro_electro/TM-tan-implicito-zoom.pdf Graphic file (type pdf)
+<use Figures/intro_electro/TM-tan-implicito-zoom.pdf>
+Package pdftex.def Info: Figures/intro_electro/TM-tan-implicito-zoom.pdf  used 
+on input line 605.
+(pdftex.def)             Requested size: 177.99501pt x 139.71419pt.
+<Figures/intro_electro/TE-tan-implicito.pdf, id=984, 404.89871pt x 190.95416pt>
+
+File: Figures/intro_electro/TE-tan-implicito.pdf Graphic file (type pdf)
+<use Figures/intro_electro/TE-tan-implicito.pdf>
+Package pdftex.def Info: Figures/intro_electro/TE-tan-implicito.pdf  used on in
+put line 605.
+(pdftex.def)             Requested size: 177.99501pt x 83.94432pt.
+<Figures/intro_electro/TE-tan-implicito-zoom.pdf, id=985, 420.26315pt x 329.874
+71pt>
+File: Figures/intro_electro/TE-tan-implicito-zoom.pdf Graphic file (type pdf)
+<use Figures/intro_electro/TE-tan-implicito-zoom.pdf>
+Package pdftex.def Info: Figures/intro_electro/TE-tan-implicito-zoom.pdf  used 
+on input line 605.
+(pdftex.def)             Requested size: 177.99501pt x 139.71419pt.
+
+Overfull \vbox (2.17851pt too high) detected at line 605
+ []
+
 [21
 
-] [22
+ <./Figures/intro_electro/TM-tan-implicito.pdf> <./Figures/intro_electro/TM-tan
+-implicito-zoom.pdf
 
-] [23
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/intro_electro/TM-tan-implicit
+o-zoom.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+> <./Figures/intro_electro/TE-tan-implicito.pdf
 
-] [24
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/intro_electro/TE-tan-implicit
+o.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./Figures/intro_electro/TE-tan-implicito-zoom.pdf
 
-] [25
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/intro_electro/TE-tan-implicit
+o-zoom.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+>]
+<Figures/intro_electro/plot-zstm-funciont2.pdf, id=1311, 450.89719pt x 302.5081
+pt>
+File: Figures/intro_electro/plot-zstm-funciont2.pdf Graphic file (type pdf)
+<use Figures/intro_electro/plot-zstm-funciont2.pdf>
+Package pdftex.def Info: Figures/intro_electro/plot-zstm-funciont2.pdf  used on
+ input line 625.
+(pdftex.def)             Requested size: 174.56871pt x 117.11913pt.
+<Figures/intro_electro/plot-zstm-funcioner2.pdf, id=1312, 450.51251pt x 290.208
+82pt>
+File: Figures/intro_electro/plot-zstm-funcioner2.pdf Graphic file (type pdf)
+<use Figures/intro_electro/plot-zstm-funcioner2.pdf>
+Package pdftex.def Info: Figures/intro_electro/plot-zstm-funcioner2.pdf  used o
+n input line 625.
+(pdftex.def)             Requested size: 174.56871pt x 112.45474pt.
+ [22
 
-] [26
+ <./Figures/intro_electro/plot-zstm-funciont2.pdf> <./Figures/intro_electro/plo
+t-zstm-funcioner2.pdf
 
-] [27
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/intro_electro/plot-zstm-funci
+oner2.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+>] [23
 
-] [28
+] (./presentacion.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [24
 
-] [29
+]
+<Figures/Presentacion/ebg-metamateriales.pdf, id=1497, 348.48927pt x 331.2972pt
+>
+File: Figures/Presentacion/ebg-metamateriales.pdf Graphic file (type pdf)
+<use Figures/Presentacion/ebg-metamateriales.pdf>
+Package pdftex.def Info: Figures/Presentacion/ebg-metamateriales.pdf  used on i
+nput line 674.
+(pdftex.def)             Requested size: 141.71135pt x 134.72058pt.
+ [25
 
-] [30
+ <./Figures/Presentacion/ebg-metamateriales.pdf>]
+<Figures/Presentacion/patenteMarconi.pdf, id=1521, 1100.83438pt x 941.01563pt>
+File: Figures/Presentacion/patenteMarconi.pdf Graphic file (type pdf)
+<use Figures/Presentacion/patenteMarconi.pdf>
+Package pdftex.def Info: Figures/Presentacion/patenteMarconi.pdf  used on input
+ line 742.
+(pdftex.def)             Requested size: 225.91557pt x 193.11047pt.
 
-] [31
+Overfull \hbox (37.65211pt too wide) in paragraph at lines 742--742
+ [] 
+ []
+
+[26
+
+ <./Figures/Presentacion/patenteMarconi.pdf>]
+<Figures/Fundamentos/OndasSegunEyU.pdf, id=1537, 234.06604pt x 119.5625pt>
+File: Figures/Fundamentos/OndasSegunEyU.pdf Graphic file (type pdf)
+<use Figures/Fundamentos/OndasSegunEyU.pdf>
+Package pdftex.def Info: Figures/Fundamentos/OndasSegunEyU.pdf  used on input l
+ine 742.
+(pdftex.def)             Requested size: 273.83728pt x 139.87842pt.
+ [27
+
+ <./Figures/Fundamentos/OndasSegunEyU.pdf>]
+<Figures/Fundamentos/pendry.pdf, id=1572, 323.06696pt x 119.5677pt>
+File: Figures/Fundamentos/pendry.pdf Graphic file (type pdf)
+<use Figures/Fundamentos/pendry.pdf>
+Package pdftex.def Info: Figures/Fundamentos/pendry.pdf  used on input line 742
+.
+(pdftex.def)             Requested size: 273.83728pt x 101.34839pt.
+ [28
+
+ <./Figures/Fundamentos/pendry.pdf>]
+<Figures/Fundamentos/metamateriales-smith.pdf, id=2991, 322.34528pt x 121.9516p
+t>
+File: Figures/Fundamentos/metamateriales-smith.pdf Graphic file (type pdf)
+<use Figures/Fundamentos/metamateriales-smith.pdf>
+Package pdftex.def Info: Figures/Fundamentos/metamateriales-smith.pdf  used on 
+input line 742.
+(pdftex.def)             Requested size: 342.2953pt x 129.4988pt.
+ [29
+
+ <./Figures/Fundamentos/metamateriales-smith.pdf>]
+<Figures/Fundamentos/superficie-coarrugada.png, id=3028, 176.15813pt x 162.6075
+pt>
+File: Figures/Fundamentos/superficie-coarrugada.png Graphic file (type png)
+<use Figures/Fundamentos/superficie-coarrugada.png>
+Package pdftex.def Info: Figures/Fundamentos/superficie-coarrugada.png  used on
+ input line 742.
+(pdftex.def)             Requested size: 139.65549pt x 128.91257pt.
+<Figures/Fundamentos/sievenpiper.png, id=3029, 264.23718pt x 164.86594pt>
+File: Figures/Fundamentos/sievenpiper.png Graphic file (type png)
+<use Figures/Fundamentos/sievenpiper.png>
+Package pdftex.def Info: Figures/Fundamentos/sievenpiper.png  used on input lin
+e 742.
+(pdftex.def)             Requested size: 174.56871pt x 108.9175pt.
+ [30
+
+ <./Figures/Fundamentos/superficie-coarrugada.png> <./Figures/Fundamentos/sieve
+npiper.png>] [31
 
 ] [32
 
@@ -1368,7 +1520,10 @@ Overfull \vbox (1.19304pt too high) detected at line 518
 
 ] [38
 
-] [39
+]
+\openout4 = `presentacion.vrb'.
+
+ (./presentacion.vrb) [39
 
 ] [40
 
@@ -1377,17 +1532,15 @@ Overfull \vbox (1.19304pt too high) detected at line 518
 
  (./presentacion.vrb) [41
 
-] [42
-
 ]
-\openout4 = `presentacion.vrb'.
+[42
 
- (./presentacion.vrb)
+ </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
 [43
 
 ] [44
 
- </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [45
+] [45
 
 ] [46
 
@@ -1413,10 +1566,10 @@ Overfull \vbox (1.19304pt too high) detected at line 518
 
 ] [57
 
-] [58
-
 ]
-[59
+[58
+
+] [59
 
 ] [60
 
@@ -1432,10 +1585,6 @@ Overfull \vbox (1.19304pt too high) detected at line 518
 
 ] [66
 
-] [67
-
-] [68
-
 ]
 \tf@nav=\write6
 \openout6 = `presentacion.nav'.
@@ -1446,51 +1595,53 @@ Overfull \vbox (1.19304pt too high) detected at line 518
 \tf@snm=\write8
 \openout8 = `presentacion.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 851.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 851.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 957.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 957.
  (./presentacion.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 851.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 851.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 957.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 957.
 Package rerunfilecheck Info: File `presentacion.out' has not changed.
-(rerunfilecheck)             Checksum: FD1DFB7C2F07C4719753FF765FDEF1A4;1199.
+(rerunfilecheck)             Checksum: 9DA328D9FAA138A22DC95C64CD6DD136;1129.
  ) 
 Here is how much of TeX's memory you used:
- 18993 strings out of 492982
- 353378 string characters out of 6134895
- 447614 words of memory out of 5000000
- 21923 multiletter control sequences out of 15000+600000
- 19414 words of font info for 71 fonts, out of 8000000 for 9000
+ 19069 strings out of 492982
+ 357129 string characters out of 6134895
+ 448539 words of memory out of 5000000
+ 21989 multiletter control sequences out of 15000+600000
+ 20468 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,20n,69p,804b,881s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,20n,69p,804b,932s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-s12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb>
-Output written on presentacion.pdf (68 pages, 821313 bytes).
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmr12.pfb>
+Output written on presentacion.pdf (66 pages, 2219364 bytes).
 PDF statistics:
- 1361 PDF objects out of 1440 (max. 8388607)
- 1010 compressed objects within 11 object streams
- 161 named destinations out of 1000 (max. 500000)
- 269 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3385 PDF objects out of 3580 (max. 8388607)
+ 2431 compressed objects within 25 object streams
+ 153 named destinations out of 1000 (max. 500000)
+ 343 words of extra memory for PDF output out of 10000 (max. 10000000)
 
