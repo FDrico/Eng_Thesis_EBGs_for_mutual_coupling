@@ -137,13 +137,13 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		\begin{frame}
 		\frametitle{Reseña histórica}
 		\begin{itemize}
-			\item 1873: \textit{Maxwell}. Bases de teoría electromagnética clásica.\\
-			\item 1885-1887: \textit{Heaviside}. Simplificación de expresiones: Notación vectorial. \\
-			\item 1886-1891: \textit{Hertz}. Validación de teoría de ondas electromagnéticas. Primer antena dipolo y parabólica.
-			\item 1897: \textit{Rayleigh}. Propagación de ondas en guías metálicas.
-			\item 1926: \textit{Yagi-Uda}. Conjunto de antenas, fase fija.
+			\item 1873: \textbf{Maxwell}. Bases de teoría electromagnética clásica.\\
+			\item 1885-1887: \textbf{Heaviside}. Simplificación de expresiones: Notación vectorial. \\
+			\item 1886-1891: \textbf{Hertz}. Validación de teoría de ondas electromagnéticas. Primer antena dipolo y parabólica.
+			\item 1897: \textbf{Rayleigh}. Propagación de ondas en guías metálicas.
+			\item 1926: \textbf{Yagi-Uda}. Conjunto de antenas, fase fija.
 			\item 1938-1945: Antenas de fase variable.
-			\item 1953: \textit{Deschamps}. Antenas \textit{microstrip}.
+			\item 1953: \textbf{Deschamps}. Antenas \textit{microstrip}.
 			\item 1970': Uso en aplicaciones prácticas. Solución a problemas de dispersión y modos indeseados.
 			% Sustratos con bajas tangentes de pérdida. Mejora en fotolitografía. Optimización de modelos teóricos, simulaciones numéricas. Simplificación constructiva, más barato.
 		\end{itemize}
@@ -173,13 +173,13 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 	
 	\vspace{25pt}
 	
-	Aplicaciones: filtros microondas, acopladores direccionales, transformadores de impedancia, planos de tierra y redes de distribución de circuitos impresos.
+	\centering Aplicaciones: filtros microondas, acopladores direccionales, transformadores de impedancia, planos de tierra y redes de distribución de circuitos impresos.
 		
 	\end{frame}
 		
 		\begin{frame}
 		\frametitle{Problemas de las estructuras \textit{microstrip}}
-			El tamaño de las antenas y estructuras \textit{microstrip} depende de la permitividad dieléctrica del sustrato y de la longitud de onda de trabajo. \\
+			\centering El tamaño de las antenas y estructuras \textit{microstrip} depende de la permitividad dieléctrica del sustrato y de la longitud de onda de trabajo. \\
 			\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
 				
 				\column{.38\textwidth} % Left column and width
@@ -207,7 +207,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 				
 			\end{columns}
 			\vspace{9pt}
-			{\footnotesize SW: Ondas de superficie. BW: Ancho de banda. $D$: Tamaño de la estructura. $h$: Ancho del sustrato.}
+			\centering {\footnotesize SW: Ondas de superficie. BW: Ancho de banda. $D$: Tamaño de la estructura. $h$: Ancho del sustrato.}
 		\end{frame}
 		
 		
@@ -291,20 +291,20 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		
 		\begin{frame}
 		\frametitle{Campos en medios materiales}
-		Si el medio es lineal, isotrópico y homogéneo: %Si anisotrópico, Xe variaría con la dir. Si inhomogéneo, Xe variaría con la posición. Si no lineal, P debería calcularse como una serie de potencias.
+		\centering Si el medio es lineal, isotrópico y homogéneo: %Si anisotrópico, Xe variaría con la dir. Si inhomogéneo, Xe variaría con la posición. Si no lineal, P debería calcularse como una serie de potencias.
 		
 		\begin{align*}
 		\vec{D} = \epsilon_0 \vec{E} + \vec{P}_e = \epsilon_0 (1+\chi_e)\vec{E} = \epsilon \vec{E} &= (\epsilon' - j \epsilon'') \vec{E}\\
 		\vec{B} = \mu_0 (\vec{H} + \vec{P}_m) = \mu_0 (1+\chi_m)\vec{H} = \mu \vec{H} &= (\mu' - j \mu'') \vec{H}.
 		\end{align*}
 		
-		Si el material posee una conductividad $\sigma$ independiente del campo eléctrico aplicado, se cumple la Ley de Ohm:
+		\centering Si el material posee una conductividad $\sigma$ independiente del campo eléctrico aplicado, se cumple la Ley de Ohm:
 		
 		\begin{align*}
 		\vec{J} &= \sigma \vec{E} \Rightarrow \vec{D} = \left( \epsilon' - j\epsilon'' - j \frac{\sigma}{\omega} \right) \vec{E}.
 		\end{align*}
 		
-		\begin{block}{Tangente de pérdidas}
+		\begin{block}{\centering Tangente de pérdidas}
 			\setlength\abovedisplayskip{0pt}
 			\begin{align*}
 			\tan \; \delta &= \frac{\omega \epsilon'' + \sigma}{\omega \epsilon'}.
@@ -316,101 +316,156 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		
 		\subsection{Ondas electromagnéticas}
 		\begin{frame}
-		\frametitle{Ondas electromagnéticas (I)}
-		
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=1\textwidth]{Presentacion/onda_em.pdf}
-		\end{figure}
-		
-		En una región libre de fuentes, se pueden deducir las ecuaciones de Helmholtz para ondas monocromáticas, a partir de las ecuaciones de Maxwell.
-				
-		\begin{align*}
-		\left.\begin{array}{rr@{\mskip\thickmuskip}l}
-		\nabla^2  \vec{E} + \gamma^2 \vec{E} &= 0\\
-		\nabla^2 \vec{H} + \gamma^2 \vec{H}& = 0
-		\end{array} \right\}
-		\quad \implies \quad
-		\left\{\begin{array}{r@{\mskip\thickmuskip}l}
-		\vec{E}(x,y,z) &= \vec{E}_0 e^{\pm j \vec{\gamma}\cdot \vec{r}}. \\
-		\vec{H}(x,y,z) &= \vec{H}_0 e^{\pm j \vec{\gamma}\cdot \vec{r}}.
-		\end{array}\right.
-		\end{align*}
-		
-		\begin{block}{}
-			\setlength\abovedisplayskip{0pt}	
+			\frametitle{Ondas electromagnéticas (I)}
+			
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=1\textwidth]{Presentacion/onda_em.pdf}
+			\end{figure}
+			
+			\centering En una región libre de fuentes, se pueden deducir las ecuaciones de Helmholtz para ondas monocromáticas, a partir de las ecuaciones de Maxwell.
+					
 			\begin{align*}
-			\gamma &= -j\alpha + \beta = j\omega \sqrt{\mu (\epsilon'-j\epsilon'') - j \sigma \epsilon/\omega}.\\
-			\vec{\gamma} &= \vec{\gamma}_x + \vec{\gamma}_y +\vec{\gamma}_z.
+			\left.\begin{array}{rr@{\mskip\thickmuskip}l}
+			\nabla^2  \vec{E} + \gamma^2 \vec{E} &= 0\\
+			\nabla^2 \vec{H} + \gamma^2 \vec{H}& = 0
+			\end{array} \right\}
+			\quad \implies \quad
+			\left\{\begin{array}{r@{\mskip\thickmuskip}l}
+			\vec{E}(x,y,z) &= \vec{E}_0 e^{\pm j \vec{\gamma}\cdot \vec{r}}. \\
+			\vec{H}(x,y,z) &= \vec{H}_0 e^{\pm j \vec{\gamma}\cdot \vec{r}}.
+			\end{array}\right.
 			\end{align*}
-		\end{block}
+			
+			\begin{block}{}
+				\setlength\abovedisplayskip{0pt}
+				\begin{align*}
+				\centering
+				\gamma &= -j\alpha + \beta = j\omega \sqrt{\mu (\epsilon'-j\epsilon'') - j \sigma \epsilon/\omega}.\\
+				\vec{\gamma} &= \vec{\gamma}_x + \vec{\gamma}_y +\vec{\gamma}_z.
+				\end{align*}
+			\end{block}
 
 		\end{frame}
 	
 		\begin{frame}
-		\frametitle{Ondas electromagnéticas (II)}
-		
-		Para las ondas planas,
-		
-		\begin{block}{}
-			\setlength\abovedisplayskip{0pt}
-			\begin{align*}
-			\vec{H}(\vec{r},t) &= \pm \frac{\hat{\beta} \times \vec{E}(\vec{r},t)}{\eta}.
-			\end{align*}
-		\end{block}
-	
-	
-	
-		\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+			\frametitle{Ondas electromagnéticas (II)}
 			
-			\column{.45\textwidth} % Left column and width
+			Para las ondas planas,
 			
-			\begin{block}{Impedancia de onda}
+			\begin{block}{}
 				\setlength\abovedisplayskip{0pt}
 				\begin{align*}
-				\eta &= \frac{j \omega \mu}{\gamma }.
+				\vec{H}(\vec{r},t) &= \pm \frac{\hat{\beta} \times \vec{E}(\vec{r},t)}{\eta}.
 				\end{align*}
 			\end{block}
 		
-			\begin{block}{Velocidad de fase}
+		
+		
+			\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+				
+				\column{.45\textwidth} % Left column and width
+				
+				\begin{block}{\centering Impedancia de onda}
+					\setlength\abovedisplayskip{0pt}
+					\begin{align*}
+					\eta &= \frac{j \omega \mu}{\gamma }.
+					\end{align*}
+				\end{block}
+			
+				\begin{block}{\centering Velocidad de fase}
+					\setlength\abovedisplayskip{0pt}
+					\begin{align*}
+					v_p &= \omega/\beta = c/\sqrt{\mu_r \epsilon_r}.
+					\end{align*}
+				\end{block}
+			
+				
+				
+				\column{.45\textwidth} % Right column and width
+				
+				\begin{block}{\centering Prof. penetración}
+					\setlength\abovedisplayskip{0pt}
+					\begin{align*}
+					\label{eq:prof_penetacion}
+					\delta_s = -1/\alpha &= \sqrt{\frac{2}{\omega \mu \sigma}}.
+					\end{align*}
+				\end{block}
+			
+				\begin{block}{\centering Velocidad de grupo}
+					\setlength\abovedisplayskip{0pt}
+					\begin{align*}
+					v_g &= d\omega/d\beta.
+					\end{align*}
+				\end{block}
+			
+			\end{columns}
+			
+			\begin{block}{\centering Componentes del campo eléctrico que se desplaza en dirección $z$}
 				\setlength\abovedisplayskip{0pt}
 				\begin{align*}
-				v_p &= \omega/\beta = c/\sqrt{\mu_r \epsilon_r}.
+				E_i(z) = E_i \; e^{-j\gamma z} = E_i \; e^{-\alpha z} \; e^{-j \beta z}, \quad i=x,y.
 				\end{align*}
 			\end{block}
-		
-			
-			
-			\column{.45\textwidth} % Right column and width
-			
-			\begin{block}{Prof. penetración}
-				\setlength\abovedisplayskip{0pt}
-				\begin{align*}
-				\label{eq:prof_penetacion}
-				\delta_s = -1/\alpha &= \sqrt{\frac{2}{\omega \mu \sigma}}.
-				\end{align*}
-			\end{block}
-		
-			\begin{block}{Velocidad de grupo}
-				\setlength\abovedisplayskip{0pt}
-				\begin{align*}
-				v_g &= d\omega/d\beta.
-				\end{align*}
-			\end{block}
-		
-		\end{columns}
-		
-		\begin{block}{Componentes del campo eléctrico que se desplaza en dirección $z$}
-			\setlength\abovedisplayskip{0pt}
-			\begin{align*}
-			E_i(z) = E_i \; e^{-j\gamma z} = E_i \; e^{-\alpha z} \; e^{-j \beta z}, \quad i=x,y.
-			\end{align*}
-		\end{block}
 
 		\end{frame}
 		
+		\subsection{Antenas}
+		
+		\begin{frame}
+			\frametitle{Fuentes de ondas electromagnéticas: Antenas}
+			\begin{block}{Antena}
+				\centering
+				Interfaz para las ondas electromagnéticas entre el espacio libre y un dispositivo de guía, generalmente metálico.\\
+				\textbf{Objetivo}: Recibir y transmitir energía eficientemente.
+			\end{block}
+					
+			\only<2>{\begin{block}{}
+				Se suelen utilizar en conjuntos radiantes, dispuestas geométricamente.\\
+				
+					-1926: Yagi-Uda.\\
+					-Segunda guerra mundial: Conjuntos de antena de fase variable. \\
+					-1950: Desfasadores de ferrita, fase completa.
+			\end{block}
+		
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.5\textwidth]{Presentacion/yagi-uda.JPG}
+			\end{figure}}
+			
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Acoplamiento entre antenas}
+			\begin{block}{Responsables}
+				\begin{itemize}
+					\item Acoplamiento espacial entre elementos por onda espacial ($\downarrow \propto 1/\rho$).
+					\item Acoplamiento espacial por onda de superficie ($\downarrow \propto 1/\sqrt\rho$).
+					\item Acoplamiento por red de alimentación (alimentación no independiente).
+				\end{itemize}
+			\end{block}
+			
+			\begin{align*}
+			\begin{bmatrix}
+			V_1 \\ V_2 \\ \vdots \\ V_N
+			\end{bmatrix}
+			=
+			\underbrace{\begin{bmatrix}
+				Z_{11} & Z_{12} & \cdots & Z_{1N} \\
+				Z_{12} & Z_{22} & \cdots & Z_{2N} \\
+				\vdots & \vdots & \cdots & \vdots \\
+				Z_{1N} & Z_{2N} & \cdots & Z_{NN} \\
+				\end{bmatrix}}_{Z}
+			\begin{bmatrix}
+			I_1 \\ I_2 \\ \vdots \\ I_N
+			\end{bmatrix}
+			\end{align*}
+			
+		\end{frame}
+		
+		
 		% Comparar Masters Eq con Shrodinger. Modos.
-		\subsubsection{Ondas de superficie}
+		\subsection{Ondas de superficie}
 		
 			\begin{frame}
 			\frametitle{Ondas de superficie}
@@ -476,7 +531,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			\begin{frame}
 			\frametitle{Impedancia de superficie y constante de propagación (TM)}
 			
-			Si se asume una impedancia de superficie $Z_s = R_s + j X_s$, al igualar la impedancia de onda a la de superficie:
+			\centering Si se asume una impedancia de superficie $Z_s = R_s + j X_s$, al igualar la impedancia de onda a la de superficie:
 			
 			\begin{block}{TM}
 			\setlength\abovedisplayskip{0pt}
@@ -504,8 +559,10 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 				\end{itemize}
 				
 				\begin{block}{}
+					\centering
 					Para ondas de superficie TM:
 					\begin{itemize}
+						\centering
 						\item $\uparrow X_s$ \\
 						\item $\downarrow R_s$.
 					\end{itemize}
@@ -538,20 +595,22 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		\begin{frame}
 		\frametitle{Condiciones para la propagación sobre un plano conductor}
 		
-			\begin{block}{Polarización TM}
+			\begin{block}{\centering Polarización TM}
 				\begin{itemize}
+					\centering
 					\item Comportamiento {\color{red} inductivo}.
 					\item Resistividad baja.
 				\end{itemize}
 			\end{block}
-			\begin{block}{Polarización TE}
+			\begin{block}{\centering Polarización TE}
 				\begin{itemize}
+					\centering
 					\item Comportamiento {\color{red} capacitivo}.
 					\item Resistividad baja.
 				\end{itemize}
 			\end{block}
 		
-			Para volver más inductiva a la superficie, se puede recubrir al plano conductor con un dieléctrico.
+			\centering Para volver más inductiva a la superficie, se puede recubrir al plano conductor con un dieléctrico.
 		\end{frame}
 	
 		\begin{frame}
@@ -640,6 +699,75 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 				\centering
 				$\uparrow \text{permitividad eléctrica del sustrato} \Rightarrow\; \uparrow$ ondas de superficie (TM)
 			\end{block}
+		\end{frame}
+		
+		\subsection{Antenas \textit{microstrip}}
+		
+		\begin{frame}
+			\frametitle{Antenas \textit{microstrip}}
+			\begin{columns}
+				\column{.45\textwidth} % Right column and width
+				\begin{itemize}
+					\item Bajo costo, peso y perfil.
+					\item Construcción sencilla.
+					\item Alto Q (resonantes).
+					\item {\color{red}Bajo acoplamiento con elementos cercanos. Campos contenidos en el sustrato.}
+				\end{itemize}
+				\begin{block}{}
+					\centering
+					$\uparrow \epsilon_r \Rightarrow \downarrow$ acoplamiento.
+				\end{block}			
+				\column{.45\textwidth} % Right column and width
+				\begin{itemize}
+					\item Baja eficiencia.
+					\item Baja potencia.
+					\item Polarización impura.
+					\item {\color{red}Alto acoplamiento con elementos ubicados sobre la superficie.}
+				\end{itemize}
+				\begin{block}{}
+					\centering
+					$\uparrow \epsilon_r \Rightarrow \uparrow$ acoplamiento.
+				\end{block}	
+			\end{columns}
+		\end{frame}
+	
+	
+		\begin{frame}
+			\frametitle{Modelo de líneas de transmisión}
+			\centering Antena rectangular: Dos aperturas radiantes de ancho $W$ y altura $h$, sepadas una distancia $L$ por una línea de trasmisión de impedancia característica conocida $Z_0$.
+			
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.9\textwidth]{intro_electro/circuito-equivalente-antena-ms.pdf}
+			\end{figure}
+		
+			\textit{Fringing}: Considerado mediante el uso de una $L_{eff} = L + 2 \Delta L$.
+		
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Modelo de cavidades multimodo}
+			\centering Antena rectangular: Cavidad cargada dieléctricamente, limitada por conductores eléctricos en sus caras superior e inferior, y por conductores magnéticos en sus caras laterales.
+			
+			\begin{align*}
+				(f_r)_{nmp} = \frac{1}{2 \pi \sqrt{\mu \epsilon}} \sqrt{\left(\frac{m\pi}{h}\right)^2 + \left(\frac{n\pi}{L}\right)^2 + \left(\frac{p\pi}{W}\right)^2}
+			\end{align*}
+			
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.49\textwidth]{intro_electro/distribucion-campos-microstrip.pdf}
+			\end{figure}
+		
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Acoplamiento mutuo en antenas \textit{microstrip}}
+					
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.9\textwidth]{intro_electro/pozar-acoplamiento.pdf}
+			\end{figure}
+		
 		\end{frame}
 		
 
@@ -744,7 +872,23 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 	\subsection{Bragg, Bloch-Floquet y espacio recíproco}
 	
 		\begin{frame}
-		\frametitle{Bragg}
+			\frametitle{Difracción de Bragg}
+		
+			\begin{figure}[htp]
+				\includegraphics[width=0.6\textwidth]{Fundamentos/bragg1.pdf}
+			\end{figure}
+			
+			\begin{align*}
+			\Gamma_t = \Gamma e^{-j\gamma x} + \Gamma e^{-2j\gamma a} e^{-j\gamma x} + \Gamma e^{-4j\gamma a} e^{-j\gamma x} + ... = \Gamma e^{-j\gamma x} \frac{1}{1-e^{-2j\gamma a}},
+			\end{align*}
+			
+			\centering Si $e^{-2j\gamma a} = 1$, la expresión diverge.
+			
+			 \begin{block}{\centering Condición de Bragg}
+			 	\centering
+			 	$\gamma = n\pi/a$
+			 \end{block}
+			% Se podría dar la expresión más general en las diapositivas anexas.
 		\end{frame}
 	
 		\begin{frame}
