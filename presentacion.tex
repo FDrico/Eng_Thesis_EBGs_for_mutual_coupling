@@ -22,7 +22,20 @@
 \usepackage{xcolor}
 \usepackage{subfigure}  % Para manejo de subfiguras.
 \usepackage{graphicx}
-\usefonttheme[onlymath]{serif}  
+\usepackage[most]{tcolorbox}
+\usefonttheme[onlymath]{serif} 
+
+
+\newenvironment<>{varblock}[2][.9\textwidth]{%
+	\setlength{\textwidth}{#1}
+	\begin{actionenv}#3%
+		\def\insertblocktitle{#2}%
+		\par%
+		\usebeamertemplate{block begin}}
+	{\par%
+		\usebeamertemplate{block end}%
+\end{actionenv}}
+
 \mode<presentation> {
 
 % The Beamer class comes with a number of default slide themes
@@ -885,14 +898,159 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			\centering Si $e^{-2j\gamma a} = 1$, la expresión diverge.
 			
 			 \begin{block}{\centering Condición de Bragg}
+			 	\setlength\abovedisplayskip{0pt}
 			 	\centering
-			 	$\gamma = n\pi/a$
+			 		\begin{align*}
+			 			\gamma = \frac{n\pi}{a}
+			 		\end{align*}
 			 \end{block}
+		 
+		 	\centering Y $\gamma$ está relacionado a la frecuencia, según el material.
+
 			% Se podría dar la expresión más general en las diapositivas anexas.
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Relación entre $\gamma$ y $\omega$ en el vacío}
+			
+			\centering
+			\setlength{\tabcolsep}{2em} % for the horizontal padding
+			\renewcommand{\arraystretch}{2}% for the vertical padding
+			\begin{tabular}{c|c}
+				1D & 2D\\
+				$\omega = c \beta$&$\omega = c \sqrt{\beta_x^2 + \beta_y^2}$\\
+				&\\
+				\includegraphics[width=0.4\textwidth]{Presentacion/dispersionvacio1d.pdf} & 	\includegraphics[width=0.3\textwidth]{Presentacion/dispersionvacio2d.pdf}\\	
+			\end{tabular}
+		
+			
+			\begin{block}{}
+				Si hay números de onda prohibidos, ¿podría haber frecuencias prohibidas?
+			\end{block}\textbf{}
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Problema de autovalores}
+			\centering Desacoplando las dos ecuaciones del rotor, se obtiene
+			\begin{align*}
+				\nabla \times \left(\frac{1}{\epsilon_r} \nabla \times \vec{H}(\vec{r}) \right) = \left(\frac{\omega}{c}\right)^2 \vec{H}(\vec{r}).
+			\end{align*}
+			
+			\centering Se puede considerar un operador $\Theta$:
+			
+			\begin{block}{}
+				\setlength\abovedisplayskip{0pt}
+				\begin{align*}
+					\hat{\Theta} = \nabla \times \frac{1}{\epsilon_r} \nabla \times
+				\end{align*}
+			\end{block}
+			
+			\centering De forma que
+			
+			\begin{block}{}
+				\setlength\abovedisplayskip{0pt}
+				\begin{align*}
+					\hat{\Theta} \vec{H}(\vec{r}) = \left(  \frac{\omega}{c} \right)^2 \vec{H}(\vec{r})
+				\end{align*}
+			\end{block}
+			
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Problema de autovalores: Física cuántica}
+			\renewcommand{\arraystretch}{2}% for the vertical padding
+			\begin{tabular}{c|c|c}
+
+				& Cuántica & Electromagnetismo \\ 
+				\hline 
+				Campo & $\Psi(\vec{r},t) = \Psi(\vec{r})e^{j\omega t}$ & $\vec{H}(\vec{r},t)=\vec{H}(\vec{r})e^{i\omega t}$ \\ 
+
+				Problema de autovalores & $\hat{H}\Psi(\vec{r}) = E \Psi(\vec{r})$ & $\hat{\Theta} \vec{H}(\vec{r}) = \left(  \frac{\omega}{c} \right)^2 \vec{H}(\vec{r})$ \\ 
+
+				Operador & $\hat{H} = \frac{-\hbar^2 \nabla^2}{2m} + V(\vec{r})$ &  $\hat{\Theta} = \nabla \times \frac{1}{\epsilon_r} \nabla \times$ \\ 
+
+			\end{tabular}
+			\vfill
+			\centering Además, al igual que el Hamiltoniano, el operador $\Theta$ es hermítico.
+						
+		\end{frame}
+		
+		
+		\begin{frame}
+		\frametitle{Teorema de Bloch-Floquet y armónicos espaciales}
+		
+			\begin{columns}
+				\column{.51\textwidth}
+				\begin{figure}
+					\includegraphics[width=0.9\textwidth]{Fundamentos/periodico-geometria.pdf}
+				\end{figure}
+			
+				\column{.51\textwidth}
+				\begin{block}{}
+					\centering
+					Gaston Floquet, 1883.
+				\end{block}
+			
+				\begin{block}{}
+					\centering
+					\textbf{Teorema de Bloch}:
+					
+					Soluciones a la función de onda de un electrón en un cristal.
+					\begin{align*}
+						\phi(\vec{r}) = e^{j\vec{\gamma} \cdot \vec{r}} u(\vec{r})
+					\end{align*}
+				\end{block}
+			\end{columns}
+			
+			
+			\begin{block}{}
+				\setlength\abovedisplayskip{0pt}
+				\begin{align*}
+					E(x+d,y,z) = e^{-j \beta d} E(x,y,z),
+				\end{align*}
+			\end{block}
+		
 		\end{frame}
 	
 		\begin{frame}
-		\frametitle{Teorema de Bloch y armónicos espaciales}
+			\begin{center}
+				\begin{figure}[y]
+					\centering
+					\includegraphics[width=0.8\textwidth]{Fundamentos/bloch.pdf}
+				\end{figure}
+			\end{center}
+			\vspace{-20pt}
+			\begin{center}
+				\begin{figure}[h]
+					\centering
+					\includegraphics[width=0.6\textwidth]{Fundamentos/bloch-ortogonal.pdf}
+				\end{figure}
+			\end{center}
+		\end{frame}
+	
+		\begin{frame}
+		
+			\begin{columns}[c]
+				\column{.65\textwidth}
+				\begin{figure}[h]
+					\centering
+					\includegraphics[width=\textwidth]{Presentacion/bloch-2d-1.png}
+				\end{figure}
+				
+				\column{.35\textwidth}
+				\begin{figure}[h]
+					\centering
+					\includegraphics[width=0.9\textwidth]{Presentacion/bloch-2d-2.png}
+				\end{figure}
+				\vspace{-10pt}
+				\begin{figure}[h]
+					\centering
+					\includegraphics[width=0.9\textwidth]{Presentacion/bloch-2d-3.png}
+				\end{figure}
+				
+			\end{columns}
+			
+			
 		\end{frame}
 	
 		\begin{frame}
