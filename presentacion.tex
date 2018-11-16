@@ -800,11 +800,11 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		\begin{columns}[c]
 			\column{.51\textwidth}
 			\begin{block}{Metamateriales}
-				Estructuras artificiales \textbf{efectivamente homogéneas} para la longitud de onda de interés, que presentan propiedades electromagnéticas que no se encuentran en la naturaleza.
+				Estructuras artificiales \textbf{efectivamente homogéneas} para la longitud de onda de interés, que presentan \textbf{propiedades electromagnéticas que no se encuentran en la naturaleza}.
 			\end{block}
 		
 			\begin{block}{EBGs, PBGs, cristales fotónicos}
-				Estructuras articiales con capacidades para controlar (en general, atenuar) ondas electromagnéticas a partir de la \textbf{variación periódica} en el espacio de las propiedades del medio respecto de la propagación electromagnética.
+				Estructuras articiales con capacidades para controlar (en general, atenuar) ondas electromagnéticas en un \textbf{rango de frecuencias} a partir de la \textbf{variación periódica} en el espacio de las propiedades del medio respecto de la propagación electromagnética.
 			\end{block}
 		
 			\column{.46\textwidth}
@@ -911,7 +911,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		\end{frame}
 		
 		\begin{frame}
-			\frametitle{Relación entre $\gamma$ y $\omega$ en el vacío}
+			\frametitle{Relación entre $\gamma$ y $\omega$ en el vacío: Diagrama de dispersión}
 			
 			\centering
 			\setlength{\tabcolsep}{2em} % for the horizontal padding
@@ -977,9 +977,9 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		
 		
 		\begin{frame}
-		\frametitle{Teorema de Bloch-Floquet y armónicos espaciales}
+		\frametitle{Teorema de Bloch-Floquet}
 		
-			\begin{columns}
+			\only<1>{\begin{columns}
 				\column{.51\textwidth}
 				\begin{figure}
 					\includegraphics[width=0.9\textwidth]{Fundamentos/periodico-geometria.pdf}
@@ -1008,12 +1008,12 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 				\begin{align*}
 					E(x+d,y,z) = e^{-j \beta d} E(x,y,z),
 				\end{align*}
-			\end{block}
+			\end{block}}
 		
 		\end{frame}
 	
 		\begin{frame}
-			\begin{center}
+			\only<1>{\begin{center}
 				\begin{figure}[y]
 					\centering
 					\includegraphics[width=0.8\textwidth]{Fundamentos/bloch.pdf}
@@ -1026,10 +1026,8 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 					\includegraphics[width=0.6\textwidth]{Fundamentos/bloch-ortogonal.pdf}
 				\end{figure}
 			\end{center}
-		\end{frame}
-	
-		\begin{frame}
-		
+		}
+		\only<2>{
 			\begin{columns}[c]
 				\column{.65\textwidth}
 				\begin{figure}[h]
@@ -1050,11 +1048,75 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 				
 			\end{columns}
 			
-			
+		}	
 		\end{frame}
 	
 		\begin{frame}
-		\frametitle{Espacio recíproco}
+			\frametitle{Armónicos espaciales y Celda de Brillouin}
+			\only<1>{
+				\centering Para una periodicidad en una dirección ($x$) en que el espacio tiene comportamiento periódico, se puede desarrollar la Transformada de Fourier:
+				
+				\begin{align*}
+					F(x,y,z) = \sum_{n=-\infty}^{\infty} F_{n}(y,z) e^{-j n \frac{2\pi}{p} x}
+				\end{align*}
+				
+				\centering Tras aplicar las condiciones de Bloch:
+				\begin{columns}[c]
+					\column{.55\textwidth}
+					\begin{block}{}
+						\setlength\abovedisplayskip{0pt}
+						\begin{gather*}
+							 E(x,y,z,t) = e^{j\omega t} \sum_{n=-\infty}^{\infty} E_n(y,z) e^{-j\gamma_n x},\\
+							 \gamma_n = \gamma_0 + n \frac{2\pi}{p}.
+						\end{gather*}
+					\end{block}
+					
+					\column{.4\textwidth}
+					
+					\begin{block}{}
+						\centering Campo en un medio periódico:
+						
+						Suma de \textbf{infinitas armónicas}.
+					\end{block}
+					
+				\end{columns}
+			\vfill
+			Cada término: armónica espacial asociada a un $\gamma_n$.
+		}
+		\only<2>{
+			\begin{block}{}
+				\setlength\abovedisplayskip{0pt}
+				\begin{align*}
+					\gamma_n = \gamma_0 + n \frac{2\pi}{p}
+				\end{align*}
+			\end{block}
+		
+			\centering La \textbf{velocidad de fase} es distinta para cada modo.
+			
+			\begin{block}{}
+				\setlength\abovedisplayskip{0pt}
+				\begin{align*}
+					v_p^n = \frac{\omega}{\beta_n} = \frac{\omega}{\beta_0 + 2\pi n/p}
+				\end{align*}
+			\end{block}
+			
+			\centering La \textbf{velocidad de grupo} es la misma para todas las armónicas.
+			
+			\begin{block}{}
+				\setlength\abovedisplayskip{0pt}
+				\begin{align*}
+					v_g^n = \frac{d\omega}{d\beta_n} = \frac{d\omega}{d(\beta_0 +2\pi n/p)} = \frac{d\omega}{d\beta_0} = v_g^0.
+				\end{align*}
+			\end{block}
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.9\textwidth]{Presentacion/brillioun-1d.pdf}
+			\end{figure}
+		}
+		\end{frame}
+	
+		\begin{frame}
+		\frametitle{Red de Bravais}
 		\end{frame}
 	
 	\subsection{Dispersión}
