@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  15 NOV 2018 23:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  16 NOV 2018 08:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2029,53 +2029,88 @@ e 1052.
 File: Figures/Presentacion/brillioun-1d.pdf Graphic file (type pdf)
 <use Figures/Presentacion/brillioun-1d.pdf>
 Package pdftex.def Info: Figures/Presentacion/brillioun-1d.pdf  used on input l
-ine 1116.
+ine 1142.
 (pdftex.def)             Requested size: 308.06367pt x 64.30673pt.
 
-Overfull \vbox (7.9984pt too high) detected at line 1116
+Overfull \vbox (7.9984pt too high) detected at line 1142
  []
 
 [46
 
- <./Figures/Presentacion/brillioun-1d.pdf>] [47
+ <./Figures/Presentacion/brillioun-1d.pdf>]
+<Figures/Presentacion/dispersion-ejemplo-1.pdf, id=3771, 640.98401pt x 142.9184
+9pt>
+File: Figures/Presentacion/dispersion-ejemplo-1.pdf Graphic file (type pdf)
+<use Figures/Presentacion/dispersion-ejemplo-1.pdf>
+Package pdftex.def Info: Figures/Presentacion/dispersion-ejemplo-1.pdf  used on
+ input line 1142.
+(pdftex.def)             Requested size: 308.06367pt x 68.68948pt.
+ [47
 
-] [48
+ <./Figures/Presentacion/dispersion-ejemplo-1.pdf>]
+File: Figures/Presentacion/dispersion-ejemplo-1.pdf Graphic file (type pdf)
+<use Figures/Presentacion/dispersion-ejemplo-1.pdf>
+Package pdftex.def Info: Figures/Presentacion/dispersion-ejemplo-1.pdf  used on
+ input line 1142.
+(pdftex.def)             Requested size: 308.06367pt x 68.68948pt.
+<Figures/Presentacion/dispersion-ejemplo-2.pdf, id=3793, 649.429pt x 128.46773p
+t>
+File: Figures/Presentacion/dispersion-ejemplo-2.pdf Graphic file (type pdf)
+<use Figures/Presentacion/dispersion-ejemplo-2.pdf>
+Package pdftex.def Info: Figures/Presentacion/dispersion-ejemplo-2.pdf  used on
+ input line 1142.
+(pdftex.def)             Requested size: 308.06367pt x 60.94046pt.
+ [48
 
-] [49
+ <./Figures/Presentacion/dispersion-ejemplo-2.pdf>]
+File: Figures/Presentacion/dispersion-ejemplo-1.pdf Graphic file (type pdf)
+<use Figures/Presentacion/dispersion-ejemplo-1.pdf>
+Package pdftex.def Info: Figures/Presentacion/dispersion-ejemplo-1.pdf  used on
+ input line 1142.
+(pdftex.def)             Requested size: 308.06367pt x 68.68948pt.
+<Figures/Presentacion/dispersion-ejemplo-3.pdf, id=3950, 649.429pt x 128.46773p
+t>
+File: Figures/Presentacion/dispersion-ejemplo-3.pdf Graphic file (type pdf)
+<use Figures/Presentacion/dispersion-ejemplo-3.pdf>
+Package pdftex.def Info: Figures/Presentacion/dispersion-ejemplo-3.pdf  used on
+ input line 1142.
+(pdftex.def)             Requested size: 308.06367pt x 60.94046pt.
 
-] [50
+[49
+
+ <./Figures/Presentacion/dispersion-ejemplo-3.pdf>] [50
 
 ] [51
 
+] [52
+
+] [53
+
 ]
-[52
+[54
+
+] [55
 
 ]
 \openout4 = `presentacion.vrb'.
 
- (./presentacion.vrb) [53
+ (./presentacion.vrb) [56
 
-] [54
+] [57
 
 ]
 \openout4 = `presentacion.vrb'.
 
- (./presentacion.vrb) [55
-
-] [56
-
- </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [57
-
-] [58
+ (./presentacion.vrb) [58
 
 ] [59
 
-]
-[60
+ </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [60
 
 ] [61
 
-] [62
+]
+[62
 
 ] [63
 
@@ -2101,18 +2136,24 @@ Overfull \vbox (7.9984pt too high) detected at line 1116
 
 ] [74
 
-]
-[75
+] [75
 
 ] [76
 
-] [77
+]
+[77
 
 ] [78
 
 ] [79
 
 ] [80
+
+] [81
+
+] [82
+
+] [83
 
 ]
 \tf@nav=\write8
@@ -2124,23 +2165,23 @@ Overfull \vbox (7.9984pt too high) detected at line 1116
 \tf@snm=\write10
 \openout10 = `presentacion.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1321.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1321.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1349.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1349.
  (./presentacion.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1321.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1321.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1349.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1349.
 
 Package rerunfilecheck Info: File `presentacion.out' has not changed.
-(rerunfilecheck)             Checksum: EFF7DF06E7AF57C71DF0E85D383492C4;1326.
+(rerunfilecheck)             Checksum: 1A8D82B0C1B63186A28D5CE55F434003;1326.
  ) 
 Here is how much of TeX's memory you used:
- 36145 strings out of 492982
- 745304 string characters out of 6134895
- 848532 words of memory out of 5000000
- 38858 multiletter control sequences out of 15000+600000
+ 36166 strings out of 492982
+ 746102 string characters out of 6134895
+ 850628 words of memory out of 5000000
+ 38870 multiletter control sequences out of 15000+600000
  548645 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,23n,103p,10501b,879s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2171,10 +2212,10 @@ t10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fon
 ts/type1/public/lm/lmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symb
 ol/usyr.pfb>
-Output written on presentacion.pdf (80 pages, 4360079 bytes).
+Output written on presentacion.pdf (83 pages, 4413438 bytes).
 PDF statistics:
- 4121 PDF objects out of 4296 (max. 8388607)
- 2911 compressed objects within 30 object streams
- 183 named destinations out of 1000 (max. 500000)
- 581 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4461 PDF objects out of 5155 (max. 8388607)
+ 3142 compressed objects within 32 object streams
+ 189 named destinations out of 1000 (max. 500000)
+ 596 words of extra memory for PDF output out of 10000 (max. 10000000)
 
