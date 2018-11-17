@@ -14,7 +14,7 @@
    viewBox="0 0 197.79324 227.75642"
    version="1.1"
    id="svg10655"
-   inkscape:version="0.92.2 (unknown)"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="modos-de-propagacion-ilustracion.svg">
   <defs
      id="defs10649" />
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.61523438"
-     inkscape:cx="341.84169"
-     inkscape:cy="555.18854"
+     inkscape:cx="7.0099467"
+     inkscape:cy="548.68695"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -36,9 +36,9 @@
      inkscape:snap-object-midpoints="true"
      inkscape:snap-center="true"
      inkscape:window-width="1920"
-     inkscape:window-height="1056"
-     inkscape:window-x="1600"
-     inkscape:window-y="0"
+     inkscape:window-height="1031"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="1">
     <sodipodi:guide
        position="98.883104,176.10304"
@@ -54,7 +54,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -203,7 +203,9 @@
          id="tspan11332"
          x="-2.3705952"
          y="52.370815"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:cmr10;-inkscape-font-specification:cmr10;stroke-width:0.26458332px">Primer modo de propagacion</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MathJax_Main;-inkscape-font-specification:MathJax_Main;stroke-width:0.26458332px">Primer modo de propagaci<tspan
+   style="font-size:8.46666667px"
+   id="tspan836">ó</tspan>n</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.80694103px;line-height:125%;font-family:MathJax_SansSerif;-inkscape-font-specification:MathJax_SansSerif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -214,6 +216,8 @@
          id="tspan11332-0"
          x="-5.9878564"
          y="169.78793"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:cmr10;-inkscape-font-specification:cmr10;stroke-width:0.26458332px">Segundo modo de propagacion</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MathJax_Main;-inkscape-font-specification:MathJax_Main;stroke-width:0.26458332px">Segundo modo de propagaci<tspan
+   style="font-size:8.46666667px"
+   id="tspan838">ó</tspan>n</tspan></text>
   </g>
 </svg>

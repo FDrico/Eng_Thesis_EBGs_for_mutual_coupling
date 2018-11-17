@@ -22,6 +22,7 @@
 \usepackage{xcolor}
 \usepackage{subfigure}  % Para manejo de subfiguras.
 \usepackage{graphicx}
+\usepackage{array,booktabs}
 \usepackage[most]{tcolorbox}
 \usefonttheme[onlymath]{serif} 
 
@@ -432,8 +433,8 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 				Interfaz para las ondas electromagnéticas entre el espacio libre y un dispositivo de guía, generalmente metálico.\\
 				\textbf{Objetivo}: Recibir y transmitir energía eficientemente.
 			\end{block}
-					
-			\only<2>{\begin{block}{}
+			\pause		
+			\begin{block}{}
 				Se suelen utilizar en conjuntos radiantes, dispuestas geométricamente.\\
 				
 					-1926: Yagi-Uda.\\
@@ -444,7 +445,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			\begin{figure}[h]
 				\centering
 				\includegraphics[width=0.5\textwidth]{Presentacion/yagi-uda.JPG}
-			\end{figure}}
+			\end{figure}
 			
 		\end{frame}
 		
@@ -959,10 +960,11 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		\begin{frame}
 			\frametitle{Problema de autovalores: Física cuántica}
 			\renewcommand{\arraystretch}{2}% for the vertical padding
-			\begin{tabular}{c|c|c}
+			\begin{tabular}{c c c}
+				\toprule
 
-				& Cuántica & Electromagnetismo \\ 
-				\hline 
+				& \textbf{Cuántica} & \textbf{Electromagnetismo} \\ 
+				\midrule
 				Campo & $\Psi(\vec{r},t) = \Psi(\vec{r})e^{j\omega t}$ & $\vec{H}(\vec{r},t)=\vec{H}(\vec{r})e^{i\omega t}$ \\ 
 
 				Problema de autovalores & $\hat{H}\Psi(\vec{r}) = E \Psi(\vec{r})$ & $\hat{\Theta} \vec{H}(\vec{r}) = \left(  \frac{\omega}{c} \right)^2 \vec{H}(\vec{r})$ \\ 
@@ -977,9 +979,10 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		
 		
 		\begin{frame}
-		\frametitle{Teorema de Bloch-Floquet}
 		
-			\only<1>{\begin{columns}
+		
+			\only<1>{\frametitle{Teorema de Bloch-Floquet}
+				\begin{columns}
 				\column{.51\textwidth}
 				\begin{figure}
 					\includegraphics[width=0.9\textwidth]{Fundamentos/periodico-geometria.pdf}
@@ -1010,10 +1013,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 				\end{align*}
 			\end{block}}
 		
-		\end{frame}
-	
-		\begin{frame}
-			\only<1>{\begin{center}
+			\only<2>{\begin{center}
 				\begin{figure}[y]
 					\centering
 					\includegraphics[width=0.8\textwidth]{Fundamentos/bloch.pdf}
@@ -1027,7 +1027,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 				\end{figure}
 			\end{center}
 		}
-		\only<2>{
+		\only<3>{
 			\begin{columns}[c]
 				\column{.65\textwidth}
 				\begin{figure}[h]
@@ -1114,46 +1114,26 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			\end{figure}
 		}
 	
-		\only<3,4,5>{
-						
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.9\textwidth]{Presentacion/dispersion-ejemplo-1.pdf}
-			\end{figure}
-		}
-	
-		\only<4>{
+		\centering
+		\includegraphics<3,4,5>[width=0.9\textwidth]{Presentacion/dispersion-ejemplo-1.pdf}%
+		\only<3,4,5>{\vfill}
 			
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.9\textwidth]{Presentacion/dispersion-ejemplo-2.pdf}
-			\end{figure}
-		}
-	
-		\only<5>{
-			
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.9\textwidth]{Presentacion/dispersion-ejemplo-3.pdf}
-			\end{figure}
-		}
-		
-		\only<6,7>{
-			
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.9\textwidth]{Presentacion/dispersion-ejemplo-4.pdf}
-			\end{figure}
-		}
-		
+		\centering
+		\includegraphics<4>[width=0.9\textwidth]{Presentacion/dispersion-ejemplo-2.pdf}%
+
+		\centering
+		\includegraphics<5>[width=0.9\textwidth]{Presentacion/dispersion-ejemplo-3.pdf}%
+
+		\centering
+		\includegraphics<6,7>[width=0.9\textwidth]{Presentacion/dispersion-ejemplo-4.pdf}%
+		\vfill
+
 		\only<7>{
-			\centering \textbf{Principio variacional: Los estados de menor energía la concentran en la zona de mayor $\epsilon_r$.}
+			\centering \textbf{Principio variacional: Los estados de menor energía la concentran en la zona de mayor $\epsilon_r$.}}
 			
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.9\textwidth]{Presentacion/dispersion-ejemplo-5.pdf}
-			\end{figure}
-			
+		\centering \includegraphics<7>[width=0.9\textwidth]{Presentacion/dispersion-ejemplo-5.pdf}%
+		\only<7>{
+				
 			\small{Debido a la ortogonalidad de los autoestados asociados al operador, existen estados, de mayor energía, donde la misma se concentra en el menor $\epsilon_r$ para el mismo $\beta$.}
 		}
 		
@@ -1242,12 +1222,143 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		\end{frame}
 	
 		\begin{frame}
-		\frametitle{Representación de la dispersión en 2D}
+			\frametitle{Modelado de estructuras EBG}
+			
+			\only<1>{\renewcommand{\arraystretch}{2}% for the vertical padding
+			\begin{tabular}{>{\centering\bfseries}m{0.8in} >{\centering}m{0.2in} >{\centering}m{2in} >{\centering\arraybackslash}m{1in}}
+				\toprule
+				\textbf{Método} & \centering\textbf{Dom} & \centering \textbf{Tipo de problema} & \textbf{Software}\\
+				\midrule
+				FEM & \centering f & \centering Pequeños y complejos (incógnitas $\propto$ volumen). & \textit{HFSS} \\
+				FDTD & \centering t & \centering Banda ancha. Resonantes (autovalores). & \textit{CST}\\
+				MOM & \centering f & \centering Recintos abiertos. & \textit{NEC-2, ADS, FEKO}\\
+				\bottomrule
+			\end{tabular}}
+			
+			\only<2>{
+				Métodos semianalíticos:
+			\begin{itemize}
+				\item \textbf{TMM}: Método de matrices de transmisión (2D).
+				\item {\color{red}\textbf{TLM}: Método de matrices de líneas de transmisión (2D, 3D).}
+				\item {\color{red}\textbf{Circuitos equivalentes} (primer modo, bajas frecuencias, 2D).}
+			\end{itemize}
+		\vfill
+		\centering El modelo de circuitos equivalentes no es capaz, por sí mismo, de predecir diagramas de dispersión.}
 		\end{frame}
 	
 		\begin{frame}
-		\frametitle{Bandgap electromagnético}
-		% Rods, TM, TE, combinación de los dos (Yablo), uso en waveguides. Dibujitos, senos deformes.
+			\frametitle{Problema de autovalores con métodos de onda completa}
+			\begin{columns}[c]
+				\column{0.55\textwidth}
+				\begin{figure}[h]
+					\includegraphics[width=0.95\textwidth]{Modelado/esquema-simulacion-periodica.pdf}
+				\end{figure}
+				\column{0.40\textwidth}
+				\begin{block}{}
+					\centering Simulación de una única celda unitaria describe la estructura infinita.
+				\end{block}
+			
+				\begin{block}{\centering PBC}
+					\centering Bloch: Campo periódico con igual periodicidad que el material, a excepción de un factor de fase.
+					\vspace{0.6cm}
+										
+					\textbf{Condición de borde: Diferencia de fase entre paredes enfrentadas}.
+				\end{block}
+			\end{columns}
+
+		\end{frame}
+	
+		\begin{frame}
+			\only<1>{\frametitle{Parches cuadrados unidos por trazas \textit{microstrip}}
+				\begin{figure}[h]
+					\centering
+					\includegraphics[width=0.5\textwidth]{Modelado/orlandi-celda.pdf}
+				\end{figure}
+				\begin{block}{}
+					\centering Zona de Brillouin triangular.
+				\end{block}}
+			\only<2>{
+				\begin{figure}[h]
+					\centering
+					\includegraphics[width=1\textwidth]{Modelado/orlandi-modo1-Enorma-Etangencial.pdf}
+				\end{figure}
+			}
+		
+			\only<3>{
+				
+				\begin{figure}[h]
+					\centering
+					\includegraphics[width=1\textwidth]{Modelado/orlandi-modo1-EH-fases.pdf}
+				\end{figure}
+			}
+		
+			\only<2,3>{
+				\begin{figure}[h]
+					\centering
+					\includegraphics[width=0.55\textwidth]{Presentacion/modos-de-propagacion-ilustracion.pdf}
+				\end{figure}
+			}
+
+		\end{frame}
+		
+		\begin{frame}
+		\only<1>{
+
+				\frametitle{Diagrama de dispersión por método de onda completa}
+				\begin{figure}[h]
+					\centering
+					\includegraphics[width=\textwidth]{Presentacion/diagdisp-1.pdf}
+				\end{figure}
+		}
+	
+		\only<2>{
+			\frametitle{Diagrama de dispersión por método de onda completa}
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=\textwidth]{Presentacion/diagdisp-2.pdf}
+			\end{figure}
+		}
+	
+		\only<3>{
+			\frametitle{Diagrama de dispersión por método de onda completa}
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=\textwidth]{Presentacion/diagdisp-3.pdf}
+			\end{figure}
+			\centering Línea de vista: Comportamiento de onda plana que circula por un medio homogéneo de ese material.
+		}
+	
+		\only<4>{
+			\frametitle{Diagrama de dispersión por método de onda completa}
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=\textwidth]{Presentacion/diagdisp-4.pdf}
+			\end{figure}
+		\centering \textit{Bandgaps}: Se calculan para las tres direcciones en forma separada, por debajo de la línea de vista del vacío.
+		}
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Análisis paramétrico de la celda}
+				\only<1>{\framesubtitle{Variación del ancho del puente}
+					\includegraphics[width=\textwidth]{Modelado/Orlandi-DeltaAnchoConector-comparacion.pdf}
+				}
+				\only<2>{\framesubtitle{Variación del largo del puente}
+					\includegraphics[width=\textwidth]{Modelado/Orlandi-DeltaSeparacionParches-DeltaTamanioCelda-ParcheFijo-Comparacion.pdf}
+				}
+				\only<3>{\framesubtitle{Variación del tamaño de celda}
+					\includegraphics[width=\textwidth]{Modelado/Orlandi-DeltaTamanioCelda-RelacionParcheFija-Comparacion.pdf}
+				}
+				\only<4>{\framesubtitle{Variación del ancho del sustrato}
+					\centering \includegraphics[width=0.95\textwidth]{Modelado/Orlandi-3direcciones-anchoSustrato-Comparacion.pdf}
+				}
+			
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Celda de Yang, Ma, Qian e Itoh}
+			\centering
+			\includegraphics[width=0.4\textwidth]{Modelado/yang-celda.pdf}
 		\end{frame}
 %------------------------------------------------
 
