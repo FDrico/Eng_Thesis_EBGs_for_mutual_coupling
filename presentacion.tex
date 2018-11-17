@@ -25,6 +25,10 @@
 \usepackage{array,booktabs}
 \usepackage[most]{tcolorbox}
 \usefonttheme[onlymath]{serif} 
+\usepackage[texcoord,grid,gridunit=mm,gridcolor=red!10,subgridcolor=green!10]
+{eso-pic}
+\usepackage[absolute,overlay]{textpos}
+
 
 
 \newenvironment<>{varblock}[2][.9\textwidth]{%
@@ -1357,192 +1361,226 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 	
 		\begin{frame}
 			\frametitle{Celda de Yang, Ma, Qian e Itoh}
+				\begin{columns}[c]
+					\column{0.5\textwidth}
+					\centering \includegraphics[width=\textwidth]{Modelado/yang-celda.pdf}
+					\column{0.5\textwidth}
+					\centering \includegraphics[width=\textwidth]{Presentacion/yang-modo1-Enorma-Etangencial.pdf} 
+				\end{columns}
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Modelo circuital I}
+			\only<1>{
+				\centering No se tendrán en cuenta efectos de alta frecuencia.\\
+				\vspace{0.3cm}
+				\centering \includegraphics[width=0.8\textwidth]{Fundamentos/circuito-equivalente-celda-YANG-2.pdf}
+				\vspace{.5cm}
+				
+				\centering
+				\begin{tabular}{c c c c c c c }
+					\toprule
+					$d$ & $l$ & $w$ & $d_l$ & $g$ & $h$ & $d_w$\\ 
+					\midrule
+					$22.6\;mm$ & $6\;mm$ & $1.1\;mm$ & $0.8\;mm$ & $0.8\;mm$ & $1.6\;mm$ & $16.6\;mm$\\ 
+				\end{tabular}
+			
+			
+				\begin{textblock*}{20mm}(105mm,20mm)
+					\begin{block}{}
+						\centering $f_r = \frac{1}{2\pi\sqrt{LC}}$
+					\end{block}
+				\end{textblock*}
+			
+				\begin{textblock*}{20mm}(105mm,45mm)
+					\begin{block}{}
+						\centering Filtro \textit{notch}.
+					\end{block}
+				\end{textblock*}
+		}
+		\only<2>{
+			\framesubtitle{Inductancia de puente, $L_b$}
+			\centering Tres acercamientos distintos:
+			\begin{itemize}
+				\item Kim, Schutt-Ainé (2008)): 
+					\begin{align*}
+						L_{b} = 0.2\; \text{nH/mm} \cdot \ln \left(2\pi \frac{h}{w}\right)
+					\end{align*}
+				\item C. Paul (2010):
+					\begin{align*}
+						L_{b} = \begin{cases}
+						\frac{60 l}{c} \ln \left( \frac{8h}{w} + \frac{w}{4h} \right) \text{ para } \frac{w}{h}\leq 1\\
+						\frac{120 \pi l}{c} \frac{1}{w/h+1.393+0.667\ln(w/h+1.444)} \text{ para } \frac{w}{h} > 1 \\
+						\end{cases}
+					\end{align*}
+				\item Ansys Q3D Extractor, usando BEM (\textit{Boundary Element Method}).
+			\end{itemize}
+			\vfill
+			
 			\centering
-			\includegraphics[width=0.4\textwidth]{Modelado/yang-celda.pdf}
-		\end{frame}
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Table}
-\begin{table}
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\caption{Table caption}
-\end{table}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Verbatim}
-\begin{example}[Theorem Slide Code]
-\begin{verbatim}
-\begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
-\end{frame}\end{verbatim}
-\end{example}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Figure}
-Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
-%\begin{figure}
-%\includegraphics[width=0.8\linewidth]{test}
-%\end{figure}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Citation}
-An example of the \verb|\cite| command to cite within the presentation:\\~
-
-This statement requires citation \cite{p1}.
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{References}
-\footnotesize{
-\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
-\bibitem[Smith, 2012]{p1} John Smith (2012)
-\newblock Title of the publication
-\newblock \emph{Journal Name} 12(3), 45 -- 678.
-\end{thebibliography}
-}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\Huge{\centerline{The End}}
-\end{frame}
-
-%----------------------------------------------------------------------------------------
-
-\section{Modelado}
-
-	\subsection{Ecuación de dispersión}
-		\begin{frame} % Need to use the fragile option when verbatim is used in the slide
-		\frametitle{Ecuación de dispersión partir de una línea de transmisión}
-		\end{frame}
-	 
-	 	\begin{frame} % Need to use the fragile option when verbatim is used in the slide
-	 	\frametitle{Diagrama de dispersión}
- 	    \end{frame}
-      
-     \subsection{Métodos numéricos}
-	    \begin{frame} % Need to use the fragile option when verbatim is used in the slide
-	    \frametitle{Métodos numéricos}
-	 	\end{frame}
+			\begin{tabular}{ c c c }
+				\toprule
+				Kim, Shutt-Ainé & C. Paul & \textit{Ansys Q3D Extractor}\\ 
+				\midrule
+				$7.34\;nH$ & $8.2\;nH$ & $7.7\;nH$\\ 
+				\hline 
+			\end{tabular}
+		}
 	
-		\begin{frame} % Need to use the fragile option when verbatim is used in the slide
-		\frametitle{Resultados de simulaciones para celda sencilla}
+		\only<3>{
+			\framesubtitle{Capacidad entre celdas vecinas, $C_g$, y con plano de tierra, $C_p$}
+			\centering Dos acercamientos distintos:
+			\begin{columns}[c]
+				\column{0.5\textwidth}
+					\begin{itemize}
+						\item C. Paul (2010): 
+						\begin{align*}
+						C_{g} = \frac{d_w\epsilon_0(1+\epsilon_r)}{\pi}\cosh^{-1}\left(\frac{2 d_w + g}{g}\right)
+						\end{align*}
+						\item \textit{Ansys Q3D Extractor}.
+					\end{itemize}
+				
+					\centering
+					\begin{tabular}{c c}
+						\toprule
+						C. Paul & \textit{Ansys Q3D Extractor} \\ 
+						\midrule 
+						$475\; fF$ & $130\; fF$\\ 
+					\end{tabular}
+				\column{0.5\textwidth}
+					\centering \includegraphics[width=0.8\textwidth]{Modelado/capacidad-cg-Q3D.png}
+			\end{columns}
+		
+			\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+		
+			\begin{columns}[c]
+				\column{0.5\textwidth}
+					\begin{itemize}
+						\item Placas planas paralelas: 
+						\begin{align*}
+						C_{p} = A \frac{\epsilon_0\epsilon_r}{h}
+						\end{align*}
+						\item \textit{Ansys Q3D Extractor}.
+					\end{itemize}
+				\column{0.55\textwidth}
+					\centering
+					\begin{tabular}{c c}
+						\toprule
+						Placas planas & \textit{Ansys Q3D Extractor} \\ 
+						\midrule 
+						$11.14\;pF$ & $12.26\; pF$\\ 
+					\end{tabular}
+			\end{columns}
+		}
+	
+		\only<4>{
+			\framesubtitle{Resultado de la simulación}
+			
+			\centering \includegraphics[width=0.9\textwidth]{Modelado/3-4.pdf}
+			
+			\begin{textblock*}{20mm}(25mm,55mm)
+				\begin{block}{}
+					\centering $f_r$ no coincide.
+				\end{block}
+			\end{textblock*}
+			
+			\begin{textblock*}{30mm}(95mm,37mm)
+				\begin{block}{}
+					\centering Comportamiento a altas frecuencias.
+				\end{block}
+			\end{textblock*}
+		}
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Modelo circuital II}
+			\only<1>{
+				\centering Las esquinas presentan inductancia no despreciable: 
+				\begin{itemize}
+					\item Resonancia serie, un camino de menor impedancia, $\downarrow$ BW del \textit{bandgap}.
+					\item $\downarrow f_r^p$:\;$C_g$ resuena con una inductancia mayor.
+				\end{itemize}
+				
+				\centering \includegraphics[width=1\textwidth]{Fundamentos/circuito-equivalente-celda-YANG-6.pdf}
+			}
+			\only<2>{
+			\centering \begin{tabular}{ c c c }
+				\toprule
+				Kim, Shutt-Ainé & C. Paul & \textit{Ansys Q3D Extractor}\\ 
+				\midrule
+				$2\;nH$ & $1.55\;nH$ & $4\;nH$\\ 
+				\hline 
+			\end{tabular}
+				
+			 \vfill
+			 
+			\centering \includegraphics[width=0.85\textwidth]{Presentacion/composicion.pdf}
+			}
+		\end{frame}
+	
+		\begin{frame}
+			
+			\frametitle{Modelo circuital III}
+			\only<1>{
+				\centering Las esquinas presentan capacidad contra el plano de tierra aparte.
+				
+				\centering \includegraphics[width=1\textwidth]{Fundamentos/circuito-equivalente-celda-YANG-5.pdf}
+			}
+			\only<2>{
+				\centering \includegraphics[width=\textwidth]{Modelado/69-70.pdf}
+			}
+			\only<3>{
+				\centering Considerando pérdidas:
+				
+				\centering \includegraphics[width=1\textwidth]{Presentacion/circuito-equivalente-celda-YANG-4.pdf}
+			}
+			\only<4>{
+				\centering \includegraphics[width=\textwidth]{Modelado/67-68.pdf}
+			}
+			\only<5>{
+				\centering \includegraphics[width=\textwidth]{Modelado/s11-comparacion.pdf}
+			}
+			\only<6>{
+				\centering \includegraphics[width=\textwidth]{Modelado/s11-fase.pdf}
+			}
+			\only<7>{
+				\centering \includegraphics[width=\textwidth]{Modelado/dispersion-yang-vs-s21.pdf}
+				
+				\vfill
+				
+				\centering La zona demarcada corresponde al \textit{bandgap} de la primer región.
+			}
+		
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Comportamiento de una fila de celdas unitarias}
+			\begin{columns}[c]
+				\column{0.8\textwidth}
+					\includegraphics[width=\textwidth]{Modelado/s12-variacion-pila.pdf}
+				\column{0.2\textwidth}
+					\includegraphics[width=\textwidth]{Modelado/apilamiento.PNG}
+			\end{columns}
+		
+			\vfill
+			
+			\centering A mayor cantidad de celdas, mayor es el ancho de banda del \textit{bandgap}, y más notorios los efectos de orden superior.
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Comportamiento de una estructura bidimensional}
+			\begin{columns}[c]
+				\column{0.8\textwidth}
+				\includegraphics[width=\textwidth]{Modelado/params-estructura-bidimensional.pdf}
+				\column{0.2\textwidth}
+				\includegraphics[width=\textwidth]{Modelado/EstructuraMuchasCeldas2d.png}
+			\end{columns}
+		\end{frame}
+	
+		\begin{frame}
+		
 		\end{frame}
 		
-		\begin{frame} % Need to use the fragile option when verbatim is used in the slide
-		\frametitle{Análisis de diagrama de dispersión típico}
-		\end{frame}
-		
-	 \subsection{Análisis paramétrico de una celda sencilla}
-	 
-	 	\begin{frame} % Need to use the fragile option when verbatim is used in the slide
-	 	\frametitle{Variación del ancho del puente}
- 		\end{frame}
- 	
-	 	\begin{frame} % Need to use the fragile option when verbatim is used in the slide
-	 	\frametitle{Variación del tamaño de la celda unitaria}
-	 	\end{frame}
- 	
-	 	\begin{frame} % Need to use the fragile option when verbatim is used in the slide
-	 	\frametitle{Variación del lado del parche}
-	 	\end{frame}
- 	
-	 	\begin{frame} % Need to use the fragile option when verbatim is used in the slide
-	 	\frametitle{Variación del ancho del sustrato}
-	 	\end{frame}
- 	
-\section{Análisis y modelado de la celda de Yang}
-		
-		\begin{frame} % Need to use the fragile option when verbatim is used in the slide
-		\frametitle{Celda de Yang}
-		\end{frame}
-	
-		\begin{frame} % Need to use the fragile option when verbatim is used in the slide
-		\frametitle{Comportamiento}
-		\end{frame}
-	
-	\subsection{Construcción del modelo circuital}
-		\begin{frame} % Need to use the fragile option when verbatim is used in the slide
-		\frametitle{Modelo I}
-		\end{frame}
-	
-		\begin{frame} % Need to use the fragile option when verbatim is used in the slide
-		\frametitle{Modelo I: Resultados}
-		\end{frame}
-	
-		\begin{frame} % Need to use the fragile option when verbatim is used in the slide
-		\frametitle{Modelo II}
-		\end{frame}
-
-		\begin{frame} % Need to use the fragile option when verbatim is used in the slide
-		\frametitle{Modelo II: Resultados}
-		\end{frame}
-		
-		\begin{frame} % Need to use the fragile option when verbatim is used in the slide
-		\frametitle{Modelo II: Diagrama de dispersión}
-		\end{frame}
-	
-		\begin{frame} % Need to use the fragile option when verbatim is used in the slide
-		\frametitle{Modelo III}
-		\end{frame}
-	
-		\begin{frame} % Need to use the fragile option when verbatim is used in the slide
-		\frametitle{Modelo III: Resultados}
-		\end{frame}
-	
-		\begin{frame} % Need to use the fragile option when verbatim is used in the slide
-		\frametitle{Modelo III: Diagrama de dispersión}
-		\end{frame}
-	
-	\subsection{Comportamiento II}
-		\begin{frame} % Need to use the fragile option when verbatim is used in the slide
-		\frametitle{Comportamiento de una fila}
-		\end{frame}
-	
-		\begin{frame} % Need to use the fragile option when verbatim is used in the slide
-		\frametitle{Comportamiento de una estructura}
-		\end{frame}
-	
-\section{Construcción del algoritmo de simulación en el dominio del tiempo}
-		\begin{frame} % Need to use the fragile option when verbatim is used in the slide
-		\frametitle{Definiciones}
-		\end{frame}
-	
-		\begin{frame} % Need to use the fragile option when verbatim is used in the slide
-		\frametitle{Resultados}
-		\end{frame}
+%------------------------------------------------
 
 \end{document}
