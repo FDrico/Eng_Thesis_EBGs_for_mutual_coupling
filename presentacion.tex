@@ -1578,8 +1578,118 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		\end{frame}
 	
 		\begin{frame}
+			\frametitle{Algoritmo propuesto para simulación}
+			\begin{itemize}
+				\item \textbf{Python}: prototipado. No tipado.
+				\item Programación \textbf{orientada a objetos}.
+				\item Sólo válido para geometrías \textbf{bidimensionales}.
+				\item Archivo de configuración.
+				\item \textbf{Geometría en un archivo de imag}en de tipo PGM: Matríz de "Pixeles", escala de grises, según la función:
+				\begin{itemize}
+					\item Pixeles \textbf{internos} al conductor.
+					\item Pixeles \textbf{interfaz}, con capacidad de \textit{fringe}.
+					\item Pixeles \textbf{dieléctricos}.
+					\item Pixeles de \textbf{contorno} (superficies adaptadas, conductoras eléctricas y magnéticas, etc).
+				\end{itemize}
+			\end{itemize}
+			\begin{block}{}
+				\centering Discretización espacial $\propto$ discretización temporal. Nyquist.
+				\begin{align*}
+					\Delta l = \frac{v_p}{2f}
+				\end{align*}
+			\end{block}		
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Entradas del algoritmo}
+				\centering
+				\includegraphics[width=\textwidth]{Modelado/ProcedimientoUsuario.pdf}
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Tipos de Pixel}
+			\centering
+			\includegraphics[width=0.8\textwidth]{Modelado/TiposDePixel.pdf}
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Nodos unidos por líneas de transmisión}
+			\centering
+			\includegraphics[width=1\textwidth]{Modelado/Modelo-Pixeles.pdf}
+			
+			\begin{textblock*}{30mm}(80mm,75mm)
+				\begin{block}{}
+					\centering $Z_0 = \sqrt{L_{inn}/C_{inn}}$
+				\end{block}
+			\end{textblock*}
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Capacidad de \textit{fringe}}
+			
+			
+			\begin{align*}
+			\centering 	C_{fr} = C' h 0.102 \frac{s/h+0.106}{s/h+0.264} \left(1.166 + \frac{\epsilon_r+1}{\epsilon_r} (0.9+\ln(s/h+2.475)) \right)
+			\end{align*}
+			\centering \includegraphics[width=0.75\textwidth]{Modelado/ProcesoCfringe.pdf}
+						
+			\centering	{\tiny E. Hammerstad, \textit{Computer-aided design of microstrip couplers with accurate discontinuity models}, 1981}
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Acoplamiento capacitivo}
+			
+			\centering \includegraphics[width=0.7\textwidth]{Modelado/ProcesoProfundidad.pdf}
+			
+			\begin{textblock*}{49mm}(75mm,8mm)
+				\begin{block}{}
+					\setlength\abovedisplayskip{0pt}
+					\begin{align*}
+					\centering 	C_{gt} = \frac{b \epsilon_0 (1+\epsilon_r)}{\pi} \cosh^{-1} (a / g)
+					\end{align*}
+				\end{block}
+			\end{textblock*}
 		
 		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Matrices de nodos}
+			
+			\centering \includegraphics[width=0.7\textwidth]{Modelado/esquema-matriz-s.pdf}
+			
+			\begin{align*}
+				\begin{bmatrix}
+					V_r^{izq} \\
+					V_r^{der} \\
+					V_r^{arr} \\
+					V_r^{aba} \\
+				\end{bmatrix}
+					=
+				\begin{bmatrix}
+					s_{izq-izq} & s_{der-izq} & \dots & \dots \\
+					s_{izq-der} & s_{der-der} & \ddots & \vdots \\
+					\vdots & \ddots & \ddots     & \vdots \\
+					s_{izq-aba} & \dots & \dots & s_{aba-aba}
+				\end{bmatrix}
+				\begin{bmatrix}
+					V_i^{izq} \\
+					V_i^{der} \\
+					V_i^{arr} \\
+					V_i^{aba} \\
+				\end{bmatrix}
+			\end{align*}
+		
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Matrices de nodos}
+		
+
+		
+		\end{frame}
+		
+		
+		
 		
 %------------------------------------------------
 

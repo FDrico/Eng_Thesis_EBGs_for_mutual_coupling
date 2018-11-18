@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  17 NOV 2018 20:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  17 NOV 2018 22:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2645,6 +2645,70 @@ Package pdftex.def Info: Figures/Modelado/EstructuraMuchasCeldas2d.png  used on
 structuraMuchasCeldas2d.png>] [90
 
 ]
+<Figures/Modelado/ProcedimientoUsuario.pdf, id=9962, 462.45888pt x 230.88086pt>
+
+File: Figures/Modelado/ProcedimientoUsuario.pdf Graphic file (type pdf)
+<use Figures/Modelado/ProcedimientoUsuario.pdf>
+Package pdftex.def Info: Figures/Modelado/ProcedimientoUsuario.pdf  used on inp
+ut line 1607.
+(pdftex.def)             Requested size: 342.2953pt x 170.89496pt.
+ [91
+
+ <./Figures/Modelado/ProcedimientoUsuario.pdf>]
+<Figures/Modelado/TiposDePixel.pdf, id=10033, 583.81578pt x 506.87978pt>
+File: Figures/Modelado/TiposDePixel.pdf Graphic file (type pdf)
+<use Figures/Modelado/TiposDePixel.pdf>
+Package pdftex.def Info: Figures/Modelado/TiposDePixel.pdf  used on input line 
+1613.
+(pdftex.def)             Requested size: 273.83728pt x 237.74626pt.
+
+Overfull \vbox (8.67567pt too high) detected at line 1613
+ []
+
+[92
+
+ <./Figures/Modelado/TiposDePixel.pdf>]
+<Figures/Modelado/Modelo-Pixeles.pdf, id=11457, 431.27585pt x 252.73499pt>
+File: Figures/Modelado/Modelo-Pixeles.pdf Graphic file (type pdf)
+<use Figures/Modelado/Modelo-Pixeles.pdf>
+Package pdftex.def Info: Figures/Modelado/Modelo-Pixeles.pdf  used on input lin
+e 1625.
+(pdftex.def)             Requested size: 342.2953pt x 200.5994pt.
+ [93
+
+ <./Figures/Modelado/Modelo-Pixeles.pdf>]
+<Figures/Modelado/ProcesoCfringe.pdf, id=11505, 389.44366pt x 247.4369pt>
+File: Figures/Modelado/ProcesoCfringe.pdf Graphic file (type pdf)
+<use Figures/Modelado/ProcesoCfringe.pdf>
+Package pdftex.def Info: Figures/Modelado/ProcesoCfringe.pdf  used on input lin
+e 1637.
+(pdftex.def)             Requested size: 256.72147pt x 163.11252pt.
+ [94
+
+ <./Figures/Modelado/ProcesoCfringe.pdf>]
+<Figures/Modelado/ProcesoProfundidad.pdf, id=11878, 422.73576pt x 389.99297pt>
+File: Figures/Modelado/ProcesoProfundidad.pdf Graphic file (type pdf)
+<use Figures/Modelado/ProcesoProfundidad.pdf>
+Package pdftex.def Info: Figures/Modelado/ProcesoProfundidad.pdf  used on input
+ line 1653.
+(pdftex.def)             Requested size: 239.60567pt x 221.04268pt.
+
+Overfull \hbox (2.92041pt too wide) detected at line 1653
+[]
+ []
+
+[95
+
+ <./Figures/Modelado/ProcesoProfundidad.pdf>]
+<Figures/Modelado/esquema-matriz-s.pdf, id=12595, 82.70793pt x 39.89624pt>
+File: Figures/Modelado/esquema-matriz-s.pdf Graphic file (type pdf)
+<use Figures/Modelado/esquema-matriz-s.pdf>
+Package pdftex.def Info: Figures/Modelado/esquema-matriz-s.pdf  used on input l
+ine 1682.
+(pdftex.def)             Requested size: 239.60567pt x 115.5859pt.
+ [96
+
+ <./Figures/Modelado/esquema-matriz-s.pdf>]
 \tf@nav=\write8
 \openout8 = `presentacion.nav'.
 
@@ -2654,24 +2718,24 @@ structuraMuchasCeldas2d.png>] [90
 \tf@snm=\write10
 \openout10 = `presentacion.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1586.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1586.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1689.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1689.
  (./presentacion.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1586.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1586.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1689.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1689.
 
 Package rerunfilecheck Info: File `presentacion.out' has not changed.
 (rerunfilecheck)             Checksum: 5B57146CD67A3BF6DBE5A066A3B7BB09;626.
  ) 
 Here is how much of TeX's memory you used:
- 36450 strings out of 492982
- 757333 string characters out of 6134895
- 860560 words of memory out of 5000000
- 39101 multiletter control sequences out of 15000+600000
- 548108 words of font info for 88 fonts, out of 8000000 for 9000
+ 36515 strings out of 492982
+ 758953 string characters out of 6134895
+ 861120 words of memory out of 5000000
+ 39148 multiletter control sequences out of 15000+600000
+ 548815 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,23n,103p,10501b,879s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
@@ -2698,12 +2762,13 @@ ic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb>
-Output written on presentacion.pdf (90 pages, 10058483 bytes).
+0.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/symbol/usyr.pfb>
+Output written on presentacion.pdf (96 pages, 10679557 bytes).
 PDF statistics:
- 10081 PDF objects out of 10688 (max. 8388607)
- 6785 compressed objects within 68 object streams
- 193 named destinations out of 1000 (max. 500000)
- 738 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 12735 PDF objects out of 12825 (max. 8388607)
+ 8318 compressed objects within 84 object streams
+ 205 named destinations out of 1000 (max. 500000)
+ 768 words of extra memory for PDF output out of 10000 (max. 10000000)
 
