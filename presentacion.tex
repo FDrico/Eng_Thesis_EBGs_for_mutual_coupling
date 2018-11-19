@@ -21,13 +21,17 @@
 \usepackage[spanish]{babel}  % Para escritura en castellano.
 \usepackage{xcolor}
 \usepackage{subfigure}  % Para manejo de subfiguras.
-\usepackage{graphicx}
+\usepackage{fancybox, graphicx}
 \usepackage{array,booktabs}
+\usepackage{transparent}
 \usepackage[most]{tcolorbox}
 \usefonttheme[onlymath]{serif} 
-\usepackage[texcoord,grid,gridunit=mm,gridcolor=red!10,subgridcolor=green!10]
-{eso-pic}
+%\usepackage[texcoord,grid,gridunit=mm,gridcolor=red!10,subgridcolor=green!10]
+%{eso-pic}
 \usepackage[absolute,overlay]{textpos}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, calc, quotes, tikzmark}
+
 
 
 
@@ -54,7 +58,7 @@
 %\usetheme{Berkeley}
 %\usetheme{Berlin}
 %\usetheme{Boadilla}
-%\usetheme{CambridgeUS}
+\usetheme{CambridgeUS}
 %\usetheme{Copenhagen}
 %\usetheme{Darmstadt}
 %\usetheme{Dresden}
@@ -64,7 +68,7 @@
 %\usetheme{Ilmenau}
 %\usetheme{JuanLesPins}
 %\usetheme{Luebeck}
-\usetheme{Madrid}
+%\usetheme{Madrid}
 %\usetheme{Malmoe}
 %\usetheme{Marburg}
 %\usetheme{Montpellier}
@@ -148,7 +152,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 				\item Comportamiento de EBGs uniplanares.
 				\item Modelo circuital equivalente de una celda unitaria.
 				\item Programa de simulación en el dominio del tiempo.
-				\item Introducción al uso de EBGs en antenas.
+				\item Introducción al uso de EBGs en conjuntos de antenas.
 			\end{itemize}
 		\end{frame}
 	
@@ -180,11 +184,11 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			
 			\column{.45\textwidth} % Right column and width
 			\begin{itemize}
-				\item Bajo costo.
-				\item Bajo peso.
-				\item Construcción sencilla (fotolitografía).
-				\item Cómodas para implantación de componentes discretos.
-				\item Alto Q (resonantes).
+				\item Bajo \textbf{costo}.
+				\item Bajo \textbf{peso}.
+				\item \textbf{Construcción} sencilla (fotolitografía).
+				\item Cómodas para implantación de \textbf{componentes discretos}.
+				\item Alto \textbf{Q} (resonantes).
 			\end{itemize}
 		
 		\end{columns}
@@ -196,37 +200,35 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 	\end{frame}
 		
 		\begin{frame}
-		\frametitle{Problemas de las estructuras \textit{microstrip}}
-			\centering El tamaño de las antenas y estructuras \textit{microstrip} depende de la permitividad dieléctrica del sustrato y de la longitud de onda de trabajo. \\
-			\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-				
-				\column{.38\textwidth} % Left column and width
-				
+			\frametitle{Problemas de las estructuras \textit{microstrip}}
+			\begin{itemize}
+				\item Alto \textbf{Q}.
+				\item Difícil \textbf{estudio analítico}.
 				\begin{itemize}
-					\item $\downarrow D \Rightarrow \uparrow \epsilon_r,$ {\color{red}$\uparrow$ SW}.
-					\item $\uparrow \epsilon_r \Rightarrow \uparrow Q, \downarrow$ BW.
-					\item $\downarrow Q \Rightarrow \uparrow h$.
-					\item $\uparrow h \Rightarrow ${\color{red}$\uparrow$ SW}, $\uparrow$ modos.
+					\item Modos superiores.
+					\item Lóbulos secundarios en antenas.
+					\item Efectos de borde.
 				\end{itemize}
-				\vspace{5pt}
-				Las ondas de superficie:
+				\item Baja \textbf{eficiencia}.
+				\item Polarización impura.
+				\item \textbf{Fragilidad}.
+				\item \textbf{Tamaño} proporcional a las frecuencias de trabajo.
+				\item {\color{red}\textbf{Acoplamiento mutuo} con estructuras cercanas.}
 				\begin{itemize}
-					\item $\downarrow$ potencia radiada.
-					\item {\color{red}$\uparrow$ acoplamiento.}
-					\item Diagrama de radiación: \\$\uparrow$ lóbulos secundarios. %Por discontinuidades
+					\item Acoplamiento por campo cercano.
+					\item Acoplamiento por red de alimentación compartida.
+					\item {\color{red}Acoplamiento por \textbf{ondas de superficie} con otras estructuras con las que comparte plano de tierra.}
 				\end{itemize}
-				
-				
-				\column{.60\textwidth} % Right column and width
-				\begin{figure}[h]
-					\centering
-					\includegraphics[width=1\textwidth]{Presentacion/problema_microstrip.pdf}
-				\end{figure}
-				
-			\end{columns}
-			\vspace{9pt}
-			\centering {\footnotesize SW: Ondas de superficie. BW: Ancho de banda. $D$: Tamaño de la estructura. $h$: Ancho del sustrato.}
+			\end{itemize}
+		
+			\pause
+			
+			\begin{textblock*}{65mm}(65mm,12mm)
+				\includegraphics<2>[width=1\textwidth]{Presentacion/problema_microstrip2.pdf}
+			\end{textblock*}
 		\end{frame}
+	
+
 		
 		
 		% Acá la idea es comentar que en general uno busca disminuir el tamaño. Eempezando de la esquina inferior derecha, uno tiene una estructura grande y fuerte. La quiere achicar, sale de la zona verde, hay mas ondas de superficie, y para bajar esas ondas no queda otra que bajar el ancho del sustrato, generando mayor fragilidad estructural. Modos indeseados.
@@ -234,9 +236,9 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		\frametitle{Soluciones propuestas en la literatura}
 		
 		\begin{itemize}
-			\item Separación del plano de tierra de las estructuras.
-			\item Modificar la altura o la permitividad del sustrato a corta distancia.
-			\item Estructuras periódicas: EBG, DGS.
+			\item \textbf{Separación del plano de tierra} de las estructuras.
+			\item \textbf{Modificar la altura} o la permitividad del sustrato a corta distancia.
+			\item \textbf{Estructuras periódicas}: EBG, DGS.
 		\end{itemize}
 		
 		\begin{figure}[H]
@@ -260,79 +262,64 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		\tableofcontents[currentsection,hideothersubsections]
 	\end{frame}
 	
-	\subsection{Ecuaciones de Maxwell} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+	\subsection{Ecuaciones de Maxwell y ondas electromagnéticas} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 	
 		\begin{frame}
-		\frametitle{Ecuaciones de Maxwell}
-		
-		\begin{align*}
-		\left.\begin{array}{rr@{\mskip\thickmuskip}l}
-		\text{Faraday} &\nabla \times \vec{E} & = -\frac{\partial \vec{B}}{\partial t} - \vec{M}\\
-		\text{Ampère} &\nabla \times \vec{H} & = \frac{\partial \vec{D}}{\partial t} + \vec{J} \\
-		\text{Gauss} &\nabla \cdot \vec{D} & = \rho \\
-		\text{Gauss} & \nabla \cdot \vec{B} & = 0
-		\end{array} \right\}
-		\quad \implies \quad
-		\left\{\begin{array}{r@{\mskip\thickmuskip}l}
-		\nabla \times \vec{E} & = -j \omega \vec{B} - \vec{M} \\
-		\nabla \times \vec{H} & = j \omega \vec{D} + \vec{J} \\
-		\nabla \cdot \vec{D} & = \rho\\
-		\nabla \cdot \vec{B} & = 0
-		\end{array}\right.
-		\end{align*}
-		
-		\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+			\frametitle{Ecuaciones de Maxwell}
 			
-			\column{.62\textwidth} % Left column and width
-			
-			Si:
-			\begin{itemize}
-				\item No hay dispersión. ($\epsilon$ y $\mu$ independientes de $\omega$).
-				\item Material isotrópico.
-				\item Estudio macroscópico.
-				\item Comportamiento armónico.
-				\item Régimen permanente.
-			\end{itemize}
-			
-			\column{.35\textwidth} % Right column and width
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=1\textwidth]{Presentacion/James_Clerk_Maxwell.png}
-			\end{figure}
-			
-		\end{columns}
-		
-		
-		
-		
-		\end{frame}
-		
-		\begin{frame}
-		\frametitle{Campos en medios materiales}
-		\centering Si el medio es lineal, isotrópico y homogéneo: %Si anisotrópico, Xe variaría con la dir. Si inhomogéneo, Xe variaría con la posición. Si no lineal, P debería calcularse como una serie de potencias.
-		
-		\begin{align*}
-		\vec{D} = \epsilon_0 \vec{E} + \vec{P}_e = \epsilon_0 (1+\chi_e)\vec{E} = \epsilon \vec{E} &= (\epsilon' - j \epsilon'') \vec{E}\\
-		\vec{B} = \mu_0 (\vec{H} + \vec{P}_m) = \mu_0 (1+\chi_m)\vec{H} = \mu \vec{H} &= (\mu' - j \mu'') \vec{H}.
-		\end{align*}
-		
-		\centering Si el material posee una conductividad $\sigma$ independiente del campo eléctrico aplicado, se cumple la Ley de Ohm:
-		
-		\begin{align*}
-		\vec{J} &= \sigma \vec{E} \Rightarrow \vec{D} = \left( \epsilon' - j\epsilon'' - j \frac{\sigma}{\omega} \right) \vec{E}.
-		\end{align*}
-		
-		\begin{block}{\centering Tangente de pérdidas}
-			\setlength\abovedisplayskip{0pt}
 			\begin{align*}
-			\tan \; \delta &= \frac{\omega \epsilon'' + \sigma}{\omega \epsilon'}.
+			\left.\begin{array}{rr@{\mskip\thickmuskip}l}
+			\text{Faraday} &\nabla \times \vec{E} & = -\frac{\partial \vec{B}}{\partial t} - \vec{M}\\
+			\text{Ampère} &\nabla \times \vec{H} & = \frac{\partial \vec{D}}{\partial t} + \vec{J} \\
+			\text{Gauss} &\nabla \cdot \vec{D} & = \rho \\
+			\text{Gauss} & \nabla \cdot \vec{B} & = 0
+			\end{array} \right\}
+			\quad \implies \quad
+			\left\{\begin{array}{r@{\mskip\thickmuskip}l}
+			\nabla \times \vec{E} & = -j \omega \vec{B} - \vec{M} \\
+			\nabla \times \vec{H} & = j \omega \vec{D} + \vec{J} \\
+			\nabla \cdot \vec{D} & = \rho\\
+			\nabla \cdot \vec{B} & = 0
+			\end{array}\right.
 			\end{align*}
-		\end{block}
+			
+			\begin{textblock*}{18mm}(62mm,25mm)
+				\tiny \centering Sin dispersión,
+				isotrópico,
+				armónico,\\
+				rég. perm.
+			\end{textblock*}
+			
+			\begin{columns}[c]
+				\column{0.8\textwidth}
+				\begin{align*}
+					\vec{D} &= \epsilon_0 \vec{E} + \vec{P}_e = \epsilon_0 (1+\chi_e)\vec{E} = \epsilon \vec{E} = (\epsilon' - j \epsilon'') \vec{E}\\
+					\vec{B} &= \mu_0 (\vec{H} + \vec{P}_m) = \mu_0 (1+\chi_m)\vec{H} = \mu \vec{H} = (\mu' - j \mu'') \vec{H}.
+				\end{align*}
+				\column{0.05\textwidth}
+			\end{columns}
 		
+			\begin{textblock*}{15mm}(110mm,55mm)
+				\tiny \centering Medio\\
+				lineal,\\
+				isotrópico\\
+				homogéneo.
+			\end{textblock*}
+			
+			\vspace{0.7cm}
+			\begin{align*}
+			\vec{J} &= \sigma \vec{E} \Rightarrow \vec{D} = \left( \epsilon' - j\epsilon'' - j \frac{\sigma}{\omega} \right) \vec{E}.
+			\end{align*}
+			
+			\begin{textblock*}{24mm}(8mm,77mm)
+				\scriptsize \centering $\sigma$
+				indep. del
+				campo aplicado: \textbf{Ohm}.
+			\end{textblock*}		
 		
 		\end{frame}
-		
-		\subsection{Ondas electromagnéticas}
+			
+
 		\begin{frame}
 			\frametitle{Ondas electromagnéticas (I)}
 			
@@ -341,7 +328,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 				\includegraphics[width=1\textwidth]{Presentacion/onda_em.pdf}
 			\end{figure}
 			
-			\centering En una región libre de fuentes, se pueden deducir las ecuaciones de Helmholtz para ondas monocromáticas, a partir de las ecuaciones de Maxwell.
+			\centering \textbf{Ecuaciones de Helmholtz}
 					
 			\begin{align*}
 			\left.\begin{array}{rr@{\mskip\thickmuskip}l}
@@ -355,12 +342,28 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			\end{array}\right.
 			\end{align*}
 			
+			\begin{columns}[c]
+				\column{0.6\textwidth}
+				\begin{block}{}
+					\setlength\abovedisplayskip{0pt}
+					\begin{align*}
+					\centering
+					\gamma &= -j\alpha + \beta = j\omega \sqrt{\mu (\epsilon'-j\epsilon'') - j \sigma \epsilon/\omega}
+					\end{align*}
+				\end{block}
+				\column{0.3\textwidth}
+				\begin{block}{}
+					\setlength\abovedisplayskip{0pt}
+					\begin{align*}
+					\centering \vec{\gamma} &= \vec{\gamma}_x + \vec{\gamma}_y +\vec{\gamma}_z
+					\end{align*}
+				\end{block}
+			\end{columns}
+		
 			\begin{block}{}
 				\setlength\abovedisplayskip{0pt}
 				\begin{align*}
-				\centering
-				\gamma &= -j\alpha + \beta = j\omega \sqrt{\mu (\epsilon'-j\epsilon'') - j \sigma \epsilon/\omega}.\\
-				\vec{\gamma} &= \vec{\gamma}_x + \vec{\gamma}_y +\vec{\gamma}_z.
+				E_i(z) = E_i \; e^{-j\gamma z} = E_i \; {\color{red}e^{-\alpha z}} \; {\color{violet}e^{-j \beta z}}, \quad i=x,y.
 				\end{align*}
 			\end{block}
 
@@ -419,12 +422,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			
 			\end{columns}
 			
-			\begin{block}{\centering Componentes del campo eléctrico que se desplaza en dirección $z$}
-				\setlength\abovedisplayskip{0pt}
-				\begin{align*}
-				E_i(z) = E_i \; e^{-j\gamma z} = E_i \; e^{-\alpha z} \; e^{-j \beta z}, \quad i=x,y.
-				\end{align*}
-			\end{block}
+			
 
 		\end{frame}
 		
@@ -437,48 +435,50 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 				Interfaz para las ondas electromagnéticas entre el espacio libre y un dispositivo de guía, generalmente metálico.\\
 				\textbf{Objetivo}: Recibir y transmitir energía eficientemente.
 			\end{block}
-			\pause		
-			\begin{block}{}
-				Se suelen utilizar en conjuntos radiantes, dispuestas geométricamente.\\
 				
-					-1926: Yagi-Uda.\\
-					-Segunda guerra mundial: Conjuntos de antena de fase variable. \\
-					-1950: Desfasadores de ferrita, fase completa.
+			\begin{block}{}
+				Se suelen utilizar en conjuntos radiantes, dispuestas geométricamente.
 			\end{block}
-		
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.5\textwidth]{Presentacion/yagi-uda.JPG}
-			\end{figure}
 			
+			\centering	\includegraphics[width=0.7\textwidth]{Presentacion/yagi-uda.JPG}
+
 		\end{frame}
 		
 		\begin{frame}
-			\frametitle{Acoplamiento entre antenas}
+			\frametitle{Acoplamiento entre antenas \textit{microstrip}}
 			\begin{block}{Responsables}
 				\begin{itemize}
-					\item Acoplamiento espacial entre elementos por onda espacial ($\downarrow \propto 1/\rho$).
-					\item Acoplamiento espacial por onda de superficie ($\downarrow \propto 1/\sqrt\rho$).
-					\item Acoplamiento por red de alimentación (alimentación no independiente).
+					\centering
+					\item Acoplamiento espacial entre elementos por \textbf{onda espacial} ($\downarrow \propto 1/\rho$).
+					\item Acoplamiento espacial por \textbf{onda de superficie} ($\downarrow \propto 1/\sqrt\rho$).
+					\item Acoplamiento por \textbf{red de alimentación} (alimentación no independiente).
 				\end{itemize}
 			\end{block}
 			
-			\begin{align*}
-			\begin{bmatrix}
-			V_1 \\ V_2 \\ \vdots \\ V_N
-			\end{bmatrix}
-			=
-			\underbrace{\begin{bmatrix}
-				Z_{11} & Z_{12} & \cdots & Z_{1N} \\
-				Z_{12} & Z_{22} & \cdots & Z_{2N} \\
-				\vdots & \vdots & \cdots & \vdots \\
-				Z_{1N} & Z_{2N} & \cdots & Z_{NN} \\
-				\end{bmatrix}}_{Z}
-			\begin{bmatrix}
-			I_1 \\ I_2 \\ \vdots \\ I_N
-			\end{bmatrix}
-			\end{align*}
 			
+			\begin{columns}[c]
+				\centering
+				\column{0.6\textwidth}
+					\begin{align*}
+						\begin{bmatrix}
+						V_1 \\ V_2 \\ \vdots \\ V_N
+						\end{bmatrix}
+						=
+						\underbrace{\begin{bmatrix}
+							Z_{11} & Z_{12} & \cdots & Z_{1N} \\
+							Z_{12} & Z_{22} & \cdots & Z_{2N} \\
+							\vdots & \vdots & \cdots & \vdots \\
+							Z_{1N} & Z_{2N} & \cdots & Z_{NN} \\
+							\end{bmatrix}}_{Z}
+						\begin{bmatrix}
+						I_1 \\ I_2 \\ \vdots \\ I_N
+						\end{bmatrix}
+					\end{align*}
+				\column{0.4\textwidth}
+				\includegraphics[width=\textwidth]{Presentacion/arregloMicrostrip.png}
+			\end{columns}
+			
+					
 		\end{frame}
 		
 		
@@ -496,22 +496,29 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			\end{block}
 			
 			\begin{figure}[]
-				\includegraphics[width=0.65\textwidth]{intro_electro/ondas-superficie-3d.pdf}
+				\includegraphics[width=0.60\textwidth]{intro_electro/ondas-superficie-3d.pdf}
 			\end{figure}
 		
 			\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+				
 				\column{.55\textwidth}
 				\begin{itemize}
+					\centering
 					\item Planos conductores.
 					\item Planos conductores recubiertos de dieléctrico.
 				\end{itemize}
 				\column{.51\textwidth}
 
 				\begin{itemize}
+					\centering
 					\item Planos corrugados.
 					\item Interfaz entre dos medios distintos.
 				\end{itemize}
 			\end{columns}
+		
+			\begin{textblock*}{24mm}(95mm,55mm)
+				\small \centering Uller, Zenneck, Sommerfeld, Dyakonov, etc.
+			\end{textblock*}
 			
 			\end{frame}
 	
@@ -547,54 +554,90 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			\end{frame}
 		
 			\begin{frame}
-			\frametitle{Impedancia de superficie y constante de propagación (TM)}
-			
-			\centering Si se asume una impedancia de superficie $Z_s = R_s + j X_s$, al igualar la impedancia de onda a la de superficie:
-			
-			\begin{block}{TM}
-			\setlength\abovedisplayskip{0pt}
-			\begin{align*}
-				\gamma_{x_1} & = \gamma_1 \frac{Z_1}{\eta_0} = \gamma_1 Z_s = \gamma_1 R_s + j \gamma_1 X_s,\\
-				\gamma_z &= \beta_z - j\alpha_z =\sqrt{(\gamma_1^2 - \gamma_{x_1}^2)} = \gamma_1 \sqrt{1+X_s^2 - R_s^2 {\color{red}-} 2jR_s X_s}.
-			\end{align*}
-			\end{block}
-		
-			\only<1>{
-			\begin{columns}[c]
-				\column{.48\textwidth}
-				\begin{itemize}
-					\item $X_s > 0$: Reactancia inductiva:
-					\begin{itemize}
-						\item $\uparrow \alpha_x$: Decrecimiento exponencial en $x$.\\
-						\item $\alpha_z > 0$: Decrecimiento exponencial en $z$.
-						\item Menor $v_p$.
-					\end{itemize}
-				\end{itemize}
-			
-				\column{.44\textwidth}
-				\begin{itemize}
-					\item Si $R_s X_s$ es pequeño: Baja atenuación en $z$.
-				\end{itemize}
+				\frametitle{Impedancia de superficie y constante de propagación (TM)}
 				
-				\begin{block}{}
-					\centering
-					Para ondas de superficie TM:
-					\begin{itemize}
-						\centering
-						\item $\uparrow X_s$ \\
-						\item $\downarrow R_s$.
-					\end{itemize}
-				\end{block}
-			\end{columns}
-			}
-		
-			\only<2>{\begin{block}{TE}
+				\centering Si se asume una impedancia de superficie $Z_s = R_s + j X_s$, al igualar la impedancia de onda a la de superficie:
+				
+				\begin{block}{TM}
 				\setlength\abovedisplayskip{0pt}
 				\begin{align*}
-				\gamma_{x_1} &= -\frac{\gamma_1}{Z_s} = -\gamma_1 \frac{R_s}{{\color{red}R_s^2+X_s^2}}-j\frac{X_s}{{\color{red}R_s^2+X_s^2}},\\
-				\gamma_z &= \beta_z-j\alpha_z= \sqrt{(\gamma_1^2 - \gamma_{x_1}^2)} = \frac{\gamma_1}{{\color{red}R_s^2+X_s^2}} \sqrt{1+X_s^2 - R_s^2 {\color{red}+} 2jR_s X_s}.
+					\gamma_{x_1} & = \gamma_1 \frac{Z_1}{\eta_0} = \gamma_1 Z_s = \gamma_1 R_s + j \gamma_1 X_s\tikzmark{x1},\\
+					\gamma_z &= \beta_z - j\alpha_z =\sqrt{(\gamma_1^2 - \gamma_{x_1}^2)} = \gamma_1 \sqrt{1+X_s^2\tikzmark{x5} - R_s^2 {\color{red}-} 2jR_s X_s\tikzmark{x3}}.
 				\end{align*}
-			\end{block}}
+				\end{block}
+			
+				\only<1,2,3,4>{
+				\begin{columns}[c]
+					\column{.48\textwidth}
+					\begin{itemize}
+						\item $X_s > 0$: Reactancia inductiva:
+						\begin{itemize}
+							\item $\uparrow \alpha_x$: Decrecimiento exponencial en $x$\tikzmark{x0}.\\
+							\item $\alpha_z > 0$: Decrecimiento exponencial en $z$.\tikzmark{x2}
+							\item $\uparrow \beta_z$, $\downarrow v_p$.\tikzmark{x4}
+						\end{itemize}
+					\end{itemize}
+				
+					\column{.44\textwidth}
+					\begin{itemize}
+						\item Si $R_s X_s$ es pequeño: Baja\tikzmark{x6} atenuación en $z$.
+					\end{itemize}
+					
+					\begin{block}{}
+						\centering
+						Para ondas de superficie TM:
+						\centering
+						$\uparrow X_s \qquad \downarrow R_s$.
+
+					\end{block}
+				\end{columns}
+				}
+				\only<2>{
+					\begin{tikzpicture}[overlay,remember picture]
+						\draw[very thick, -Stealth]         ($({pic cs:x0})+(1ex,1ex)$)
+						to [bend right, sloped]  ($({pic cs:x1})+(-1ex,-0.5em)$);
+					\end{tikzpicture}
+				}
+			
+				\only<3>{
+					\begin{tikzpicture}[overlay,remember picture]
+					\draw[very thick, -Stealth]         ($({pic cs:x2})+(1ex,1ex)$)
+					to [bend right, sloped]  ($({pic cs:x3})+(-1ex,-0.5em)$);
+					\end{tikzpicture}
+				}
+			
+				\only<4>{
+					\begin{tikzpicture}[overlay,remember picture]
+					\draw[very thick, -Stealth]         ($({pic cs:x4})+(1ex,1ex)$)
+					to [bend left, sloped]  ($({pic cs:x5})+(-3ex,0em)$);
+					\draw[very thick, -Stealth]         ($({pic cs:x6})+(1ex,1ex)$)
+					to [bend right, sloped]  ($({pic cs:x3})+(-1ex,-0.5em)$);
+					\end{tikzpicture}
+				}
+			
+				\only<5>{\begin{block}{TE}
+					\setlength\abovedisplayskip{0pt}
+					\begin{align*}
+					\gamma_{x_1} &= -\frac{\gamma_1}{Z_s} = -\gamma_1 \frac{R_s}{{\color{red}R_s^2+X_s^2}}-j\frac{X_s}{{\color{red}R_s^2+X_s^2}},\\
+					\gamma_z &= \beta_z-j\alpha_z= \sqrt{(\gamma_1^2 - \gamma_{x_1}^2)} = \frac{\gamma_1}{{\color{red}R_s^2+X_s^2}} \sqrt{1+X_s^2 - R_s^2 {\color{red}+} 2jR_s X_s}.
+					\end{align*}
+				\end{block}
+			
+				\begin{textblock*}{40mm}(80mm,30mm)
+					\begin{block}{\centering Condiciones TM}
+						\centering
+						$\uparrow X_s \qquad \downarrow R_s$.
+					\end{block}
+				\end{textblock*}
+			
+				\begin{textblock*}{40mm}(80mm,60mm)
+					\begin{block}{\centering Condiciones TE}
+						\centering
+						$\downarrow X_s \qquad \downarrow R_s$.
+						
+					\end{block}
+				\end{textblock*}
+				}
 	
 			\end{frame}
 		
@@ -664,20 +707,14 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		\begin{frame}
 			\begin{columns}[c]
 				\column{.52\textwidth}
-				\begin{figure}[h]
+				\centering TM
 					\includegraphics[width=\textwidth]{intro_electro/TM-tan-implicito}
-				\end{figure}
-				\begin{figure}[h]
 					\includegraphics[width=\textwidth]{intro_electro/TM-tan-implicito-zoom}
-				\end{figure}
 				
 				\column{.52\textwidth}
-				\begin{figure}[h]
+				\centering TE
 					\includegraphics[width=\textwidth]{intro_electro/TE-tan-implicito}
-				\end{figure}
-				\begin{figure}[h]
 					\includegraphics[width=\textwidth]{intro_electro/TE-tan-implicito-zoom}
-				\end{figure}
 			\end{columns}
 		\end{frame}
 	
@@ -690,15 +727,12 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		
 			\begin{columns}[c]
 				\column{.51\textwidth}
-				\begin{figure} [H]
 					\includegraphics[width=\textwidth]{intro_electro/plot-zstm-funciont2.pdf}
-				\end{figure}
 				\column{.51\textwidth}
-				\begin{figure} [H]
 					\includegraphics[width=\textwidth]{intro_electro/plot-zstm-funcioner2.pdf}
-				\end{figure}
 				
 			\end{columns}
+			\centering A más alta la impedancia de superficie, mayor incidencia de ondas de superficie.
 		\end{frame}
 	
 		\begin{frame}
@@ -723,30 +757,36 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		
 		\begin{frame}
 			\frametitle{Antenas \textit{microstrip}}
-			\begin{columns}
+			\begin{columns}[t]
 				\column{.45\textwidth} % Right column and width
-				\begin{itemize}
-					\item Bajo costo, peso y perfil.
-					\item Construcción sencilla.
-					\item Alto Q (resonantes).
-					\item {\color{red}Bajo acoplamiento con elementos cercanos. Campos contenidos en el sustrato.}
-				\end{itemize}
-				\begin{block}{}
-					\centering
-					$\uparrow \epsilon_r \Rightarrow \downarrow$ acoplamiento.
-				\end{block}			
-				\column{.45\textwidth} % Right column and width
-				\begin{itemize}
-					\item Baja eficiencia.
-					\item Baja potencia.
-					\item Polarización impura.
-					\item {\color{red}Alto acoplamiento con elementos ubicados sobre la superficie.}
-				\end{itemize}
-				\begin{block}{}
-					\centering
-					$\uparrow \epsilon_r \Rightarrow \uparrow$ acoplamiento.
-				\end{block}	
+					\color{red}Alto acoplamiento con elementos ubicados sobre la superficie.
+					\begin{block}{}
+						\centering
+						$\uparrow \epsilon_r \Rightarrow$\\ $\uparrow$ acoplamiento,\\$\downarrow$ pot. radiada,\\ $\uparrow$ lóbulos secundarios.
+					\end{block}
+					\vspace{0.5cm}
+					\begin{itemize}
+						\item $\downarrow D \Rightarrow \uparrow \epsilon_r,$ {\color{red}$\uparrow$ SW}.
+						\item $\uparrow \epsilon_r \Rightarrow \uparrow Q, \downarrow$ BW.
+						\item $\downarrow Q \Rightarrow \uparrow h$.
+						\item $\uparrow h \Rightarrow ${\color{red}$\uparrow$ SW}, $\uparrow$ modos.
+					\end{itemize}
+				
+				\column{.50\textwidth} % Right column and width
+					\color{red}Bajo acoplamiento con elementos cercanos. Campos contenidos en el sustrato.
+					\begin{block}{}
+						\centering
+						$\uparrow \epsilon_r \Rightarrow \downarrow$ acoplamiento.
+					\end{block}			
+								
+					\begin{figure}[h]
+						\centering
+						\includegraphics[width=1\textwidth]{Presentacion/problema_microstrip.pdf}
+					\end{figure}
+				
 			\end{columns}
+			\vspace{9pt}
+			\centering {\footnotesize SW: Ondas de superficie. BW: Ancho de banda. $D$: Tamaño de la estructura. $h$: Ancho del sustrato.}
 		\end{frame}
 	
 	
@@ -796,10 +836,11 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 \section{Fundamentos de EBGs}
 	
 	\begin{frame}
-	\frametitle{Fundamentos básicos de EBGs}
-	\tableofcontents[currentsection,hideothersubsections]
+		\frametitle{Fundamentos básicos de EBGs}
+		\tableofcontents[currentsection,hideothersubsections]
 	\end{frame}
 
+\subsection{Definiciones básicas}
 	\begin{frame}
 		\frametitle{Metamateriales y EBGs}
 		\begin{columns}[c]
@@ -892,12 +933,10 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		\begin{frame}
 			\frametitle{Difracción de Bragg}
 		
-			\begin{figure}[htp]
-				\includegraphics[width=0.6\textwidth]{Fundamentos/bragg1.pdf}
-			\end{figure}
+			\centering \includegraphics[width=0.6\textwidth]{Fundamentos/bragg1.pdf}
 			
 			\begin{align*}
-			\Gamma_t = \Gamma e^{-j\gamma x} + \Gamma e^{-2j\gamma a} e^{-j\gamma x} + \Gamma e^{-4j\gamma a} e^{-j\gamma x} + ... = \Gamma e^{-j\gamma x} \frac{1}{1-e^{-2j\gamma a}},
+			\Gamma_t = \Gamma e^{-j\gamma x} + \Gamma e^{-2j\gamma a} e^{-j\gamma x} + \Gamma e^{-4j\gamma a} e^{-j\gamma x} + ... = \Gamma e^{-j\gamma x} \frac{1}{1-e^{-2j\gamma a}}
 			\end{align*}
 			
 			\centering Si $e^{-2j\gamma a} = 1$, la expresión diverge.
@@ -963,7 +1002,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		
 		\begin{frame}
 			\frametitle{Problema de autovalores: Física cuántica}
-			\renewcommand{\arraystretch}{2}% for the vertical padding
+			\renewcommand{\arraystretch}{2.5}% for the vertical padding
 			\begin{tabular}{c c c}
 				\toprule
 
@@ -981,46 +1020,46 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 						
 		\end{frame}
 		
-		
+\subsection{Teorema de Bloch-Floquet}
 		\begin{frame}
 		
 		
 			\only<1>{\frametitle{Teorema de Bloch-Floquet}
 				\begin{columns}
-				\column{.51\textwidth}
-				\begin{figure}
-					\includegraphics[width=0.9\textwidth]{Fundamentos/periodico-geometria.pdf}
-				\end{figure}
-			
-				\column{.51\textwidth}
-				\begin{block}{}
-					\centering
-					Gaston Floquet, 1883.
-				\end{block}
-			
-				\begin{block}{}
-					\centering
-					\textbf{Teorema de Bloch}:
+					\column{.60\textwidth}
+	
+						\centering \includegraphics[width=1\textwidth]{Fundamentos/periodico-geometria.pdf}
+	
+				
+					\column{.40\textwidth}
+						\begin{block}{}
+							\centering
+							Gaston Floquet, 1883.
+						\end{block}
 					
-					Soluciones a la función de onda de un electrón en un cristal.
-					\begin{align*}
-						\phi(\vec{r}) = e^{j\vec{\gamma} \cdot \vec{r}} u(\vec{r})
-					\end{align*}
-				\end{block}
+						\begin{block}{}
+							\centering
+							\textbf{Teorema de Bloch}:
+							
+							Soluciones a la función de onda de un electrón en un cristal.
+							\begin{align*}
+								\phi(\vec{r}) = {\color{red}e^{j\vec{\gamma} \cdot \vec{r}}} u(\vec{r})
+							\end{align*}
+						\end{block}
 			\end{columns}
 			
 			
 			\begin{block}{}
 				\setlength\abovedisplayskip{0pt}
 				\begin{align*}
-					E(x+d,y,z) = e^{-j \beta d} E(x,y,z),
+					E(x{\color{red}+d},y,z) = {\color{red}e^{-j \beta d}} E(x,y,z),
 				\end{align*}
 			\end{block}}
 		
 			\only<2>{\begin{center}
 				\begin{figure}[y]
 					\centering
-					\includegraphics[width=0.8\textwidth]{Fundamentos/bloch.pdf}
+					\includegraphics[width=0.75\textwidth]{Fundamentos/bloch.pdf}
 				\end{figure}
 			\end{center}
 			\vspace{-20pt}
@@ -1054,7 +1093,8 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			
 		}	
 		\end{frame}
-	
+
+\subsection{Diagrama de dispersión de una estructura periódica}
 		\begin{frame}
 			\frametitle{Armónicos espaciales y Celda de Brillouin}
 			\only<1>{
@@ -1070,7 +1110,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 					\begin{block}{}
 						\setlength\abovedisplayskip{0pt}
 						\begin{gather*}
-							 E(x,y,z,t) = e^{j\omega t} \sum_{n=-\infty}^{\infty} E_n(y,z) e^{-j\gamma_n x},\\
+							 E(x,y,z,t) = e^{j\omega t} \sum_{n=-\infty}^{\infty} E_n(y,z) e^{-j{\color{red}\gamma_n} x},\\
 							 \gamma_n = \gamma_0 + n \frac{2\pi}{p}.
 						\end{gather*}
 					\end{block}
@@ -1114,7 +1154,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			\end{block}
 			\begin{figure}[h]
 				\centering
-				\includegraphics[width=0.9\textwidth]{Presentacion/brillioun-1d.pdf}
+				\includegraphics[width=0.75\textwidth]{Presentacion/brillioun-1d.pdf}
 			\end{figure}
 		}
 	
@@ -1144,7 +1184,8 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 	
 	
 		\end{frame}
-		
+
+\subsection{Red de Bravais y red recíproca}
 		% Aca va lo del ppio variacional
 	
 		\begin{frame}
@@ -1203,10 +1244,8 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 						\includegraphics[width=0.55\textwidth]{Presentacion/diagrama-dispersion-deduccion.png}
 				\end{figure}}
 			\only<4>{
-				\begin{figure}[h]
-					\centering
-					\includegraphics[width=0.70\textwidth]{Fundamentos/Fisica-DiagramaDeFase.pdf}
-			\end{figure}}
+				\centering \includegraphics[width=0.67\textwidth]{Fundamentos/Fisica-DiagramaDeFase.pdf}
+			}
 		\end{frame}
 		
 		\begin{frame}
@@ -1224,7 +1263,14 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 				\end{figure}
 			\end{columns}
 		\end{frame}
-	
+
+\section{Modelado numérico de estructuras EBG}
+
+		\begin{frame}
+			\frametitle{Modelado numérico de estructuras EBG}
+			\tableofcontents[currentsection,hideothersubsections]
+		\end{frame}
+
 		\begin{frame}
 			\frametitle{Modelado de estructuras EBG}
 			
@@ -1254,24 +1300,23 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			\frametitle{Problema de autovalores con métodos de onda completa}
 			\begin{columns}[c]
 				\column{0.55\textwidth}
-				\begin{figure}[h]
-					\includegraphics[width=0.95\textwidth]{Modelado/esquema-simulacion-periodica.pdf}
-				\end{figure}
+					\centering \includegraphics[width=0.95\textwidth]{Modelado/esquema-simulacion-periodica.pdf}
 				\column{0.40\textwidth}
-				\begin{block}{}
-					\centering Simulación de una única celda unitaria describe la estructura infinita.
-				\end{block}
-			
-				\begin{block}{\centering PBC}
-					\centering Bloch: Campo periódico con igual periodicidad que el material, a excepción de un factor de fase.
-					\vspace{0.6cm}
-										
-					\textbf{Condición de borde: Diferencia de fase entre paredes enfrentadas}.
-				\end{block}
+					\begin{block}{}
+						\centering Simulación de una única celda unitaria describe la estructura infinita.
+					\end{block}
+				
+					\begin{block}{\centering PBC}
+						\centering Bloch: Campo periódico con igual periodicidad que el material, a excepción de un factor de fase.
+						\vspace{0.6cm}
+											
+						\textbf{Condición de borde: Diferencia de fase entre paredes enfrentadas}.
+					\end{block}
 			\end{columns}
 
 		\end{frame}
-	
+\subsection{Parches unidos por trazas \textit{microstrip}}
+
 		\begin{frame}
 			\only<1>{\frametitle{Parches cuadrados unidos por trazas \textit{microstrip}}
 				\begin{figure}[h]
@@ -1354,11 +1399,12 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 					\includegraphics[width=\textwidth]{Modelado/Orlandi-DeltaTamanioCelda-RelacionParcheFija-Comparacion.pdf}
 				}
 				\only<4>{\framesubtitle{Variación del ancho del sustrato}
-					\centering \includegraphics[width=0.95\textwidth]{Modelado/Orlandi-3direcciones-anchoSustrato-Comparacion.pdf}
+					\centering \includegraphics[width=0.94\textwidth]{Modelado/Orlandi-3direcciones-anchoSustrato-Comparacion.pdf}
 				}
 			
 		\end{frame}
-	
+
+\subsection{Celda de Yang: Modelo circuital}
 		\begin{frame}
 			\frametitle{Celda de Yang, Ma, Qian e Itoh}
 				\begin{columns}[c]
@@ -1484,7 +1530,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 				\end{block}
 			\end{textblock*}
 			
-			\begin{textblock*}{30mm}(95mm,37mm)
+			\begin{textblock*}{30mm}(95mm,39mm)
 				\begin{block}{}
 					\centering Comportamiento a altas frecuencias.
 				\end{block}
@@ -1495,13 +1541,13 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		\begin{frame}
 			\frametitle{Modelo circuital II}
 			\only<1>{
-				\centering Las esquinas presentan inductancia no despreciable: 
+				\centering Las \textbf{esquinas} presentan \textbf{inductancia} no despreciable: 
 				\begin{itemize}
-					\item Resonancia serie, un camino de menor impedancia, $\downarrow$ BW del \textit{bandgap}.
+					\centering \item Resonancia serie, un camino de menor impedancia, $\downarrow$ BW del \textit{bandgap}.
 					\item $\downarrow f_r^p$:\;$C_g$ resuena con una inductancia mayor.
 				\end{itemize}
 				
-				\centering \includegraphics[width=1\textwidth]{Fundamentos/circuito-equivalente-celda-YANG-6.pdf}
+				\centering \includegraphics[width=0.95\textwidth]{Fundamentos/circuito-equivalente-celda-YANG-6.pdf}
 			}
 			\only<2>{
 			\centering \begin{tabular}{ c c c }
@@ -1514,7 +1560,14 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 				
 			 \vfill
 			 
-			\centering \includegraphics[width=0.85\textwidth]{Presentacion/composicion.pdf}
+			\centering \includegraphics[width=0.84\textwidth]{Presentacion/composicion.pdf}
+			
+			\begin{textblock*}{10mm}(5mm,15mm)
+				\begin{block}{}
+					\centering $L_w$.
+				\end{block}
+			\end{textblock*}
+		
 			}
 		\end{frame}
 	
@@ -1524,7 +1577,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			\only<1>{
 				\centering Las esquinas presentan capacidad contra el plano de tierra aparte.
 				
-				\centering \includegraphics[width=1\textwidth]{Fundamentos/circuito-equivalente-celda-YANG-5.pdf}
+				\centering \includegraphics[width=0.95\textwidth]{Fundamentos/circuito-equivalente-celda-YANG-5.pdf}
 			}
 			\only<2>{
 				\centering \includegraphics[width=\textwidth]{Modelado/69-70.pdf}
@@ -1532,7 +1585,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			\only<3>{
 				\centering Considerando pérdidas:
 				
-				\centering \includegraphics[width=1\textwidth]{Presentacion/circuito-equivalente-celda-YANG-4.pdf}
+				\centering \includegraphics[width=0.95\textwidth]{Presentacion/circuito-equivalente-celda-YANG-4.pdf}
 			}
 			\only<4>{
 				\centering \includegraphics[width=\textwidth]{Modelado/67-68.pdf}
@@ -1576,7 +1629,8 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 				\includegraphics[width=\textwidth]{Modelado/EstructuraMuchasCeldas2d.png}
 			\end{columns}
 		\end{frame}
-	
+
+\subsection{Algoritmo propuesto}
 		\begin{frame}
 			\frametitle{Algoritmo propuesto para simulación}
 			\begin{itemize}
@@ -1601,6 +1655,42 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		\end{frame}
 	
 		\begin{frame}
+			\frametitle{Proceso de cálculo}
+			\centering
+			\includegraphics[width=0.82\textwidth]{Modelado/TLM-progresion.pdf}
+		\end{frame}
+	
+	
+		\begin{frame}
+			\frametitle{Matrices de nodos}
+			
+			\centering \includegraphics[width=0.7\textwidth]{Modelado/esquema-matriz-s.pdf}
+			
+			\begin{align*}
+			\begin{bmatrix}
+			V_r^{izq} \\
+			V_r^{der} \\
+			V_r^{arr} \\
+			V_r^{aba} \\
+			\end{bmatrix}
+			=
+			\begin{bmatrix}
+			s_{izq-izq} & s_{der-izq} & \dots & \dots \\
+			s_{izq-der} & s_{der-der} & \ddots & \vdots \\
+			\vdots & \ddots & \ddots     & \vdots \\
+			s_{izq-aba} & \dots & \dots & s_{aba-aba}
+			\end{bmatrix}
+			\begin{bmatrix}
+			V_i^{izq} \\
+			V_i^{der} \\
+			V_i^{arr} \\
+			V_i^{aba} \\
+			\end{bmatrix}
+			\end{align*}
+			
+		\end{frame}
+
+		\begin{frame}
 			\frametitle{Entradas del algoritmo}
 				\centering
 				\includegraphics[width=\textwidth]{Modelado/ProcedimientoUsuario.pdf}
@@ -1609,7 +1699,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		\begin{frame}
 			\frametitle{Tipos de Pixel}
 			\centering
-			\includegraphics[width=0.8\textwidth]{Modelado/TiposDePixel.pdf}
+			\includegraphics[width=0.75\textwidth]{Modelado/TiposDePixel.pdf}
 		\end{frame}
 		
 		\begin{frame}
@@ -1617,7 +1707,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			\centering
 			\includegraphics[width=1\textwidth]{Modelado/Modelo-Pixeles.pdf}
 			
-			\begin{textblock*}{30mm}(80mm,75mm)
+			\begin{textblock*}{35mm}(80mm,75mm)
 				\begin{block}{}
 					\centering $Z_0 = \sqrt{L_{inn}/C_{inn}}$
 				\end{block}
@@ -1639,58 +1729,225 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		\begin{frame}
 			\frametitle{Acoplamiento capacitivo}
 			
-			\centering \includegraphics[width=0.7\textwidth]{Modelado/ProcesoProfundidad.pdf}
+			\only<1>{\centering \includegraphics[width=0.7\textwidth]{Modelado/ProcesoProfundidad.pdf}
 			
-			\begin{textblock*}{49mm}(75mm,8mm)
-				\begin{block}{}
-					\setlength\abovedisplayskip{0pt}
-					\begin{align*}
-					\centering 	C_{gt} = \frac{b \epsilon_0 (1+\epsilon_r)}{\pi} \cosh^{-1} (a / g)
-					\end{align*}
-				\end{block}
-			\end{textblock*}
+				\begin{textblock*}{49mm}(75mm,8mm)
+					\begin{block}{}
+						\setlength\abovedisplayskip{0pt}
+						\begin{align*}
+						\centering 	C_{gt} = \frac{b \epsilon_0 (1+\epsilon_r)}{\pi} \cosh^{-1} (a / g)
+						\end{align*}
+					\end{block}
+				\end{textblock*}
+			}
 		
+			\only<2>{
+					\centering
+					\includegraphics[width=0.6\textwidth]{Modelado/AcoplamientoCapacitivoGeneral.pdf}
+			}
+		
+			\only<3>{
+				
+				\begin{align*}
+					i' = j \omega C_g v_f \qquad\qquad v' = j \omega M i_f \approx 0
+				\end{align*}
+				\centering
+				\includegraphics[width=0.9\textwidth]{Modelado/AcoplamientoCapacitivoDebil.pdf}
+				
+				\begin{align*}
+					v_v & = v_{th} \frac{Z_0}{Z_0 + \frac{1}{j\omega C_{f-v}}} = v_f \frac{C_g}{C_{f-v}} \frac{Z_0}{Z_0 + \frac{1}{j\omega C_{f-v}}}
+				\end{align*}
+				
+				\begin{align*}
+					\rho =   \frac{|1/(j\omega C_{f-f})| - Z_0}{|1/(j\omega C_{f-f})| + Z_0}
+				\end{align*}
+			}
 		\end{frame}
 	
 		\begin{frame}
-			\frametitle{Matrices de nodos}
-			
-			\centering \includegraphics[width=0.7\textwidth]{Modelado/esquema-matriz-s.pdf}
-			
-			\begin{align*}
-				\begin{bmatrix}
-					V_r^{izq} \\
-					V_r^{der} \\
-					V_r^{arr} \\
-					V_r^{aba} \\
-				\end{bmatrix}
-					=
-				\begin{bmatrix}
-					s_{izq-izq} & s_{der-izq} & \dots & \dots \\
-					s_{izq-der} & s_{der-der} & \ddots & \vdots \\
-					\vdots & \ddots & \ddots     & \vdots \\
-					s_{izq-aba} & \dots & \dots & s_{aba-aba}
-				\end{bmatrix}
-				\begin{bmatrix}
-					V_i^{izq} \\
-					V_i^{der} \\
-					V_i^{arr} \\
-					V_i^{aba} \\
-				\end{bmatrix}
-			\end{align*}
-		
+			\begin{columns}[c]
+				\column{0.63\textwidth}
+					\centering \includegraphics[width=\textwidth]{Modelado/ConceptoMatrizProgresoTiempo.pdf}
+				\column{0.2\textwidth}
+					\begin{block}{}
+						\centering \textbf{Salida}: 
+						
+						Matriz tridimensional.
+					\end{block}
+				
+					\begin{block}{}
+						 \centering 
+						 Análisis en frecuencia a partir de FFT.
+					\end{block}
+			\end{columns}
 		\end{frame}
-	
-		\begin{frame}
-			\frametitle{Matrices de nodos}
 		
+		\begin{frame}
+			\frametitle{Resultado para la celda de Yang}
+			\begin{columns}[c]
+				\column{0.5\textwidth}
+					\centering \includegraphics[width=\textwidth]{Modelado/tensionEntrada-Tiempo.pdf}
+					
+					\begin{block}{}
+						Entrada: $\delta_k$ en tiempo $t=0$.\\
+						Tiempos subsiguientes: nodo libre.
+					\end{block}
+				\column{0.5\textwidth}
+					\centering \includegraphics[width=\textwidth]{Modelado/tensionSalida-Tiempo.pdf}
+					\centering \includegraphics[width=\textwidth]{Modelado/TensionSalida-FrecAbsCOMP.pdf}
+			\end{columns}
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Posibles causas de error}
+			\begin{columns}[c]
+				\column{0.65\textwidth}
+					\centering \includegraphics[width=\textwidth]{Modelado/TensionSalida-FrecAbsCOMP.pdf}
+					
+					\begin{itemize}
+						\centering
+						\item La \textbf{impedancia} adoptada en cada nodo es válida sólo para una frecuencia.
+						\item \textbf{Mallado} (1): Sólo rectangular y equiespaciado. \textbf{Efectos de borde} no tenidos en cuenta.
+					\end{itemize}
+				\column{0.35\textwidth}
+					\begin{itemize}
+						\centering
+						\item Error propio del uso de \textbf{fórmulas} empíricas.
+						\item No se consideró la \textbf{fase} de $\rho$. Modelo de $C_f$ incompleto.
+						\item \textbf{Mallado} (2): Frente de ondas plano. Celdas en \textbf{diagonal}.
+					\end{itemize}
+			\end{columns}
+		\end{frame}
 
 		
+\section{Aplicación a conjuntos de antenas}
+		\begin{frame}
+			\frametitle{Aplicación a conjuntos de antenas}
+			\tableofcontents[currentsection,hideothersubsections]
 		\end{frame}
+\subsection{Monopolos}
+		\begin{frame}
+			\frametitle{Comportamiento de conjuntos de monopolos}
+			\begin{columns}[c]
+				\column{0.5\textwidth}
+					\centering \includegraphics<1,2>[width=\textwidth]{Aplicacion/dos-monopolos.png}
+					\centering \includegraphics<3>[width=\textwidth]{Aplicacion/Monopole_and_image_antenna.pdf}
+				\column{0.5\textwidth}
+					\centering \includegraphics<2,3>[width=\textwidth]{Aplicacion/dos-monopolos-sin-GND.png}
+			\end{columns}
+			\centering \includegraphics<4>[width=\textwidth]{Aplicacion/comparacion-dipolos-s12-variasDistancias-sinGND.pdf}
+			\centering \includegraphics<5>[width=\textwidth]{Aplicacion/comparacion-dipolos-s11-variasDistancias-sinGND.pdf}
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Comportamiento de conjuntos de monopolos con EBG}
+			\only<1>{
+				\begin{columns}[c]
+					\column{0.5\textwidth}
+					\centering \includegraphics<1>[width=\textwidth]{Aplicacion/dos-monopolos-2EBG.png}
+					\column{0.5\textwidth}
+					\centering \includegraphics<1>[width=\textwidth]{Aplicacion/dos-monopolos-3EBG.png}
+				\end{columns}
+			}
+			\only<2>{
+				\begin{columns}[c]
+					\column{0.2\textwidth}
+					\centering \includegraphics[width=\textwidth]{Aplicacion/dos-monopolos-2EBG.png}
+					\column{0.8\textwidth}
+					\centering \includegraphics[width=\textwidth]{Aplicacion/comparacion-dipolos-s12-variasDistancias-sinConEBG.pdf}
+				\end{columns}
+			}
+			\only<3>{
+				\begin{columns}[c]
+					\column{0.8\textwidth}
+						\centering \includegraphics[width=\textwidth]{Aplicacion/dipolos-s12-variasDistancias-con3EBG.pdf}
+					\column{0.2\textwidth}
+						\centering \includegraphics[width=\textwidth]{Aplicacion/dos-monopolos-3EBG.png}
+						\vspace{3cm}
+						
+				\end{columns}
+			}
+			\only<4>{
+				\pause
+				\begin{columns}[c]
+					\column{0.8\textwidth}
+					{\transparent{0.4}\centering \includegraphics[width=\textwidth]{Aplicacion/dipolos-s12-variasDistancias-con3EBG.pdf}}
+					\column{0.2\textwidth}
+					\centering \includegraphics[width=\textwidth]{Aplicacion/dos-monopolos-3EBG.png}
+					\vspace{3cm}
+					
+				\end{columns}				
+				
+				\begin{textblock*}{80mm}(45mm,45mm)
+					\centering \includegraphics[width=\textwidth]{Aplicacion/dipolos-s11-variasDistancias-con3EBG.pdf}
+				\end{textblock*}
+			}
+				
 		
-		
-		
-		
+		\end{frame}
+
+\subsection{Microstrip}
+		\begin{frame}
+			\frametitle{EBGs en conjuntos de antenas \textit{microstrip}}
+			\only<2>{\framesubtitle{Sin EBG}}
+			\only<3>{\framesubtitle{Con 3 filas de EBG}}
+			\only<1,2>{
+				\begin{columns}[c]
+					\column{0.45\textwidth}
+					\only<2>{\centering Plano E}
+					
+					\centering \includegraphics<1>[width=\textwidth]{Presentacion/microstripSINEBG-planoE.PNG}
+					\centering \includegraphics<2>[width=1.1\textwidth]{Aplicacion/ms-E-35-4-5-sinEBG-S12.pdf}
+					
+					
+					\column{0.5\textwidth}
+					\centering Plano H
+					\centering \includegraphics<1>[width=\textwidth]{Presentacion/microstripSINEBG-planoH.PNG}
+					\centering \includegraphics<2>[width=\textwidth]{Aplicacion/ms-H-3-4-45-5-sinEBG-S12.pdf}
+				\end{columns}
+			}
+			\centering \includegraphics<3>[width=0.6\textwidth]{Aplicacion/ms-E-celdas-s21.pdf}
+			\centering \includegraphics<3>[width=0.6\textwidth]{Aplicacion/ms-H-4-variosD-3EBG-S12.pdf}
+			
+		\end{frame}
+
+\section{Conclusiones y propuestas}
+		\begin{frame}
+			\frametitle{Conclusiones}
+			\begin{itemize}
+				\item Las estructuras \textit{microstrip} producen ondas de superficie con polarización TM.
+				\item Existen diversas técnicas para controlarlas: División del plano de tierra, estructuras DGS, escalones de permitividad, EBGs.
+				\item La aplicación de EBGs no consiste únicamente en el agregado post-diseño de una estructura. Debe diseñarse la antena y la estructura al mismo tiempo.
+				\item La obtención de resultados analíticos en el análisis de estructuras EBG de tecnología \textit{microstrip} es casi imposible. Se utilizan técnicas numéricas, simulaciones de onda completa, que requieren mucho tiempo. Se presentaron dos alternativas:
+					\begin{itemize}
+						\item Modelado circuital, cuyas sucesivas mejoras deriva en un modelo de líneas de transmisión.
+						\item Modelado con variación de TLM bidimensional. Bajo costo computacional. Implementación compleja.
+					\end{itemize}
+				\item El acoplamiento por ondas de superficie no es único tipo de acoplamiento.
+				\item Se requieren mediciones para validar el análisis propuesto.
+			\end{itemize}
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Trabajos futuros}
+			\begin{itemize}
+				\item Medición de estructuras EBG, con y sin antenas.
+				\item Implementar el algoritmo de TLM, aplicando soluciones a los problemas descriptos, y en un lenguaje eficiente.
+				\item Estudio de estructuras multibanda.
+				\item Miniaturización (Peano, Hilbert, etc).
+			\end{itemize}
+		\end{frame}
+
 %------------------------------------------------
+	
+	\begin{frame}{}
+		\centering \Huge
+		\emph{Muchas gracias.}
+	\end{frame}
+
+	\begin{frame}{}
+		\centering \Huge
+		\emph{¿Preguntas?}
+	\end{frame}
 
 \end{document}
