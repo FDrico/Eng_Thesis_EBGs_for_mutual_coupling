@@ -256,177 +256,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		\tiny{F. Yang e Y. Rahmat-Samii, Electromagnetic Band Gap Structures in Antenna Engineering, Cambridge University Press, 2009.}
 		\end{frame}
 
-\section{Conceptos básicos de electromagnetismo}
-	
-	
-	\begin{frame}
-		\frametitle{Conceptos básicos de electromagnetismo}
-		\tableofcontents[currentsection,hideothersubsections]
-	\end{frame}
-	
-	\subsection{Ecuaciones de Maxwell y ondas electromagnéticas} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
-	
-		\begin{frame}
-			\frametitle{Ecuaciones de Maxwell}
-			
-			\begin{align*}
-			\left.\begin{array}{rr@{\mskip\thickmuskip}l}
-			\text{Faraday} &\nabla \times \vec{E} & = -\frac{\partial \vec{B}}{\partial t} - \vec{M}\\
-			\text{Ampère} &\nabla \times \vec{H} & = \frac{\partial \vec{D}}{\partial t} + \vec{J} \\
-			\text{Gauss} &\nabla \cdot \vec{D} & = \rho \\
-			\text{Gauss} & \nabla \cdot \vec{B} & = 0
-			\end{array} \right\}
-			\quad \implies \quad
-			\left\{\begin{array}{r@{\mskip\thickmuskip}l}
-			\nabla \times \vec{E} & = -j \omega \vec{B} - \vec{M} \\
-			\nabla \times \vec{H} & = j \omega \vec{D} + \vec{J} \\
-			\nabla \cdot \vec{D} & = \rho\\
-			\nabla \cdot \vec{B} & = 0
-			\end{array}\right.
-			\end{align*}
-			
-			\begin{textblock*}{18mm}(62mm,25mm)
-				\tiny \centering Sin dispersión,
-				isotrópico,
-				armónico,\\
-				rég. perm.
-			\end{textblock*}
-			
-			\begin{columns}[c]
-				\column{0.8\textwidth}
-				\begin{align*}
-					\vec{D} &= \epsilon_0 \vec{E} + \vec{P}_e = \epsilon_0 (1+\chi_e)\vec{E} = \epsilon \vec{E} = (\epsilon' - j \epsilon'') \vec{E}\\
-					\vec{B} &= \mu_0 (\vec{H} + \vec{P}_m) = \mu_0 (1+\chi_m)\vec{H} = \mu \vec{H} = (\mu' - j \mu'') \vec{H}.
-				\end{align*}
-				\column{0.05\textwidth}
-			\end{columns}
-		
-			\begin{textblock*}{15mm}(110mm,55mm)
-				\tiny \centering Medio\\
-				lineal,\\
-				isotrópico\\
-				homogéneo.
-			\end{textblock*}
-			
-			\vspace{0.7cm}
-			\begin{align*}
-			\vec{J} &= \sigma \vec{E} \Rightarrow \vec{D} = \left( \epsilon' - j\epsilon'' - j \frac{\sigma}{\omega} \right) \vec{E}.
-			\end{align*}
-			
-			\begin{textblock*}{24mm}(8mm,77mm)
-				\scriptsize \centering $\sigma$
-				indep. del
-				campo aplicado: \textbf{Ohm}.
-			\end{textblock*}		
-		
-		\end{frame}
-			
 
-		\begin{frame}
-			\frametitle{Ondas electromagnéticas (I)}
-			
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=1\textwidth]{Presentacion/onda_em.pdf}
-			\end{figure}
-			
-			\centering \textbf{Ecuaciones de Helmholtz}
-					
-			\begin{align*}
-			\left.\begin{array}{rr@{\mskip\thickmuskip}l}
-			\nabla^2  \vec{E} + \gamma^2 \vec{E} &= 0\\
-			\nabla^2 \vec{H} + \gamma^2 \vec{H}& = 0
-			\end{array} \right\}
-			\quad \implies \quad
-			\left\{\begin{array}{r@{\mskip\thickmuskip}l}
-			\vec{E}(x,y,z) &= \vec{E}_0 e^{\pm j \vec{\gamma}\cdot \vec{r}}. \\
-			\vec{H}(x,y,z) &= \vec{H}_0 e^{\pm j \vec{\gamma}\cdot \vec{r}}.
-			\end{array}\right.
-			\end{align*}
-			
-			\begin{columns}[c]
-				\column{0.6\textwidth}
-				\begin{block}{}
-					\setlength\abovedisplayskip{0pt}
-					\begin{align*}
-					\centering
-					\gamma &= -j\alpha + \beta = j\omega \sqrt{\mu (\epsilon'-j\epsilon'') - j \sigma \epsilon/\omega}
-					\end{align*}
-				\end{block}
-				\column{0.3\textwidth}
-				\begin{block}{}
-					\setlength\abovedisplayskip{0pt}
-					\begin{align*}
-					\centering \vec{\gamma} &= \vec{\gamma}_x + \vec{\gamma}_y +\vec{\gamma}_z
-					\end{align*}
-				\end{block}
-			\end{columns}
-		
-			\begin{block}{}
-				\setlength\abovedisplayskip{0pt}
-				\begin{align*}
-				E_i(z) = E_i \; e^{-j\gamma z} = E_i \; {\color{red}e^{-\alpha z}} \; {\color{violet}e^{-j \beta z}}, \quad i=x,y.
-				\end{align*}
-			\end{block}
-
-		\end{frame}
-	
-		\begin{frame}
-			\frametitle{Ondas electromagnéticas (II)}
-			
-			Para las ondas planas,
-			
-			\begin{block}{}
-				\setlength\abovedisplayskip{0pt}
-				\begin{align*}
-				\vec{H}(\vec{r},t) &= \pm \frac{\hat{\beta} \times \vec{E}(\vec{r},t)}{\eta}.
-				\end{align*}
-			\end{block}
-		
-		
-		
-			\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-				
-				\column{.45\textwidth} % Left column and width
-				
-				\begin{block}{\centering Impedancia de onda}
-					\setlength\abovedisplayskip{0pt}
-					\begin{align*}
-					\eta &= \frac{j \omega \mu}{\gamma }.
-					\end{align*}
-				\end{block}
-			
-				\begin{block}{\centering Velocidad de fase}
-					\setlength\abovedisplayskip{0pt}
-					\begin{align*}
-					v_p &= \omega/\beta = c/\sqrt{\mu_r \epsilon_r}.
-					\end{align*}
-				\end{block}
-			
-				
-				
-				\column{.45\textwidth} % Right column and width
-				
-				\begin{block}{\centering Prof. penetración}
-					\setlength\abovedisplayskip{0pt}
-					\begin{align*}
-					\label{eq:prof_penetacion}
-					\delta_s = -1/\alpha &= \sqrt{\frac{2}{\omega \mu \sigma}}.
-					\end{align*}
-				\end{block}
-			
-				\begin{block}{\centering Velocidad de grupo}
-					\setlength\abovedisplayskip{0pt}
-					\begin{align*}
-					v_g &= d\omega/d\beta.
-					\end{align*}
-				\end{block}
-			
-			\end{columns}
-			
-			
-
-		\end{frame}
 		
 		\subsection{Antenas}
 		
@@ -1959,6 +1789,177 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 	\begin{frame}{}
 		\centering \Huge
 		\emph{¿Preguntas?}
+	\end{frame}
+
+
+	\section{Apéndice}
+	\subsection{Conceptos básicos de electromagnetismo}
+	
+	
+	\begin{frame}
+		\frametitle{Conceptos básicos de electromagnetismo}
+		\tableofcontents[currentsection, sectionstyle=show/hide, subsectionstyle=show/show/hide]
+	\end{frame}
+	
+	\subsubsection{Ecuaciones de Maxwell y ondas electromagnéticas} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+	
+	\begin{frame}
+		\frametitle{Ecuaciones de Maxwell}
+		
+		\begin{align*}
+			\left.\begin{array}{rr@{\mskip\thickmuskip}l}
+			\text{Faraday} &\nabla \times \vec{E} & = -\frac{\partial \vec{B}}{\partial t} - \vec{M}\\
+			\text{Ampère} &\nabla \times \vec{H} & = \frac{\partial \vec{D}}{\partial t} + \vec{J} \\
+			\text{Gauss} &\nabla \cdot \vec{D} & = \rho \\
+			\text{Gauss} & \nabla \cdot \vec{B} & = 0
+			\end{array} \right\}
+			\quad \implies \quad
+			\left\{\begin{array}{r@{\mskip\thickmuskip}l}
+			\nabla \times \vec{E} & = -j \omega \vec{B} - \vec{M} \\
+			\nabla \times \vec{H} & = j \omega \vec{D} + \vec{J} \\
+			\nabla \cdot \vec{D} & = \rho\\
+			\nabla \cdot \vec{B} & = 0
+			\end{array}\right.
+		\end{align*}
+		
+		\begin{textblock*}{18mm}(62mm,25mm)
+			\tiny \centering Sin dispersión,
+			isotrópico,
+			armónico,\\
+			rég. perm.
+		\end{textblock*}
+		
+		\begin{columns}[c]
+			\column{0.8\textwidth}
+			\begin{align*}
+			\vec{D} &= \epsilon_0 \vec{E} + \vec{P}_e = \epsilon_0 (1+\chi_e)\vec{E} = \epsilon \vec{E} = (\epsilon' - j \epsilon'') \vec{E}\\
+			\vec{B} &= \mu_0 (\vec{H} + \vec{P}_m) = \mu_0 (1+\chi_m)\vec{H} = \mu \vec{H} = (\mu' - j \mu'') \vec{H}.
+			\end{align*}
+			\column{0.05\textwidth}
+		\end{columns}
+		
+		\begin{textblock*}{15mm}(110mm,55mm)
+			\tiny \centering Medio\\
+			lineal,\\
+			isotrópico\\
+			homogéneo.
+		\end{textblock*}
+		
+		\vspace{0.7cm}
+		\begin{align*}
+			\vec{J} &= \sigma \vec{E} \Rightarrow \vec{D} = \left( \epsilon' - j\epsilon'' - j \frac{\sigma}{\omega} \right) \vec{E}.
+		\end{align*}
+		
+		\begin{textblock*}{24mm}(8mm,77mm)
+			\scriptsize \centering $\sigma$
+			indep. del
+			campo aplicado: \textbf{Ohm}.
+		\end{textblock*}		
+	
+	\end{frame}
+	
+	
+	\begin{frame}
+		\frametitle{Ondas electromagnéticas (I)}
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=1\textwidth]{Presentacion/onda_em.pdf}
+		\end{figure}
+		
+		\centering \textbf{Ecuaciones de Helmholtz}
+		
+		\begin{align*}
+			\left.\begin{array}{rr@{\mskip\thickmuskip}l}
+			\nabla^2  \vec{E} + \gamma^2 \vec{E} &= 0\\
+			\nabla^2 \vec{H} + \gamma^2 \vec{H}& = 0
+			\end{array} \right\}
+			\quad \implies \quad
+			\left\{\begin{array}{r@{\mskip\thickmuskip}l}
+			\vec{E}(x,y,z) &= \vec{E}_0 e^{\pm j \vec{\gamma}\cdot \vec{r}}. \\
+			\vec{H}(x,y,z) &= \vec{H}_0 e^{\pm j \vec{\gamma}\cdot \vec{r}}.
+			\end{array}\right.
+		\end{align*}
+		
+		\begin{columns}[c]
+			\column{0.6\textwidth}
+			\begin{block}{}
+			\setlength\abovedisplayskip{0pt}
+			\begin{align*}
+			\centering
+			\gamma &= -j\alpha + \beta = j\omega \sqrt{\mu (\epsilon'-j\epsilon'') - j \sigma \epsilon/\omega}
+			\end{align*}
+			\end{block}
+			\column{0.3\textwidth}
+			\begin{block}{}
+			\setlength\abovedisplayskip{0pt}
+			\begin{align*}
+			\centering \vec{\gamma} &= \vec{\gamma}_x + \vec{\gamma}_y +\vec{\gamma}_z
+			\end{align*}
+			\end{block}
+		\end{columns}
+		
+		\begin{block}{}
+			\setlength\abovedisplayskip{0pt}
+			\begin{align*}
+				E_i(z) = E_i \; e^{-j\gamma z} = E_i \; {\color{red}e^{-\alpha z}} \; {\color{violet}e^{-j \beta z}}, \quad i=x,y.
+			\end{align*}
+		\end{block}
+	
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Ondas electromagnéticas (II)}
+		
+		Para las ondas planas,
+		
+		\begin{block}{}
+			\setlength\abovedisplayskip{0pt}
+			\begin{align*}
+				\vec{H}(\vec{r},t) &= \pm \frac{\hat{\beta} \times \vec{E}(\vec{r},t)}{\eta}.
+			\end{align*}
+		\end{block}
+		
+		
+		
+		\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+		
+		\column{.45\textwidth} % Left column and width
+		
+		\begin{block}{\centering Impedancia de onda}
+			\setlength\abovedisplayskip{0pt}
+			\begin{align*}
+				\eta &= \frac{j \omega \mu}{\gamma }.
+			\end{align*}
+		\end{block}
+		
+		\begin{block}{\centering Velocidad de fase}
+			\setlength\abovedisplayskip{0pt}
+			\begin{align*}
+				v_p &= \omega/\beta = c/\sqrt{\mu_r \epsilon_r}.
+			\end{align*}
+		\end{block}
+		
+		
+		\column{.45\textwidth} % Right column and width
+		
+		\begin{block}{\centering Prof. penetración}
+			\setlength\abovedisplayskip{0pt}
+			\begin{align*}
+				\delta_s = -1/\alpha &= \sqrt{\frac{2}{\omega \mu \sigma}}.
+			\end{align*}
+		\end{block}
+		
+		\begin{block}{\centering Velocidad de grupo}
+			\setlength\abovedisplayskip{0pt}
+			\begin{align*}
+				v_g &= d\omega/d\beta.
+			\end{align*}
+		\end{block}
+		
+		\end{columns}
+	
+
 	\end{frame}
 
 \end{document}
