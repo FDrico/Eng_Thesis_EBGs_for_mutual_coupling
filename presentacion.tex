@@ -246,12 +246,12 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		\begin{figure}[H]
 			\centering 
 			\subfigure{
-				\label{fig:sustrato-antena-ebg}
-				\includegraphics[width=0.40\textwidth]{Aplicacion/foto-ebg-alrededor-antena.pdf}}
-			\hspace{10pt}
-			\subfigure{
 				\label{fig:escalon-sustrato}
 				\includegraphics[width=0.40\textwidth]{Aplicacion/foto-escalon-alrededor-antena.pdf}}
+			\hspace{10pt}
+			\subfigure{
+				\label{fig:sustrato-antena-ebg}
+				\includegraphics[width=0.40\textwidth]{Aplicacion/foto-ebg-alrededor-antena.pdf}}
 		\end{figure}
 		\tiny{F. Yang e Y. Rahmat-Samii, Electromagnetic Band Gap Structures in Antenna Engineering, Cambridge University Press, 2009.}
 		\end{frame}
@@ -282,7 +282,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 				\begin{itemize}
 					\centering
 					\item Acoplamiento espacial entre elementos por \textbf{onda espacial} ($\downarrow \propto 1/\rho$).
-					\item Acoplamiento espacial por \textbf{onda de superficie} ($\downarrow \propto 1/\sqrt\rho$).
+					\item {\color{red}Acoplamiento espacial por \textbf{onda de superficie} ($\downarrow \propto 1/\sqrt\rho$).}
 					\item Acoplamiento por \textbf{red de alimentación} (alimentación no independiente).
 				\end{itemize}
 			\end{block}
@@ -386,102 +386,35 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			\end{frame}
 		
 			\begin{frame}
-				\frametitle{Impedancia de superficie y constante de propagación (TM)}
-				
-				\centering Si se asume una impedancia de superficie $Z_s = R_s + j X_s$, al igualar la impedancia de onda a la de superficie:
-				
-				\begin{block}{TM}
-				\setlength\abovedisplayskip{0pt}
-				\begin{align*}
-					\gamma_{x_1} & = \gamma_1 \frac{Z_1}{\eta_0} = \gamma_1 Z_s = \gamma_1 R_s + j \gamma_1 X_s\tikzmark{x1},\\
-					\gamma_z &= \beta_z - j\alpha_z =\sqrt{(\gamma_1^2 - \gamma_{x_1}^2)} = \gamma_1 \sqrt{1+X_s^2\tikzmark{x5} - R_s^2 {\color{red}-} 2jR_s X_s\tikzmark{x3}}.
-				\end{align*}
+				\begin{block}{\centering Impedancia de superficie}
+					\centering $Z_s = R_z + j X_s$
 				\end{block}
-			
-				\only<1,2,3,4>{
-				\begin{columns}[c]
-					\column{.48\textwidth}
-					\begin{itemize}
-						\item $X_s > 0$: Reactancia inductiva:
-						\begin{itemize}
-							\item $\uparrow \alpha_x$: Decrecimiento exponencial en $x$\tikzmark{x0}.\\
-							\item $\alpha_z > 0$: Decrecimiento exponencial en $z$.\tikzmark{x2}
-							\item $\uparrow \beta_z$, $\downarrow v_p$.\tikzmark{x4}
-						\end{itemize}
-					\end{itemize}
 				
-					\column{.44\textwidth}
-					\begin{itemize}
-						\item Si $R_s X_s$ es pequeño: Baja\tikzmark{x6} atenuación en $z$.
-					\end{itemize}
-					
-					\begin{block}{}
-						\centering
-						Para ondas de superficie TM:
-						\centering
-						$\uparrow X_s \qquad \downarrow R_s$.
-
-					\end{block}
-				\end{columns}
-				}
-				\only<2>{
-					\begin{tikzpicture}[overlay,remember picture]
-						\draw[very thick, -Stealth]         ($({pic cs:x0})+(1ex,1ex)$)
-						to [bend right, sloped]  ($({pic cs:x1})+(-1ex,-0.5em)$);
-					\end{tikzpicture}
-				}
-			
-				\only<3>{
-					\begin{tikzpicture}[overlay,remember picture]
-					\draw[very thick, -Stealth]         ($({pic cs:x2})+(1ex,1ex)$)
-					to [bend right, sloped]  ($({pic cs:x3})+(-1ex,-0.5em)$);
-					\end{tikzpicture}
-				}
-			
-				\only<4>{
-					\begin{tikzpicture}[overlay,remember picture]
-					\draw[very thick, -Stealth]         ($({pic cs:x4})+(1ex,1ex)$)
-					to [bend left, sloped]  ($({pic cs:x5})+(-3ex,0em)$);
-					\draw[very thick, -Stealth]         ($({pic cs:x6})+(1ex,1ex)$)
-					to [bend right, sloped]  ($({pic cs:x3})+(-1ex,-0.5em)$);
-					\end{tikzpicture}
-				}
-			
-				\only<5>{\begin{block}{TE}
-					\setlength\abovedisplayskip{0pt}
+				Para que no haya reflexión,
+				
+				\begin{block}{}
+					\centering $Z_0 = Z_s$
+				\end{block}
+				
+				Se puede expresar:
+				\begin{block}{}
 					\begin{align*}
-					\gamma_{x_1} &= -\frac{\gamma_1}{Z_s} = -\gamma_1 \frac{R_s}{{\color{red}R_s^2+X_s^2}}-j\frac{X_s}{{\color{red}R_s^2+X_s^2}},\\
-					\gamma_z &= \beta_z-j\alpha_z= \sqrt{(\gamma_1^2 - \gamma_{x_1}^2)} = \frac{\gamma_1}{{\color{red}R_s^2+X_s^2}} \sqrt{1+X_s^2 - R_s^2 {\color{red}+} 2jR_s X_s}.
+						\gamma_{x_1}^{TM/TE} = f(\gamma_1, R_s, X_s)\\
+						\\
+						\gamma_{z}^{TM/TE} = g(\gamma_1, R_s, X_s)
 					\end{align*}
 				\end{block}
-			
-				\begin{textblock*}{40mm}(80mm,30mm)
-					\begin{block}{\centering Condiciones TM}
-						\centering
-						$\uparrow X_s \qquad \downarrow R_s$.
-					\end{block}
-				\end{textblock*}
-			
-				\begin{textblock*}{40mm}(80mm,60mm)
-					\begin{block}{\centering Condiciones TE}
-						\centering
-						$\downarrow X_s \qquad \downarrow R_s$.
-						
-					\end{block}
-				\end{textblock*}
-				}
-	
 			\end{frame}
 		
 			\begin{frame}
 				\only<1>{\begin{figure}[htp]
 					\centering
-					\includegraphics[width=\textwidth]{intro_electro/plot-beta-reactancia-TM.pdf}
+					\includegraphics[width=0.97\textwidth]{Presentacion/plot-beta-reactancia-TM.pdf}
 				\end{figure}}
 			
 				\only<2>{\begin{figure}[htp]
 					\centering
-					\includegraphics[width=\textwidth]{intro_electro/plot-beta-reactancia-TE.pdf}
+					\includegraphics[width=0.97\textwidth]{Presentacion/plot-beta-reactancia-TE.pdf}
 				\end{figure}}
 			\end{frame}
 		
@@ -513,22 +446,22 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			\end{figure}
 		
 			\begin{columns}[c]
-				\column{.54\textwidth}
+				\column{.5\textwidth}
 				\centering Caso TM:
 				
 				\begin{align*}
-					\begin{cases}
+					\small \begin{cases}
 						(\gamma_{x_2} h)^2 + (\alpha_{x_1} h)^2 = (\epsilon_{r_2} - 1) (\gamma_1 h)^2\\
 						\gamma_{x_2} h \tan (\gamma_{x_2} h) = |\alpha_{x_1}| \epsilon_{r_2} h.
 					\end{cases}
 				\end{align*}
 				
-				\column{.45\textwidth}
+				\column{.5\textwidth}
 				\centering Caso TE:
 				
 				\begin{align*}
-					\begin{cases}
-						(\gamma_{x_2} h)^2 + (\alpha_{x_1} h)^2 = (\epsilon_{r_2} - 1) (\gamma_1 h)^2 \\
+					\small \begin{cases}
+						\small(\gamma_{x_2} h)^2 + (\alpha_{x_1} h)^2 = (\epsilon_{r_2} - 1) (\gamma_1 h)^2 \\
 						\gamma_{x_2} h \cot (\gamma_{x_2} h) = -|\alpha_{x_1}| \epsilon_{r_2} h.
 					\end{cases}
 				\end{align*}
@@ -564,6 +497,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 					\includegraphics[width=\textwidth]{intro_electro/plot-zstm-funcioner2.pdf}
 				
 			\end{columns}
+			\vfill
 			\centering A más alta la impedancia de superficie, mayor incidencia de ondas de superficie.
 		\end{frame}
 	
@@ -619,35 +553,6 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			\end{columns}
 			\vspace{9pt}
 			\centering {\footnotesize SW: Ondas de superficie. BW: Ancho de banda. $D$: Tamaño de la estructura. $h$: Ancho del sustrato.}
-		\end{frame}
-	
-	
-		\begin{frame}
-			\frametitle{Modelo de líneas de transmisión}
-			\centering Antena rectangular: Dos aperturas radiantes de ancho $W$ y altura $h$, sepadas una distancia $L$ por una línea de trasmisión de impedancia característica conocida $Z_0$.
-			
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.9\textwidth]{intro_electro/circuito-equivalente-antena-ms.pdf}
-			\end{figure}
-		
-			\textit{Fringing}: Considerado mediante el uso de una $L_{eff} = L + 2 \Delta L$.
-		
-		\end{frame}
-	
-		\begin{frame}
-			\frametitle{Modelo de cavidades multimodo}
-			\centering Antena rectangular: Cavidad cargada dieléctricamente, limitada por conductores eléctricos en sus caras superior e inferior, y por conductores magnéticos en sus caras laterales.
-			
-			\begin{align*}
-				(f_r)_{nmp} = \frac{1}{2 \pi \sqrt{\mu \epsilon}} \sqrt{\left(\frac{m\pi}{h}\right)^2 + \left(\frac{n\pi}{L}\right)^2 + \left(\frac{p\pi}{W}\right)^2}
-			\end{align*}
-			
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.49\textwidth]{intro_electro/distribucion-campos-microstrip.pdf}
-			\end{figure}
-		
 		\end{frame}
 	
 		\begin{frame}
@@ -711,36 +616,32 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 	
 		
 		\only<2>{
-			\begin{itemize}
-				\item 1946: Louis \textbf{Brillouin}: \textit{Wave propagacion in periodic structures: Electric filters and crystal lattices}. Restricciones a los vectores de onda $\gamma$ en un medio periódico.
-				\item 1968: Viktor \textbf{Veselago}: Descripción teórica de LHS, velocidad de grupo antiparalela a la velocidad de fase.
-			\end{itemize}
-		
-			\begin{figure}[h]
-				\includegraphics[width=0.8\textwidth]{Fundamentos/OndasSegunEyU.pdf}
-			\end{figure}
-		}
-		
-		\only<3>{
 			\begin{figure}[htp]
-				\includegraphics[width=0.8\textwidth]{Fundamentos/pendry.pdf}
+				\includegraphics[width=\textwidth]{Presentacion/3d-cristales-fotonicos.pdf}
 			\end{figure}
 			
 			\begin{itemize}
-				\item 1990: \textbf{Smith}: Split Ring Resonators en base a los trabajos de Pendry. Se construyó en 2000.
-				\item 1990: \textbf{Ho, Chan, Soukulis}: Conjunto periódico de esferas dieléctricas. Banda prohibida.
-				\item 1990: \textbf{Yablonovitch}. Estructura cristalina. Agujeros cilíndricos.
+				\item 1946: Louis \textbf{Brillouin}: \textit{Wave propagacion in periodic structures: Electric filters and crystal lattices}. Restricciones a los vectores de onda $\gamma$ en un medio periódico.				
 			\end{itemize}
 		}
 		
-		\only<4>{
+		\only<3>{
+			
+			\begin{itemize}
+				\item 1990: \textbf{Ho, Chan, Soukulis}: Conjunto periódico de esferas dieléctricas. Banda prohibida.
+				\item 1990: \textbf{Yablonovitch}. Estructura cristalina. Agujeros cilíndricos.
+			\end{itemize}
+		
 			\begin{figure}[htp]
-				\includegraphics[width=\textwidth]{Fundamentos/metamateriales-smith.pdf}
+				\includegraphics[width=0.8\textwidth]{Presentacion/Photonic-crystal-fiber-from-NRL.jpg}
+				
 			\end{figure}
+		
+			
 		}
 	
 
-		\only<5>{
+		\only<4>{
 		\begin{itemize}
 			\item 1999: \textbf{Sievenpiper}: HIS. Mushrooms. AMC + EBG.
 			\item 2001: \textbf{Yang}: Uniplanar EBG (¿FSS o EBG?)
@@ -786,24 +687,24 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			% Se podría dar la expresión más general en las diapositivas anexas.
 		\end{frame}
 		
-		\begin{frame}
-			\frametitle{Relación entre $\gamma$ y $\omega$ en el vacío: Diagrama de dispersión}
-			
-			\centering
-			\setlength{\tabcolsep}{2em} % for the horizontal padding
-			\renewcommand{\arraystretch}{2}% for the vertical padding
-			\begin{tabular}{c|c}
-				1D & 2D\\
-				$\omega = c \beta$&$\omega = c \sqrt{\beta_x^2 + \beta_y^2}$\\
-				&\\
-				\includegraphics[width=0.4\textwidth]{Presentacion/dispersionvacio1d.pdf} & 	\includegraphics[width=0.3\textwidth]{Presentacion/dispersionvacio2d.pdf}\\	
-			\end{tabular}
-		
-			
-			\begin{block}{}
-				Si hay números de onda prohibidos, ¿podría haber frecuencias prohibidas?
-			\end{block}\textbf{}
-		\end{frame}
+%		\begin{frame}
+%			\frametitle{Relación entre $\gamma$ y $\omega$ en el vacío: Diagrama de dispersión}
+%			
+%			\centering
+%			\setlength{\tabcolsep}{2em} % for the horizontal padding
+%			\renewcommand{\arraystretch}{2}% for the vertical padding
+%			\begin{tabular}{c|c}
+%				1D & 2D\\
+%				$\omega = c \beta$&$\omega = c \sqrt{\beta_x^2 + \beta_y^2}$\\
+%				&\\
+%				\includegraphics[width=0.4\textwidth]{Presentacion/dispersionvacio1d.pdf} & 	\includegraphics[width=0.3\textwidth]{Presentacion/dispersionvacio2d.pdf}\\	
+%			\end{tabular}
+%		
+%			
+%			\begin{block}{}
+%				Si hay números de onda prohibidos, ¿podría haber frecuencias prohibidas?
+%			\end{block}\textbf{}
+%		\end{frame}
 		
 		\begin{frame}
 			\frametitle{Problema de autovalores}
@@ -812,7 +713,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 				\nabla \times \left(\frac{1}{\epsilon_r} \nabla \times \vec{H}(\vec{r}) \right) = \left(\frac{\omega}{c}\right)^2 \vec{H}(\vec{r}).
 			\end{align*}
 			
-			\centering Se puede considerar un operador $\Theta$:
+			\centering Se puede considerar un operador $\hat{\Theta}$:
 			
 			\begin{block}{}
 				\setlength\abovedisplayskip{0pt}
@@ -884,7 +785,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			\begin{block}{}
 				\setlength\abovedisplayskip{0pt}
 				\begin{align*}
-					E(x{\color{red}+d},y,z) = {\color{red}e^{-j \beta d}} E(x,y,z),
+					E(x{\color{red}+p},y,z) = {\color{red}e^{-j \beta p}} E(x,y,z),
 				\end{align*}
 			\end{block}}
 		
@@ -928,7 +829,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 
 \subsection{Diagrama de dispersión de una estructura periódica}
 		\begin{frame}
-			\frametitle{Armónicos espaciales y Celda de Brillouin}
+			\frametitle{Armónicos espaciales y celda de Brillouin}
 			\only<1>{
 				\centering Para una periodicidad en una dirección ($x$) en que el espacio tiene comportamiento periódico, se puede desarrollar la Transformada de Fourier:
 				
@@ -1071,11 +972,6 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 						\includegraphics[width=0.8\textwidth]{Presentacion/diagrama-dispersion-deduccion-2.png}
 				\end{figure}}
 			\only<3>{
-					\begin{figure}[h]
-						\centering
-						\includegraphics[width=0.55\textwidth]{Presentacion/diagrama-dispersion-deduccion.png}
-				\end{figure}}
-			\only<4>{
 				\centering \includegraphics[width=0.67\textwidth]{Fundamentos/Fisica-DiagramaDeFase.pdf}
 			}
 		\end{frame}
@@ -1278,12 +1174,20 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 		}
 		\only<2>{
 			\framesubtitle{Inductancia de puente, $L_b$}
-			\centering Tres acercamientos distintos:
-			\begin{itemize}
-				\item Kim, Schutt-Ainé (2008)): 
+			
+			\begin{columns}[c]
+				\column{0.5\textwidth}
+				\centering Tres acercamientos distintos:
+				\begin{itemize}
+					\item Kim, Schutt-Ainé (2008)): 
 					\begin{align*}
-						L_{b} = 0.2\; \text{nH/mm} \cdot \ln \left(2\pi \frac{h}{w}\right)
+					L_{b} = 0.2\; \text{nH/mm} \cdot \ln \left(2\pi \frac{h}{w}\right)
 					\end{align*}
+				\end{itemize}
+				\column{0.5\textwidth}
+					\includegraphics[width=\textwidth]{Presentacion/circuito-equivalente-celda-YANG-2.pdf} 
+			\end{columns}
+				\begin{itemize}
 				\item C. Paul (2010):
 					\begin{align*}
 						L_{b} = \begin{cases}
@@ -1426,9 +1330,6 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 				\centering \includegraphics[width=\textwidth]{Modelado/s11-comparacion.pdf}
 			}
 			\only<6>{
-				\centering \includegraphics[width=\textwidth]{Modelado/s11-fase.pdf}
-			}
-			\only<7>{
 				\centering \includegraphics[width=\textwidth]{Modelado/dispersion-yang-vs-s21.pdf}
 				
 				\vfill
@@ -1735,7 +1636,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			\only<1,2>{
 				\begin{columns}[c]
 					\column{0.45\textwidth}
-					\only<2>{\centering Plano E}
+					\centering Plano E
 					
 					\centering \includegraphics<1>[width=\textwidth]{Presentacion/microstripSINEBG-planoE.PNG}
 					\centering \includegraphics<2>[width=1.1\textwidth]{Aplicacion/ms-E-35-4-5-sinEBG-S12.pdf}
@@ -1961,5 +1862,125 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 	
 
 	\end{frame}
+
+	\subsubsection{Ondas de superficie sobre plano conductor: Constantes de propagación y atenuación}
+	
+	\begin{frame}
+	\frametitle{Impedancia de superficie y constante de propagación (TM)}
+	
+	\centering Si se asume una impedancia de superficie $Z_s = R_s + j X_s$, al igualar la impedancia de onda a la de superficie:
+	
+	\begin{block}{TM}
+		\setlength\abovedisplayskip{0pt}
+		\begin{align*}
+		\gamma_{x_1} & = \gamma_1 \frac{Z_1}{\eta_0} = \gamma_1 Z_s = \gamma_1 R_s + j \gamma_1 X_s\tikzmark{x1},\\
+		\gamma_z &= \beta_z - j\alpha_z =\sqrt{(\gamma_1^2 - \gamma_{x_1}^2)} = \gamma_1 \sqrt{1+X_s^2\tikzmark{x5} - R_s^2 {\color{red}-} 2jR_s X_s\tikzmark{x3}}.
+		\end{align*}
+	\end{block}
+	
+	\only<1,2,3,4>{
+		\begin{columns}[c]
+			\column{.48\textwidth}
+			\begin{itemize}
+				\item $X_s > 0$: Reactancia inductiva:
+				\begin{itemize}
+					\item $\uparrow \alpha_x$: Decrecimiento exponencial en $x$\tikzmark{x0}.\\
+					\item $\alpha_z > 0$: Decrecimiento exponencial en $z$.\tikzmark{x2}
+					\item $\uparrow \beta_z$, $\downarrow v_p$.\tikzmark{x4}
+				\end{itemize}
+			\end{itemize}
+			
+			\column{.44\textwidth}
+			\begin{itemize}
+				\item Si $R_s X_s$ es pequeño: Baja\tikzmark{x6} atenuación en $z$.
+			\end{itemize}
+			
+			\begin{block}{}
+				\centering
+				Para ondas de superficie TM:
+				\centering
+				$\uparrow X_s \qquad \downarrow R_s$.
+				
+			\end{block}
+		\end{columns}
+	}
+	\only<2>{
+		\begin{tikzpicture}[overlay,remember picture]
+		\draw[very thick, -Stealth]         ($({pic cs:x0})+(1ex,1ex)$)
+		to [bend right, sloped]  ($({pic cs:x1})+(-1ex,-0.5em)$);
+		\end{tikzpicture}
+	}
+	
+	\only<3>{
+		\begin{tikzpicture}[overlay,remember picture]
+		\draw[very thick, -Stealth]         ($({pic cs:x2})+(1ex,1ex)$)
+		to [bend right, sloped]  ($({pic cs:x3})+(-1ex,-0.5em)$);
+		\end{tikzpicture}
+	}
+	
+	\only<4>{
+		\begin{tikzpicture}[overlay,remember picture]
+		\draw[very thick, -Stealth]         ($({pic cs:x4})+(1ex,1ex)$)
+		to [bend left, sloped]  ($({pic cs:x5})+(-3ex,0em)$);
+		\draw[very thick, -Stealth]         ($({pic cs:x6})+(1ex,1ex)$)
+		to [bend right, sloped]  ($({pic cs:x3})+(-1ex,-0.5em)$);
+		\end{tikzpicture}
+	}
+	
+	\only<5>{\begin{block}{TE}
+			\setlength\abovedisplayskip{0pt}
+			\begin{align*}
+			\gamma_{x_1} &= -\frac{\gamma_1}{Z_s} = -\gamma_1 \frac{R_s}{{\color{red}R_s^2+X_s^2}}-j\frac{X_s}{{\color{red}R_s^2+X_s^2}},\\
+			\gamma_z &= \beta_z-j\alpha_z= \sqrt{(\gamma_1^2 - \gamma_{x_1}^2)} = \frac{\gamma_1}{{\color{red}R_s^2+X_s^2}} \sqrt{1+X_s^2 - R_s^2 {\color{red}+} 2jR_s X_s}.
+			\end{align*}
+		\end{block}
+		
+		\begin{textblock*}{40mm}(80mm,30mm)
+			\begin{block}{\centering Condiciones TM}
+				\centering
+				$\uparrow X_s \qquad \downarrow R_s$.
+			\end{block}
+		\end{textblock*}
+		
+		\begin{textblock*}{40mm}(80mm,60mm)
+			\begin{block}{\centering Condiciones TE}
+				\centering
+				$\downarrow X_s \qquad \downarrow R_s$.
+				
+			\end{block}
+		\end{textblock*}
+	}
+	
+	\end{frame}
+
+	\subsubsection{Modelos de antena \textit{microstrip}}
+	
+		\begin{frame}
+			\frametitle{Modelo de líneas de transmisión}
+			\centering Antena rectangular: Dos aperturas radiantes de ancho $W$ y altura $h$, sepadas una distancia $L$ por una línea de trasmisión de impedancia característica conocida $Z_0$.
+			
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.9\textwidth]{intro_electro/circuito-equivalente-antena-ms.pdf}
+			\end{figure}
+			
+			\textit{Fringing}: Considerado mediante el uso de una $L_{eff} = L + 2 \Delta L$.
+		
+		\end{frame}
+
+		\begin{frame}
+			\frametitle{Modelo de cavidades multimodo}
+			\centering Antena rectangular: Cavidad cargada dieléctricamente, limitada por conductores eléctricos en sus caras superior e inferior, y por conductores magnéticos en sus caras laterales.
+			
+			\begin{align*}
+				(f_r)_{nmp} = \frac{1}{2 \pi \sqrt{\mu \epsilon}} \sqrt{\left(\frac{m\pi}{h}\right)^2 + \left(\frac{n\pi}{L}\right)^2 + \left(\frac{p\pi}{W}\right)^2}
+			\end{align*}
+			
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.49\textwidth]{intro_electro/distribucion-campos-microstrip.pdf}
+			\end{figure}
+		
+		\end{frame}
 
 \end{document}
