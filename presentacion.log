@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  4 DEC 2018 23:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  6 DEC 2018 10:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1596,62 +1596,62 @@ LaTeX Info: Redefining \% on input line 128.
 \c@lstlisting=\count352
  (./presentacion.nav) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./presentacion.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-) [2
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ] [3
 
-] [4
-
 ]
-<Figures/Presentacion/microstrip_general.pdf, id=186, 90.67467pt x 46.65253pt>
+<Figures/Presentacion/microstrip_general.pdf, id=163, 90.67467pt x 46.65253pt>
 File: Figures/Presentacion/microstrip_general.pdf Graphic file (type pdf)
 <use Figures/Presentacion/microstrip_general.pdf>
 Package pdftex.def Info: Figures/Presentacion/microstrip_general.pdf  used on i
 nput line 201.
 (pdftex.def)             Requested size: 171.14764pt x 88.0584pt.
 LaTeX Font Info:    Try loading font information for U+msa on input line 201.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 201.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [5
+) [4
 
- <./Figures/Presentacion/microstrip_general.pdf>] [6
+ <./Figures/Presentacion/microstrip_general.pdf>]
+<Figures/Presentacion/arregloMicrostrip.png, id=203, 1270.7475pt x 953.5625pt>
+File: Figures/Presentacion/arregloMicrostrip.png Graphic file (type png)
+<use Figures/Presentacion/arregloMicrostrip.png>
+Package pdftex.def Info: Figures/Presentacion/arregloMicrostrip.png  used on in
+put line 235.
+(pdftex.def)             Requested size: 184.9429pt x 138.77956pt.
+ [5
 
-]
-<Figures/Presentacion/problema_microstrip2.pdf, id=231, 196.77971pt x 151.08748
+ <./Figures/Presentacion/arregloMicrostrip.png>]
+<Figures/Presentacion/problema_microstrip2.pdf, id=215, 196.77971pt x 151.08748
 pt>
 File: Figures/Presentacion/problema_microstrip2.pdf Graphic file (type pdf)
 <use Figures/Presentacion/problema_microstrip2.pdf>
 Package pdftex.def Info: Figures/Presentacion/problema_microstrip2.pdf  used on
- input line 230.
+ input line 235.
 (pdftex.def)             Requested size: 184.9429pt x 142.0084pt.
- [7
+ [6
 
  <./Figures/Presentacion/problema_microstrip2.pdf>]
-<Figures/Aplicacion/foto-escalon-alrededor-antena.pdf, id=288, 167.2418pt x 167
+<Figures/Aplicacion/foto-escalon-alrededor-antena.pdf, id=271, 167.2418pt x 167
 .91232pt>
 File: Figures/Aplicacion/foto-escalon-alrededor-antena.pdf Graphic file (type p
 df)
 <use Figures/Aplicacion/foto-escalon-alrededor-antena.pdf>
 Package pdftex.def Info: Figures/Aplicacion/foto-escalon-alrededor-antena.pdf  
-used on input line 257.
+used on input line 260.
 (pdftex.def)             Requested size: 136.91603pt x 137.46863pt.
-<Figures/Aplicacion/foto-ebg-alrededor-antena.pdf, id=289, 167.01897pt x 167.91
+<Figures/Aplicacion/foto-ebg-alrededor-antena.pdf, id=272, 167.01897pt x 167.91
 232pt>
 File: Figures/Aplicacion/foto-ebg-alrededor-antena.pdf Graphic file (type pdf)
 <use Figures/Aplicacion/foto-ebg-alrededor-antena.pdf>
 Package pdftex.def Info: Figures/Aplicacion/foto-ebg-alrededor-antena.pdf  used
- on input line 257.
+ on input line 260.
 (pdftex.def)             Requested size: 136.91603pt x 137.65054pt.
- [8
+ [7
 
  <./Figures/Aplicacion/foto-escalon-alrededor-antena.pdf> <./Figures/Aplicacion
 /foto-ebg-alrededor-antena.pdf
@@ -1660,150 +1660,1429 @@ pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Aplicacion/foto-ebg-alrededor
 -antena.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
 >]
-<Figures/Presentacion/yagi-uda.JPG, id=314, 722.7pt x 289.08pt>
-File: Figures/Presentacion/yagi-uda.JPG Graphic file (type jpg)
-<use Figures/Presentacion/yagi-uda.JPG>
-Package pdftex.def Info: Figures/Presentacion/yagi-uda.JPG  used on input line 
-277.
-(pdftex.def)             Requested size: 239.60567pt x 95.8422pt.
- [9
-
- <./Figures/Presentacion/yagi-uda.JPG>]
-<Figures/Presentacion/arregloMicrostrip.png, id=323, 1270.7475pt x 953.5625pt>
-File: Figures/Presentacion/arregloMicrostrip.png Graphic file (type png)
-<use Figures/Presentacion/arregloMicrostrip.png>
-Package pdftex.def Info: Figures/Presentacion/arregloMicrostrip.png  used on in
-put line 314.
-(pdftex.def)             Requested size: 136.91603pt x 102.73877pt.
- [10
-
- <./Figures/Presentacion/arregloMicrostrip.png>]
-<Figures/intro_electro/ondas-superficie-3d.pdf, id=339, 359.48975pt x 196.65477
+<Figures/intro_electro/ondas-superficie-3d.pdf, id=296, 359.48975pt x 196.65477
 pt>
 File: Figures/intro_electro/ondas-superficie-3d.pdf Graphic file (type pdf)
 <use Figures/intro_electro/ondas-superficie-3d.pdf>
 Package pdftex.def Info: Figures/intro_electro/ondas-superficie-3d.pdf  used on
- input line 355.
+ input line 323.
 (pdftex.def)             Requested size: 205.37926pt x 112.34943pt.
- [11
+ [8
 
  <./Figures/intro_electro/ondas-superficie-3d.pdf>]
-Overfull \hbox (1.45898pt too wide) detected at line 386
+Overfull \hbox (1.45898pt too wide) detected at line 354
 []
  []
 
-<Figures/intro_electro/onda-superficie-incidencia-brewster.pdf, id=495, 135.153
+<Figures/intro_electro/onda-superficie-incidencia-brewster.pdf, id=452, 135.153
 12pt x 130.0762pt>
 File: Figures/intro_electro/onda-superficie-incidencia-brewster.pdf Graphic fil
 e (type pdf)
 <use Figures/intro_electro/onda-superficie-incidencia-brewster.pdf>
 Package pdftex.def Info: Figures/intro_electro/onda-superficie-incidencia-brews
-ter.pdf  used on input line 386.
+ter.pdf  used on input line 354.
 (pdftex.def)             Requested size: 205.37926pt x 197.68016pt.
-[12
+[9
 
- <./Figures/intro_electro/onda-superficie-incidencia-brewster.pdf>] [13
+ <./Figures/intro_electro/onda-superficie-incidencia-brewster.pdf>] [10
 
 ]
-<Figures/Presentacion/plot-beta-reactancia-TM.pdf, id=650, 466.23247pt x 342.38
+<Figures/Presentacion/plot-beta-reactancia-TM.pdf, id=608, 466.23247pt x 342.38
 762pt>
 File: Figures/Presentacion/plot-beta-reactancia-TM.pdf Graphic file (type pdf)
 <use Figures/Presentacion/plot-beta-reactancia-TM.pdf>
 Package pdftex.def Info: Figures/Presentacion/plot-beta-reactancia-TM.pdf  used
- on input line 419.
+ on input line 387.
 (pdftex.def)             Requested size: 332.02686pt x 243.83354pt.
 
-Overfull \vbox (7.42015pt too high) detected at line 419
+Overfull \vbox (7.42015pt too high) detected at line 387
  []
 
-[14
+[11
 
  <./Figures/Presentacion/plot-beta-reactancia-TM.pdf>]
-<Figures/Presentacion/plot-beta-reactancia-TE.pdf, id=795, 457.34398pt x 338.56
+<Figures/Presentacion/plot-beta-reactancia-TE.pdf, id=753, 457.34398pt x 338.56
 332pt>
 File: Figures/Presentacion/plot-beta-reactancia-TE.pdf Graphic file (type pdf)
 <use Figures/Presentacion/plot-beta-reactancia-TE.pdf>
 Package pdftex.def Info: Figures/Presentacion/plot-beta-reactancia-TE.pdf  used
- on input line 419.
+ on input line 387.
 (pdftex.def)             Requested size: 332.02686pt x 245.80598pt.
 
-Overfull \vbox (9.3926pt too high) detected at line 419
+Overfull \vbox (9.3926pt too high) detected at line 387
  []
 
-[15
+[12
 
- <./Figures/Presentacion/plot-beta-reactancia-TE.pdf>] [16
+ <./Figures/Presentacion/plot-beta-reactancia-TE.pdf>] [13
 
 ]
-<Figures/intro_electro/incidencia-coated-conductor.pdf, id=933, 202.10393pt x 5
+<Figures/intro_electro/incidencia-coated-conductor.pdf, id=892, 202.10393pt x 5
 5.99739pt>
 File: Figures/intro_electro/incidencia-coated-conductor.pdf Graphic file (type 
 pdf)
 <use Figures/intro_electro/incidencia-coated-conductor.pdf>
 Package pdftex.def Info: Figures/intro_electro/incidencia-coated-conductor.pdf 
- used on input line 470.
+ used on input line 438.
 (pdftex.def)             Requested size: 342.2953pt x 94.8448pt.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 470.
+LaTeX Font Warning: Command \small invalid in math mode on input line 438.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 470.
+LaTeX Font Warning: Command \small invalid in math mode on input line 438.
 
 
-Overfull \hbox (4.18448pt too wide) detected at line 470
+Overfull \hbox (4.18448pt too wide) detected at line 438
 []
  []
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 470.
+LaTeX Font Warning: Command \small invalid in math mode on input line 438.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 470.
+LaTeX Font Warning: Command \small invalid in math mode on input line 438.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 470.
+LaTeX Font Warning: Command \small invalid in math mode on input line 438.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 470.
+LaTeX Font Warning: Command \small invalid in math mode on input line 438.
 
 
-Overfull \hbox (4.18448pt too wide) detected at line 470
+Overfull \hbox (4.18448pt too wide) detected at line 438
 []
+ []
+
+[14
+
+ <./Figures/intro_electro/incidencia-coated-conductor.pdf>]
+<Figures/intro_electro/plot-zstm-funciont2.pdf, id=945, 450.89719pt x 302.5081p
+t>
+File: Figures/intro_electro/plot-zstm-funciont2.pdf Graphic file (type pdf)
+<use Figures/intro_electro/plot-zstm-funciont2.pdf>
+Package pdftex.def Info: Figures/intro_electro/plot-zstm-funciont2.pdf  used on
+ input line 458.
+(pdftex.def)             Requested size: 174.56871pt x 117.11913pt.
+<Figures/intro_electro/plot-zstm-funcioner2.pdf, id=946, 450.51251pt x 290.2088
+2pt>
+File: Figures/intro_electro/plot-zstm-funcioner2.pdf Graphic file (type pdf)
+<use Figures/intro_electro/plot-zstm-funcioner2.pdf>
+Package pdftex.def Info: Figures/intro_electro/plot-zstm-funcioner2.pdf  used o
+n input line 458.
+(pdftex.def)             Requested size: 174.56871pt x 112.45474pt.
+ [15
+
+ <./Figures/intro_electro/plot-zstm-funciont2.pdf> <./Figures/intro_electro/plo
+t-zstm-funcioner2.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/intro_electro/plot-zstm-funci
+oner2.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+>] [16
+
+]
+<Figures/Presentacion/problema_microstrip.pdf, id=1121, 196.77971pt x 151.08748
+pt>
+File: Figures/Presentacion/problema_microstrip.pdf Graphic file (type pdf)
+<use Figures/Presentacion/problema_microstrip.pdf>
+Package pdftex.def Info: Figures/Presentacion/problema_microstrip.pdf  used on 
+input line 512.
+(pdftex.def)             Requested size: 171.14764pt x 131.41505pt.
+
+Overfull \vbox (26.82442pt too high) detected at line 512
  []
 
 [17
 
- <./Figures/intro_electro/incidencia-coated-conductor.pdf>]
-<Figures/intro_electro/TM-tan-implicito.pdf, id=986, 404.89871pt x 190.95416pt>
+ <./Figures/Presentacion/problema_microstrip.pdf>]
+<Figures/intro_electro/pozar-acoplamiento.pdf, id=1187, 260.73488pt x 187.25677
+pt>
+File: Figures/intro_electro/pozar-acoplamiento.pdf Graphic file (type pdf)
+<use Figures/intro_electro/pozar-acoplamiento.pdf>
+Package pdftex.def Info: Figures/intro_electro/pozar-acoplamiento.pdf  used on 
+input line 522.
+(pdftex.def)             Requested size: 290.9531pt x 208.96896pt.
 
+Overfull \vbox (2.96498pt too high) detected at line 522
+ []
+
+[18
+
+ <./Figures/intro_electro/pozar-acoplamiento.pdf>] (./presentacion.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+Overfull \vbox (25.80045pt too high) detected at line 534
+ []
+
+[19
+
+]
+<Figures/Presentacion/ebg-metamateriales.pdf, id=1255, 348.48927pt x 331.2972pt
+>
+File: Figures/Presentacion/ebg-metamateriales.pdf Graphic file (type pdf)
+<use Figures/Presentacion/ebg-metamateriales.pdf>
+Package pdftex.def Info: Figures/Presentacion/ebg-metamateriales.pdf  used on i
+nput line 554.
+(pdftex.def)             Requested size: 141.71135pt x 134.72058pt.
+
+Overfull \vbox (0.60187pt too high) detected at line 554
+ []
+
+[20
+
+ <./Figures/Presentacion/ebg-metamateriales.pdf>]
+<Figures/Presentacion/patenteMarconi.pdf, id=1277, 1100.83438pt x 941.01563pt>
+File: Figures/Presentacion/patenteMarconi.pdf Graphic file (type pdf)
+<use Figures/Presentacion/patenteMarconi.pdf>
+Package pdftex.def Info: Figures/Presentacion/patenteMarconi.pdf  used on input
+ line 618.
+(pdftex.def)             Requested size: 225.91557pt x 193.11047pt.
+
+Overfull \hbox (37.65211pt too wide) in paragraph at lines 618--618
+ [] 
+ []
+
+
+Overfull \vbox (1.7065pt too high) detected at line 618
+ []
+
+[21
+
+ <./Figures/Presentacion/patenteMarconi.pdf>]
+<Figures/Presentacion/3d-cristales-fotonicos.pdf, id=1295, 516.68509pt x 239.65
+775pt>
+File: Figures/Presentacion/3d-cristales-fotonicos.pdf Graphic file (type pdf)
+<use Figures/Presentacion/3d-cristales-fotonicos.pdf>
+Package pdftex.def Info: Figures/Presentacion/3d-cristales-fotonicos.pdf  used 
+on input line 618.
+(pdftex.def)             Requested size: 342.2953pt x 158.77432pt.
+
+Overfull \vbox (0.69952pt too high) detected at line 618
+ []
+
+[22
+
+ <./Figures/Presentacion/3d-cristales-fotonicos.pdf>]
+<Figures/Presentacion/Photonic-crystal-fiber-from-NRL.jpg, id=1310, 849.1725pt 
+x 477.28313pt>
+File: Figures/Presentacion/Photonic-crystal-fiber-from-NRL.jpg Graphic file (ty
+pe jpg)
+<use Figures/Presentacion/Photonic-crystal-fiber-from-NRL.jpg>
+Package pdftex.def Info: Figures/Presentacion/Photonic-crystal-fiber-from-NRL.j
+pg  used on input line 618.
+(pdftex.def)             Requested size: 273.83728pt x 153.91351pt.
+ [23
+
+ <./Figures/Presentacion/Photonic-crystal-fiber-from-NRL.jpg>]
+<Figures/Fundamentos/superficie-coarrugada.png, id=1319, 176.15813pt x 162.6075
+pt>
+File: Figures/Fundamentos/superficie-coarrugada.png Graphic file (type png)
+<use Figures/Fundamentos/superficie-coarrugada.png>
+Package pdftex.def Info: Figures/Fundamentos/superficie-coarrugada.png  used on
+ input line 618.
+(pdftex.def)             Requested size: 139.65549pt x 128.91257pt.
+<Figures/Fundamentos/sievenpiper.png, id=1321, 264.23718pt x 164.86594pt>
+File: Figures/Fundamentos/sievenpiper.png Graphic file (type png)
+<use Figures/Fundamentos/sievenpiper.png>
+Package pdftex.def Info: Figures/Fundamentos/sievenpiper.png  used on input lin
+e 618.
+(pdftex.def)             Requested size: 174.56871pt x 108.9175pt.
+ [24
+
+ <./Figures/Fundamentos/superficie-coarrugada.png> <./Figures/Fundamentos/sieve
+npiper.png>]
+<Figures/Fundamentos/bragg1.pdf, id=1332, 173.80682pt x 33.46681pt>
+File: Figures/Fundamentos/bragg1.pdf Graphic file (type pdf)
+<use Figures/Fundamentos/bragg1.pdf>
+Package pdftex.def Info: Figures/Fundamentos/bragg1.pdf  used on input line 644
+.
+(pdftex.def)             Requested size: 205.37926pt x 39.54819pt.
+ [25
+
+ <./Figures/Fundamentos/bragg1.pdf>] [26
+
+] [27
+
+]
+<Figures/Fundamentos/bloch.pdf, id=1398, 722.7pt x 505.89pt>
+File: Figures/Fundamentos/bloch.pdf Graphic file (type pdf)
+<use Figures/Fundamentos/bloch.pdf>
+Package pdftex.def Info: Figures/Fundamentos/bloch.pdf  used on input line 771.
+
+(pdftex.def)             Requested size: 205.37926pt x 143.7633pt.
+<Figures/Fundamentos/periodico-geometria.pdf, id=1399, 167.21216pt x 101.35222p
+t>
+File: Figures/Fundamentos/periodico-geometria.pdf Graphic file (type pdf)
+<use Figures/Fundamentos/periodico-geometria.pdf>
+Package pdftex.def Info: Figures/Fundamentos/periodico-geometria.pdf  used on i
+nput line 771.
+(pdftex.def)             Requested size: 119.80544pt x 72.61783pt.
+ [28
+
+ <./Figures/Fundamentos/bloch.pdf> <./Figures/Fundamentos/periodico-geometria.p
+df
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Fundamentos/periodico-geometr
+ia.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+
+>]
+<Figures/Fundamentos/bloch-ortogonal.pdf, id=1669, 475.54117pt x 150.1025pt>
+File: Figures/Fundamentos/bloch-ortogonal.pdf Graphic file (type pdf)
+<use Figures/Fundamentos/bloch-ortogonal.pdf>
+Package pdftex.def Info: Figures/Fundamentos/bloch-ortogonal.pdf  used on input
+ line 771.
+(pdftex.def)             Requested size: 177.99255pt x 56.18292pt.
+<Figures/Presentacion/bloch-2d-1.png, id=1670, 900.36375pt x 713.66624pt>
+File: Figures/Presentacion/bloch-2d-1.png Graphic file (type png)
+<use Figures/Presentacion/bloch-2d-1.png>
+Package pdftex.def Info: Figures/Presentacion/bloch-2d-1.png  used on input lin
+e 771.
+(pdftex.def)             Requested size: 222.48985pt x 176.34708pt.
+<Figures/Presentacion/bloch-2d-2.png, id=1671, 389.455pt x 388.45125pt>
+File: Figures/Presentacion/bloch-2d-2.png Graphic file (type png)
+<use Figures/Presentacion/bloch-2d-2.png>
+Package pdftex.def Info: Figures/Presentacion/bloch-2d-2.png  used on input lin
+e 771.
+(pdftex.def)             Requested size: 107.82416pt x 107.54459pt.
+<Figures/Presentacion/bloch-2d-3.png, id=1672, 392.46625pt x 391.4625pt>
+File: Figures/Presentacion/bloch-2d-3.png Graphic file (type png)
+<use Figures/Presentacion/bloch-2d-3.png>
+Package pdftex.def Info: Figures/Presentacion/bloch-2d-3.png  used on input lin
+e 771.
+(pdftex.def)             Requested size: 107.82416pt x 107.54797pt.
+ [29
+
+ <./Figures/Fundamentos/bloch-ortogonal.pdf> <./Figures/Presentacion/bloch-2d-1
+.png> <./Figures/Presentacion/bloch-2d-2.png> <./Figures/Presentacion/bloch-2d-
+3.png>] [30
+
+]
+<Figures/Presentacion/brillioun-1d.pdf, id=1714, 640.98401pt x 133.79951pt>
+File: Figures/Presentacion/brillioun-1d.pdf Graphic file (type pdf)
+<use Figures/Presentacion/brillioun-1d.pdf>
+Package pdftex.def Info: Figures/Presentacion/brillioun-1d.pdf  used on input l
+ine 862.
+(pdftex.def)             Requested size: 256.72147pt x 53.58826pt.
+
+Overfull \vbox (8.34653pt too high) detected at line 862
+ []
+
+[31
+
+ <./Figures/Presentacion/brillioun-1d.pdf>]
+<Figures/Presentacion/dispersion-ejemplo-1.pdf, id=1748, 640.98401pt x 142.9184
+9pt>
+File: Figures/Presentacion/dispersion-ejemplo-1.pdf Graphic file (type pdf)
+<use Figures/Presentacion/dispersion-ejemplo-1.pdf>
+Package pdftex.def Info: Figures/Presentacion/dispersion-ejemplo-1.pdf  used on
+ input line 862.
+(pdftex.def)             Requested size: 308.06367pt x 68.68948pt.
+ [32
+
+ <./Figures/Presentacion/dispersion-ejemplo-1.pdf>]
+File: Figures/Presentacion/dispersion-ejemplo-1.pdf Graphic file (type pdf)
+<use Figures/Presentacion/dispersion-ejemplo-1.pdf>
+Package pdftex.def Info: Figures/Presentacion/dispersion-ejemplo-1.pdf  used on
+ input line 862.
+(pdftex.def)             Requested size: 308.06367pt x 68.68948pt.
+<Figures/Presentacion/dispersion-ejemplo-2.pdf, id=1772, 649.429pt x 128.46773p
+t>
+File: Figures/Presentacion/dispersion-ejemplo-2.pdf Graphic file (type pdf)
+<use Figures/Presentacion/dispersion-ejemplo-2.pdf>
+Package pdftex.def Info: Figures/Presentacion/dispersion-ejemplo-2.pdf  used on
+ input line 862.
+(pdftex.def)             Requested size: 308.06367pt x 60.94046pt.
+ [33
+
+ <./Figures/Presentacion/dispersion-ejemplo-2.pdf>]
+File: Figures/Presentacion/dispersion-ejemplo-1.pdf Graphic file (type pdf)
+<use Figures/Presentacion/dispersion-ejemplo-1.pdf>
+Package pdftex.def Info: Figures/Presentacion/dispersion-ejemplo-1.pdf  used on
+ input line 862.
+(pdftex.def)             Requested size: 308.06367pt x 68.68948pt.
+<Figures/Presentacion/dispersion-ejemplo-3.pdf, id=1931, 649.429pt x 128.46773p
+t>
+File: Figures/Presentacion/dispersion-ejemplo-3.pdf Graphic file (type pdf)
+<use Figures/Presentacion/dispersion-ejemplo-3.pdf>
+Package pdftex.def Info: Figures/Presentacion/dispersion-ejemplo-3.pdf  used on
+ input line 862.
+(pdftex.def)             Requested size: 308.06367pt x 60.94046pt.
+
+[34
+
+ <./Figures/Presentacion/dispersion-ejemplo-3.pdf>]
+<Figures/Presentacion/dispersion-ejemplo-4.pdf, id=2093, 650.26282pt x 148.6552
+1pt>
+File: Figures/Presentacion/dispersion-ejemplo-4.pdf Graphic file (type pdf)
+<use Figures/Presentacion/dispersion-ejemplo-4.pdf>
+Package pdftex.def Info: Figures/Presentacion/dispersion-ejemplo-4.pdf  used on
+ input line 862.
+(pdftex.def)             Requested size: 308.06367pt x 70.42595pt.
+ [35
+
+ <./Figures/Presentacion/dispersion-ejemplo-4.pdf>]
+File: Figures/Presentacion/dispersion-ejemplo-4.pdf Graphic file (type pdf)
+<use Figures/Presentacion/dispersion-ejemplo-4.pdf>
+Package pdftex.def Info: Figures/Presentacion/dispersion-ejemplo-4.pdf  used on
+ input line 862.
+(pdftex.def)             Requested size: 308.06367pt x 70.42595pt.
+<Figures/Presentacion/dispersion-ejemplo-5.pdf, id=2253, 651.88306pt x 148.7951
+8pt>
+File: Figures/Presentacion/dispersion-ejemplo-5.pdf Graphic file (type pdf)
+<use Figures/Presentacion/dispersion-ejemplo-5.pdf>
+Package pdftex.def Info: Figures/Presentacion/dispersion-ejemplo-5.pdf  used on
+ input line 862.
+(pdftex.def)             Requested size: 308.06367pt x 70.31744pt.
+ [36
+
+ <./Figures/Presentacion/dispersion-ejemplo-5.pdf>]
+<Figures/Fundamentos/direct-and-reciprocal-triangle-lattice.pdf, id=2403, 236.3
+9717pt x 276.30121pt>
+File: Figures/Fundamentos/direct-and-reciprocal-triangle-lattice.pdf Graphic fi
+le (type pdf)
+<use Figures/Fundamentos/direct-and-reciprocal-triangle-lattice.pdf>
+Package pdftex.def Info: Figures/Fundamentos/direct-and-reciprocal-triangle-lat
+tice.pdf  used on input line 881.
+(pdftex.def)             Requested size: 169.43596pt x 198.0387pt.
+<Figures/Fundamentos/direct-and-reciprocal-triangle-lattice-zoom2.pdf, id=2404,
+ 257.11638pt x 276.30121pt>
+File: Figures/Fundamentos/direct-and-reciprocal-triangle-lattice-zoom2.pdf Grap
+hic file (type pdf)
+<use Figures/Fundamentos/direct-and-reciprocal-triangle-lattice-zoom2.pdf>
+Package pdftex.def Info: Figures/Fundamentos/direct-and-reciprocal-triangle-lat
+tice-zoom2.pdf  used on input line 881.
+(pdftex.def)             Requested size: 169.43596pt x 182.08109pt.
+
+Overfull \hbox (12.33156pt too wide) detected at line 881
+[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
+ []
+
+[37
+
+ <./Figures/Fundamentos/direct-and-reciprocal-triangle-lattice.pdf> <./Figures/
+Fundamentos/direct-and-reciprocal-triangle-lattice-zoom2.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Fundamentos/direct-and-recipr
+ocal-triangle-lattice-zoom2.pdf): PDF inclusion: multiple pdfs with page group 
+included in a single page
+>]
+<Figures/Fundamentos/direct-and-reciprocal-triangle-lattice-zoom4.pdf, id=2478,
+ 241.8151pt x 276.30191pt>
+File: Figures/Fundamentos/direct-and-reciprocal-triangle-lattice-zoom4.pdf Grap
+hic file (type pdf)
+<use Figures/Fundamentos/direct-and-reciprocal-triangle-lattice-zoom4.pdf>
+Package pdftex.def Info: Figures/Fundamentos/direct-and-reciprocal-triangle-lat
+tice-zoom4.pdf  used on input line 897.
+(pdftex.def)             Requested size: 169.43596pt x 193.59973pt.
+<Figures/Fundamentos/direct-and-reciprocal-triangle-lattice-zoom5.pdf, id=2479,
+ 257.11638pt x 276.30121pt>
+File: Figures/Fundamentos/direct-and-reciprocal-triangle-lattice-zoom5.pdf Grap
+hic file (type pdf)
+<use Figures/Fundamentos/direct-and-reciprocal-triangle-lattice-zoom5.pdf>
+Package pdftex.def Info: Figures/Fundamentos/direct-and-reciprocal-triangle-lat
+tice-zoom5.pdf  used on input line 897.
+(pdftex.def)             Requested size: 150.61133pt x 161.85268pt.
+
+Overfull \hbox (12.33156pt too wide) detected at line 897
+[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
+ []
+
+[38
+
+ <./Figures/Fundamentos/direct-and-reciprocal-triangle-lattice-zoom4.pdf> <./Fi
+gures/Fundamentos/direct-and-reciprocal-triangle-lattice-zoom5.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Fundamentos/direct-and-recipr
+ocal-triangle-lattice-zoom5.pdf): PDF inclusion: multiple pdfs with page group 
+included in a single page
+>]
+<Figures/Fundamentos/rectangulo-cuadradado.pdf, id=2561, 267.55182pt x 273.2045
+6pt>
+File: Figures/Fundamentos/rectangulo-cuadradado.pdf Graphic file (type pdf)
+<use Figures/Fundamentos/rectangulo-cuadradado.pdf>
+Package pdftex.def Info: Figures/Fundamentos/rectangulo-cuadradado.pdf  used on
+ input line 905.
+(pdftex.def)             Requested size: 205.37926pt x 209.71782pt.
+
+Overfull \vbox (3.71384pt too high) detected at line 905
+ []
+
+[39
+
+ <./Figures/Fundamentos/rectangulo-cuadradado.pdf>]
+<Figures/Presentacion/diagrama-dispersion-deduccion-1.pdf, id=2767, 349.26877pt
+ x 214.22054pt>
+File: Figures/Presentacion/diagrama-dispersion-deduccion-1.pdf Graphic file (ty
+pe pdf)
+<use Figures/Presentacion/diagrama-dispersion-deduccion-1.pdf>
+Package pdftex.def Info: Figures/Presentacion/diagrama-dispersion-deduccion-1.p
+df  used on input line 920.
+(pdftex.def)             Requested size: 273.83728pt x 167.96082pt.
+ [40
+
+ <./Figures/Presentacion/diagrama-dispersion-deduccion-1.pdf>]
+<Figures/Presentacion/diagrama-dispersion-deduccion-2.png, id=2803, 334.29156pt
+ x 212.35735pt>
+File: Figures/Presentacion/diagrama-dispersion-deduccion-2.png Graphic file (ty
+pe png)
+<use Figures/Presentacion/diagrama-dispersion-deduccion-2.png>
+Package pdftex.def Info: Figures/Presentacion/diagrama-dispersion-deduccion-2.p
+ng  used on input line 920.
+(pdftex.def)             Requested size: 273.83728pt x 173.95592pt.
+ [41
+
+ <./Figures/Presentacion/diagrama-dispersion-deduccion-2.png>]
+<Figures/Fundamentos/Fisica-DiagramaDeFase.pdf, id=2813, 526.37596pt x 569.0551
+3pt>
+File: Figures/Fundamentos/Fisica-DiagramaDeFase.pdf Graphic file (type pdf)
+<use Figures/Fundamentos/Fisica-DiagramaDeFase.pdf>
+Package pdftex.def Info: Figures/Fundamentos/Fisica-DiagramaDeFase.pdf  used on
+ input line 920.
+(pdftex.def)             Requested size: 229.33722pt x 247.9364pt.
+ [42
+
+ <./Figures/Fundamentos/Fisica-DiagramaDeFase.pdf>]
+<Figures/Fundamentos/plot-cono-luz.pdf, id=3527, 505.89pt x 361.35pt>
+File: Figures/Fundamentos/plot-cono-luz.pdf Graphic file (type pdf)
+<use Figures/Fundamentos/plot-cono-luz.pdf>
+Package pdftex.def Info: Figures/Fundamentos/plot-cono-luz.pdf  used on input l
+ine 936.
+(pdftex.def)             Requested size: 171.14764pt x 122.25085pt.
+<Figures/Fundamentos/diag-dispersion-vacio-2d.pdf, id=3528, 505.89pt x 361.35pt
+>
+File: Figures/Fundamentos/diag-dispersion-vacio-2d.pdf Graphic file (type pdf)
+<use Figures/Fundamentos/diag-dispersion-vacio-2d.pdf>
+Package pdftex.def Info: Figures/Fundamentos/diag-dispersion-vacio-2d.pdf  used
+ on input line 936.
+(pdftex.def)             Requested size: 188.26346pt x 134.47484pt.
+ [43
+
+ <./Figures/Fundamentos/plot-cono-luz.pdf> <./Figures/Fundamentos/diag-dispersi
+on-vacio-2d.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Fundamentos/diag-dispersion-v
+acio-2d.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>] (./presentacion.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [44
+
+]
+Overfull \hbox (9.758pt too wide) in paragraph at lines 968--968
+ []|\OT1/cmss/bx/n/10.95 Dom| 
+ []
+
+[45
+
+] [46
+
+]
+<Figures/Modelado/esquema-simulacion-periodica.pdf, id=3611, 367.18626pt x 434.
+6648pt>
+File: Figures/Modelado/esquema-simulacion-periodica.pdf Graphic file (type pdf)
+
+<use Figures/Modelado/esquema-simulacion-periodica.pdf>
+Package pdftex.def Info: Figures/Modelado/esquema-simulacion-periodica.pdf  use
+d on input line 988.
+(pdftex.def)             Requested size: 178.8497pt x 211.72081pt.
+ [47
+
+ <./Figures/Modelado/esquema-simulacion-periodica.pdf>]
+<Figures/Modelado/orlandi-celda.pdf, id=3669, 426.34587pt x 350.6461pt>
+File: Figures/Modelado/orlandi-celda.pdf Graphic file (type pdf)
+<use Figures/Modelado/orlandi-celda.pdf>
+Package pdftex.def Info: Figures/Modelado/orlandi-celda.pdf  used on input line
+ 1022.
+(pdftex.def)             Requested size: 171.14764pt x 140.75888pt.
+ [48
+
+ <./Figures/Modelado/orlandi-celda.pdf>]
+<Figures/Modelado/orlandi-modo1-Enorma-Etangencial.pdf, id=3690, 1775.26971pt x
+ 842.61983pt>
+File: Figures/Modelado/orlandi-modo1-Enorma-Etangencial.pdf Graphic file (type 
+pdf)
+<use Figures/Modelado/orlandi-modo1-Enorma-Etangencial.pdf>
+Package pdftex.def Info: Figures/Modelado/orlandi-modo1-Enorma-Etangencial.pdf 
+ used on input line 1022.
+(pdftex.def)             Requested size: 342.2953pt x 162.46518pt.
+<Figures/Presentacion/modos-de-propagacion-ilustracion.pdf, id=3691, 1152.14658
+pt x 318.88094pt>
+File: Figures/Presentacion/modos-de-propagacion-ilustracion.pdf Graphic file (t
+ype pdf)
+<use Figures/Presentacion/modos-de-propagacion-ilustracion.pdf>
+Package pdftex.def Info: Figures/Presentacion/modos-de-propagacion-ilustracion.
+pdf  used on input line 1022.
+(pdftex.def)             Requested size: 188.26346pt x 52.10217pt.
+ [49
+
+ <./Figures/Modelado/orlandi-modo1-Enorma-Etangencial.pdf> <./Figures/Presentac
+ion/modos-de-propagacion-ilustracion.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Presentacion/modos-de-propaga
+cion-ilustracion.pdf): PDF inclusion: multiple pdfs with page group included in
+ a single page
+>]
+<Figures/Modelado/orlandi-modo1-EH-fases.pdf, id=3793, 1775.61072pt x 837.83063
+pt>
+File: Figures/Modelado/orlandi-modo1-EH-fases.pdf Graphic file (type pdf)
+<use Figures/Modelado/orlandi-modo1-EH-fases.pdf>
+Package pdftex.def Info: Figures/Modelado/orlandi-modo1-EH-fases.pdf  used on i
+nput line 1022.
+(pdftex.def)             Requested size: 342.2953pt x 161.50342pt.
+File: Figures/Presentacion/modos-de-propagacion-ilustracion.pdf Graphic file (t
+ype pdf)
+<use Figures/Presentacion/modos-de-propagacion-ilustracion.pdf>
+Package pdftex.def Info: Figures/Presentacion/modos-de-propagacion-ilustracion.
+pdf  used on input line 1022.
+(pdftex.def)             Requested size: 188.26346pt x 52.10217pt.
+ [50
+
+ <./Figures/Modelado/orlandi-modo1-EH-fases.pdf>]
+<Figures/Presentacion/diagdisp-1.pdf, id=3856, 2419.49503pt x 1154.83937pt>
+File: Figures/Presentacion/diagdisp-1.pdf Graphic file (type pdf)
+<use Figures/Presentacion/diagdisp-1.pdf>
+Package pdftex.def Info: Figures/Presentacion/diagdisp-1.pdf  used on input lin
+e 1059.
+(pdftex.def)             Requested size: 342.2953pt x 163.36806pt.
+ [51
+
+ <./Figures/Presentacion/diagdisp-1.pdf>]
+<Figures/Presentacion/diagdisp-2.pdf, id=3933, 2419.49503pt x 1154.83937pt>
+File: Figures/Presentacion/diagdisp-2.pdf Graphic file (type pdf)
+<use Figures/Presentacion/diagdisp-2.pdf>
+Package pdftex.def Info: Figures/Presentacion/diagdisp-2.pdf  used on input lin
+e 1059.
+(pdftex.def)             Requested size: 342.2953pt x 163.36806pt.
+ [52
+
+ <./Figures/Presentacion/diagdisp-2.pdf>]
+<Figures/Presentacion/diagdisp-3.pdf, id=4022, 2440.86pt x 1234.80241pt>
+File: Figures/Presentacion/diagdisp-3.pdf Graphic file (type pdf)
+<use Figures/Presentacion/diagdisp-3.pdf>
+Package pdftex.def Info: Figures/Presentacion/diagdisp-3.pdf  used on input lin
+e 1059.
+(pdftex.def)             Requested size: 342.2953pt x 173.15378pt.
+ [53
+
+ <./Figures/Presentacion/diagdisp-3.pdf>]
+<Figures/Presentacion/diagdisp-4.pdf, id=4381, 2440.86pt x 1159.12785pt>
+File: Figures/Presentacion/diagdisp-4.pdf Graphic file (type pdf)
+<use Figures/Presentacion/diagdisp-4.pdf>
+Package pdftex.def Info: Figures/Presentacion/diagdisp-4.pdf  used on input lin
+e 1059.
+(pdftex.def)             Requested size: 342.2953pt x 162.5421pt.
+ [54
+
+ <./Figures/Presentacion/diagdisp-4.pdf>]
+<Figures/Modelado/Orlandi-DeltaAnchoConector-comparacion.pdf, id=4735, 3065.124
+62pt x 977.77289pt>
+File: Figures/Modelado/Orlandi-DeltaAnchoConector-comparacion.pdf Graphic file 
+(type pdf)
+<use Figures/Modelado/Orlandi-DeltaAnchoConector-comparacion.pdf>
+Package pdftex.def Info: Figures/Modelado/Orlandi-DeltaAnchoConector-comparacio
+n.pdf  used on input line 1076.
+(pdftex.def)             Requested size: 342.2953pt x 109.18158pt.
+
+[55
+
+ <./Figures/Modelado/Orlandi-DeltaAnchoConector-comparacion.pdf>]
+<Figures/Modelado/Orlandi-DeltaSeparacionParches-DeltaTamanioCelda-ParcheFijo-C
+omparacion.pdf, id=5137, 3249.92049pt x 1064.80452pt>
+File: Figures/Modelado/Orlandi-DeltaSeparacionParches-DeltaTamanioCelda-ParcheF
+ijo-Comparacion.pdf Graphic file (type pdf)
+<use Figures/Modelado/Orlandi-DeltaSeparacionParches-DeltaTamanioCelda-ParcheFi
+jo-Comparacion.pdf>
+Package pdftex.def Info: Figures/Modelado/Orlandi-DeltaSeparacionParches-DeltaT
+amanioCelda-ParcheFijo-Comparacion.pdf  used on input line 1076.
+(pdftex.def)             Requested size: 342.2953pt x 112.14084pt.
+ [56
+
+ <./Figures/Modelado/Orlandi-DeltaSeparacionParches-DeltaTamanioCelda-ParcheFij
+o-Comparacion.pdf>]
+<Figures/Modelado/Orlandi-DeltaTamanioCelda-RelacionParcheFija-Comparacion.pdf,
+ id=5514, 3030.18622pt x 1829.20891pt>
+File: Figures/Modelado/Orlandi-DeltaTamanioCelda-RelacionParcheFija-Comparacion
+.pdf Graphic file (type pdf)
+<use Figures/Modelado/Orlandi-DeltaTamanioCelda-RelacionParcheFija-Comparacion.
+pdf>
+Package pdftex.def Info: Figures/Modelado/Orlandi-DeltaTamanioCelda-RelacionPar
+cheFija-Comparacion.pdf  used on input line 1076.
+(pdftex.def)             Requested size: 342.2953pt x 206.62842pt.
+
+Overfull \vbox (14.22444pt too high) detected at line 1076
+ []
+
+[57
+
+ <./Figures/Modelado/Orlandi-DeltaTamanioCelda-RelacionParcheFija-Comparacion.p
+df>]
+<Figures/Modelado/Orlandi-3direcciones-anchoSustrato-Comparacion.pdf, id=6715, 
+3111.56471pt x 2031.39555pt>
+File: Figures/Modelado/Orlandi-3direcciones-anchoSustrato-Comparacion.pdf Graph
+ic file (type pdf)
+<use Figures/Modelado/Orlandi-3direcciones-anchoSustrato-Comparacion.pdf>
+Package pdftex.def Info: Figures/Modelado/Orlandi-3direcciones-anchoSustrato-Co
+mparacion.pdf  used on input line 1076.
+(pdftex.def)             Requested size: 321.7584pt x 210.03268pt.
+
+Overfull \vbox (4.0287pt too high) detected at line 1076
+ []
+
+[58
+
+ <./Figures/Modelado/Orlandi-3direcciones-anchoSustrato-Comparacion.pdf>]
+<Figures/Modelado/yang-celda.pdf, id=7437, 419.33488pt x 359.91458pt>
+File: Figures/Modelado/yang-celda.pdf Graphic file (type pdf)
+<use Figures/Modelado/yang-celda.pdf>
+Package pdftex.def Info: Figures/Modelado/yang-celda.pdf  used on input line 10
+87.
+(pdftex.def)             Requested size: 171.14764pt x 146.89592pt.
+<Figures/Presentacion/yang-modo1-Enorma-Etangencial.pdf, id=7438, 847.2428pt x 
+753.73347pt>
+File: Figures/Presentacion/yang-modo1-Enorma-Etangencial.pdf Graphic file (type
+ pdf)
+<use Figures/Presentacion/yang-modo1-Enorma-Etangencial.pdf>
+Package pdftex.def Info: Figures/Presentacion/yang-modo1-Enorma-Etangencial.pdf
+  used on input line 1087.
+(pdftex.def)             Requested size: 171.14764pt x 152.25066pt.
+
+[59
+
+ <./Figures/Modelado/yang-celda.pdf> <./Figures/Presentacion/yang-modo1-Enorma-
+Etangencial.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Presentacion/yang-modo1-Enorm
+a-Etangencial.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+>]
+<Figures/Fundamentos/circuito-equivalente-celda-YANG-2.pdf, id=7500, 222.41504p
+t x 117.62071pt>
+File: Figures/Fundamentos/circuito-equivalente-celda-YANG-2.pdf Graphic file (t
+ype pdf)
+<use Figures/Fundamentos/circuito-equivalente-celda-YANG-2.pdf>
+Package pdftex.def Info: Figures/Fundamentos/circuito-equivalente-celda-YANG-2.
+pdf  used on input line 1221.
+(pdftex.def)             Requested size: 273.83728pt x 144.81976pt.
+
+Overfull \vbox (1.07477pt too high) detected at line 1221
+ []
+
+[60
+
+ <./Figures/Fundamentos/circuito-equivalente-celda-YANG-2.pdf>]
+<Figures/Presentacion/circuito-equivalente-celda-YANG-2.pdf, id=7547, 222.41504
+pt x 117.62071pt>
+File: Figures/Presentacion/circuito-equivalente-celda-YANG-2.pdf Graphic file (
+type pdf)
+<use Figures/Presentacion/circuito-equivalente-celda-YANG-2.pdf>
+Package pdftex.def Info: Figures/Presentacion/circuito-equivalente-celda-YANG-2
+.pdf  used on input line 1221.
+(pdftex.def)             Requested size: 171.14764pt x 90.51077pt.
+
+! Undefined control sequence.
+\beamer@doifinframe ...Kim, Shutt-Ainé & \smallC 
+                                                  . Paul & \small \textit {A...
+l.1221 		\end{frame}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[61
+
+ <./Figures/Presentacion/circuito-equivalente-celda-YANG-2.pdf>]
+Overfull \hbox (29.77527pt too wide) detected at line 1221
+[]
+ []
+
+<Figures/Modelado/capacidad-cg-Q3D.png, id=7594, 522.45187pt x 371.13657pt>
+File: Figures/Modelado/capacidad-cg-Q3D.png Graphic file (type png)
+<use Figures/Modelado/capacidad-cg-Q3D.png>
+Package pdftex.def Info: Figures/Modelado/capacidad-cg-Q3D.png  used on input l
+ine 1221.
+(pdftex.def)             Requested size: 136.91862pt x 97.2634pt.
+
+Overfull \hbox (7.8752pt too wide) detected at line 1221
+[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
+ []
+
+
+Overfull \vbox (2.33977pt too high) detected at line 1221
+ []
+
+[62
+
+ <./Figures/Modelado/capacidad-cg-Q3D.png>]
+<Figures/Modelado/3-4.pdf, id=7604, 625.85822pt x 403.39587pt>
+File: Figures/Modelado/3-4.pdf Graphic file (type pdf)
+<use Figures/Modelado/3-4.pdf>
+Package pdftex.def Info: Figures/Modelado/3-4.pdf  used on input line 1221.
+(pdftex.def)             Requested size: 308.06367pt x 198.56438pt.
+ [63
+
+ <./Figures/Modelado/3-4.pdf>]
+<Figures/Fundamentos/circuito-equivalente-celda-YANG-6.pdf, id=7632, 213.96956p
+t x 104.57436pt>
+File: Figures/Fundamentos/circuito-equivalente-celda-YANG-6.pdf Graphic file (t
+ype pdf)
+<use Figures/Fundamentos/circuito-equivalente-celda-YANG-6.pdf>
+Package pdftex.def Info: Figures/Fundamentos/circuito-equivalente-celda-YANG-6.
+pdf  used on input line 1254.
+(pdftex.def)             Requested size: 325.17949pt x 158.92593pt.
+ [64
+
+ <./Figures/Fundamentos/circuito-equivalente-celda-YANG-6.pdf>]
+<Figures/Presentacion/composicion.pdf, id=7679, 625.85822pt x 403.39587pt>
+File: Figures/Presentacion/composicion.pdf Graphic file (type pdf)
+<use Figures/Presentacion/composicion.pdf>
+Package pdftex.def Info: Figures/Presentacion/composicion.pdf  used on input li
+ne 1254.
+(pdftex.def)             Requested size: 287.5268pt x 185.3243pt.
+
+Overfull \vbox (5.61702pt too high) detected at line 1254
+ []
+
+[65
+
+ <./Figures/Presentacion/composicion.pdf>]
+<Figures/Fundamentos/circuito-equivalente-celda-YANG-5.pdf, id=7741, 170.58557p
+t x 104.09879pt>
+File: Figures/Fundamentos/circuito-equivalente-celda-YANG-5.pdf Graphic file (t
+ype pdf)
+<use Figures/Fundamentos/circuito-equivalente-celda-YANG-5.pdf>
+Package pdftex.def Info: Figures/Fundamentos/circuito-equivalente-celda-YANG-5.
+pdf  used on input line 1286.
+(pdftex.def)             Requested size: 325.17949pt x 198.46478pt.
+
+Overfull \vbox (9.78998pt too high) detected at line 1286
+ []
+
+[66
+
+ <./Figures/Fundamentos/circuito-equivalente-celda-YANG-5.pdf>]
+<Figures/Modelado/69-70.pdf, id=7794, 625.85822pt x 403.39587pt>
+File: Figures/Modelado/69-70.pdf Graphic file (type pdf)
+<use Figures/Modelado/69-70.pdf>
+Package pdftex.def Info: Figures/Modelado/69-70.pdf  used on input line 1286.
+(pdftex.def)             Requested size: 342.2953pt x 220.62503pt.
+
+Overfull \vbox (16.22105pt too high) detected at line 1286
+ []
+
+[67
+
+ <./Figures/Modelado/69-70.pdf>]
+<Figures/Presentacion/circuito-equivalente-celda-YANG-4.pdf, id=7821, 167.5673p
+t x 104.09879pt>
+File: Figures/Presentacion/circuito-equivalente-celda-YANG-4.pdf Graphic file (
+type pdf)
+<use Figures/Presentacion/circuito-equivalente-celda-YANG-4.pdf>
+Package pdftex.def Info: Figures/Presentacion/circuito-equivalente-celda-YANG-4
+.pdf  used on input line 1286.
+(pdftex.def)             Requested size: 325.17949pt x 202.01807pt.
+ [68
+
+ <./Figures/Presentacion/circuito-equivalente-celda-YANG-4.pdf>]
+<Figures/Modelado/67-68.pdf, id=7873, 625.85822pt x 403.39587pt>
+File: Figures/Modelado/67-68.pdf Graphic file (type pdf)
+<use Figures/Modelado/67-68.pdf>
+Package pdftex.def Info: Figures/Modelado/67-68.pdf  used on input line 1286.
+(pdftex.def)             Requested size: 342.2953pt x 220.62503pt.
+
+Overfull \vbox (16.22105pt too high) detected at line 1286
+ []
+
+[69
+
+ <./Figures/Modelado/67-68.pdf>]
+<Figures/Modelado/s11-comparacion.pdf, id=7899, 625.85822pt x 403.39587pt>
+File: Figures/Modelado/s11-comparacion.pdf Graphic file (type pdf)
+<use Figures/Modelado/s11-comparacion.pdf>
+Package pdftex.def Info: Figures/Modelado/s11-comparacion.pdf  used on input li
+ne 1286.
+(pdftex.def)             Requested size: 342.2953pt x 220.62503pt.
+
+Overfull \vbox (16.22105pt too high) detected at line 1286
+ []
+
+[70
+
+ <./Figures/Modelado/s11-comparacion.pdf>]
+<Figures/Modelado/dispersion-yang-vs-s21.pdf, id=7929, 842.66821pt x 405.77274p
+t>
+File: Figures/Modelado/dispersion-yang-vs-s21.pdf Graphic file (type pdf)
+<use Figures/Modelado/dispersion-yang-vs-s21.pdf>
+Package pdftex.def Info: Figures/Modelado/dispersion-yang-vs-s21.pdf  used on i
+nput line 1286.
+(pdftex.def)             Requested size: 342.2953pt x 164.82619pt.
+ [71
+
+ <./Figures/Modelado/dispersion-yang-vs-s21.pdf>]
+<Figures/Modelado/s12-variacion-pila.pdf, id=8021, 680.56058pt x 333.50273pt>
+File: Figures/Modelado/s12-variacion-pila.pdf Graphic file (type pdf)
+<use Figures/Modelado/s12-variacion-pila.pdf>
+Package pdftex.def Info: Figures/Modelado/s12-variacion-pila.pdf  used on input
+ line 1300.
+(pdftex.def)             Requested size: 273.83728pt x 134.19258pt.
+<Figures/Modelado/apilamiento.PNG, id=8022, 289.08pt x 621.32124pt>
+File: Figures/Modelado/apilamiento.PNG Graphic file (type png)
+<use Figures/Modelado/apilamiento.PNG>
+Package pdftex.def Info: Figures/Modelado/apilamiento.PNG  used on input line 1
+300.
+(pdftex.def)             Requested size: 68.45801pt x 147.12921pt.
+ [72
+
+ <./Figures/Modelado/s12-variacion-pila.pdf> <./Figures/Modelado/apilamiento.PN
+G>]
+<Figures/Modelado/params-estructura-bidimensional.pdf, id=8052, 698.12822pt x 3
+33.50273pt>
+File: Figures/Modelado/params-estructura-bidimensional.pdf Graphic file (type p
+df)
+<use Figures/Modelado/params-estructura-bidimensional.pdf>
+Package pdftex.def Info: Figures/Modelado/params-estructura-bidimensional.pdf  
+used on input line 1310.
+(pdftex.def)             Requested size: 273.83728pt x 130.8136pt.
+<Figures/Modelado/EstructuraMuchasCeldas2d.png, id=8053, 208.52907pt x 434.3728
+2pt>
+File: Figures/Modelado/EstructuraMuchasCeldas2d.png Graphic file (type png)
+<use Figures/Modelado/EstructuraMuchasCeldas2d.png>
+Package pdftex.def Info: Figures/Modelado/EstructuraMuchasCeldas2d.png  used on
+ input line 1310.
+(pdftex.def)             Requested size: 68.45801pt x 142.60114pt.
+ [73
+
+ <./Figures/Modelado/params-estructura-bidimensional.pdf> <./Figures/Modelado/E
+structuraMuchasCeldas2d.png>] [74
+
+]
+<Figures/Modelado/TLM-progresion.pdf, id=8091, 532.83705pt x 428.81349pt>
+File: Figures/Modelado/TLM-progresion.pdf Graphic file (type pdf)
+<use Figures/Modelado/TLM-progresion.pdf>
+Package pdftex.def Info: Figures/Modelado/TLM-progresion.pdf  used on input lin
+e 1339.
+(pdftex.def)             Requested size: 280.68465pt x 225.896pt.
+
+Overfull \vbox (7.89201pt too high) detected at line 1339
+ []
+
+[75
+
+ <./Figures/Modelado/TLM-progresion.pdf>]
+<Figures/Modelado/esquema-matriz-s.pdf, id=13436, 82.70793pt x 39.89624pt>
+File: Figures/Modelado/esquema-matriz-s.pdf Graphic file (type pdf)
+<use Figures/Modelado/esquema-matriz-s.pdf>
+Package pdftex.def Info: Figures/Modelado/esquema-matriz-s.pdf  used on input l
+ine 1369.
+(pdftex.def)             Requested size: 239.60567pt x 115.5859pt.
+ [76
+
+ <./Figures/Modelado/esquema-matriz-s.pdf>]
+<Figures/Modelado/TiposDePixel.pdf, id=13455, 583.81578pt x 506.87978pt>
+File: Figures/Modelado/TiposDePixel.pdf Graphic file (type pdf)
+<use Figures/Modelado/TiposDePixel.pdf>
+Package pdftex.def Info: Figures/Modelado/TiposDePixel.pdf  used on input line 
+1375.
+(pdftex.def)             Requested size: 256.72147pt x 222.88857pt.
+
+Overfull \vbox (4.88458pt too high) detected at line 1375
+ []
+
+[77
+
+ <./Figures/Modelado/TiposDePixel.pdf>]
+<Figures/Modelado/Modelo-Pixeles.pdf, id=14882, 431.27585pt x 252.73499pt>
+File: Figures/Modelado/Modelo-Pixeles.pdf Graphic file (type pdf)
+<use Figures/Modelado/Modelo-Pixeles.pdf>
+Package pdftex.def Info: Figures/Modelado/Modelo-Pixeles.pdf  used on input lin
+e 1387.
+(pdftex.def)             Requested size: 342.2953pt x 200.5994pt.
+ [78
+
+ <./Figures/Modelado/Modelo-Pixeles.pdf>]
+<Figures/Modelado/ProcesoCfringe.pdf, id=14933, 389.44366pt x 247.4369pt>
+File: Figures/Modelado/ProcesoCfringe.pdf Graphic file (type pdf)
+<use Figures/Modelado/ProcesoCfringe.pdf>
+Package pdftex.def Info: Figures/Modelado/ProcesoCfringe.pdf  used on input lin
+e 1399.
+(pdftex.def)             Requested size: 256.72147pt x 163.11252pt.
+
+Overfull \vbox (10.75546pt too high) detected at line 1399
+ []
+
+[79
+
+ <./Figures/Modelado/ProcesoCfringe.pdf>]
+<Figures/Modelado/ProcesoProfundidad.pdf, id=15309, 422.73576pt x 389.99297pt>
+File: Figures/Modelado/ProcesoProfundidad.pdf Graphic file (type pdf)
+<use Figures/Modelado/ProcesoProfundidad.pdf>
+Package pdftex.def Info: Figures/Modelado/ProcesoProfundidad.pdf  used on input
+ line 1437.
+(pdftex.def)             Requested size: 239.60567pt x 221.04268pt.
+
+Overfull \hbox (2.92041pt too wide) detected at line 1437
+[]
+ []
+
+
+Overfull \vbox (3.0387pt too high) detected at line 1437
+ []
+
+[80
+
+ <./Figures/Modelado/ProcesoProfundidad.pdf>]
+<Figures/Modelado/AcoplamientoCapacitivoGeneral.pdf, id=16028, 230.43076pt x 24
+5.71483pt>
+File: Figures/Modelado/AcoplamientoCapacitivoGeneral.pdf Graphic file (type pdf
+)
+<use Figures/Modelado/AcoplamientoCapacitivoGeneral.pdf>
+Package pdftex.def Info: Figures/Modelado/AcoplamientoCapacitivoGeneral.pdf  us
+ed on input line 1437.
+(pdftex.def)             Requested size: 205.37926pt x 219.00793pt.
+
+Overfull \vbox (1.00395pt too high) detected at line 1437
+ []
+
+[81
+
+ <./Figures/Modelado/AcoplamientoCapacitivoGeneral.pdf>]
+<Figures/Modelado/AcoplamientoCapacitivoDebil.pdf, id=16086, 331.3592pt x 83.51
+035pt>
+File: Figures/Modelado/AcoplamientoCapacitivoDebil.pdf Graphic file (type pdf)
+<use Figures/Modelado/AcoplamientoCapacitivoDebil.pdf>
+Package pdftex.def Info: Figures/Modelado/AcoplamientoCapacitivoDebil.pdf  used
+ on input line 1437.
+(pdftex.def)             Requested size: 308.06367pt x 77.64212pt.
+ [82
+
+ <./Figures/Modelado/AcoplamientoCapacitivoDebil.pdf>]
+<Figures/Modelado/ProcedimientoUsuario.pdf, id=16098, 462.45888pt x 230.88086pt
+>
+File: Figures/Modelado/ProcedimientoUsuario.pdf Graphic file (type pdf)
+<use Figures/Modelado/ProcedimientoUsuario.pdf>
+Package pdftex.def Info: Figures/Modelado/ProcedimientoUsuario.pdf  used on inp
+ut line 1443.
+(pdftex.def)             Requested size: 342.2953pt x 170.89496pt.
+ [83
+
+ <./Figures/Modelado/ProcedimientoUsuario.pdf>]
+<Figures/Modelado/ConceptoMatrizProgresoTiempo.pdf, id=16170, 421.9907pt x 484.
+73424pt>
+File: Figures/Modelado/ConceptoMatrizProgresoTiempo.pdf Graphic file (type pdf)
+
+<use Figures/Modelado/ConceptoMatrizProgresoTiempo.pdf>
+Package pdftex.def Info: Figures/Modelado/ConceptoMatrizProgresoTiempo.pdf  use
+d on input line 1461.
+(pdftex.def)             Requested size: 215.6477pt x 247.71414pt.
+ [84
+
+ <./Figures/Modelado/ConceptoMatrizProgresoTiempo.pdf>]
+<Figures/Modelado/tensionEntrada-Tiempo.pdf, id=23123, 625.75946pt x 407.0073pt
+>
+File: Figures/Modelado/tensionEntrada-Tiempo.pdf Graphic file (type pdf)
+<use Figures/Modelado/tensionEntrada-Tiempo.pdf>
+Package pdftex.def Info: Figures/Modelado/tensionEntrada-Tiempo.pdf  used on in
+put line 1486.
+(pdftex.def)             Requested size: 171.14764pt x 111.31561pt.
+<Figures/Modelado/tensionSalida-Tiempo.pdf, id=23124, 625.75946pt x 407.0073pt>
+
+File: Figures/Modelado/tensionSalida-Tiempo.pdf Graphic file (type pdf)
+<use Figures/Modelado/tensionSalida-Tiempo.pdf>
+Package pdftex.def Info: Figures/Modelado/tensionSalida-Tiempo.pdf  used on inp
+ut line 1486.
+(pdftex.def)             Requested size: 171.14764pt x 111.31561pt.
+<Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf, id=23125, 625.75946pt x 407.00
+73pt>
+File: Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf Graphic file (type pdf)
+<use Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf>
+Package pdftex.def Info: Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf  used o
+n input line 1486.
+(pdftex.def)             Requested size: 171.14764pt x 111.31561pt.
+
+Overfull \vbox (5.62724pt too high) detected at line 1486
+ []
+
+[85
+
+ <./Figures/Modelado/tensionEntrada-Tiempo.pdf> <./Figures/Modelado/tensionSali
+da-Tiempo.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Modelado/tensionSalida-Tiempo
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Modelado/TensionSalida-FrecAb
+sCOMP.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+>]
+File: Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf Graphic file (type pdf)
+<use Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf>
+Package pdftex.def Info: Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf  used o
+n input line 1507.
+(pdftex.def)             Requested size: 222.48985pt x 144.70906pt.
+ [86
+
+] (./presentacion.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [87
+
+]
+<Figures/Aplicacion/dos-monopolos.png, id=23202, 621.07031pt x 337.26pt>
+File: Figures/Aplicacion/dos-monopolos.png Graphic file (type png)
+<use Figures/Aplicacion/dos-monopolos.png>
+Package pdftex.def Info: Figures/Aplicacion/dos-monopolos.png  used on input li
+ne 1527.
+(pdftex.def)             Requested size: 171.14764pt x 92.93462pt.
+ [88
+
+ <./Figures/Aplicacion/dos-monopolos.png>]
+File: Figures/Aplicacion/dos-monopolos.png Graphic file (type png)
+<use Figures/Aplicacion/dos-monopolos.png>
+Package pdftex.def Info: Figures/Aplicacion/dos-monopolos.png  used on input li
+ne 1527.
+(pdftex.def)             Requested size: 171.14764pt x 92.93462pt.
+<Figures/Aplicacion/dos-monopolos-sin-GND.png, id=23212, 566.86781pt x 547.2947
+pt>
+File: Figures/Aplicacion/dos-monopolos-sin-GND.png Graphic file (type png)
+<use Figures/Aplicacion/dos-monopolos-sin-GND.png>
+Package pdftex.def Info: Figures/Aplicacion/dos-monopolos-sin-GND.png  used on 
+input line 1527.
+(pdftex.def)             Requested size: 171.14764pt x 165.23355pt.
+[89
+
+ <./Figures/Aplicacion/dos-monopolos-sin-GND.png>]
+<Figures/Aplicacion/Monopole_and_image_antenna.pdf, id=23222, 1017.93979pt x 60
+6.84952pt>
+File: Figures/Aplicacion/Monopole_and_image_antenna.pdf Graphic file (type pdf)
+
+<use Figures/Aplicacion/Monopole_and_image_antenna.pdf>
+Package pdftex.def Info: Figures/Aplicacion/Monopole_and_image_antenna.pdf  use
+d on input line 1527.
+(pdftex.def)             Requested size: 171.14764pt x 102.0241pt.
+File: Figures/Aplicacion/dos-monopolos-sin-GND.png Graphic file (type png)
+<use Figures/Aplicacion/dos-monopolos-sin-GND.png>
+Package pdftex.def Info: Figures/Aplicacion/dos-monopolos-sin-GND.png  used on 
+input line 1527.
+(pdftex.def)             Requested size: 171.14764pt x 165.23355pt.
+ [90
+
+ <./Figures/Aplicacion/Monopole_and_image_antenna.pdf>]
+<Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinGND.pdf, id=232
+75, 553.48946pt x 334.7373pt>
+File: Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinGND.pdf Gr
+aphic file (type pdf)
+<use Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinGND.pdf>
+Package pdftex.def Info: Figures/Aplicacion/comparacion-dipolos-s12-variasDista
+ncias-sinGND.pdf  used on input line 1527.
+(pdftex.def)             Requested size: 342.2953pt x 207.0191pt.
+
+Overfull \vbox (16.21513pt too high) detected at line 1527
+ []
+
+[91
+
+ <./Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinGND.pdf>]
+<Figures/Aplicacion/comparacion-dipolos-s11-variasDistancias-sinGND.pdf, id=233
+07, 540.9236pt x 334.7373pt>
+File: Figures/Aplicacion/comparacion-dipolos-s11-variasDistancias-sinGND.pdf Gr
+aphic file (type pdf)
+<use Figures/Aplicacion/comparacion-dipolos-s11-variasDistancias-sinGND.pdf>
+Package pdftex.def Info: Figures/Aplicacion/comparacion-dipolos-s11-variasDista
+ncias-sinGND.pdf  used on input line 1527.
+(pdftex.def)             Requested size: 342.2953pt x 211.82542pt.
+
+Overfull \vbox (7.42145pt too high) detected at line 1527
+ []
+
+[92
+
+ <./Figures/Aplicacion/comparacion-dipolos-s11-variasDistancias-sinGND.pdf>]
+<Figures/Aplicacion/dos-monopolos-2EBG.png, id=23337, 582.67688pt x 540.51938pt
+>
+File: Figures/Aplicacion/dos-monopolos-2EBG.png Graphic file (type png)
+<use Figures/Aplicacion/dos-monopolos-2EBG.png>
+Package pdftex.def Info: Figures/Aplicacion/dos-monopolos-2EBG.png  used on inp
+ut line 1574.
+(pdftex.def)             Requested size: 171.14764pt x 158.75902pt.
+<Figures/Aplicacion/dos-monopolos-3EBG.png, id=23338, 571.38469pt x 547.2947pt>
+
+File: Figures/Aplicacion/dos-monopolos-3EBG.png Graphic file (type png)
+<use Figures/Aplicacion/dos-monopolos-3EBG.png>
+Package pdftex.def Info: Figures/Aplicacion/dos-monopolos-3EBG.png  used on inp
+ut line 1574.
+(pdftex.def)             Requested size: 171.14764pt x 163.93079pt.
+[93
+
+ <./Figures/Aplicacion/dos-monopolos-2EBG.png> <./Figures/Aplicacion/dos-monopo
+los-3EBG.png>]
+File: Figures/Aplicacion/dos-monopolos-2EBG.png Graphic file (type png)
+<use Figures/Aplicacion/dos-monopolos-2EBG.png>
+Package pdftex.def Info: Figures/Aplicacion/dos-monopolos-2EBG.png  used on inp
+ut line 1574.
+(pdftex.def)             Requested size: 68.45801pt x 63.49866pt.
+<Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinConEBG.pdf, id=
+23349, 553.48946pt x 336.70488pt>
+File: Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinConEBG.pdf
+ Graphic file (type pdf)
+<use Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinConEBG.pdf>
+
+Package pdftex.def Info: Figures/Aplicacion/comparacion-dipolos-s12-variasDista
+ncias-sinConEBG.pdf  used on input line 1574.
+(pdftex.def)             Requested size: 273.83728pt x 166.58466pt.
+ [94
+
+ <./Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinConEBG.pdf>]
+<Figures/Aplicacion/dipolos-s12-variasDistancias-con3EBG.pdf, id=23377, 548.240
+05pt x 334.7373pt>
+File: Figures/Aplicacion/dipolos-s12-variasDistancias-con3EBG.pdf Graphic file 
+(type pdf)
+<use Figures/Aplicacion/dipolos-s12-variasDistancias-con3EBG.pdf>
+Package pdftex.def Info: Figures/Aplicacion/dipolos-s12-variasDistancias-con3EB
+G.pdf  used on input line 1574.
+(pdftex.def)             Requested size: 273.83728pt x 167.19968pt.
+File: Figures/Aplicacion/dos-monopolos-3EBG.png Graphic file (type png)
+<use Figures/Aplicacion/dos-monopolos-3EBG.png>
+Package pdftex.def Info: Figures/Aplicacion/dos-monopolos-3EBG.png  used on inp
+ut line 1574.
+(pdftex.def)             Requested size: 68.45801pt x 65.56396pt.
+ [95
+
+ <./Figures/Aplicacion/dipolos-s12-variasDistancias-con3EBG.pdf>]
+File: Figures/Aplicacion/dipolos-s12-variasDistancias-con3EBG.pdf Graphic file 
+(type pdf)
+<use Figures/Aplicacion/dipolos-s12-variasDistancias-con3EBG.pdf>
+Package pdftex.def Info: Figures/Aplicacion/dipolos-s12-variasDistancias-con3EB
+G.pdf  used on input line 1574.
+(pdftex.def)             Requested size: 273.83728pt x 167.19968pt.
+File: Figures/Aplicacion/dos-monopolos-3EBG.png Graphic file (type png)
+<use Figures/Aplicacion/dos-monopolos-3EBG.png>
+Package pdftex.def Info: Figures/Aplicacion/dos-monopolos-3EBG.png  used on inp
+ut line 1574.
+(pdftex.def)             Requested size: 68.45801pt x 65.56396pt.
+<Figures/Aplicacion/dipolos-s11-variasDistancias-con3EBG.pdf, id=23406, 560.805
+86pt x 334.7373pt>
+File: Figures/Aplicacion/dipolos-s11-variasDistancias-con3EBG.pdf Graphic file 
+(type pdf)
+<use Figures/Aplicacion/dipolos-s11-variasDistancias-con3EBG.pdf>
+Package pdftex.def Info: Figures/Aplicacion/dipolos-s11-variasDistancias-con3EB
+G.pdf  used on input line 1574.
+(pdftex.def)             Requested size: 227.62204pt x 135.8641pt.
+ [96
+
+ <./Figures/Aplicacion/dipolos-s11-variasDistancias-con3EBG.pdf>]
+<Figures/Presentacion/microstripSINEBG-planoE.PNG, id=23434, 688.5725pt x 659.4
+6375pt>
+File: Figures/Presentacion/microstripSINEBG-planoE.PNG Graphic file (type png)
+<use Figures/Presentacion/microstripSINEBG-planoE.PNG>
+Package pdftex.def Info: Figures/Presentacion/microstripSINEBG-planoE.PNG  used
+ on input line 1599.
+(pdftex.def)             Requested size: 154.03183pt x 147.51761pt.
+<Figures/Presentacion/microstripSINEBG-planoH.PNG, id=23435, 623.32875pt x 518.
+93875pt>
+File: Figures/Presentacion/microstripSINEBG-planoH.PNG Graphic file (type png)
+<use Figures/Presentacion/microstripSINEBG-planoH.PNG>
+Package pdftex.def Info: Figures/Presentacion/microstripSINEBG-planoH.PNG  used
+ on input line 1599.
+(pdftex.def)             Requested size: 171.14764pt x 142.48293pt.
+ [97
+
+ <./Figures/Presentacion/microstripSINEBG-planoE.PNG> <./Figures/Presentacion/m
+icrostripSINEBG-planoH.PNG>]
+<Figures/Aplicacion/ms-E-35-4-5-sinEBG-S12.pdf, id=23444, 553.48946pt x 334.737
+3pt>
+File: Figures/Aplicacion/ms-E-35-4-5-sinEBG-S12.pdf Graphic file (type pdf)
+<use Figures/Aplicacion/ms-E-35-4-5-sinEBG-S12.pdf>
+Package pdftex.def Info: Figures/Aplicacion/ms-E-35-4-5-sinEBG-S12.pdf  used on
+ input line 1599.
+(pdftex.def)             Requested size: 169.43594pt x 102.47014pt.
+
+Overfull \hbox (15.40411pt too wide) in paragraph at lines 1599--1599
+ [][] 
+ []
+
+<Figures/Aplicacion/ms-H-3-4-45-5-sinEBG-S12.pdf, id=23445, 553.48946pt x 334.7
+373pt>
+File: Figures/Aplicacion/ms-H-3-4-45-5-sinEBG-S12.pdf Graphic file (type pdf)
+<use Figures/Aplicacion/ms-H-3-4-45-5-sinEBG-S12.pdf>
+Package pdftex.def Info: Figures/Aplicacion/ms-H-3-4-45-5-sinEBG-S12.pdf  used 
+on input line 1599.
+(pdftex.def)             Requested size: 171.14764pt x 103.50189pt.
+[98
+
+ <./Figures/Aplicacion/ms-E-35-4-5-sinEBG-S12.pdf> <./Figures/Aplicacion/ms-H-3
+-4-45-5-sinEBG-S12.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Aplicacion/ms-H-3-4-45-5-sinE
+BG-S12.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+>]
+<Figures/Aplicacion/ms-E-celdas-s21.pdf, id=23494, 828.88026pt x 408.97488pt>
+File: Figures/Aplicacion/ms-E-celdas-s21.pdf Graphic file (type pdf)
+<use Figures/Aplicacion/ms-E-celdas-s21.pdf>
+Package pdftex.def Info: Figures/Aplicacion/ms-E-celdas-s21.pdf  used on input 
+line 1599.
+(pdftex.def)             Requested size: 205.37926pt x 101.33235pt.
+<Figures/Aplicacion/ms-H-4-variosD-3EBG-S12.pdf, id=23495, 823.558pt x 407.0073
+pt>
+File: Figures/Aplicacion/ms-H-4-variosD-3EBG-S12.pdf Graphic file (type pdf)
+<use Figures/Aplicacion/ms-H-4-variosD-3EBG-S12.pdf>
+Package pdftex.def Info: Figures/Aplicacion/ms-H-4-variosD-3EBG-S12.pdf  used o
+n input line 1599.
+(pdftex.def)             Requested size: 205.37926pt x 101.49693pt.
+ [99
+
+ <./Figures/Aplicacion/ms-E-celdas-s21.pdf> <./Figures/Aplicacion/ms-H-4-varios
+D-3EBG-S12.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Aplicacion/ms-H-4-variosD-3EB
+G-S12.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+>] [100
+
+] [101
+
+] [102
+
+] [103
+
+] (./presentacion.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [104
+
+]
+Overfull \hbox (3.1032pt too wide) detected at line 1705
+[]
+ []
+
+
+Overfull \hbox (4.12743pt too wide) detected at line 1705
+[]
+ []
+
+[105
+
+]
+<Figures/Presentacion/onda_em.pdf, id=23600, 491.36346pt x 83.5893pt>
+File: Figures/Presentacion/onda_em.pdf Graphic file (type pdf)
+<use Figures/Presentacion/onda_em.pdf>
+Package pdftex.def Info: Figures/Presentacion/onda_em.pdf  used on input line 1
+755.
+(pdftex.def)             Requested size: 342.2953pt x 58.23149pt.
+ [106
+
+ <./Figures/Presentacion/onda_em.pdf>] [107
+
+] [108
+
+] [109
+
+] [110
+
+]
+[111
+
+] [112
+
+]
+<Figures/intro_electro/circuito-equivalente-antena-ms.pdf, id=23666, 771.32434p
+t x 178.44029pt>
+File: Figures/intro_electro/circuito-equivalente-antena-ms.pdf Graphic file (ty
+pe pdf)
+<use Figures/intro_electro/circuito-equivalente-antena-ms.pdf>
+Package pdftex.def Info: Figures/intro_electro/circuito-equivalente-antena-ms.p
+df  used on input line 1914.
+(pdftex.def)             Requested size: 308.06367pt x 71.26866pt.
+ [113
+
+ <./Figures/intro_electro/circuito-equivalente-antena-ms.pdf>]
+<Figures/intro_electro/distribucion-campos-microstrip.pdf, id=23698, 239.41454p
+t x 186.67368pt>
+File: Figures/intro_electro/distribucion-campos-microstrip.pdf Graphic file (ty
+pe pdf)
+<use Figures/intro_electro/distribucion-campos-microstrip.pdf>
+Package pdftex.def Info: Figures/intro_electro/distribucion-campos-microstrip.p
+df  used on input line 1929.
+(pdftex.def)             Requested size: 167.72658pt x 130.78175pt.
+
+Overfull \vbox (19.51907pt too high) detected at line 1929
+ []
+
+[114
+
+ <./Figures/intro_electro/distribucion-campos-microstrip.pdf>]
+File: Figures/intro_electro/incidencia-coated-conductor.pdf Graphic file (type 
+pdf)
+<use Figures/intro_electro/incidencia-coated-conductor.pdf>
+Package pdftex.def Info: Figures/intro_electro/incidencia-coated-conductor.pdf 
+ used on input line 1962.
+(pdftex.def)             Requested size: 342.2953pt x 94.8448pt.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 1962.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 1962.
+
+
+Overfull \hbox (4.18448pt too wide) detected at line 1962
+[]
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 1962.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 1962.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 1962.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 1962.
+
+
+Overfull \hbox (4.18448pt too wide) detected at line 1962
+[]
+ []
+
+[115
+
+]
+<Figures/intro_electro/TM-tan-implicito.pdf, id=23865, 404.89871pt x 190.95416p
+t>
 File: Figures/intro_electro/TM-tan-implicito.pdf Graphic file (type pdf)
 <use Figures/intro_electro/TM-tan-implicito.pdf>
 Package pdftex.def Info: Figures/intro_electro/TM-tan-implicito.pdf  used on in
-put line 484.
+put line 1976.
 (pdftex.def)             Requested size: 177.99501pt x 83.94432pt.
-<Figures/intro_electro/TM-tan-implicito-zoom.pdf, id=987, 420.26315pt x 329.874
-71pt>
+<Figures/intro_electro/TM-tan-implicito-zoom.pdf, id=23866, 420.26315pt x 329.8
+7471pt>
 File: Figures/intro_electro/TM-tan-implicito-zoom.pdf Graphic file (type pdf)
 <use Figures/intro_electro/TM-tan-implicito-zoom.pdf>
 Package pdftex.def Info: Figures/intro_electro/TM-tan-implicito-zoom.pdf  used 
-on input line 484.
+on input line 1976.
 (pdftex.def)             Requested size: 177.99501pt x 139.71419pt.
-<Figures/intro_electro/TE-tan-implicito.pdf, id=988, 404.89871pt x 190.95416pt>
-
+<Figures/intro_electro/TE-tan-implicito.pdf, id=23867, 404.89871pt x 190.95416p
+t>
 File: Figures/intro_electro/TE-tan-implicito.pdf Graphic file (type pdf)
 <use Figures/intro_electro/TE-tan-implicito.pdf>
 Package pdftex.def Info: Figures/intro_electro/TE-tan-implicito.pdf  used on in
-put line 484.
+put line 1976.
 (pdftex.def)             Requested size: 177.99501pt x 83.94432pt.
-<Figures/intro_electro/TE-tan-implicito-zoom.pdf, id=989, 420.26315pt x 329.874
-71pt>
+<Figures/intro_electro/TE-tan-implicito-zoom.pdf, id=23868, 420.26315pt x 329.8
+7471pt>
 File: Figures/intro_electro/TE-tan-implicito-zoom.pdf Graphic file (type pdf)
 <use Figures/intro_electro/TE-tan-implicito-zoom.pdf>
 Package pdftex.def Info: Figures/intro_electro/TE-tan-implicito-zoom.pdf  used 
-on input line 484.
+on input line 1976.
 (pdftex.def)             Requested size: 177.99501pt x 139.71419pt.
- [18
+ [116
 
  <./Figures/intro_electro/TM-tan-implicito.pdf> <./Figures/intro_electro/TM-tan
 -implicito-zoom.pdf
@@ -1821,1261 +3100,6 @@ pdfTeX warning: /usr/bin/pdflatex (file ./Figures/intro_electro/TE-tan-implicit
 o-zoom.pdf): PDF inclusion: multiple pdfs with page group included in a single 
 page
 >]
-<Figures/intro_electro/plot-zstm-funciont2.pdf, id=1317, 450.89719pt x 302.5081
-pt>
-File: Figures/intro_electro/plot-zstm-funciont2.pdf Graphic file (type pdf)
-<use Figures/intro_electro/plot-zstm-funciont2.pdf>
-Package pdftex.def Info: Figures/intro_electro/plot-zstm-funciont2.pdf  used on
- input line 502.
-(pdftex.def)             Requested size: 174.56871pt x 117.11913pt.
-<Figures/intro_electro/plot-zstm-funcioner2.pdf, id=1318, 450.51251pt x 290.208
-82pt>
-File: Figures/intro_electro/plot-zstm-funcioner2.pdf Graphic file (type pdf)
-<use Figures/intro_electro/plot-zstm-funcioner2.pdf>
-Package pdftex.def Info: Figures/intro_electro/plot-zstm-funcioner2.pdf  used o
-n input line 502.
-(pdftex.def)             Requested size: 174.56871pt x 112.45474pt.
- [19
-
- <./Figures/intro_electro/plot-zstm-funciont2.pdf> <./Figures/intro_electro/plo
-t-zstm-funcioner2.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Figures/intro_electro/plot-zstm-funci
-oner2.pdf): PDF inclusion: multiple pdfs with page group included in a single p
-age
->] [20
-
-]
-<Figures/Presentacion/problema_microstrip.pdf, id=1493, 196.77971pt x 151.08748
-pt>
-File: Figures/Presentacion/problema_microstrip.pdf Graphic file (type pdf)
-<use Figures/Presentacion/problema_microstrip.pdf>
-Package pdftex.def Info: Figures/Presentacion/problema_microstrip.pdf  used on 
-input line 556.
-(pdftex.def)             Requested size: 171.14764pt x 131.41505pt.
-
-Overfull \vbox (26.82442pt too high) detected at line 556
- []
-
-[21
-
- <./Figures/Presentacion/problema_microstrip.pdf>]
-<Figures/intro_electro/pozar-acoplamiento.pdf, id=1560, 260.73488pt x 187.25677
-pt>
-File: Figures/intro_electro/pozar-acoplamiento.pdf Graphic file (type pdf)
-<use Figures/intro_electro/pozar-acoplamiento.pdf>
-Package pdftex.def Info: Figures/intro_electro/pozar-acoplamiento.pdf  used on 
-input line 566.
-(pdftex.def)             Requested size: 308.06367pt x 221.25824pt.
-
-Overfull \vbox (15.25426pt too high) detected at line 566
- []
-
-[22
-
- <./Figures/intro_electro/pozar-acoplamiento.pdf>] (./presentacion.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-)
-Overfull \vbox (25.80045pt too high) detected at line 578
- []
-
-[23
-
-]
-<Figures/Presentacion/ebg-metamateriales.pdf, id=1619, 348.48927pt x 331.2972pt
->
-File: Figures/Presentacion/ebg-metamateriales.pdf Graphic file (type pdf)
-<use Figures/Presentacion/ebg-metamateriales.pdf>
-Package pdftex.def Info: Figures/Presentacion/ebg-metamateriales.pdf  used on i
-nput line 598.
-(pdftex.def)             Requested size: 141.71135pt x 134.72058pt.
-
-Overfull \vbox (0.60187pt too high) detected at line 598
- []
-
-[24
-
- <./Figures/Presentacion/ebg-metamateriales.pdf>]
-<Figures/Presentacion/patenteMarconi.pdf, id=1641, 1100.83438pt x 941.01563pt>
-File: Figures/Presentacion/patenteMarconi.pdf Graphic file (type pdf)
-<use Figures/Presentacion/patenteMarconi.pdf>
-Package pdftex.def Info: Figures/Presentacion/patenteMarconi.pdf  used on input
- line 662.
-(pdftex.def)             Requested size: 225.91557pt x 193.11047pt.
-
-Overfull \hbox (37.65211pt too wide) in paragraph at lines 662--662
- [] 
- []
-
-
-Overfull \vbox (1.7065pt too high) detected at line 662
- []
-
-[25
-
- <./Figures/Presentacion/patenteMarconi.pdf>]
-<Figures/Presentacion/3d-cristales-fotonicos.pdf, id=1660, 516.68509pt x 239.65
-775pt>
-File: Figures/Presentacion/3d-cristales-fotonicos.pdf Graphic file (type pdf)
-<use Figures/Presentacion/3d-cristales-fotonicos.pdf>
-Package pdftex.def Info: Figures/Presentacion/3d-cristales-fotonicos.pdf  used 
-on input line 662.
-(pdftex.def)             Requested size: 342.2953pt x 158.77432pt.
-
-Overfull \vbox (0.69952pt too high) detected at line 662
- []
-
-[26
-
- <./Figures/Presentacion/3d-cristales-fotonicos.pdf>]
-<Figures/Presentacion/Photonic-crystal-fiber-from-NRL.jpg, id=1675, 849.1725pt 
-x 477.28313pt>
-File: Figures/Presentacion/Photonic-crystal-fiber-from-NRL.jpg Graphic file (ty
-pe jpg)
-<use Figures/Presentacion/Photonic-crystal-fiber-from-NRL.jpg>
-Package pdftex.def Info: Figures/Presentacion/Photonic-crystal-fiber-from-NRL.j
-pg  used on input line 662.
-(pdftex.def)             Requested size: 273.83728pt x 153.91351pt.
- [27
-
- <./Figures/Presentacion/Photonic-crystal-fiber-from-NRL.jpg>]
-<Figures/Fundamentos/superficie-coarrugada.png, id=1685, 176.15813pt x 162.6075
-pt>
-File: Figures/Fundamentos/superficie-coarrugada.png Graphic file (type png)
-<use Figures/Fundamentos/superficie-coarrugada.png>
-Package pdftex.def Info: Figures/Fundamentos/superficie-coarrugada.png  used on
- input line 662.
-(pdftex.def)             Requested size: 139.65549pt x 128.91257pt.
-<Figures/Fundamentos/sievenpiper.png, id=1687, 264.23718pt x 164.86594pt>
-File: Figures/Fundamentos/sievenpiper.png Graphic file (type png)
-<use Figures/Fundamentos/sievenpiper.png>
-Package pdftex.def Info: Figures/Fundamentos/sievenpiper.png  used on input lin
-e 662.
-(pdftex.def)             Requested size: 174.56871pt x 108.9175pt.
- [28
-
- <./Figures/Fundamentos/superficie-coarrugada.png> <./Figures/Fundamentos/sieve
-npiper.png>]
-<Figures/Fundamentos/bragg1.pdf, id=1698, 173.80682pt x 33.46681pt>
-File: Figures/Fundamentos/bragg1.pdf Graphic file (type pdf)
-<use Figures/Fundamentos/bragg1.pdf>
-Package pdftex.def Info: Figures/Fundamentos/bragg1.pdf  used on input line 688
-.
-(pdftex.def)             Requested size: 205.37926pt x 39.54819pt.
- [29
-
- <./Figures/Fundamentos/bragg1.pdf>] [30
-
-] [31
-
-]
-<Figures/Fundamentos/periodico-geometria.pdf, id=1763, 167.21216pt x 101.35222p
-t>
-File: Figures/Fundamentos/periodico-geometria.pdf Graphic file (type pdf)
-<use Figures/Fundamentos/periodico-geometria.pdf>
-Package pdftex.def Info: Figures/Fundamentos/periodico-geometria.pdf  used on i
-nput line 828.
-(pdftex.def)             Requested size: 205.37926pt x 124.49236pt.
- [32
-
- <./Figures/Fundamentos/periodico-geometria.pdf>]
-<Figures/Fundamentos/bloch.pdf, id=1786, 722.7pt x 505.89pt>
-File: Figures/Fundamentos/bloch.pdf Graphic file (type pdf)
-<use Figures/Fundamentos/bloch.pdf>
-Package pdftex.def Info: Figures/Fundamentos/bloch.pdf  used on input line 828.
-
-(pdftex.def)             Requested size: 256.72147pt x 179.70413pt.
-<Figures/Fundamentos/bloch-ortogonal.pdf, id=1787, 475.54117pt x 150.1025pt>
-File: Figures/Fundamentos/bloch-ortogonal.pdf Graphic file (type pdf)
-<use Figures/Fundamentos/bloch-ortogonal.pdf>
-Package pdftex.def Info: Figures/Fundamentos/bloch-ortogonal.pdf  used on input
- line 828.
-(pdftex.def)             Requested size: 205.37926pt x 64.82681pt.
-
-Overfull \vbox (1.11755pt too high) detected at line 828
- []
-
-[33
-
- <./Figures/Fundamentos/bloch.pdf> <./Figures/Fundamentos/bloch-ortogonal.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Fundamentos/bloch-ortogonal.p
-df): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<Figures/Presentacion/bloch-2d-1.png, id=2066, 900.36375pt x 713.66624pt>
-File: Figures/Presentacion/bloch-2d-1.png Graphic file (type png)
-<use Figures/Presentacion/bloch-2d-1.png>
-Package pdftex.def Info: Figures/Presentacion/bloch-2d-1.png  used on input lin
-e 828.
-(pdftex.def)             Requested size: 222.48985pt x 176.34708pt.
-<Figures/Presentacion/bloch-2d-2.png, id=2067, 389.455pt x 388.45125pt>
-File: Figures/Presentacion/bloch-2d-2.png Graphic file (type png)
-<use Figures/Presentacion/bloch-2d-2.png>
-Package pdftex.def Info: Figures/Presentacion/bloch-2d-2.png  used on input lin
-e 828.
-(pdftex.def)             Requested size: 107.82416pt x 107.54459pt.
-<Figures/Presentacion/bloch-2d-3.png, id=2068, 392.46625pt x 391.4625pt>
-File: Figures/Presentacion/bloch-2d-3.png Graphic file (type png)
-<use Figures/Presentacion/bloch-2d-3.png>
-Package pdftex.def Info: Figures/Presentacion/bloch-2d-3.png  used on input lin
-e 828.
-(pdftex.def)             Requested size: 107.82416pt x 107.54797pt.
- [34
-
- <./Figures/Presentacion/bloch-2d-1.png> <./Figures/Presentacion/bloch-2d-2.png
-> <./Figures/Presentacion/bloch-2d-3.png>] [35
-
-]
-<Figures/Presentacion/brillioun-1d.pdf, id=2087, 640.98401pt x 133.79951pt>
-File: Figures/Presentacion/brillioun-1d.pdf Graphic file (type pdf)
-<use Figures/Presentacion/brillioun-1d.pdf>
-Package pdftex.def Info: Figures/Presentacion/brillioun-1d.pdf  used on input l
-ine 919.
-(pdftex.def)             Requested size: 256.72147pt x 53.58826pt.
-
-Overfull \vbox (8.34653pt too high) detected at line 919
- []
-
-[36
-
- <./Figures/Presentacion/brillioun-1d.pdf>]
-<Figures/Presentacion/dispersion-ejemplo-1.pdf, id=2121, 640.98401pt x 142.9184
-9pt>
-File: Figures/Presentacion/dispersion-ejemplo-1.pdf Graphic file (type pdf)
-<use Figures/Presentacion/dispersion-ejemplo-1.pdf>
-Package pdftex.def Info: Figures/Presentacion/dispersion-ejemplo-1.pdf  used on
- input line 919.
-(pdftex.def)             Requested size: 308.06367pt x 68.68948pt.
- [37
-
- <./Figures/Presentacion/dispersion-ejemplo-1.pdf>]
-File: Figures/Presentacion/dispersion-ejemplo-1.pdf Graphic file (type pdf)
-<use Figures/Presentacion/dispersion-ejemplo-1.pdf>
-Package pdftex.def Info: Figures/Presentacion/dispersion-ejemplo-1.pdf  used on
- input line 919.
-(pdftex.def)             Requested size: 308.06367pt x 68.68948pt.
-<Figures/Presentacion/dispersion-ejemplo-2.pdf, id=2146, 649.429pt x 128.46773p
-t>
-File: Figures/Presentacion/dispersion-ejemplo-2.pdf Graphic file (type pdf)
-<use Figures/Presentacion/dispersion-ejemplo-2.pdf>
-Package pdftex.def Info: Figures/Presentacion/dispersion-ejemplo-2.pdf  used on
- input line 919.
-(pdftex.def)             Requested size: 308.06367pt x 60.94046pt.
- [38
-
- <./Figures/Presentacion/dispersion-ejemplo-2.pdf>]
-File: Figures/Presentacion/dispersion-ejemplo-1.pdf Graphic file (type pdf)
-<use Figures/Presentacion/dispersion-ejemplo-1.pdf>
-Package pdftex.def Info: Figures/Presentacion/dispersion-ejemplo-1.pdf  used on
- input line 919.
-(pdftex.def)             Requested size: 308.06367pt x 68.68948pt.
-<Figures/Presentacion/dispersion-ejemplo-3.pdf, id=2305, 649.429pt x 128.46773p
-t>
-File: Figures/Presentacion/dispersion-ejemplo-3.pdf Graphic file (type pdf)
-<use Figures/Presentacion/dispersion-ejemplo-3.pdf>
-Package pdftex.def Info: Figures/Presentacion/dispersion-ejemplo-3.pdf  used on
- input line 919.
-(pdftex.def)             Requested size: 308.06367pt x 60.94046pt.
-
-[39
-
- <./Figures/Presentacion/dispersion-ejemplo-3.pdf>]
-<Figures/Presentacion/dispersion-ejemplo-4.pdf, id=2467, 650.26282pt x 148.6552
-1pt>
-File: Figures/Presentacion/dispersion-ejemplo-4.pdf Graphic file (type pdf)
-<use Figures/Presentacion/dispersion-ejemplo-4.pdf>
-Package pdftex.def Info: Figures/Presentacion/dispersion-ejemplo-4.pdf  used on
- input line 919.
-(pdftex.def)             Requested size: 308.06367pt x 70.42595pt.
- [40
-
- <./Figures/Presentacion/dispersion-ejemplo-4.pdf>]
-File: Figures/Presentacion/dispersion-ejemplo-4.pdf Graphic file (type pdf)
-<use Figures/Presentacion/dispersion-ejemplo-4.pdf>
-Package pdftex.def Info: Figures/Presentacion/dispersion-ejemplo-4.pdf  used on
- input line 919.
-(pdftex.def)             Requested size: 308.06367pt x 70.42595pt.
-<Figures/Presentacion/dispersion-ejemplo-5.pdf, id=2627, 651.88306pt x 148.7951
-8pt>
-File: Figures/Presentacion/dispersion-ejemplo-5.pdf Graphic file (type pdf)
-<use Figures/Presentacion/dispersion-ejemplo-5.pdf>
-Package pdftex.def Info: Figures/Presentacion/dispersion-ejemplo-5.pdf  used on
- input line 919.
-(pdftex.def)             Requested size: 308.06367pt x 70.31744pt.
- [41
-
- <./Figures/Presentacion/dispersion-ejemplo-5.pdf>]
-<Figures/Fundamentos/direct-and-reciprocal-triangle-lattice.pdf, id=2777, 236.3
-9717pt x 276.30121pt>
-File: Figures/Fundamentos/direct-and-reciprocal-triangle-lattice.pdf Graphic fi
-le (type pdf)
-<use Figures/Fundamentos/direct-and-reciprocal-triangle-lattice.pdf>
-Package pdftex.def Info: Figures/Fundamentos/direct-and-reciprocal-triangle-lat
-tice.pdf  used on input line 938.
-(pdftex.def)             Requested size: 169.43596pt x 198.0387pt.
-<Figures/Fundamentos/direct-and-reciprocal-triangle-lattice-zoom2.pdf, id=2778,
- 257.11638pt x 276.30121pt>
-File: Figures/Fundamentos/direct-and-reciprocal-triangle-lattice-zoom2.pdf Grap
-hic file (type pdf)
-<use Figures/Fundamentos/direct-and-reciprocal-triangle-lattice-zoom2.pdf>
-Package pdftex.def Info: Figures/Fundamentos/direct-and-reciprocal-triangle-lat
-tice-zoom2.pdf  used on input line 938.
-(pdftex.def)             Requested size: 169.43596pt x 182.08109pt.
-
-Overfull \hbox (12.33156pt too wide) detected at line 938
-[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
- []
-
-[42
-
- <./Figures/Fundamentos/direct-and-reciprocal-triangle-lattice.pdf> <./Figures/
-Fundamentos/direct-and-reciprocal-triangle-lattice-zoom2.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Fundamentos/direct-and-recipr
-ocal-triangle-lattice-zoom2.pdf): PDF inclusion: multiple pdfs with page group 
-included in a single page
->]
-<Figures/Fundamentos/direct-and-reciprocal-triangle-lattice-zoom4.pdf, id=2850,
- 241.8151pt x 276.30191pt>
-File: Figures/Fundamentos/direct-and-reciprocal-triangle-lattice-zoom4.pdf Grap
-hic file (type pdf)
-<use Figures/Fundamentos/direct-and-reciprocal-triangle-lattice-zoom4.pdf>
-Package pdftex.def Info: Figures/Fundamentos/direct-and-reciprocal-triangle-lat
-tice-zoom4.pdf  used on input line 954.
-(pdftex.def)             Requested size: 169.43596pt x 193.59973pt.
-<Figures/Fundamentos/direct-and-reciprocal-triangle-lattice-zoom5.pdf, id=2851,
- 257.11638pt x 276.30121pt>
-File: Figures/Fundamentos/direct-and-reciprocal-triangle-lattice-zoom5.pdf Grap
-hic file (type pdf)
-<use Figures/Fundamentos/direct-and-reciprocal-triangle-lattice-zoom5.pdf>
-Package pdftex.def Info: Figures/Fundamentos/direct-and-reciprocal-triangle-lat
-tice-zoom5.pdf  used on input line 954.
-(pdftex.def)             Requested size: 150.61133pt x 161.85268pt.
-
-Overfull \hbox (12.33156pt too wide) detected at line 954
-[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
- []
-
-[43
-
- <./Figures/Fundamentos/direct-and-reciprocal-triangle-lattice-zoom4.pdf> <./Fi
-gures/Fundamentos/direct-and-reciprocal-triangle-lattice-zoom5.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Fundamentos/direct-and-recipr
-ocal-triangle-lattice-zoom5.pdf): PDF inclusion: multiple pdfs with page group 
-included in a single page
->]
-<Figures/Fundamentos/rectangulo-cuadradado.pdf, id=2935, 267.55182pt x 273.2045
-6pt>
-File: Figures/Fundamentos/rectangulo-cuadradado.pdf Graphic file (type pdf)
-<use Figures/Fundamentos/rectangulo-cuadradado.pdf>
-Package pdftex.def Info: Figures/Fundamentos/rectangulo-cuadradado.pdf  used on
- input line 962.
-(pdftex.def)             Requested size: 205.37926pt x 209.71782pt.
-
-Overfull \vbox (3.71384pt too high) detected at line 962
- []
-
-[44
-
- <./Figures/Fundamentos/rectangulo-cuadradado.pdf>]
-<Figures/Presentacion/diagrama-dispersion-deduccion-1.pdf, id=3140, 349.26877pt
- x 214.22054pt>
-File: Figures/Presentacion/diagrama-dispersion-deduccion-1.pdf Graphic file (ty
-pe pdf)
-<use Figures/Presentacion/diagrama-dispersion-deduccion-1.pdf>
-Package pdftex.def Info: Figures/Presentacion/diagrama-dispersion-deduccion-1.p
-df  used on input line 977.
-(pdftex.def)             Requested size: 273.83728pt x 167.96082pt.
- [45
-
- <./Figures/Presentacion/diagrama-dispersion-deduccion-1.pdf>]
-<Figures/Presentacion/diagrama-dispersion-deduccion-2.png, id=3176, 334.29156pt
- x 212.35735pt>
-File: Figures/Presentacion/diagrama-dispersion-deduccion-2.png Graphic file (ty
-pe png)
-<use Figures/Presentacion/diagrama-dispersion-deduccion-2.png>
-Package pdftex.def Info: Figures/Presentacion/diagrama-dispersion-deduccion-2.p
-ng  used on input line 977.
-(pdftex.def)             Requested size: 273.83728pt x 173.95592pt.
- [46
-
- <./Figures/Presentacion/diagrama-dispersion-deduccion-2.png>]
-<Figures/Fundamentos/Fisica-DiagramaDeFase.pdf, id=3187, 526.37596pt x 569.0551
-3pt>
-File: Figures/Fundamentos/Fisica-DiagramaDeFase.pdf Graphic file (type pdf)
-<use Figures/Fundamentos/Fisica-DiagramaDeFase.pdf>
-Package pdftex.def Info: Figures/Fundamentos/Fisica-DiagramaDeFase.pdf  used on
- input line 977.
-(pdftex.def)             Requested size: 229.33722pt x 247.9364pt.
- [47
-
- <./Figures/Fundamentos/Fisica-DiagramaDeFase.pdf>]
-<Figures/Fundamentos/plot-cono-luz.pdf, id=3900, 505.89pt x 361.35pt>
-File: Figures/Fundamentos/plot-cono-luz.pdf Graphic file (type pdf)
-<use Figures/Fundamentos/plot-cono-luz.pdf>
-Package pdftex.def Info: Figures/Fundamentos/plot-cono-luz.pdf  used on input l
-ine 993.
-(pdftex.def)             Requested size: 171.14764pt x 122.25085pt.
-<Figures/Fundamentos/diag-dispersion-vacio-2d.pdf, id=3901, 505.89pt x 361.35pt
->
-File: Figures/Fundamentos/diag-dispersion-vacio-2d.pdf Graphic file (type pdf)
-<use Figures/Fundamentos/diag-dispersion-vacio-2d.pdf>
-Package pdftex.def Info: Figures/Fundamentos/diag-dispersion-vacio-2d.pdf  used
- on input line 993.
-(pdftex.def)             Requested size: 188.26346pt x 134.47484pt.
- [48
-
- <./Figures/Fundamentos/plot-cono-luz.pdf> <./Figures/Fundamentos/diag-dispersi
-on-vacio-2d.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Fundamentos/diag-dispersion-v
-acio-2d.pdf): PDF inclusion: multiple pdfs with page group included in a single
- page
->] (./presentacion.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-) [49
-
-]
-Overfull \hbox (9.758pt too wide) in paragraph at lines 1025--1025
- []|\OT1/cmss/bx/n/10.95 Dom| 
- []
-
-[50
-
-] [51
-
-]
-<Figures/Modelado/esquema-simulacion-periodica.pdf, id=3984, 367.18626pt x 434.
-6648pt>
-File: Figures/Modelado/esquema-simulacion-periodica.pdf Graphic file (type pdf)
-
-<use Figures/Modelado/esquema-simulacion-periodica.pdf>
-Package pdftex.def Info: Figures/Modelado/esquema-simulacion-periodica.pdf  use
-d on input line 1045.
-(pdftex.def)             Requested size: 178.8497pt x 211.72081pt.
- [52
-
- <./Figures/Modelado/esquema-simulacion-periodica.pdf>]
-<Figures/Modelado/orlandi-celda.pdf, id=4042, 426.34587pt x 350.6461pt>
-File: Figures/Modelado/orlandi-celda.pdf Graphic file (type pdf)
-<use Figures/Modelado/orlandi-celda.pdf>
-Package pdftex.def Info: Figures/Modelado/orlandi-celda.pdf  used on input line
- 1079.
-(pdftex.def)             Requested size: 171.14764pt x 140.75888pt.
- [53
-
- <./Figures/Modelado/orlandi-celda.pdf>]
-<Figures/Modelado/orlandi-modo1-Enorma-Etangencial.pdf, id=4064, 1775.26971pt x
- 842.61983pt>
-File: Figures/Modelado/orlandi-modo1-Enorma-Etangencial.pdf Graphic file (type 
-pdf)
-<use Figures/Modelado/orlandi-modo1-Enorma-Etangencial.pdf>
-Package pdftex.def Info: Figures/Modelado/orlandi-modo1-Enorma-Etangencial.pdf 
- used on input line 1079.
-(pdftex.def)             Requested size: 342.2953pt x 162.46518pt.
-<Figures/Presentacion/modos-de-propagacion-ilustracion.pdf, id=4065, 1152.14658
-pt x 318.88094pt>
-File: Figures/Presentacion/modos-de-propagacion-ilustracion.pdf Graphic file (t
-ype pdf)
-<use Figures/Presentacion/modos-de-propagacion-ilustracion.pdf>
-Package pdftex.def Info: Figures/Presentacion/modos-de-propagacion-ilustracion.
-pdf  used on input line 1079.
-(pdftex.def)             Requested size: 188.26346pt x 52.10217pt.
- [54
-
- <./Figures/Modelado/orlandi-modo1-Enorma-Etangencial.pdf> <./Figures/Presentac
-ion/modos-de-propagacion-ilustracion.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Presentacion/modos-de-propaga
-cion-ilustracion.pdf): PDF inclusion: multiple pdfs with page group included in
- a single page
->]
-<Figures/Modelado/orlandi-modo1-EH-fases.pdf, id=4165, 1775.61072pt x 837.83063
-pt>
-File: Figures/Modelado/orlandi-modo1-EH-fases.pdf Graphic file (type pdf)
-<use Figures/Modelado/orlandi-modo1-EH-fases.pdf>
-Package pdftex.def Info: Figures/Modelado/orlandi-modo1-EH-fases.pdf  used on i
-nput line 1079.
-(pdftex.def)             Requested size: 342.2953pt x 161.50342pt.
-File: Figures/Presentacion/modos-de-propagacion-ilustracion.pdf Graphic file (t
-ype pdf)
-<use Figures/Presentacion/modos-de-propagacion-ilustracion.pdf>
-Package pdftex.def Info: Figures/Presentacion/modos-de-propagacion-ilustracion.
-pdf  used on input line 1079.
-(pdftex.def)             Requested size: 188.26346pt x 52.10217pt.
- [55
-
- <./Figures/Modelado/orlandi-modo1-EH-fases.pdf>]
-<Figures/Presentacion/diagdisp-1.pdf, id=4230, 2419.49503pt x 1154.83937pt>
-File: Figures/Presentacion/diagdisp-1.pdf Graphic file (type pdf)
-<use Figures/Presentacion/diagdisp-1.pdf>
-Package pdftex.def Info: Figures/Presentacion/diagdisp-1.pdf  used on input lin
-e 1116.
-(pdftex.def)             Requested size: 342.2953pt x 163.36806pt.
- [56
-
- <./Figures/Presentacion/diagdisp-1.pdf>]
-<Figures/Presentacion/diagdisp-2.pdf, id=4306, 2419.49503pt x 1154.83937pt>
-File: Figures/Presentacion/diagdisp-2.pdf Graphic file (type pdf)
-<use Figures/Presentacion/diagdisp-2.pdf>
-Package pdftex.def Info: Figures/Presentacion/diagdisp-2.pdf  used on input lin
-e 1116.
-(pdftex.def)             Requested size: 342.2953pt x 163.36806pt.
- [57
-
- <./Figures/Presentacion/diagdisp-2.pdf>]
-<Figures/Presentacion/diagdisp-3.pdf, id=4396, 2440.86pt x 1234.80241pt>
-File: Figures/Presentacion/diagdisp-3.pdf Graphic file (type pdf)
-<use Figures/Presentacion/diagdisp-3.pdf>
-Package pdftex.def Info: Figures/Presentacion/diagdisp-3.pdf  used on input lin
-e 1116.
-(pdftex.def)             Requested size: 342.2953pt x 173.15378pt.
- [58
-
- <./Figures/Presentacion/diagdisp-3.pdf>]
-<Figures/Presentacion/diagdisp-4.pdf, id=4754, 2440.86pt x 1159.12785pt>
-File: Figures/Presentacion/diagdisp-4.pdf Graphic file (type pdf)
-<use Figures/Presentacion/diagdisp-4.pdf>
-Package pdftex.def Info: Figures/Presentacion/diagdisp-4.pdf  used on input lin
-e 1116.
-(pdftex.def)             Requested size: 342.2953pt x 162.5421pt.
- [59
-
- <./Figures/Presentacion/diagdisp-4.pdf>]
-<Figures/Modelado/Orlandi-DeltaAnchoConector-comparacion.pdf, id=5109, 3065.124
-62pt x 977.77289pt>
-File: Figures/Modelado/Orlandi-DeltaAnchoConector-comparacion.pdf Graphic file 
-(type pdf)
-<use Figures/Modelado/Orlandi-DeltaAnchoConector-comparacion.pdf>
-Package pdftex.def Info: Figures/Modelado/Orlandi-DeltaAnchoConector-comparacio
-n.pdf  used on input line 1133.
-(pdftex.def)             Requested size: 342.2953pt x 109.18158pt.
-
-[60
-
- <./Figures/Modelado/Orlandi-DeltaAnchoConector-comparacion.pdf>]
-<Figures/Modelado/Orlandi-DeltaSeparacionParches-DeltaTamanioCelda-ParcheFijo-C
-omparacion.pdf, id=5509, 3249.92049pt x 1064.80452pt>
-File: Figures/Modelado/Orlandi-DeltaSeparacionParches-DeltaTamanioCelda-ParcheF
-ijo-Comparacion.pdf Graphic file (type pdf)
-<use Figures/Modelado/Orlandi-DeltaSeparacionParches-DeltaTamanioCelda-ParcheFi
-jo-Comparacion.pdf>
-Package pdftex.def Info: Figures/Modelado/Orlandi-DeltaSeparacionParches-DeltaT
-amanioCelda-ParcheFijo-Comparacion.pdf  used on input line 1133.
-(pdftex.def)             Requested size: 342.2953pt x 112.14084pt.
- [61
-
- <./Figures/Modelado/Orlandi-DeltaSeparacionParches-DeltaTamanioCelda-ParcheFij
-o-Comparacion.pdf>]
-<Figures/Modelado/Orlandi-DeltaTamanioCelda-RelacionParcheFija-Comparacion.pdf,
- id=5888, 3030.18622pt x 1829.20891pt>
-File: Figures/Modelado/Orlandi-DeltaTamanioCelda-RelacionParcheFija-Comparacion
-.pdf Graphic file (type pdf)
-<use Figures/Modelado/Orlandi-DeltaTamanioCelda-RelacionParcheFija-Comparacion.
-pdf>
-Package pdftex.def Info: Figures/Modelado/Orlandi-DeltaTamanioCelda-RelacionPar
-cheFija-Comparacion.pdf  used on input line 1133.
-(pdftex.def)             Requested size: 342.2953pt x 206.62842pt.
-
-Overfull \vbox (14.22444pt too high) detected at line 1133
- []
-
-[62
-
- <./Figures/Modelado/Orlandi-DeltaTamanioCelda-RelacionParcheFija-Comparacion.p
-df>]
-<Figures/Modelado/Orlandi-3direcciones-anchoSustrato-Comparacion.pdf, id=7089, 
-3111.56471pt x 2031.39555pt>
-File: Figures/Modelado/Orlandi-3direcciones-anchoSustrato-Comparacion.pdf Graph
-ic file (type pdf)
-<use Figures/Modelado/Orlandi-3direcciones-anchoSustrato-Comparacion.pdf>
-Package pdftex.def Info: Figures/Modelado/Orlandi-3direcciones-anchoSustrato-Co
-mparacion.pdf  used on input line 1133.
-(pdftex.def)             Requested size: 321.7584pt x 210.03268pt.
-
-Overfull \vbox (4.0287pt too high) detected at line 1133
- []
-
-[63
-
- <./Figures/Modelado/Orlandi-3direcciones-anchoSustrato-Comparacion.pdf>]
-<Figures/Modelado/yang-celda.pdf, id=7811, 419.33488pt x 359.91458pt>
-File: Figures/Modelado/yang-celda.pdf Graphic file (type pdf)
-<use Figures/Modelado/yang-celda.pdf>
-Package pdftex.def Info: Figures/Modelado/yang-celda.pdf  used on input line 11
-44.
-(pdftex.def)             Requested size: 171.14764pt x 146.89592pt.
-<Figures/Presentacion/yang-modo1-Enorma-Etangencial.pdf, id=7812, 847.2428pt x 
-753.73347pt>
-File: Figures/Presentacion/yang-modo1-Enorma-Etangencial.pdf Graphic file (type
- pdf)
-<use Figures/Presentacion/yang-modo1-Enorma-Etangencial.pdf>
-Package pdftex.def Info: Figures/Presentacion/yang-modo1-Enorma-Etangencial.pdf
-  used on input line 1144.
-(pdftex.def)             Requested size: 171.14764pt x 152.25066pt.
-
-[64
-
- <./Figures/Modelado/yang-celda.pdf> <./Figures/Presentacion/yang-modo1-Enorma-
-Etangencial.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Presentacion/yang-modo1-Enorm
-a-Etangencial.pdf): PDF inclusion: multiple pdfs with page group included in a 
-single page
->]
-<Figures/Fundamentos/circuito-equivalente-celda-YANG-2.pdf, id=7874, 222.41504p
-t x 117.62071pt>
-File: Figures/Fundamentos/circuito-equivalente-celda-YANG-2.pdf Graphic file (t
-ype pdf)
-<use Figures/Fundamentos/circuito-equivalente-celda-YANG-2.pdf>
-Package pdftex.def Info: Figures/Fundamentos/circuito-equivalente-celda-YANG-2.
-pdf  used on input line 1275.
-(pdftex.def)             Requested size: 273.83728pt x 144.81976pt.
-
-Overfull \vbox (1.07477pt too high) detected at line 1275
- []
-
-[65
-
- <./Figures/Fundamentos/circuito-equivalente-celda-YANG-2.pdf>]
-<Figures/Presentacion/circuito-equivalente-celda-YANG-2.pdf, id=7920, 222.41504
-pt x 117.62071pt>
-File: Figures/Presentacion/circuito-equivalente-celda-YANG-2.pdf Graphic file (
-type pdf)
-<use Figures/Presentacion/circuito-equivalente-celda-YANG-2.pdf>
-Package pdftex.def Info: Figures/Presentacion/circuito-equivalente-celda-YANG-2
-.pdf  used on input line 1275.
-(pdftex.def)             Requested size: 171.14764pt x 90.51077pt.
- [66
-
- <./Figures/Presentacion/circuito-equivalente-celda-YANG-2.pdf>]
-Overfull \hbox (29.77527pt too wide) detected at line 1275
-[]
- []
-
-<Figures/Modelado/capacidad-cg-Q3D.png, id=7967, 522.45187pt x 371.13657pt>
-File: Figures/Modelado/capacidad-cg-Q3D.png Graphic file (type png)
-<use Figures/Modelado/capacidad-cg-Q3D.png>
-Package pdftex.def Info: Figures/Modelado/capacidad-cg-Q3D.png  used on input l
-ine 1275.
-(pdftex.def)             Requested size: 136.91862pt x 97.2634pt.
-
-Overfull \hbox (7.8752pt too wide) detected at line 1275
-[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
- []
-
-
-Overfull \vbox (2.33977pt too high) detected at line 1275
- []
-
-[67
-
- <./Figures/Modelado/capacidad-cg-Q3D.png>]
-<Figures/Modelado/3-4.pdf, id=7978, 625.85822pt x 403.39587pt>
-File: Figures/Modelado/3-4.pdf Graphic file (type pdf)
-<use Figures/Modelado/3-4.pdf>
-Package pdftex.def Info: Figures/Modelado/3-4.pdf  used on input line 1275.
-(pdftex.def)             Requested size: 308.06367pt x 198.56438pt.
- [68
-
- <./Figures/Modelado/3-4.pdf>]
-<Figures/Fundamentos/circuito-equivalente-celda-YANG-6.pdf, id=8006, 213.96956p
-t x 104.57436pt>
-File: Figures/Fundamentos/circuito-equivalente-celda-YANG-6.pdf Graphic file (t
-ype pdf)
-<use Figures/Fundamentos/circuito-equivalente-celda-YANG-6.pdf>
-Package pdftex.def Info: Figures/Fundamentos/circuito-equivalente-celda-YANG-6.
-pdf  used on input line 1308.
-(pdftex.def)             Requested size: 325.17949pt x 158.92593pt.
- [69
-
- <./Figures/Fundamentos/circuito-equivalente-celda-YANG-6.pdf>]
-<Figures/Presentacion/composicion.pdf, id=8052, 625.85822pt x 403.39587pt>
-File: Figures/Presentacion/composicion.pdf Graphic file (type pdf)
-<use Figures/Presentacion/composicion.pdf>
-Package pdftex.def Info: Figures/Presentacion/composicion.pdf  used on input li
-ne 1308.
-(pdftex.def)             Requested size: 287.5268pt x 185.3243pt.
-
-Overfull \vbox (5.61702pt too high) detected at line 1308
- []
-
-[70
-
- <./Figures/Presentacion/composicion.pdf>]
-<Figures/Fundamentos/circuito-equivalente-celda-YANG-5.pdf, id=8115, 170.58557p
-t x 104.09879pt>
-File: Figures/Fundamentos/circuito-equivalente-celda-YANG-5.pdf Graphic file (t
-ype pdf)
-<use Figures/Fundamentos/circuito-equivalente-celda-YANG-5.pdf>
-Package pdftex.def Info: Figures/Fundamentos/circuito-equivalente-celda-YANG-5.
-pdf  used on input line 1340.
-(pdftex.def)             Requested size: 325.17949pt x 198.46478pt.
-
-Overfull \vbox (9.78998pt too high) detected at line 1340
- []
-
-[71
-
- <./Figures/Fundamentos/circuito-equivalente-celda-YANG-5.pdf>]
-<Figures/Modelado/69-70.pdf, id=8167, 625.85822pt x 403.39587pt>
-File: Figures/Modelado/69-70.pdf Graphic file (type pdf)
-<use Figures/Modelado/69-70.pdf>
-Package pdftex.def Info: Figures/Modelado/69-70.pdf  used on input line 1340.
-(pdftex.def)             Requested size: 342.2953pt x 220.62503pt.
-
-Overfull \vbox (16.22105pt too high) detected at line 1340
- []
-
-[72
-
- <./Figures/Modelado/69-70.pdf>]
-<Figures/Presentacion/circuito-equivalente-celda-YANG-4.pdf, id=8193, 167.5673p
-t x 104.09879pt>
-File: Figures/Presentacion/circuito-equivalente-celda-YANG-4.pdf Graphic file (
-type pdf)
-<use Figures/Presentacion/circuito-equivalente-celda-YANG-4.pdf>
-Package pdftex.def Info: Figures/Presentacion/circuito-equivalente-celda-YANG-4
-.pdf  used on input line 1340.
-(pdftex.def)             Requested size: 325.17949pt x 202.01807pt.
- [73
-
- <./Figures/Presentacion/circuito-equivalente-celda-YANG-4.pdf>]
-<Figures/Modelado/67-68.pdf, id=8247, 625.85822pt x 403.39587pt>
-File: Figures/Modelado/67-68.pdf Graphic file (type pdf)
-<use Figures/Modelado/67-68.pdf>
-Package pdftex.def Info: Figures/Modelado/67-68.pdf  used on input line 1340.
-(pdftex.def)             Requested size: 342.2953pt x 220.62503pt.
-
-Overfull \vbox (16.22105pt too high) detected at line 1340
- []
-
-[74
-
- <./Figures/Modelado/67-68.pdf>]
-<Figures/Modelado/s11-comparacion.pdf, id=8273, 625.85822pt x 403.39587pt>
-File: Figures/Modelado/s11-comparacion.pdf Graphic file (type pdf)
-<use Figures/Modelado/s11-comparacion.pdf>
-Package pdftex.def Info: Figures/Modelado/s11-comparacion.pdf  used on input li
-ne 1340.
-(pdftex.def)             Requested size: 342.2953pt x 220.62503pt.
-
-Overfull \vbox (16.22105pt too high) detected at line 1340
- []
-
-[75
-
- <./Figures/Modelado/s11-comparacion.pdf>]
-<Figures/Modelado/dispersion-yang-vs-s21.pdf, id=8302, 842.66821pt x 405.77274p
-t>
-File: Figures/Modelado/dispersion-yang-vs-s21.pdf Graphic file (type pdf)
-<use Figures/Modelado/dispersion-yang-vs-s21.pdf>
-Package pdftex.def Info: Figures/Modelado/dispersion-yang-vs-s21.pdf  used on i
-nput line 1340.
-(pdftex.def)             Requested size: 342.2953pt x 164.82619pt.
- [76
-
- <./Figures/Modelado/dispersion-yang-vs-s21.pdf>]
-<Figures/Modelado/s12-variacion-pila.pdf, id=8395, 680.56058pt x 333.50273pt>
-File: Figures/Modelado/s12-variacion-pila.pdf Graphic file (type pdf)
-<use Figures/Modelado/s12-variacion-pila.pdf>
-Package pdftex.def Info: Figures/Modelado/s12-variacion-pila.pdf  used on input
- line 1354.
-(pdftex.def)             Requested size: 273.83728pt x 134.19258pt.
-<Figures/Modelado/apilamiento.PNG, id=8396, 289.08pt x 621.32124pt>
-File: Figures/Modelado/apilamiento.PNG Graphic file (type png)
-<use Figures/Modelado/apilamiento.PNG>
-Package pdftex.def Info: Figures/Modelado/apilamiento.PNG  used on input line 1
-354.
-(pdftex.def)             Requested size: 68.45801pt x 147.12921pt.
- [77
-
- <./Figures/Modelado/s12-variacion-pila.pdf> <./Figures/Modelado/apilamiento.PN
-G>]
-<Figures/Modelado/params-estructura-bidimensional.pdf, id=8425, 698.12822pt x 3
-33.50273pt>
-File: Figures/Modelado/params-estructura-bidimensional.pdf Graphic file (type p
-df)
-<use Figures/Modelado/params-estructura-bidimensional.pdf>
-Package pdftex.def Info: Figures/Modelado/params-estructura-bidimensional.pdf  
-used on input line 1364.
-(pdftex.def)             Requested size: 273.83728pt x 130.8136pt.
-<Figures/Modelado/EstructuraMuchasCeldas2d.png, id=8426, 208.52907pt x 434.3728
-2pt>
-File: Figures/Modelado/EstructuraMuchasCeldas2d.png Graphic file (type png)
-<use Figures/Modelado/EstructuraMuchasCeldas2d.png>
-Package pdftex.def Info: Figures/Modelado/EstructuraMuchasCeldas2d.png  used on
- input line 1364.
-(pdftex.def)             Requested size: 68.45801pt x 142.60114pt.
- [78
-
- <./Figures/Modelado/params-estructura-bidimensional.pdf> <./Figures/Modelado/E
-structuraMuchasCeldas2d.png>] [79
-
-]
-<Figures/Modelado/TLM-progresion.pdf, id=8466, 532.83705pt x 428.81349pt>
-File: Figures/Modelado/TLM-progresion.pdf Graphic file (type pdf)
-<use Figures/Modelado/TLM-progresion.pdf>
-Package pdftex.def Info: Figures/Modelado/TLM-progresion.pdf  used on input lin
-e 1394.
-(pdftex.def)             Requested size: 280.68465pt x 225.896pt.
-
-Overfull \vbox (7.89201pt too high) detected at line 1394
- []
-
-[80
-
- <./Figures/Modelado/TLM-progresion.pdf>]
-<Figures/Modelado/esquema-matriz-s.pdf, id=13811, 82.70793pt x 39.89624pt>
-File: Figures/Modelado/esquema-matriz-s.pdf Graphic file (type pdf)
-<use Figures/Modelado/esquema-matriz-s.pdf>
-Package pdftex.def Info: Figures/Modelado/esquema-matriz-s.pdf  used on input l
-ine 1424.
-(pdftex.def)             Requested size: 239.60567pt x 115.5859pt.
- [81
-
- <./Figures/Modelado/esquema-matriz-s.pdf>]
-<Figures/Modelado/ProcedimientoUsuario.pdf, id=13830, 462.45888pt x 230.88086pt
->
-File: Figures/Modelado/ProcedimientoUsuario.pdf Graphic file (type pdf)
-<use Figures/Modelado/ProcedimientoUsuario.pdf>
-Package pdftex.def Info: Figures/Modelado/ProcedimientoUsuario.pdf  used on inp
-ut line 1430.
-(pdftex.def)             Requested size: 342.2953pt x 170.89496pt.
- [82
-
- <./Figures/Modelado/ProcedimientoUsuario.pdf>]
-<Figures/Modelado/TiposDePixel.pdf, id=13903, 583.81578pt x 506.87978pt>
-File: Figures/Modelado/TiposDePixel.pdf Graphic file (type pdf)
-<use Figures/Modelado/TiposDePixel.pdf>
-Package pdftex.def Info: Figures/Modelado/TiposDePixel.pdf  used on input line 
-1436.
-(pdftex.def)             Requested size: 256.72147pt x 222.88857pt.
-
-Overfull \vbox (4.88458pt too high) detected at line 1436
- []
-
-[83
-
- <./Figures/Modelado/TiposDePixel.pdf>]
-<Figures/Modelado/Modelo-Pixeles.pdf, id=15329, 431.27585pt x 252.73499pt>
-File: Figures/Modelado/Modelo-Pixeles.pdf Graphic file (type pdf)
-<use Figures/Modelado/Modelo-Pixeles.pdf>
-Package pdftex.def Info: Figures/Modelado/Modelo-Pixeles.pdf  used on input lin
-e 1448.
-(pdftex.def)             Requested size: 342.2953pt x 200.5994pt.
- [84
-
- <./Figures/Modelado/Modelo-Pixeles.pdf>]
-<Figures/Modelado/ProcesoCfringe.pdf, id=15380, 389.44366pt x 247.4369pt>
-File: Figures/Modelado/ProcesoCfringe.pdf Graphic file (type pdf)
-<use Figures/Modelado/ProcesoCfringe.pdf>
-Package pdftex.def Info: Figures/Modelado/ProcesoCfringe.pdf  used on input lin
-e 1460.
-(pdftex.def)             Requested size: 256.72147pt x 163.11252pt.
-
-Overfull \vbox (10.75546pt too high) detected at line 1460
- []
-
-[85
-
- <./Figures/Modelado/ProcesoCfringe.pdf>]
-<Figures/Modelado/ProcesoProfundidad.pdf, id=15756, 422.73576pt x 389.99297pt>
-File: Figures/Modelado/ProcesoProfundidad.pdf Graphic file (type pdf)
-<use Figures/Modelado/ProcesoProfundidad.pdf>
-Package pdftex.def Info: Figures/Modelado/ProcesoProfundidad.pdf  used on input
- line 1498.
-(pdftex.def)             Requested size: 239.60567pt x 221.04268pt.
-
-Overfull \hbox (2.92041pt too wide) detected at line 1498
-[]
- []
-
-
-Overfull \vbox (3.0387pt too high) detected at line 1498
- []
-
-[86
-
- <./Figures/Modelado/ProcesoProfundidad.pdf>]
-<Figures/Modelado/AcoplamientoCapacitivoGeneral.pdf, id=16475, 230.43076pt x 24
-5.71483pt>
-File: Figures/Modelado/AcoplamientoCapacitivoGeneral.pdf Graphic file (type pdf
-)
-<use Figures/Modelado/AcoplamientoCapacitivoGeneral.pdf>
-Package pdftex.def Info: Figures/Modelado/AcoplamientoCapacitivoGeneral.pdf  us
-ed on input line 1498.
-(pdftex.def)             Requested size: 205.37926pt x 219.00793pt.
-
-Overfull \vbox (1.00395pt too high) detected at line 1498
- []
-
-[87
-
- <./Figures/Modelado/AcoplamientoCapacitivoGeneral.pdf>]
-<Figures/Modelado/AcoplamientoCapacitivoDebil.pdf, id=16533, 331.3592pt x 83.51
-035pt>
-File: Figures/Modelado/AcoplamientoCapacitivoDebil.pdf Graphic file (type pdf)
-<use Figures/Modelado/AcoplamientoCapacitivoDebil.pdf>
-Package pdftex.def Info: Figures/Modelado/AcoplamientoCapacitivoDebil.pdf  used
- on input line 1498.
-(pdftex.def)             Requested size: 308.06367pt x 77.64212pt.
- [88
-
- <./Figures/Modelado/AcoplamientoCapacitivoDebil.pdf>]
-<Figures/Modelado/ConceptoMatrizProgresoTiempo.pdf, id=16545, 421.9907pt x 484.
-73424pt>
-File: Figures/Modelado/ConceptoMatrizProgresoTiempo.pdf Graphic file (type pdf)
-
-<use Figures/Modelado/ConceptoMatrizProgresoTiempo.pdf>
-Package pdftex.def Info: Figures/Modelado/ConceptoMatrizProgresoTiempo.pdf  use
-d on input line 1516.
-(pdftex.def)             Requested size: 215.6477pt x 247.71414pt.
- [89
-
- <./Figures/Modelado/ConceptoMatrizProgresoTiempo.pdf>]
-<Figures/Modelado/tensionEntrada-Tiempo.pdf, id=23497, 625.75946pt x 407.0073pt
->
-File: Figures/Modelado/tensionEntrada-Tiempo.pdf Graphic file (type pdf)
-<use Figures/Modelado/tensionEntrada-Tiempo.pdf>
-Package pdftex.def Info: Figures/Modelado/tensionEntrada-Tiempo.pdf  used on in
-put line 1541.
-(pdftex.def)             Requested size: 171.14764pt x 111.31561pt.
-<Figures/Modelado/tensionSalida-Tiempo.pdf, id=23498, 625.75946pt x 407.0073pt>
-
-File: Figures/Modelado/tensionSalida-Tiempo.pdf Graphic file (type pdf)
-<use Figures/Modelado/tensionSalida-Tiempo.pdf>
-Package pdftex.def Info: Figures/Modelado/tensionSalida-Tiempo.pdf  used on inp
-ut line 1541.
-(pdftex.def)             Requested size: 171.14764pt x 111.31561pt.
-<Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf, id=23499, 625.75946pt x 407.00
-73pt>
-File: Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf Graphic file (type pdf)
-<use Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf>
-Package pdftex.def Info: Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf  used o
-n input line 1541.
-(pdftex.def)             Requested size: 171.14764pt x 111.31561pt.
-
-Overfull \vbox (5.62724pt too high) detected at line 1541
- []
-
-[90
-
- <./Figures/Modelado/tensionEntrada-Tiempo.pdf> <./Figures/Modelado/tensionSali
-da-Tiempo.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Modelado/tensionSalida-Tiempo
-.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Modelado/TensionSalida-FrecAb
-sCOMP.pdf): PDF inclusion: multiple pdfs with page group included in a single p
-age
->]
-File: Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf Graphic file (type pdf)
-<use Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf>
-Package pdftex.def Info: Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf  used o
-n input line 1562.
-(pdftex.def)             Requested size: 222.48985pt x 144.70906pt.
- [91
-
-] (./presentacion.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-) [92
-
-]
-<Figures/Aplicacion/dos-monopolos.png, id=23578, 621.07031pt x 337.26pt>
-File: Figures/Aplicacion/dos-monopolos.png Graphic file (type png)
-<use Figures/Aplicacion/dos-monopolos.png>
-Package pdftex.def Info: Figures/Aplicacion/dos-monopolos.png  used on input li
-ne 1582.
-(pdftex.def)             Requested size: 171.14764pt x 92.93462pt.
- [93
-
- <./Figures/Aplicacion/dos-monopolos.png>]
-File: Figures/Aplicacion/dos-monopolos.png Graphic file (type png)
-<use Figures/Aplicacion/dos-monopolos.png>
-Package pdftex.def Info: Figures/Aplicacion/dos-monopolos.png  used on input li
-ne 1582.
-(pdftex.def)             Requested size: 171.14764pt x 92.93462pt.
-<Figures/Aplicacion/dos-monopolos-sin-GND.png, id=23588, 566.86781pt x 547.2947
-pt>
-File: Figures/Aplicacion/dos-monopolos-sin-GND.png Graphic file (type png)
-<use Figures/Aplicacion/dos-monopolos-sin-GND.png>
-Package pdftex.def Info: Figures/Aplicacion/dos-monopolos-sin-GND.png  used on 
-input line 1582.
-(pdftex.def)             Requested size: 171.14764pt x 165.23355pt.
-[94
-
- <./Figures/Aplicacion/dos-monopolos-sin-GND.png>]
-<Figures/Aplicacion/Monopole_and_image_antenna.pdf, id=23597, 1017.93979pt x 60
-6.84952pt>
-File: Figures/Aplicacion/Monopole_and_image_antenna.pdf Graphic file (type pdf)
-
-<use Figures/Aplicacion/Monopole_and_image_antenna.pdf>
-Package pdftex.def Info: Figures/Aplicacion/Monopole_and_image_antenna.pdf  use
-d on input line 1582.
-(pdftex.def)             Requested size: 171.14764pt x 102.0241pt.
-File: Figures/Aplicacion/dos-monopolos-sin-GND.png Graphic file (type png)
-<use Figures/Aplicacion/dos-monopolos-sin-GND.png>
-Package pdftex.def Info: Figures/Aplicacion/dos-monopolos-sin-GND.png  used on 
-input line 1582.
-(pdftex.def)             Requested size: 171.14764pt x 165.23355pt.
- [95
-
- <./Figures/Aplicacion/Monopole_and_image_antenna.pdf>]
-<Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinGND.pdf, id=236
-51, 553.48946pt x 334.7373pt>
-File: Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinGND.pdf Gr
-aphic file (type pdf)
-<use Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinGND.pdf>
-Package pdftex.def Info: Figures/Aplicacion/comparacion-dipolos-s12-variasDista
-ncias-sinGND.pdf  used on input line 1582.
-(pdftex.def)             Requested size: 342.2953pt x 207.0191pt.
-
-Overfull \vbox (16.21513pt too high) detected at line 1582
- []
-
-[96
-
- <./Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinGND.pdf>]
-<Figures/Aplicacion/comparacion-dipolos-s11-variasDistancias-sinGND.pdf, id=236
-82, 540.9236pt x 334.7373pt>
-File: Figures/Aplicacion/comparacion-dipolos-s11-variasDistancias-sinGND.pdf Gr
-aphic file (type pdf)
-<use Figures/Aplicacion/comparacion-dipolos-s11-variasDistancias-sinGND.pdf>
-Package pdftex.def Info: Figures/Aplicacion/comparacion-dipolos-s11-variasDista
-ncias-sinGND.pdf  used on input line 1582.
-(pdftex.def)             Requested size: 342.2953pt x 211.82542pt.
-
-Overfull \vbox (7.42145pt too high) detected at line 1582
- []
-
-[97
-
- <./Figures/Aplicacion/comparacion-dipolos-s11-variasDistancias-sinGND.pdf>]
-<Figures/Aplicacion/dos-monopolos-2EBG.png, id=23712, 582.67688pt x 540.51938pt
->
-File: Figures/Aplicacion/dos-monopolos-2EBG.png Graphic file (type png)
-<use Figures/Aplicacion/dos-monopolos-2EBG.png>
-Package pdftex.def Info: Figures/Aplicacion/dos-monopolos-2EBG.png  used on inp
-ut line 1629.
-(pdftex.def)             Requested size: 171.14764pt x 158.75902pt.
-<Figures/Aplicacion/dos-monopolos-3EBG.png, id=23713, 571.38469pt x 547.2947pt>
-
-File: Figures/Aplicacion/dos-monopolos-3EBG.png Graphic file (type png)
-<use Figures/Aplicacion/dos-monopolos-3EBG.png>
-Package pdftex.def Info: Figures/Aplicacion/dos-monopolos-3EBG.png  used on inp
-ut line 1629.
-(pdftex.def)             Requested size: 171.14764pt x 163.93079pt.
-[98
-
- <./Figures/Aplicacion/dos-monopolos-2EBG.png> <./Figures/Aplicacion/dos-monopo
-los-3EBG.png>]
-File: Figures/Aplicacion/dos-monopolos-2EBG.png Graphic file (type png)
-<use Figures/Aplicacion/dos-monopolos-2EBG.png>
-Package pdftex.def Info: Figures/Aplicacion/dos-monopolos-2EBG.png  used on inp
-ut line 1629.
-(pdftex.def)             Requested size: 68.45801pt x 63.49866pt.
-<Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinConEBG.pdf, id=
-23724, 553.48946pt x 336.70488pt>
-File: Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinConEBG.pdf
- Graphic file (type pdf)
-<use Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinConEBG.pdf>
-
-Package pdftex.def Info: Figures/Aplicacion/comparacion-dipolos-s12-variasDista
-ncias-sinConEBG.pdf  used on input line 1629.
-(pdftex.def)             Requested size: 273.83728pt x 166.58466pt.
- [99
-
- <./Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinConEBG.pdf>]
-<Figures/Aplicacion/dipolos-s12-variasDistancias-con3EBG.pdf, id=23752, 548.240
-05pt x 334.7373pt>
-File: Figures/Aplicacion/dipolos-s12-variasDistancias-con3EBG.pdf Graphic file 
-(type pdf)
-<use Figures/Aplicacion/dipolos-s12-variasDistancias-con3EBG.pdf>
-Package pdftex.def Info: Figures/Aplicacion/dipolos-s12-variasDistancias-con3EB
-G.pdf  used on input line 1629.
-(pdftex.def)             Requested size: 273.83728pt x 167.19968pt.
-File: Figures/Aplicacion/dos-monopolos-3EBG.png Graphic file (type png)
-<use Figures/Aplicacion/dos-monopolos-3EBG.png>
-Package pdftex.def Info: Figures/Aplicacion/dos-monopolos-3EBG.png  used on inp
-ut line 1629.
-(pdftex.def)             Requested size: 68.45801pt x 65.56396pt.
- [100
-
- <./Figures/Aplicacion/dipolos-s12-variasDistancias-con3EBG.pdf>]
-File: Figures/Aplicacion/dipolos-s12-variasDistancias-con3EBG.pdf Graphic file 
-(type pdf)
-<use Figures/Aplicacion/dipolos-s12-variasDistancias-con3EBG.pdf>
-Package pdftex.def Info: Figures/Aplicacion/dipolos-s12-variasDistancias-con3EB
-G.pdf  used on input line 1629.
-(pdftex.def)             Requested size: 273.83728pt x 167.19968pt.
-File: Figures/Aplicacion/dos-monopolos-3EBG.png Graphic file (type png)
-<use Figures/Aplicacion/dos-monopolos-3EBG.png>
-Package pdftex.def Info: Figures/Aplicacion/dos-monopolos-3EBG.png  used on inp
-ut line 1629.
-(pdftex.def)             Requested size: 68.45801pt x 65.56396pt.
-<Figures/Aplicacion/dipolos-s11-variasDistancias-con3EBG.pdf, id=23782, 560.805
-86pt x 334.7373pt>
-File: Figures/Aplicacion/dipolos-s11-variasDistancias-con3EBG.pdf Graphic file 
-(type pdf)
-<use Figures/Aplicacion/dipolos-s11-variasDistancias-con3EBG.pdf>
-Package pdftex.def Info: Figures/Aplicacion/dipolos-s11-variasDistancias-con3EB
-G.pdf  used on input line 1629.
-(pdftex.def)             Requested size: 227.62204pt x 135.8641pt.
- [101
-
- <./Figures/Aplicacion/dipolos-s11-variasDistancias-con3EBG.pdf>]
-<Figures/Presentacion/microstripSINEBG-planoE.PNG, id=23810, 688.5725pt x 659.4
-6375pt>
-File: Figures/Presentacion/microstripSINEBG-planoE.PNG Graphic file (type png)
-<use Figures/Presentacion/microstripSINEBG-planoE.PNG>
-Package pdftex.def Info: Figures/Presentacion/microstripSINEBG-planoE.PNG  used
- on input line 1654.
-(pdftex.def)             Requested size: 154.03183pt x 147.51761pt.
-<Figures/Presentacion/microstripSINEBG-planoH.PNG, id=23811, 623.32875pt x 518.
-93875pt>
-File: Figures/Presentacion/microstripSINEBG-planoH.PNG Graphic file (type png)
-<use Figures/Presentacion/microstripSINEBG-planoH.PNG>
-Package pdftex.def Info: Figures/Presentacion/microstripSINEBG-planoH.PNG  used
- on input line 1654.
-(pdftex.def)             Requested size: 171.14764pt x 142.48293pt.
- [102
-
- <./Figures/Presentacion/microstripSINEBG-planoE.PNG> <./Figures/Presentacion/m
-icrostripSINEBG-planoH.PNG>]
-<Figures/Aplicacion/ms-E-35-4-5-sinEBG-S12.pdf, id=23821, 553.48946pt x 334.737
-3pt>
-File: Figures/Aplicacion/ms-E-35-4-5-sinEBG-S12.pdf Graphic file (type pdf)
-<use Figures/Aplicacion/ms-E-35-4-5-sinEBG-S12.pdf>
-Package pdftex.def Info: Figures/Aplicacion/ms-E-35-4-5-sinEBG-S12.pdf  used on
- input line 1654.
-(pdftex.def)             Requested size: 169.43594pt x 102.47014pt.
-
-Overfull \hbox (15.40411pt too wide) in paragraph at lines 1654--1654
- [][] 
- []
-
-<Figures/Aplicacion/ms-H-3-4-45-5-sinEBG-S12.pdf, id=23822, 553.48946pt x 334.7
-373pt>
-File: Figures/Aplicacion/ms-H-3-4-45-5-sinEBG-S12.pdf Graphic file (type pdf)
-<use Figures/Aplicacion/ms-H-3-4-45-5-sinEBG-S12.pdf>
-Package pdftex.def Info: Figures/Aplicacion/ms-H-3-4-45-5-sinEBG-S12.pdf  used 
-on input line 1654.
-(pdftex.def)             Requested size: 171.14764pt x 103.50189pt.
-[103
-
- <./Figures/Aplicacion/ms-E-35-4-5-sinEBG-S12.pdf> <./Figures/Aplicacion/ms-H-3
--4-45-5-sinEBG-S12.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Aplicacion/ms-H-3-4-45-5-sinE
-BG-S12.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
->]
-<Figures/Aplicacion/ms-E-celdas-s21.pdf, id=23870, 828.88026pt x 408.97488pt>
-File: Figures/Aplicacion/ms-E-celdas-s21.pdf Graphic file (type pdf)
-<use Figures/Aplicacion/ms-E-celdas-s21.pdf>
-Package pdftex.def Info: Figures/Aplicacion/ms-E-celdas-s21.pdf  used on input 
-line 1654.
-(pdftex.def)             Requested size: 205.37926pt x 101.33235pt.
-<Figures/Aplicacion/ms-H-4-variosD-3EBG-S12.pdf, id=23871, 823.558pt x 407.0073
-pt>
-File: Figures/Aplicacion/ms-H-4-variosD-3EBG-S12.pdf Graphic file (type pdf)
-<use Figures/Aplicacion/ms-H-4-variosD-3EBG-S12.pdf>
-Package pdftex.def Info: Figures/Aplicacion/ms-H-4-variosD-3EBG-S12.pdf  used o
-n input line 1654.
-(pdftex.def)             Requested size: 205.37926pt x 101.49693pt.
- [104
-
- <./Figures/Aplicacion/ms-E-celdas-s21.pdf> <./Figures/Aplicacion/ms-H-4-varios
-D-3EBG-S12.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Aplicacion/ms-H-4-variosD-3EB
-G-S12.pdf): PDF inclusion: multiple pdfs with page group included in a single p
-age
->]
-Overfull \vbox (20.12524pt too high) detected at line 1671
- []
-
-[105
-
-] [106
-
-] [107
-
-] [108
-
-] (./presentacion.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-) [109
-
-]
-Overfull \hbox (3.1032pt too wide) detected at line 1760
-[]
- []
-
-
-Overfull \hbox (4.12743pt too wide) detected at line 1760
-[]
- []
-
-[110
-
-]
-<Figures/Presentacion/onda_em.pdf, id=23976, 491.36346pt x 83.5893pt>
-File: Figures/Presentacion/onda_em.pdf Graphic file (type pdf)
-<use Figures/Presentacion/onda_em.pdf>
-Package pdftex.def Info: Figures/Presentacion/onda_em.pdf  used on input line 1
-810.
-(pdftex.def)             Requested size: 342.2953pt x 58.23149pt.
- [111
-
- <./Figures/Presentacion/onda_em.pdf>] [112
-
-] [113
-
-] [114
-
-] [115
-
-]
-[116
-
-] [117
-
-]
-<Figures/intro_electro/circuito-equivalente-antena-ms.pdf, id=24042, 771.32434p
-t x 178.44029pt>
-File: Figures/intro_electro/circuito-equivalente-antena-ms.pdf Graphic file (ty
-pe pdf)
-<use Figures/intro_electro/circuito-equivalente-antena-ms.pdf>
-Package pdftex.def Info: Figures/intro_electro/circuito-equivalente-antena-ms.p
-df  used on input line 1969.
-(pdftex.def)             Requested size: 308.06367pt x 71.26866pt.
- [118
-
- <./Figures/intro_electro/circuito-equivalente-antena-ms.pdf>]
-<Figures/intro_electro/distribucion-campos-microstrip.pdf, id=24074, 239.41454p
-t x 186.67368pt>
-File: Figures/intro_electro/distribucion-campos-microstrip.pdf Graphic file (ty
-pe pdf)
-<use Figures/intro_electro/distribucion-campos-microstrip.pdf>
-Package pdftex.def Info: Figures/intro_electro/distribucion-campos-microstrip.p
-df  used on input line 1984.
-(pdftex.def)             Requested size: 167.72658pt x 130.78175pt.
-
-Overfull \vbox (19.51907pt too high) detected at line 1984
- []
-
-[119
-
- <./Figures/intro_electro/distribucion-campos-microstrip.pdf>]
 \tf@nav=\write9
 \openout9 = `presentacion.nav'.
 
@@ -3085,86 +3109,63 @@ Overfull \vbox (19.51907pt too high) detected at line 1984
 \tf@snm=\write11
 \openout11 = `presentacion.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1986.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1986.
-
-(./presentacion.aux
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1978.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1978.
+ (./presentacion.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1986.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1986.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1978.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1978.
 
-
-
-Package rerunfilecheck Warning: File `presentacion.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `presentacion.out':
-(rerunfilecheck)             Before: 876C37F9EBDE0D963B2B64A194C09907;1449
-(rerunfilecheck)             After:  C98E50044B794CF22D8626ADB2B1C039;1449.
+Package rerunfilecheck Info: File `presentacion.out' has not changed.
+(rerunfilecheck)             Checksum: 11AE67439BC4798BA73E31BA0D5DD3DF;1390.
  ) 
 Here is how much of TeX's memory you used:
- 37542 strings out of 492982
- 784805 string characters out of 6134895
- 891210 words of memory out of 5000000
- 40072 multiletter control sequences out of 15000+600000
+ 37518 strings out of 492982
+ 784411 string characters out of 6134895
+ 889914 words of memory out of 5000000
+ 40063 multiletter control sequences out of 15000+600000
  546733 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,26n,103p,10501b,869s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Navigation120} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.6.1.110} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.4.2.103} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.4.1.94} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.3.3.80} has been referenced but does not e
-xist, replaced by a fixed one
-
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi
-12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/
-public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/symbol/usyr.pfb>
-Output written on presentacion.pdf (119 pages, 10898512 bytes).
+ 66i,21n,103p,10501b,869s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+si12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb>
+Output written on presentacion.pdf (116 pages, 10722293 bytes).
 PDF statistics:
- 24386 PDF objects out of 26593 (max. 8388607)
- 14981 compressed objects within 150 object streams
- 269 named destinations out of 1000 (max. 500000)
- 950 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 24348 PDF objects out of 26593 (max. 8388607)
+ 14947 compressed objects within 150 object streams
+ 258 named destinations out of 1000 (max. 500000)
+ 937 words of extra memory for PDF output out of 10000 (max. 10000000)
 
