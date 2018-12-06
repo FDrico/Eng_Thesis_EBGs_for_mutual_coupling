@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  6 DEC 2018 10:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  6 DEC 2018 16:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2283,70 +2283,96 @@ File: Figures/Modelado/Orlandi-DeltaAnchoConector-comparacion.pdf Graphic file
 (type pdf)
 <use Figures/Modelado/Orlandi-DeltaAnchoConector-comparacion.pdf>
 Package pdftex.def Info: Figures/Modelado/Orlandi-DeltaAnchoConector-comparacio
-n.pdf  used on input line 1076.
+n.pdf  used on input line 1086.
 (pdftex.def)             Requested size: 342.2953pt x 109.18158pt.
+<Figures/Presentacion/orlandi-celda-puentesAncho.pdf, id=4736, 473.95679pt x 32
+9.5596pt>
+File: Figures/Presentacion/orlandi-celda-puentesAncho.pdf Graphic file (type pd
+f)
+<use Figures/Presentacion/orlandi-celda-puentesAncho.pdf>
+Package pdftex.def Info: Figures/Presentacion/orlandi-celda-puentesAncho.pdf  u
+sed on input line 1086.
+(pdftex.def)             Requested size: 105.27519pt x 73.19728pt.
 
 [55
 
- <./Figures/Modelado/Orlandi-DeltaAnchoConector-comparacion.pdf>]
+ <./Figures/Modelado/Orlandi-DeltaAnchoConector-comparacion.pdf> <./Figures/Pre
+sentacion/orlandi-celda-puentesAncho.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Presentacion/orlandi-celda-pu
+entesAncho.pdf): PDF inclusion: multiple pdfs with page group included in a sin
+gle page
+>]
 <Figures/Modelado/Orlandi-DeltaSeparacionParches-DeltaTamanioCelda-ParcheFijo-C
-omparacion.pdf, id=5137, 3249.92049pt x 1064.80452pt>
+omparacion.pdf, id=5150, 3249.92049pt x 1064.80452pt>
 File: Figures/Modelado/Orlandi-DeltaSeparacionParches-DeltaTamanioCelda-ParcheF
 ijo-Comparacion.pdf Graphic file (type pdf)
 <use Figures/Modelado/Orlandi-DeltaSeparacionParches-DeltaTamanioCelda-ParcheFi
 jo-Comparacion.pdf>
 Package pdftex.def Info: Figures/Modelado/Orlandi-DeltaSeparacionParches-DeltaT
-amanioCelda-ParcheFijo-Comparacion.pdf  used on input line 1076.
+amanioCelda-ParcheFijo-Comparacion.pdf  used on input line 1086.
 (pdftex.def)             Requested size: 342.2953pt x 112.14084pt.
+<Figures/Presentacion/orlandi-celda-puentes.pdf, id=5151, 394.4505pt x 329.5596
+pt>
+File: Figures/Presentacion/orlandi-celda-puentes.pdf Graphic file (type pdf)
+<use Figures/Presentacion/orlandi-celda-puentes.pdf>
+Package pdftex.def Info: Figures/Presentacion/orlandi-celda-puentes.pdf  used o
+n input line 1086.
+(pdftex.def)             Requested size: 85.35826pt x 71.31656pt.
  [56
 
  <./Figures/Modelado/Orlandi-DeltaSeparacionParches-DeltaTamanioCelda-ParcheFij
-o-Comparacion.pdf>]
+o-Comparacion.pdf> <./Figures/Presentacion/orlandi-celda-puentes.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Presentacion/orlandi-celda-pu
+entes.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+>]
 <Figures/Modelado/Orlandi-DeltaTamanioCelda-RelacionParcheFija-Comparacion.pdf,
- id=5514, 3030.18622pt x 1829.20891pt>
+ id=5540, 3030.18622pt x 1829.20891pt>
 File: Figures/Modelado/Orlandi-DeltaTamanioCelda-RelacionParcheFija-Comparacion
 .pdf Graphic file (type pdf)
 <use Figures/Modelado/Orlandi-DeltaTamanioCelda-RelacionParcheFija-Comparacion.
 pdf>
 Package pdftex.def Info: Figures/Modelado/Orlandi-DeltaTamanioCelda-RelacionPar
-cheFija-Comparacion.pdf  used on input line 1076.
+cheFija-Comparacion.pdf  used on input line 1086.
 (pdftex.def)             Requested size: 342.2953pt x 206.62842pt.
 
-Overfull \vbox (14.22444pt too high) detected at line 1076
+Overfull \vbox (14.22444pt too high) detected at line 1086
  []
 
 [57
 
  <./Figures/Modelado/Orlandi-DeltaTamanioCelda-RelacionParcheFija-Comparacion.p
 df>]
-<Figures/Modelado/Orlandi-3direcciones-anchoSustrato-Comparacion.pdf, id=6715, 
+<Figures/Modelado/Orlandi-3direcciones-anchoSustrato-Comparacion.pdf, id=6741, 
 3111.56471pt x 2031.39555pt>
 File: Figures/Modelado/Orlandi-3direcciones-anchoSustrato-Comparacion.pdf Graph
 ic file (type pdf)
 <use Figures/Modelado/Orlandi-3direcciones-anchoSustrato-Comparacion.pdf>
 Package pdftex.def Info: Figures/Modelado/Orlandi-3direcciones-anchoSustrato-Co
-mparacion.pdf  used on input line 1076.
+mparacion.pdf  used on input line 1086.
 (pdftex.def)             Requested size: 321.7584pt x 210.03268pt.
 
-Overfull \vbox (4.0287pt too high) detected at line 1076
+Overfull \vbox (4.0287pt too high) detected at line 1086
  []
 
 [58
 
  <./Figures/Modelado/Orlandi-3direcciones-anchoSustrato-Comparacion.pdf>]
-<Figures/Modelado/yang-celda.pdf, id=7437, 419.33488pt x 359.91458pt>
+<Figures/Modelado/yang-celda.pdf, id=7463, 419.33488pt x 359.91458pt>
 File: Figures/Modelado/yang-celda.pdf Graphic file (type pdf)
 <use Figures/Modelado/yang-celda.pdf>
 Package pdftex.def Info: Figures/Modelado/yang-celda.pdf  used on input line 10
-87.
+97.
 (pdftex.def)             Requested size: 171.14764pt x 146.89592pt.
-<Figures/Presentacion/yang-modo1-Enorma-Etangencial.pdf, id=7438, 847.2428pt x 
+<Figures/Presentacion/yang-modo1-Enorma-Etangencial.pdf, id=7464, 847.2428pt x 
 753.73347pt>
 File: Figures/Presentacion/yang-modo1-Enorma-Etangencial.pdf Graphic file (type
  pdf)
 <use Figures/Presentacion/yang-modo1-Enorma-Etangencial.pdf>
 Package pdftex.def Info: Figures/Presentacion/yang-modo1-Enorma-Etangencial.pdf
-  used on input line 1087.
+  used on input line 1097.
 (pdftex.def)             Requested size: 171.14764pt x 152.25066pt.
 
 [59
@@ -2358,201 +2384,189 @@ pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Presentacion/yang-modo1-Enorm
 a-Etangencial.pdf): PDF inclusion: multiple pdfs with page group included in a 
 single page
 >]
-<Figures/Fundamentos/circuito-equivalente-celda-YANG-2.pdf, id=7500, 222.41504p
+<Figures/Fundamentos/circuito-equivalente-celda-YANG-2.pdf, id=7527, 222.41504p
 t x 117.62071pt>
 File: Figures/Fundamentos/circuito-equivalente-celda-YANG-2.pdf Graphic file (t
 ype pdf)
 <use Figures/Fundamentos/circuito-equivalente-celda-YANG-2.pdf>
 Package pdftex.def Info: Figures/Fundamentos/circuito-equivalente-celda-YANG-2.
-pdf  used on input line 1221.
+pdf  used on input line 1231.
 (pdftex.def)             Requested size: 273.83728pt x 144.81976pt.
 
-Overfull \vbox (1.07477pt too high) detected at line 1221
+Overfull \vbox (1.07477pt too high) detected at line 1231
  []
 
 [60
 
  <./Figures/Fundamentos/circuito-equivalente-celda-YANG-2.pdf>]
-<Figures/Presentacion/circuito-equivalente-celda-YANG-2.pdf, id=7547, 222.41504
+<Figures/Presentacion/circuito-equivalente-celda-YANG-2.pdf, id=7573, 222.41504
 pt x 117.62071pt>
 File: Figures/Presentacion/circuito-equivalente-celda-YANG-2.pdf Graphic file (
 type pdf)
 <use Figures/Presentacion/circuito-equivalente-celda-YANG-2.pdf>
 Package pdftex.def Info: Figures/Presentacion/circuito-equivalente-celda-YANG-2
-.pdf  used on input line 1221.
+.pdf  used on input line 1231.
 (pdftex.def)             Requested size: 171.14764pt x 90.51077pt.
-
-! Undefined control sequence.
-\beamer@doifinframe ...Kim, Shutt-Ainé & \smallC 
-                                                  . Paul & \small \textit {A...
-l.1221 		\end{frame}
-                    
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[61
+ [61
 
  <./Figures/Presentacion/circuito-equivalente-celda-YANG-2.pdf>]
-Overfull \hbox (29.77527pt too wide) detected at line 1221
+Overfull \hbox (29.77527pt too wide) detected at line 1231
 []
  []
 
-<Figures/Modelado/capacidad-cg-Q3D.png, id=7594, 522.45187pt x 371.13657pt>
+<Figures/Modelado/capacidad-cg-Q3D.png, id=7620, 522.45187pt x 371.13657pt>
 File: Figures/Modelado/capacidad-cg-Q3D.png Graphic file (type png)
 <use Figures/Modelado/capacidad-cg-Q3D.png>
 Package pdftex.def Info: Figures/Modelado/capacidad-cg-Q3D.png  used on input l
-ine 1221.
+ine 1231.
 (pdftex.def)             Requested size: 136.91862pt x 97.2634pt.
 
-Overfull \hbox (7.8752pt too wide) detected at line 1221
+Overfull \hbox (7.8752pt too wide) detected at line 1231
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
 
-Overfull \vbox (2.33977pt too high) detected at line 1221
+Overfull \vbox (2.33977pt too high) detected at line 1231
  []
 
 [62
 
  <./Figures/Modelado/capacidad-cg-Q3D.png>]
-<Figures/Modelado/3-4.pdf, id=7604, 625.85822pt x 403.39587pt>
+<Figures/Modelado/3-4.pdf, id=7630, 625.85822pt x 403.39587pt>
 File: Figures/Modelado/3-4.pdf Graphic file (type pdf)
 <use Figures/Modelado/3-4.pdf>
-Package pdftex.def Info: Figures/Modelado/3-4.pdf  used on input line 1221.
+Package pdftex.def Info: Figures/Modelado/3-4.pdf  used on input line 1231.
 (pdftex.def)             Requested size: 308.06367pt x 198.56438pt.
  [63
 
  <./Figures/Modelado/3-4.pdf>]
-<Figures/Fundamentos/circuito-equivalente-celda-YANG-6.pdf, id=7632, 213.96956p
+<Figures/Fundamentos/circuito-equivalente-celda-YANG-6.pdf, id=7659, 213.96956p
 t x 104.57436pt>
 File: Figures/Fundamentos/circuito-equivalente-celda-YANG-6.pdf Graphic file (t
 ype pdf)
 <use Figures/Fundamentos/circuito-equivalente-celda-YANG-6.pdf>
 Package pdftex.def Info: Figures/Fundamentos/circuito-equivalente-celda-YANG-6.
-pdf  used on input line 1254.
+pdf  used on input line 1264.
 (pdftex.def)             Requested size: 325.17949pt x 158.92593pt.
  [64
 
  <./Figures/Fundamentos/circuito-equivalente-celda-YANG-6.pdf>]
-<Figures/Presentacion/composicion.pdf, id=7679, 625.85822pt x 403.39587pt>
+<Figures/Presentacion/composicion.pdf, id=7705, 625.85822pt x 403.3959pt>
 File: Figures/Presentacion/composicion.pdf Graphic file (type pdf)
 <use Figures/Presentacion/composicion.pdf>
 Package pdftex.def Info: Figures/Presentacion/composicion.pdf  used on input li
-ne 1254.
-(pdftex.def)             Requested size: 287.5268pt x 185.3243pt.
+ne 1264.
+(pdftex.def)             Requested size: 287.5268pt x 185.32431pt.
 
-Overfull \vbox (5.61702pt too high) detected at line 1254
+Overfull \vbox (5.61703pt too high) detected at line 1264
  []
 
 [65
 
  <./Figures/Presentacion/composicion.pdf>]
-<Figures/Fundamentos/circuito-equivalente-celda-YANG-5.pdf, id=7741, 170.58557p
+<Figures/Fundamentos/circuito-equivalente-celda-YANG-5.pdf, id=7813, 170.58557p
 t x 104.09879pt>
 File: Figures/Fundamentos/circuito-equivalente-celda-YANG-5.pdf Graphic file (t
 ype pdf)
 <use Figures/Fundamentos/circuito-equivalente-celda-YANG-5.pdf>
 Package pdftex.def Info: Figures/Fundamentos/circuito-equivalente-celda-YANG-5.
-pdf  used on input line 1286.
+pdf  used on input line 1296.
 (pdftex.def)             Requested size: 325.17949pt x 198.46478pt.
 
-Overfull \vbox (9.78998pt too high) detected at line 1286
+Overfull \vbox (9.78998pt too high) detected at line 1296
  []
 
 [66
 
  <./Figures/Fundamentos/circuito-equivalente-celda-YANG-5.pdf>]
-<Figures/Modelado/69-70.pdf, id=7794, 625.85822pt x 403.39587pt>
+<Figures/Modelado/69-70.pdf, id=7865, 625.85822pt x 403.39587pt>
 File: Figures/Modelado/69-70.pdf Graphic file (type pdf)
 <use Figures/Modelado/69-70.pdf>
-Package pdftex.def Info: Figures/Modelado/69-70.pdf  used on input line 1286.
+Package pdftex.def Info: Figures/Modelado/69-70.pdf  used on input line 1296.
 (pdftex.def)             Requested size: 342.2953pt x 220.62503pt.
 
-Overfull \vbox (16.22105pt too high) detected at line 1286
+Overfull \vbox (16.22105pt too high) detected at line 1296
  []
 
 [67
 
  <./Figures/Modelado/69-70.pdf>]
-<Figures/Presentacion/circuito-equivalente-celda-YANG-4.pdf, id=7821, 167.5673p
+<Figures/Presentacion/circuito-equivalente-celda-YANG-4.pdf, id=7931, 167.5673p
 t x 104.09879pt>
 File: Figures/Presentacion/circuito-equivalente-celda-YANG-4.pdf Graphic file (
 type pdf)
 <use Figures/Presentacion/circuito-equivalente-celda-YANG-4.pdf>
 Package pdftex.def Info: Figures/Presentacion/circuito-equivalente-celda-YANG-4
-.pdf  used on input line 1286.
+.pdf  used on input line 1296.
 (pdftex.def)             Requested size: 325.17949pt x 202.01807pt.
  [68
 
  <./Figures/Presentacion/circuito-equivalente-celda-YANG-4.pdf>]
-<Figures/Modelado/67-68.pdf, id=7873, 625.85822pt x 403.39587pt>
+<Figures/Modelado/67-68.pdf, id=7984, 625.85822pt x 403.39587pt>
 File: Figures/Modelado/67-68.pdf Graphic file (type pdf)
 <use Figures/Modelado/67-68.pdf>
-Package pdftex.def Info: Figures/Modelado/67-68.pdf  used on input line 1286.
+Package pdftex.def Info: Figures/Modelado/67-68.pdf  used on input line 1296.
 (pdftex.def)             Requested size: 342.2953pt x 220.62503pt.
 
-Overfull \vbox (16.22105pt too high) detected at line 1286
+Overfull \vbox (16.22105pt too high) detected at line 1296
  []
 
 [69
 
  <./Figures/Modelado/67-68.pdf>]
-<Figures/Modelado/s11-comparacion.pdf, id=7899, 625.85822pt x 403.39587pt>
+<Figures/Modelado/s11-comparacion.pdf, id=8049, 625.85822pt x 403.39587pt>
 File: Figures/Modelado/s11-comparacion.pdf Graphic file (type pdf)
 <use Figures/Modelado/s11-comparacion.pdf>
 Package pdftex.def Info: Figures/Modelado/s11-comparacion.pdf  used on input li
-ne 1286.
+ne 1296.
 (pdftex.def)             Requested size: 342.2953pt x 220.62503pt.
 
-Overfull \vbox (16.22105pt too high) detected at line 1286
+Overfull \vbox (16.22105pt too high) detected at line 1296
  []
 
 [70
 
  <./Figures/Modelado/s11-comparacion.pdf>]
-<Figures/Modelado/dispersion-yang-vs-s21.pdf, id=7929, 842.66821pt x 405.77274p
+<Figures/Modelado/dispersion-yang-vs-s21.pdf, id=8112, 842.66821pt x 405.77274p
 t>
 File: Figures/Modelado/dispersion-yang-vs-s21.pdf Graphic file (type pdf)
 <use Figures/Modelado/dispersion-yang-vs-s21.pdf>
 Package pdftex.def Info: Figures/Modelado/dispersion-yang-vs-s21.pdf  used on i
-nput line 1286.
+nput line 1296.
 (pdftex.def)             Requested size: 342.2953pt x 164.82619pt.
  [71
 
  <./Figures/Modelado/dispersion-yang-vs-s21.pdf>]
-<Figures/Modelado/s12-variacion-pila.pdf, id=8021, 680.56058pt x 333.50273pt>
+<Figures/Modelado/s12-variacion-pila.pdf, id=8204, 680.56058pt x 333.50273pt>
 File: Figures/Modelado/s12-variacion-pila.pdf Graphic file (type pdf)
 <use Figures/Modelado/s12-variacion-pila.pdf>
 Package pdftex.def Info: Figures/Modelado/s12-variacion-pila.pdf  used on input
- line 1300.
+ line 1310.
 (pdftex.def)             Requested size: 273.83728pt x 134.19258pt.
-<Figures/Modelado/apilamiento.PNG, id=8022, 289.08pt x 621.32124pt>
+<Figures/Modelado/apilamiento.PNG, id=8205, 289.08pt x 621.32124pt>
 File: Figures/Modelado/apilamiento.PNG Graphic file (type png)
 <use Figures/Modelado/apilamiento.PNG>
 Package pdftex.def Info: Figures/Modelado/apilamiento.PNG  used on input line 1
-300.
+310.
 (pdftex.def)             Requested size: 68.45801pt x 147.12921pt.
  [72
 
  <./Figures/Modelado/s12-variacion-pila.pdf> <./Figures/Modelado/apilamiento.PN
 G>]
-<Figures/Modelado/params-estructura-bidimensional.pdf, id=8052, 698.12822pt x 3
+<Figures/Modelado/params-estructura-bidimensional.pdf, id=8235, 698.12822pt x 3
 33.50273pt>
 File: Figures/Modelado/params-estructura-bidimensional.pdf Graphic file (type p
 df)
 <use Figures/Modelado/params-estructura-bidimensional.pdf>
 Package pdftex.def Info: Figures/Modelado/params-estructura-bidimensional.pdf  
-used on input line 1310.
+used on input line 1320.
 (pdftex.def)             Requested size: 273.83728pt x 130.8136pt.
-<Figures/Modelado/EstructuraMuchasCeldas2d.png, id=8053, 208.52907pt x 434.3728
+<Figures/Modelado/EstructuraMuchasCeldas2d.png, id=8236, 208.52907pt x 434.3728
 2pt>
 File: Figures/Modelado/EstructuraMuchasCeldas2d.png Graphic file (type png)
 <use Figures/Modelado/EstructuraMuchasCeldas2d.png>
 Package pdftex.def Info: Figures/Modelado/EstructuraMuchasCeldas2d.png  used on
- input line 1310.
+ input line 1320.
 (pdftex.def)             Requested size: 68.45801pt x 142.60114pt.
  [73
 
@@ -2560,150 +2574,150 @@ Package pdftex.def Info: Figures/Modelado/EstructuraMuchasCeldas2d.png  used on
 structuraMuchasCeldas2d.png>] [74
 
 ]
-<Figures/Modelado/TLM-progresion.pdf, id=8091, 532.83705pt x 428.81349pt>
+<Figures/Modelado/TLM-progresion.pdf, id=8274, 532.83705pt x 428.81349pt>
 File: Figures/Modelado/TLM-progresion.pdf Graphic file (type pdf)
 <use Figures/Modelado/TLM-progresion.pdf>
 Package pdftex.def Info: Figures/Modelado/TLM-progresion.pdf  used on input lin
-e 1339.
+e 1349.
 (pdftex.def)             Requested size: 280.68465pt x 225.896pt.
 
-Overfull \vbox (7.89201pt too high) detected at line 1339
+Overfull \vbox (7.89201pt too high) detected at line 1349
  []
 
 [75
 
  <./Figures/Modelado/TLM-progresion.pdf>]
-<Figures/Modelado/esquema-matriz-s.pdf, id=13436, 82.70793pt x 39.89624pt>
+<Figures/Modelado/esquema-matriz-s.pdf, id=13619, 82.70793pt x 39.89624pt>
 File: Figures/Modelado/esquema-matriz-s.pdf Graphic file (type pdf)
 <use Figures/Modelado/esquema-matriz-s.pdf>
 Package pdftex.def Info: Figures/Modelado/esquema-matriz-s.pdf  used on input l
-ine 1369.
+ine 1379.
 (pdftex.def)             Requested size: 239.60567pt x 115.5859pt.
  [76
 
  <./Figures/Modelado/esquema-matriz-s.pdf>]
-<Figures/Modelado/TiposDePixel.pdf, id=13455, 583.81578pt x 506.87978pt>
+<Figures/Modelado/TiposDePixel.pdf, id=13639, 583.81578pt x 506.87978pt>
 File: Figures/Modelado/TiposDePixel.pdf Graphic file (type pdf)
 <use Figures/Modelado/TiposDePixel.pdf>
 Package pdftex.def Info: Figures/Modelado/TiposDePixel.pdf  used on input line 
-1375.
+1385.
 (pdftex.def)             Requested size: 256.72147pt x 222.88857pt.
 
-Overfull \vbox (4.88458pt too high) detected at line 1375
+Overfull \vbox (4.88458pt too high) detected at line 1385
  []
 
 [77
 
  <./Figures/Modelado/TiposDePixel.pdf>]
-<Figures/Modelado/Modelo-Pixeles.pdf, id=14882, 431.27585pt x 252.73499pt>
+<Figures/Modelado/Modelo-Pixeles.pdf, id=15065, 431.27585pt x 252.73499pt>
 File: Figures/Modelado/Modelo-Pixeles.pdf Graphic file (type pdf)
 <use Figures/Modelado/Modelo-Pixeles.pdf>
 Package pdftex.def Info: Figures/Modelado/Modelo-Pixeles.pdf  used on input lin
-e 1387.
+e 1397.
 (pdftex.def)             Requested size: 342.2953pt x 200.5994pt.
  [78
 
  <./Figures/Modelado/Modelo-Pixeles.pdf>]
-<Figures/Modelado/ProcesoCfringe.pdf, id=14933, 389.44366pt x 247.4369pt>
+<Figures/Modelado/ProcesoCfringe.pdf, id=15116, 389.44366pt x 247.4369pt>
 File: Figures/Modelado/ProcesoCfringe.pdf Graphic file (type pdf)
 <use Figures/Modelado/ProcesoCfringe.pdf>
 Package pdftex.def Info: Figures/Modelado/ProcesoCfringe.pdf  used on input lin
-e 1399.
+e 1409.
 (pdftex.def)             Requested size: 256.72147pt x 163.11252pt.
 
-Overfull \vbox (10.75546pt too high) detected at line 1399
+Overfull \vbox (10.75546pt too high) detected at line 1409
  []
 
 [79
 
  <./Figures/Modelado/ProcesoCfringe.pdf>]
-<Figures/Modelado/ProcesoProfundidad.pdf, id=15309, 422.73576pt x 389.99297pt>
+<Figures/Modelado/ProcesoProfundidad.pdf, id=15492, 422.73576pt x 389.99297pt>
 File: Figures/Modelado/ProcesoProfundidad.pdf Graphic file (type pdf)
 <use Figures/Modelado/ProcesoProfundidad.pdf>
 Package pdftex.def Info: Figures/Modelado/ProcesoProfundidad.pdf  used on input
- line 1437.
+ line 1447.
 (pdftex.def)             Requested size: 239.60567pt x 221.04268pt.
 
-Overfull \hbox (2.92041pt too wide) detected at line 1437
+Overfull \hbox (2.92041pt too wide) detected at line 1447
 []
  []
 
 
-Overfull \vbox (3.0387pt too high) detected at line 1437
+Overfull \vbox (3.0387pt too high) detected at line 1447
  []
 
 [80
 
  <./Figures/Modelado/ProcesoProfundidad.pdf>]
-<Figures/Modelado/AcoplamientoCapacitivoGeneral.pdf, id=16028, 230.43076pt x 24
+<Figures/Modelado/AcoplamientoCapacitivoGeneral.pdf, id=16211, 230.43076pt x 24
 5.71483pt>
 File: Figures/Modelado/AcoplamientoCapacitivoGeneral.pdf Graphic file (type pdf
 )
 <use Figures/Modelado/AcoplamientoCapacitivoGeneral.pdf>
 Package pdftex.def Info: Figures/Modelado/AcoplamientoCapacitivoGeneral.pdf  us
-ed on input line 1437.
+ed on input line 1447.
 (pdftex.def)             Requested size: 205.37926pt x 219.00793pt.
 
-Overfull \vbox (1.00395pt too high) detected at line 1437
+Overfull \vbox (1.00395pt too high) detected at line 1447
  []
 
 [81
 
  <./Figures/Modelado/AcoplamientoCapacitivoGeneral.pdf>]
-<Figures/Modelado/AcoplamientoCapacitivoDebil.pdf, id=16086, 331.3592pt x 83.51
+<Figures/Modelado/AcoplamientoCapacitivoDebil.pdf, id=16269, 331.3592pt x 83.51
 035pt>
 File: Figures/Modelado/AcoplamientoCapacitivoDebil.pdf Graphic file (type pdf)
 <use Figures/Modelado/AcoplamientoCapacitivoDebil.pdf>
 Package pdftex.def Info: Figures/Modelado/AcoplamientoCapacitivoDebil.pdf  used
- on input line 1437.
+ on input line 1447.
 (pdftex.def)             Requested size: 308.06367pt x 77.64212pt.
  [82
 
  <./Figures/Modelado/AcoplamientoCapacitivoDebil.pdf>]
-<Figures/Modelado/ProcedimientoUsuario.pdf, id=16098, 462.45888pt x 230.88086pt
+<Figures/Modelado/ProcedimientoUsuario.pdf, id=16281, 462.45888pt x 230.88086pt
 >
 File: Figures/Modelado/ProcedimientoUsuario.pdf Graphic file (type pdf)
 <use Figures/Modelado/ProcedimientoUsuario.pdf>
 Package pdftex.def Info: Figures/Modelado/ProcedimientoUsuario.pdf  used on inp
-ut line 1443.
+ut line 1453.
 (pdftex.def)             Requested size: 342.2953pt x 170.89496pt.
  [83
 
  <./Figures/Modelado/ProcedimientoUsuario.pdf>]
-<Figures/Modelado/ConceptoMatrizProgresoTiempo.pdf, id=16170, 421.9907pt x 484.
+<Figures/Modelado/ConceptoMatrizProgresoTiempo.pdf, id=16353, 421.9907pt x 484.
 73424pt>
 File: Figures/Modelado/ConceptoMatrizProgresoTiempo.pdf Graphic file (type pdf)
 
 <use Figures/Modelado/ConceptoMatrizProgresoTiempo.pdf>
 Package pdftex.def Info: Figures/Modelado/ConceptoMatrizProgresoTiempo.pdf  use
-d on input line 1461.
+d on input line 1471.
 (pdftex.def)             Requested size: 215.6477pt x 247.71414pt.
  [84
 
  <./Figures/Modelado/ConceptoMatrizProgresoTiempo.pdf>]
-<Figures/Modelado/tensionEntrada-Tiempo.pdf, id=23123, 625.75946pt x 407.0073pt
+<Figures/Modelado/tensionEntrada-Tiempo.pdf, id=23306, 625.75946pt x 407.0073pt
 >
 File: Figures/Modelado/tensionEntrada-Tiempo.pdf Graphic file (type pdf)
 <use Figures/Modelado/tensionEntrada-Tiempo.pdf>
 Package pdftex.def Info: Figures/Modelado/tensionEntrada-Tiempo.pdf  used on in
-put line 1486.
+put line 1496.
 (pdftex.def)             Requested size: 171.14764pt x 111.31561pt.
-<Figures/Modelado/tensionSalida-Tiempo.pdf, id=23124, 625.75946pt x 407.0073pt>
+<Figures/Modelado/tensionSalida-Tiempo.pdf, id=23307, 625.75946pt x 407.0073pt>
 
 File: Figures/Modelado/tensionSalida-Tiempo.pdf Graphic file (type pdf)
 <use Figures/Modelado/tensionSalida-Tiempo.pdf>
 Package pdftex.def Info: Figures/Modelado/tensionSalida-Tiempo.pdf  used on inp
-ut line 1486.
+ut line 1496.
 (pdftex.def)             Requested size: 171.14764pt x 111.31561pt.
-<Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf, id=23125, 625.75946pt x 407.00
+<Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf, id=23308, 625.75946pt x 407.00
 73pt>
 File: Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf Graphic file (type pdf)
 <use Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf>
 Package pdftex.def Info: Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf  used o
-n input line 1486.
+n input line 1496.
 (pdftex.def)             Requested size: 171.14764pt x 111.31561pt.
 
-Overfull \vbox (5.62724pt too high) detected at line 1486
+Overfull \vbox (5.62724pt too high) detected at line 1496
  []
 
 [85
@@ -2722,7 +2736,7 @@ age
 File: Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf Graphic file (type pdf)
 <use Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf>
 Package pdftex.def Info: Figures/Modelado/TensionSalida-FrecAbsCOMP.pdf  used o
-n input line 1507.
+n input line 1517.
 (pdftex.def)             Requested size: 222.48985pt x 144.70906pt.
  [86
 
@@ -2732,11 +2746,11 @@ LaTeX Info: Redefining \% on input line 1.
 ) [87
 
 ]
-<Figures/Aplicacion/dos-monopolos.png, id=23202, 621.07031pt x 337.26pt>
+<Figures/Aplicacion/dos-monopolos.png, id=23385, 621.07031pt x 337.26pt>
 File: Figures/Aplicacion/dos-monopolos.png Graphic file (type png)
 <use Figures/Aplicacion/dos-monopolos.png>
 Package pdftex.def Info: Figures/Aplicacion/dos-monopolos.png  used on input li
-ne 1527.
+ne 1537.
 (pdftex.def)             Requested size: 171.14764pt x 92.93462pt.
  [88
 
@@ -2744,77 +2758,77 @@ ne 1527.
 File: Figures/Aplicacion/dos-monopolos.png Graphic file (type png)
 <use Figures/Aplicacion/dos-monopolos.png>
 Package pdftex.def Info: Figures/Aplicacion/dos-monopolos.png  used on input li
-ne 1527.
+ne 1537.
 (pdftex.def)             Requested size: 171.14764pt x 92.93462pt.
-<Figures/Aplicacion/dos-monopolos-sin-GND.png, id=23212, 566.86781pt x 547.2947
+<Figures/Aplicacion/dos-monopolos-sin-GND.png, id=23395, 566.86781pt x 547.2947
 pt>
 File: Figures/Aplicacion/dos-monopolos-sin-GND.png Graphic file (type png)
 <use Figures/Aplicacion/dos-monopolos-sin-GND.png>
 Package pdftex.def Info: Figures/Aplicacion/dos-monopolos-sin-GND.png  used on 
-input line 1527.
+input line 1537.
 (pdftex.def)             Requested size: 171.14764pt x 165.23355pt.
 [89
 
  <./Figures/Aplicacion/dos-monopolos-sin-GND.png>]
-<Figures/Aplicacion/Monopole_and_image_antenna.pdf, id=23222, 1017.93979pt x 60
+<Figures/Aplicacion/Monopole_and_image_antenna.pdf, id=23405, 1017.93979pt x 60
 6.84952pt>
 File: Figures/Aplicacion/Monopole_and_image_antenna.pdf Graphic file (type pdf)
 
 <use Figures/Aplicacion/Monopole_and_image_antenna.pdf>
 Package pdftex.def Info: Figures/Aplicacion/Monopole_and_image_antenna.pdf  use
-d on input line 1527.
+d on input line 1537.
 (pdftex.def)             Requested size: 171.14764pt x 102.0241pt.
 File: Figures/Aplicacion/dos-monopolos-sin-GND.png Graphic file (type png)
 <use Figures/Aplicacion/dos-monopolos-sin-GND.png>
 Package pdftex.def Info: Figures/Aplicacion/dos-monopolos-sin-GND.png  used on 
-input line 1527.
+input line 1537.
 (pdftex.def)             Requested size: 171.14764pt x 165.23355pt.
  [90
 
  <./Figures/Aplicacion/Monopole_and_image_antenna.pdf>]
-<Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinGND.pdf, id=232
-75, 553.48946pt x 334.7373pt>
+<Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinGND.pdf, id=234
+58, 553.48946pt x 334.7373pt>
 File: Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinGND.pdf Gr
 aphic file (type pdf)
 <use Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinGND.pdf>
 Package pdftex.def Info: Figures/Aplicacion/comparacion-dipolos-s12-variasDista
-ncias-sinGND.pdf  used on input line 1527.
+ncias-sinGND.pdf  used on input line 1537.
 (pdftex.def)             Requested size: 342.2953pt x 207.0191pt.
 
-Overfull \vbox (16.21513pt too high) detected at line 1527
+Overfull \vbox (16.21513pt too high) detected at line 1537
  []
 
 [91
 
  <./Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinGND.pdf>]
-<Figures/Aplicacion/comparacion-dipolos-s11-variasDistancias-sinGND.pdf, id=233
-07, 540.9236pt x 334.7373pt>
+<Figures/Aplicacion/comparacion-dipolos-s11-variasDistancias-sinGND.pdf, id=234
+90, 540.9236pt x 334.7373pt>
 File: Figures/Aplicacion/comparacion-dipolos-s11-variasDistancias-sinGND.pdf Gr
 aphic file (type pdf)
 <use Figures/Aplicacion/comparacion-dipolos-s11-variasDistancias-sinGND.pdf>
 Package pdftex.def Info: Figures/Aplicacion/comparacion-dipolos-s11-variasDista
-ncias-sinGND.pdf  used on input line 1527.
+ncias-sinGND.pdf  used on input line 1537.
 (pdftex.def)             Requested size: 342.2953pt x 211.82542pt.
 
-Overfull \vbox (7.42145pt too high) detected at line 1527
+Overfull \vbox (7.42145pt too high) detected at line 1537
  []
 
 [92
 
  <./Figures/Aplicacion/comparacion-dipolos-s11-variasDistancias-sinGND.pdf>]
-<Figures/Aplicacion/dos-monopolos-2EBG.png, id=23337, 582.67688pt x 540.51938pt
+<Figures/Aplicacion/dos-monopolos-2EBG.png, id=23520, 582.67688pt x 540.51938pt
 >
 File: Figures/Aplicacion/dos-monopolos-2EBG.png Graphic file (type png)
 <use Figures/Aplicacion/dos-monopolos-2EBG.png>
 Package pdftex.def Info: Figures/Aplicacion/dos-monopolos-2EBG.png  used on inp
-ut line 1574.
+ut line 1584.
 (pdftex.def)             Requested size: 171.14764pt x 158.75902pt.
-<Figures/Aplicacion/dos-monopolos-3EBG.png, id=23338, 571.38469pt x 547.2947pt>
+<Figures/Aplicacion/dos-monopolos-3EBG.png, id=23521, 571.38469pt x 547.2947pt>
 
 File: Figures/Aplicacion/dos-monopolos-3EBG.png Graphic file (type png)
 <use Figures/Aplicacion/dos-monopolos-3EBG.png>
 Package pdftex.def Info: Figures/Aplicacion/dos-monopolos-3EBG.png  used on inp
-ut line 1574.
+ut line 1584.
 (pdftex.def)             Requested size: 171.14764pt x 163.93079pt.
 [93
 
@@ -2823,32 +2837,32 @@ los-3EBG.png>]
 File: Figures/Aplicacion/dos-monopolos-2EBG.png Graphic file (type png)
 <use Figures/Aplicacion/dos-monopolos-2EBG.png>
 Package pdftex.def Info: Figures/Aplicacion/dos-monopolos-2EBG.png  used on inp
-ut line 1574.
+ut line 1584.
 (pdftex.def)             Requested size: 68.45801pt x 63.49866pt.
 <Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinConEBG.pdf, id=
-23349, 553.48946pt x 336.70488pt>
+23532, 553.48946pt x 336.70488pt>
 File: Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinConEBG.pdf
  Graphic file (type pdf)
 <use Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinConEBG.pdf>
 
 Package pdftex.def Info: Figures/Aplicacion/comparacion-dipolos-s12-variasDista
-ncias-sinConEBG.pdf  used on input line 1574.
+ncias-sinConEBG.pdf  used on input line 1584.
 (pdftex.def)             Requested size: 273.83728pt x 166.58466pt.
  [94
 
  <./Figures/Aplicacion/comparacion-dipolos-s12-variasDistancias-sinConEBG.pdf>]
-<Figures/Aplicacion/dipolos-s12-variasDistancias-con3EBG.pdf, id=23377, 548.240
+<Figures/Aplicacion/dipolos-s12-variasDistancias-con3EBG.pdf, id=23560, 548.240
 05pt x 334.7373pt>
 File: Figures/Aplicacion/dipolos-s12-variasDistancias-con3EBG.pdf Graphic file 
 (type pdf)
 <use Figures/Aplicacion/dipolos-s12-variasDistancias-con3EBG.pdf>
 Package pdftex.def Info: Figures/Aplicacion/dipolos-s12-variasDistancias-con3EB
-G.pdf  used on input line 1574.
+G.pdf  used on input line 1584.
 (pdftex.def)             Requested size: 273.83728pt x 167.19968pt.
 File: Figures/Aplicacion/dos-monopolos-3EBG.png Graphic file (type png)
 <use Figures/Aplicacion/dos-monopolos-3EBG.png>
 Package pdftex.def Info: Figures/Aplicacion/dos-monopolos-3EBG.png  used on inp
-ut line 1574.
+ut line 1584.
 (pdftex.def)             Requested size: 68.45801pt x 65.56396pt.
  [95
 
@@ -2857,60 +2871,60 @@ File: Figures/Aplicacion/dipolos-s12-variasDistancias-con3EBG.pdf Graphic file
 (type pdf)
 <use Figures/Aplicacion/dipolos-s12-variasDistancias-con3EBG.pdf>
 Package pdftex.def Info: Figures/Aplicacion/dipolos-s12-variasDistancias-con3EB
-G.pdf  used on input line 1574.
+G.pdf  used on input line 1584.
 (pdftex.def)             Requested size: 273.83728pt x 167.19968pt.
 File: Figures/Aplicacion/dos-monopolos-3EBG.png Graphic file (type png)
 <use Figures/Aplicacion/dos-monopolos-3EBG.png>
 Package pdftex.def Info: Figures/Aplicacion/dos-monopolos-3EBG.png  used on inp
-ut line 1574.
+ut line 1584.
 (pdftex.def)             Requested size: 68.45801pt x 65.56396pt.
-<Figures/Aplicacion/dipolos-s11-variasDistancias-con3EBG.pdf, id=23406, 560.805
+<Figures/Aplicacion/dipolos-s11-variasDistancias-con3EBG.pdf, id=23589, 560.805
 86pt x 334.7373pt>
 File: Figures/Aplicacion/dipolos-s11-variasDistancias-con3EBG.pdf Graphic file 
 (type pdf)
 <use Figures/Aplicacion/dipolos-s11-variasDistancias-con3EBG.pdf>
 Package pdftex.def Info: Figures/Aplicacion/dipolos-s11-variasDistancias-con3EB
-G.pdf  used on input line 1574.
+G.pdf  used on input line 1584.
 (pdftex.def)             Requested size: 227.62204pt x 135.8641pt.
  [96
 
  <./Figures/Aplicacion/dipolos-s11-variasDistancias-con3EBG.pdf>]
-<Figures/Presentacion/microstripSINEBG-planoE.PNG, id=23434, 688.5725pt x 659.4
+<Figures/Presentacion/microstripSINEBG-planoE.PNG, id=23617, 688.5725pt x 659.4
 6375pt>
 File: Figures/Presentacion/microstripSINEBG-planoE.PNG Graphic file (type png)
 <use Figures/Presentacion/microstripSINEBG-planoE.PNG>
 Package pdftex.def Info: Figures/Presentacion/microstripSINEBG-planoE.PNG  used
- on input line 1599.
+ on input line 1609.
 (pdftex.def)             Requested size: 154.03183pt x 147.51761pt.
-<Figures/Presentacion/microstripSINEBG-planoH.PNG, id=23435, 623.32875pt x 518.
+<Figures/Presentacion/microstripSINEBG-planoH.PNG, id=23618, 623.32875pt x 518.
 93875pt>
 File: Figures/Presentacion/microstripSINEBG-planoH.PNG Graphic file (type png)
 <use Figures/Presentacion/microstripSINEBG-planoH.PNG>
 Package pdftex.def Info: Figures/Presentacion/microstripSINEBG-planoH.PNG  used
- on input line 1599.
+ on input line 1609.
 (pdftex.def)             Requested size: 171.14764pt x 142.48293pt.
  [97
 
  <./Figures/Presentacion/microstripSINEBG-planoE.PNG> <./Figures/Presentacion/m
 icrostripSINEBG-planoH.PNG>]
-<Figures/Aplicacion/ms-E-35-4-5-sinEBG-S12.pdf, id=23444, 553.48946pt x 334.737
+<Figures/Aplicacion/ms-E-35-4-5-sinEBG-S12.pdf, id=23628, 553.48946pt x 334.737
 3pt>
 File: Figures/Aplicacion/ms-E-35-4-5-sinEBG-S12.pdf Graphic file (type pdf)
 <use Figures/Aplicacion/ms-E-35-4-5-sinEBG-S12.pdf>
 Package pdftex.def Info: Figures/Aplicacion/ms-E-35-4-5-sinEBG-S12.pdf  used on
- input line 1599.
+ input line 1609.
 (pdftex.def)             Requested size: 169.43594pt x 102.47014pt.
 
-Overfull \hbox (15.40411pt too wide) in paragraph at lines 1599--1599
+Overfull \hbox (15.40411pt too wide) in paragraph at lines 1609--1609
  [][] 
  []
 
-<Figures/Aplicacion/ms-H-3-4-45-5-sinEBG-S12.pdf, id=23445, 553.48946pt x 334.7
+<Figures/Aplicacion/ms-H-3-4-45-5-sinEBG-S12.pdf, id=23629, 553.48946pt x 334.7
 373pt>
 File: Figures/Aplicacion/ms-H-3-4-45-5-sinEBG-S12.pdf Graphic file (type pdf)
 <use Figures/Aplicacion/ms-H-3-4-45-5-sinEBG-S12.pdf>
 Package pdftex.def Info: Figures/Aplicacion/ms-H-3-4-45-5-sinEBG-S12.pdf  used 
-on input line 1599.
+on input line 1609.
 (pdftex.def)             Requested size: 171.14764pt x 103.50189pt.
 [98
 
@@ -2921,18 +2935,18 @@ pdfTeX warning: /usr/bin/pdflatex (file ./Figures/Aplicacion/ms-H-3-4-45-5-sinE
 BG-S12.pdf): PDF inclusion: multiple pdfs with page group included in a single 
 page
 >]
-<Figures/Aplicacion/ms-E-celdas-s21.pdf, id=23494, 828.88026pt x 408.97488pt>
+<Figures/Aplicacion/ms-E-celdas-s21.pdf, id=23677, 828.88026pt x 408.97488pt>
 File: Figures/Aplicacion/ms-E-celdas-s21.pdf Graphic file (type pdf)
 <use Figures/Aplicacion/ms-E-celdas-s21.pdf>
 Package pdftex.def Info: Figures/Aplicacion/ms-E-celdas-s21.pdf  used on input 
-line 1599.
+line 1609.
 (pdftex.def)             Requested size: 205.37926pt x 101.33235pt.
-<Figures/Aplicacion/ms-H-4-variosD-3EBG-S12.pdf, id=23495, 823.558pt x 407.0073
+<Figures/Aplicacion/ms-H-4-variosD-3EBG-S12.pdf, id=23678, 823.558pt x 407.0073
 pt>
 File: Figures/Aplicacion/ms-H-4-variosD-3EBG-S12.pdf Graphic file (type pdf)
 <use Figures/Aplicacion/ms-H-4-variosD-3EBG-S12.pdf>
 Package pdftex.def Info: Figures/Aplicacion/ms-H-4-variosD-3EBG-S12.pdf  used o
-n input line 1599.
+n input line 1609.
 (pdftex.def)             Requested size: 205.37926pt x 101.49693pt.
  [99
 
@@ -2956,23 +2970,23 @@ LaTeX Info: Redefining \% on input line 1.
 ) [104
 
 ]
-Overfull \hbox (3.1032pt too wide) detected at line 1705
+Overfull \hbox (3.1032pt too wide) detected at line 1715
 []
  []
 
 
-Overfull \hbox (4.12743pt too wide) detected at line 1705
+Overfull \hbox (4.12743pt too wide) detected at line 1715
 []
  []
 
 [105
 
 ]
-<Figures/Presentacion/onda_em.pdf, id=23600, 491.36346pt x 83.5893pt>
+<Figures/Presentacion/onda_em.pdf, id=23783, 491.36346pt x 83.5893pt>
 File: Figures/Presentacion/onda_em.pdf Graphic file (type pdf)
 <use Figures/Presentacion/onda_em.pdf>
 Package pdftex.def Info: Figures/Presentacion/onda_em.pdf  used on input line 1
-755.
+765.
 (pdftex.def)             Requested size: 342.2953pt x 58.23149pt.
  [106
 
@@ -2990,27 +3004,27 @@ Package pdftex.def Info: Figures/Presentacion/onda_em.pdf  used on input line 1
 ] [112
 
 ]
-<Figures/intro_electro/circuito-equivalente-antena-ms.pdf, id=23666, 771.32434p
+<Figures/intro_electro/circuito-equivalente-antena-ms.pdf, id=23849, 771.32434p
 t x 178.44029pt>
 File: Figures/intro_electro/circuito-equivalente-antena-ms.pdf Graphic file (ty
 pe pdf)
 <use Figures/intro_electro/circuito-equivalente-antena-ms.pdf>
 Package pdftex.def Info: Figures/intro_electro/circuito-equivalente-antena-ms.p
-df  used on input line 1914.
+df  used on input line 1924.
 (pdftex.def)             Requested size: 308.06367pt x 71.26866pt.
  [113
 
  <./Figures/intro_electro/circuito-equivalente-antena-ms.pdf>]
-<Figures/intro_electro/distribucion-campos-microstrip.pdf, id=23698, 239.41454p
+<Figures/intro_electro/distribucion-campos-microstrip.pdf, id=23881, 239.41454p
 t x 186.67368pt>
 File: Figures/intro_electro/distribucion-campos-microstrip.pdf Graphic file (ty
 pe pdf)
 <use Figures/intro_electro/distribucion-campos-microstrip.pdf>
 Package pdftex.def Info: Figures/intro_electro/distribucion-campos-microstrip.p
-df  used on input line 1929.
+df  used on input line 1939.
 (pdftex.def)             Requested size: 167.72658pt x 130.78175pt.
 
-Overfull \vbox (19.51907pt too high) detected at line 1929
+Overfull \vbox (19.51907pt too high) detected at line 1939
  []
 
 [114
@@ -3020,67 +3034,67 @@ File: Figures/intro_electro/incidencia-coated-conductor.pdf Graphic file (type
 pdf)
 <use Figures/intro_electro/incidencia-coated-conductor.pdf>
 Package pdftex.def Info: Figures/intro_electro/incidencia-coated-conductor.pdf 
- used on input line 1962.
+ used on input line 1972.
 (pdftex.def)             Requested size: 342.2953pt x 94.8448pt.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1962.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1972.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1962.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1972.
 
 
-Overfull \hbox (4.18448pt too wide) detected at line 1962
+Overfull \hbox (4.18448pt too wide) detected at line 1972
 []
  []
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1962.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1972.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1962.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1972.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1962.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1972.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1962.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1972.
 
 
-Overfull \hbox (4.18448pt too wide) detected at line 1962
+Overfull \hbox (4.18448pt too wide) detected at line 1972
 []
  []
 
 [115
 
 ]
-<Figures/intro_electro/TM-tan-implicito.pdf, id=23865, 404.89871pt x 190.95416p
+<Figures/intro_electro/TM-tan-implicito.pdf, id=24048, 404.89871pt x 190.95416p
 t>
 File: Figures/intro_electro/TM-tan-implicito.pdf Graphic file (type pdf)
 <use Figures/intro_electro/TM-tan-implicito.pdf>
 Package pdftex.def Info: Figures/intro_electro/TM-tan-implicito.pdf  used on in
-put line 1976.
+put line 1986.
 (pdftex.def)             Requested size: 177.99501pt x 83.94432pt.
-<Figures/intro_electro/TM-tan-implicito-zoom.pdf, id=23866, 420.26315pt x 329.8
+<Figures/intro_electro/TM-tan-implicito-zoom.pdf, id=24049, 420.26315pt x 329.8
 7471pt>
 File: Figures/intro_electro/TM-tan-implicito-zoom.pdf Graphic file (type pdf)
 <use Figures/intro_electro/TM-tan-implicito-zoom.pdf>
 Package pdftex.def Info: Figures/intro_electro/TM-tan-implicito-zoom.pdf  used 
-on input line 1976.
+on input line 1986.
 (pdftex.def)             Requested size: 177.99501pt x 139.71419pt.
-<Figures/intro_electro/TE-tan-implicito.pdf, id=23867, 404.89871pt x 190.95416p
+<Figures/intro_electro/TE-tan-implicito.pdf, id=24050, 404.89871pt x 190.95416p
 t>
 File: Figures/intro_electro/TE-tan-implicito.pdf Graphic file (type pdf)
 <use Figures/intro_electro/TE-tan-implicito.pdf>
 Package pdftex.def Info: Figures/intro_electro/TE-tan-implicito.pdf  used on in
-put line 1976.
+put line 1986.
 (pdftex.def)             Requested size: 177.99501pt x 83.94432pt.
-<Figures/intro_electro/TE-tan-implicito-zoom.pdf, id=23868, 420.26315pt x 329.8
+<Figures/intro_electro/TE-tan-implicito-zoom.pdf, id=24051, 420.26315pt x 329.8
 7471pt>
 File: Figures/intro_electro/TE-tan-implicito-zoom.pdf Graphic file (type pdf)
 <use Figures/intro_electro/TE-tan-implicito-zoom.pdf>
 Package pdftex.def Info: Figures/intro_electro/TE-tan-implicito-zoom.pdf  used 
-on input line 1976.
+on input line 1986.
 (pdftex.def)             Requested size: 177.99501pt x 139.71419pt.
  [116
 
@@ -3109,23 +3123,23 @@ page
 \tf@snm=\write11
 \openout11 = `presentacion.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1978.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1978.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1988.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1988.
  (./presentacion.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1978.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1978.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1988.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1988.
 
 Package rerunfilecheck Info: File `presentacion.out' has not changed.
 (rerunfilecheck)             Checksum: 11AE67439BC4798BA73E31BA0D5DD3DF;1390.
  ) 
 Here is how much of TeX's memory you used:
- 37518 strings out of 492982
- 784411 string characters out of 6134895
- 889914 words of memory out of 5000000
- 40063 multiletter control sequences out of 15000+600000
+ 37527 strings out of 492982
+ 784934 string characters out of 6134895
+ 890028 words of memory out of 5000000
+ 40070 multiletter control sequences out of 15000+600000
  546733 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,21n,103p,10501b,869s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3162,10 +3176,10 @@ share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb>
-Output written on presentacion.pdf (116 pages, 10722293 bytes).
+Output written on presentacion.pdf (116 pages, 10798434 bytes).
 PDF statistics:
- 24348 PDF objects out of 26593 (max. 8388607)
- 14947 compressed objects within 150 object streams
+ 24531 PDF objects out of 26593 (max. 8388607)
+ 15051 compressed objects within 151 object streams
  258 named destinations out of 1000 (max. 500000)
- 937 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 947 words of extra memory for PDF output out of 10000 (max. 10000000)
 

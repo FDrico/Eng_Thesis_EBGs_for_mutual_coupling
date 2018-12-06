@@ -951,7 +951,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 				\textbf{Método} & \centering\textbf{Dom} & \centering \textbf{Tipo de problema} & \textbf{Software}\\
 				\midrule
 				FEM & \centering f & \centering Pequeños y complejos (incógnitas $\propto$ volumen). & \textit{HFSS} \\
-				{\color{red}FDTD} & \centering t & \centering {\color{red}Banda ancha. Resonantes (autovalores).} & {\color{red}\textit{CST}}\\
+				{\color{red}FDTD} & \centering {\color{red}t} & \centering {\color{red}Banda ancha. Resonantes (autovalores).} & {\color{red}\textit{CST}}\\
 				MOM & \centering f & \centering Recintos abiertos. & \textit{NEC-2, ADS, FEKO}\\
 				\bottomrule
 			\end{tabular}}
@@ -1062,9 +1062,19 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			\frametitle{Análisis paramétrico de la celda}
 				\only<1>{\framesubtitle{Variación del ancho del puente}
 					\includegraphics[width=\textwidth]{Modelado/Orlandi-DeltaAnchoConector-comparacion.pdf}
+					
+					\begin{textblock*}{37mm}(85mm,5mm)
+						\centering
+						\includegraphics[width=\textwidth]{Presentacion/orlandi-celda-puentesAncho.pdf}
+					\end{textblock*}
 				}
 				\only<2>{\framesubtitle{Variación del largo del puente}
 					\includegraphics[width=\textwidth]{Modelado/Orlandi-DeltaSeparacionParches-DeltaTamanioCelda-ParcheFijo-Comparacion.pdf}
+					
+					\begin{textblock*}{30mm}(85mm,5mm)
+						\centering
+						\includegraphics[width=\textwidth]{Presentacion/orlandi-celda-puentes.pdf}
+					\end{textblock*}
 				}
 				\only<3>{\framesubtitle{Variación del tamaño de celda}
 					\includegraphics[width=\textwidth]{Modelado/Orlandi-DeltaTamanioCelda-RelacionParcheFija-Comparacion.pdf}
@@ -1131,7 +1141,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 				\column{0.5\textwidth}
 					\includegraphics[width=\textwidth]{Presentacion/circuito-equivalente-celda-YANG-2.pdf} 
 			\end{columns}
-				\begin{itemize}
+			\begin{itemize}
 				\item C. Paul (2010):
 					\begin{align*}
 						L_{b} = \begin{cases}
@@ -1147,7 +1157,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 			\begin{tabular}{ c c c }
 				\toprule
 				\small
-				Kim, Shutt-Ainé & \smallC. Paul & \small\textit{Ansys Q3D Extractor}\\ 
+				Kim, Shutt-Ainé & \small C. Paul & \small\textit{Ansys Q3D Extractor}\\ 
 				\midrule
 				$7.34\;nH$ & $8.2\;nH$ & $7.7\;nH$\\ 
 				\hline 
@@ -1156,7 +1166,7 @@ Tutores: Dr. Ing. W. Gustavo Fano y Mg. Ing. Silvina Boggi
 	
 		\only<3>{
 			\framesubtitle{Capacidad entre celdas vecinas, $C_g$, y con plano de tierra, $C_p$}
-			\centering Dos acercamientos distintos:
+			Dos acercamientos distintos:
 			\begin{columns}[c]
 				\column{0.5\textwidth}
 					\begin{itemize}
